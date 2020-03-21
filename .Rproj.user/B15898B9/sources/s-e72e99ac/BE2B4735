@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1584803910219.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "BE2B4735",
+    "lastKnownWriteTime" : 1584803825,
+    "last_content_update" : 1584804249765,
+    "path" : "~/covid/docs/index.html",
+    "project_path" : "docs/index.html",
+    "properties" : {
+        "cursorPosition" : "1324,208",
+        "scrollLine" : "1309"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "html"
+}
