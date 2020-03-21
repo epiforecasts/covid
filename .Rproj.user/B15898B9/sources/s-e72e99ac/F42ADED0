@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1584804782248.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "398038590",
+    "id" : "F42ADED0",
+    "lastKnownWriteTime" : 1584804782,
+    "last_content_update" : 1584804782,
+    "path" : "~/covid/_posts/2020-03-21-italy/italy.Rmd",
+    "project_path" : "_posts/2020-03-21-italy/italy.Rmd",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

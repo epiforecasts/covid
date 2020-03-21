@@ -1,0 +1,14 @@
+---
+title: "Contributors"
+description: |
+  List of contributors
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+Name | Contribution
+----------------------|-------------------------------------------------
+**Luke Skywalker** | Brought balance to the force

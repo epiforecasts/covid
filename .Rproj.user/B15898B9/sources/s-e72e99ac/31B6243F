@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1584801570591.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "31B6243F",
+    "lastKnownWriteTime" : 1584802811,
+    "last_content_update" : 1584802811335,
+    "path" : "~/covid/_footer.html",
+    "project_path" : "_footer.html",
+    "properties" : {
+        "cursorPosition" : "2,41",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "html"
+}
