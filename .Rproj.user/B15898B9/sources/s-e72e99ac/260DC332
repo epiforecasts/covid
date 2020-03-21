@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1584800872726.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "260DC332",
+    "lastKnownWriteTime" : 1584803818,
+    "last_content_update" : 1584803818427,
+    "path" : "~/covid/library.bib",
+    "project_path" : "library.bib",
+    "properties" : {
+        "cursorPosition" : "238,3",
+        "scrollLine" : "202",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}

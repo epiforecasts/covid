@@ -1,0 +1,29 @@
+---
+title: "Temporal variation in transmission during the COVID-19 outbreak"
+site: distill::distill_website
+bibliography:: library.bib
+---
+
+
+### Aim
+
+To identify changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally.
+
+
+### Summary
+
+* Case counts by date, stratified by import status (local or imported), were constructed using the World Health Organization (WHO) situation reports and partial line-lists for each region [@WorldHealthOrganization:sitrep; @EricBrown2020, @kraemer2020epidemiological, @NCoVUtils].
+* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to partial line-lists from each region considered where available.
+* Censoring of cases was adjusted for by assuming that the number of cases is drawn from a binomial distribution.
+* Time-varying effective reproduction estimates were made with a 7-day sliding window using *EpiEstim* [@EpiEstim; @THOMPSON2019100356] adjusted for imported cases and assuming an uncertain serial interval with a mean of 4.7 days (95% CrI: 3.7, 6.0) and a standard deviation of 2.9 days (95% CrI: 1.9, 4.9) [@Nishiura2020.02.03.20019497].
+* Time-varying estimates of the doubling time were made with a 7-day sliding window by iteratively fitting an exponential regression model. 
+
+### Limitations
+
+* All data used are at a national/regional level taken from WHO situation reports; diagnostic capabilities and testing protocols may vary in different parts of each country/region, adding uncertainty to the reported numbers. The true number of infections reflect in a given number of confirmed cases probably varies substantially geographically.
+* The estimated onset dates are based on available data for the delay from symptom onset to confirmation, which mostly stems from the early days of the outbreak. These data may not be representative of the underlying delay distribution.
+* The estimate of not-yet-confirmed cases to scale up recent numbers is uncertain and relies on the observed delays to confirmation to remain constant over the course of the outbreak.
+* Trends identified using our approach are robust to under-reporting assuming it is constant but absolute values may be biased by reporting rates. Pronounced changes in reporting rates may also impact the trends identified.
+* The reporting delay could not be estimated from line-list data for all regions. Region specific details are given in the individual regional reports.
+* Data on imported cases were only partically available, and even where available may not be fully complete. This may bias estimates upwards when overall case counts are low.
+* As our estimates are made at the date of symptom onset any changes in the time-varying parameters will be delayed by the incubation period. 

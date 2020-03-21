@@ -1,0 +1,29 @@
+[
+  {
+    "path": "posts/global/",
+    "title": "global",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2020-03-21",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-03-21T15:40:41+00:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/italy/",
+    "title": "italy",
+    "description": "A short description of the post.",
+    "author": [],
+    "date": "2020-03-21",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-03-21T15:42:50+00:00",
+    "input_file": {}
+  }
+]
