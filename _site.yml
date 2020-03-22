@@ -13,12 +13,17 @@ navbar:
     image: images/cmmid_logo.png
     href: https://cmmid.github.io
   right:
-    - text: "Summary"
+    - text: "About"
       href: index.html
-    - text: "National estimates"
+    - text: "Global summary"
       href: posts/global/index.html
-    - text: "Subnational estimates"
+    - text: "National estimates"
       menu:
+       - text: "National estimates with regional breakdowns"
+       - text: "Italy"
+         href: posts/italy/index.html
+       - text: "---"
+       - text: "National estimates without regional breakdowns"
        - text: "Italy"
          href: posts/italy/index.html
     - text: "Methods"
@@ -39,6 +44,11 @@ posts:
 output: distill::distill_article
 exclude:
   Dockerfile
-  install.R
+  Description
   README.md
   library.bib
+  .Rbuildignore
+  LICENSE.md
+  LICENSE
+  _posts/global/analysis
+  
