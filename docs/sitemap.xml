@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
+  <url>
+    <loc>https://epiforecasts.io/covid/contributors.html</loc>
+    <lastmod>2020-03-21T15:28:52+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/</loc>
+    <lastmod>2020-03-21T15:16:48+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/LICENSE.html</loc>
+    <lastmod>2020-03-22T10:04:38+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/methods.html</loc>
+    <lastmod>2020-03-21T15:12:29+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/news.html</loc>
+    <lastmod>2020-03-21T14:12:08+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/italy/</loc>
+    <lastmod>2020-03-22T20:03:04+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/global/</loc>
+    <lastmod>2020-03-22T12:05:46+00:00</lastmod>
+  </url>
+</urlset>
