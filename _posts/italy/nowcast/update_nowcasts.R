@@ -24,10 +24,11 @@ region_codes <- cases %>%
   unique() %>% 
   dplyr::mutate(region_code = as.numeric(region_code))
 
-saveRDS(region_codes, "data/region_codes.rds")
+saveRDS(region_codes, "_posts/italy/nowcast/data/region_codes.rds")
 
 cases <- cases %>% 
   dplyr::rename(local = cases) %>% 
+  dplyr::select(-region_code) %>% 
   dplyr::mutate(imported = 0) %>% 
   tidyr::gather(key = "import_status", value = "cases", local, imported)
 
@@ -55,6 +56,6 @@ EpiNow::regional_rt_pipeline(
   cases = cases, 
   linelist = linelist, 
   regional_delay = FALSE,
-  target_folder = "results", 
+  target_folder = "_posts/italy/nowcast/results", 
   merge_onsets = FALSE
 )
