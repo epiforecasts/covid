@@ -54,7 +54,7 @@
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","bibliography:"]}},"value":[{"type":"character","attributes":{},"value":["Methods"]},{"type":"character","attributes":{},"value":["Data sources, accounting for report delays and statistical methods.\n"]},{"type":"character","attributes":{},"value":["library.bib"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","bibliography:","output"]}},"value":[{"type":"character","attributes":{},"value":["Methods"]},{"type":"character","attributes":{},"value":["Data sources, accounting for report delays and statistical methods.\n"]},{"type":"character","attributes":{},"value":["library.bib"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1312,7 +1312,7 @@ National estimates
 <a href="posts/italy/index.html">Italy</a>
 <hr/>
 <span class="nav-dropdown-header">National estimates without regional breakdowns</span>
-<a href="posts/italy/index.html">Italy</a>
+<a href="posts/italy-example/index.html">Italy example</a>
 </div>
 </div>
 <a href="methods.html">Methods</a>
@@ -1339,6 +1339,15 @@ National estimates
 
 
 <div class="d-article">
+<h3 class="d-toc-header">Table of Contents</h3>
+<nav class="d-toc" id="TOC">
+<ul>
+<li><a href="#data">Data</a></li>
+<li><a href="#adjusting-for-reporting-delays">Adjusting for reporting delays</a></li>
+<li><a href="#statistical-analysis">Statistical analysis</a></li>
+</ul>
+</nav>
+<hr class="d-toc-separator"/>
 <h2 id="data">Data</h2>
 <h3 id="national-data-sources">National data sources</h3>
 <p>We used partial line-lists from each region that contained the date of symptom onset, date of confirmation and import status (imported or local) for each case <span class="citation" data-cites="kraemer2020epidemiological">(<span class="citeproc-not-found" data-reference-id="kraemer2020epidemiological"><strong>???</strong></span>, <span class="citation" data-cites="NCoVUtils">@NCoVUtils</span>)</span> where available. The region reports give details of the steps taken where this data were not available. Daily case counts by date of report were extracted from the World Health Organization (WHO) situation reports for every location considered <span class="citation" data-cites="WorldHealthOrganization:sitrep EricBrown2020">(<span class="citeproc-not-found" data-reference-id="WorldHealthOrganization:sitrep"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="EricBrown2020"><strong>???</strong></span>, <span class="citation" data-cites="NCoVUtils">@NCoVUtils</span>)</span>. The case counts (and partial line-lists where available) were used to assemble the daily number of local and imported cases. Where the partial line-lists and case counts disagreed, it was assumed that the partial line-lists were correct and the WHO case counts were adjusted so that the overall number of cases occurring remained the same but the number of local cases being adjusted as needed.</p>
