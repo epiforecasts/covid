@@ -3,6 +3,11 @@ title: "Methods"
 description: |
   Data sources, accounting for report delays and statistical methods.
 bibliography:: library.bib
+output:
+  distill::distill_article:
+    self_contained: true
+    toc: true
+    toc_depth: 2
 ---
 
 ```{r setup, include=FALSE}
