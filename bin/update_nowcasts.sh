@@ -10,10 +10,13 @@ Rscript -e "devtools::install_all_dev_deps()"
 Rscript -e "NCoVUtils::reset_cache()"
 
 ## Update the global nowcast
-Rscript -e "_posts/global/nowcast/update_nowcasts.R"
+Rscript _posts/global/nowcast/update_nowcasts.R
 
 ## Update regional nowcasts
-Rscript -e "_posts/italy/nowcast/update_nowcasts.R"
+Rscript _posts/italy/nowcast/update_nowcasts.R
+
+## Update all posts
+Rscript utils/update_posts.R
 
 ## Update the website
 Rscript -e "rmarkdown::render_site()"

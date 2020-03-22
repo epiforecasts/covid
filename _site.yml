@@ -51,4 +51,5 @@ exclude:
   LICENSE.md
   LICENSE
   bin/update_nowcasts.sh
+  utils/update_posts.R
   
