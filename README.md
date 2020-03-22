@@ -4,6 +4,17 @@
 *Warning: This analysis is a work in progress. Breaking changes may occur and the authors cannot guarantee support.*
 
 
+## Usage
+
+### Nowcasts
+
+#### Update
+
+Update all nowcasts and deploy the website with the following: 
+
+```bash
+bash bin/update_nowcasts.sh
+```
 
 ## Docker
 
