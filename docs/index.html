@@ -44,7 +44,7 @@
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","bibliography:"]}},"value":[{"type":"character","attributes":{},"value":["Temporal variation in transmission during the COVID-19 outbreak"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["library.bib"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","bibliography"]}},"value":[{"type":"character","attributes":{},"value":["Temporal variation in transmission during the COVID-19 outbreak"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["library.bib"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1329,17 +1329,17 @@ National estimates
 
 
 <div class="d-article">
-<h3 id="aim">Aim</h3>
+<h2 id="aim">Aim</h2>
 <p>To identify changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally.</p>
-<h3 id="summary">Summary</h3>
+<h2 id="summary">Summary</h2>
 <ul>
-<li>Case counts by date, stratified by import status (local or imported), were constructed using the World Health Organization (WHO) situation reports and partial line-lists for each region <span class="citation" data-cites="WorldHealthOrganization:sitrep EricBrown2020">(<span class="citeproc-not-found" data-reference-id="WorldHealthOrganization:sitrep"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="EricBrown2020"><strong>???</strong></span>, <span class="citation" data-cites="kraemer2020epidemiological">@kraemer2020epidemiological</span>, <span class="citation" data-cites="NCoVUtils">@NCoVUtils</span>)</span>.</li>
+<li>Case counts by date, stratified by import status (local or imported), were constructed using the World Health Organization (WHO) situation reports and partial line-lists for each region <span class="citation" data-cites="WorldHealthOrganization:sitrep EricBrown2020">(World Health Organization, <a href="#ref-WorldHealthOrganization:sitrep">n.d.</a>; Brown <a href="#ref-EricBrown2020">2020</a>, <span class="citation" data-cites="kraemer2020epidemiological">@kraemer2020epidemiological</span>, <span class="citation" data-cites="NCoVUtils">@NCoVUtils</span>)</span>.</li>
 <li>Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to partial line-lists from each region considered where available.</li>
 <li>Censoring of cases was adjusted for by assuming that the number of cases is drawn from a binomial distribution.</li>
-<li>Time-varying effective reproduction estimates were made with a 7-day sliding window using <em>EpiEstim</em> <span class="citation" data-cites="EpiEstim THOMPSON2019100356">(<span class="citeproc-not-found" data-reference-id="EpiEstim"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="THOMPSON2019100356"><strong>???</strong></span>)</span> adjusted for imported cases and assuming an uncertain serial interval with a mean of 4.7 days (95% CrI: 3.7, 6.0) and a standard deviation of 2.9 days (95% CrI: 1.9, 4.9) <span class="citation" data-cites="Nishiura2020.02.03.20019497">(<span class="citeproc-not-found" data-reference-id="Nishiura2020.02.03.20019497"><strong>???</strong></span>)</span>.</li>
+<li>Time-varying effective reproduction estimates were made with a 7-day sliding window using <em>EpiEstim</em> <span class="citation" data-cites="EpiEstim THOMPSON2019100356">(Cori <a href="#ref-EpiEstim">2019</a>; Thompson et al. <a href="#ref-THOMPSON2019100356">2019</a>)</span> adjusted for imported cases and assuming an uncertain serial interval with a mean of 4.7 days (95% CrI: 3.7, 6.0) and a standard deviation of 2.9 days (95% CrI: 1.9, 4.9) <span class="citation" data-cites="Nishiura2020.02.03.20019497">(Nishiura, Linton, and Akhmetzhanov <a href="#ref-Nishiura2020.02.03.20019497">2020</a>)</span>.</li>
 <li>Time-varying estimates of the doubling time were made with a 7-day sliding window by iteratively fitting an exponential regression model.</li>
 </ul>
-<h3 id="limitations">Limitations</h3>
+<h2 id="limitations">Limitations</h2>
 <ul>
 <li>All data used are at a national/regional level taken from WHO situation reports; diagnostic capabilities and testing protocols may vary in different parts of each country/region, adding uncertainty to the reported numbers. The true number of infections reflect in a given number of confirmed cases probably varies substantially geographically.</li>
 <li>The estimated onset dates are based on available data for the delay from symptom onset to confirmation, which mostly stems from the early days of the outbreak. These data may not be representative of the underlying delay distribution.</li>
@@ -1349,6 +1349,29 @@ National estimates
 <li>Data on imported cases were only partically available, and even where available may not be fully complete. This may bias estimates upwards when overall case counts are low.</li>
 <li>As our estimates are made at the date of symptom onset any changes in the time-varying parameters will be delayed by the incubation period.</li>
 </ul>
+<div id="refs" class="references">
+<div id="ref-NCoVUtils">
+<p>Abbott, Sam, Joel Hellewell, James D. Munday, and Sebastian Funk. 2020. “NCoVUtils: Utility Functions for the 2019-Ncov Outbreak.” <em>-</em> - (-): –. <a href="https://doi.org/10.5281/zenodo.3635417">https://doi.org/10.5281/zenodo.3635417</a>.</p>
+</div>
+<div id="ref-EricBrown2020">
+<p>Brown, Eric. 2020. <em>Data2019nCoV: Data on the Covid-19 Outbreak</em>.</p>
+</div>
+<div id="ref-EpiEstim">
+<p>Cori, Anne. 2019. <em>EpiEstim: Estimate Time Varying Reproduction Numbers from Epidemic Curves</em>. <a href="https://CRAN.R-project.org/package=EpiEstim">https://CRAN.R-project.org/package=EpiEstim</a>.</p>
+</div>
+<div id="ref-Nishiura2020.02.03.20019497">
+<p>Nishiura, Hiroshi, Natalie M Linton, and Andrei R. Akhmetzhanov. 2020. “Serial Interval of Novel Coronavirus (2019-nCoV) Infections.” <em>medRxiv</em>. Cold Spring Harbor Laboratory Press. <a href="https://doi.org/10.1101/2020.02.03.20019497">https://doi.org/10.1101/2020.02.03.20019497</a>.</p>
+</div>
+<div id="ref-THOMPSON2019100356">
+<p>Thompson, R.N., J.E. Stockwin, R.D. van Gaalen, J.A. Polonsky, Z.N. Kamvar, P.A. Demarsh, E. Dahlqwist, et al. 2019. “Improved Inference of Time-Varying Reproduction Numbers During Infectious Disease Outbreaks.” <em>Epidemics</em> 29: 100356. <a href="https://doi.org/https://doi.org/10.1016/j.epidem.2019.100356">https://doi.org/https://doi.org/10.1016/j.epidem.2019.100356</a>.</p>
+</div>
+<div id="ref-WorldHealthOrganization:sitrep">
+<p>World Health Organization. n.d. “<strong>Coronavirus Disease (COVID-2019) Situation Reports</strong>.” <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports</a>.</p>
+</div>
+<div id="ref-kraemer2020epidemiological">
+<p>Xu, Bo, Bernardo Gutierrez, Sarah Hill, Samuel Scarpino, Alyssa Loskill, Jessie Wu, Kara Sewalk, et al. 2020. “Epidemiological Data from the nCoV-2019 Outbreak: Early Descriptions from Publicly Available Data.” Accessed on 2020-01-26 from <a href="http://virological.org/t/epidemiological-data-from-the-ncov-2019-outbreak-early-descriptions-from-publicly-available-data/337">http://virological.org/t/epidemiological-data-from-the-ncov-2019-outbreak-early-descriptions-from-publicly-available-data/337</a>.</p>
+</div>
+</div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

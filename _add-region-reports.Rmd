@@ -2,7 +2,7 @@
 
 
 ```{r generate-region-reports, include = FALSE}
-regions <- EpiNow::get_regions(file.path(path, "nowcast/results"))
+regions <- EpiNow::get_regions(here::here(file.path(path, "nowcast/results")))
 show_title <- TRUE
 
 region_summaries <- 1:length(regions) %>% 
@@ -10,7 +10,7 @@ region_summaries <- 1:length(regions) %>%
     index <- region_index
     region <- regions[region_index]
     region_name <- names(regions)[region_index]
-    out <- knitr::knit_child("_region-report.Rmd", envir = environment()) 
+    out <- knitr::knit_child(here::here("_region-report.Rmd"), envir = environment()) 
   })
 ```
 
