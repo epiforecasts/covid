@@ -1,0 +1,83 @@
+
+```{r, include = FALSE}
+require(knitr)
+require(kableExtra)
+```
+
+### Summary of latest reproduction number and case count estimates
+
+```{r, fig.height = 12, fig.width = 12, layout="l-body-outset"}
+knitr::include_graphics(file.path(path, "nowcast/summary/summary_plot.png"))
+```
+
+<br>
+*Figure 2: Cases with date of onset on the day of report generation and the time-varying estimate of the effective reproduction number (bar = 95% credible interval). regions are ordered by the number of expected daily cases and shaded based on the expected change in daily cases. The dotted line indicates the target value of 1 for the effective reproduction no. required for control and a single case required fror elimination.*
+
+### Reproduction numbers over time in the six regions with the most cases currently
+
+```{r summarise-bigr-plot, fig.height = 9, fig.width = 12, layout="l-body-outset"}
+knitr::include_graphics(file.path(path, "nowcast/summary/high_cases_rt_plot.png"))
+```
+
+<br>
+*Figure 3: Time-varying estimate of the effective reproduction number (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in the regions expected to have the highest number of incident cases. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence. The dotted line indicates the target value of 1 for the effective reproduction no. required for control.*
+
+### Cases with date of onset on the day of report generation in the six regions with the most cases currently
+
+```{r summarise-cases-plot, fig.height = 9, fig.width = 12, layout="l-body-outset"}
+knitr::include_graphics(file.path(path, "nowcast/summary/high_cases_plot.png"))
+```
+
+<br>
+*Figure 4:  Cases by date of report (bars) and estimated cases by date of onset (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in the countries/regions expected to have the highest number of incident cases. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence.*
+
+### Reproduction numbers over time in all regions
+
+```{r bigr-plot, fig.height = 24, fig.width = 24, layout="l-body-outset"}
+knitr::include_graphics(file.path(path, "nowcast/summary/rt_plot.png"))
+```
+
+<br>
+*Figure 5: Time-varying estimate of the effective reproduction number (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in all regions. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence. The dotted line indicates the target value of 1 for the effective reproduction no. required for control.*
+
+
+### Cases with date of onset on the day of report generation in all regions
+
+```{r cases-plot, fig.height = 24, fig.width = 24, layout="l-body-outset"}
+knitr::include_graphics(file.path(path, "nowcast/summary/cases_plot.png"))
+```
+
+*Figure 6:  Cases by date of report (bars) and estimated cases by date of onset (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in all regions. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence.*
+
+### Latest estimates summary table
+
+```{r summary-table-1, layout="l-body-outset"}
+readRDS(file.path(path, "nowcast/summary/summary_table.rds")) %>% 
+ knitr::kable(booktabs = TRUE, longtable = TRUE)  %>% 
+  kableExtra::kable_styling(latex_options = c("striped", "hold_position"),
+                full_width = TRUE)
+```
+
+<br>
+*Table 2: Latest estimates of the number of cases by date of onset, the effective reproduction number, and the doubling time in each rregion. Based on the last 7 days of data. The 95\\% credible interval is shown for each numeric estimate.*
+
+
+`r if(regional_reports) '### Regional reports {.tabset .tabset-dropdown}'`
+
+
+```{r generate-region-reports, include = FALSE, eval = regional_reports}
+regions <- EpiNow::get_regions(file.path(path, "nowcast/results"))
+
+region_summaries <- 1:length(regions) %>% 
+  purrr::map(function(region_index) {
+    index <- region_index
+    region <- regions[region_index]
+    region_name <- names(regions)[region_index]
+   out <- knitr::knit_child("_region-report.Rmd", envir = environment()) 
+  })
+```
+
+
+```{r print-region-reports, results="asis", eval = regional_reports}
+cat(paste(region_summaries, collapse = '\n'))
+```
