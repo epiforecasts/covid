@@ -1,0 +1,10 @@
+
+### `r update`
+
+```{r, include = FALSE}
+out <- knitr::knit_child(paste0("../man/news/", update, ".md"))
+```
+
+```{r results="asis"}
+cat(out)
+```
