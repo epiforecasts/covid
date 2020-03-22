@@ -1,9 +1,9 @@
 # Get utils ---------------------------------------------------------------
 
-source("utils/rt_pipeline.R")
+source("_posts/global/nowcast/utils/rt_pipeline.R")
 
 # Read in linelist --------------------------------------------------------
-linelist <- readxl::read_xlsx("data/singapore.xlsx") %>%
+linelist <- readxl::read_xlsx("_posts/global/nowcast/data/singapore.xlsx") %>%
   dplyr::mutate(import_status =
            dplyr::if_else(!is.na(Imported), "imported", "local"),
          ## Clean up onset date based on excel origin
@@ -33,6 +33,6 @@ target_date <- as.character(max(cases$date))
 rt_pipeline(
   cases = cases,
   linelist = linelist,
-  target_folder = file.path("results/singapore", target_date),
+  target_folder = "_posts/global/nowcast/results/singapore",
   target_date = target_date,
   start_rate_of_spread_est = "2020-01-27")

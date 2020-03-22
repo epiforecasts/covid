@@ -67,6 +67,6 @@ summary_tables <- 2
 summary_figures <- 3
 ```
 
-```{r,  child = "../../_add-region-reports.Rmd", eval = region_reports}
+```{r,  child = "_add-region-reports.Rmd", eval = region_reports}
 ```
 

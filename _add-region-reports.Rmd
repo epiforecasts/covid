@@ -1,4 +1,4 @@
-### Regional reports {.tabset .tabset-dropdown}
+### Regional reports 
 
 
 ```{r generate-region-reports, include = FALSE}
