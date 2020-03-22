@@ -1,17 +1,62 @@
 ---
-title: "italy"
+title: "National and Subnational estimates for Italy"
 description: |
-  A short description of the post.
+  Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Italy.
+date: 03-21-2020
 output:
   distill::distill_article:
     self_contained: false
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      dpi = 320)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+```{r load-packages, include = FALSE}
+library(EpiNow)
+library(dplyr)
+library(rmarkdown)
+```
+
+
+## National summary
+
+
+
+## Regional Breakdown
+
+### Expected daily cases by region
+
+```{r}
+summary_table <- readRDS ("nowcast/summary/summary_table.rds")
+region_codes <- readRDS("nowcast/data/region_codes.rds")
+```
+
+```{r map, fig.width = 6, fig.height = 6, layout="l-body-outset"}
+summary_table %>% 
+  dplyr::rename(region  = Region) %>% 
+  dplyr::left_join(region_codes, by = "region") %>% 
+  EpiNow::country_map(country = "Italy", variable = "Expected change in daily cases") +
+  ggplot2::guides(fill = ggplot2::guide_legend(title = "Expected change in daily cases",
+                                               ncol = 2))
+```
+
+<br>
+*Figure 1: Map of the expected change in daily cases*
+
+
+```{r} 
+region_reports <- TRUE
+path <- getwd()
+```
+
+```{r,  child = "../../_regional-summary.Rmd"}
+```
 
