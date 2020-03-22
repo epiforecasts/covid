@@ -2,10 +2,12 @@
 title: "Global summary"
 description: |
   Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally.
-date: `r Sys.Date()`
+bibliography: library.bib
 output:
   distill::distill_article:
-    self_contained: false
+    self_contained: true
+    toc: true
+    toc_depth: 2
 ---
 
 ```{r setup, include = FALSE}
@@ -23,10 +25,10 @@ library(dplyr)
 library(rmarkdown)
 ```
 
-### Expected daily cases by country
+## Expected daily cases by country
 
 ```{r}
-summary_table <- readRDS ("nowcast/summary/summary_table.rds")
+summary_table <- readRDS("nowcast/summary/summary_table.rds")
 ```
 
 ```{r map, fig.width = 12, fig.height = 6, layout="l-body-outset"}
@@ -41,7 +43,7 @@ summary_table %>%
 <br>
 *Figure 1: Map of the expected change in daily cases*
 
-### Summary of latest reproduction number and case count estimates
+## Summary of latest reproduction number and case count estimates
 
 ```{r, fig.height = 12, fig.width = 12, layout="l-body-outset"}
 knitr::include_graphics("nowcast/summary/summary_plot.png")
@@ -50,7 +52,7 @@ knitr::include_graphics("nowcast/summary/summary_plot.png")
 <br>
 *Figure 2: Cases with date of onset on the day of report generation and the time-varying estimate of the effective reproduction number (bar = 95% credible interval). Countries/Regions are ordered by the number of expected daily cases and shaded based on the expected change in daily cases. The dotted line indicates the target value of 1 for the effective reproduction no. required for control and a single case required fror elimination.*
 
-### Reproduction numbers over time in the six countries/regions with the most cases currently
+## Reproduction numbers over time in the six countries/regions with the most cases currently
 
 ```{r summarise-bigr-plot, fig.height = 9, fig.width = 12, layout="l-body-outset"}
 knitr::include_graphics("nowcast/summary/high_cases_rt_plot.png")
@@ -59,7 +61,7 @@ knitr::include_graphics("nowcast/summary/high_cases_rt_plot.png")
 <br>
 *Figure 3: Time-varying estimate of the effective reproduction number (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in the countries/regions expected to have the highest number of incident cases. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence. The dotted line indicates the target value of 1 for the effective reproduction no. required for control.*
 
-### Cases with date of onset on the day of report generation in the six countries/regions with the most cases currently
+## Cases with date of onset on the day of report generation in the six countries/regions with the most cases currently
 
 ```{r summarise-cases-plot, fig.height = 9, fig.width = 12, layout="l-body-outset"}
 knitr::include_graphics("nowcast/summary/high_cases_plot.png")
@@ -68,7 +70,7 @@ knitr::include_graphics("nowcast/summary/high_cases_plot.png")
 <br>
 *Figure 4:  Cases by date of report (bars) and estimated cases by date of onset (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in the countries/regions expected to have the highest number of incident cases. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence.*
 
-### Reproduction numbers over time in the all countries/regions modelled
+## Reproduction numbers over time in the all countries/regions modelled
 
 ```{r bigr-plot, fig.height = 18, fig.width = 18, layout="l-body-outset"}
 knitr::include_graphics("nowcast/summary/rt_plot.png")
@@ -78,7 +80,7 @@ knitr::include_graphics("nowcast/summary/rt_plot.png")
 *Figure 5: Time-varying estimate of the effective reproduction number (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in all countries/regions modelled. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence. The dotted line indicates the target value of 1 for the effective reproduction no. required for control.*
 
 
-### Cases with date of onset on the day of report generation in allcountries/regions modelled
+## Cases with date of onset on the day of report generation in allcountries/regions modelled
 
 ```{r cases-plot, fig.height = 18, fig.width = 18, layout="l-body-outset"}
 knitr::include_graphics("nowcast/summary/cases_plot.png")
@@ -86,13 +88,11 @@ knitr::include_graphics("nowcast/summary/cases_plot.png")
 
 *Figure 6:  Cases by date of report (bars) and estimated cases by date of onset (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in all countries/regions modelled. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence.*
 
-### Latest estimates summary table
+## Latest estimates summary table
 
 ```{r summary-table-1, layout="l-body-outset"}
 summary_table %>% 
- knitr::kable(booktabs = TRUE, longtable = TRUE)  %>% 
-  kableExtra::kable_styling(latex_options = c("striped", "hold_position"),
-                full_width = TRUE)
+ knitr::kable(booktabs = TRUE, longtable = TRUE)
 ```
 
 <br>

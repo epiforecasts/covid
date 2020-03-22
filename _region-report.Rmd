@@ -6,12 +6,13 @@
 library(tibble)
 library(knitr)
 library(kableExtra)
+library(here)
 ```
 
 #### Summary
 
 ```{r}
-readRDS(file.path(path, "nowcast/results", region, "latest/region_summary.rds")) %>% 
+readRDS(here::here(file.path(path, "nowcast/results", region, "latest/region_summary.rds"))) %>% 
 knitr::kable(col.names = c("", "Estimate"), booktabs = TRUE) %>% 
     kableExtra::kable_styling(latex_options = c("striped", "hold_position"),
                 full_width = TRUE)
@@ -23,7 +24,7 @@ knitr::kable(col.names = c("", "Estimate"), booktabs = TRUE) %>%
 #### Reported and estimated cases by date of onset and time-varying reproduction number estimates
 
 ```{r, fig.height = 6, fig.width = 12}
-knitr::include_graphics(file.path(path, "nowcast/results", region, "latest/rt_cases_plot.png"))
+knitr::include_graphics(here::here(file.path(path, "nowcast/results", region, "latest/rt_cases_plot.png")))
 ```
 <br>
 `r paste0("*Figure ",  summary_figures + 1 + (index - 1) * 3, ": A.) Cases by date of report (bars) and estimated cases by date of onset. B.) Time-varying estimate of the effective reproduction number. Light grey ribbon = 95% credible interval. Dark grey ribbon = the interquartile range. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence.*")`
@@ -31,7 +32,7 @@ knitr::include_graphics(file.path(path, "nowcast/results", region, "latest/rt_ca
 #### Time-varying rate of spread and doubling time
 
 ```{r, fig.height = 6, fig.width = 12}
-knitr::include_graphics(file.path(path, "nowcast/results", region, "latest/rate_spread_plot.png"))
+knitr::include_graphics(here::here(file.path(path, "nowcast/results", region, "latest/rate_spread_plot.png")))
 
 ```
 

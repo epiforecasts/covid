@@ -33,7 +33,8 @@ Imports:
     magrittr,
     furrr, 
     future, 
-    data.table
+    data.table,
+    here
 Remotes: 
     epiforecasts/EpiNow,
     epiforecasts/NCoVUtils,
