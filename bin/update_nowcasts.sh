@@ -9,11 +9,8 @@ Rscript -e "devtools::install_all_dev_deps()"
 ## Reset the data cache
 Rscript -e "NCoVUtils::reset_cache()"
 
-## Update the global nowcast
-Rscript _posts/global/nowcast/update_nowcasts.R
-
-## Update regional nowcasts
-Rscript _posts/italy/nowcast/update_nowcasts.R
+## Update nowcasts
+Rscript utils/update_nowcasts.R
 
 ## Update all posts
 Rscript utils/update_posts.R
