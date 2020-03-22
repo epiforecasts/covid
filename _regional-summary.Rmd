@@ -2,60 +2,59 @@
 ```{r, include = FALSE}
 require(knitr)
 require(kableExtra)
+require(here)
 ```
 
 ### Summary of latest reproduction number and case count estimates
 
 ```{r, fig.height = 12, fig.width = 12, layout="l-body-outset"}
-knitr::include_graphics(file.path(path, "nowcast/summary/summary_plot.png"))
+knitr::include_graphics(here::here(file.path(path, "nowcast/summary/summary_plot.png")))
 ```
 
 <br>
-*Figure 2: Cases with date of onset on the day of report generation and the time-varying estimate of the effective reproduction number (bar = 95% credible interval). regions are ordered by the number of expected daily cases and shaded based on the expected change in daily cases. The dotted line indicates the target value of 1 for the effective reproduction no. required for control and a single case required fror elimination.*
+*Figure 4: Cases with date of onset on the day of report generation and the time-varying estimate of the effective reproduction number (bar = 95% credible interval). regions are ordered by the number of expected daily cases and shaded based on the expected change in daily cases. The dotted line indicates the target value of 1 for the effective reproduction no. required for control and a single case required fror elimination.*
 
 ### Reproduction numbers over time in the six regions with the most cases currently
 
 ```{r summarise-bigr-plot, fig.height = 9, fig.width = 12, layout="l-body-outset"}
-knitr::include_graphics(file.path(path, "nowcast/summary/high_cases_rt_plot.png"))
+knitr::include_graphics(here::here(file.path(path, "nowcast/summary/high_cases_rt_plot.png")))
 ```
 
 <br>
-*Figure 3: Time-varying estimate of the effective reproduction number (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in the regions expected to have the highest number of incident cases. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence. The dotted line indicates the target value of 1 for the effective reproduction no. required for control.*
+*Figure 5: Time-varying estimate of the effective reproduction number (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in the regions expected to have the highest number of incident cases. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence. The dotted line indicates the target value of 1 for the effective reproduction no. required for control.*
 
 ### Cases with date of onset on the day of report generation in the six regions with the most cases currently
 
 ```{r summarise-cases-plot, fig.height = 9, fig.width = 12, layout="l-body-outset"}
-knitr::include_graphics(file.path(path, "nowcast/summary/high_cases_plot.png"))
+knitr::include_graphics(here::here(file.path(path, "nowcast/summary/high_cases_plot.png")))
 ```
 
 <br>
-*Figure 4:  Cases by date of report (bars) and estimated cases by date of onset (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in the countries/regions expected to have the highest number of incident cases. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence.*
+*Figure 6:  Cases by date of report (bars) and estimated cases by date of onset (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in the countries/regions expected to have the highest number of incident cases. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence.*
 
 ### Reproduction numbers over time in all regions
 
 ```{r bigr-plot, fig.height = 24, fig.width = 24, layout="l-body-outset"}
-knitr::include_graphics(file.path(path, "nowcast/summary/rt_plot.png"))
+knitr::include_graphics(here::here(file.path(path, "nowcast/summary/rt_plot.png")))
 ```
 
 <br>
-*Figure 5: Time-varying estimate of the effective reproduction number (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in all regions. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence. The dotted line indicates the target value of 1 for the effective reproduction no. required for control.*
+*Figure 7: Time-varying estimate of the effective reproduction number (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in all regions. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence. The dotted line indicates the target value of 1 for the effective reproduction no. required for control.*
 
 
 ### Cases with date of onset on the day of report generation in all regions
 
 ```{r cases-plot, fig.height = 24, fig.width = 24, layout="l-body-outset"}
-knitr::include_graphics(file.path(path, "nowcast/summary/cases_plot.png"))
+knitr::include_graphics(here::here(file.path(path, "nowcast/summary/cases_plot.png")))
 ```
 
-*Figure 6:  Cases by date of report (bars) and estimated cases by date of onset (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in all regions. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence.*
+*Figure 8:  Cases by date of report (bars) and estimated cases by date of onset (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in all regions. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence.*
 
 ### Latest estimates summary table
 
 ```{r summary-table-1, layout="l-body-outset"}
-readRDS(file.path(path, "nowcast/summary/summary_table.rds")) %>% 
- knitr::kable(booktabs = TRUE, longtable = TRUE)  %>% 
-  kableExtra::kable_styling(latex_options = c("striped", "hold_position"),
-                full_width = TRUE)
+readRDS(here::here(file.path(path, "nowcast/summary/summary_table.rds"))) %>% 
+ knitr::kable(booktabs = TRUE, longtable = TRUE)
 ```
 
 <br>
@@ -64,7 +63,7 @@ readRDS(file.path(path, "nowcast/summary/summary_table.rds")) %>%
 
 ```{r}
 summary_tables <- 2
-summary_figures <- 3
+summary_figures <- 8
 ```
 
 ```{r,  child = "_add-region-reports.Rmd", eval = region_reports}
