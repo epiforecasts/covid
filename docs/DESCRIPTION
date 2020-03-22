@@ -26,8 +26,11 @@ Imports:
     EpiNow,
     NCoVUtils,
     dplyr,
+    tidyr,
     readr,
     stringr,
+    purrr,
+    magrittr,
     furrr, 
     future, 
     data.table
