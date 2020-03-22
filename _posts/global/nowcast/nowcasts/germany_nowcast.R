@@ -1,6 +1,6 @@
 # Get utils ---------------------------------------------------------------
 
-source("utils/rt_pipeline.R")
+source("_posts/global/nowcast/utils/rt_pipeline.R")
 
 # Read in linelist --------------------------------------------------------
 linelist <- NCoVUtils::get_international_linelist("Germany")
@@ -24,5 +24,5 @@ target_date <- as.character(max(cases$date))
 rt_pipeline(
   cases = cases,
   linelist = linelist,
-  target_folder = file.path("results/germany", target_date),
+  target_folder = "_posts/global/nowcast/results/germany",
   target_date = target_date)
