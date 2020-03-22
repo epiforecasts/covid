@@ -19,7 +19,7 @@ knitr::kable(col.names = c("", "Estimate"), booktabs = TRUE) %>%
 ```
 
 <br>
-`r paste0("*Table ",  summary_tables + 1 + index, ": Latest estimates of the number of cases by date of onset, the expected change in daily cases, the effective reproduction number, the rate of spread, the doubling time, and the adjusted R-squared of the exponential fit. Based on the last 7 days of data. The 95% credible interval is shown for each numeric estimate.*")`
+`r paste0("*Table ",  summary_tables + index, ": Latest estimates of the number of cases by date of onset, the expected change in daily cases, the effective reproduction number, the rate of spread, the doubling time, and the adjusted R-squared of the exponential fit. Based on the last 7 days of data. The 95% credible interval is shown for each numeric estimate.*")`
 
 ##### Reported and estimated cases by date of onset and time-varying reproduction number estimates
 
