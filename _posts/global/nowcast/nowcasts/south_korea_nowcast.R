@@ -1,6 +1,6 @@
 # Get utils ---------------------------------------------------------------
 
-source("utils/rt_pipeline.R")
+source("_posts/global/nowcast/utils/rt_pipeline.R")
 
 # Read in linelist --------------------------------------------------------
 message("Downloading linelist data")
@@ -39,6 +39,6 @@ target_date <- as.character(max(cases$date))
 rt_pipeline(
   cases = cases,
   linelist = linelist,
-  target_folder = file.path("results/south-korea", target_date),
+  target_folder = "_posts/global/nowcast/results/south-korea",
   target_date = target_date,
   start_rate_of_spread_est = "2020-02-03")
