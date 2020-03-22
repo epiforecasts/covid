@@ -2,7 +2,6 @@
 title: "National and Subnational estimates for Italy"
 description: |
   Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Italy.
-date: `r Sys.Date()`
 output:
   distill::distill_article:
     self_contained: false
@@ -28,8 +27,26 @@ library(rmarkdown)
 
 ## National summary
 
+```{r}
+## Control parameters for region-report
+summary_tables <- 0
+summary_figures <- 0
+index <- 1
+region <- "italy"
+path <- "_posts/global"
+show_title <- FALSE
+```
+
+```{r,  child = "../../_region-report.Rmd"}
+```
+
 
 ## Regional Breakdown
+
+### Data availability
+
+* Case counts by date, stratified by region, were constructed from daily datasets made publically available by the Dipartimento della Protezione Civile [@italydata; @NCoVUtils].
+* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to a European line-list [@kraemer2020epidemiological; @NCoVUtils].
 
 ### Expected daily cases by region
 

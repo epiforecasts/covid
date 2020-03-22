@@ -50,5 +50,4 @@ exclude:
   .Rbuildignore
   LICENSE.md
   LICENSE
-  _posts/global/analysis
   
