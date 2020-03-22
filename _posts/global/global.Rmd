@@ -26,7 +26,7 @@ library(rmarkdown)
 ### Expected daily cases by country
 
 ```{r}
-summary_table <- readRDS ("analysis/summary/summary_table.rds")
+summary_table <- readRDS ("nowcast/summary/summary_table.rds")
 ```
 
 ```{r map, fig.width = 12, fig.height = 6, layout="l-body-outset"}
@@ -44,7 +44,7 @@ summary_table %>%
 ### Summary of latest reproduction number and case count estimates
 
 ```{r, fig.height = 12, fig.width = 12, layout="l-body-outset"}
-knitr::include_graphics("analysis/summary/summary_plot.png")
+knitr::include_graphics("nowcast/summary/summary_plot.png")
 ```
 
 <br>
@@ -53,7 +53,7 @@ knitr::include_graphics("analysis/summary/summary_plot.png")
 ### Reproduction numbers over time in the six countries/regions with the most cases currently
 
 ```{r summarise-bigr-plot, fig.height = 9, fig.width = 12, layout="l-body-outset"}
-knitr::include_graphics("analysis/summary/high_cases_rt_plot.png")
+knitr::include_graphics("nowcast/summary/high_cases_rt_plot.png")
 ```
 
 <br>
@@ -62,7 +62,7 @@ knitr::include_graphics("analysis/summary/high_cases_rt_plot.png")
 ### Cases with date of onset on the day of report generation in the six countries/regions with the most cases currently
 
 ```{r summarise-cases-plot, fig.height = 9, fig.width = 12, layout="l-body-outset"}
-knitr::include_graphics("analysis/summary/high_cases_plot.png")
+knitr::include_graphics("nowcast/summary/high_cases_plot.png")
 ```
 
 <br>
@@ -71,7 +71,7 @@ knitr::include_graphics("analysis/summary/high_cases_plot.png")
 ### Reproduction numbers over time in the all countries/regions modelled
 
 ```{r bigr-plot, fig.height = 18, fig.width = 18, layout="l-body-outset"}
-knitr::include_graphics("analysis/summary/rt_plot.png")
+knitr::include_graphics("nowcast/summary/rt_plot.png")
 ```
 
 <br>
@@ -81,7 +81,7 @@ knitr::include_graphics("analysis/summary/rt_plot.png")
 ### Cases with date of onset on the day of report generation in allcountries/regions modelled
 
 ```{r cases-plot, fig.height = 18, fig.width = 18, layout="l-body-outset"}
-knitr::include_graphics("analysis/summary/cases_plot.png")
+knitr::include_graphics("nowcast/summary/cases_plot.png")
 ```
 
 *Figure 6:  Cases by date of report (bars) and estimated cases by date of onset (light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range) in all countries/regions modelled. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence.*
