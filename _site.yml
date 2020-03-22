@@ -50,4 +50,5 @@ exclude:
   .Rbuildignore
   LICENSE.md
   LICENSE
+  bin/update_nowcasts.sh
   
