@@ -2,7 +2,7 @@
 title: "National and Subnational estimates for Italy"
 description: |
   Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Italy.
-date: 03-21-2020
+date: `r Sys.Date()`
 output:
   distill::distill_article:
     self_contained: false
@@ -27,7 +27,6 @@ library(rmarkdown)
 
 
 ## National summary
-
 
 
 ## Regional Breakdown

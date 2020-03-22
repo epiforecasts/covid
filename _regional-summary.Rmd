@@ -62,22 +62,11 @@ readRDS(file.path(path, "nowcast/summary/summary_table.rds")) %>%
 *Table 2: Latest estimates of the number of cases by date of onset, the effective reproduction number, and the doubling time in each rregion. Based on the last 7 days of data. The 95\\% credible interval is shown for each numeric estimate.*
 
 
-`r if(regional_reports) '### Regional reports {.tabset .tabset-dropdown}'`
-
-
-```{r generate-region-reports, include = FALSE, eval = regional_reports}
-regions <- EpiNow::get_regions(file.path(path, "nowcast/results"))
-
-region_summaries <- 1:length(regions) %>% 
-  purrr::map(function(region_index) {
-    index <- region_index
-    region <- regions[region_index]
-    region_name <- names(regions)[region_index]
-   out <- knitr::knit_child("_region-report.Rmd", envir = environment()) 
-  })
+```{r}
+summary_tables <- 2
+summary_figures <- 3
 ```
 
-
-```{r print-region-reports, results="asis", eval = regional_reports}
-cat(paste(region_summaries, collapse = '\n'))
+```{r,  child = "../../_add-region-reports.Rmd", eval = region_reports}
 ```
+
