@@ -77,7 +77,7 @@ show_title <- FALSE
 
 ### Data availability
 
-* Case counts by date, stratified by region, were constructed from daily datasets made publically available by the  [@NCoVUtils].
+* Case counts by date, stratified by region, were downloaded from a public curated dataset [@doughty_visualisation_2020; @NCoVUtils].
 * Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to a European line-list [@kraemer2020epidemiological; @NCoVUtils].
 
 ### Limitations
