@@ -39,9 +39,7 @@ region_codes <- readRDS("nowcast/data/region_codes.rds")
 summary_table %>% 
   dplyr::rename(region  = Region) %>% 
   dplyr::left_join(region_codes, by = "region") %>% 
-  EpiNow::country_map(country = "Italy", variable = "Expected change in daily cases") +
-  ggplot2::guides(fill = ggplot2::guide_legend(title = "Expected change in daily cases",
-                                               ncol = 2))
+  EpiNow::country_map(country = "Italy", variable = "Expected change in daily cases")
 ```
 
 <br>
