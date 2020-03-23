@@ -24,6 +24,8 @@ navbar:
          href: posts/italy/index.html
        - text: "United Kingdom"
          href: posts/united-kingdom/index.html
+       - text: "United States of America"
+         href: posts/united-states/index.html
        - text: "Subnational areas of interest"
        - text: "Italy example"
          href: posts/italy-example/index.html

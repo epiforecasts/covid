@@ -42,7 +42,7 @@ map <- uk_shp %>%
   dplyr::full_join(summary_table %>% 
   dplyr::rename(region  = Region), by = "region") %>% 
   ggplot2::ggplot(ggplot2::aes(fill = `Expected change in daily cases`)) +
-  ggplot2::geom_sf(col = "white", alpha = 0.8, size = 0.2)
+  ggplot2::geom_sf(alpha = 0.8, size = 0.2)
 
 map %>% 
   EpiNow::theme_map(
