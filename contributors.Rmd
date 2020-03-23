@@ -1,14 +1,48 @@
 ---
 title: "Contributors"
 description: |
-  List of contributors
+  Project contributors
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## [Epiforecasts team](https://epiforecasts.io)
 
-Name | Contribution
-----------------------|-------------------------------------------------
-**Luke Skywalker** | Brought balance to the force
+Centre for the Mathematical Modelling of Infectious Disases, London School of Hygiene and Tropical Medicine
+
+Name | 
+----------------------|------------------
+**Sam Abbott**  |
+**Joel Hellewell**  |
+**Robin N Thompson** |
+**Nikos I Bosse** |
+**James D Munday** |
+[**Sebastian Funk** (group lead)](https://www.lshtm.ac.uk/aboutus/people/funk.sebastian) |
+
+## External Collaborators
+
+People who collected and provided data or worked on the code for the project
+
+Name | Institution
+----------------------|------------------
+**Kath Sherratt** | LSHTM
+**Emma L Doughty** | Institute of Microbiology and Infection, University of Birmingham
+**June Young Chun** | Seoul National University
+**Yung-Wai Desmond Chan** | LSHTM
+**Paul Campbell** | MSF Epicentre
+**Patrick Barks** | MSF Epicentre
+
+
+## [CMMID COVID modelling group](https://cmmid.github.io/)
+
+
+Name | 
+----------------------|------------------
+**Timothy W Russell** |
+**Christopher I Jarvis** |
+[**CMMID nCov working group**](https://cmmid.github.io/groups/ncov-group) |
+**Stefan Flasche** |
+**Adam J Kucharski** |
+**Rosalind Eggo** |
