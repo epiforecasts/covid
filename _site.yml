@@ -19,9 +19,12 @@ navbar:
       href: posts/global/index.html
     - text: "Subnational"
       menu:
-       - text: "Countries with subnational estimates and subnational areas of interest"
+       - text: "Countries with subnational estimates"
        - text: "Italy"
          href: posts/italy/index.html
+       - text: "Subnational areas of interest"
+       - text: "Italy example"
+         href: posts/italy-example/index.html
     - text: "National"
       menu:
        - text: "Countries without subnational estimates"
