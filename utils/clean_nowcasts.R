@@ -8,5 +8,5 @@ posts <- list.dirs("docs/posts", recursive = FALSE) %>%
 
 purrr::walk(posts, 
             function(post) {
-              unlink(file.path(file.path("docs/posts", post, "nowcast")))
+              unlink(file.path(file.path("docs/posts", post, "nowcast")), recursive = TRUE)
             })
