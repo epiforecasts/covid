@@ -40,6 +40,7 @@ Name | Institution
 
 Name | 
 ----------------------|------------------
+**Amy Gimma** | 
 **Timothy W Russell** |
 **Christopher I Jarvis** |
 [**CMMID nCov working group**](https://cmmid.github.io/groups/ncov-group) |
