@@ -17,13 +17,12 @@ navbar:
       href: index.html
     - text: "Global summary"
       href: posts/global/index.html
-    - text: "National estimates"
+    - text: "National/subnational estimates"
       menu:
-       - text: "National estimates with regional breakdowns"
        - text: "Italy"
          href: posts/italy/index.html
-       - text: "---"
-       - text: "National estimates without regional breakdowns"
+    - text: "National estimates"
+      menu:
        - text: "Italy example"
          href: posts/italy-example/index.html
     - text: "Methods"
