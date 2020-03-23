@@ -12,7 +12,7 @@ output:
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
-                      fig.width = 6, fig.height = 3,
+                      fig.width = 12, fig.height = 12,
                       message = FALSE,
                       warning = FALSE,
                       dpi = 320)
@@ -33,7 +33,7 @@ summary_table <- readRDS("nowcast/summary/summary_table.rds")
 
 ```{r map, fig.width = 12, fig.height = 6, layout="l-body-outset"}
 summary_table %>% 
-  dplyr::rename(country = Region) %>% 
+  dplyr::rename(country = `Country/Region`) %>% 
   dplyr::filter(!country %in% c("Hubei", "Hong Kong", "China excluding Hubei")) %>% 
   EpiNow::global_map(variable = "Expected change in daily cases")
 ```
