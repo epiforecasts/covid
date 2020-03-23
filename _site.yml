@@ -1,5 +1,5 @@
 name: "covid"
-title: "Temporal variation in transmission during the COVID-19 outbreak"
+title: "EpiForecasts"
 description: |
   Temporal variation in transmission during the COVID-19 outbreak
 base_url: https://epiforecasts.io/covid
@@ -15,7 +15,7 @@ navbar:
   right:
     - text: "About"
       href: index.html
-    - text: "Global summary"
+    - text: "Summary"
       href: posts/global/index.html
     - text: "Subnational"
       menu:
@@ -32,12 +32,14 @@ navbar:
        - text: "Countries without subnational estimates"
        - text: "Italy example"
          href: posts/italy-example/index.html
-    - text: "Methods"
-      href: methods.html
-    - text: "Contributors"
-      href: contributors.html
-    - text: "News"
-      href: news.html
+    - text: "Details"
+      menu:
+       - text: "Methods"
+         href: methods.html
+       - text: "Contributors"
+         href: contributors.html
+       - text: "News"
+         href: news.html
     - icon: fab fa-github
       href: https://github.com/epiforecasts/covid
     - icon: fa fa-rss
