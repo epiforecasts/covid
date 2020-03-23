@@ -1,0 +1,41 @@
+
+
+`r if (show_title) paste0('#### ', stringr::str_to_title(region_name))`
+
+```{r}
+library(tibble)
+library(knitr)
+library(kableExtra)
+library(here)
+```
+
+##### Summary
+
+```{r}
+readRDS(here::here(file.path(path, "nowcast/results", region, "latest/region_summary.rds"))) %>% 
+knitr::kable(col.names = c("", "Estimate"), booktabs = TRUE) %>% 
+    kableExtra::kable_styling(latex_options = c("striped", "hold_position"),
+                full_width = TRUE)
+```
+
+<br>
+`r paste0("*Table ",  summary_tables + index, ": Latest estimates of the number of cases by date of onset, the expected change in daily cases, the effective reproduction number, the rate of spread, the doubling time, and the adjusted R-squared of the exponential fit. Based on the last 7 days of data. The 95% credible interval is shown for each numeric estimate.*")`
+
+##### Reported and estimated cases by date of onset and time-varying reproduction number estimates
+
+```{r, fig.height = 6, fig.width = 12}
+knitr::include_graphics(here::here(file.path(path, "nowcast/results", region, "latest/rt_cases_plot.png")))
+```
+<br>
+`r paste0("*Figure ",  summary_figures + 1 + (index - 1) * 2, ": A.) Cases by date of report (bars) and estimated cases by date of onset. B.) Time-varying estimate of the effective reproduction number. Light grey ribbon = 95% credible interval. Dark grey ribbon = the interquartile range. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence.*")`
+
+##### Time-varying rate of spread and doubling time
+
+```{r, fig.height = 6, fig.width = 12}
+knitr::include_graphics(here::here(file.path(path, "nowcast/results", region, "latest/rate_spread_plot.png")))
+
+```
+
+<br>
+`r paste0("*Figure ",  summary_figures + 2 + (index - 1) * 2, ": A.) Time-varying estimate of the rate of spread, B.) Time-varying estimate of the doubling time in days (note that when the rate of spread is negative the doubling time is assumed to be infinite), C.) The adjusted R-squared estimates indicating the goodness of fit of the exponential regression model (with values closer to 1 indicating a better fit). Light grey ribbon = 95% credible interval; dark grey ribbon = the interquartile range. Confidence in the estimated values is indicated by shading with reduced shading corresponding to reduced confidence.*")`
+
