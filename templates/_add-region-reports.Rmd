@@ -10,7 +10,7 @@ region_summaries <- 1:length(regions) %>%
     index <- region_index
     region <- regions[region_index]
     region_name <- names(regions)[region_index]
-    out <- knitr::knit_child(here::here("_region-report.Rmd"), envir = environment()) 
+    out <- knitr::knit_child(here::here("templates/_region-report.Rmd"), envir = environment()) 
   })
 ```
 

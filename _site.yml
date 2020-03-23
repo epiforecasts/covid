@@ -43,4 +43,4 @@ collections:
 output: distill::distill_article
 exclude: ["Dockerfile", "Description", "README.md", 
          ".Rbuildignore", "LICENSE", "LICENSE.md",
-         "bin", "utils", "*/nowcast"]
+         "bin", "utils"]
