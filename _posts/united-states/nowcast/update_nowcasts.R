@@ -45,8 +45,7 @@ EpiNow::regional_rt_pipeline(
   linelist = linelist, 
   regional_delay = FALSE,
   target_folder = "_posts/united-states/nowcast/results", 
-  merge_onsets = FALSE,
-  samples = 10
+  merge_onsets = FALSE
 )
 
 

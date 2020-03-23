@@ -22,18 +22,84 @@ navbar:
        - text: "Countries with subnational estimates"
        - text: "Italy"
          href: posts/italy/index.html
+       - text: "Germany"
+         href: posts/germany/index.html
        - text: "United Kingdom"
          href: posts/united-kingdom/index.html
        - text: "United States of America"
          href: posts/united-states/index.html
        - text: "Subnational areas of interest"
-       - text: "Italy example"
-         href: posts/italy-example/index.html
+       - text: "China excluding Hubei"
+         href: posts/china-excluding-hubei/index.html
+       - text: "Hong Kong"
+         href: posts/hong-kong/index.html
+       - text: "Hubei"
+         href: posts/hubei/index.html
     - text: "National"
       menu:
        - text: "Countries without subnational estimates"
-       - text: "Italy example"
-         href: posts/italy-example/index.html
+       - text: "Australia"
+         href: posts/australia/index.html
+       - text: "Austria"
+         href: posts/austria/index.html
+       - text: "Bahrain"
+         href: posts/bahrain/index.hmtl
+       - text: "Belgium"
+         href: posts/belgium/index.html
+       - text: "Brazil"
+         href: posts/brazil/index.html
+       - text: "Canada"
+         href: posts/canada/index.html
+       - text: "Czechia"
+         href: posts/czechia/index.html
+       - text: "Denmark"
+         href: posts/denmark/index.html
+       - text: "Estonia"
+         href: posts/estonia/index.html
+       - text: "Finland"
+         href: posts/finland/index.html
+       - text: "France"
+         href: posts/france/index.html
+       - text: "Greece"
+         href: posts/greece/index.html
+       - text: "Iceland"
+         href: posts/iceland/index.html
+       - text: "Ireland"
+         href: posts/ireland/index.html
+       - text: "Israel"
+         href: posts/israel/index.html
+       - text: "Japan"
+         href: posts/japan/index.html
+       - text: "Malaysia"
+         href: posts/malaysia/index.html
+       - text: "Netherlands"
+         href: posts/netherlands/index.html
+       - text: "Norway"
+         href: posts/norway/index.html
+       - text: "Pakistan"
+         href: posts/pakistan/index.html
+       - text: "Philippines"
+         href: posts/phillippines/index.html
+       - text: "Poland"
+         href: posts/poland/index.html
+       - text: "Portugal"
+         href: posts/portugal/index.html
+       - text: "Qatar"
+         href: posts/qatar/index.html
+       - text: "Romania"
+         href: posts/romania/index.html
+       - text: "Singapore"
+         href: posts/Singapore/index.html
+       - text: "Slovenia"
+         href: posts/slovenia/index.html
+       - text: "South Korea"
+         href: posts/south-korea/index.html
+       - text: "Spain"
+         href: posts/spain/index.html
+       - text: "Sweden"
+         href: posts/sweden/index.html
+       - text: "Switzerland"
+         href: posts/switzerland/index.html
     - text: "Details"
       menu:
        - text: "Methods"
