@@ -21,9 +21,7 @@ summary_table <- readRDS("_posts/global/nowcast/summary/summary_table.rds")
 summary_table %>% 
   dplyr::rename(country = Region) %>% 
   dplyr::filter(!country %in% c("Hubei", "Hong Kong", "China excluding Hubei")) %>% 
-  EpiNow::global_map(variable = "Expected change in daily cases") +
-  ggplot2::guides(fill = ggplot2::guide_legend(title = "Expected change in daily cases",
-                                               ncol = 2))
+  EpiNow::global_map(variable = "Expected change in daily cases")
 ```
 <br>
 *Map of the expected change in daily cases*

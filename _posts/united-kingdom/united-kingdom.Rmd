@@ -1,7 +1,7 @@
 ---
-title: "National and Subnational estimates for Italy"
+title: "National and Subnational estimates for the United Kingdom"
 description: |
-  Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Italy.
+  Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United Kingdom.
 bibliography: library.bib
 output:
   distill::distill_article:
@@ -17,6 +17,8 @@ output:
 knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
                       message = FALSE,
                       warning = FALSE,
+                      fig.height = 8, 
+                      fig.width = 12,
                       dpi = 320)
 ```
 
@@ -32,14 +34,23 @@ library(here)
 
 ```{r}
 summary_table <- readRDS ("nowcast/summary/summary_table.rds")
-region_codes <- readRDS("nowcast/data/region_codes.rds")
+uk_shp <- readRDS("nowcast/data/uk_shp.rds")
 ```
 
 ```{r map, fig.width = 6, fig.height = 6, layout="l-body-outset"}
-summary_table %>% 
-  dplyr::rename(region  = Region) %>% 
-  dplyr::left_join(region_codes, by = "region") %>% 
-  EpiNow::country_map(country = "Italy", variable = "Expected change in daily cases")
+map <- uk_shp %>% 
+  dplyr::full_join(summary_table %>% 
+  dplyr::rename(region  = Region), by = "region") %>% 
+  ggplot2::ggplot(ggplot2::aes(fill = `Expected change in daily cases`)) +
+  ggplot2::geom_sf(col = "white", alpha = 0.8, size = 0.2)
+
+map %>% 
+  EpiNow::theme_map(
+    continuous = FALSE,
+    variable_label = "Expected change in daily cases",
+    viridis_palette = "cividis",
+    fill_labels = ggplot2::waiver()
+  )
 ```
 
 <br>
@@ -53,7 +64,7 @@ summary_tables <- 0
 summary_figures <- 1
 title_depth <- 3
 index <- 1
-region <- "italy"
+region <- "united-kingdom"
 path <- "_posts/global"
 show_title <- FALSE
 ```
@@ -66,17 +77,17 @@ show_title <- FALSE
 
 ### Data availability
 
-* Case counts by date, stratified by region, were constructed from daily datasets made publically available by the Dipartimento della Protezione Civile [@italydata; @NCoVUtils].
+* Case counts by date, stratified by region, were constructed from daily datasets made publically available by the  [@NCoVUtils].
 * Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to a European line-list [@kraemer2020epidemiological; @NCoVUtils].
 
 ### Limitations
 
-* Line-list data to inform a Italy specific estimate of the reporting delay was not available. This means that we could also not account for any regional differences.
+* Line-list data to inform a United Kingdom specific estimate of the reporting delay was not available. This means that we could also not account for any regional differences.
 
 
 ```{r} 
 region_reports <- TRUE
-path <- "_posts/italy"
+path <- "_posts/united-kingdom"
 ```
 
 ```{r,  child = "../../templates/_regional-summary.Rmd"}
