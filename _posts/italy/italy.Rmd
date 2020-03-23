@@ -53,6 +53,7 @@ summary_table %>%
 ## Control parameters for region-report
 summary_tables <- 0
 summary_figures <- 1
+title_depth <- 3
 index <- 1
 region <- "italy"
 path <- "_posts/global"

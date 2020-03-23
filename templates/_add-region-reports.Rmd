@@ -4,6 +4,7 @@
 ```{r generate-region-reports, include = FALSE}
 regions <- EpiNow::get_regions(here::here(file.path(path, "nowcast/results")))
 show_title <- TRUE
+title_depth <- 4
 
 region_summaries <- 1:length(regions) %>% 
   purrr::map(function(region_index) {
