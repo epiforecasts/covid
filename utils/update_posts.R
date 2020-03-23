@@ -8,6 +8,6 @@ posts <- list.dirs("_posts", recursive = FALSE) %>%
 
 purrr::walk(posts, 
             function(post) {
-              file.copy("library.bib", file.path("_posts", post))
+              file.copy("library.bib", file.path("_posts", post), overwrite = TRUE)
               rmarkdown::render(file.path("_posts", post, paste0(post, ".Rmd")))
             })
