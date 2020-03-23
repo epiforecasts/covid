@@ -17,12 +17,14 @@ navbar:
       href: index.html
     - text: "Global summary"
       href: posts/global/index.html
-    - text: "National/subnational estimates"
+    - text: "Subnational"
       menu:
+       - text: "Countries with subnational estimates and subnational areas of interest"
        - text: "Italy"
          href: posts/italy/index.html
-    - text: "National estimates"
+    - text: "National"
       menu:
+       - text: "Countries without subnational estimates"
        - text: "Italy example"
          href: posts/italy-example/index.html
     - text: "Methods"
