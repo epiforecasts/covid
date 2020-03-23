@@ -34,7 +34,9 @@ Imports:
     furrr, 
     future, 
     data.table,
-    here
+    here,
+    rnaturalearth,
+    sf
 Remotes: 
     epiforecasts/EpiNow,
     epiforecasts/NCoVUtils,
