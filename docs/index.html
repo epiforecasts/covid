@@ -1298,10 +1298,13 @@ Subnational
 <div class="nav-dropdown-content">
 <span class="nav-dropdown-header">Countries with subnational estimates</span>
 <a href="posts/italy/index.html">Italy</a>
+<a href="posts/germany/index.html">Germany</a>
 <a href="posts/united-kingdom/index.html">United Kingdom</a>
 <a href="posts/united-states/index.html">United States of America</a>
 <span class="nav-dropdown-header">Subnational areas of interest</span>
-<a href="posts/italy-example/index.html">Italy example</a>
+<a href="posts/china-excluding-hubei/index.html">China excluding Hubei</a>
+<a href="posts/hong-kong/index.html">Hong Kong</a>
+<a href="posts/hubei/index.html">Hubei</a>
 </div>
 </div>
 <div class="nav-dropdown">
@@ -1312,7 +1315,37 @@ National
 </button>
 <div class="nav-dropdown-content">
 <span class="nav-dropdown-header">Countries without subnational estimates</span>
-<a href="posts/italy-example/index.html">Italy example</a>
+<a href="posts/australia/index.html">Australia</a>
+<a href="posts/austria/index.html">Austria</a>
+<a href="posts/bahrain/index.hmtl">Bahrain</a>
+<a href="posts/belgium/index.html">Belgium</a>
+<a href="posts/brazil/index.html">Brazil</a>
+<a href="posts/canada/index.html">Canada</a>
+<a href="posts/czechia/index.html">Czechia</a>
+<a href="posts/denmark/index.html">Denmark</a>
+<a href="posts/estonia/index.html">Estonia</a>
+<a href="posts/finland/index.html">Finland</a>
+<a href="posts/france/index.html">France</a>
+<a href="posts/greece/index.html">Greece</a>
+<a href="posts/iceland/index.html">Iceland</a>
+<a href="posts/ireland/index.html">Ireland</a>
+<a href="posts/israel/index.html">Israel</a>
+<a href="posts/japan/index.html">Japan</a>
+<a href="posts/malaysia/index.html">Malaysia</a>
+<a href="posts/netherlands/index.html">Netherlands</a>
+<a href="posts/norway/index.html">Norway</a>
+<a href="posts/pakistan/index.html">Pakistan</a>
+<a href="posts/phillippines/index.html">Philippines</a>
+<a href="posts/poland/index.html">Poland</a>
+<a href="posts/portugal/index.html">Portugal</a>
+<a href="posts/qatar/index.html">Qatar</a>
+<a href="posts/romania/index.html">Romania</a>
+<a href="posts/Singapore/index.html">Singapore</a>
+<a href="posts/slovenia/index.html">Slovenia</a>
+<a href="posts/south-korea/index.html">South Korea</a>
+<a href="posts/spain/index.html">Spain</a>
+<a href="posts/sweden/index.html">Sweden</a>
+<a href="posts/switzerland/index.html">Switzerland</a>
 </div>
 </div>
 <div class="nav-dropdown">
@@ -1349,24 +1382,24 @@ Details
 
 <div class="d-article">
 <h2 id="aim">Aim</h2>
-<p>To identify changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally.</p>
+<p>To identify changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak at the national and subnational level whilst accounting for potential biases due to delays in case reporting.</p>
 <h2 id="summary">Summary</h2>
 <ul>
 <li>Case counts by date, stratified by import status (local or imported), were constructed using the World Health Organization (WHO) situation reports and partial line-lists for each region <span class="citation" data-cites="WorldHealthOrganization:sitrep EricBrown2020 kraemer2020epidemiological NCoVUtils">(World Health Organization, <a href="#ref-WorldHealthOrganization:sitrep">n.d.</a>; Brown <a href="#ref-EricBrown2020">2020</a>; Xu et al., <a href="#ref-kraemer2020epidemiological">n.d.</a>; Abbott et al. <a href="#ref-NCoVUtils">2020</a>)</span>.</li>
-<li>Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to partial line-lists from each region considered where available.</li>
-<li>Censoring of cases was adjusted for by assuming that the number of cases is drawn from a binomial distribution.</li>
+<li>• Case onset dates were estimated by transforming case confirmation dates using an onset-to-confirmation delay distribution that is fitted to partial line-lists from each region considered (regions without linelists use the delay distribution from the nearest comparable region).</li>
+<li>The right-censoring of cases that have had symptom onset but are yet to be confirmed was adjusted for by upscaling the numbers of case onsets close to the present date. This assumes that cases that have already onset are drawn from a binomial distribution with the probability of onset having occurred by a certain point given by the onset-to-confirmation distribution.</li>
 <li>Time-varying effective reproduction estimates were made with a 7-day sliding window using <em>EpiEstim</em> <span class="citation" data-cites="EpiEstim THOMPSON2019100356">(Cori <a href="#ref-EpiEstim">2019</a>; Thompson et al. <a href="#ref-THOMPSON2019100356">2019</a>)</span> adjusted for imported cases and assuming an uncertain serial interval with a mean of 4.7 days (95% CrI: 3.7, 6.0) and a standard deviation of 2.9 days (95% CrI: 1.9, 4.9) <span class="citation" data-cites="Nishiura2020.02.03.20019497">(Nishiura, Linton, and Akhmetzhanov <a href="#ref-Nishiura2020.02.03.20019497">2020</a>)</span>.</li>
 <li>Time-varying estimates of the doubling time were made with a 7-day sliding window by iteratively fitting an exponential regression model.</li>
 </ul>
 <h2 id="limitations">Limitations</h2>
 <ul>
-<li>All data used are at a national/regional level taken from WHO situation reports; diagnostic capabilities and testing protocols may vary in different parts of each country/region, adding uncertainty to the reported numbers. The true number of infections reflect in a given number of confirmed cases probably varies substantially geographically.</li>
-<li>The estimated onset dates are based on available data for the delay from symptom onset to confirmation, which mostly stems from the early days of the outbreak. These data may not be representative of the underlying delay distribution.</li>
-<li>The estimate of not-yet-confirmed cases to scale up recent numbers is uncertain and relies on the observed delays to confirmation to remain constant over the course of the outbreak.</li>
-<li>Trends identified using our approach are robust to under-reporting assuming it is constant but absolute values may be biased by reporting rates. Pronounced changes in reporting rates may also impact the trends identified.</li>
-<li>The reporting delay could not be estimated from line-list data for all regions. Region specific details are given in the individual regional reports.</li>
-<li>Data on imported cases were only partically available, and even where available may not be fully complete. This may bias estimates upwards when overall case counts are low.</li>
-<li>As our estimates are made at the date of symptom onset any changes in the time-varying parameters will be delayed by the incubation period.</li>
+<li>All data used are at a national/regional level taken from WHO situation reports; diagnostic capabilities and testing protocols may vary in different parts of each country/region, adding uncertainty to the reported numbers. The true number of infections reflected in a given number of confirmed cases will vary substantially geographically.</li>
+<li>Estimated onset dates are derived using available data for the delay from symptom onset to confirmation, in many regions this data is only available during the beginning the outbreak. This early outbreak data may not be representative of the underlying delay distribution, which may also change over the course of the outbreak.</li>
+<li>The estimate of cases that have onset but are not yet confirmed, used to scale up recent confirmed case numbers, is uncertain and relies on the observed delays to confirmation remaining constant over the course of the outbreak.</li>
+<li>Trends identified using our approach are robust to under-reporting assuming that the level of reporting remains consistent over time, however absolute values may be biased by reporting rates. Pronounced changes in reporting rates may also impact the trends identified.</li>
+<li>Some regions did not have sufficient data available to estimate the reporting delay, in this case the reporting delay for the nearest comparable region was used. This introduces bias into the results if the true reporting delay differs from that which is assumed. The details of the data used in each region are listed in the methods.</li>
+<li>In many regions, data on imported cases were only partially available and often incomplete. This may bias reproduction number estimates upwards when overall case counts are low.</li>
+<li>Since our estimates are made at the date of symptom onset, the time until changes in the time-varying reproduction number are reflected in our estimates will be delayed by the incubation period (around 4-5 days on average).</li>
 </ul>
 <div id="refs" class="references">
 <div id="ref-NCoVUtils">

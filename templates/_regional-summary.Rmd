@@ -1,5 +1,11 @@
 
 ```{r, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
+                      fig.width = 12, fig.height = 12,
+                      message = FALSE,
+                      warning = FALSE,
+                      dpi = 320)
+
 require(knitr)
 require(kableExtra)
 require(here)

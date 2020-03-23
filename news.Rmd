@@ -2,8 +2,19 @@
 title: "News"
 description: |
   Updates and changes
+output:
+  distill::distill_article:
+    self_contained: true
+    toc: true
+    toc_depth: 2
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+
+## 2020-03-23
+
+* New website to display results
+* Regional breakdowns added for Germany, United Kingdom, and the United States of America

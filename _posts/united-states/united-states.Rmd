@@ -43,7 +43,7 @@ source("nowcast/utils/map_us.R")
 
 
 summary_table <- summary_table %>% 
-  dplyr::left_join(region_codes, by = c("Region" = "region"))
+  dplyr::left_join(region_codes, by = c("State" = "region"))
 ```
 
 ```{r map, fig.width = 12, fig.height = 6, layout="l-body-outset"}
