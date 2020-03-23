@@ -82,7 +82,7 @@ show_title <- FALSE
 
 ### Data availability
 
-* Case counts by date, stratified by region [@NCoVUtils].
+* Case counts by date, stratified by region, were downloaded from a publically available source  curated by Johns Hopkins University [@jhu_2019_2020; @NCoVUtils].
 * Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to a publically available line-list of cases reported in the United States [@kraemer2020epidemiological; @NCoVUtils].
 
 ### Limitations

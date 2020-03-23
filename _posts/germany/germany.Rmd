@@ -95,12 +95,12 @@ show_title <- FALSE
 
 ### Data availability
 
-* Case counts by date, stratified by region [@NCoVUtils].
-* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to a publically available line-list of cases reported in the United States [@kraemer2020epidemiological; @NCoVUtils].
+* Case counts by date, stratified by region were downloaded from a publically available source [@NCoVUtils; @gehrcke_covid-19_2020].
+* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to a publically available line-list of cases reported in Germany [@kraemer2020epidemiological; @NCoVUtils].
 
 ### Limitations
 
-* Line-list data to inform a State specific estimates of the reporting delay were not available. 
+* Line-list data to inform a region specific estimate of the reporting delay were not available. 
 
 
 ```{r} 
