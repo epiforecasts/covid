@@ -41,7 +41,7 @@ path <- "_posts/global"
 show_title <- FALSE
 ```
 
-```{r,  child = "../../_region-report.Rmd"}
+```{r,  child = "../../templates/_region-report.Rmd"}
 ```
 
 
@@ -77,6 +77,6 @@ region_reports <- TRUE
 path <- "_posts/italy"
 ```
 
-```{r,  child = "../../_regional-summary.Rmd"}
+```{r,  child = "../../templates/_regional-summary.Rmd"}
 ```
 

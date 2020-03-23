@@ -2,8 +2,28 @@
 title: "Temporal variation in transmission during the COVID-19 outbreak"
 site: distill::distill_website
 bibliography: library.bib   
+output:
+  distill::distill_article:
+    self_contained: true
 ---
 
+## Expected daily cases by country
+
+```{r}
+summary_table <- readRDS("_posts/global/nowcast/summary/summary_table.rds")
+```
+
+```{r map, fig.width = 12, fig.height = 6, layout="l-body-outset"}
+summary_table %>% 
+  dplyr::rename(country = Region) %>% 
+  dplyr::filter(!country %in% c("Hubei", "Hong Kong", "China excluding Hubei")) %>% 
+  EpiNow::global_map(variable = "Expected change in daily cases") +
+  ggplot2::guides(fill = ggplot2::guide_legend(title = "Expected change in daily cases",
+                                               ncol = 2))
+```
+
+<br>
+*Figure 1: Map of the expected change in daily cases*
 
 ## Aim
 
