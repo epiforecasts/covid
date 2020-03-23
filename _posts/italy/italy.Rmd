@@ -28,13 +28,31 @@ library(rmarkdown)
 library(here)
 ```
 
+## Expected daily cases by region
+
+```{r}
+summary_table <- readRDS ("nowcast/summary/summary_table.rds")
+region_codes <- readRDS("nowcast/data/region_codes.rds")
+```
+
+```{r map, fig.width = 6, fig.height = 6, layout="l-body-outset"}
+summary_table %>% 
+  dplyr::rename(region  = Region) %>% 
+  dplyr::left_join(region_codes, by = "region") %>% 
+  EpiNow::country_map(country = "Italy", variable = "Expected change in daily cases") +
+  ggplot2::guides(fill = ggplot2::guide_legend(title = "Expected change in daily cases",
+                                               ncol = 2))
+```
+
+<br>
+*Figure 1: Map of the expected change in daily cases*
 
 ## National summary
 
 ```{r}
 ## Control parameters for region-report
 summary_tables <- 0
-summary_figures <- 0
+summary_figures <- 1
 index <- 1
 region <- "italy"
 path <- "_posts/global"
@@ -52,24 +70,9 @@ show_title <- FALSE
 * Case counts by date, stratified by region, were constructed from daily datasets made publically available by the Dipartimento della Protezione Civile [@italydata; @NCoVUtils].
 * Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to a European line-list [@kraemer2020epidemiological; @NCoVUtils].
 
-### Expected daily cases by region
+### Limitations
 
-```{r}
-summary_table <- readRDS ("nowcast/summary/summary_table.rds")
-region_codes <- readRDS("nowcast/data/region_codes.rds")
-```
-
-```{r map, fig.width = 6, fig.height = 6, layout="l-body-outset"}
-summary_table %>% 
-  dplyr::rename(region  = Region) %>% 
-  dplyr::left_join(region_codes, by = "region") %>% 
-  EpiNow::country_map(country = "Italy", variable = "Expected change in daily cases") +
-  ggplot2::guides(fill = ggplot2::guide_legend(title = "Expected change in daily cases",
-                                               ncol = 2))
-```
-
-<br>
-*Figure 3: Map of the expected change in daily cases*
+* Line-list data to inform a Italy specific estimate of the reporting delay was not available. This means that we could also not account for any regional differences.
 
 
 ```{r} 
