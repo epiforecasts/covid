@@ -2,8 +2,7 @@ require(stringr)
 require(magrittr)
 require(purrr)
 
-nowcasts <- list.dirs("_posts", recursive = FALSE) %>% 
-  stringr::str_remove("_posts/")
+nowcasts <- c("global", "united-kingdom", "germany", "italy", "united-states")
 
 
 purrr::walk(nowcasts, 
