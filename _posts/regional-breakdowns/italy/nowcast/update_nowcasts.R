@@ -4,8 +4,10 @@ require(EpiNow)
 require(NCoVUtils)
 require(furrr)
 require(future)
+require(readr)
 require(dplyr)
 require(tidyr)
+require(purrr)
 require(magrittr)
 
 
@@ -14,17 +16,25 @@ require(magrittr)
 
 NCoVUtils::reset_cache()
 
-cases <- NCoVUtils::get_ecdc_cases() %>% 
-  NCoVUtils::format_ecdc_data()
+cases <- NCoVUtils::get_italy_regional_cases()
+
+
+region_codes <- cases %>% 
+  dplyr::select(region, region_code) %>% 
+  unique() %>% 
+  dplyr::mutate(region_code = as.numeric(region_code))
+
+saveRDS(region_codes, "_posts/regional-breakdowns/italy/nowcast/data/region_codes.rds")
 
 cases <- cases %>% 
   dplyr::rename(local = cases) %>% 
+  dplyr::select(-region_code) %>% 
   dplyr::mutate(imported = 0) %>% 
   tidyr::gather(key = "import_status", value = "cases", local, imported)
 
 # Get linelist ------------------------------------------------------------
 
-linelist <-  NCoVUtils::get_international_linelist()
+linelist <- NCoVUtils::get_international_linelist()
 
 # Set up cores -----------------------------------------------------
 
@@ -37,15 +47,16 @@ data.table::setDTthreads(threads = 1)
 EpiNow::regional_rt_pipeline(
   cases = cases, 
   linelist = linelist, 
-  target_folder = "_posts/global/nowcast/national",
-  case_limit = 100,
-  samples = 10
+  regional_delay = FALSE,
+  target_folder = "_posts/regional-breakdowns/italy/nowcast/regional", 
+  merge_onsets = FALSE
 )
 
 
 # Summarise results -------------------------------------------------------
 
-EpiNow::regional_summary(results_dir = "_posts/global/nowcast/national", 
-                         summary_dir = "_posts/global/nowcast/national-summary",
+
+EpiNow::regional_summary(results_dir = "_posts/regional-breakdowns/italy/nowcast/regional", 
+                         summary_dir = "_posts/regional-breakdowns/italy/nowcast/regional-summary",
                          target_date = "latest",
-                         region_scale = "Country/Region")
+                         region_scale = "Region")
