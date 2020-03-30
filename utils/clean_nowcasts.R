@@ -2,11 +2,11 @@ require(stringr)
 require(magrittr)
 require(purrr)
 
-posts <- list.dirs("docs/posts", recursive = FALSE) %>% 
-  stringr::str_remove("docs/posts/")
+posts <- c(list.dirs("docs/posts", recursive = FALSE), 
+           list.dirs("docs/posts/regional-breakdowns", recursive = FALSE))
 
 
 purrr::walk(posts, 
             function(post) {
-              unlink(file.path(file.path("docs/posts", post, "nowcast")), recursive = TRUE)
+              unlink(file.path(file.path(post, "nowcast")), recursive = TRUE)
             })
