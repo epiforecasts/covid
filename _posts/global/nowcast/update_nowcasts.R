@@ -1,13 +1,30 @@
 
 # Packages -----------------------------------------------------------------
-require(stringr)
+require(EpiNow)
+require(NCoVUtils)
 require(furrr)
 require(future)
-require(data.table)
+require(dplyr)
+require(tidyr)
+require(magrittr)
 
-# Find nowcast files ------------------------------------------------------
-files <- list.files("_posts/global/nowcast/nowcasts")
-nowcasts <- files[stringr::str_detect(files, "nowcast.R")]
+
+
+# Get cases ---------------------------------------------------------------
+
+NCoVUtils::reset_cache()
+
+cases <- NCoVUtils::get_ecdc_cases() %>% 
+  NCoVUtils::format_ecdc_data()
+
+cases <- cases %>% 
+  dplyr::rename(local = cases) %>% 
+  dplyr::mutate(imported = 0) %>% 
+  tidyr::gather(key = "import_status", value = "cases", local, imported)
+
+# Get linelist ------------------------------------------------------------
+
+linelist <-  NCoVUtils::get_international_linelist()
 
 # Set up cores -----------------------------------------------------
 
@@ -15,23 +32,20 @@ future::plan("multiprocess", workers = future::availableCores())
 
 data.table::setDTthreads(threads = 1)
 
-# Run nowcasts ------------------------------------------------------------
+# Run pipeline ----------------------------------------------------
 
-message("Nowcasts found: ", paste(nowcasts, sep = " ", collapse = " "))
-
-casts <- furrr::future_map(nowcasts, function(nowcast) {
-  message("Running nowcast for: ", nowcast)
-
-  source(file.path("_posts/global/nowcast/nowcasts", nowcast))
-
-  return(NULL)
-}, .progress = TRUE)
+EpiNow::regional_rt_pipeline(
+  cases = cases, 
+  linelist = linelist, 
+  target_folder = "_posts/global/nowcast/national",
+  case_limit = 100,
+  samples = 10
+)
 
 
 # Summarise results -------------------------------------------------------
 
-
-EpiNow::regional_summary(results_dir = "_posts/global/nowcast/results", 
-                         summary_dir = "_posts/global/nowcast/summary",
+EpiNow::regional_summary(results_dir = "_posts/global/nowcast/national", 
+                         summary_dir = "_posts/global/nowcast/national-summary",
                          target_date = "latest",
                          region_scale = "Country/Region")
