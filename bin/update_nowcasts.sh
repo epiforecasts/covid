@@ -12,6 +12,9 @@ Rscript -e "NCoVUtils::reset_cache()"
 ## Update nowcasts
 Rscript utils/update_nowcasts.R
 
+## Update national reports
+Rscript utils/update_report_templates.R
+
 ## Update all posts
 Rscript utils/update_posts.R
 
