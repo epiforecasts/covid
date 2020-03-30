@@ -1,1 +1,0 @@
-rt_pipeline <- purrr::partial(EpiNow::rt_pipeline)
