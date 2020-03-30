@@ -14,18 +14,16 @@ require(magrittr)
 
 NCoVUtils::reset_cache()
 
-cases <- get_us_regional_cases() %>% 
-  dplyr::rename(region = state)
+cases <- get_germany_regional_cases()
 
 
 region_codes <- cases %>% 
-  dplyr::select(region, region_code = fips) %>% 
+  dplyr::select(region, region_code) %>% 
   unique()
 
-saveRDS(region_codes, "_posts/united-states/nowcast/data/region_codes.rds")
+saveRDS(region_codes, "_posts/regional-breakdowns/germany/nowcast/data/region_codes.rds")
 
 cases <- cases %>% 
-  dplyr::select(date, region, cases) %>% 
   dplyr::rename(local = cases) %>% 
   dplyr::mutate(imported = 0) %>% 
   tidyr::gather(key = "import_status", value = "cases", local, imported)
@@ -45,35 +43,16 @@ data.table::setDTthreads(threads = 1)
 EpiNow::regional_rt_pipeline(
   cases = cases, 
   linelist = linelist, 
-  target_folder = "_posts/regional-breakdowns/united-states/nowcast/regional", 
-  samples = 10
+  target_folder = "_posts/regional-breakdowns/germany/nowcast/regional"
 )
 
 
 # Summarise results -------------------------------------------------------
 
-EpiNow::regional_summary(results_dir = "_posts/regional-breakdowns/united-states/nowcast/regional", 
-                         summary_dir = "_posts/regional-breakdowns/united-states/nowcast/regional-summary",
+EpiNow::regional_summary(results_dir = "_posts/regional-breakdowns/germany/nowcast/regional", 
+                         summary_dir = "_posts/regional-breakdowns/germany/nowcast/regional-summary",
                          target_date = "latest",
-                         region_scale = "State")
+                         region_scale = "Region")
 
 
 
-# Run a national nowcast --------------------------------------------------
-
-cases <- cases %>% 
-  dplyr::group_by(import_status, date) %>% 
-  dplyr::summarise(cases = sum(cases, na.rm = TRUE)) %>% 
-  dplyr::ungroup()
-
-
-## Set the target date
-target_date <- as.character(max(cases$date))
-
-## Run and save analysis pipeline
-rt_pipeline(
-  cases = cases,
-  linelist = linelist,
-  target_folder = "_posts/global/nowcast/results",
-  target_date = target_date, samples = 10)
-  
