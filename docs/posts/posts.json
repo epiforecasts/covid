@@ -7,8 +7,8 @@
     "date": "2020-03-30",
     "categories": [],
     "preview": "posts/global/distill-preview.png",
-    "last_modified": "2020-03-30T20:38:24+00:00",
-    "input_file": "global.utf8.md",
+    "last_modified": "2020-03-30T21:30:47+00:00",
+    "input_file": {},
     "preview_width": 7680,
     "preview_height": 3840
   },
@@ -20,8 +20,8 @@
     "date": "2020-03-30",
     "categories": [],
     "preview": "posts/regional-breakdowns/germany/distill-preview.png",
-    "last_modified": "2020-03-30T20:58:40+00:00",
-    "input_file": "germany.utf8.md",
+    "last_modified": "2020-03-30T21:30:44+00:00",
+    "input_file": {},
     "preview_width": 3840,
     "preview_height": 3840
   },
@@ -33,8 +33,8 @@
     "date": "2020-03-30",
     "categories": [],
     "preview": "posts/regional-breakdowns/italy/distill-preview.png",
-    "last_modified": "2020-03-30T21:08:30+00:00",
-    "input_file": "italy.utf8.md",
+    "last_modified": "2020-03-30T21:30:45+00:00",
+    "input_file": {},
     "preview_width": 3840,
     "preview_height": 3840
   },
@@ -46,9 +46,22 @@
     "date": "2020-03-30",
     "categories": [],
     "preview": "posts/regional-breakdowns/united-kingdom/distill-preview.png",
-    "last_modified": "2020-03-30T21:12:52+00:00",
-    "input_file": "united-kingdom.utf8.md",
+    "last_modified": "2020-03-30T21:30:43+00:00",
+    "input_file": {},
     "preview_width": 3840,
+    "preview_height": 3840
+  },
+  {
+    "path": "posts/regional-breakdowns/united-states/",
+    "title": "National and Subnational estimates for the United States of America",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United States of America.",
+    "author": [],
+    "date": "2020-03-30",
+    "categories": [],
+    "preview": "posts/regional-breakdowns/united-states/distill-preview.png",
+    "last_modified": "2020-03-30T21:34:13+00:00",
+    "input_file": {},
+    "preview_width": 7680,
     "preview_height": 3840
   }
 ]
