@@ -7,7 +7,7 @@ output:
   distill::distill_article:
     self_contained: true
     toc: true
-    toc_depth: 3
+    toc_depth: 2
 ---
 
 
@@ -33,8 +33,9 @@ library(here)
 ## Expected daily cases by region
 
 ```{r}
-summary_table <- readRDS ("nowcast/summary/summary_table.rds")
+summary_table <- readRDS ("nowcast/regional-summary/summary_table.rds")
 uk_shp <- readRDS("nowcast/data/uk_shp.rds")
+latest_date <- readRDS("nowcast/regional-summary/latest_date.rds")
 ```
 
 ```{r map, fig.width = 6, fig.height = 6, layout="l-body-outset"}
@@ -54,7 +55,8 @@ map %>%
 ```
 
 <br>
-*Figure 1: Map of the expected change in daily cases*
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated cases with a date of infection on the ", latest_date , ") in the United Kingdom, stratified by region, can be summarised by whether cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively.*")`
+
 
 ## National summary
 
@@ -64,12 +66,12 @@ summary_tables <- 0
 summary_figures <- 1
 title_depth <- 3
 index <- 1
-region <- "united-kingdom"
-path <- "_posts/global"
+region <- "United Kingdom"
+region_path <- "_posts/global/nowcast/national"
 show_title <- FALSE
 ```
 
-```{r,  child = "../../templates/_region-report.Rmd"}
+```{r,  child = system.file("templates/_region-report.Rmd", package = "EpiNow")}
 ```
 
 
@@ -78,7 +80,7 @@ show_title <- FALSE
 ### Data availability
 
 * Case counts by date, stratified by region, were downloaded from a public curated dataset [@doughty_visualisation_2020; @NCoVUtils].
-* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to a European line-list [@kraemer2020epidemiological; @NCoVUtils].
+* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to an international line-list [@kraemer2020epidemiological; @NCoVUtils].
 
 ### Limitations
 
@@ -86,10 +88,10 @@ show_title <- FALSE
 
 
 ```{r} 
-region_reports <- TRUE
-path <- "_posts/united-kingdom"
+region_path <- NULL
+summary_path <- "_posts/regional-breakdowns/united-kingdom/nowcast/regional-summary"
 ```
 
-```{r,  child = "../../templates/_regional-summary.Rmd"}
+```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow")}
 ```
 
