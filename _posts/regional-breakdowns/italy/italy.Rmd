@@ -7,7 +7,7 @@ output:
   distill::distill_article:
     self_contained: true
     toc: true
-    toc_depth: 3
+    toc_depth: 2
 ---
 
 
@@ -33,8 +33,9 @@ library(here)
 ## Expected daily cases by region
 
 ```{r}
-summary_table <- readRDS ("nowcast/summary/summary_table.rds")
+summary_table <- readRDS ("nowcast/regional-summary/summary_table.rds")
 region_codes <- readRDS("nowcast/data/region_codes.rds")
+latest_date <- readRDS("nowcast/regional-summary/latest_date.rds")
 ```
 
 ```{r map, fig.width = 6, fig.height = 6, layout="l-body-outset"}
@@ -45,7 +46,9 @@ summary_table %>%
 ```
 
 <br>
-*Figure 1: Map of the expected change in daily cases*
+<br>
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated cases with a date of infection on the ", latest_date , ") in Italy, stratified by region, can be summarised by whether cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively.*")`
+
 
 ## National summary
 
@@ -55,12 +58,12 @@ summary_tables <- 0
 summary_figures <- 1
 title_depth <- 3
 index <- 1
-region <- "italy"
-path <- "_posts/global"
+region <- "Italy"
+region_path <- "_posts/global/nowcast/national"
 show_title <- FALSE
 ```
 
-```{r,  child = "../../templates/_region-report.Rmd"}
+```{r,  child = system.file("templates/_region-report.Rmd", package = "EpiNow")}
 ```
 
 
@@ -69,18 +72,17 @@ show_title <- FALSE
 ### Data availability
 
 * Case counts by date, stratified by region, were constructed from daily datasets made publically available by the Dipartimento della Protezione Civile [@italydata; @NCoVUtils].
-* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to a European line-list [@kraemer2020epidemiological; @NCoVUtils].
+* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to an international line-list [@kraemer2020epidemiological; @NCoVUtils].
 
 ### Limitations
 
 * Line-list data to inform a Italy specific estimate of the reporting delay was not available. This means that we could also not account for any regional differences.
 
-
 ```{r} 
-region_reports <- TRUE
-path <- "_posts/italy"
+region_path <- NULL
+summary_path <- "_posts/regional-breakdowns/italy/nowcast/regional-summary"
 ```
 
-```{r,  child = "../../templates/_regional-summary.Rmd"}
+```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow")}
 ```
 
