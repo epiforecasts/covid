@@ -2,7 +2,9 @@ require(stringr)
 require(magrittr)
 require(purrr)
 
-nowcasts <- c("global", "united-kingdom", "germany", "italy", "united-states")
+nowcasts <- c("global", "regional-breakdowns/united-kingdom", 
+              "regional-breakdowns/germany", "regional-breakdowns/italy", 
+              "regional-breakdowns/united-states")
 
 
 purrr::walk(nowcasts, 
