@@ -3,7 +3,8 @@ require(magrittr)
 require(purrr)
 
 posts <- c(list.dirs("docs/posts", recursive = FALSE), 
-           list.dirs("docs/posts/regional-breakdowns", recursive = FALSE))
+           list.dirs("docs/posts/regional-breakdowns", recursive = FALSE),
+           list.dirs("_posts/national-summary", recursive = FALSE))
 
 
 purrr::walk(posts, 
