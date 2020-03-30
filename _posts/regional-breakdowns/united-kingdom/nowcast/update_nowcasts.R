@@ -14,8 +14,7 @@ require(magrittr)
 
 NCoVUtils::reset_cache()
 
-cases <- NCoVUtils::get_ecdc_cases() %>% 
-  NCoVUtils::format_ecdc_data()
+cases <- NCoVUtils::get_uk_nhs_region_cases()
 
 cases <- cases %>% 
   dplyr::rename(local = cases) %>% 
@@ -37,15 +36,15 @@ data.table::setDTthreads(threads = 1)
 EpiNow::regional_rt_pipeline(
   cases = cases, 
   linelist = linelist, 
-  target_folder = "_posts/global/nowcast/national",
-  case_limit = 100,
-  samples = 10
+  regional_delay = FALSE,
+  target_folder = "_posts/regional-breakdowns/united-kingdom/nowcast/regional", 
+  merge_onsets = FALSE
 )
 
 
 # Summarise results -------------------------------------------------------
 
-EpiNow::regional_summary(results_dir = "_posts/global/nowcast/national", 
-                         summary_dir = "_posts/global/nowcast/national-summary",
+EpiNow::regional_summary(results_dir = "_posts/regional-breakdowns/united-kingdom/nowcast/regional", 
+                         summary_dir = "_posts/regional-breakdowns/united-kingdom/nowcast/regional-summary",
                          target_date = "latest",
-                         region_scale = "Country/Region")
+                         region_scale = "Region")
