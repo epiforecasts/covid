@@ -17,6 +17,9 @@ navbar:
       href: index.html
     - text: "Summary"
       href: posts/global/index.html
+    - text: "National"
+      menu:
+        - text: "Countries without subnational estimates"
     - text: "Subnational"
       menu:
        - text: "Countries with subnational estimates"
@@ -28,16 +31,6 @@ navbar:
          href: posts/united-kingdom/index.html
        - text: "United States of America"
          href: posts/united-states/index.html
-       - text: "Subnational areas of interest"
-       - text: "China excluding Hubei"
-         href: posts/china-excluding-hubei/index.html
-       - text: "Hong Kong"
-         href: posts/hong-kong/index.html
-       - text: "Hubei"
-         href: posts/hubei/index.html
-    - text: "National"
-      menu:
-       - text: "Countries without subnational estimates"
     - text: "Details"
       menu:
        - text: "Methods"
