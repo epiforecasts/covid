@@ -1,582 +1,118 @@
     - text: 'National' 
-    menu: 
-        - text: 'Africa' 
-         menu: 
-          - text: 'Algeria' 
-            href: posts/national/algeria/index.html
-         - text: 'Morocco' 
-            href: posts/national/morocco/index.html
-         - text: 'South Africa' 
-            href: posts/national/south-africa/index.html
-       - text: 'Americas' 
-         menu: 
-          - text: 'Argentina' 
-            href: posts/national/argentina/index.html
-         - text: 'Brazil' 
-            href: posts/national/brazil/index.html
-         - text: 'Canada' 
-            href: posts/national/canada/index.html
-         - text: 'Chile' 
-            href: posts/national/chile/index.html
-         - text: 'Dominican Republic' 
-            href: posts/national/dominican-republic/index.html
-         - text: 'Ecuador' 
-            href: posts/national/ecuador/index.html
-         - text: 'Mexico' 
-            href: posts/national/mexico/index.html
-         - text: 'Panama' 
-            href: posts/national/panama/index.html
-         - text: 'Peru' 
-            href: posts/national/peru/index.html
-         - text: 'United States of America' 
-            href: posts/national/united-states-of-america/index.html
-       - text: 'Oceania' 
-         menu: 
-          - text: 'Australia' 
-            href: posts/national/australia/index.html
-       - text: 'Europe' 
-         menu: 
-          - text: 'Austria' 
-            href: posts/national/austria/index.html
-         - text: 'Belgium' 
-            href: posts/national/belgium/index.html
-         - text: 'Czech Republic' 
-            href: posts/national/czech-republic/index.html
-         - text: 'Denmark' 
-            href: posts/national/denmark/index.html
-         - text: 'Estonia' 
-            href: posts/national/estonia/index.html
-         - text: 'Finland' 
-            href: posts/national/finland/index.html
-         - text: 'France' 
-            href: posts/national/france/index.html
-         - text: 'Germany' 
-            href: posts/national/germany/index.html
-         - text: 'Greece' 
-            href: posts/national/greece/index.html
-         - text: 'Ireland' 
-            href: posts/national/ireland/index.html
-         - text: 'Italy' 
-            href: posts/national/italy/index.html
-         - text: 'Luxembourg' 
-            href: posts/national/luxembourg/index.html
-         - text: 'Netherlands' 
-            href: posts/national/netherlands/index.html
-         - text: 'Norway' 
-            href: posts/national/norway/index.html
-         - text: 'Poland' 
-            href: posts/national/poland/index.html
-         - text: 'Portugal' 
-            href: posts/national/portugal/index.html
-         - text: 'Romania' 
-            href: posts/national/romania/index.html
-         - text: 'Russia' 
-            href: posts/national/russia/index.html
-         - text: 'Serbia' 
-            href: posts/national/serbia/index.html
-         - text: 'Spain' 
-            href: posts/national/spain/index.html
-         - text: 'Sweden' 
-            href: posts/national/sweden/index.html
-         - text: 'Switzerland' 
-            href: posts/national/switzerland/index.html
-         - text: 'Ukraine' 
-            href: posts/national/ukraine/index.html
-         - text: 'United Kingdom' 
-            href: posts/national/united-kingdom/index.html
-       - text: 'Asia' 
-         menu: 
-          - text: 'China' 
-            href: posts/national/china/index.html
-         - text: 'India' 
-            href: posts/national/india/index.html
-         - text: 'Indonesia' 
-            href: posts/national/indonesia/index.html
-         - text: 'Iran' 
-            href: posts/national/iran/index.html
-         - text: 'Israel' 
-            href: posts/national/israel/index.html
-         - text: 'Japan' 
-            href: posts/national/japan/index.html
-         - text: 'Malaysia' 
-            href: posts/national/malaysia/index.html
-         - text: 'Pakistan' 
-            href: posts/national/pakistan/index.html
-         - text: 'Philippines' 
-            href: posts/national/philippines/index.html
-         - text: 'Qatar' 
-            href: posts/national/qatar/index.html
-         - text: 'Saudi Arabia' 
-            href: posts/national/saudi-arabia/index.html
-         - text: 'Singapore' 
-            href: posts/national/singapore/index.html
-         - text: 'South Korea' 
-            href: posts/national/south-korea/index.html
-         - text: 'Thailand' 
-            href: posts/national/thailand/index.html
-         - text: 'Turkey' 
-            href: posts/national/turkey/index.html
+      menu:
        - text: 'Africa' 
-         menu: 
+         menu:
           - text: 'Algeria' 
             href: posts/national/algeria/index.html
-         - text: 'Morocco' 
+          - text: 'Morocco' 
             href: posts/national/morocco/index.html
-         - text: 'South Africa' 
+          - text: 'South Africa' 
             href: posts/national/south-africa/index.html
        - text: 'Americas' 
-         menu: 
+         menu:
           - text: 'Argentina' 
             href: posts/national/argentina/index.html
-         - text: 'Brazil' 
+          - text: 'Brazil' 
             href: posts/national/brazil/index.html
-         - text: 'Canada' 
+          - text: 'Canada' 
             href: posts/national/canada/index.html
-         - text: 'Chile' 
+          - text: 'Chile' 
             href: posts/national/chile/index.html
-         - text: 'Dominican Republic' 
+          - text: 'Dominican Republic' 
             href: posts/national/dominican-republic/index.html
-         - text: 'Ecuador' 
+          - text: 'Ecuador' 
             href: posts/national/ecuador/index.html
-         - text: 'Mexico' 
+          - text: 'Mexico' 
             href: posts/national/mexico/index.html
-         - text: 'Panama' 
+          - text: 'Panama' 
             href: posts/national/panama/index.html
-         - text: 'Peru' 
+          - text: 'Peru' 
             href: posts/national/peru/index.html
-         - text: 'United States of America' 
+          - text: 'United States of America' 
             href: posts/national/united-states-of-america/index.html
        - text: 'Oceania' 
-         menu: 
+         menu:
           - text: 'Australia' 
             href: posts/national/australia/index.html
        - text: 'Europe' 
-         menu: 
+         menu:
           - text: 'Austria' 
             href: posts/national/austria/index.html
-         - text: 'Belgium' 
+          - text: 'Belgium' 
             href: posts/national/belgium/index.html
-         - text: 'Czech Republic' 
+          - text: 'Czech Republic' 
             href: posts/national/czech-republic/index.html
-         - text: 'Denmark' 
+          - text: 'Denmark' 
             href: posts/national/denmark/index.html
-         - text: 'Estonia' 
+          - text: 'Estonia' 
             href: posts/national/estonia/index.html
-         - text: 'Finland' 
+          - text: 'Finland' 
             href: posts/national/finland/index.html
-         - text: 'France' 
+          - text: 'France' 
             href: posts/national/france/index.html
-         - text: 'Germany' 
+          - text: 'Germany' 
             href: posts/national/germany/index.html
-         - text: 'Greece' 
+          - text: 'Greece' 
             href: posts/national/greece/index.html
-         - text: 'Ireland' 
+          - text: 'Ireland' 
             href: posts/national/ireland/index.html
-         - text: 'Italy' 
+          - text: 'Italy' 
             href: posts/national/italy/index.html
-         - text: 'Luxembourg' 
+          - text: 'Luxembourg' 
             href: posts/national/luxembourg/index.html
-         - text: 'Netherlands' 
+          - text: 'Netherlands' 
             href: posts/national/netherlands/index.html
-         - text: 'Norway' 
+          - text: 'Norway' 
             href: posts/national/norway/index.html
-         - text: 'Poland' 
+          - text: 'Poland' 
             href: posts/national/poland/index.html
-         - text: 'Portugal' 
+          - text: 'Portugal' 
             href: posts/national/portugal/index.html
-         - text: 'Romania' 
+          - text: 'Romania' 
             href: posts/national/romania/index.html
-         - text: 'Russia' 
+          - text: 'Russia' 
             href: posts/national/russia/index.html
-         - text: 'Serbia' 
+          - text: 'Serbia' 
             href: posts/national/serbia/index.html
-         - text: 'Spain' 
+          - text: 'Spain' 
             href: posts/national/spain/index.html
-         - text: 'Sweden' 
+          - text: 'Sweden' 
             href: posts/national/sweden/index.html
-         - text: 'Switzerland' 
+          - text: 'Switzerland' 
             href: posts/national/switzerland/index.html
-         - text: 'Ukraine' 
+          - text: 'Ukraine' 
             href: posts/national/ukraine/index.html
-         - text: 'United Kingdom' 
+          - text: 'United Kingdom' 
             href: posts/national/united-kingdom/index.html
        - text: 'Asia' 
-         menu: 
+         menu:
           - text: 'China' 
             href: posts/national/china/index.html
-         - text: 'India' 
+          - text: 'India' 
             href: posts/national/india/index.html
-         - text: 'Indonesia' 
+          - text: 'Indonesia' 
             href: posts/national/indonesia/index.html
-         - text: 'Iran' 
+          - text: 'Iran' 
             href: posts/national/iran/index.html
-         - text: 'Israel' 
+          - text: 'Israel' 
             href: posts/national/israel/index.html
-         - text: 'Japan' 
+          - text: 'Japan' 
             href: posts/national/japan/index.html
-         - text: 'Malaysia' 
+          - text: 'Malaysia' 
             href: posts/national/malaysia/index.html
-         - text: 'Pakistan' 
+          - text: 'Pakistan' 
             href: posts/national/pakistan/index.html
-         - text: 'Philippines' 
+          - text: 'Philippines' 
             href: posts/national/philippines/index.html
-         - text: 'Qatar' 
+          - text: 'Qatar' 
             href: posts/national/qatar/index.html
-         - text: 'Saudi Arabia' 
+          - text: 'Saudi Arabia' 
             href: posts/national/saudi-arabia/index.html
-         - text: 'Singapore' 
+          - text: 'Singapore' 
             href: posts/national/singapore/index.html
-         - text: 'South Korea' 
+          - text: 'South Korea' 
             href: posts/national/south-korea/index.html
-         - text: 'Thailand' 
+          - text: 'Thailand' 
             href: posts/national/thailand/index.html
-         - text: 'Turkey' 
-            href: posts/national/turkey/index.html
-       - text: 'Africa' 
-         menu: 
-          - text: 'Algeria' 
-            href: posts/national/algeria/index.html
-         - text: 'Morocco' 
-            href: posts/national/morocco/index.html
-         - text: 'South Africa' 
-            href: posts/national/south-africa/index.html
-       - text: 'Americas' 
-         menu: 
-          - text: 'Argentina' 
-            href: posts/national/argentina/index.html
-         - text: 'Brazil' 
-            href: posts/national/brazil/index.html
-         - text: 'Canada' 
-            href: posts/national/canada/index.html
-         - text: 'Chile' 
-            href: posts/national/chile/index.html
-         - text: 'Dominican Republic' 
-            href: posts/national/dominican-republic/index.html
-         - text: 'Ecuador' 
-            href: posts/national/ecuador/index.html
-         - text: 'Mexico' 
-            href: posts/national/mexico/index.html
-         - text: 'Panama' 
-            href: posts/national/panama/index.html
-         - text: 'Peru' 
-            href: posts/national/peru/index.html
-         - text: 'United States of America' 
-            href: posts/national/united-states-of-america/index.html
-       - text: 'Oceania' 
-         menu: 
-          - text: 'Australia' 
-            href: posts/national/australia/index.html
-       - text: 'Europe' 
-         menu: 
-          - text: 'Austria' 
-            href: posts/national/austria/index.html
-         - text: 'Belgium' 
-            href: posts/national/belgium/index.html
-         - text: 'Czech Republic' 
-            href: posts/national/czech-republic/index.html
-         - text: 'Denmark' 
-            href: posts/national/denmark/index.html
-         - text: 'Estonia' 
-            href: posts/national/estonia/index.html
-         - text: 'Finland' 
-            href: posts/national/finland/index.html
-         - text: 'France' 
-            href: posts/national/france/index.html
-         - text: 'Germany' 
-            href: posts/national/germany/index.html
-         - text: 'Greece' 
-            href: posts/national/greece/index.html
-         - text: 'Ireland' 
-            href: posts/national/ireland/index.html
-         - text: 'Italy' 
-            href: posts/national/italy/index.html
-         - text: 'Luxembourg' 
-            href: posts/national/luxembourg/index.html
-         - text: 'Netherlands' 
-            href: posts/national/netherlands/index.html
-         - text: 'Norway' 
-            href: posts/national/norway/index.html
-         - text: 'Poland' 
-            href: posts/national/poland/index.html
-         - text: 'Portugal' 
-            href: posts/national/portugal/index.html
-         - text: 'Romania' 
-            href: posts/national/romania/index.html
-         - text: 'Russia' 
-            href: posts/national/russia/index.html
-         - text: 'Serbia' 
-            href: posts/national/serbia/index.html
-         - text: 'Spain' 
-            href: posts/national/spain/index.html
-         - text: 'Sweden' 
-            href: posts/national/sweden/index.html
-         - text: 'Switzerland' 
-            href: posts/national/switzerland/index.html
-         - text: 'Ukraine' 
-            href: posts/national/ukraine/index.html
-         - text: 'United Kingdom' 
-            href: posts/national/united-kingdom/index.html
-       - text: 'Asia' 
-         menu: 
-          - text: 'China' 
-            href: posts/national/china/index.html
-         - text: 'India' 
-            href: posts/national/india/index.html
-         - text: 'Indonesia' 
-            href: posts/national/indonesia/index.html
-         - text: 'Iran' 
-            href: posts/national/iran/index.html
-         - text: 'Israel' 
-            href: posts/national/israel/index.html
-         - text: 'Japan' 
-            href: posts/national/japan/index.html
-         - text: 'Malaysia' 
-            href: posts/national/malaysia/index.html
-         - text: 'Pakistan' 
-            href: posts/national/pakistan/index.html
-         - text: 'Philippines' 
-            href: posts/national/philippines/index.html
-         - text: 'Qatar' 
-            href: posts/national/qatar/index.html
-         - text: 'Saudi Arabia' 
-            href: posts/national/saudi-arabia/index.html
-         - text: 'Singapore' 
-            href: posts/national/singapore/index.html
-         - text: 'South Korea' 
-            href: posts/national/south-korea/index.html
-         - text: 'Thailand' 
-            href: posts/national/thailand/index.html
-         - text: 'Turkey' 
-            href: posts/national/turkey/index.html
-       - text: 'Africa' 
-         menu: 
-          - text: 'Algeria' 
-            href: posts/national/algeria/index.html
-         - text: 'Morocco' 
-            href: posts/national/morocco/index.html
-         - text: 'South Africa' 
-            href: posts/national/south-africa/index.html
-       - text: 'Americas' 
-         menu: 
-          - text: 'Argentina' 
-            href: posts/national/argentina/index.html
-         - text: 'Brazil' 
-            href: posts/national/brazil/index.html
-         - text: 'Canada' 
-            href: posts/national/canada/index.html
-         - text: 'Chile' 
-            href: posts/national/chile/index.html
-         - text: 'Dominican Republic' 
-            href: posts/national/dominican-republic/index.html
-         - text: 'Ecuador' 
-            href: posts/national/ecuador/index.html
-         - text: 'Mexico' 
-            href: posts/national/mexico/index.html
-         - text: 'Panama' 
-            href: posts/national/panama/index.html
-         - text: 'Peru' 
-            href: posts/national/peru/index.html
-         - text: 'United States of America' 
-            href: posts/national/united-states-of-america/index.html
-       - text: 'Oceania' 
-         menu: 
-          - text: 'Australia' 
-            href: posts/national/australia/index.html
-       - text: 'Europe' 
-         menu: 
-          - text: 'Austria' 
-            href: posts/national/austria/index.html
-         - text: 'Belgium' 
-            href: posts/national/belgium/index.html
-         - text: 'Czech Republic' 
-            href: posts/national/czech-republic/index.html
-         - text: 'Denmark' 
-            href: posts/national/denmark/index.html
-         - text: 'Estonia' 
-            href: posts/national/estonia/index.html
-         - text: 'Finland' 
-            href: posts/national/finland/index.html
-         - text: 'France' 
-            href: posts/national/france/index.html
-         - text: 'Germany' 
-            href: posts/national/germany/index.html
-         - text: 'Greece' 
-            href: posts/national/greece/index.html
-         - text: 'Ireland' 
-            href: posts/national/ireland/index.html
-         - text: 'Italy' 
-            href: posts/national/italy/index.html
-         - text: 'Luxembourg' 
-            href: posts/national/luxembourg/index.html
-         - text: 'Netherlands' 
-            href: posts/national/netherlands/index.html
-         - text: 'Norway' 
-            href: posts/national/norway/index.html
-         - text: 'Poland' 
-            href: posts/national/poland/index.html
-         - text: 'Portugal' 
-            href: posts/national/portugal/index.html
-         - text: 'Romania' 
-            href: posts/national/romania/index.html
-         - text: 'Russia' 
-            href: posts/national/russia/index.html
-         - text: 'Serbia' 
-            href: posts/national/serbia/index.html
-         - text: 'Spain' 
-            href: posts/national/spain/index.html
-         - text: 'Sweden' 
-            href: posts/national/sweden/index.html
-         - text: 'Switzerland' 
-            href: posts/national/switzerland/index.html
-         - text: 'Ukraine' 
-            href: posts/national/ukraine/index.html
-         - text: 'United Kingdom' 
-            href: posts/national/united-kingdom/index.html
-       - text: 'Asia' 
-         menu: 
-          - text: 'China' 
-            href: posts/national/china/index.html
-         - text: 'India' 
-            href: posts/national/india/index.html
-         - text: 'Indonesia' 
-            href: posts/national/indonesia/index.html
-         - text: 'Iran' 
-            href: posts/national/iran/index.html
-         - text: 'Israel' 
-            href: posts/national/israel/index.html
-         - text: 'Japan' 
-            href: posts/national/japan/index.html
-         - text: 'Malaysia' 
-            href: posts/national/malaysia/index.html
-         - text: 'Pakistan' 
-            href: posts/national/pakistan/index.html
-         - text: 'Philippines' 
-            href: posts/national/philippines/index.html
-         - text: 'Qatar' 
-            href: posts/national/qatar/index.html
-         - text: 'Saudi Arabia' 
-            href: posts/national/saudi-arabia/index.html
-         - text: 'Singapore' 
-            href: posts/national/singapore/index.html
-         - text: 'South Korea' 
-            href: posts/national/south-korea/index.html
-         - text: 'Thailand' 
-            href: posts/national/thailand/index.html
-         - text: 'Turkey' 
-            href: posts/national/turkey/index.html
-       - text: 'Africa' 
-         menu: 
-          - text: 'Algeria' 
-            href: posts/national/algeria/index.html
-         - text: 'Morocco' 
-            href: posts/national/morocco/index.html
-         - text: 'South Africa' 
-            href: posts/national/south-africa/index.html
-       - text: 'Americas' 
-         menu: 
-          - text: 'Argentina' 
-            href: posts/national/argentina/index.html
-         - text: 'Brazil' 
-            href: posts/national/brazil/index.html
-         - text: 'Canada' 
-            href: posts/national/canada/index.html
-         - text: 'Chile' 
-            href: posts/national/chile/index.html
-         - text: 'Dominican Republic' 
-            href: posts/national/dominican-republic/index.html
-         - text: 'Ecuador' 
-            href: posts/national/ecuador/index.html
-         - text: 'Mexico' 
-            href: posts/national/mexico/index.html
-         - text: 'Panama' 
-            href: posts/national/panama/index.html
-         - text: 'Peru' 
-            href: posts/national/peru/index.html
-         - text: 'United States of America' 
-            href: posts/national/united-states-of-america/index.html
-       - text: 'Oceania' 
-         menu: 
-          - text: 'Australia' 
-            href: posts/national/australia/index.html
-       - text: 'Europe' 
-         menu: 
-          - text: 'Austria' 
-            href: posts/national/austria/index.html
-         - text: 'Belgium' 
-            href: posts/national/belgium/index.html
-         - text: 'Czech Republic' 
-            href: posts/national/czech-republic/index.html
-         - text: 'Denmark' 
-            href: posts/national/denmark/index.html
-         - text: 'Estonia' 
-            href: posts/national/estonia/index.html
-         - text: 'Finland' 
-            href: posts/national/finland/index.html
-         - text: 'France' 
-            href: posts/national/france/index.html
-         - text: 'Germany' 
-            href: posts/national/germany/index.html
-         - text: 'Greece' 
-            href: posts/national/greece/index.html
-         - text: 'Ireland' 
-            href: posts/national/ireland/index.html
-         - text: 'Italy' 
-            href: posts/national/italy/index.html
-         - text: 'Luxembourg' 
-            href: posts/national/luxembourg/index.html
-         - text: 'Netherlands' 
-            href: posts/national/netherlands/index.html
-         - text: 'Norway' 
-            href: posts/national/norway/index.html
-         - text: 'Poland' 
-            href: posts/national/poland/index.html
-         - text: 'Portugal' 
-            href: posts/national/portugal/index.html
-         - text: 'Romania' 
-            href: posts/national/romania/index.html
-         - text: 'Russia' 
-            href: posts/national/russia/index.html
-         - text: 'Serbia' 
-            href: posts/national/serbia/index.html
-         - text: 'Spain' 
-            href: posts/national/spain/index.html
-         - text: 'Sweden' 
-            href: posts/national/sweden/index.html
-         - text: 'Switzerland' 
-            href: posts/national/switzerland/index.html
-         - text: 'Ukraine' 
-            href: posts/national/ukraine/index.html
-         - text: 'United Kingdom' 
-            href: posts/national/united-kingdom/index.html
-       - text: 'Asia' 
-         menu: 
-          - text: 'China' 
-            href: posts/national/china/index.html
-         - text: 'India' 
-            href: posts/national/india/index.html
-         - text: 'Indonesia' 
-            href: posts/national/indonesia/index.html
-         - text: 'Iran' 
-            href: posts/national/iran/index.html
-         - text: 'Israel' 
-            href: posts/national/israel/index.html
-         - text: 'Japan' 
-            href: posts/national/japan/index.html
-         - text: 'Malaysia' 
-            href: posts/national/malaysia/index.html
-         - text: 'Pakistan' 
-            href: posts/national/pakistan/index.html
-         - text: 'Philippines' 
-            href: posts/national/philippines/index.html
-         - text: 'Qatar' 
-            href: posts/national/qatar/index.html
-         - text: 'Saudi Arabia' 
-            href: posts/national/saudi-arabia/index.html
-         - text: 'Singapore' 
-            href: posts/national/singapore/index.html
-         - text: 'South Korea' 
-            href: posts/national/south-korea/index.html
-         - text: 'Thailand' 
-            href: posts/national/thailand/index.html
-         - text: 'Turkey' 
+          - text: 'Turkey' 
             href: posts/national/turkey/index.html
