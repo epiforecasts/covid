@@ -22,7 +22,7 @@ Rscript utils/update_posts.R
 Rscript -e "rmarkdown::render_site()"
 
 ## Clean up nowcast folders
-Rscript utils/clean_nowcasts.R
+Rscript utils/clean_built_site.R
 
 ## Update the git repo with new results
 git add --all && git commit -m "Updated nowcasts" && git push
