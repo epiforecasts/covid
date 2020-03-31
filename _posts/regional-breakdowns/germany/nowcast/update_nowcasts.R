@@ -43,7 +43,8 @@ data.table::setDTthreads(threads = 1)
 EpiNow::regional_rt_pipeline(
   cases = cases, 
   linelist = linelist, 
-  target_folder = "_posts/regional-breakdowns/germany/nowcast/regional"
+  target_folder = "_posts/regional-breakdowns/germany/nowcast/regional",
+  samples = 10
 )
 
 

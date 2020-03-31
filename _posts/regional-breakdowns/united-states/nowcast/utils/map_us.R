@@ -8,7 +8,8 @@ map_us <- function(df, custom_theme) {
   regions <- rnaturalearth::ne_states("United States of America", returnclass = "sf")
   
   regions_with_data <- regions %>%
-    mutate(region_code = str_remove_all(iso_3166_2, "US-")) %>%
+    mutate(region_code = str_remove_all(code_local, "US"),
+           abc_code = str_remove_all(iso_3166_2, "US-")) %>%
     left_join(df, by = c("region_code" = "region_code"))
   
   # Map: mainland only
@@ -20,7 +21,7 @@ map_us <- function(df, custom_theme) {
   us_mainland <- custom_theme(us_mainland)
   
   # Create inset maps for non-mainland
-  us_alaska <- filter(regions_with_data, region_code == "AK")
+  us_alaska <- filter(regions_with_data, abc_code == "AK")
   us_alaska <- ggplot(us_alaska) +
     geom_sf(aes(fill = `Expected change in daily cases`)) +
     coord_sf(datum = NA, xlim = c(-179.148909, -130), ylim = c(51.214183, 71.365162))
@@ -29,7 +30,7 @@ map_us <- function(df, custom_theme) {
     theme(legend.position = "none") +
     labs(title = us_alaska$name)
   
-  us_hawaii <- filter(regions_with_data, region_code == "HI")
+  us_hawaii <- filter(regions_with_data, abc_code == "HI")
   us_hawaii <- ggplot(us_hawaii) +
     geom_sf(aes(fill = `Expected change in daily cases`)) +
     coord_sf(datum = NA, xlim = c(-160.2471, -154.8066), ylim = c(18.9117, 22.235))

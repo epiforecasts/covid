@@ -1,16 +1,19 @@
 require(stringr)
 require(magrittr)
-require(furrr)
 require(future)
+require(furrr)
 
-posts <- list.dirs("_posts", recursive = FALSE) %>% 
-  stringr::str_remove("_posts/")
+posts <- c("_posts/global" , list.dirs("_posts/regional-breakdowns", recursive = FALSE),
+           list.dirs("_posts/national-summary", recursive = FALSE))
 
 
 future::plan("multiprocess")
 
-rendered_posts <- furrr::future_map(posts, 
+rendered_output <- furrr::future_map(posts, 
             function(post) {
-              file.copy("library.bib", file.path("_posts", post), overwrite = TRUE)
-              rmarkdown::render(file.path("_posts", post, paste0(post, ".Rmd")))
+              post_name <- stringr::str_split(post, "/")[[1]] %>% 
+                dplyr::last()
+              file.copy("library.bib", file.path(post), overwrite = TRUE)
+              
+              rmarkdown::render(file.path(post, paste0(post_name, ".Rmd")), quiet = FALSE)
             }, .progress = TRUE)
