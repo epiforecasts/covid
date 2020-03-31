@@ -17,20 +17,29 @@ navbar:
       href: index.html
     - text: "Summary"
       href: posts/global/index.html
-    - text: "National"
+    - text: 'National' 
       menu:
-        - text: "Countries without subnational estimates"
+       - text: 'Africa'
+         href: reports.html#Africa
+       - text: 'Americas'
+         href: reports.html#Americas
+       - text: 'Oceania'
+         href: reports.html#Oceania
+       - text: 'Europe' 
+         href: reports.html#Europ
+       - text: 'Asia' 
+         href: reports.html#Asia
     - text: "Subnational"
       menu:
        - text: "Countries with subnational estimates"
        - text: "Italy"
-         href: posts/regional-breakdowns/italy/index.html
+         href: posts/national/italy/index.html
        - text: "Germany"
-         href: posts/regional-breakdowns/germany/index.html
+         href: posts/national/germany/index.html
        - text: "United Kingdom"
-         href: posts/regional-breakdowns/united-kingdom/index.html
+         href: posts/national/united-kingdom/index.html
        - text: "United States of America"
-         href: posts/regional-breakdowns/united-states/index.html
+         href: posts/national/united-states/index.html
     - text: "Details"
       menu:
        - text: "Methods"

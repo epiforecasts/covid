@@ -8,6 +8,9 @@ output:
     self_contained: true
     toc: true
     toc_depth: 2
+categories:
+  - "Subnational estimates"
+  - "Europe"
 ---
 
 
@@ -106,7 +109,7 @@ show_title <- FALSE
 
 ```{r} 
 region_path <- NULL
-summary_path <- "_posts/regional-breakdowns/germany/nowcast/regional-summary"
+summary_path <- "_posts/national/germany/nowcast/regional-summary"
 ```
 
 ```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow")}
