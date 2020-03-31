@@ -20,15 +20,15 @@ navbar:
     - text: 'National' 
       menu:
        - text: 'Africa'
-         href: reports.html
+         href: reports.html#Africa
        - text: 'Americas'
-         href: reports.html
+         href: reports.html#Americas
        - text: 'Oceania'
-         href: reports.html
+         href: reports.html#Oceania
        - text: 'Europe' 
-         href: reports.html
+         href: reports.html#Europ
        - text: 'Asia' 
-         href: reports.html
+         href: reports.html#Asia
     - text: "Subnational"
       menu:
        - text: "Countries with subnational estimates"
