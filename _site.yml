@@ -17,9 +17,18 @@ navbar:
       href: index.html
     - text: "Summary"
       href: posts/global/index.html
-    - text: "National"
+    - text: 'National' 
       menu:
-       - text: "Countries without subnational estimates"
+       - text: 'Africa'
+         href: reports.html
+       - text: 'Americas'
+         href: reports.html
+       - text: 'Oceania'
+         href: reports.html
+       - text: 'Europe' 
+         href: reports.html
+       - text: 'Asia' 
+         href: reports.html
     - text: "Subnational"
       menu:
        - text: "Countries with subnational estimates"

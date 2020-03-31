@@ -8,6 +8,9 @@ output:
     self_contained: true
     toc: true
     toc_depth: 2
+categories:
+  - "Subnational estimates"
+  - "Americas"
 ---
 
 
