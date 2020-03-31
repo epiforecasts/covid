@@ -1,18 +1,56 @@
 ## Packages
-library(magrittr)
-library(stringr)
-library(purrr)
+require(magrittr)
+require(stringr)
+require(purrr)
+require(tibble)
+require(dplyr)
+require(countrycode)
+require(rnaturalearth)
 
-## Get all countries that are present
-countries <- list.dirs("_posts/global/nowcast/national", recursive = FALSE) %>%
-  stringr::str_remove("_posts/global/nowcast/national/")
+
+# Countries from nowcast folders ------------------------------------------
+
+
+
+countries <- tibble::tibble(country = list.dirs("_posts/global/nowcast/national", recursive = FALSE) %>%
+                              stringr::str_remove("_posts/global/nowcast/national/")) %>% 
+  dplyr::mutate(file_name = country %>% 
+                  stringr::str_replace_all(" ", "-") %>% 
+                  stringr::str_to_lower(),
+                country_code = countrycode::countrycode(country,
+                                                        origin = "country.name",
+                                                        destination = "iso3c"))
+
+# Get shape file ----------------------------------------------------------
+
+## Country level
+world <- rnaturalearth::ne_countries(scale='medium',
+                                     returnclass = 'sf')
+
+
+# Link countries with regions ---------------------------------------------
+
+
+countries <- countries %>% 
+  dplyr::left_join(world,
+                   by = c("country_code" = "iso_a3")
+  ) %>% 
+  dplyr::select(country, file_name, region = region_un)
+
+
+
+# Remove countries with regional breakdowns -------------------------------
 
 
 ## Countries with regional breakdowns
 regional_breakdowns <- c("Italy", "United Kingdom", "United States of America", "Germany")
 
-## Drop these countries
-countries <- setdiff(countries, regional_breakdowns)
+
+countries <- countries %>% 
+  dplyr::filter(!country %in% regional_breakdowns) %>% 
+  dplyr::rowwise() %>% 
+  dplyr::group_split()
+
 
 ## Load function to generate report template
 source("utils/write_national_report.R")
