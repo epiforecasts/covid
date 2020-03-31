@@ -14,7 +14,6 @@ regional_breakdowns <- c("Italy", "United Kingdom", "United States of America", 
 ## Drop these countries
 countries <- setdiff(countries, regional_breakdowns)
 
-
 ## Load function to generate report template
 source("utils/write_national_report.R")
 

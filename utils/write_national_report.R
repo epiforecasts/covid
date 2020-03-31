@@ -64,17 +64,17 @@ show_title <- FALSE
 x <- paste(x,x2,x3)
 
 ## Remove old template and add new one
-unlink(paste0("_posts/national-summary/",save_name), recursive = TRUE, force = TRUE)
-dir.create(paste0("_posts/national-summary/",save_name), recursive = TRUE)
+unlink(paste0("_posts/national/",save_name), recursive = TRUE, force = TRUE)
+dir.create(paste0("_posts/national/",save_name), recursive = TRUE)
 
 ## Write character string as an R file to the directory
-write(x, file = paste0("_posts/national-summary/",save_name,"/", save_name, ".R"))
+write(x, file = paste0("_posts/national/",save_name,"/", save_name, ".R"))
 
 ## Knit the file into a Rmd using the comments for structure
-knitr::spin(paste0("_posts/national-summary/",save_name,"/", save_name, ".R"), knit = FALSE)
+knitr::spin(paste0("_posts/national/",save_name,"/", save_name, ".R"), knit = FALSE)
 
 ## Clean up
-file.remove(paste0("_posts/national-summary/",save_name,"/", save_name, ".R"))
+file.remove(paste0("_posts/national/",save_name,"/", save_name, ".R"))
 
 return(invisible(NULL))
 }
