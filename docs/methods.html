@@ -46,7 +46,9 @@
   <meta name="citation_reference" content="citation_title=Report 3: Transmissibility of 2019-nCoV;citation_author=Natsuki Imai;citation_author=Anne Cori;citation_author=IIaria Dorigatti;citation_author=Marc Baguellin;citation_author=Christl A Donnelly;citation_author=Steven Riley;citation_author=Neil M Ferguson"/>
   <meta name="citation_reference" content="citation_title=Improved inference of time-varying reproduction numbers during infectious disease outbreaks;citation_publication_date=2019;citation_volume=29;citation_doi=https://doi.org/10.1016/j.epidem.2019.100356;citation_issn=1755-4365;citation_author=R.N. Thompson;citation_author=J.E. Stockwin;citation_author=R.D. Gaalen;citation_author=J.A. Polonsky;citation_author=Z.N. Kamvar;citation_author=P.A. Demarsh;citation_author=E. Dahlqwis;citation_author=S. Li;citation_author=E. Miguel;citation_author=T. Jombart;citation_author=J. Lessler;citation_author=S. Cauchemez;citation_author=A. Cori"/>
   <meta name="citation_reference" content="citation_title=A practical generation-interval-based approach to inferring the strength of epidemics from their speed;citation_publication_date=2019;citation_volume=27;citation_doi=https://doi.org/10.1016/j.epidem.2018.12.002;citation_issn=1755-4365;citation_author=Sang Woo Park;citation_author=David Champredon;citation_author=Joshua S. Weitz;citation_author=Jonathan Dushoff"/>
-  <meta name="citation_reference" content="citation_title=2019-20 wuhan coronavirus outbreak: Intense surveillance is vital for preventing sustained transmission in new locations;citation_publication_date=2020;citation_author=R.N. Thompson"/>
+  <meta name="citation_reference" content="citation_title=Practical bayesian model evaluation using leave-one-out cross-validation and waic;citation_publication_date=2016;citation_doi=10.1007/s11222-016-9696-4;citation_issn=15731375;citation_author=Aki Vehtari;citation_author=Andrew Gelman;citation_author=Jonah Gabry"/>
+  <meta name="citation_reference" content="citation_title=A simple approach to measure transmissibility and forecast incidence;citation_publication_date=2018;citation_volume=22;citation_doi=https://doi.org/10.1016/j.epidem.2017.02.012;citation_issn=1755-4365;citation_author=Pierre Nouvellet;citation_author=Anne Cori;citation_author=Tini Garske;citation_author=Isobel M. Blake;citation_author=Ilaria Dorigatti;citation_author=Wes Hinsley;citation_author=Thibaut Jombart;citation_author=Harriet L. Mills;citation_author=Gemma Nedjati-Gilani;citation_author=Maria D. Van Kerkhove;citation_author=Christophe Fraser;citation_author=Christl A. Donnelly;citation_author=Neil M. Ferguson;citation_author=Steven Riley"/>
+  <meta name="citation_reference" content="citation_title=The incubation period of coronavirus disease 2019 (covid-19) from publicly reported confirmed cases: Estimation and application;citation_publication_date=2020;citation_doi=10.7326/M20-0504;citation_issn=0003-4819;citation_author=Stephen A. Lauer;citation_author=Kyra H. Grantz;citation_author=Qifang Bi;citation_author=Forrest K. Jones;citation_author=Qulu Zheng;citation_author=Hannah R. Meredith;citation_author=Andrew S. Azman;citation_author=Nicholas G. Reich;citation_author=Justin Lessler"/>
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
@@ -1290,13 +1292,13 @@
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
 <a class="logo" href="https://cmmid.github.io">
-<img src="images/cmmid_logo.png" alt="Logo"/>
+<img src="images/logo.png" alt="Logo"/>
 </a>
 <a href="index.html" class="title">Covid-19</a>
 </div>
 <div class="nav-right">
 <a href="index.html">About</a>
-<a href="posts/global/index.html">Summary</a>
+<a href="posts/global/index.html">Global</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
 National
@@ -1307,7 +1309,7 @@ National
 <a href="reports.html#Africa">Africa</a>
 <a href="reports.html#Americas">Americas</a>
 <a href="reports.html#Oceania">Oceania</a>
-<a href="reports.html#Europ">Europe</a>
+<a href="reports.html#Europe">Europe</a>
 <a href="reports.html#Asia">Asia</a>
 </div>
 </div>
@@ -1334,6 +1336,7 @@ Details
 <div class="nav-dropdown-content">
 <a href="methods.html">Methods</a>
 <a href="contributors.html">Contributors</a>
+<a href="funding.html">Funding</a>
 <a href="news.html">News</a>
 </div>
 </div>
@@ -1363,22 +1366,32 @@ Details
 <ul>
 <li><a href="#data">Data</a></li>
 <li><a href="#adjusting-for-reporting-delays">Adjusting for reporting delays</a></li>
-<li><a href="#statistical-analysis">Statistical analysis</a></li>
+<li><a href="#adjusting-for-right-censoring-of-confirmation-dates">Adjusting for right-censoring of confirmation dates</a></li>
+<li><a href="#estimating-the-time-varying-reproduction-number">Estimating the time-varying reproduction number</a></li>
+<li><a href="#estimated-change-in-daily-cases">Estimated change in daily cases</a></li>
+<li><a href="#code-and-data-availability">Code and data availability</a></li>
 </ul>
 </nav>
 <hr class="d-toc-separator"/>
 <h2 id="data">Data</h2>
-<h3 id="national-data-sources">National data sources</h3>
-<p>We used partial line-lists from each country considered that contained the date of symptom onset, date of confirmation and importation status (imported or local) of each case where available <span class="citation" data-cites="kraemer2020epidemiological NCoVUtils">(<span class="citeproc-not-found" data-reference-id="kraemer2020epidemiological"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="NCoVUtils"><strong>???</strong></span>)</span>. Sufficient data was not available for the following countries: Spain, France, Italy, Austria, Norway, Sweden, United kingdom, Switzerland, Belgium, Netherlands, Iran, Czechia, Portugal, Qatar, Greece, Slovenia, Finland, Israel&quot;, Ireland, Bahrain, Brazil, Estonia, Iceland, Philippines, Pakistan, Poland, and Romania. For these countries a line-list of european cases was used. Daily case counts by date of report were extracted from the World Health Organization (WHO) situation reports for every location considered <span class="citation" data-cites="WorldHealthOrganization:sitrep EricBrown2020 NCoVUtils">(<span class="citeproc-not-found" data-reference-id="WorldHealthOrganization:sitrep"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="EricBrown2020"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="NCoVUtils"><strong>???</strong></span>)</span>. The WHO case counts and partial line-lists (where available) were used to assemble the daily number of local and imported cases. Where the partial line-lists and case counts disagreed, it was assumed that the partial line-lists were correct, and the WHO case counts were adjusted so that the overall number of cases occurring remained the same but the number of local cases being adjusted as needed.</p>
+<h3 id="national-data">National data</h3>
+<p>We used daily counts of confirmed cases reported by the European Centre for Disease Control for all analyses conducted at the national level <span class="citation" data-cites="ecdc_data NCoVUtils">(<span class="citeproc-not-found" data-reference-id="ecdc_data"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="NCoVUtils"><strong>???</strong></span>)</span>. To estimate the delay from case onset date until confirmation date we used all cases from a publically available linelist for which onset and confirmation dates are available <span class="citation" data-cites="kraemer2020epidemiological NCoVUtils">(<span class="citeproc-not-found" data-reference-id="kraemer2020epidemiological"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="NCoVUtils"><strong>???</strong></span>)</span>.</p>
 <h3 id="subnational-data-sources">Subnational data sources</h3>
-<p>The subnational data was context specific in each country considered, see the subnational breakdowns for details.</p>
+<p>For sub-national analyses, the source of the data is reported on each page, the data are fetched from government departments or from individuals who maintain a data source if no official data are available.</p>
 <h2 id="adjusting-for-reporting-delays">Adjusting for reporting delays</h2>
-<p>Reporting delays for each country were estimated using the corresponding partial line-list of cases for regions where there were enough available case onset and case confirmation dates. Sometimes the reporting delay could not be estimated from line-list data for a region, in this case region specific details are given in the individual report. The estimated reporting delay was assumed to remain constant over time in each location. We fitted an exponential distribution to the observed delays while adjusting for right-censoring <span class="citation" data-cites="Thompson:2020bc">(<span class="citeproc-not-found" data-reference-id="Thompson:2020bc"><strong>???</strong></span>)</span> using the statistical modelling program stan <span class="citation" data-cites="rstan">(<span class="citeproc-not-found" data-reference-id="rstan"><strong>???</strong></span>)</span>. We used 1000 samples from the posterior distribution of the rate parameter for the exponential delay distribution to construct a distribution of possible onset dates for each case based on their reporting date. To prevent spuriously long reporting delays, we re-sampled delays that were greater than the maximum observed delay in the observed data.</p>
-<p>To account for censoring in recent confirmed case numbers, i.e. cases that have not yet been confirmed but will show up in the data at a later time, we randomly sampled the true number of cases (including those not yet confirmed) from a binomial distribution, where each case has independent probability <span class="math inline">\(p_i\)</span> of having been confirmed, <span class="math inline">\(i\)</span> is the number of days of the symptom onset before the report maximum observed report delay, and <span class="math inline">\(p_i\)</span> is the cumulative distribution of cases that are confirmed by day <span class="math inline">\(i\)</span> after they develop symptoms. We did not account for potential reporting biases that might occur due to changes in the growth rate of the outbreak over time.</p>
-<h2 id="statistical-analysis">Statistical analysis</h2>
-<p>We used the inferred number of cases that had symptom onset on each date to estimate the time-varying reproduction number using the <em>EpiEstim</em> R package <span class="citation" data-cites="EpiEstim R">(<span class="citeproc-not-found" data-reference-id="EpiEstim"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="R"><strong>???</strong></span>)</span>. This uses a combination of the serial interval distribution and the number of observed cases to estimate the reproduction number at each time point <span class="citation" data-cites="cori2013 wallinga2004">(<span class="citeproc-not-found" data-reference-id="cori2013"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="wallinga2004"><strong>???</strong></span>)</span>, which were then smoothed using a 7-day time window. We assumed that the serial interval was uncertain with a mean of 4.7 days (95% CrI: 3.7, 6.0) and a standard deviation of 2.9 days (95% CrI: 1.9, 4.9) <span class="citation" data-cites="Nishiura2020.02.03.20019497">(<span class="citeproc-not-found" data-reference-id="Nishiura2020.02.03.20019497"><strong>???</strong></span>)</span>. We used a common prior for the reproduction number with mean 2.6 and a standard deviation of 2 (inflated from 0.5 found in the reference) <span class="citation" data-cites="Imai:webreport3">(<span class="citeproc-not-found" data-reference-id="Imai:webreport3"><strong>???</strong></span>)</span>. Where data was available, we used <em>EpiEstim</em> to adjust for imported cases <span class="citation" data-cites="THOMPSON2019100356">(<span class="citeproc-not-found" data-reference-id="THOMPSON2019100356"><strong>???</strong></span>)</span>. The expected change in daily cases was defined using the proportion of samples with a reproduction number less than 1 (subcritical). It was assumed that if less than 5% of samples were subcritical then an increase in cases was definite, if less than 20% of samples were subcritical then an increase in cases was likely, if more than 80% of samples were subcritical then a decrease in cases was likely and if more than 95% of samples were subcritical then a decrease in cases was definite. For countries/regions with between 20% and 80% of samples being subcritical we could not make a statement about the likely change in cases (defined as unsure).</p>
-<p>We estimated the rate of spread (<span class="math inline">\(r\)</span>) using linear regression with time as the only exposure and the logarithm of cases as the outcome for the overall course of the outbreak <span class="citation" data-cites="Park2019">(<span class="citeproc-not-found" data-reference-id="Park2019"><strong>???</strong></span>)</span>. The adjusted R^2 value of the regression fit was then used to assess the goodness-of-fit. In order to account for potential changes in the rate of spread over the course of the outbreak we used a 7-day sliding window to produce time-varying estimates of the rate of spread and the corresponding adjusted R^2. The doubling time was then estimated by calculating <span class="math inline">\(\text{ln}(2) \frac{1}{r}\)</span> for each estimate of the rate of spread.</p>
-<p>We report the 95% confidence intervals for all measures using the 2.5% and 97.5% quantiles. The analysis was conducted independently for all regions and is updated daily as new data becomes available. Confidence in our estimates is shown using the proportion of data that were derived using binomial upscaling, confidence decreases as estimates get closer to now since there is more uncertainty in the upscaled number of cases. Code and results from this analysis can be found <a href="https://epiforecasts.io/EpiNow">here</a> and <a href="https://github.com/epiforecasts/covid">here</a>.</p>
+<p>To estimate the reporting delay, we fit exponential and gamma distributions to the number of days between symptom onset and case confirmation, accounting for left and right censoring occurring in the data as each date is rounded to the nearest day. We fit each model in the statistical modelling program stan <span class="citation" data-cites="rstan">(<span class="citeproc-not-found" data-reference-id="rstan"><strong>???</strong></span>)</span> and compared to goodness-of-fit of each distribution to the data by comparing the approximate leave-one-out cross-validation information criterion (LOOIC) <span class="citation" data-cites="Vehtari2016">(<span class="citeproc-not-found" data-reference-id="Vehtari2016"><strong>???</strong></span>)</span>. The distribution that gives the lowest LOOIC was selected as the most appropriate and 1000 samples of the fitted distribution parameters were then drawn (rate for the exponential distribution, and shape and scale for the gamma distribution). For a given country, we used sample <span class="math inline">\(i\)</span> from the posterior distribution of delay distribution parameters, <span class="math inline">\(\Theta_i\)</span>, to draw a sample of delays, <span class="math inline">\(d_i\)</span>, to transform each observed confirmation date, <span class="math inline">\(c_i\)</span>, into a sample onset date, <span class="math inline">\(o_i\)</span>, as follows:</p>
+<p><span class="math inline">\(o_i = c_i - d_i\)</span>, where <span class="math inline">\(d_i \sim exp(\Theta_i)\)</span> or <span class="math inline">\(gamma(\Theta_i)\)</span></p>
+<p>This resulted in 1000 date of onset samples for each confirmed case.</p>
+<h2 id="adjusting-for-right-censoring-of-confirmation-dates">Adjusting for right-censoring of confirmation dates</h2>
+<p>When moving from confirmation dates to onset dates it is important to consider that the total number of confirmed cases lags behind the number of cases that have onset, since there is a delay between onset occurring and the case being counted upon confirmation. To account for this right censoring, we used binomial upscaling to increase the estimated numbers of case onsets close to the present. After transforming the observed confirmation dates to onset dates and tallying case onset numbers by day, we then drew a sample of the number of case onsets that occurred but have not yet been confirmed. If <span class="math inline">\(t\)</span> is the present date, then the number of onsets on day <span class="math inline">\(t-k\)</span>, <span class="math inline">\(o_{t-k}\)</span> is used to draw the number of unconfirmed onsets on day <span class="math inline">\(t-k\)</span>, <span class="math inline">\(o^{*}_{t-k}\)</span> from a negative binomial distribution as follows: <span class="math inline">\(o^{*}_{t-k} \sim negbin(size = o_{t-k} + 1, prob = f(t-k, \Theta_i))\)</span></p>
+<p>where <span class="math inline">\(f(t-k, \Theta_i))\)</span> is the cumulative distribution function for the given delay distribution, it gives the proportion of onset cases from <span class="math inline">\(t-k\)</span> days ago that are expected to have been confirmed over the k days from that time until the present. The final numbers of case onsets that were used to estimate the time varying reproduction numbers for day <span class="math inline">\(t\)</span> are given by <span class="math inline">\(o_t + o^{*}_{t}\)</span>. As our approach could not fully reconstruct unreported cases without bias we truncated our results and did not use estimates from the last 4 days. Finally, the date of infection for each case was estimated to be 5 days prior to the date of symptom onset <span class="citation" data-cites="10.7326/M20-0504">(<span class="citeproc-not-found" data-reference-id="10.7326/M20-0504"><strong>???</strong></span>)</span>.</p>
+<h2 id="estimating-the-time-varying-reproduction-number">Estimating the time-varying reproduction number</h2>
+<p>We used the <em>EpiEstim</em> R package <span class="citation" data-cites="EpiEstim R">(<span class="citeproc-not-found" data-reference-id="EpiEstim"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="R"><strong>???</strong></span>)</span> to fit a model that estimated the time-varying reproduction number from the daily number of case onsets and a specified serial interval distribution <span class="citation" data-cites="cori2013 wallinga2004">(<span class="citeproc-not-found" data-reference-id="cori2013"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="wallinga2004"><strong>???</strong></span>)</span>. We used a gamma prior for the reproduction number with mean 2.6 and standard deviation 2. This is based on an estimate of the R0 from the initial stages of the outbreak in Wuhan <span class="citation" data-cites="Imai:webreport3">(<span class="citeproc-not-found" data-reference-id="Imai:webreport3"><strong>???</strong></span>)</span> but also has long tails to allow for differences in the reproduction number between countries. Where data was available, we also used <em>EpiEstim</em> to adjust for imported cases<span class="citation" data-cites="THOMPSON2019100356">(<span class="citeproc-not-found" data-reference-id="THOMPSON2019100356"><strong>???</strong></span>)</span>.</p>
+<p>We incorporated uncertainty in the serial interval distribution by providing <em>EpiEstim</em> with 1000 samples from the serial interval mean of 4.7 days (95% CrI: 3.7, 6.0) and the standard deviation of 2.9 days (95% CrI: 1.9, 4.9) from previous analysis <span class="citation" data-cites="Nishiura2020.02.03.20019497">(<span class="citeproc-not-found" data-reference-id="Nishiura2020.02.03.20019497"><strong>???</strong></span>)</span>. We evaluated window lengths from 1 to 7 days, running <em>EpiEstim</em> separately for each window choice. We therefore fitted the <em>EpiEstim</em> model 1000 times overall for each window, each time using a different combination of sampled onset dates and serial interval distribution. The optimal window was selected by first estimating the one day ahead number of cases implied by each time-varying reproduction number estimate <span class="citation" data-cites="NOUVELLET201829">(<span class="citeproc-not-found" data-reference-id="NOUVELLET201829"><strong>???</strong></span>)</span> and then scoring this nowcast against the observed number of cases using the RPS score <span class="citation" data-cites="gneiting_strictly_2007 jordan_evaluating_2019">(<span class="citeproc-not-found" data-reference-id="gneiting_strictly_2007"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="jordan_evaluating_2019"><strong>???</strong></span>)</span>. For each sample the window with the lowest median RPS score was selected. The estimates of the time-varying reproduction number at each time point were combined over all 1000 samples, using the optimal window for each sample, to give a credible interval that incorporates uncertainty from the delay from case onset to confirmation and the length of the serial interval.</p>
+<h2 id="estimated-change-in-daily-cases">Estimated change in daily cases</h2>
+<p>We defined the estimated change in daily cases to correspond to the proportion of reproduction number estimates for the current day that are below 1 (the value at which an outbreak is in decline). It was assumed that if less than 5% of samples were subcritical then an increase in cases was definite, if less than 20% of samples were subcritical then an increase in cases was likely, if more than 80% of samples were subcritical then a decrease in cases was likely and if more than 95% of samples were subcritical then a decrease in cases was definite. For countries/regions with between 20% and 80% of samples being subcritical we could not make a statement about the likely change in cases (defined as unsure). We estimated the rate of spread (<span class="math inline">\(r\)</span>) using linear regression with time as the only exposure and the logarithm of cases as the outcome for the overall course of the outbreak <span class="citation" data-cites="Park2019">(<span class="citeproc-not-found" data-reference-id="Park2019"><strong>???</strong></span>)</span>. The adjusted <span class="math inline">\(R^2\)</span> value of the regression fit was then used to assess the goodness-of-fit. In order to account for potential changes in the rate of spread over the course of the outbreak we used a 7-day sliding window to produce time-varying estimates of the rate of spread and the corresponding adjusted <span class="math inline">\(R^2\)</span>. The doubling time was then estimated by calculating <span class="math inline">\(\text{ln}(2) \frac{1}{r}\)</span> for each estimate of the rate of spread.</p>
+<h2 id="code-and-data-availability">Code and data availability</h2>
+<p>We report the median and 90% highest density intervals for all measures. The analysis was conducted independently for all regions and is updated regularly as new data becomes available. Confidence in our estimates is shown using the proportion of data that were derived using binomial upscaling, confidence decreases as estimates get closer to now since there is more uncertainty in the upscaled number of cases. Code and results from this analysis can be found <a href="https://epiforecasts.io/EpiNow">here</a> and <a href="https://github.com/epiforecasts/covid">here</a>.</p>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -1583,6 +1596,83 @@ author = "Sang Woo Park and David Champredon and Joshua S. Weitz and Jonathan Du
     language = {English},
     author = {Doughty, Emma},
     year = {2020}
+}
+
+@techreport{ecdc_data,
+    title = {Download Today's Data on the Geographic Distribution of COVID-19 Cases Worldwide.},
+    url = {www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide},
+    language = {English},
+    author = {European Centre for Disease Prevention and Control},
+    year = {2020}
+}
+
+@article{Vehtari2016,
+archivePrefix = {arXiv},
+arxivId = {arXiv:1507.04544v4},
+author = {Vehtari, Aki and Gelman, Andrew and Gabry, Jonah},
+doi = {10.1007/s11222-016-9696-4},
+eprint = {arXiv:1507.04544v4},
+issn = {15731375},
+journal = {Stat. Comput.},
+number = {September},
+pages = {1--20},
+title = {Practical Bayesian model evaluation using leave-one-out cross-validation and WAIC},
+year = {2016}
+}
+
+@article{gneiting_strictly_2007,
+	title = {Strictly Proper Scoring Rules, Prediction, and Estimation},
+	volume = {102},
+	issn = {0162-1459, 1537-274X},
+	url = {http://www.tandfonline.com/doi/abs/10.1198/016214506000001437},
+	doi = {10.1198/016214506000001437},
+	language = {en},
+	number = {477},
+	urldate = {2020-03-22},
+	journal = {Journal of the American Statistical Association},
+	author = {Gneiting, Tilmann and Raftery, Adrian E},
+	month = mar,
+	year = {2007},
+	pages = {359--378}
+}
+
+@article{NOUVELLET201829,
+title = "A simple approach to measure transmissibility and forecast incidence",
+journal = "Epidemics",
+volume = "22",
+pages = "29 - 35",
+year = "2018",
+note = "The RAPIDD Ebola Forecasting Challenge",
+issn = "1755-4365",
+doi = "https://doi.org/10.1016/j.epidem.2017.02.012",
+url = "http://www.sciencedirect.com/science/article/pii/S1755436517300245",
+author = "Pierre Nouvellet and Anne Cori and Tini Garske and Isobel M. Blake and Ilaria Dorigatti and Wes Hinsley and Thibaut Jombart and Harriet L. Mills and Gemma Nedjati-Gilani and Maria D. Van Kerkhove and Christophe Fraser and Christl A. Donnelly and Neil M. Ferguson and Steven Riley"}
+
+
+@article{jordan_evaluating_2019,
+	title = {Evaluating Probabilistic Forecasts with scoringRules},
+	volume = {90},
+	issn = {1548-7660},
+	url = {http://www.jstatsoft.org/v90/i12/},
+	doi = {10.18637/jss.v090.i12},
+	language = {en},
+	number = {12},
+	urldate = {2020-03-07},
+	journal = {Journal of Statistical Software},
+	author = {Jordan, Alexander and Krüger, Fabian and Lerch, Sebastian},
+	year = {2019}
+}
+
+@article{10.7326/M20-0504,
+    author = {Lauer, Stephen A. and Grantz, Kyra H. and Bi, Qifang and Jones, Forrest K. and Zheng, Qulu and Meredith, Hannah R. and Azman, Andrew S. and Reich, Nicholas G. and Lessler, Justin},
+    title = "The Incubation Period of Coronavirus Disease 2019 (COVID-19) From Publicly Reported Confirmed Cases: Estimation and Application",
+    journal = {Annals of Internal Medicine},
+    year = {2020},
+    month = {03},
+    issn = {0003-4819},
+    doi = {10.7326/M20-0504},
+    url = {https://doi.org/10.7326/M20-0504},
+    eprint = {https://annals.org/acp/content\_public/journal/aim/0/aime202005050-m200504.pdf},
 }
 </script>
 <!--/radix_placeholder_appendices-->
