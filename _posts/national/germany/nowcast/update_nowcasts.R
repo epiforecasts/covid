@@ -14,7 +14,14 @@ require(magrittr)
 
 NCoVUtils::reset_cache()
 
-cases <- NCoVUtils::get_uk_nhs_region_cases()
+cases <- get_germany_regional_cases()
+
+
+region_codes <- cases %>% 
+  dplyr::select(region, region_code) %>% 
+  unique()
+
+saveRDS(region_codes, "_posts/regional-breakdowns/germany/nowcast/data/region_codes.rds")
 
 cases <- cases %>% 
   dplyr::rename(local = cases) %>% 
@@ -23,7 +30,7 @@ cases <- cases %>%
 
 # Get linelist ------------------------------------------------------------
 
-linelist <-  NCoVUtils::get_international_linelist()
+linelist <- NCoVUtils::get_international_linelist()
 
 # Set up cores -----------------------------------------------------
 
@@ -36,16 +43,16 @@ data.table::setDTthreads(threads = 1)
 EpiNow::regional_rt_pipeline(
   cases = cases, 
   linelist = linelist, 
-  regional_delay = FALSE,
-  target_folder = "_posts/regional-breakdowns/united-kingdom/nowcast/regional", 
-  merge_onsets = FALSE,
-  samples = 10
+  target_folder = "_posts/regional-breakdowns/germany/nowcast/regional"
 )
 
 
 # Summarise results -------------------------------------------------------
 
-EpiNow::regional_summary(results_dir = "_posts/regional-breakdowns/united-kingdom/nowcast/regional", 
-                         summary_dir = "_posts/regional-breakdowns/united-kingdom/nowcast/regional-summary",
+EpiNow::regional_summary(results_dir = "_posts/regional-breakdowns/germany/nowcast/regional", 
+                         summary_dir = "_posts/regional-breakdowns/germany/nowcast/regional-summary",
                          target_date = "latest",
                          region_scale = "Region")
+
+
+
