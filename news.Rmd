@@ -14,7 +14,9 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-## 2020-03-23
+## 2020-03-31
 
-* New website to display results
-* Regional breakdowns added for Germany, United Kingdom, and the United States of America
+* New website to display results.
+* Regional breakdowns added for Germany, United Kingdom, and the United States of America.
+* National estimates added for all countries that have reported at least 100 cases in a day.
+* Update approach to optimise the window used when estimating the Reproduction number.
