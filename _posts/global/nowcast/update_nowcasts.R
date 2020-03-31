@@ -38,8 +38,7 @@ EpiNow::regional_rt_pipeline(
   cases = cases, 
   linelist = linelist, 
   target_folder = "_posts/global/nowcast/national",
-  case_limit = 100,
-  samples = 10
+  case_limit = 100
 )
 
 

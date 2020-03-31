@@ -1,6 +1,6 @@
 #' Write an Rmd template for a national report
 #'
-#' @param loc string of location to create Rmd file for
+#' @param country_details A single line data.frame countaining a countries details
 #'
 #' @return places an Rmd file in "_posts/national-summary/<loc>.Rmd"
 #' @importFrom knitr spin
@@ -8,11 +8,13 @@
 #'
 #' @examples
 #' 
-write_national_report <- function(loc = NULL){
+write_national_report <- function(country_details = NULL){
 
+loc <- country_details$country
+save_name <- country_details$file_name
+region <- country_details$region
 locstr <- paste0("Estimates for ", loc)
-save_name <- stringr::str_replace(loc, " ", "-")
-save_name <- stringr::str_to_lower(save_name)
+
 
 x <- paste0("#' ---
 #' title: ", '"',locstr,'"',"
@@ -24,6 +26,8 @@ x <- paste0("#' ---
 #'    self_contained: true
 #'    toc: true
 #'    toc_depth: 2
+#'categories:
+#'  - '", region, "'
 #'--- 
 #'
 #'")
@@ -64,17 +68,17 @@ show_title <- FALSE
 x <- paste(x,x2,x3)
 
 ## Remove old template and add new one
-unlink(paste0("_posts/national-summary/",save_name), recursive = TRUE, force = TRUE)
-dir.create(paste0("_posts/national-summary/",save_name), recursive = TRUE)
+unlink(paste0("_posts/national/",save_name), recursive = TRUE, force = TRUE)
+dir.create(paste0("_posts/national/",save_name), recursive = TRUE)
 
 ## Write character string as an R file to the directory
-write(x, file = paste0("_posts/national-summary/",save_name,"/", save_name, ".R"))
+write(x, file = paste0("_posts/national/",save_name,"/", save_name, ".R"))
 
 ## Knit the file into a Rmd using the comments for structure
-knitr::spin(paste0("_posts/national-summary/",save_name,"/", save_name, ".R"), knit = FALSE)
+knitr::spin(paste0("_posts/national/",save_name,"/", save_name, ".R"), knit = FALSE)
 
 ## Clean up
-file.remove(paste0("_posts/national-summary/",save_name,"/", save_name, ".R"))
+file.remove(paste0("_posts/national/",save_name,"/", save_name, ".R"))
 
 return(invisible(NULL))
 }

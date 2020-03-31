@@ -1,0 +1,90 @@
+---
+title: "National and Subnational estimates for Italy"
+description: |
+  Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Italy.
+bibliography: library.bib
+output:
+  distill::distill_article:
+    self_contained: true
+    toc: true
+    toc_depth: 2
+categories:
+  - "Subnational estimates"
+  - "Europe"
+---
+
+
+
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      fig.height = 12, 
+                      fig.width = 12,
+                      dpi = 320)
+```
+
+
+```{r load-packages, include = FALSE}
+library(EpiNow)
+library(dplyr)
+library(rmarkdown)
+library(here)
+```
+
+## Expected daily cases by region
+
+```{r}
+summary_table <- readRDS ("nowcast/regional-summary/summary_table.rds")
+region_codes <- readRDS("nowcast/data/region_codes.rds")
+latest_date <- readRDS("nowcast/regional-summary/latest_date.rds")
+```
+
+```{r map, fig.width = 6, fig.height = 6, layout="l-body-outset"}
+summary_table %>% 
+  dplyr::rename(region  = Region) %>% 
+  dplyr::left_join(region_codes, by = "region") %>% 
+  EpiNow::country_map(country = "Italy", variable = "Expected change in daily cases")
+```
+
+<br>
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated cases with a date of infection on the ", latest_date , ") in Italy, stratified by region, can be summarised by whether cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively.*")`
+
+
+## National summary
+
+```{r}
+## Control parameters for region-report
+summary_tables <- 0
+summary_figures <- 1
+title_depth <- 3
+index <- 1
+region <- "Italy"
+region_path <- "_posts/global/nowcast/national"
+show_title <- FALSE
+```
+
+```{r,  child = system.file("templates/_region-report.Rmd", package = "EpiNow")}
+```
+
+
+## Regional Breakdown
+
+### Data availability
+
+* Case counts by date, stratified by region, were constructed from daily datasets made publically available by the Dipartimento della Protezione Civile [@italydata; @NCoVUtils].
+* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to an international line-list [@kraemer2020epidemiological; @NCoVUtils].
+
+### Limitations
+
+* Line-list data to inform a Italy specific estimate of the reporting delay was not available. This means that we could also not account for any regional differences.
+
+```{r} 
+region_path <- NULL
+summary_path <- "_posts/national/italy/nowcast/regional-summary"
+```
+
+```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow")}
+```
+

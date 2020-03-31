@@ -36,6 +36,7 @@ Imports:
     data.table,
     here,
     rnaturalearth,
+    countrycode,
     sf
 Remotes: 
     epiforecasts/EpiNow,
