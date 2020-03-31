@@ -37,7 +37,8 @@ Imports:
     here,
     rnaturalearth,
     countrycode,
-    sf
+    sf,
+    distill
 Remotes: 
     epiforecasts/EpiNow,
     epiforecasts/NCoVUtils,
