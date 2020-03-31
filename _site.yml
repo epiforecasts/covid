@@ -19,7 +19,7 @@ navbar:
       href: posts/global/index.html
     - text: "National"
       menu:
-        - text: "Countries without subnational estimates"
+       - text: "Countries without subnational estimates"
     - text: "Subnational"
       menu:
        - text: "Countries with subnational estimates"
