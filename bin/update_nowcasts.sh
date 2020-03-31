@@ -12,6 +12,9 @@ Rscript -e "NCoVUtils::reset_cache()"
 ## Update nowcasts
 Rscript utils/update_nowcasts.R
 
+## Update national reports
+Rscript utils/update_report_templates.R
+
 ## Update all posts
 Rscript utils/update_posts.R
 
@@ -25,6 +28,4 @@ Rscript utils/clean_nowcasts.R
 git add --all && git commit -m "Updated nowcasts" && git push
 
 ## Deploy the website to gh-pages
-git subtree split --squash --prefix docs -b gh-pages
-git push -f origin gh-pages:gh-pages
-git branch -D gh-pages
+bash deploy_website.sh
