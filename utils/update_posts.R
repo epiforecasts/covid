@@ -3,8 +3,7 @@ require(magrittr)
 require(future)
 require(furrr)
 
-posts <- c("_posts/global" , list.dirs("_posts/regional-breakdowns", recursive = FALSE),
-           list.dirs("_posts/national-summary", recursive = FALSE))
+posts <- c("_posts/global" , list.dirs("_posts/national", recursive = FALSE))
 
 
 future::plan("multiprocess")

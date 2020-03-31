@@ -79,7 +79,7 @@ show_title <- FALSE
 
 ```{r} 
 region_path <- NULL
-summary_path <- "_posts/regional-breakdowns/italy/nowcast/regional-summary"
+summary_path <- "_posts/national/italy/nowcast/regional-summary"
 ```
 
 ```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow")}
