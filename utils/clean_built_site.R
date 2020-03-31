@@ -12,8 +12,8 @@ purrr::walk(posts,
             })
 
 
-remove_folders <- list.dirs("_posts/national") %>% 
-  stringr::str_remove("_posts/national")
+remove_folders <- list.dirs("_posts/national", recursive = FALSE) %>% 
+  stringr::str_remove("_posts/national/")
 
 ## Countries with regional breakdowns
 regional_breakdowns <- c("italy", "united-kingdom", "united-states", "germany")
@@ -23,5 +23,5 @@ remove_folders <- setdiff(remove_folders, regional_breakdowns)
 
 purrr::walk(remove_folders, 
            function(folder) {
-             unlink(file.path("_posts/national", folder), recursive = FALSE)
+             unlink(file.path("_posts/national", folder), recursive = TRUE)
            })
