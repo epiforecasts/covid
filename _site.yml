@@ -10,12 +10,12 @@ twitter:
 output_dir: "docs"
 navbar:
   logo:
-    image: images/cmmid_logo.png
+    image: images/logo.png
     href: https://cmmid.github.io
   right:
     - text: "About"
       href: index.html
-    - text: "Summary"
+    - text: "Global"
       href: posts/global/index.html
     - text: 'National' 
       menu:
