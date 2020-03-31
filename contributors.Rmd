@@ -8,7 +8,7 @@ description: |
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## [Epiforecasts team](https://epiforecasts.io)
+## [Core team](https://epiforecasts.io)
 
 Centre for the Mathematical Modelling of Infectious Disases, London School of Hygiene and Tropical Medicine
 
@@ -19,6 +19,8 @@ Name |
 **Robin N Thompson** |
 **Nikos I Bosse** |
 **James D Munday** |
+**Kath Sherratt** | 
+**Hamish Gibbs** |
 [**Sebastian Funk** (group lead)](https://www.lshtm.ac.uk/aboutus/people/funk.sebastian) |
 
 ## External Collaborators
@@ -27,7 +29,6 @@ People who collected and provided data or worked on the code for the project
 
 Name | Institution
 ----------------------|------------------
-**Kath Sherratt** | LSHTM
 **Emma L Doughty** | Institute of Microbiology and Infection, University of Birmingham
 **June Young Chun** | Seoul National University
 **Yung-Wai Desmond Chan** | LSHTM
@@ -37,6 +38,7 @@ Name | Institution
 
 ## [CMMID COVID modelling group](https://cmmid.github.io/)
 
+Centre for the Mathematical Modelling of Infectious Disases, London School of Hygiene and Tropical Medicine
 
 Name | 
 ----------------------|------------------
