@@ -39,6 +39,7 @@
   <!--/radix_placeholder_meta_tags-->
   
   <meta name="citation_reference" content="citation_title=Serial interval of novel coronavirus (2019-nCoV) infections;citation_publication_date=2020;citation_publisher=Cold Spring Harbor Laboratory Press;citation_doi=10.1101/2020.02.03.20019497;citation_author=Hiroshi Nishiura;citation_author=Natalie M Linton;citation_author=Andrei R. Akhmetzhanov"/>
+  <meta name="citation_reference" content="citation_title=The incubation period of coronavirus disease 2019 (covid-19) from publicly reported confirmed cases: Estimation and application;citation_publication_date=2020;citation_doi=10.7326/M20-0504;citation_issn=0003-4819;citation_author=Stephen A. Lauer;citation_author=Kyra H. Grantz;citation_author=Qifang Bi;citation_author=Forrest K. Jones;citation_author=Qulu Zheng;citation_author=Hannah R. Meredith;citation_author=Andrew S. Azman;citation_author=Nicholas G. Reich;citation_author=Justin Lessler"/>
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
@@ -1282,13 +1283,13 @@
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
 <a class="logo" href="https://cmmid.github.io">
-<img src="images/cmmid_logo.png" alt="Logo"/>
+<img src="images/logo.png" alt="Logo"/>
 </a>
 <a href="index.html" class="title">Covid-19</a>
 </div>
 <div class="nav-right">
 <a href="index.html">About</a>
-<a href="posts/global/index.html">Summary</a>
+<a href="posts/global/index.html">Global</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
 National
@@ -1354,40 +1355,38 @@ Details
 <p>To identify changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak at the national and subnational level whilst accounting for potential biases due to delays in case reporting.</p>
 <h2 id="summary">Summary</h2>
 <ul>
-<li>Case counts by date, stratified by import status (local or imported), were constructed using the World Health Organization (WHO) situation reports and partial line-lists for each region <span class="citation" data-cites="WorldHealthOrganization:sitrep EricBrown2020 kraemer2020epidemiological NCoVUtils">(World Health Organization, <a href="#ref-WorldHealthOrganization:sitrep">n.d.</a>; Brown <a href="#ref-EricBrown2020">2020</a>; Xu et al., <a href="#ref-kraemer2020epidemiological">n.d.</a>; Abbott et al. <a href="#ref-NCoVUtils">2020</a>)</span>.</li>
-<li>Case onset dates were estimated by transforming case confirmation dates using an onset-to-confirmation delay distribution that is fitted to partial line-lists from each region considered (regions without linelists use the delay distribution from the nearest comparable region).</li>
+<li>We used daily counts of confirmed cases reported by the European Centre for Disease Control for all analyses conducted at the national level <span class="citation" data-cites="ecdc_data NCoVUtils">(Disease Prevention and Control <a href="#ref-ecdc_data">2020</a>; Abbott et al. <a href="#ref-NCoVUtils">2020</a>)</span>.</li>
+<li>Case onset dates were estimated by transforming case confirmation dates using an onset-to-confirmation delay distribution that was derived using all cases from a publically available linelist for which onset and confirmation dates were available <span class="citation" data-cites="kraemer2020epidemiological NCoVUtils">(Xu et al., <a href="#ref-kraemer2020epidemiological">n.d.</a>; Abbott et al. <a href="#ref-NCoVUtils">2020</a>)</span>. The date of infection was then assumed using a median incubation period of 5 days <span class="citation" data-cites="10.7326/M20-0504">(Lauer et al. <a href="#ref-10.7326/M20-0504">2020</a>)</span>.</li>
 <li>The right-censoring of cases that have had symptom onset but are yet to be confirmed was adjusted for by upscaling the numbers of case onsets close to the present date. This assumes that cases that have already onset are drawn from a binomial distribution with the probability of onset having occurred by a certain point given by the onset-to-confirmation distribution.</li>
-<li>Time-varying effective reproduction estimates were made with a 7-day sliding window using <em>EpiEstim</em> <span class="citation" data-cites="EpiEstim THOMPSON2019100356">(Cori <a href="#ref-EpiEstim">2019</a>; Thompson et al. <a href="#ref-THOMPSON2019100356">2019</a>)</span> adjusted for imported cases and assuming an uncertain serial interval with a mean of 4.7 days (95% CrI: 3.7, 6.0) and a standard deviation of 2.9 days (95% CrI: 1.9, 4.9) <span class="citation" data-cites="Nishiura2020.02.03.20019497">(Nishiura, Linton, and Akhmetzhanov <a href="#ref-Nishiura2020.02.03.20019497">2020</a>)</span>.</li>
+<li>Time-varying effective reproduction estimates were made using <em>EpiEstim</em> <span class="citation" data-cites="EpiEstim THOMPSON2019100356">(Cori <a href="#ref-EpiEstim">2019</a>; Thompson et al. <a href="#ref-THOMPSON2019100356">2019</a>)</span> adjusted for imported cases, optimising the window using a one-day ahead nowcast, and assuming an uncertain serial interval with a mean of 4.7 days (95% CrI: 3.7, 6.0) and a standard deviation of 2.9 days (95% CrI: 1.9, 4.9) <span class="citation" data-cites="Nishiura2020.02.03.20019497">(Nishiura, Linton, and Akhmetzhanov <a href="#ref-Nishiura2020.02.03.20019497">2020</a>)</span>.</li>
 <li>Time-varying estimates of the doubling time were made with a 7-day sliding window by iteratively fitting an exponential regression model.</li>
 </ul>
 <h2 id="limitations">Limitations</h2>
 <ul>
-<li>All data used are at a national/regional level taken from WHO situation reports; diagnostic capabilities and testing protocols may vary in different parts of each country/region, adding uncertainty to the reported numbers. The true number of infections reflected in a given number of confirmed cases will vary substantially geographically.</li>
+<li>Diagnostic capabilities and testing protocols may vary in different parts of each country/region, adding uncertainty to the reported numbers. The true number of infections reflected in a given number of confirmed cases will vary substantially geographically.</li>
 <li>Estimated onset dates are derived using available data for the delay from symptom onset to confirmation, in many regions this data is only available during the beginning the outbreak. This early outbreak data may not be representative of the underlying delay distribution, which may also change over the course of the outbreak.</li>
 <li>The estimate of cases that have onset but are not yet confirmed, used to scale up recent confirmed case numbers, is uncertain and relies on the observed delays to confirmation remaining constant over the course of the outbreak.</li>
 <li>Trends identified using our approach are robust to under-reporting assuming that the level of reporting remains consistent over time, however absolute values may be biased by reporting rates. Pronounced changes in reporting rates may also impact the trends identified.</li>
-<li>Some regions did not have sufficient data available to estimate the reporting delay, in this case the reporting delay for the nearest comparable region was used. This introduces bias into the results if the true reporting delay differs from that which is assumed. The details of the data used in each region are listed in the methods.</li>
-<li>In many regions, data on imported cases were only partially available and often incomplete. This may bias reproduction number estimates upwards when overall case counts are low.</li>
-<li>Since our estimates are made at the date of symptom onset, the time until changes in the time-varying reproduction number are reflected in our estimates will be delayed by the incubation period (around 4-5 days on average).</li>
+<li>An international reporting delay was assumed. The report delay is likely to vary across and within countries so this assumption is likely to introduce bias.</li>
 </ul>
 <div id="refs" class="references">
 <div id="ref-NCoVUtils">
 <p>Abbott, Sam, Joel Hellewell, James D. Munday, and Sebastian Funk. 2020. “NCoVUtils: Utility Functions for the 2019-Ncov Outbreak.” <em>-</em> - (-): –. <a href="https://doi.org/10.5281/zenodo.3635417">https://doi.org/10.5281/zenodo.3635417</a>.</p>
 </div>
-<div id="ref-EricBrown2020">
-<p>Brown, Eric. 2020. <em>Data2019nCoV: Data on the Covid-19 Outbreak</em>.</p>
-</div>
 <div id="ref-EpiEstim">
 <p>Cori, Anne. 2019. <em>EpiEstim: Estimate Time Varying Reproduction Numbers from Epidemic Curves</em>. <a href="https://CRAN.R-project.org/package=EpiEstim">https://CRAN.R-project.org/package=EpiEstim</a>.</p>
+</div>
+<div id="ref-ecdc_data">
+<p>Disease Prevention, European Centre for, and Control. 2020. “Download Today’s Data on the Geographic Distribution of Covid-19 Cases Worldwide.” <a href="www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide</a>.</p>
+</div>
+<div id="ref-10.7326/M20-0504">
+<p>Lauer, Stephen A., Kyra H. Grantz, Qifang Bi, Forrest K. Jones, Qulu Zheng, Hannah R. Meredith, Andrew S. Azman, Nicholas G. Reich, and Justin Lessler. 2020. “The Incubation Period of Coronavirus Disease 2019 (Covid-19) from Publicly Reported Confirmed Cases: Estimation and Application.” <em>Annals of Internal Medicine</em>, March. <a href="https://doi.org/10.7326/M20-0504">https://doi.org/10.7326/M20-0504</a>.</p>
 </div>
 <div id="ref-Nishiura2020.02.03.20019497">
 <p>Nishiura, Hiroshi, Natalie M Linton, and Andrei R. Akhmetzhanov. 2020. “Serial Interval of Novel Coronavirus (2019-nCoV) Infections.” <em>medRxiv</em>. Cold Spring Harbor Laboratory Press. <a href="https://doi.org/10.1101/2020.02.03.20019497">https://doi.org/10.1101/2020.02.03.20019497</a>.</p>
 </div>
 <div id="ref-THOMPSON2019100356">
 <p>Thompson, R.N., J.E. Stockwin, R.D. van Gaalen, J.A. Polonsky, Z.N. Kamvar, P.A. Demarsh, E. Dahlqwis, et al. 2019. “Improved Inference of Time-Varying Reproduction Numbers During Infectious Disease Outbreaks.” <em>Epidemics</em> 29: 100356. <a href="https://doi.org/https://doi.org/10.1016/j.epidem.2019.100356">https://doi.org/https://doi.org/10.1016/j.epidem.2019.100356</a>.</p>
-</div>
-<div id="ref-WorldHealthOrganization:sitrep">
-<p>World Health Organization. n.d. “Coronavirus Disease (Covid-2019) Situation Reports.” <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports">https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports</a>.</p>
 </div>
 <div id="ref-kraemer2020epidemiological">
 <p>Xu, Bo, Bernardo Gutierrez, Sarah Hill, Samuel Scarpino, Alyssa Loskill, Jessie Wu, Kara Sewalk, et al. n.d. “Epidemiological Data from the nCoV-2019 Outbreak: Early Descriptions from Publicly Available Data.” <a href="http://virological.org/t/epidemiological-data-from-the-ncov-2019-outbreak-early-descriptions-from-publicly-available-data/337">http://virological.org/t/epidemiological-data-from-the-ncov-2019-outbreak-early-descriptions-from-publicly-available-data/337</a>.</p>
@@ -1588,6 +1587,83 @@ author = "Sang Woo Park and David Champredon and Joshua S. Weitz and Jonathan Du
     language = {English},
     author = {Doughty, Emma},
     year = {2020}
+}
+
+@techreport{ecdc_data,
+    title = {Download Today's Data on the Geographic Distribution of COVID-19 Cases Worldwide.},
+    url = {www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide},
+    language = {English},
+    author = {European Centre for Disease Prevention and Control},
+    year = {2020}
+}
+
+@article{Vehtari2016,
+archivePrefix = {arXiv},
+arxivId = {arXiv:1507.04544v4},
+author = {Vehtari, Aki and Gelman, Andrew and Gabry, Jonah},
+doi = {10.1007/s11222-016-9696-4},
+eprint = {arXiv:1507.04544v4},
+issn = {15731375},
+journal = {Stat. Comput.},
+number = {September},
+pages = {1--20},
+title = {Practical Bayesian model evaluation using leave-one-out cross-validation and WAIC},
+year = {2016}
+}
+
+@article{gneiting_strictly_2007,
+	title = {Strictly Proper Scoring Rules, Prediction, and Estimation},
+	volume = {102},
+	issn = {0162-1459, 1537-274X},
+	url = {http://www.tandfonline.com/doi/abs/10.1198/016214506000001437},
+	doi = {10.1198/016214506000001437},
+	language = {en},
+	number = {477},
+	urldate = {2020-03-22},
+	journal = {Journal of the American Statistical Association},
+	author = {Gneiting, Tilmann and Raftery, Adrian E},
+	month = mar,
+	year = {2007},
+	pages = {359--378}
+}
+
+@article{NOUVELLET201829,
+title = "A simple approach to measure transmissibility and forecast incidence",
+journal = "Epidemics",
+volume = "22",
+pages = "29 - 35",
+year = "2018",
+note = "The RAPIDD Ebola Forecasting Challenge",
+issn = "1755-4365",
+doi = "https://doi.org/10.1016/j.epidem.2017.02.012",
+url = "http://www.sciencedirect.com/science/article/pii/S1755436517300245",
+author = "Pierre Nouvellet and Anne Cori and Tini Garske and Isobel M. Blake and Ilaria Dorigatti and Wes Hinsley and Thibaut Jombart and Harriet L. Mills and Gemma Nedjati-Gilani and Maria D. Van Kerkhove and Christophe Fraser and Christl A. Donnelly and Neil M. Ferguson and Steven Riley"}
+
+
+@article{jordan_evaluating_2019,
+	title = {Evaluating Probabilistic Forecasts with scoringRules},
+	volume = {90},
+	issn = {1548-7660},
+	url = {http://www.jstatsoft.org/v90/i12/},
+	doi = {10.18637/jss.v090.i12},
+	language = {en},
+	number = {12},
+	urldate = {2020-03-07},
+	journal = {Journal of Statistical Software},
+	author = {Jordan, Alexander and Krüger, Fabian and Lerch, Sebastian},
+	year = {2019}
+}
+
+@article{10.7326/M20-0504,
+    author = {Lauer, Stephen A. and Grantz, Kyra H. and Bi, Qifang and Jones, Forrest K. and Zheng, Qulu and Meredith, Hannah R. and Azman, Andrew S. and Reich, Nicholas G. and Lessler, Justin},
+    title = "The Incubation Period of Coronavirus Disease 2019 (COVID-19) From Publicly Reported Confirmed Cases: Estimation and Application",
+    journal = {Annals of Internal Medicine},
+    year = {2020},
+    month = {03},
+    issn = {0003-4819},
+    doi = {10.7326/M20-0504},
+    url = {https://doi.org/10.7326/M20-0504},
+    eprint = {https://annals.org/acp/content\_public/journal/aim/0/aime202005050-m200504.pdf},
 }
 </script>
 <!--/radix_placeholder_appendices-->
