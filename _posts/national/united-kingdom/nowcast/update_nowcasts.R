@@ -38,8 +38,7 @@ EpiNow::regional_rt_pipeline(
   linelist = linelist, 
   regional_delay = FALSE,
   target_folder = "_posts/regional-breakdowns/united-kingdom/nowcast/regional", 
-  merge_onsets = FALSE,
-  samples = 10
+  merge_onsets = FALSE
 )
 
 
