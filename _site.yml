@@ -26,7 +26,7 @@ navbar:
        - text: 'Oceania'
          href: reports.html#Oceania
        - text: 'Europe' 
-         href: reports.html#Europ
+         href: reports.html#Europe
        - text: 'Asia' 
          href: reports.html#Asia
     - text: "Subnational"
@@ -46,6 +46,8 @@ navbar:
          href: methods.html
        - text: "Contributors"
          href: contributors.html
+       - text: "Funding"
+         href: funding.html
        - text: "News"
          href: news.html
     - icon: fab fa-github
