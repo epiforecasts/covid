@@ -88,6 +88,7 @@ show_title <- FALSE
 ### Limitations
 
 * Line-list data to inform a United Kingdom specific estimate of the reporting delay was not available. This means that we could also not account for any regional differences.
+* Regions are only included if at least 40 cases have been reported on a single day.
 
 
 ```{r} 
