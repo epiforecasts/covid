@@ -25,3 +25,4 @@ To identify changes in the reproduction number, rate of spread, and doubling tim
 * The estimate of cases that have onset but are not yet confirmed, used to scale up recent confirmed case numbers, is uncertain and relies on the observed delays to confirmation remaining constant over the course of the outbreak.
 * These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).
 * An international reporting delay was assumed. The report delay is likely to vary across and within countries so this assumption is likely to introduce bias.
+* Countries are only included in the reported estimates if at least 100 cases have been reported in a single day. Regions within countries are only reported if at least 40 cases have been reported in a single day.
