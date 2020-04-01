@@ -24,7 +24,8 @@ region_codes <- cases %>%
   unique() %>% 
   dplyr::mutate(region_code = as.numeric(region_code)) %>%
   dplyr::mutate(region = dplyr::recode(region, 
-                                       "Valle D'aosta" = "Valle d'Aosta",
+                                       "Valle d'Aosta" = "Valle d'aosta",
+                                       "Emilia-Romagna" = "Emilia Romagna",
                                        "Trentino-Alto Adige" = "Trentino Alto Adige"))
 
 saveRDS(region_codes, "_posts/national/italy/nowcast/data/region_codes.rds")
