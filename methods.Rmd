@@ -17,11 +17,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### National data
 
-We used daily counts of confirmed cases reported by the European Centre for Disease Control for all analyses conducted at the national level[@ecdc_data; @NCoVUtils]. To estimate the delay from case onset date until confirmation date we used all cases from a publicly available linelist for which onset and confirmation dates are available[@kraemer2020epidemiological; @NCoVUtils].
+We used daily counts of confirmed cases reported by the European Centre for Disease Control for all analyses conducted at the national level[@ecdc_data; @NCoVUtils]. To estimate the delay from case onset date until confirmation date we used all cases from a publicly available linelist for which onset and confirmation dates are available[@kraemer2020epidemiological; @NCoVUtils]. Countries are only included in the reported estimates if at least 100 cases have been reported in a single day. 
 
 ### Subnational data sources
 
-For sub-national analyses, the source of the data is reported on each page, the data are fetched from government departments or from individuals who maintain a data source if no official data are available.
+For sub-national analyses, the source of the data is reported on each page, the data are fetched from government departments or from individuals who maintain a data source if no official data are available. Regions within countries are only reported if at least 40 cases have been reported in a single day.
 
 ## Adjusting for reporting delays
 

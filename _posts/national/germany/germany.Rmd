@@ -106,6 +106,7 @@ show_title <- FALSE
 ### Limitations
 
 * Line-list data to inform a region specific estimate of the reporting delay were not available. 
+* Regions are only included if at least 40 cases have been reported on a single day.
 
 ```{r} 
 standalone <- FALSE
