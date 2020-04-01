@@ -21,7 +21,7 @@ region_codes <- cases %>%
   dplyr::select(region, region_code) %>% 
   unique()
 
-saveRDS(region_codes, "_posts/regional-breakdowns/germany/nowcast/data/region_codes.rds")
+saveRDS(region_codes, "_posts/national/germany/nowcast/data/region_codes.rds")
 
 cases <- cases %>% 
   dplyr::rename(local = cases) %>% 
@@ -43,14 +43,14 @@ data.table::setDTthreads(threads = 1)
 EpiNow::regional_rt_pipeline(
   cases = cases, 
   linelist = linelist, 
-  target_folder = "_posts/regional-breakdowns/germany/nowcast/regional"
+  target_folder = "_posts/national/germany/nowcast/regional"
 )
 
 
 # Summarise results -------------------------------------------------------
 
-EpiNow::regional_summary(results_dir = "_posts/regional-breakdowns/germany/nowcast/regional", 
-                         summary_dir = "_posts/regional-breakdowns/germany/nowcast/regional-summary",
+EpiNow::regional_summary(results_dir = "_posts/national/germany/nowcast/regional", 
+                         summary_dir = "_posts/national/germany/nowcast/regional-summary",
                          target_date = "latest",
                          region_scale = "Region")
 
