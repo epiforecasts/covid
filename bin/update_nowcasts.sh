@@ -28,4 +28,4 @@ Rscript utils/clean_built_site.R
 git add --all && git commit -m "Updated nowcasts" && git push
 
 ## Deploy the website to gh-pages
-bash deploy_website.sh
+bash bin/deploy_website.sh
