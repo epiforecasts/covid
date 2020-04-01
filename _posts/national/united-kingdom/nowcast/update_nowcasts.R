@@ -37,14 +37,14 @@ EpiNow::regional_rt_pipeline(
   cases = cases, 
   linelist = linelist, 
   regional_delay = FALSE,
-  target_folder = "_posts/regional-breakdowns/united-kingdom/nowcast/regional", 
+  target_folder = "_posts/national/united-kingdom/nowcast/regional", 
   merge_onsets = FALSE
 )
 
 
 # Summarise results -------------------------------------------------------
 
-EpiNow::regional_summary(results_dir = "_posts/regional-breakdowns/united-kingdom/nowcast/regional", 
-                         summary_dir = "_posts/regional-breakdowns/united-kingdom/nowcast/regional-summary",
+EpiNow::regional_summary(results_dir = "_posts/national/united-kingdom/nowcast/regional", 
+                         summary_dir = "_posts/national/united-kingdom/nowcast/regional-summary",
                          target_date = "latest",
                          region_scale = "Region")
