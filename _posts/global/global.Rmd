@@ -34,17 +34,19 @@ latest_date <- readRDS("nowcast/national-summary/latest_date.rds")
 ```
 
 ```{r map, fig.width = 12, fig.height = 6, layout="l-body-outset"}
-summary_table %>% 
+global <- summary_table %>% 
   dplyr::rename(country = `Country/Region`) %>% 
   dplyr::filter(!country %in% c("Hubei", "Hong Kong", "China excluding Hubei")) %>% 
   EpiNow::global_map(variable = "Expected change in daily cases")
+
+global
 ```
 
 <br>
 `r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated cases with a date of infection on the ", latest_date , ") can be summarised by whether cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively.*")`
 
-
 ```{r} 
+standalone <- TRUE
 region_path <- NULL
 summary_path <- "_posts/global/nowcast/national-summary"
 ```
