@@ -81,6 +81,7 @@ show_title <- FALSE
 * Line-list data to inform a Italy specific estimate of the reporting delay was not available. This means that we could also not account for any regional differences.
 
 ```{r} 
+standalone <- FALSE
 region_path <- NULL
 summary_path <- "_posts/national/italy/nowcast/regional-summary"
 ```

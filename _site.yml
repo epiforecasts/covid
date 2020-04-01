@@ -53,7 +53,7 @@ navbar:
     - icon: fab fa-github
       href: https://github.com/epiforecasts/covid
     - icon: fa fa-rss
-      href: report.xml
+      href: reports.xml
 collections:
   posts:
     feed_items_max: false

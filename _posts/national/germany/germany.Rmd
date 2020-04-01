@@ -108,6 +108,7 @@ show_title <- FALSE
 * Line-list data to inform a region specific estimate of the reporting delay were not available. 
 
 ```{r} 
+standalone <- FALSE
 region_path <- NULL
 summary_path <- "_posts/national/germany/nowcast/regional-summary"
 ```

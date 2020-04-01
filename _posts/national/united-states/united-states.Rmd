@@ -94,6 +94,7 @@ show_title <- FALSE
 
 
 ```{r} 
+standalone <- FALSE
 region_path <- NULL
 summary_path <- "_posts/national/united-states/nowcast/regional-summary"
 ```
