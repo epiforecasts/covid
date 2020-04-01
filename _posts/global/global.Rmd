@@ -45,6 +45,7 @@ summary_table %>%
 
 
 ```{r} 
+standalone <- TRUE
 region_path <- NULL
 summary_path <- "_posts/global/nowcast/national-summary"
 ```
