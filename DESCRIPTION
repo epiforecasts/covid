@@ -36,12 +36,14 @@ Imports:
     data.table,
     here,
     rnaturalearth,
+    rnaturalearthhires,
     countrycode,
     sf,
     distill
 Remotes: 
     epiforecasts/EpiNow,
     epiforecasts/NCoVUtils,
+    ropensci/rnaturalearthhires
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
