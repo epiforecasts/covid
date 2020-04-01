@@ -7,9 +7,23 @@
     "date": "2020-04-01",
     "categories": [],
     "preview": "posts/global/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:55+00:00",
+    "last_modified": "2020-04-01T14:46:42+00:00",
     "preview_width": 7680,
     "preview_height": 3840
+  },
+  {
+    "path": "posts/national/algeria/",
+    "title": "Estimates for Algeria",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Algeria.",
+    "author": [],
+    "date": "2020-04-01",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/algeria/distill-preview.png",
+    "last_modified": "2020-04-01T14:47:05+00:00",
+    "preview_width": 3840,
+    "preview_height": 1920
   },
   {
     "path": "posts/national/argentina/",
@@ -21,7 +35,7 @@
       "Americas"
     ],
     "preview": "posts/national/argentina/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:36+00:00",
+    "last_modified": "2020-04-01T14:46:20+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -35,7 +49,7 @@
       "Oceania"
     ],
     "preview": "posts/national/australia/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:34+00:00",
+    "last_modified": "2020-04-01T14:46:20+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -49,7 +63,7 @@
       "Europe"
     ],
     "preview": "posts/national/austria/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:34+00:00",
+    "last_modified": "2020-04-01T14:46:20+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -63,7 +77,7 @@
       "Europe"
     ],
     "preview": "posts/national/belgium/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:36+00:00",
+    "last_modified": "2020-04-01T14:46:20+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -77,7 +91,7 @@
       "Americas"
     ],
     "preview": "posts/national/brazil/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:34+00:00",
+    "last_modified": "2020-04-01T14:46:20+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -91,7 +105,7 @@
       "Americas"
     ],
     "preview": "posts/national/canada/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:34+00:00",
+    "last_modified": "2020-04-01T14:46:20+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -105,7 +119,7 @@
       "Americas"
     ],
     "preview": "posts/national/chile/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:35+00:00",
+    "last_modified": "2020-04-01T14:46:21+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -119,7 +133,7 @@
       "Asia"
     ],
     "preview": "posts/national/china/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:35+00:00",
+    "last_modified": "2020-04-01T14:46:20+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -133,7 +147,7 @@
       "Europe"
     ],
     "preview": "posts/national/denmark/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:34+00:00",
+    "last_modified": "2020-04-01T14:46:21+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -147,7 +161,7 @@
       "Americas"
     ],
     "preview": "posts/national/dominican-republic/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:39+00:00",
+    "last_modified": "2020-04-01T14:46:21+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -161,7 +175,7 @@
       "Americas"
     ],
     "preview": "posts/national/ecuador/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:39+00:00",
+    "last_modified": "2020-04-01T14:46:21+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -175,7 +189,7 @@
       "Europe"
     ],
     "preview": "posts/national/estonia/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:39+00:00",
+    "last_modified": "2020-04-01T14:46:24+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -189,7 +203,7 @@
       "Europe"
     ],
     "preview": "posts/national/finland/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:36+00:00",
+    "last_modified": "2020-04-01T14:46:24+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -203,7 +217,7 @@
       "Europe"
     ],
     "preview": "posts/national/france/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:39+00:00",
+    "last_modified": "2020-04-01T14:46:24+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -217,7 +231,21 @@
       "Europe"
     ],
     "preview": "posts/national/greece/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:37+00:00",
+    "last_modified": "2020-04-01T14:46:22+00:00",
+    "preview_width": 3840,
+    "preview_height": 1920
+  },
+  {
+    "path": "posts/national/india/",
+    "title": "Estimates for India",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in India.",
+    "author": [],
+    "date": "2020-04-01",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/india/distill-preview.png",
+    "last_modified": "2020-04-01T14:46:47+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -231,7 +259,7 @@
       "Asia"
     ],
     "preview": "posts/national/indonesia/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:39+00:00",
+    "last_modified": "2020-04-01T14:46:26+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -245,7 +273,7 @@
       "Asia"
     ],
     "preview": "posts/national/iran/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:39+00:00",
+    "last_modified": "2020-04-01T14:46:27+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -259,7 +287,7 @@
       "Europe"
     ],
     "preview": "posts/national/ireland/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:39+00:00",
+    "last_modified": "2020-04-01T14:46:25+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -273,7 +301,7 @@
       "Asia"
     ],
     "preview": "posts/national/israel/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:41+00:00",
+    "last_modified": "2020-04-01T14:46:28+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -287,7 +315,7 @@
       "Asia"
     ],
     "preview": "posts/national/japan/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:42+00:00",
+    "last_modified": "2020-04-01T14:46:31+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -301,7 +329,7 @@
       "Europe"
     ],
     "preview": "posts/national/luxembourg/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:44+00:00",
+    "last_modified": "2020-04-01T14:46:31+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -315,7 +343,7 @@
       "Americas"
     ],
     "preview": "posts/national/mexico/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:44+00:00",
+    "last_modified": "2020-04-01T14:46:28+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -329,7 +357,7 @@
       "Africa"
     ],
     "preview": "posts/national/morocco/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:44+00:00",
+    "last_modified": "2020-04-01T14:46:29+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -343,7 +371,7 @@
       "Europe"
     ],
     "preview": "posts/national/netherlands/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:49+00:00",
+    "last_modified": "2020-04-01T14:46:28+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -357,7 +385,7 @@
       "Europe"
     ],
     "preview": "posts/national/norway/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:44+00:00",
+    "last_modified": "2020-04-01T14:46:30+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -371,7 +399,7 @@
       "Asia"
     ],
     "preview": "posts/national/pakistan/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:44+00:00",
+    "last_modified": "2020-04-01T14:46:30+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -385,7 +413,7 @@
       "Americas"
     ],
     "preview": "posts/national/panama/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:44+00:00",
+    "last_modified": "2020-04-01T14:46:29+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -399,7 +427,7 @@
       "Americas"
     ],
     "preview": "posts/national/peru/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:49+00:00",
+    "last_modified": "2020-04-01T14:46:29+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -413,7 +441,7 @@
       "Asia"
     ],
     "preview": "posts/national/philippines/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:44+00:00",
+    "last_modified": "2020-04-01T14:46:31+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -427,7 +455,7 @@
       "Europe"
     ],
     "preview": "posts/national/portugal/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:46+00:00",
+    "last_modified": "2020-04-01T14:46:29+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -441,7 +469,7 @@
       "Asia"
     ],
     "preview": "posts/national/qatar/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:44+00:00",
+    "last_modified": "2020-04-01T14:46:32+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -455,7 +483,7 @@
       "Europe"
     ],
     "preview": "posts/national/romania/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:49+00:00",
+    "last_modified": "2020-04-01T14:46:31+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -469,7 +497,7 @@
       "Europe"
     ],
     "preview": "posts/national/russia/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:46+00:00",
+    "last_modified": "2020-04-01T14:46:29+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -483,7 +511,7 @@
       "Asia"
     ],
     "preview": "posts/national/saudi-arabia/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:44+00:00",
+    "last_modified": "2020-04-01T14:46:32+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -497,7 +525,7 @@
       "Europe"
     ],
     "preview": "posts/national/serbia/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:44+00:00",
+    "last_modified": "2020-04-01T14:46:31+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -511,7 +539,7 @@
       "Asia"
     ],
     "preview": "posts/national/singapore/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:49+00:00",
+    "last_modified": "2020-04-01T14:46:31+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -525,7 +553,7 @@
       "Africa"
     ],
     "preview": "posts/national/south-africa/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:49+00:00",
+    "last_modified": "2020-04-01T14:46:30+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -539,7 +567,7 @@
       "Europe"
     ],
     "preview": "posts/national/spain/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:46+00:00",
+    "last_modified": "2020-04-01T14:46:30+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -553,7 +581,7 @@
       "Europe"
     ],
     "preview": "posts/national/sweden/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:46+00:00",
+    "last_modified": "2020-04-01T14:46:29+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -567,7 +595,7 @@
       "Europe"
     ],
     "preview": "posts/national/switzerland/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:49+00:00",
+    "last_modified": "2020-04-01T14:46:30+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -581,7 +609,7 @@
       "Asia"
     ],
     "preview": "posts/national/thailand/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:49+00:00",
+    "last_modified": "2020-04-01T14:46:30+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -595,7 +623,7 @@
       "Asia"
     ],
     "preview": "posts/national/turkey/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:49+00:00",
+    "last_modified": "2020-04-01T14:46:35+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -609,7 +637,7 @@
       "Europe"
     ],
     "preview": "posts/national/ukraine/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:49+00:00",
+    "last_modified": "2020-04-01T14:46:30+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -623,7 +651,7 @@
       "Asia"
     ],
     "preview": "posts/national/united-arab-emirates/distill-preview.png",
-    "last_modified": "2020-04-01T09:24:49+00:00",
+    "last_modified": "2020-04-01T14:46:30+00:00",
     "preview_width": 3840,
     "preview_height": 1920
   },
@@ -638,7 +666,7 @@
       "Europe"
     ],
     "preview": "posts/national/united-kingdom/distill-preview.png",
-    "last_modified": "2020-04-01T09:25:01+00:00",
+    "last_modified": "2020-04-01T14:46:41+00:00",
     "preview_width": 3840,
     "preview_height": 3840
   },

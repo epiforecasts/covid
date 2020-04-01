@@ -17,6 +17,14 @@
       <media:content url="https://epiforecasts.io/covid/posts/global/distill-preview.png" medium="image" type="image/png" width="7680" height="3840"/>
     </item>
     <item>
+      <title>Estimates for Algeria</title>
+      <link>https://epiforecasts.io/covid/posts/national/algeria</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Algeria.</description>
+      <guid>https://epiforecasts.io/covid/posts/national/algeria</guid>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/algeria/distill-preview.png" medium="image" type="image/png" width="3840" height="1920"/>
+    </item>
+    <item>
       <title>Estimates for Argentina</title>
       <link>https://epiforecasts.io/covid/posts/national/argentina</link>
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Argentina.</description>
@@ -135,6 +143,14 @@
       <guid>https://epiforecasts.io/covid/posts/national/greece</guid>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/greece/distill-preview.png" medium="image" type="image/png" width="3840" height="1920"/>
+    </item>
+    <item>
+      <title>Estimates for India</title>
+      <link>https://epiforecasts.io/covid/posts/national/india</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in India.</description>
+      <guid>https://epiforecasts.io/covid/posts/national/india</guid>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/india/distill-preview.png" medium="image" type="image/png" width="3840" height="1920"/>
     </item>
     <item>
       <title>Estimates for Indonesia</title>
