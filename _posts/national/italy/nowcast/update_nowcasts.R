@@ -24,7 +24,7 @@ region_codes <- cases %>%
   unique() %>% 
   dplyr::mutate(region_code = as.numeric(region_code))
 
-saveRDS(region_codes, "_posts/regional-breakdowns/italy/nowcast/data/region_codes.rds")
+saveRDS(region_codes, "_posts/national/italy/nowcast/data/region_codes.rds")
 
 cases <- cases %>% 
   dplyr::rename(local = cases) %>% 
@@ -48,7 +48,7 @@ EpiNow::regional_rt_pipeline(
   cases = cases, 
   linelist = linelist, 
   regional_delay = FALSE,
-  target_folder = "_posts/regional-breakdowns/italy/nowcast/regional", 
+  target_folder = "_posts/national/italy/nowcast/regional", 
   merge_onsets = FALSE
 )
 
@@ -56,7 +56,7 @@ EpiNow::regional_rt_pipeline(
 # Summarise results -------------------------------------------------------
 
 
-EpiNow::regional_summary(results_dir = "_posts/regional-breakdowns/italy/nowcast/regional", 
-                         summary_dir = "_posts/regional-breakdowns/italy/nowcast/regional-summary",
+EpiNow::regional_summary(results_dir = "_posts/national/italy/nowcast/regional", 
+                         summary_dir = "_posts/national/italy/nowcast/regional-summary",
                          target_date = "latest",
                          region_scale = "Region")
