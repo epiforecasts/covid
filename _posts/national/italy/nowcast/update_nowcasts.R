@@ -22,11 +22,7 @@ cases <- NCoVUtils::get_italy_regional_cases()
 region_codes <- cases %>% 
   dplyr::select(region, region_code) %>% 
   unique() %>% 
-  dplyr::mutate(region_code = as.numeric(region_code)) %>%
-  dplyr::mutate(region = dplyr::recode(region, 
-                                       "Valle d'Aosta" = "Valle d'aosta",
-                                       "Emilia-Romagna" = "Emilia Romagna",
-                                       "Trentino-Alto Adige" = "Trentino Alto Adige"))
+  dplyr::mutate(region_code = as.numeric(region_code))
 
 saveRDS(region_codes, "_posts/national/italy/nowcast/data/region_codes.rds")
 
@@ -53,7 +49,8 @@ EpiNow::regional_rt_pipeline(
   linelist = linelist, 
   regional_delay = FALSE,
   target_folder = "_posts/national/italy/nowcast/regional", 
-  merge_onsets = FALSE
+  merge_onsets = FALSE,
+  horizon = 0
 )
 
 

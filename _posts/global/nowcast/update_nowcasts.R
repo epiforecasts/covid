@@ -47,4 +47,5 @@ EpiNow::regional_rt_pipeline(
 EpiNow::regional_summary(results_dir = "_posts/global/nowcast/national", 
                          summary_dir = "_posts/global/nowcast/national-summary",
                          target_date = "latest",
-                         region_scale = "Country/Region")
+                         region_scale = "Country/Region",
+                         horizon = 0)
