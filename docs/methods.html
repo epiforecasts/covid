@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+  <!--radix_placeholder_meta_tags-->
+  <title>Covid-19: Methods</title>
+  
+  <meta property="description" itemprop="description" content="Data sources, accounting for report delays and statistical methods."/>
+  
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
+  
+  
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="Covid-19: Methods"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Data sources, accounting for report delays and statistical methods."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Covid-19"/>
+  
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="Covid-19: Methods"/>
+  <meta property="twitter:description" content="Data sources, accounting for report delays and statistical methods."/>
+  <meta property="twitter:site" content="@cmmid_lshtm"/>
+  
+  <!--/radix_placeholder_meta_tags-->
+  
+  <meta name="citation_reference" content="citation_title=RStan: The r interface to stan;citation_publication_date=2020;citation_author=RStan: The r interface to stan"/>
+  <meta name="citation_reference" content="citation_title=Serial interval of novel coronavirus (2019-nCoV) infections;citation_publication_date=2020;citation_publisher=Cold Spring Harbor Laboratory Press;citation_doi=10.1101/2020.02.03.20019497;citation_author=Hiroshi Nishiura;citation_author=Natalie M Linton;citation_author=Andrei R. Akhmetzhanov"/>
+  <meta name="citation_reference" content="citation_title=Report 3: Transmissibility of 2019-nCoV;citation_author=Natsuki Imai;citation_author=Anne Cori;citation_author=IIaria Dorigatti;citation_author=Marc Baguellin;citation_author=Christl A Donnelly;citation_author=Steven Riley;citation_author=Neil M Ferguson"/>
+  <meta name="citation_reference" content="citation_title=Improved inference of time-varying reproduction numbers during infectious disease outbreaks;citation_publication_date=2019;citation_volume=29;citation_doi=https://doi.org/10.1016/j.epidem.2019.100356;citation_issn=1755-4365;citation_author=R.N. Thompson;citation_author=J.E. Stockwin;citation_author=R.D. Gaalen;citation_author=J.A. Polonsky;citation_author=Z.N. Kamvar;citation_author=P.A. Demarsh;citation_author=E. Dahlqwis;citation_author=S. Li;citation_author=E. Miguel;citation_author=T. Jombart;citation_author=J. Lessler;citation_author=S. Cauchemez;citation_author=A. Cori"/>
+  <meta name="citation_reference" content="citation_title=A practical generation-interval-based approach to inferring the strength of epidemics from their speed;citation_publication_date=2019;citation_volume=27;citation_doi=https://doi.org/10.1016/j.epidem.2018.12.002;citation_issn=1755-4365;citation_author=Sang Woo Park;citation_author=David Champredon;citation_author=Joshua S. Weitz;citation_author=Jonathan Dushoff"/>
+  <meta name="citation_reference" content="citation_title=Practical bayesian model evaluation using leave-one-out cross-validation and waic;citation_publication_date=2016;citation_doi=10.1007/s11222-016-9696-4;citation_issn=15731375;citation_author=Aki Vehtari;citation_author=Andrew Gelman;citation_author=Jonah Gabry"/>
+  <meta name="citation_reference" content="citation_title=A simple approach to measure transmissibility and forecast incidence;citation_publication_date=2018;citation_volume=22;citation_doi=https://doi.org/10.1016/j.epidem.2017.02.012;citation_issn=1755-4365;citation_author=Pierre Nouvellet;citation_author=Anne Cori;citation_author=Tini Garske;citation_author=Isobel M. Blake;citation_author=Ilaria Dorigatti;citation_author=Wes Hinsley;citation_author=Thibaut Jombart;citation_author=Harriet L. Mills;citation_author=Gemma Nedjati-Gilani;citation_author=Maria D. Van Kerkhove;citation_author=Christophe Fraser;citation_author=Christl A. Donnelly;citation_author=Neil M. Ferguson;citation_author=Steven Riley"/>
+  <meta name="citation_reference" content="citation_title=The incubation period of coronavirus disease 2019 (covid-19) from publicly reported confirmed cases: Estimation and application;citation_publication_date=2020;citation_doi=10.7326/M20-0504;citation_issn=0003-4819;citation_author=Stephen A. Lauer;citation_author=Kyra H. Grantz;citation_author=Qifang Bi;citation_author=Forrest K. Jones;citation_author=Qulu Zheng;citation_author=Hannah R. Meredith;citation_author=Andrew S. Azman;citation_author=Nicholas G. Reich;citation_author=Justin Lessler"/>
+  <!--radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","bibliography:","output"]}},"value":[{"type":"character","attributes":{},"value":["Methods"]},{"type":"character","attributes":{},"value":["Data sources, accounting for report delays and statistical methods.\n"]},{"type":"character","attributes":{},"value":["library.bib"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]}]}]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  <!--radix_placeholder_navigation_in_header-->
+  
+  <script type="application/javascript">
+  
+    window.headroom_prevent_pin = false;
+  
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+  
+      // initialize headroom for banner
+      var header = $('header').get(0);
+      var headerHeight = header.offsetHeight;
+      var headroom = new Headroom(header, {
+        onPin : function() {
+          if (window.headroom_prevent_pin) {
+            window.headroom_prevent_pin = false;
+            headroom.unpin();
+          }
+        }
+      });
+      headroom.init();
+      if(window.location.hash)
+        headroom.unpin();
+      $(header).addClass('headroom--transition');
+  
+      // offset scroll location for banner on hash change
+      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+      window.addEventListener("hashchange", function(event) {
+        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+      });
+  
+      // responsive menu
+      $('.distill-site-header').each(function(i, val) {
+        var topnav = $(this);
+        var toggle = topnav.find('.nav-toggle');
+        toggle.on('click', function() {
+          topnav.toggleClass('responsive');
+        });
+      });
+  
+      // nav dropdowns
+      $('.nav-dropbtn').click(function(e) {
+        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+        $(this).parent().siblings('.nav-dropdown')
+           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+      });
+      $("body").click(function(e){
+        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+      });
+      $(".nav-dropdown").click(function(e){
+        e.stopPropagation();
+      });
+    });
+  </script>
+  
+  <style type="text/css">
+  
+  /* Theme (user-documented overrideables for nav appearance) */
+  
+  .distill-site-nav {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #455a64;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  .distill-site-nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .distill-site-nav a:hover {
+    color: white;
+  }
+  
+  @media print {
+    .distill-site-nav {
+      display: none;
+    }
+  }
+  
+  .distill-site-header {
+  
+  }
+  
+  .distill-site-footer {
+  
+  }
+  
+  
+  /* Site Header */
+  
+  .distill-site-header {
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+  
+  .distill-site-header .nav-left {
+    display: inline-block;
+    margin-left: 8px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .distill-site-header .nav-left {
+      margin-left: 0;
+    }
+  }
+  
+  
+  .distill-site-header .nav-right {
+    float: right;
+    margin-right: 8px;
+  }
+  
+  .distill-site-header a,
+  .distill-site-header .title {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 10px 14px 10px;
+  }
+  
+  .distill-site-header .title {
+    font-size: 18px;
+  }
+  
+  .distill-site-header .logo {
+    padding: 0;
+  }
+  
+  .distill-site-header .logo img {
+    display: none;
+    max-height: 20px;
+    width: auto;
+    margin-bottom: -4px;
+  }
+  
+  .distill-site-header .nav-image img {
+    max-height: 18px;
+    width: auto;
+    display: inline-block;
+    margin-bottom: -3px;
+  }
+  
+  
+  
+  @media screen and (min-width: 1000px) {
+    .distill-site-header .logo img {
+      display: inline-block;
+    }
+    .distill-site-header .nav-left {
+      margin-left: 20px;
+    }
+    .distill-site-header .nav-right {
+      margin-right: 20px;
+    }
+    .distill-site-header .title {
+      padding-left: 12px;
+    }
+  }
+  
+  
+  .distill-site-header .nav-toggle {
+    display: none;
+  }
+  
+  .nav-dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .nav-dropdown .nav-dropbtn {
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 16px 10px;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    margin-top: 1px;
+    z-index: 2;
+  }
+  
+  .nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+    margin-top: 2px;
+    white-space: nowrap;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  
+  .nav-dropdown-content hr {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-dropdown-active {
+    display: block;
+  }
+  
+  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+    color: black;
+    padding: 6px 24px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .nav-dropdown-content .nav-dropdown-header {
+    display: block;
+    padding: 5px 24px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #999999;
+    white-space: nowrap;
+  }
+  
+  .nav-dropdown:hover .nav-dropbtn {
+    color: white;
+  }
+  
+  .nav-dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .nav-right .nav-dropdown-content {
+    margin-left: -45%;
+    right: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+    .distill-site-header a.nav-toggle {
+      float: right;
+      display: block;
+    }
+    .distill-site-header .title {
+      margin-left: 0;
+    }
+    .distill-site-header .nav-right {
+      margin-right: 0;
+    }
+    .distill-site-header {
+      overflow: hidden;
+    }
+    .nav-right .nav-dropdown-content {
+      margin-left: 0;
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .distill-site-header.responsive {position: relative;}
+    .distill-site-header.responsive a.nav-toggle {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .distill-site-header.responsive a,
+    .distill-site-header.responsive .nav-dropdown {
+      display: block;
+      text-align: left;
+    }
+    .distill-site-header.responsive .nav-left,
+    .distill-site-header.responsive .nav-right {
+      width: 100%;
+    }
+    .distill-site-header.responsive .nav-dropdown {float: none;}
+    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  
+  /* Site Footer */
+  
+  .distill-site-footer {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 3;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Headroom */
+  
+  d-title {
+    padding-top: 6rem;
+  }
+  
+  @media print {
+    d-title {
+      padding-top: 4rem;
+    }
+  }
+  
+  .headroom {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .headroom--transition {
+    transition: all .4s ease-in-out;
+  }
+  
+  .headroom--unpinned {
+    top: -100px;
+  }
+  
+  .headroom--pinned {
+    top: 0;
+  }
+  
+  </style>
+  
+  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+  
+  <style type="text/css">
+  
+  body {
+    background-color: white;
+  }
+  
+  .pandoc-table {
+    width: 100%;
+  }
+  
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+  
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+  
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+  
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+  
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+  
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+  
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .shaded .shaded-content {
+    background: white;
+  }
+  
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  d-article {
+    padding-bottom: 30px;
+  }
+  
+  d-appendix {
+    padding-top: 30px;
+  }
+  
+  d-article>p>img {
+    width: 100%;
+  }
+  
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+  
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+  
+  /* CSS for table of contents */
+  
+  .d-toc {
+    color: rgba(0,0,0,0.8);
+    font-size: 0.8em;
+    line-height: 1em;
+  }
+  
+  .d-toc-header {
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 1.3em;
+  }
+  
+  .d-toc a {
+    border-bottom: none;
+  }
+  
+  .d-toc ul {
+    padding-left: 0;
+  }
+  
+  .d-toc li>ul {
+    padding-top: 0.8em;
+    padding-left: 16px;
+    margin-bottom: 0.6em;
+  }
+  
+  .d-toc ul,
+  .d-toc li {
+    list-style-type: none;
+  }
+  
+  .d-toc li {
+    margin-bottom: 0.9em;
+  }
+  
+  .d-toc-separator {
+    margin-top: 20px;
+    margin-bottom: 2em;
+  }
+  
+  .d-article-with-toc {
+    border-top: none;
+    padding-top: 0;
+  }
+  
+  
+  
+  /* Tweak code blocks (note that this CSS is repeated above in an injection
+     into the d-code shadow dom) */
+  
+  d-code {
+    overflow-x: auto !important;
+  }
+  
+  pre.d-code code.d-code {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+  
+  pre.text-output {
+  
+    font-size: 12px;
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+  
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+  
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  
+  @media(min-width: 768px) {
+  
+  d-code {
+    overflow-x: visible !important;
+  }
+  
+  pre.d-code code.d-code  {
+      padding-left: 18px;
+      font-size: 14px;
+  }
+  pre.text-output {
+    font-size: 14px;
+  }
+  }
+  
+  /* Figure */
+  
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+  
+  .figure img {
+    width: 100%;
+  }
+  
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+  
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+  
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+  
+  
+  
+  /* Tweak 1000px media break to show more text */
+  
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+  
+    .grid {
+      grid-column-gap: 16px;
+    }
+  
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+  
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+  
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+  
+  
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+  
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  
+  /* Social footer */
+  
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+  
+  .disqus-comments {
+    margin-right: 30px;
+  }
+  
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  
+  #disqus_thread {
+    margin-top: 30px;
+  }
+  
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+  
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+  
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+  
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+  
+  
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+  
+  
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+  
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+  
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+  
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+  
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  
+  
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+  
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+  
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+  
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+  
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+  
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+  
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  
+  </style>
+  
+  <script type="application/javascript">
+  
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+  
+  // show body when load is complete
+  function on_load_complete() {
+  
+    // set body to visible
+    document.body.style.visibility = 'visible';
+  
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+  
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+  
+  function init_distill() {
+  
+    init_common();
+  
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+  
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+  
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+  
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+  
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+  
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+  
+    // create d-bibliography
+    var bibliography = $('<d-bibliography></d-bibliography>');
+    $('#distill-bibliography').wrap(bibliography);
+  
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+  
+    // replace citations with <d-cite>
+    $('.citation').each(function(i, val) {
+      appendix = true;
+      var cites = $(this).attr('data-cites').split(" ");
+      var dt_cite = $('<d-cite></d-cite>');
+      dt_cite.attr('key', cites.join());
+      $(this).replaceWith(dt_cite);
+    });
+    // remove refs
+    $('#refs').remove();
+  
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+  
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-toc a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+  
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+  
+    // replace code blocks with d-code
+    $('pre>code').each(function(i, val) {
+      var code = $(this);
+      var pre = code.parent();
+      var clz = "";
+      var language = pre.attr('class');
+      if (language) {
+        // map unknown languages to "clike" (without this they just dissapear)
+        if ($.inArray(language, ["bash", "clike", "css", "go", "html",
+                                 "javascript", "js", "julia", "lua", "markdown",
+                                 "markup", "mathml", "python", "svg", "xml"]) == -1)
+          language = "clike";
+        language = ' language="' + language + '"';
+        var dt_code = $('<d-code block' + language + clz + '></d-code>');
+        dt_code.text(code.text());
+        pre.replaceWith(dt_code);
+      } else {
+        code.addClass('text-output').unwrap().changeElementType('pre');
+      }
+    });
+  
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+  
+      // capture layout
+      var layout = $(this).attr('data-layout');
+  
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('d-code, pre.text-output, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+  
+  
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+  
+    // load distill framework
+    load_distill_framework();
+  
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+  
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+  
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+  
+      // table of contents
+      if (have_authors) // adjust border if we are in authors
+        $('.d-toc').parent().addClass('d-article-with-toc');
+  
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+  
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+  
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+  
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+  
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+  
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+  
+      // inject pre code styles (can't do this with a global stylesheet b/c a shadow root is used)
+      $('d-code').each(function(i, val) {
+        var style = document.createElement('style');
+        style.innerHTML = 'pre code { padding-left: 10px; font-size: 12px; border-left: 2px solid rgba(0,0,0,0.1); } ' +
+                          '@media(min-width: 768px) { pre code { padding-left: 18px; font-size: 14px; } }';
+        if (this.shadowRoot)
+          this.shadowRoot.appendChild(style);
+      });
+  
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+  
+      // clear polling timer
+      clearInterval(tid);
+  
+      // show body now that everything is ready
+      on_load_complete();
+    }
+  
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+  
+  }
+  
+  function init_downlevel() {
+  
+    init_common();
+  
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+  
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+  
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+  
+    // remove toc
+    $('.d-toc-header').remove();
+    $('.d-toc').remove();
+    $('.d-toc-separator').remove();
+  
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+  
+  
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+  
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+  
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+  
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+  
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+  
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+  
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+  
+    $('body').addClass('downlevel');
+  
+    on_load_complete();
+  }
+  
+  
+  function init_common() {
+  
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+  
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+  
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+  
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+  
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+  
+      }
+    });
+  
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+  
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      });
+    }
+  
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+  
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+  
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+  
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+  
+  </script>
+  
+  <!--/radix_placeholder_distill-->
+  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Methods","description":"Data sources, accounting for report delays and statistical methods.","authors":[]}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a class="logo" href="https://cmmid.github.io">
+<img src="images/logo.png"/>
+</a>
+<a href="index.html" class="title">Covid-19</a>
+</div>
+<div class="nav-right">
+<a href="index.html">About</a>
+<a href="posts/global/index.html">Global</a>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+National
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
+<a href="reports.html#Africa">Africa</a>
+<a href="reports.html#Americas">Americas</a>
+<a href="reports.html#Oceania">Oceania</a>
+<a href="reports.html#Europe">Europe</a>
+<a href="reports.html#Asia">Asia</a>
+</div>
+</div>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+Subnational
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
+<span class="nav-dropdown-header">Countries with subnational estimates</span>
+<a href="posts/national/italy/index.html">Italy</a>
+<a href="posts/national/germany/index.html">Germany</a>
+<a href="posts/national/united-kingdom/index.html">United Kingdom</a>
+<a href="posts/national/united-states/index.html">United States of America</a>
+</div>
+</div>
+<div class="nav-dropdown">
+<button class="nav-dropbtn">
+Details
+ 
+<span class="down-arrow">&#x25BE;</span>
+</button>
+<div class="nav-dropdown-content">
+<a href="methods.html">Methods</a>
+<a href="contributors.html">Contributors</a>
+<a href="funding.html">Funding</a>
+<a href="news.html">News</a>
+</div>
+</div>
+<a href="https://github.com/epiforecasts/covid">
+<i class="fab fa-github"></i>
+</a>
+<a href="index.xml">
+<i class="fa fa-rss"></i>
+</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Methods</h1>
+<p>Data sources, accounting for report delays and statistical methods.</p>
+</div>
+
+
+<div class="d-article">
+<h3 class="d-toc-header">Table of Contents</h3>
+<nav class="d-toc" id="TOC">
+<ul>
+<li><a href="#data">Data</a></li>
+<li><a href="#adjusting-for-reporting-delays">Adjusting for reporting delays</a></li>
+<li><a href="#adjusting-for-right-censoring-of-confirmation-dates">Adjusting for right-censoring of confirmation dates</a></li>
+<li><a href="#estimating-the-time-varying-reproduction-number">Estimating the time-varying reproduction number</a></li>
+<li><a href="#estimated-change-in-daily-cases">Estimated change in daily cases</a></li>
+<li><a href="#the-effect-of-changes-in-testing-procedure">The effect of changes in testing procedure</a></li>
+<li><a href="#code-and-data-availability">Code and data availability</a></li>
+</ul>
+</nav>
+<hr class="d-toc-separator"/>
+<h2 id="data">Data</h2>
+<h3 id="national-data">National data</h3>
+<p>We used daily counts of confirmed cases reported by the European Centre for Disease Control for all analyses conducted at the national level<span class="citation" data-cites="ecdc_data NCoVUtils">(<span class="citeproc-not-found" data-reference-id="ecdc_data"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="NCoVUtils"><strong>???</strong></span>)</span>. To estimate the delay from case onset date until confirmation date we used all cases from a publicly available linelist for which onset and confirmation dates are available<span class="citation" data-cites="kraemer2020epidemiological NCoVUtils">(<span class="citeproc-not-found" data-reference-id="kraemer2020epidemiological"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="NCoVUtils"><strong>???</strong></span>)</span>.</p>
+<h3 id="subnational-data-sources">Subnational data sources</h3>
+<p>For sub-national analyses, the source of the data is reported on each page, the data are fetched from government departments or from individuals who maintain a data source if no official data are available.</p>
+<h2 id="adjusting-for-reporting-delays">Adjusting for reporting delays</h2>
+<p>To estimate the reporting delay, we fit exponential and gamma distributions to the number of days between symptom onset and case confirmation, accounting for left and right censoring occurring in the data as each date is rounded to the nearest day. We fit each model in the statistical modelling program stan<span class="citation" data-cites="rstan">(<span class="citeproc-not-found" data-reference-id="rstan"><strong>???</strong></span>)</span> and compared to goodness-of-fit of each distribution to the data by comparing the approximate leave-one-out cross-validation information criterion (LOOIC)<span class="citation" data-cites="Vehtari2016">(<span class="citeproc-not-found" data-reference-id="Vehtari2016"><strong>???</strong></span>)</span>.</p>
+<p>The distribution that gives the lowest LOOIC was selected as the most appropriate and 1000 samples of the fitted distribution parameters were then drawn (rate for the exponential distribution, and shape and scale for the gamma distribution). For a given country, we used sample <span class="math inline">\(i\)</span> from the posterior distribution of delay distribution parameters, <span class="math inline">\(\Theta_i\)</span>, to draw a sample of delays, <span class="math inline">\(d_i\)</span>, to transform each observed confirmation date, <span class="math inline">\(c_i\)</span>, into a sample onset date, <span class="math inline">\(o_i\)</span>, as follows:</p>
+<p><span class="math inline">\(o_i = c_i - d_i\)</span>,</p>
+<p>where <span class="math inline">\(d_i \sim exp(\Theta_i)\)</span> or <span class="math inline">\(gamma(\Theta_i)\)</span></p>
+<p>This resulted in 1000 date of onset samples for each confirmed case.</p>
+<h2 id="adjusting-for-right-censoring-of-confirmation-dates">Adjusting for right-censoring of confirmation dates</h2>
+<p>When moving from confirmation dates to onset dates it is important to consider that the total number of confirmed cases lags behind the number of cases that have onset, since there is a delay between onset occurring and the case being counted upon confirmation. To account for this right censoring, we used binomial upscaling to increase the estimated numbers of case onsets close to the present. After transforming the observed confirmation dates to onset dates and tallying case onset numbers by day, we then drew a sample of the number of case onsets that occurred but have not yet been confirmed.</p>
+<p>If <span class="math inline">\(t\)</span> is the present date, then the number of onsets on day <span class="math inline">\(t-k\)</span>, <span class="math inline">\(o_{t-k}\)</span> is used to draw the number of unconfirmed onsets on day <span class="math inline">\(t-k\)</span>, <span class="math inline">\(o^{*}_{t-k}\)</span> from a negative binomial distribution as follows:</p>
+<p><span class="math inline">\(o^{*}_{t-k} \sim negbin(size = o_{t-k} + 1, prob = f(t-k, \Theta_i))\)</span></p>
+<p>where <span class="math inline">\(f(t-k, \Theta_i))\)</span> is the cumulative distribution function for the given delay distribution, it gives the proportion of onset cases from <span class="math inline">\(t-k\)</span> days ago that are expected to have been confirmed over the k days from that time until the present. The final numbers of case onsets that were used to estimate the time varying reproduction numbers for day <span class="math inline">\(t\)</span> are given by <span class="math inline">\(o_t + o^{*}_{t}\)</span>. As our approach could not fully reconstruct unreported cases without bias we truncated our results and did not use estimates from the last 4 days. Finally, the date of infection for each case was estimated to be 5 days prior to the date of symptom onset <span class="citation" data-cites="10.7326/M20-0504">(<span class="citeproc-not-found" data-reference-id="10.7326/M20-0504"><strong>???</strong></span>)</span>.</p>
+<h2 id="estimating-the-time-varying-reproduction-number">Estimating the time-varying reproduction number</h2>
+<p>We used the <em>EpiEstim</em> R package<span class="citation" data-cites="EpiEstim R">(<span class="citeproc-not-found" data-reference-id="EpiEstim"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="R"><strong>???</strong></span>)</span> to fit a model that estimated the time-varying reproduction number from the daily number of case onsets and a specified serial interval distribution <span class="citation" data-cites="cori2013 wallinga2004">(<span class="citeproc-not-found" data-reference-id="cori2013"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="wallinga2004"><strong>???</strong></span>)</span>. We used a gamma prior for the reproduction number with mean 2.6 and standard deviation 2. This is based on an estimate of the R0 from the initial stages of the outbreak in Wuhan<span class="citation" data-cites="Imai:webreport3">(<span class="citeproc-not-found" data-reference-id="Imai:webreport3"><strong>???</strong></span>)</span> but also has long tails to allow for differences in the reproduction number between countries. Where data was available, we also used <em>EpiEstim</em> to adjust for imported cases<span class="citation" data-cites="THOMPSON2019100356">(<span class="citeproc-not-found" data-reference-id="THOMPSON2019100356"><strong>???</strong></span>)</span>.</p>
+<p>We incorporated uncertainty in the serial interval distribution by providing <em>EpiEstim</em> with 1000 samples from the serial interval mean of 4.7 days (95% CrI: 3.7, 6.0) and the standard deviation of 2.9 days (95% CrI: 1.9, 4.9) from previous analysis<span class="citation" data-cites="Nishiura2020.02.03.20019497">(<span class="citeproc-not-found" data-reference-id="Nishiura2020.02.03.20019497"><strong>???</strong></span>)</span>. We evaluated window lengths from 1 to 7 days, running <em>EpiEstim</em> separately for each window choice. We therefore fitted the <em>EpiEstim</em> model 1000 times overall for each window, each time using a different combination of sampled onset dates and serial interval distribution. The optimal window was selected by first estimating the one day ahead number of cases implied by each time-varying reproduction number estimate<span class="citation" data-cites="NOUVELLET201829">(<span class="citeproc-not-found" data-reference-id="NOUVELLET201829"><strong>???</strong></span>)</span> and then scoring this nowcast against the observed number of cases using the RPS score<span class="citation" data-cites="gneiting_strictly_2007 jordan_evaluating_2019">(<span class="citeproc-not-found" data-reference-id="gneiting_strictly_2007"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="jordan_evaluating_2019"><strong>???</strong></span>)</span>. For each sample the window with the lowest median RPS score was selected.</p>
+<p>The estimates of the time-varying reproduction number at each time point were combined over all 1000 samples, using the optimal window for each sample, to give a credible interval that incorporates uncertainty from the delay from case onset to confirmation and the length of the serial interval.</p>
+<h2 id="estimated-change-in-daily-cases">Estimated change in daily cases</h2>
+<p>We defined the estimated change in daily cases to correspond to the proportion of reproduction number estimates for the current day that are below 1 (the value at which an outbreak is in decline). It was assumed that if less than 5% of samples were subcritical then an increase in cases was definite, if less than 20% of samples were subcritical then an increase in cases was likely, if more than 80% of samples were subcritical then a decrease in cases was likely and if more than 95% of samples were subcritical then a decrease in cases was definite. For countries/regions with between 20% and 80% of samples being subcritical we could not make a statement about the likely change in cases (defined as unsure). We estimated the rate of spread (<span class="math inline">\(r\)</span>) using linear regression with time as the only exposure and the logarithm of cases as the outcome for the overall course of the outbreak <span class="citation" data-cites="Park2019">(<span class="citeproc-not-found" data-reference-id="Park2019"><strong>???</strong></span>)</span>. The adjusted <span class="math inline">\(R^2\)</span> value of the regression fit was then used to assess the goodness-of-fit. In order to account for potential changes in the rate of spread over the course of the outbreak we used a 7-day sliding window to produce time-varying estimates of the rate of spread and the corresponding adjusted <span class="math inline">\(R^2\)</span>. The doubling time was then estimated by calculating <span class="math inline">\(\text{ln}(2) \frac{1}{r}\)</span> for each estimate of the rate of spread.</p>
+<h2 id="the-effect-of-changes-in-testing-procedure">The effect of changes in testing procedure</h2>
+<p>The results presented here are sensitive to changes in COVID-19 testing practices and the level of effort put into detecting COVID-19 cases. If a country expands their testing capacity and begins to report a higher proportion of cases then the model will fit a higher reproduction number value to account for this becasue it only understands new cases in terms of the infectiousness of previously reported cases and not as a result of better testing. On the other hand, if a country reduces their testing effort (for example, hitting their test capacity or running out of tests) then the model will estimate a drop in the reproduction number that may not be a true reduction. What is important for these results to be unbiased by testing is consistency in the level of testing effort rather than the actual level of testing effort. This means that whilst a change in testing effort will initially introduce bias, this will be reduced over time as long as the testing effort remains consistent from this point on.</p>
+<h2 id="code-and-data-availability">Code and data availability</h2>
+<p>We report the median and 90% highest density intervals for all measures. The analysis was conducted independently for all regions and is updated regularly as new data becomes available. Confidence in our estimates is shown using the proportion of data that were derived using binomial upscaling, confidence decreases as estimates get closer to now since there is more uncertainty in the upscaled number of cases. Code and results from this analysis can be found <a href="https://epiforecasts.io/EpiNow">here</a> and <a href="https://github.com/epiforecasts/covid">here</a>.</p>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom">
+<h3 id="updates-and-corrections">Corrections</h3>
+<p>If you see mistakes or want to suggest changes, please <a href="https/github.com/epiforecasts/covid/issues/new">create an issue</a> on the source repository.</p>
+<h3 id="reuse">Reuse</h3>
+<p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Source code is available at <a href="https/github.com/epiforecasts/covid">https/github.com/epiforecasts/covid</a>, unless otherwise noted. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
+</div>
+<script id="distill-bibliography" type="text/bibtex">
+
+@Manual{EricBrown2020,
+  title = {data2019nCoV: Data on the COVID-19 Outbreak},
+  author = {Eric Brown},
+  year = {2020},
+  note = {R package version 0.40.1}
+  }
+
+@webpage{WorldHealthOrganization:sitrep,
+  author = {{World Health Organization}},
+  title = {Coronavirus disease (COVID-2019) situation reports},
+  url = {https://www.who.int/emergencies/diseases/novel-coronavirus-2019/situation-reports}
+}
+
+
+@Article{NCoVUtils,
+  title = {NCoVUtils: Utility functions for the 2019-NCoV outbreak},
+  author = {Sam Abbott and Joel Hellewell and James D. Munday and Sebastian Funk},
+  journal = {-},
+  year = {2020},
+  volume = {-},
+  number = {-},
+  pages = {-},
+  doi = {10.5281/zenodo.3635417}
+  }
+  
+@webpage{italydata,
+  author = {{Dipartimento della Protezione Civile}},
+  title = {Dati COVID-19 Italia},
+  url = {https://github.com/pcm-dpc/COVID-19}
+}
+
+
+  @Manual{R,
+    title = {R: A Language and Environment for Statistical Computing},
+    author = {{R Core Team}},
+    organization = {R Foundation for Statistical Computing},
+    address = {Vienna, Austria},
+    year = {2019},
+    url = {https://www.R-project.org/},
+  }
+
+@Manual{EpiEstim,
+    title = {EpiEstim: Estimate Time Varying Reproduction Numbers from Epidemic Curves},
+    author = {Anne Cori},
+    year = {2019},
+    note = {R package version 2.2-1},
+    url = {https://CRAN.R-project.org/package=EpiEstim}
+  }
+
+@article{wallinga2004,
+    author = {Wallinga, Jacco and Teunis, Peter},
+    title = {Different Epidemic Curves for Severe Acute Respiratory Syndrome Reveal  Similar Impacts of Control Measures},
+    journal = {American Journal of Epidemiology},
+    volume = {160},
+    number = {6},
+    pages = {509-516},
+    year = {2004},
+    month = {09},
+    issn = {0002-9262},
+    doi = {10.1093/aje/kwh255},
+    url = {https://doi.org/10.1093/aje/kwh255},
+    eprint = {https://academic.oup.com/aje/article-pdf/160/6/509/179728/kwh255.pdf}
+}
+
+@article{cori2013,
+    author = {Cori, Anne and Ferguson, Neil M. and Fraser, Christophe and Cauchemez, Simon},
+    title = {A New Framework and Software to Estimate Time-Varying Reproduction Numbers During Epidemics},
+    journal = {American Journal of Epidemiology},
+    volume = {178},
+    number = {9},
+    pages = {1505-1512},
+    year = {2013},
+    month = {09},
+    issn = {0002-9262},
+    doi = {10.1093/aje/kwt133},
+    url = {https://doi.org/10.1093/aje/kwt133},
+    eprint = {https://academic.oup.com/aje/article-pdf/178/9/1505/17341195/kwt133.pdf}
+}
+
+
+@Misc{rstan,
+    title = {RStan: the R interface to Stan},
+    author = {{Stan Development Team}},
+    note = {R package version 2.19.3},
+    year = {2020},
+    url = {http://mc-stan.org/}
+  }
+  
+@article {Nishiura2020.02.03.20019497,
+	author = "Nishiura, Hiroshi and Linton, Natalie M and Akhmetzhanov, Andrei R.",
+	title = {Serial interval of novel coronavirus (2019-nCoV) infections},
+	elocation-id = {2020.02.03.20019497},
+	year = {2020},
+	doi = {10.1101/2020.02.03.20019497},
+	publisher = {Cold Spring Harbor Laboratory Press},
+	URL = {https://www.medrxiv.org/content/early/2020/02/17/2020.02.03.20019497},
+	eprint = {https://www.medrxiv.org/content/early/2020/02/17/2020.02.03.20019497.full.pdf},
+	journal = {medRxiv}
+}
+
+@webpage{Imai:webreport3,
+author = "Imai, Natsuki and Cori, Anne and Dorigatti, IIaria and Baguellin, Marc and Donnelly, Christl A and Riley, Steven and Ferguson, Neil M",
+title = {Report 3: Transmissibility of 2019-nCoV},
+url = {https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-2019-nCoV-transmissibility.pdf}
+}
+
+
+@webpage{kraemer2020epidemiological,
+  author = "Xu, Bo and Gutierrez, Bernardo and Hill, Sarah and Scarpino, Samuel and Loskill, Alyssa and Wu, Jessie and Sewalk, Kara and Mekaru, Sumiko and Zarebski, Alexander and Pybus, Oliver and Pigott, David and Kraemer, Moritz",
+  title = "Epidemiological Data from the nCoV-2019 Outbreak: Early Descriptions from Publicly Available Data",
+  url = {http://virological.org/t/epidemiological-data-from-the-ncov-2019-outbreak-early-descriptions-from-publicly-available-data/337}
+}
+
+
+
+@article{THOMPSON2019100356,
+  title = "Improved inference of time-varying reproduction numbers during infectious disease outbreaks",
+  journal = "Epidemics",
+  volume = "29",
+  pages = "100356",
+  year = "2019",
+  issn = "1755-4365",
+  doi = "https://doi.org/10.1016/j.epidem.2019.100356",
+  url = "http://www.sciencedirect.com/science/article/pii/S1755436519300350",
+  author = "R.N. Thompson and J.E. Stockwin and R.D. van Gaalen and J.A. Polonsky and Z.N. Kamvar and P.A. Demarsh and E. Dahlqwis and S. Li and E. Miguel and T. Jombart and J. Lessler and S. Cauchemez and A. Cori"
+}
+
+@article{Park2019,
+title = "A practical generation-interval-based approach to inferring the strength of epidemics from their speed",
+journal = "Epidemics",
+volume = "27",
+pages = "12 - 18",
+year = "2019",
+issn = "1755-4365",
+doi = "https://doi.org/10.1016/j.epidem.2018.12.002",
+url = "http://www.sciencedirect.com/science/article/pii/S1755436518300847",
+author = "Sang Woo Park and David Champredon and Joshua S. Weitz and Jonathan Dushoff"}
+
+
+@article{Thompson:2020bc,
+  title = "2019-20 Wuhan coronavirus outbreak: Intense surveillance is vital for preventing sustained transmission in new locations",
+  author = "R.N. Thompson",
+  journal = "bioRxiv",
+  year = "2020",
+  pages = "1 - 14"
+}
+
+
+@techreport{gehrcke_covid-19_2020,
+    address = {Germany},
+    type = {Github {Repository}},
+    title = {COVID-19 case numbers in Germany by state, over time},
+    copyright = {MIT License},
+    shorttitle = {{COVID}-19 case numbers in {Germany}},
+    url = {https://github.com/jgehrcke/covid-19-germany-gae},
+    language = {German},
+    author = {Gehrcke, Jan-Philip},
+    year = {2020}
+}
+
+@techreport{jhu_2019_2020,
+    title = {2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository},
+    copyright = {Copyright 2020 Johns Hopkins University},
+    url = {https://github.com/CSSEGISandData/COVID-19},
+    language = {English},
+    institution = {Johns Hopkins CSSE},
+    year = {2020}
+}
+
+@techreport{doughty_visualisation_2020,
+    type = {Github Repository},
+    title = {Visualisation of COVID-19 official UK case data},
+    url = {https://github.com/emmadoughty/Daily_COVID-19/},
+    language = {English},
+    author = {Doughty, Emma},
+    year = {2020}
+}
+
+@techreport{ecdc_data,
+    title = {Download Today's Data on the Geographic Distribution of COVID-19 Cases Worldwide.},
+    url = {www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide},
+    language = {English},
+    author = {European Centre for Disease Prevention and Control},
+    year = {2020}
+}
+
+@article{Vehtari2016,
+archivePrefix = {arXiv},
+arxivId = {arXiv:1507.04544v4},
+author = {Vehtari, Aki and Gelman, Andrew and Gabry, Jonah},
+doi = {10.1007/s11222-016-9696-4},
+eprint = {arXiv:1507.04544v4},
+issn = {15731375},
+journal = {Stat. Comput.},
+number = {September},
+pages = {1--20},
+title = {Practical Bayesian model evaluation using leave-one-out cross-validation and WAIC},
+year = {2016}
+}
+
+@article{gneiting_strictly_2007,
+	title = {Strictly Proper Scoring Rules, Prediction, and Estimation},
+	volume = {102},
+	issn = {0162-1459, 1537-274X},
+	url = {http://www.tandfonline.com/doi/abs/10.1198/016214506000001437},
+	doi = {10.1198/016214506000001437},
+	language = {en},
+	number = {477},
+	urldate = {2020-03-22},
+	journal = {Journal of the American Statistical Association},
+	author = {Gneiting, Tilmann and Raftery, Adrian E},
+	month = mar,
+	year = {2007},
+	pages = {359--378}
+}
+
+@article{NOUVELLET201829,
+title = "A simple approach to measure transmissibility and forecast incidence",
+journal = "Epidemics",
+volume = "22",
+pages = "29 - 35",
+year = "2018",
+note = "The RAPIDD Ebola Forecasting Challenge",
+issn = "1755-4365",
+doi = "https://doi.org/10.1016/j.epidem.2017.02.012",
+url = "http://www.sciencedirect.com/science/article/pii/S1755436517300245",
+author = "Pierre Nouvellet and Anne Cori and Tini Garske and Isobel M. Blake and Ilaria Dorigatti and Wes Hinsley and Thibaut Jombart and Harriet L. Mills and Gemma Nedjati-Gilani and Maria D. Van Kerkhove and Christophe Fraser and Christl A. Donnelly and Neil M. Ferguson and Steven Riley"}
+
+
+@article{jordan_evaluating_2019,
+	title = {Evaluating Probabilistic Forecasts with scoringRules},
+	volume = {90},
+	issn = {1548-7660},
+	url = {http://www.jstatsoft.org/v90/i12/},
+	doi = {10.18637/jss.v090.i12},
+	language = {en},
+	number = {12},
+	urldate = {2020-03-07},
+	journal = {Journal of Statistical Software},
+	author = {Jordan, Alexander and Krüger, Fabian and Lerch, Sebastian},
+	year = {2019}
+}
+
+@article{10.7326/M20-0504,
+    author = {Lauer, Stephen A. and Grantz, Kyra H. and Bi, Qifang and Jones, Forrest K. and Zheng, Qulu and Meredith, Hannah R. and Azman, Andrew S. and Reich, Nicholas G. and Lessler, Justin},
+    title = "The Incubation Period of Coronavirus Disease 2019 (COVID-19) From Publicly Reported Confirmed Cases: Estimation and Application",
+    journal = {Annals of Internal Medicine},
+    year = {2020},
+    month = {03},
+    issn = {0003-4819},
+    doi = {10.7326/M20-0504},
+    url = {https://doi.org/10.7326/M20-0504},
+    eprint = {https://annals.org/acp/content\_public/journal/aim/0/aime202005050-m200504.pdf},
+}
+</script>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<div class="distill-site-nav distill-site-footer">
+<p>© Copyright 2020 <a href="">EpiForecasts</a> and the <a href="">CMMID Covid working group</a></p>
+<p>Software licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+</div>
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>
