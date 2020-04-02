@@ -53,7 +53,7 @@ summary_table <- summary_table %>%
                    by = c("Region" = "region"))
 ```
 
-```{r map, fig.width = 6, fig.height = 6, layout="l-body-outset", out.width = "80%"}
+```{r map, fig.height = 6, layout="l-body-outset", out.width = "70%"}
 regions <- rnaturalearth::ne_states("Germany", returnclass = "sf")
 
 
@@ -70,13 +70,12 @@ EpiNow::theme_map(
   map,
   continuous = FALSE,
   variable_label = "Expected change in daily cases",
-  viridis_palette = "cividis",
   fill_labels = ggplot2::waiver()
   )
 ```
 
 <br>
-`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated cases with a date of infection on the ", latest_date , ") in Germany, stratified by region, can be summarised by whether cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively.*")`
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated cases with a date of infection on the ", latest_date , ") in Germany, stratified by region, can be summarised by whether cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Regions with fewer than 40 cases reported on a single day are not included in the analysis (light grey).*")`
 
 ## National summary
 
