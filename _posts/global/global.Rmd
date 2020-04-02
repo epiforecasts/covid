@@ -33,7 +33,7 @@ summary_table <- readRDS("nowcast/national-summary/summary_table.rds")
 latest_date <- readRDS("nowcast/national-summary/latest_date.rds")
 ```
 
-```{r map, fig.width = 12, fig.height = 6, layout="l-body-outset"}
+```{r map, fig.height = 6, layout="l-body-outset", out.width = "70%"}
 global <- summary_table %>% 
   dplyr::rename(country = `Country/Region`) %>% 
   dplyr::filter(!country %in% c("Hubei", "Hong Kong", "China excluding Hubei")) %>% 
@@ -43,7 +43,7 @@ global
 ```
 
 <br>
-`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated cases with a date of infection on the ", latest_date , ") can be summarised by whether cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively. Countries are only included if at least 100 cases have been reported on a single day.*")`
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated cases with a date of infection on the ", latest_date , ") can be summarised by whether cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Countries with fewer than 100 cases reported on a single day are not included in the analysis (light grey).*")`
 
 ```{r} 
 standalone <- TRUE
