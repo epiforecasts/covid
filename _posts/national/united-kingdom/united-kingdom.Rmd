@@ -41,7 +41,7 @@ uk_shp <- readRDS("nowcast/data/uk_shp.rds")
 latest_date <- readRDS("nowcast/regional-summary/latest_date.rds")
 ```
 
-```{r map, fig.width = 6, fig.height = 6, layout="l-body-outset"}
+```{r map,fig.height = 8, layout="l-body-outset", out.width = "70%"}
 map <- uk_shp %>% 
   dplyr::full_join(summary_table %>% 
   dplyr::rename(region  = Region), by = "region") %>% 
@@ -52,13 +52,13 @@ map %>%
   EpiNow::theme_map(
     continuous = FALSE,
     variable_label = "Expected change in daily cases",
-    viridis_palette = "cividis",
-    fill_labels = ggplot2::waiver()
+    fill_labels = ggplot2::waiver(),
+    breaks = levels(summary_table$`Expected change in daily cases`)
   )
 ```
 
 <br>
-`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated cases with a date of infection on the ", latest_date , ") in the United Kingdom, stratified by region, can be summarised by whether cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively.*")`
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated cases with a date of infection on the ", latest_date , ") in the United Kingdom, stratified by region, can be summarised by whether cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Regions with fewer than 40 cases reported on a single day are not included in the analysis (light grey).*")`
 
 
 ## National summary
