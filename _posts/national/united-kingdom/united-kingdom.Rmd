@@ -35,7 +35,7 @@ library(here)
 
 *Using data available up to the:* `r Sys.Date()`
 
-## Expected daily cases by region
+## Expected daily confirmed cases by region
 
 ```{r}
 summary_table <- readRDS ("nowcast/regional-summary/summary_table.rds")
@@ -47,20 +47,20 @@ latest_date <- readRDS("nowcast/regional-summary/latest_date.rds")
 map <- uk_shp %>% 
   dplyr::full_join(summary_table %>% 
   dplyr::rename(region  = Region), by = "region") %>% 
-  ggplot2::ggplot(ggplot2::aes(fill = `Expected change in daily cases`)) +
+  ggplot2::ggplot(ggplot2::aes(fill = `Expected change in daily confirmed cases`)) +
   ggplot2::geom_sf(alpha = 0.8, size = 0.2)
 
 map %>% 
   EpiNow::theme_map(
     continuous = FALSE,
-    variable_label = "Expected change in daily cases",
+    variable_label = "Expected change in daily confirmed cases",
     fill_labels = ggplot2::waiver(),
-    breaks = levels(summary_table$`Expected change in daily cases`)
+    breaks = levels(summary_table$`Expected change in daily confirmed cases`)
   )
 ```
 
 <br>
-`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated cases with a date of infection on the ", latest_date , ") in the United Kingdom, stratified by region, can be summarised by whether cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Regions with fewer than 40 cases reported on a single day are not included in the analysis (light grey).*")`
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") in the United Kingdom, stratified by region, can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Regions with fewer than 40 confirmed cases reported on a single day are not included in the analysis (light grey).*")`
 
 
 ## National summary
@@ -85,12 +85,12 @@ show_title <- FALSE
 ### Data availability
 
 * Case counts by date, stratified by region, were downloaded from a public curated dataset [@doughty_visualisation_2020; @NCoVUtils].
-* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to an international line-list [@kraemer2020epidemiological; @NCoVUtils].
+* Case onset dates were estimated using confirmed case counts by date of report and a distribution of reporting delays fitted to an international line-list [@kraemer2020epidemiological; @NCoVUtils].
 
 ### Limitations
 
 * Line-list data to inform a United Kingdom specific estimate of the reporting delay was not available. This means that we could also not account for any regional differences.
-* Regions are only included if at least 40 cases have been reported on a single day.
+* Regions are only included if at least 40 confirmed cases have been reported on a single day.
 
 
 ```{r} 
