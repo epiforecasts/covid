@@ -30,6 +30,8 @@ x <- paste0("#' ---
 #'  - '", region, "'
 #'--- 
 #'
+#'
+#'*Using data available up to the:* `r Sys.Date()`
 #'")
   
 x2 <- "
