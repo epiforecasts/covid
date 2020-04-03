@@ -33,6 +33,8 @@ library(rmarkdown)
 library(here)
 ```
 
+*Using data available up to the:* `r Sys.Date()`
+
 ## Expected daily cases by region
 
 ```{r}
