@@ -38,7 +38,8 @@ EpiNow::regional_rt_pipeline(
   cases = cases, 
   linelist = linelist, 
   target_folder = "_posts/global/nowcast/national",
-  case_limit = 100
+  case_limit = 100,
+  horizon = 0
 )
 
 
@@ -47,5 +48,4 @@ EpiNow::regional_rt_pipeline(
 EpiNow::regional_summary(results_dir = "_posts/global/nowcast/national", 
                          summary_dir = "_posts/global/nowcast/national-summary",
                          target_date = "latest",
-                         region_scale = "Country/Region",
-                         horizon = 0)
+                         region_scale = "Country/Region")
