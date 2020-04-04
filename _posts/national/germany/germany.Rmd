@@ -38,7 +38,7 @@ library(sf)
 
 *Using data available up to the:* `r Sys.Date()`
 
-## Expected daily cases by region
+## Expected daily confirmed cases by region
 
 ```{r}
 summary_table <- readRDS("nowcast/regional-summary/summary_table.rds")
@@ -64,7 +64,7 @@ regions_with_data <- regions %>%
                   by = c("iso_3166_2" = "region_code"))
 
 map <- ggplot2::ggplot(regions_with_data) +
-  ggplot2::geom_sf(ggplot2::aes(fill = `Expected change in daily cases`),
+  ggplot2::geom_sf(ggplot2::aes(fill = `Expected change in daily confirmed cases`),
                    alpha = 0.8, size = 0.2, col = "white")
 
 
@@ -108,7 +108,7 @@ show_title <- FALSE
 ### Limitations
 
 * Line-list data to inform a region specific estimate of the reporting delay were not available. 
-* Regions are only included if at least 40 cases have been reported on a single day.
+* Regions are only included if at least 40 confirmed cases have been reported on a single day.
 
 ```{r} 
 standalone <- FALSE
