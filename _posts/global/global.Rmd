@@ -28,7 +28,7 @@ library(here)
 
 *Using data available up to the:* `r Sys.Date()`
 
-### Expected daily cases by country
+### Expected daily confirmed cases by country
 
 ```{r}
 summary_table <- readRDS("nowcast/national-summary/summary_table.rds")
@@ -39,13 +39,13 @@ latest_date <- readRDS("nowcast/national-summary/latest_date.rds")
 global <- summary_table %>% 
   dplyr::rename(country = `Country/Region`) %>% 
   dplyr::filter(!country %in% c("Hubei", "Hong Kong", "China excluding Hubei")) %>% 
-  EpiNow::global_map(variable = "Expected change in daily cases")
+  EpiNow::global_map(variable = "Expected change in daily confirmed cases")
 
 global
 ```
 
 <br>
-`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated cases with a date of infection on the ", latest_date , ") can be summarised by whether cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Countries with fewer than 100 cases reported on a single day are not included in the analysis (light grey).*")`
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Countries with fewer than 100 confirmed cases reported on a single day are not included in the analysis (light grey) as there is not enough data to reliably estimate the reproduction number.*")`
 
 ```{r} 
 standalone <- TRUE
