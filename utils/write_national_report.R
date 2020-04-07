@@ -7,7 +7,7 @@
 #' @export
 #'
 #' @examples
-#' 
+#'
 write_national_report <- function(country_details = NULL){
 
 loc <- country_details$country
@@ -28,18 +28,20 @@ x <- paste0("#' ---
 #'    toc_depth: 2
 #'categories:
 #'  - '", region, "'
-#'--- 
+#'---
 #'
 #'
 #'*Using data available up to the:* `r Sys.Date()`
+#'
+#'*Note that it takes time for infection to cause symptoms, to get tested for SARS-CoV-2 infection, for a positive test to return and ultimately to enter the case data presented here. In other words, today’s case data are only informative of new infections about two weeks ago. This is reflected in the plots below, which are by date of infection.*
 #'")
-  
+
 x2 <- "
 #+ setup, include = FALSE
 knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
                       message = FALSE,
                       warning = FALSE,
-                      fig.height = 12, 
+                      fig.height = 12,
                       fig.width = 12,
                       dpi = 320)
 #'
@@ -49,7 +51,7 @@ library(dplyr)
 library(rmarkdown)
 library(here)
 
-latest_date <- readRDS(here::here('_posts/global/nowcast/national-summary/latest_date.rds'))
+latest_date <- readRDS(here::here('_nowcasts/covid-global/national-summary/latest_date.rds'))
 #'"
 
 x3 <- paste0("
@@ -61,7 +63,7 @@ summary_figures <- 0
 title_depth <- 2
 index <- 1
 region <-'",loc,"'
-region_path <- '_posts/global/nowcast/national'
+region_path <- '_nowcasts/covid-global/national'
 show_title <- FALSE
 #'
 #'
@@ -84,5 +86,3 @@ file.remove(paste0("_posts/national/",save_name,"/", save_name, ".R"))
 
 return(invisible(NULL))
 }
-
-
