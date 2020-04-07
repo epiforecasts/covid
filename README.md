@@ -22,14 +22,14 @@ Update all external results using the following git call.
 git submodule update --init --recursive
 ```
 
-### Nowcasts
+### Update the website
 
 #### Update
 
 Update all nowcasts and deploy the website with the following:
 
 ```bash
-bash bin/update_nowcasts.sh
+bash bin/update_website.sh
 ```
 
 ## Docker
