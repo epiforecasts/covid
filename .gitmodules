@@ -1,3 +1,6 @@
 [submodule "_nowcasts/covid-regional"]
 	path = _nowcasts/covid-regional
 	url = https://github.com/epiforecasts/covid-regional
+[submodule "_nowcasts/covid-global"]
+	path = _nowcasts/covid-global
+	url = https://github.com/epiforecasts/covid-global
