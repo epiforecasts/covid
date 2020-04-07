@@ -1,7 +1,7 @@
 ---
 title: "Global summary"
 description: |
-  Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally.
+  Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).
 bibliography: library.bib
 output:
   distill::distill_article:
@@ -28,6 +28,8 @@ library(here)
 
 *Using data available up to the:* `r Sys.Date()`
 
+*Note that it takes time for infection to cause symptoms, to get tested for SARS-CoV-2 infection, for a positive test to return and ultimately to enter the case data presented here. In other words, today’s case data are only informative of new infections about two weeks ago. This is reflected in the plots below, which are by date of infection.*
+
 ### Expected daily confirmed cases by country
 
 ```{r}
@@ -36,9 +38,9 @@ latest_date <- readRDS("nowcast/national-summary/latest_date.rds")
 ```
 
 ```{r map, fig.height = 6, layout="l-body-outset", out.width = "70%"}
-global <- summary_table %>% 
-  dplyr::rename(country = `Country/Region`) %>% 
-  dplyr::filter(!country %in% c("Hubei", "Hong Kong", "China excluding Hubei")) %>% 
+global <- summary_table %>%
+  dplyr::rename(country = `Country/Region`) %>%
+  dplyr::filter(!country %in% c("Hubei", "Hong Kong", "China excluding Hubei")) %>%
   EpiNow::global_map(variable = "Expected change in daily confirmed cases")
 
 global
@@ -47,7 +49,7 @@ global
 <br>
 `r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Countries with fewer than 100 confirmed cases reported on a single day are not included in the analysis (light grey) as there is not enough data to reliably estimate the reproduction number.*")`
 
-```{r} 
+```{r}
 standalone <- TRUE
 region_path <- NULL
 summary_path <- "_posts/global/nowcast/national-summary"

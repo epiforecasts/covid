@@ -20,7 +20,7 @@ categories:
 knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
                       message = FALSE,
                       warning = FALSE,
-                      fig.height = 12, 
+                      fig.height = 12,
                       fig.width = 12,
                       dpi = 320)
 ```
@@ -35,6 +35,8 @@ library(here)
 
 *Using data available up to the:* `r Sys.Date()`
 
+*Note that it takes time for infection to cause symptoms, to get tested for SARS-CoV-2 infection, for a positive test to return and ultimately to enter the case data presented here. In other words, today’s case data are only informative of new infections about two weeks ago. This is reflected in the plots below, which are by date of infection.*
+
 ## Expected daily cases by region
 
 ```{r}
@@ -44,9 +46,9 @@ latest_date <- readRDS("nowcast/regional-summary/latest_date.rds")
 ```
 
 ```{r map, fig.width = 6, fig.height = 6, layout="l-body-outset", out.width = "80%"}
-summary_table %>% 
-  dplyr::rename(region = Region) %>% 
-  dplyr::left_join(region_codes, by = "region") %>% 
+summary_table %>%
+  dplyr::rename(region = Region) %>%
+  dplyr::left_join(region_codes, by = "region") %>%
   EpiNow::country_map(country = "Italy", variable = "Expected change in daily confirmed cases")
 ```
 
@@ -83,7 +85,7 @@ show_title <- FALSE
 * Line-list data to inform a Italy specific estimate of the reporting delay was not available. This means that we could also not account for any regional differences.
 * Regions are only included if at least 40 confirmed cases have been reported on a single day.
 
-```{r} 
+```{r}
 standalone <- FALSE
 region_path <- NULL
 summary_path <- "_posts/national/italy/nowcast/regional-summary"
@@ -91,4 +93,3 @@ summary_path <- "_posts/national/italy/nowcast/regional-summary"
 
 ```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow")}
 ```
-

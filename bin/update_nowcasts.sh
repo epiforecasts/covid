@@ -3,14 +3,24 @@
 ## Make sure the repo is up to date
 git pull
 
+## Make sure all submodules are up to date
+git submodule update --init --recursive
+
 ## Make sure all dependencies are up to date and installed
 Rscript -e "devtools::install_dev_deps()"
 
 ## Reset the data cache
 Rscript -e "NCoVUtils::reset_cache()"
 
-## Update nowcasts
-Rscript utils/update_nowcasts.R
+## Update global nowcasts
+cd _nowcasts/covid-global
+bash update_nowcasts.sh
+cd ../..
+
+## Update regional breakdowns
+cd _nowcasts/covid-regional
+bash update_nowcasts.sh
+cd ../..
 
 ## Update national reports
 Rscript utils/update_report_templates.R
@@ -25,7 +35,7 @@ Rscript -e "rmarkdown::render_site()"
 Rscript utils/clean_built_site.R
 
 ## Update the git repo with new results
-git add --all && git commit -m "Updated nowcasts" && git push
+git add --all && git commit -m "Updated website" && git push
 
 ## Deploy the website to gh-pages
 bash bin/deploy_website.sh

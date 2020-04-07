@@ -12,10 +12,10 @@ require(rnaturalearth)
 
 
 
-countries <- tibble::tibble(country = list.dirs("_posts/global/nowcast/national", recursive = FALSE) %>%
-                              stringr::str_remove("_posts/global/nowcast/national/")) %>% 
-  dplyr::mutate(file_name = country %>% 
-                  stringr::str_replace_all(" ", "-") %>% 
+countries <- tibble::tibble(country = list.dirs("_nowcasts/covid-global/national", recursive = FALSE) %>%
+                              stringr::str_remove("_nowcasts/covid-global/national/")) %>%
+  dplyr::mutate(file_name = country %>%
+                  stringr::str_replace_all(" ", "-") %>%
                   stringr::str_to_lower(),
                 country_code = countrycode::countrycode(country,
                                                         origin = "country.name",
@@ -31,10 +31,10 @@ world <- rnaturalearth::ne_countries(scale='medium',
 # Link countries with regions ---------------------------------------------
 
 
-countries <- countries %>% 
+countries <- countries %>%
   dplyr::left_join(world,
                    by = c("country_code" = "iso_a3")
-  ) %>% 
+  ) %>%
   dplyr::select(country, file_name, region = region_un)
 
 
@@ -46,9 +46,9 @@ countries <- countries %>%
 regional_breakdowns <- c("Italy", "United Kingdom", "United States of America", "Germany")
 
 
-countries <- countries %>% 
-  dplyr::filter(!country %in% regional_breakdowns) %>% 
-  dplyr::rowwise() %>% 
+countries <- countries %>%
+  dplyr::filter(!country %in% regional_breakdowns) %>%
+  dplyr::rowwise() %>%
   dplyr::group_split()
 
 
