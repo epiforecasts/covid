@@ -12,14 +12,14 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Centre for the Mathematical Modelling of Infectious Disases, London School of Hygiene and Tropical Medicine
 
-Name | 
+Name |
 ----------------------|------------------
 **Sam Abbott**  |
 **Joel Hellewell**  |
 **Robin N Thompson** |
 **Nikos I Bosse** |
 **James D Munday** |
-**Kath Sherratt** | 
+**Kath Sherratt** |
 **Hamish Gibbs** |
 [**Sebastian Funk** (group lead)](https://www.lshtm.ac.uk/aboutus/people/funk.sebastian) |
 
@@ -40,9 +40,10 @@ Name | Institution
 
 Centre for the Mathematical Modelling of Infectious Disases, London School of Hygiene and Tropical Medicine
 
-Name | 
+Name |
 ----------------------|------------------
-**Amy Gimma** | 
+**Carl A B Pearson** |
+**Amy Gimma** |
 **Timothy W Russell** |
 **Christopher I Jarvis** |
 [**CMMID nCov working group**](https://cmmid.github.io/groups/ncov-group) |

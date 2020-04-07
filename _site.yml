@@ -17,7 +17,7 @@ navbar:
       href: index.html
     - text: "Global"
       href: posts/global/index.html
-    - text: 'National' 
+    - text: 'National'
       menu:
        - text: 'Africa'
          href: reports.html#Africa
@@ -25,9 +25,9 @@ navbar:
          href: reports.html#Americas
        - text: 'Oceania'
          href: reports.html#Oceania
-       - text: 'Europe' 
+       - text: 'Europe'
          href: reports.html#Europe
-       - text: 'Asia' 
+       - text: 'Asia'
          href: reports.html#Asia
     - text: "Subnational"
       menu:
@@ -59,6 +59,6 @@ collections:
     feed_items_max: false
     share: [twitter, linkedin, facebook]
 output: distill::distill_article
-exclude: ["Dockerfile", "DESCRIPTION", "README.md", 
+exclude: ["Dockerfile", "DESCRIPTION", "README.md",
          ".Rbuildignore", "LICENSE", "LICENSE.md",
-         "bin", "utils"]
+         "bin", "utils", "_nowcasts"]
