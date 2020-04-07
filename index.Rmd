@@ -1,7 +1,7 @@
 ---
 title: "Temporal variation in transmission during the COVID-19 outbreak"
 site: distill::distill_website
-bibliography: library.bib   
+bibliography: library.bib
 ---
 
 
@@ -12,11 +12,11 @@ To identify changes in the reproduction number, rate of spread, and doubling tim
 
 ## Summary
 
-* We used daily counts of confirmed cases reported by the European Centre for Disease Control for all analyses conducted at the national level [@ecdc_data; @NCoVUtils]. 
+* We used daily counts of confirmed cases reported by the European Centre for Disease Control for all analyses conducted at the national level [@ecdc_data; @NCoVUtils].
 *	Case onset dates were estimated by transforming case confirmation dates using an onset-to-confirmation delay distribution that was derived using all cases from a publically available linelist for which onset and confirmation dates were available [@kraemer2020epidemiological; @NCoVUtils]. The date of infection was then assumed using a median incubation period of 5 days [@10.7326/M20-0504].
 * The right-censoring of cases that have had symptom onset but are yet to be confirmed was adjusted for by upscaling the numbers of case onsets close to the present date. This assumes that cases that have already onset are drawn from a binomial distribution with the probability of onset having occurred by a certain point given by the onset-to-confirmation distribution.
 * Time-varying effective reproduction estimates were made using *EpiEstim* [@EpiEstim; @THOMPSON2019100356] adjusted for imported cases, optimising the window using a one-day ahead nowcast, and assuming an uncertain serial interval with a mean of 4.7 days (95% CrI: 3.7, 6.0) and a standard deviation of 2.9 days (95% CrI: 1.9, 4.9) [@Nishiura2020.02.03.20019497].
-* Time-varying estimates of the doubling time were made with a 7-day sliding window by iteratively fitting an exponential regression model. 
+* Time-varying estimates of the doubling time were made with a 7-day sliding window by iteratively fitting an exponential regression model.
 
 ## Limitations
 
