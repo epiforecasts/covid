@@ -6,11 +6,18 @@
 
 ## Usage
 
+### Update external results
+
+Update all external results using the following git call.
+
+```bash
+git submodule update --init --recursive
+```
 ### Nowcasts
 
 #### Update
 
-Update all nowcasts and deploy the website with the following: 
+Update all nowcasts and deploy the website with the following:
 
 ```bash
 bash bin/update_nowcasts.sh
@@ -18,7 +25,7 @@ bash bin/update_nowcasts.sh
 
 ## Docker
 
-This analysis was developed in a docker container based on the `rocker/geospatial` docker image. 
+This analysis was developed in a docker container based on the `rocker/geospatial` docker image.
 
 To build the docker image run (from the `covid` directory):
 
