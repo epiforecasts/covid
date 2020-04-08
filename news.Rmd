@@ -13,6 +13,12 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## 2020-04-09
+
+* Updated all estimates with latest data.
+* Corrected a mismatch between the data used for the USA on national and statewide level. 
+* Added additional text explaining why estimates are lagged.
+* Updated wording to highlight date of estiamtes.
 
 ## 2020-03-31
 
