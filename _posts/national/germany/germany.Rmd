@@ -43,7 +43,6 @@ library(sf)
 ## Expected daily confirmed cases by region
 
 ```{r}
-getwd()
 summary_table <- readRDS("../../../_nowcasts/covid-regional/germany/regional-summary/summary_table.rds")
 region_codes <- readRDS("../../../_nowcasts/covid-regional/germany/data/region_codes.rds")
 latest_date <- readRDS("../../../_nowcasts/covid-regional/germany/regional-summary/latest_date.rds")
