@@ -40,16 +40,16 @@ library(here)
 ## Expected daily cases by region
 
 ```{r}
-summary_table <- readRDS ("../../_nowcasts/covid-regional/italy/regional-summary/summary_table.rds")
-region_codes <- readRDS("../../_nowcasts/covid-regional/italy/data/region_codes.rds")
-latest_date <- readRDS("../../_nowcasts/covid-regional/italy/regional-summary/latest_date.rds")
+summary_table <- readRDS ("../../../_nowcasts/covid-regional/italy/regional-summary/summary_table.rds")
+region_codes <- readRDS("../../../_nowcasts/covid-regional/italy/data/region_codes.rds")
+latest_date <- readRDS("../../../_nowcasts/covid-regional/italy/regional-summary/latest_date.rds")
 ```
 
 ```{r map, fig.width = 6, fig.height = 6, layout="l-body-outset", out.width = "80%"}
 summary_table %>%
   dplyr::rename(region = Region) %>%
   dplyr::left_join(region_codes, by = "region") %>%
-  EpiNow::country_map(country = "Italy", variable = "Expected change in daily confirmed cases")
+  EpiNow::country_map(country = "Italy", variable = "Expected change in daily cases")
 ```
 
 <br>
@@ -65,7 +65,7 @@ summary_figures <- 1
 title_depth <- 3
 index <- 1
 region <- "Italy"
-region_path <- "../../_nowcasts/covid-global/national"
+region_path <- "_nowcasts/covid-global/national"
 show_title <- FALSE
 ```
 
@@ -88,7 +88,7 @@ show_title <- FALSE
 ```{r}
 standalone <- FALSE
 region_path <- NULL
-summary_path <- "../../_nowcasts/covid-regional/italy/regional-summary"
+summary_path <- "_nowcasts/covid-regional/italy/regional-summary"
 ```
 
 ```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow")}
