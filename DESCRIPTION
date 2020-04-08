@@ -36,10 +36,13 @@ Imports:
     data.table,
     here,
     rnaturalearth,
+    rnaturalearthdata,
     rnaturalearthhires,
     countrycode,
     sf,
-    distill
+    distill,
+    knitr,
+    kableExtra
 Remotes: 
     epiforecasts/EpiNow,
     epiforecasts/NCoVUtils,

@@ -40,24 +40,24 @@ library(here)
 ## Expected daily confirmed cases by region
 
 ```{r}
-summary_table <- readRDS ("../../_nowcasts/covid-regional/united-kingdom/regional-summary/summary_table.rds")
-uk_shp <- readRDS("../../_nowcasts/covid-regional/united-kingdom/data/uk_shp.rds")
-latest_date <- readRDS("../../_nowcasts/covid-regional/united-kingdom/regional-summary/latest_date.rds")
+summary_table <- readRDS ("../../../_nowcasts/covid-regional/united-kingdom/regional-summary/summary_table.rds")
+uk_shp <- readRDS("../../../_nowcasts/covid-regional/united-kingdom/data/uk_shp.rds")
+latest_date <- readRDS("../../../_nowcasts/covid-regional/united-kingdom/regional-summary/latest_date.rds")
 ```
 
 ```{r map,fig.height = 8, layout="l-body-outset", out.width = "70%"}
 map <- uk_shp %>%
   dplyr::full_join(summary_table %>%
   dplyr::rename(region  = Region), by = "region") %>%
-  ggplot2::ggplot(ggplot2::aes(fill = `Expected change in daily confirmed cases`)) +
+  ggplot2::ggplot(ggplot2::aes(fill = `Expected change in daily cases`)) +
   ggplot2::geom_sf(alpha = 0.8, size = 0.2)
 
 map %>%
   EpiNow::theme_map(
     continuous = FALSE,
-    variable_label = "Expected change in daily confirmed cases",
+    variable_label = "Expected change in daily cases",
     fill_labels = ggplot2::waiver(),
-    breaks = levels(summary_table$`Expected change in daily confirmed cases`)
+    breaks = levels(summary_table$`Expected change in daily cases`)
   )
 ```
 
@@ -74,7 +74,7 @@ summary_figures <- 1
 title_depth <- 3
 index <- 1
 region <- "United Kingdom"
-region_path <- "../../_nowcasts/covid-global/national"
+region_path <- "_nowcasts/covid-global/national"
 show_title <- FALSE
 ```
 
@@ -98,7 +98,7 @@ show_title <- FALSE
 ```{r}
 standalone <- FALSE
 region_path <- NULL
-summary_path <- "../../_nowcasts/covid-regional/united-kingdom/regional-summary"
+summary_path <- "_nowcasts/covid-regional/united-kingdom/regional-summary"
 ```
 
 ```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow")}

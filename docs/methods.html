@@ -1292,7 +1292,7 @@
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
 <a class="logo" href="https://cmmid.github.io">
-<img src="images/logo.png" alt="Logo"/>
+<img src="images/logo.png"/>
 </a>
 <a href="index.html" class="title">Covid-19</a>
 </div>
@@ -1341,10 +1341,10 @@ Details
 </div>
 </div>
 <a href="https://github.com/epiforecasts/covid">
-<i class="fab fa-github" aria-hidden="true"></i>
+<i class="fab fa-github"></i>
 </a>
 <a href="reports.xml">
-<i class="fa fa-rss" aria-hidden="true"></i>
+<i class="fa fa-rss"></i>
 </a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
@@ -1389,7 +1389,7 @@ Details
 <p>When moving from confirmation dates to onset dates it is important to consider that the total number of confirmed cases lags behind the number of cases that have onset, since there is a delay between onset occurring and the case being counted upon confirmation. To account for this right censoring, we used binomial upscaling to increase the estimated numbers of case onsets close to the present. After transforming the observed confirmation dates to onset dates and tallying case onset numbers by day, we then drew a sample of the number of case onsets that occurred but have not yet been confirmed.</p>
 <p>If <span class="math inline">\(t\)</span> is the present date, then the number of onsets on day <span class="math inline">\(t-k\)</span>, <span class="math inline">\(o_{t-k}\)</span> is used to draw the number of unconfirmed onsets on day <span class="math inline">\(t-k\)</span>, <span class="math inline">\(o^{*}_{t-k}\)</span> from a negative binomial distribution as follows:</p>
 <p><span class="math inline">\(o^{*}_{t-k} \sim negbin(size = o_{t-k} + 1, prob = f(t-k, \Theta_i))\)</span></p>
-<p>where <span class="math inline">\(f(t-k, \Theta_i))\)</span> is the cumulative distribution function for the given delay distribution, it gives the proportion of onset cases from <span class="math inline">\(t-k\)</span> days ago that are expected to have been confirmed over the k days from that time until the present. The final numbers of case onsets that were used to estimate the time varying reproduction numbers for day <span class="math inline">\(t\)</span> are given by <span class="math inline">\(o_t + o^{*}_{t}\)</span>. As our approach could not fully reconstruct unreported cases without bias we truncated our results and did not use estimates from the last 4 days. Finally, the date of infection for each case was estimated to be 5 days prior to the date of symptom onset <span class="citation" data-cites="10.7326/M20-0504">(<span class="citeproc-not-found" data-reference-id="10.7326/M20-0504"><strong>???</strong></span>)</span>.</p>
+<p>where <span class="math inline">\(f(t-k, \Theta_i))\)</span> is the cumulative distribution function for the given delay distribution, it gives the proportion of onset cases from <span class="math inline">\(t-k\)</span> days ago that are expected to have been confirmed over the k days from that time until the present. The final numbers of case onsets that were used to estimate the time varying reproduction numbers for day <span class="math inline">\(t\)</span> are given by <span class="math inline">\(o_t + o^{*}_{t}\)</span>. As our approach could not fully reconstruct unreported cases without bias we truncated our results and did not use estimates from the last 3 days. Finally, the date of infection for each case was estimated to be 5 days prior to the date of symptom onset <span class="citation" data-cites="10.7326/M20-0504">(<span class="citeproc-not-found" data-reference-id="10.7326/M20-0504"><strong>???</strong></span>)</span>.</p>
 <h2 id="estimating-the-time-varying-reproduction-number">Estimating the time-varying reproduction number</h2>
 <p>We used the <em>EpiEstim</em> R package<span class="citation" data-cites="EpiEstim R">(<span class="citeproc-not-found" data-reference-id="EpiEstim"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="R"><strong>???</strong></span>)</span> to fit a model that estimated the time-varying reproduction number from the daily number of case onsets and a specified serial interval distribution <span class="citation" data-cites="cori2013 wallinga2004">(<span class="citeproc-not-found" data-reference-id="cori2013"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="wallinga2004"><strong>???</strong></span>)</span>. We used a gamma prior for the reproduction number with mean 2.6 and standard deviation 2. This is based on an estimate of the R0 from the initial stages of the outbreak in Wuhan<span class="citation" data-cites="Imai:webreport3">(<span class="citeproc-not-found" data-reference-id="Imai:webreport3"><strong>???</strong></span>)</span> but also has long tails to allow for differences in the reproduction number between countries. Where data was available, we also used <em>EpiEstim</em> to adjust for imported cases<span class="citation" data-cites="THOMPSON2019100356">(<span class="citeproc-not-found" data-reference-id="THOMPSON2019100356"><strong>???</strong></span>)</span>.</p>
 <p>We incorporated uncertainty in the serial interval distribution by providing <em>EpiEstim</em> with 1000 samples from the serial interval mean of 4.7 days (95% CrI: 3.7, 6.0) and the standard deviation of 2.9 days (95% CrI: 1.9, 4.9) from previous analysis<span class="citation" data-cites="Nishiura2020.02.03.20019497">(<span class="citeproc-not-found" data-reference-id="Nishiura2020.02.03.20019497"><strong>???</strong></span>)</span>. We evaluated window lengths from 1 to 7 days, running <em>EpiEstim</em> separately for each window choice. We therefore fitted the <em>EpiEstim</em> model 1000 times overall for each window, each time using a different combination of sampled onset dates and serial interval distribution. The optimal window was selected by first estimating the one day ahead number of cases implied by each time-varying reproduction number estimate<span class="citation" data-cites="NOUVELLET201829">(<span class="citeproc-not-found" data-reference-id="NOUVELLET201829"><strong>???</strong></span>)</span> and then scoring this nowcast against the observed number of cases using the RPS score<span class="citation" data-cites="gneiting_strictly_2007 jordan_evaluating_2019">(<span class="citeproc-not-found" data-reference-id="gneiting_strictly_2007"><strong>???</strong></span>; <span class="citeproc-not-found" data-reference-id="jordan_evaluating_2019"><strong>???</strong></span>)</span>. For each sample the window with the lowest median RPS score was selected.</p>
@@ -1686,7 +1686,7 @@ author = "Pierre Nouvellet and Anne Cori and Tini Garske and Isobel M. Blake and
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p>© Copyright 2020 <a href="">EpiForecasts</a> and the <a href="">CMMID Covid working group</a></p>
+<p>© Copyright 2020 <a href="https://epiforecasts.io">EpiForecasts</a> and the <a href="https://cmmid.github.io">CMMID Covid working group</a></p>
 <p>Software licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->

@@ -33,15 +33,15 @@ library(here)
 ### Expected daily confirmed cases by country
 
 ```{r}
-summary_table <- readRDS("nowcast/national-summary/summary_table.rds")
-latest_date <- readRDS("nowcast/national-summary/latest_date.rds")
+summary_table <- readRDS("../../_nowcasts/covid-global/national-summary/summary_table.rds")
+latest_date <- readRDS("../../_nowcasts/covid-global/national-summary/latest_date.rds")
 ```
 
 ```{r map, fig.height = 6, layout="l-body-outset", out.width = "70%"}
 global <- summary_table %>%
   dplyr::rename(country = `Country/Region`) %>%
   dplyr::filter(!country %in% c("Hubei", "Hong Kong", "China excluding Hubei")) %>%
-  EpiNow::global_map(variable = "Expected change in daily confirmed cases")
+  EpiNow::global_map(variable = "Expected change in daily cases")
 
 global
 ```
@@ -52,7 +52,7 @@ global
 ```{r}
 standalone <- TRUE
 region_path <- NULL
-summary_path <- "_posts/global/nowcast/national-summary"
+summary_path <- "_nowcasts/covid-global/national-summary"
 ```
 
 ```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow")}
