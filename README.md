@@ -1,6 +1,8 @@
 
 # Temporal variation in transmission during the COVID-19 outbreak
 
+[![DOI](https://zenodo.org/badge/249007415.svg)](https://zenodo.org/badge/latestdoi/249007415)
+
 *Warning: This analysis is a work in progress. Breaking changes may occur and the authors cannot guarantee support.*
 
 
