@@ -7,7 +7,7 @@
     "date": "2020-04-12",
     "categories": [],
     "preview": "posts/global/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:05+00:00",
+    "last_modified": "2020-04-12T17:53:09+00:00",
     "preview_width": 7680,
     "preview_height": 3840
   },
@@ -21,7 +21,7 @@
       "Africa"
     ],
     "preview": "posts/national/algeria/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:40+00:00",
+    "last_modified": "2020-04-12T17:53:26+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -35,7 +35,7 @@
       "Americas"
     ],
     "preview": "posts/national/argentina/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:47+00:00",
+    "last_modified": "2020-04-12T17:52:56+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -49,7 +49,7 @@
       "Oceania"
     ],
     "preview": "posts/national/australia/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:46+00:00",
+    "last_modified": "2020-04-12T17:52:57+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -63,7 +63,7 @@
       "Europe"
     ],
     "preview": "posts/national/austria/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:08+00:00",
+    "last_modified": "2020-04-12T17:53:03+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -77,7 +77,7 @@
       "Asia"
     ],
     "preview": "posts/national/azerbaijan/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:47+00:00",
+    "last_modified": "2020-04-12T17:52:59+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -91,7 +91,7 @@
       "Asia"
     ],
     "preview": "posts/national/bahrain/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:47+00:00",
+    "last_modified": "2020-04-12T17:53:00+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -105,7 +105,7 @@
       "Asia"
     ],
     "preview": "posts/national/bangladesh/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:11+00:00",
+    "last_modified": "2020-04-12T17:53:06+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -119,7 +119,7 @@
       "Europe"
     ],
     "preview": "posts/national/belarus/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:47+00:00",
+    "last_modified": "2020-04-12T17:53:01+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -133,7 +133,21 @@
       "Europe"
     ],
     "preview": "posts/national/belgium/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:48+00:00",
+    "last_modified": "2020-04-12T17:53:03+00:00",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/brazil/",
+    "title": "Estimates for Brazil",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Brazil. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
+    "author": [],
+    "date": "2020-04-12",
+    "categories": [
+      "Americas"
+    ],
+    "preview": "posts/national/brazil/distill-preview.png",
+    "last_modified": "2020-04-12T17:53:08+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -147,7 +161,7 @@
       "Africa"
     ],
     "preview": "posts/national/cameroon/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:49+00:00",
+    "last_modified": "2020-04-12T17:53:04+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -161,7 +175,21 @@
       "Americas"
     ],
     "preview": "posts/national/canada/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:49+00:00",
+    "last_modified": "2020-04-12T17:53:06+00:00",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/chile/",
+    "title": "Estimates for Chile",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Chile. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
+    "author": [],
+    "date": "2020-04-12",
+    "categories": [
+      "Americas"
+    ],
+    "preview": "posts/national/chile/distill-preview.png",
+    "last_modified": "2020-04-12T17:53:12+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -175,7 +203,7 @@
       "Asia"
     ],
     "preview": "posts/national/china/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:50+00:00",
+    "last_modified": "2020-04-12T17:53:07+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -189,7 +217,21 @@
       "Americas"
     ],
     "preview": "posts/national/colombia/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:50+00:00",
+    "last_modified": "2020-04-12T17:53:08+00:00",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/czech-republic/",
+    "title": "Estimates for Czech Republic",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Czech Republic. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
+    "author": [],
+    "date": "2020-04-12",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/czech-republic/distill-preview.png",
+    "last_modified": "2020-04-12T17:53:14+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -203,7 +245,7 @@
       "Europe"
     ],
     "preview": "posts/national/czechia/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:50+00:00",
+    "last_modified": "2020-04-12T17:53:10+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -217,7 +259,7 @@
       "Europe"
     ],
     "preview": "posts/national/denmark/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:51+00:00",
+    "last_modified": "2020-04-12T17:53:11+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -231,7 +273,21 @@
       "Americas"
     ],
     "preview": "posts/national/dominican-republic/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:50+00:00",
+    "last_modified": "2020-04-12T17:53:12+00:00",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/ecuador/",
+    "title": "Estimates for Ecuador",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ecuador. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
+    "author": [],
+    "date": "2020-04-12",
+    "categories": [
+      "Americas"
+    ],
+    "preview": "posts/national/ecuador/distill-preview.png",
+    "last_modified": "2020-04-12T17:53:18+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -245,7 +301,7 @@
       "Africa"
     ],
     "preview": "posts/national/egypt/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:50+00:00",
+    "last_modified": "2020-04-12T17:53:14+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -259,7 +315,21 @@
       "Europe"
     ],
     "preview": "posts/national/estonia/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:51+00:00",
+    "last_modified": "2020-04-12T17:53:15+00:00",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/finland/",
+    "title": "Estimates for Finland",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Finland. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
+    "author": [],
+    "date": "2020-04-12",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/finland/distill-preview.png",
+    "last_modified": "2020-04-12T17:53:21+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -273,7 +343,7 @@
       "Europe"
     ],
     "preview": "posts/national/france/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:50+00:00",
+    "last_modified": "2020-04-12T17:53:16+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -288,7 +358,7 @@
       "Europe"
     ],
     "preview": "posts/national/germany/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:06+00:00",
+    "last_modified": "2020-04-12T17:53:27+00:00",
     "preview_width": 7680,
     "preview_height": 3840
   },
@@ -302,7 +372,7 @@
       "Europe"
     ],
     "preview": "posts/national/greece/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:30+00:00",
+    "last_modified": "2020-04-12T17:53:40+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -316,7 +386,7 @@
       "Europe"
     ],
     "preview": "posts/national/hungary/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:50+00:00",
+    "last_modified": "2020-04-12T17:53:20+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -330,7 +400,7 @@
       "Asia"
     ],
     "preview": "posts/national/india/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:51+00:00",
+    "last_modified": "2020-04-12T17:53:20+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -344,7 +414,7 @@
       "Asia"
     ],
     "preview": "posts/national/indonesia/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:17+00:00",
+    "last_modified": "2020-04-12T17:53:27+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -358,7 +428,7 @@
       "Asia"
     ],
     "preview": "posts/national/iran/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:52+00:00",
+    "last_modified": "2020-04-12T17:53:22+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -372,7 +442,7 @@
       "Asia"
     ],
     "preview": "posts/national/iraq/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:53+00:00",
+    "last_modified": "2020-04-12T17:53:23+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -386,7 +456,7 @@
       "Europe"
     ],
     "preview": "posts/national/ireland/distill-preview.png",
-    "last_modified": "2020-04-12T07:06:47+00:00",
+    "last_modified": "2020-04-12T17:53:28+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -400,7 +470,7 @@
       "Asia"
     ],
     "preview": "posts/national/israel/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:53+00:00",
+    "last_modified": "2020-04-12T17:53:24+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -415,7 +485,7 @@
       "Europe"
     ],
     "preview": "posts/national/italy/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:09+00:00",
+    "last_modified": "2020-04-12T17:53:34+00:00",
     "preview_width": 3840,
     "preview_height": 3840
   },
@@ -429,7 +499,7 @@
       "Asia"
     ],
     "preview": "posts/national/japan/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:51+00:00",
+    "last_modified": "2020-04-12T17:53:26+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -443,7 +513,7 @@
       "Asia"
     ],
     "preview": "posts/national/kazakhstan/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:13+00:00",
+    "last_modified": "2020-04-12T17:53:32+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -457,7 +527,7 @@
       "Asia"
     ],
     "preview": "posts/national/kuwait/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:53+00:00",
+    "last_modified": "2020-04-12T17:53:29+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -471,7 +541,21 @@
       "Europe"
     ],
     "preview": "posts/national/lithuania/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:53+00:00",
+    "last_modified": "2020-04-12T17:53:30+00:00",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/luxembourg/",
+    "title": "Estimates for Luxembourg",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Luxembourg. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
+    "author": [],
+    "date": "2020-04-12",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/luxembourg/distill-preview.png",
+    "last_modified": "2020-04-12T17:53:36+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -485,7 +569,7 @@
       "Asia"
     ],
     "preview": "posts/national/malaysia/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:53+00:00",
+    "last_modified": "2020-04-12T17:53:31+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -499,7 +583,21 @@
       "Americas"
     ],
     "preview": "posts/national/mexico/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:54+00:00",
+    "last_modified": "2020-04-12T17:53:33+00:00",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/moldova/",
+    "title": "Estimates for Moldova",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Moldova. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
+    "author": [],
+    "date": "2020-04-12",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/moldova/distill-preview.png",
+    "last_modified": "2020-04-12T17:53:40+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -513,7 +611,7 @@
       "Africa"
     ],
     "preview": "posts/national/morocco/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:53+00:00",
+    "last_modified": "2020-04-12T17:53:34+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -527,7 +625,7 @@
       "Europe"
     ],
     "preview": "posts/national/netherlands/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:53+00:00",
+    "last_modified": "2020-04-12T17:53:35+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -541,7 +639,7 @@
       "Europe"
     ],
     "preview": "posts/national/norway/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:15+00:00",
+    "last_modified": "2020-04-12T17:53:43+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -555,7 +653,7 @@
       "Asia"
     ],
     "preview": "posts/national/pakistan/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:54+00:00",
+    "last_modified": "2020-04-12T17:53:37+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -569,7 +667,7 @@
       "Americas"
     ],
     "preview": "posts/national/panama/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:55+00:00",
+    "last_modified": "2020-04-12T17:53:38+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -583,7 +681,7 @@
       "Americas"
     ],
     "preview": "posts/national/peru/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:19+00:00",
+    "last_modified": "2020-04-12T17:53:44+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -597,7 +695,7 @@
       "Asia"
     ],
     "preview": "posts/national/philippines/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:55+00:00",
+    "last_modified": "2020-04-12T17:53:40+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -611,7 +709,7 @@
       "Europe"
     ],
     "preview": "posts/national/poland/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:56+00:00",
+    "last_modified": "2020-04-12T17:53:41+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -625,7 +723,7 @@
       "Europe"
     ],
     "preview": "posts/national/portugal/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:18+00:00",
+    "last_modified": "2020-04-12T17:53:47+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -639,7 +737,7 @@
       "Asia"
     ],
     "preview": "posts/national/qatar/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:54+00:00",
+    "last_modified": "2020-04-12T17:53:42+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -653,7 +751,7 @@
       "Europe"
     ],
     "preview": "posts/national/romania/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:55+00:00",
+    "last_modified": "2020-04-12T17:53:44+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -667,7 +765,7 @@
       "Europe"
     ],
     "preview": "posts/national/russia/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:55+00:00",
+    "last_modified": "2020-04-12T17:53:44+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -681,7 +779,7 @@
       "Asia"
     ],
     "preview": "posts/national/saudi-arabia/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:19+00:00",
+    "last_modified": "2020-04-12T17:53:52+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -695,7 +793,7 @@
       "Europe"
     ],
     "preview": "posts/national/serbia/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:55+00:00",
+    "last_modified": "2020-04-12T17:53:45+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -709,7 +807,21 @@
       "Asia"
     ],
     "preview": "posts/national/singapore/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:55+00:00",
+    "last_modified": "2020-04-12T17:53:47+00:00",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/slovakia/",
+    "title": "Estimates for Slovakia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Slovakia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
+    "author": [],
+    "date": "2020-04-12",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/slovakia/distill-preview.png",
+    "last_modified": "2020-04-12T17:55:32+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -723,7 +835,7 @@
       "Africa"
     ],
     "preview": "posts/national/south-africa/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:56+00:00",
+    "last_modified": "2020-04-12T17:53:48+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -737,7 +849,7 @@
       "Asia"
     ],
     "preview": "posts/national/south-korea/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:55+00:00",
+    "last_modified": "2020-04-12T17:53:51+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -751,7 +863,7 @@
       "Europe"
     ],
     "preview": "posts/national/spain/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:19+00:00",
+    "last_modified": "2020-04-12T17:53:57+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -765,7 +877,7 @@
       "Europe"
     ],
     "preview": "posts/national/sweden/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:57+00:00",
+    "last_modified": "2020-04-12T17:53:52+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -779,7 +891,21 @@
       "Europe"
     ],
     "preview": "posts/national/switzerland/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:57+00:00",
+    "last_modified": "2020-04-12T17:53:52+00:00",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/thailand/",
+    "title": "Estimates for Thailand",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Thailand. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
+    "author": [],
+    "date": "2020-04-12",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/thailand/distill-preview.png",
+    "last_modified": "2020-04-12T17:53:58+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -793,7 +919,7 @@
       "Asia"
     ],
     "preview": "posts/national/turkey/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:56+00:00",
+    "last_modified": "2020-04-12T17:53:54+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -807,7 +933,21 @@
       "Europe"
     ],
     "preview": "posts/national/ukraine/distill-preview.png",
-    "last_modified": "2020-04-12T07:04:58+00:00",
+    "last_modified": "2020-04-12T17:53:55+00:00",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/united-arab-emirates/",
+    "title": "Estimates for United Arab Emirates",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in United Arab Emirates. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
+    "author": [],
+    "date": "2020-04-12",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/united-arab-emirates/distill-preview.png",
+    "last_modified": "2020-04-12T17:54:01+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -822,7 +962,7 @@
       "Europe"
     ],
     "preview": "posts/national/united-kingdom/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:08+00:00",
+    "last_modified": "2020-04-12T17:54:04+00:00",
     "preview_width": 7680,
     "preview_height": 5120
   },
@@ -837,7 +977,7 @@
       "Americas"
     ],
     "preview": "posts/national/united-states/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:12+00:00",
+    "last_modified": "2020-04-12T17:54:10+00:00",
     "preview_width": 7680,
     "preview_height": 3840
   },
@@ -851,7 +991,7 @@
       "Asia"
     ],
     "preview": "posts/national/uzbekistan/distill-preview.png",
-    "last_modified": "2020-04-12T07:05:39+00:00",
+    "last_modified": "2020-04-12T17:54:24+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   }
