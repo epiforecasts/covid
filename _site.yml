@@ -8,6 +8,7 @@ creative_commons: CC BY
 twitter:
   site: "@cmmid_lshtm"
 output_dir: "docs"
+google_analytics: "UA-85604924-3"
 navbar:
   logo:
     image: images/logo.png
