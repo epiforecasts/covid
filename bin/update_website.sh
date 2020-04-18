@@ -6,9 +6,6 @@ git pull
 ## Make sure all submodules are up to date
 git submodule update --init --recursive
 
-## Make sure all dependencies are up to date and installed
-Rscript -e "devtools::install_dev_deps()"
-
 ## Reset the data cache
 Rscript -e "NCoVUtils::reset_cache()"
 

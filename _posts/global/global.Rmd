@@ -47,7 +47,7 @@ global
 ```
 
 <br>
-`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Countries with fewer than 100 confirmed cases reported on a single day are not included in the analysis (light grey) as there is not enough data to reliably estimate the reproduction number.*")`
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Countries with fewer than 60 confirmed cases reported on a single day are not included in the analysis (light grey) as there is not enough data to reliably estimate the reproduction number.*")`
 
 ```{r}
 standalone <- TRUE

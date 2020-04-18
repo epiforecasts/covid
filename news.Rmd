@@ -13,6 +13,13 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## 2020-04-18
+
+* Updated the UK data source.
+* Fixed dat extraction for German regions
+* Reduced the lower bound on the number of cases needed to be included in the global nowcast from 100 to 60. 
+* Squashed the NA category from appearing in the USA map.
+
 ## 2020-04-09
 
 * Updated all estimates with latest data.

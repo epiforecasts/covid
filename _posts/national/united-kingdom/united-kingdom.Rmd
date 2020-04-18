@@ -45,9 +45,14 @@ uk_shp <- readRDS("../../../_nowcasts/covid-regional/united-kingdom/data/uk_shp.
 latest_date <- readRDS("../../../_nowcasts/covid-regional/united-kingdom/regional-summary/latest_date.rds")
 ```
 
-```{r map,fig.height = 8, layout="l-body-outset", out.width = "70%"}
-map <- uk_shp %>%
-  dplyr::full_join(summary_table %>%
+```{r map,fig.height = 8, layout="l-body-outset", out.width = "70%", warning = FALSE, message = FALSE}
+shape <- suppressWarnings(
+  readRDS("../../../_nowcasts/covid-regional/united-kingdom/data/uk_regions.rds")
+)
+
+map <- shape %>%
+  dplyr::rename(region = rgn17nm) %>% 
+  dplyr::left_join(summary_table %>%
   dplyr::rename(region  = Region), by = "region") %>%
   ggplot2::ggplot(ggplot2::aes(fill = `Expected change in daily cases`)) +
   ggplot2::geom_sf(alpha = 0.8, size = 0.2)
@@ -62,7 +67,7 @@ map %>%
 ```
 
 <br>
-`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") in the United Kingdom, stratified by region, can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Regions with fewer than 40 confirmed cases reported on a single day are not included in the analysis (light grey).*")`
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") in the United Kingdom, stratified by region, can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Regions with fewer than 40 confirmed cases reported on a single day are not included in the analysis (light grey). Note that only English regions are currently mapped but all UK regions are included in the following plots. This will be addressed in the next update.*")`
 
 
 ## National summary
