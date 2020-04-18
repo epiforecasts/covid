@@ -60,7 +60,8 @@ map_us(summary_table,
     .,
     continuous = FALSE,
     variable_label = "Expected change in daily cases",
-    fill_labels = ggplot2::waiver()
+    fill_labels = ggplot2::waiver(),
+    breaks = levels(summary_table$`Expected change in daily cases`)
   )})
 ```
 
