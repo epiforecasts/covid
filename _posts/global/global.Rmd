@@ -37,7 +37,7 @@ summary_table <- readRDS("../../_nowcasts/covid-global/national-summary/summary_
 latest_date <- readRDS("../../_nowcasts/covid-global/national-summary/latest_date.rds")
 ```
 
-```{r map, fig.height = 6, layout="l-body-outset", out.width = "70%"}
+```{r map, fig.height = 6, layout="l-body-outset", out.width = "100%"}
 global <- summary_table %>%
   dplyr::rename(country = `Country/Region`) %>%
   dplyr::filter(!country %in% c("Hubei", "Hong Kong", "China excluding Hubei")) %>%
