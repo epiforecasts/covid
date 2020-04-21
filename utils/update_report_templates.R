@@ -35,7 +35,16 @@ countries <- countries %>%
   dplyr::left_join(world,
                    by = c("country_code" = "iso_a3")
   ) %>%
-  dplyr::select(country, file_name, region = region_un)
+  dplyr::select(country, file_name, region = region_un) 
+
+
+
+# Manual country fix ------------------------------------------------------
+
+countries <- countries %>% 
+  dplyr::mutate(region = region %>% 
+                  ifelse(country %in% "Kosovo", "Europe", .)) %>% 
+  unique()
 
 
 
