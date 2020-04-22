@@ -4,10 +4,10 @@
     "title": "Global summary",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [],
     "preview": "posts/global/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:16+00:00",
+    "last_modified": "2020-04-22T10:40:37+00:00",
     "preview_width": 7680,
     "preview_height": 3840
   },
@@ -16,12 +16,12 @@
     "title": "Estimates for Afghanistan",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Afghanistan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/afghanistan/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:19+00:00",
+    "last_modified": "2020-04-22T10:41:11+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -30,12 +30,12 @@
     "title": "Estimates for Algeria",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Algeria. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Africa"
     ],
     "preview": "posts/national/algeria/distill-preview.png",
-    "last_modified": "2020-04-21T09:59:49+00:00",
+    "last_modified": "2020-04-22T10:40:16+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -44,12 +44,12 @@
     "title": "Estimates for Argentina",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Argentina. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Americas"
     ],
     "preview": "posts/national/argentina/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:04+00:00",
+    "last_modified": "2020-04-22T10:40:26+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -58,12 +58,12 @@
     "title": "Estimates for Armenia",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Armenia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/armenia/distill-preview.png",
-    "last_modified": "2020-04-21T09:59:53+00:00",
+    "last_modified": "2020-04-22T10:40:18+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -72,12 +72,12 @@
     "title": "Estimates for Australia",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Australia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Oceania"
     ],
     "preview": "posts/national/australia/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:05+00:00",
+    "last_modified": "2020-04-22T10:40:27+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -86,12 +86,12 @@
     "title": "Estimates for Austria",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Austria. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/austria/distill-preview.png",
-    "last_modified": "2020-04-21T09:59:54+00:00",
+    "last_modified": "2020-04-22T10:40:20+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -100,12 +100,12 @@
     "title": "Estimates for Azerbaijan",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Azerbaijan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/azerbaijan/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:06+00:00",
+    "last_modified": "2020-04-22T10:40:29+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -114,12 +114,12 @@
     "title": "Estimates for Bahrain",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bahrain. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/bahrain/distill-preview.png",
-    "last_modified": "2020-04-21T09:59:55+00:00",
+    "last_modified": "2020-04-22T10:40:22+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -128,12 +128,12 @@
     "title": "Estimates for Bangladesh",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bangladesh. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/bangladesh/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:11+00:00",
+    "last_modified": "2020-04-22T10:40:32+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -142,12 +142,12 @@
     "title": "Estimates for Belarus",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Belarus. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/belarus/distill-preview.png",
-    "last_modified": "2020-04-21T09:59:57+00:00",
+    "last_modified": "2020-04-22T10:40:24+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -156,12 +156,12 @@
     "title": "Estimates for Belgium",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Belgium. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/belgium/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:12+00:00",
+    "last_modified": "2020-04-22T10:40:34+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -170,12 +170,12 @@
     "title": "Estimates for Bosnia and Herzegovina",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bosnia and Herzegovina. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/bosnia-and-herzegovina/distill-preview.png",
-    "last_modified": "2020-04-21T09:59:59+00:00",
+    "last_modified": "2020-04-22T10:40:26+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -184,12 +184,12 @@
     "title": "Estimates for Brazil",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Brazil. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Americas"
     ],
     "preview": "posts/national/brazil/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:14+00:00",
+    "last_modified": "2020-04-22T10:40:36+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -198,12 +198,12 @@
     "title": "Estimates for Cameroon",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Cameroon. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Africa"
     ],
     "preview": "posts/national/cameroon/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:03+00:00",
+    "last_modified": "2020-04-22T10:40:27+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -212,12 +212,12 @@
     "title": "Estimates for Canada",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Canada. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Americas"
     ],
     "preview": "posts/national/canada/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:44+00:00",
+    "last_modified": "2020-04-22T10:40:38+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -226,12 +226,12 @@
     "title": "Estimates for Chile",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Chile. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Americas"
     ],
     "preview": "posts/national/chile/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:04+00:00",
+    "last_modified": "2020-04-22T10:40:29+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -240,12 +240,12 @@
     "title": "Estimates for China",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in China. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/china/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:16+00:00",
+    "last_modified": "2020-04-22T10:40:40+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -254,12 +254,12 @@
     "title": "Estimates for Colombia",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Colombia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Americas"
     ],
     "preview": "posts/national/colombia/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:06+00:00",
+    "last_modified": "2020-04-22T10:40:31+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -268,12 +268,12 @@
     "title": "Estimates for Cote dIvoire",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Cote dIvoire. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Africa"
     ],
     "preview": "posts/national/cote-divoire/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:23+00:00",
+    "last_modified": "2020-04-22T10:40:42+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -282,12 +282,12 @@
     "title": "Estimates for Croatia",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Croatia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/croatia/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:08+00:00",
+    "last_modified": "2020-04-22T10:40:31+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -296,12 +296,12 @@
     "title": "Estimates for Cuba",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Cuba. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Americas"
     ],
     "preview": "posts/national/cuba/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:26+00:00",
+    "last_modified": "2020-04-22T10:40:42+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -310,12 +310,12 @@
     "title": "Estimates for Czechia",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Czechia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/czechia/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:09+00:00",
+    "last_modified": "2020-04-22T10:40:33+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -324,12 +324,12 @@
     "title": "Estimates for Denmark",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Denmark. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/denmark/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:21+00:00",
+    "last_modified": "2020-04-22T10:40:45+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -338,12 +338,12 @@
     "title": "Estimates for Djibouti",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Djibouti. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Africa"
     ],
     "preview": "posts/national/djibouti/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:12+00:00",
+    "last_modified": "2020-04-22T10:40:35+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -352,12 +352,12 @@
     "title": "Estimates for Dominican Republic",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Dominican Republic. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Americas"
     ],
     "preview": "posts/national/dominican-republic/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:25+00:00",
+    "last_modified": "2020-04-22T10:40:45+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -366,12 +366,12 @@
     "title": "Estimates for Ecuador",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ecuador. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Americas"
     ],
     "preview": "posts/national/ecuador/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:13+00:00",
+    "last_modified": "2020-04-22T10:40:36+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -380,12 +380,12 @@
     "title": "Estimates for Egypt",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Egypt. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Africa"
     ],
     "preview": "posts/national/egypt/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:30+00:00",
+    "last_modified": "2020-04-22T10:40:47+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -394,26 +394,12 @@
     "title": "Estimates for Estonia",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Estonia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/estonia/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:15+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/faroe-islands/",
-    "title": "Estimates for Faroe Islands",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Faroe Islands. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
-    "author": [],
-    "date": "2020-04-21",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/faroe-islands/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:27+00:00",
+    "last_modified": "2020-04-22T10:40:39+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -422,12 +408,12 @@
     "title": "Estimates for Finland",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Finland. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/finland/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:21+00:00",
+    "last_modified": "2020-04-22T10:40:48+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -436,12 +422,12 @@
     "title": "Estimates for France",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in France. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/france/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:25+00:00",
+    "last_modified": "2020-04-22T10:40:40+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -450,13 +436,13 @@
     "title": "National and Subnational estimates for Germany",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Germany. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Subnational estimates",
       "Europe"
     ],
     "preview": "posts/national/germany/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:04+00:00",
+    "last_modified": "2020-04-22T10:40:56+00:00",
     "preview_width": 7680,
     "preview_height": 3840
   },
@@ -465,12 +451,12 @@
     "title": "Estimates for Ghana",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ghana. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Africa"
     ],
     "preview": "posts/national/ghana/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:22+00:00",
+    "last_modified": "2020-04-22T10:41:18+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -479,12 +465,12 @@
     "title": "Estimates for Greece",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Greece. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/greece/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:38+00:00",
+    "last_modified": "2020-04-22T10:40:44+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -493,12 +479,12 @@
     "title": "Estimates for Guinea",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Guinea. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Africa"
     ],
     "preview": "posts/national/guinea/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:27+00:00",
+    "last_modified": "2020-04-22T10:40:56+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -507,12 +493,12 @@
     "title": "Estimates for Hungary",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Hungary. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/hungary/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:47+00:00",
+    "last_modified": "2020-04-22T10:40:46+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -521,12 +507,12 @@
     "title": "Estimates for Iceland",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Iceland. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/iceland/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:28+00:00",
+    "last_modified": "2020-04-22T10:40:57+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -535,12 +521,12 @@
     "title": "Estimates for India",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in India. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/india/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:32+00:00",
+    "last_modified": "2020-04-22T10:40:46+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -549,12 +535,12 @@
     "title": "Estimates for Indonesia",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Indonesia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/indonesia/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:29+00:00",
+    "last_modified": "2020-04-22T10:40:55+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -563,12 +549,12 @@
     "title": "Estimates for Iran",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Iran. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/iran/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:52+00:00",
+    "last_modified": "2020-04-22T10:40:49+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -577,12 +563,12 @@
     "title": "Estimates for Iraq",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Iraq. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/iraq/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:30+00:00",
+    "last_modified": "2020-04-22T10:41:00+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -591,12 +577,12 @@
     "title": "Estimates for Ireland",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ireland. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/ireland/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:55+00:00",
+    "last_modified": "2020-04-22T10:40:53+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -605,12 +591,12 @@
     "title": "Estimates for Israel",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Israel. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/israel/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:32+00:00",
+    "last_modified": "2020-04-22T10:41:02+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -619,13 +605,13 @@
     "title": "National and Subnational estimates for Italy",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Italy. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Subnational estimates",
       "Europe"
     ],
     "preview": "posts/national/italy/distill-preview.png",
-    "last_modified": "2020-04-21T10:04:00+00:00",
+    "last_modified": "2020-04-22T10:41:05+00:00",
     "preview_width": 3840,
     "preview_height": 3840
   },
@@ -634,12 +620,12 @@
     "title": "Estimates for Japan",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Japan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/japan/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:39+00:00",
+    "last_modified": "2020-04-22T10:41:23+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -648,12 +634,12 @@
     "title": "Estimates for Kazakhstan",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kazakhstan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/kazakhstan/distill-preview.png",
-    "last_modified": "2020-04-21T10:04:15+00:00",
+    "last_modified": "2020-04-22T10:40:56+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -662,12 +648,12 @@
     "title": "Estimates for Kosovo",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kosovo. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/kosovo/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:43+00:00",
+    "last_modified": "2020-04-22T10:41:07+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -676,12 +662,12 @@
     "title": "Estimates for Kuwait",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kuwait. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/kuwait/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:55+00:00",
+    "last_modified": "2020-04-22T10:40:56+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -690,12 +676,12 @@
     "title": "Estimates for Kyrgyzstan",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kyrgyzstan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/kyrgyzstan/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:42+00:00",
+    "last_modified": "2020-04-22T10:41:09+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -704,12 +690,12 @@
     "title": "Estimates for Latvia",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Latvia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/latvia/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:01+00:00",
+    "last_modified": "2020-04-22T10:40:57+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -718,12 +704,12 @@
     "title": "Estimates for Lebanon",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Lebanon. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/lebanon/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:43+00:00",
+    "last_modified": "2020-04-22T10:41:11+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -732,12 +718,12 @@
     "title": "Estimates for Lithuania",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Lithuania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/lithuania/distill-preview.png",
-    "last_modified": "2020-04-21T10:02:53+00:00",
+    "last_modified": "2020-04-22T10:40:59+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -746,12 +732,12 @@
     "title": "Estimates for Luxembourg",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Luxembourg. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/luxembourg/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:47+00:00",
+    "last_modified": "2020-04-22T10:43:29+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -760,12 +746,12 @@
     "title": "Estimates for Malaysia",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Malaysia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/malaysia/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:06+00:00",
+    "last_modified": "2020-04-22T10:41:00+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -774,12 +760,12 @@
     "title": "Estimates for Mexico",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Mexico. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Americas"
     ],
     "preview": "posts/national/mexico/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:51+00:00",
+    "last_modified": "2020-04-22T10:41:09+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -788,12 +774,12 @@
     "title": "Estimates for Moldova",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Moldova. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/moldova/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:05+00:00",
+    "last_modified": "2020-04-22T10:41:02+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -802,12 +788,12 @@
     "title": "Estimates for Morocco",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Morocco. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Africa"
     ],
     "preview": "posts/national/morocco/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:50+00:00",
+    "last_modified": "2020-04-22T10:41:31+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -816,12 +802,12 @@
     "title": "Estimates for Netherlands",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Netherlands. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/netherlands/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:11+00:00",
+    "last_modified": "2020-04-22T10:41:06+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -830,12 +816,12 @@
     "title": "Estimates for New Zealand",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in New Zealand. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Oceania"
     ],
     "preview": "posts/national/new-zealand/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:50+00:00",
+    "last_modified": "2020-04-22T10:41:17+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -844,12 +830,12 @@
     "title": "Estimates for Niger",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Niger. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Africa"
     ],
     "preview": "posts/national/niger/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:12+00:00",
+    "last_modified": "2020-04-22T10:41:08+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -858,12 +844,12 @@
     "title": "Estimates for Nigeria",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Nigeria. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Africa"
     ],
     "preview": "posts/national/nigeria/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:51+00:00",
+    "last_modified": "2020-04-22T10:41:22+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -872,12 +858,12 @@
     "title": "Estimates for North Macedonia",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in North Macedonia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/north-macedonia/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:04+00:00",
+    "last_modified": "2020-04-22T10:41:07+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -886,12 +872,12 @@
     "title": "Estimates for Norway",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Norway. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/norway/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:52+00:00",
+    "last_modified": "2020-04-22T10:41:19+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -900,12 +886,12 @@
     "title": "Estimates for Oman",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Oman. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/oman/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:54+00:00",
+    "last_modified": "2020-04-22T10:41:09+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -914,12 +900,12 @@
     "title": "Estimates for Pakistan",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Pakistan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/pakistan/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:18+00:00",
+    "last_modified": "2020-04-22T10:41:12+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -928,12 +914,12 @@
     "title": "Estimates for Palestine",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Palestine. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/palestine/distill-preview.png",
-    "last_modified": "2020-04-21T10:00:57+00:00",
+    "last_modified": "2020-04-22T10:41:23+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -942,12 +928,12 @@
     "title": "Estimates for Panama",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Panama. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Americas"
     ],
     "preview": "posts/national/panama/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:18+00:00",
+    "last_modified": "2020-04-22T10:41:14+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -956,12 +942,12 @@
     "title": "Estimates for Peru",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Peru. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Americas"
     ],
     "preview": "posts/national/peru/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:00+00:00",
+    "last_modified": "2020-04-22T10:41:25+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -970,12 +956,12 @@
     "title": "Estimates for Philippines",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Philippines. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/philippines/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:25+00:00",
+    "last_modified": "2020-04-22T10:41:17+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -984,12 +970,12 @@
     "title": "Estimates for Poland",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Poland. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/poland/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:01+00:00",
+    "last_modified": "2020-04-22T10:41:29+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -998,12 +984,12 @@
     "title": "Estimates for Portugal",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Portugal. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/portugal/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:29+00:00",
+    "last_modified": "2020-04-22T10:41:18+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1012,12 +998,12 @@
     "title": "Estimates for Puerto Rico",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Puerto Rico. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Americas"
     ],
     "preview": "posts/national/puerto-rico/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:03+00:00",
+    "last_modified": "2020-04-22T10:41:29+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1026,12 +1012,12 @@
     "title": "Estimates for Qatar",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Qatar. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/qatar/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:15+00:00",
+    "last_modified": "2020-04-22T10:41:20+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1040,12 +1026,12 @@
     "title": "Estimates for Romania",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Romania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/romania/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:11+00:00",
+    "last_modified": "2020-04-22T10:41:32+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1054,12 +1040,12 @@
     "title": "Estimates for Russia",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Russia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/russia/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:34+00:00",
+    "last_modified": "2020-04-22T10:41:22+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1068,12 +1054,12 @@
     "title": "Estimates for Saudi Arabia",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Saudi Arabia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/saudi-arabia/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:14+00:00",
+    "last_modified": "2020-04-22T10:41:33+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1082,12 +1068,12 @@
     "title": "Estimates for Serbia",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Serbia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/serbia/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:38+00:00",
+    "last_modified": "2020-04-22T10:41:23+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1096,12 +1082,12 @@
     "title": "Estimates for Singapore",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Singapore. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/singapore/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:11+00:00",
+    "last_modified": "2020-04-22T10:44:29+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1110,12 +1096,26 @@
     "title": "Estimates for Slovakia",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Slovakia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/slovakia/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:43+00:00",
+    "last_modified": "2020-04-22T10:41:24+00:00",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/somalia/",
+    "title": "Estimates for Somalia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Somalia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
+    "author": [],
+    "date": "2020-04-22",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/somalia/distill-preview.png",
+    "last_modified": "2020-04-22T10:41:33+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1124,12 +1124,12 @@
     "title": "Estimates for South Africa",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in South Africa. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Africa"
     ],
     "preview": "posts/national/south-africa/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:19+00:00",
+    "last_modified": "2020-04-22T10:41:26+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1138,12 +1138,12 @@
     "title": "Estimates for South Korea",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in South Korea. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/south-korea/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:41+00:00",
+    "last_modified": "2020-04-22T10:41:34+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1152,12 +1152,12 @@
     "title": "Estimates for Spain",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Spain. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/spain/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:24+00:00",
+    "last_modified": "2020-04-22T10:41:27+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1166,12 +1166,12 @@
     "title": "Estimates for Sweden",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Sweden. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/sweden/distill-preview.png",
-    "last_modified": "2020-04-21T10:06:11+00:00",
+    "last_modified": "2020-04-22T10:41:36+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1180,12 +1180,12 @@
     "title": "Estimates for Switzerland",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Switzerland. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/switzerland/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:29+00:00",
+    "last_modified": "2020-04-22T10:41:29+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1194,12 +1194,12 @@
     "title": "Estimates for Thailand",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Thailand. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/thailand/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:42+00:00",
+    "last_modified": "2020-04-22T10:43:46+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1208,12 +1208,12 @@
     "title": "Estimates for Tunisia",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Tunisia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Africa"
     ],
     "preview": "posts/national/tunisia/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:18+00:00",
+    "last_modified": "2020-04-22T10:41:30+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1222,12 +1222,12 @@
     "title": "Estimates for Turkey",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Turkey. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/turkey/distill-preview.png",
-    "last_modified": "2020-04-21T10:04:57+00:00",
+    "last_modified": "2020-04-22T10:44:51+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1236,12 +1236,12 @@
     "title": "Estimates for Ukraine",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ukraine. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/ukraine/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:32+00:00",
+    "last_modified": "2020-04-22T10:41:30+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1250,12 +1250,12 @@
     "title": "Estimates for United Arab Emirates",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in United Arab Emirates. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/united-arab-emirates/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:47+00:00",
+    "last_modified": "2020-04-22T10:41:40+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1264,13 +1264,13 @@
     "title": "National and Subnational estimates for the United Kingdom",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United Kingdom. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Subnational estimates",
       "Europe"
     ],
     "preview": "posts/national/united-kingdom/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:44+00:00",
+    "last_modified": "2020-04-22T10:41:40+00:00",
     "preview_width": 7680,
     "preview_height": 5120
   },
@@ -1279,13 +1279,13 @@
     "title": "National and Subnational estimates for the United States of America",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United States of America. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Subnational estimates",
       "Americas"
     ],
     "preview": "posts/national/united-states/distill-preview.png",
-    "last_modified": "2020-04-21T10:07:02+00:00",
+    "last_modified": "2020-04-22T10:42:12+00:00",
     "preview_width": 7680,
     "preview_height": 3840
   },
@@ -1294,12 +1294,12 @@
     "title": "Estimates for Uruguay",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Uruguay. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Americas"
     ],
     "preview": "posts/national/uruguay/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:30+00:00",
+    "last_modified": "2020-04-22T10:41:33+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1308,12 +1308,12 @@
     "title": "Estimates for Uzbekistan",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Uzbekistan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).",
     "author": [],
-    "date": "2020-04-21",
+    "date": "2020-04-22",
     "categories": [
       "Asia"
     ],
     "preview": "posts/national/uzbekistan/distill-preview.png",
-    "last_modified": "2020-04-21T10:01:44+00:00",
+    "last_modified": "2020-04-22T10:44:48+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   }
