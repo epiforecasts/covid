@@ -43,7 +43,7 @@ knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
                       warning = FALSE,
                       fig.height = 12,
                       fig.width = 12,
-                      dpi = 320)
+                      dpi = 400)
 #'
 #+ load-packages, include = FALSE
 library(EpiNow)
@@ -65,6 +65,7 @@ index <- 1
 region <-'",loc,"'
 region_path <- '_nowcasts/covid-global/national'
 show_title <- FALSE
+report_forecast <- TRUE
 #'
 #'
 #+  child = system.file('templates/_region-report.Rmd', package = 'EpiNow')")
