@@ -33,6 +33,7 @@ Imports:
     magrittr,
     furrr, 
     future, 
+    future.apply,
     data.table,
     here,
     rnaturalearth,
@@ -42,7 +43,11 @@ Imports:
     sf,
     distill,
     knitr,
-    kableExtra
+    kableExtra,
+    fable,
+    fabletools,
+    feasts,
+    urca
 Remotes: 
     epiforecasts/EpiNow,
     epiforecasts/NCoVUtils,

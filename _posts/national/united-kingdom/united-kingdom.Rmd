@@ -22,7 +22,7 @@ knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
                       warning = FALSE,
                       fig.height = 12,
                       fig.width = 12,
-                      dpi = 320)
+                      dpi = 400)
 ```
 
 
@@ -46,12 +46,8 @@ latest_date <- readRDS("../../../_nowcasts/covid-regional/united-kingdom/regiona
 ```
 
 ```{r map,fig.height = 8, layout="l-body-outset", out.width = "70%", warning = FALSE, message = FALSE}
-shape <- suppressWarnings(
-  readRDS("../../../_nowcasts/covid-regional/united-kingdom/data/uk_regions.rds")
-)
 
-map <- shape %>%
-  dplyr::rename(region = rgn17nm) %>% 
+map <- uk_shp %>%
   dplyr::left_join(summary_table %>%
   dplyr::rename(region  = Region), by = "region") %>%
   ggplot2::ggplot(ggplot2::aes(fill = `Expected change in daily cases`)) +
@@ -81,6 +77,7 @@ index <- 1
 region <- "United Kingdom"
 region_path <- "_nowcasts/covid-global/national"
 show_title <- FALSE
+report_forecast <- TRUE
 ```
 
 ```{r,  child = system.file("templates/_region-report.Rmd", package = "EpiNow")}
