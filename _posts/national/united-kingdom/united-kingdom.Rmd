@@ -48,6 +48,7 @@ latest_date <- readRDS("../../../_nowcasts/covid-regional/united-kingdom/regiona
 ```{r map,fig.height = 8, layout="l-body-outset", out.width = "70%", warning = FALSE, message = FALSE}
 
 map <- uk_shp %>%
+  dplyr::rename(region = nuts118nm) %>% 
   dplyr::left_join(summary_table %>%
   dplyr::rename(region  = Region), by = "region") %>%
   ggplot2::ggplot(ggplot2::aes(fill = `Expected change in daily cases`)) +
