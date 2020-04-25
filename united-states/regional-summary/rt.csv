@@ -1,0 +1,2630 @@
+region,date,type,median,lower_90,upper_90,lower_50,upper_50,prob_control
+Alabama,2020-03-09,nowcast,2.6,1.5,4.3,1.5,2.7,0
+Alabama,2020-03-10,nowcast,2.5,1.7,4,1.5,2.6,0
+Alabama,2020-03-11,nowcast,2.4,1.7,3,1.9,2.6,0
+Alabama,2020-03-12,nowcast,2.3,1.5,2.9,2.1,2.7,0
+Alabama,2020-03-13,nowcast,2.2,1.6,2.7,2,2.5,0
+Alabama,2020-03-14,nowcast,2.1,1.7,2.5,1.7,2.1,0
+Alabama,2020-03-15,nowcast,2,1.5,2.5,1.7,2.1,0
+Alabama,2020-03-16,nowcast,1.9,1.5,2.2,1.7,2.1,0
+Alabama,2020-03-17,nowcast,1.8,1.5,2.4,1.5,1.8,0
+Alabama,2020-03-18,nowcast,1.8,1.4,2.2,1.6,1.9,0
+Alabama,2020-03-19,nowcast,1.7,1.4,2.2,1.7,2.1,0
+Alabama,2020-03-20,nowcast,1.7,1.3,2.2,1.3,1.7,0
+Alabama,2020-03-21,nowcast,1.6,1.3,2,1.3,1.6,0
+Alabama,2020-03-22,nowcast,1.4,1.1,1.6,1.4,1.6,0
+Alabama,2020-03-23,nowcast,1.3,1.1,1.6,1.3,1.4,0.01
+Alabama,2020-03-24,nowcast,1.3,1.1,1.4,1.2,1.3,0
+Alabama,2020-03-25,nowcast,1.3,1.1,1.5,1.3,1.4,0.01
+Alabama,2020-03-26,nowcast,1.3,1.1,1.5,1.3,1.4,0
+Alabama,2020-03-27,nowcast,1.4,1.2,1.5,1.3,1.4,0
+Alabama,2020-03-28,nowcast,1.4,1.2,1.6,1.3,1.4,0
+Alabama,2020-03-29,nowcast,1.4,1.2,1.6,1.3,1.5,0
+Alabama,2020-03-30,nowcast,1.3,1.1,1.5,1.3,1.5,0
+Alabama,2020-03-31,nowcast,1.3,1.1,1.5,1.2,1.4,0
+Alabama,2020-04-01,nowcast,1.2,1.1,1.3,1.2,1.3,0
+Alabama,2020-04-02,nowcast,1.2,1,1.4,1.1,1.3,0
+Alabama,2020-04-03,nowcast,1.2,0.9,1.3,1.2,1.3,0.19
+Alabama,2020-04-04,nowcast,1.1,1,1.3,1,1.2,0.13
+Alabama,2020-04-05,nowcast,1,0.9,1.1,1,1.1,0.42
+Alabama,2020-04-06,nowcast,1,0.9,1.1,0.9,1,0.61
+Alabama,2020-04-07,nowcast,1,0.9,1.1,0.9,1,0.69
+Alabama,2020-04-08,nowcast,0.9,0.8,1,0.9,1,0.93
+Alabama,2020-04-09,nowcast,0.9,0.8,1,0.8,0.9,1
+Alabama,2020-04-10,nowcast,0.9,0.8,1,0.9,1,0.88
+Alabama,2020-04-11,nowcast,0.9,0.8,1.1,0.9,1,0.69
+Alabama,2020-04-12,nowcast,1,0.8,1.2,0.9,1.1,0.59
+Alabama,2020-04-13,nowcast,1,0.8,1.2,0.9,1,0.49
+Alabama,2020-04-14,nowcast,1,0.9,1.2,1,1.1,0.37
+Alabama,2020-04-15,nowcast,1.1,0.9,1.3,1.1,1.2,0.2
+Alabama,2020-04-16,forecast,1.1,0.8,1.3,1.1,1.3,0.28
+Alabama,2020-04-17,forecast,1.1,0.7,1.4,0.9,1.1,0.34
+Alabama,2020-04-18,forecast,1,0.7,1.4,0.8,1.1,0.41
+Alabama,2020-04-19,forecast,1.1,0.7,1.5,0.9,1.2,0.4
+Alabama,2020-04-20,forecast,1.1,0.7,1.6,0.9,1.2,0.38
+Alabama,2020-04-21,forecast,1,0.5,1.4,0.8,1.2,0.48
+Alabama,2020-04-22,forecast,1,0.5,1.5,0.9,1.3,0.48
+Alabama,2020-04-23,forecast,1,0.5,1.6,0.8,1.2,0.46
+Alabama,2020-04-24,forecast,1.1,0.6,1.8,1,1.4,0.33
+Alabama,2020-04-25,forecast,1.1,0.4,1.7,1,1.5,0.44
+Alabama,2020-04-26,forecast,1,0.4,1.7,0.8,1.3,0.48
+Alabama,2020-04-27,forecast,1,0.2,1.5,0.7,1.3,0.5
+Alabama,2020-04-28,forecast,0.9,0.4,1.7,0.6,1,0.57
+Alabama,2020-04-29,forecast,1,0.3,1.7,0.9,1.3,0.55
+Arizona,2020-03-11,nowcast,2.8,1.8,4,2,2.9,0
+Arizona,2020-03-12,nowcast,2.4,1.7,4,1.8,2.5,0
+Arizona,2020-03-13,nowcast,2.5,1.7,3.9,1.8,2.5,0
+Arizona,2020-03-14,nowcast,2.3,1.8,3.8,1.8,2.3,0
+Arizona,2020-03-15,nowcast,2.2,1.5,3.3,1.5,2.2,0
+Arizona,2020-03-16,nowcast,1.9,1.4,2.9,1.4,1.9,0
+Arizona,2020-03-17,nowcast,1.9,1.4,2.7,1.6,2,0
+Arizona,2020-03-18,nowcast,1.8,1.4,2.5,1.5,1.9,0
+Arizona,2020-03-19,nowcast,1.7,1.4,2.2,1.5,1.8,0
+Arizona,2020-03-20,nowcast,1.6,1.3,2,1.4,1.8,0
+Arizona,2020-03-21,nowcast,1.5,1.1,1.9,1.3,1.5,0
+Arizona,2020-03-22,nowcast,1.4,1.2,1.9,1.3,1.5,0
+Arizona,2020-03-23,nowcast,1.3,1.1,1.8,1.2,1.4,0
+Arizona,2020-03-24,nowcast,1.3,1.1,1.6,1.1,1.3,0
+Arizona,2020-03-25,nowcast,1.3,1.1,1.6,1.1,1.3,0.01
+Arizona,2020-03-26,nowcast,1.2,1,1.5,1.1,1.3,0.03
+Arizona,2020-03-27,nowcast,1.1,1,1.3,1,1.2,0.03
+Arizona,2020-03-28,nowcast,1.2,1,1.3,1.1,1.2,0
+Arizona,2020-03-29,nowcast,1.1,1,1.3,1.1,1.2,0.05
+Arizona,2020-03-30,nowcast,1.1,0.9,1.3,1,1.1,0.17
+Arizona,2020-03-31,nowcast,1,0.9,1.2,1,1.1,0.37
+Arizona,2020-04-01,nowcast,1,0.9,1.1,0.9,1,0.57
+Arizona,2020-04-02,nowcast,1,0.8,1.1,0.9,1,0.54
+Arizona,2020-04-03,nowcast,1,0.9,1.1,1,1,0.36
+Arizona,2020-04-04,nowcast,1.1,1,1.2,1,1.1,0.19
+Arizona,2020-04-05,nowcast,1,0.9,1.1,0.9,1,0.54
+Arizona,2020-04-06,nowcast,1,0.9,1.1,1,1,0.48
+Arizona,2020-04-07,nowcast,1,0.9,1.2,0.9,1,0.44
+Arizona,2020-04-08,nowcast,1,0.9,1.2,0.9,1,0.43
+Arizona,2020-04-09,nowcast,1.1,1,1.2,1,1.1,0.16
+Arizona,2020-04-10,nowcast,1.2,1,1.3,1.2,1.3,0.01
+Arizona,2020-04-11,nowcast,1.2,1,1.3,1.2,1.3,0.02
+Arizona,2020-04-12,nowcast,1.1,1,1.3,1,1.2,0.02
+Arizona,2020-04-13,nowcast,1.1,0.9,1.3,1,1.1,0.17
+Arizona,2020-04-14,nowcast,1,0.9,1.2,1,1.1,0.41
+Arizona,2020-04-15,nowcast,1,0.9,1.1,1,1.1,0.35
+Arizona,2020-04-16,forecast,1,0.8,1.3,0.9,1.1,0.51
+Arizona,2020-04-17,forecast,1,0.7,1.3,1,1.2,0.47
+Arizona,2020-04-18,forecast,1,0.6,1.2,0.9,1.1,0.56
+Arizona,2020-04-19,forecast,1,0.5,1.3,0.9,1.2,0.54
+Arizona,2020-04-20,forecast,1,0.6,1.4,0.9,1.1,0.54
+Arizona,2020-04-21,forecast,0.9,0.5,1.5,0.7,1,0.61
+Arizona,2020-04-22,forecast,0.9,0.2,1.3,0.8,1.2,0.58
+Arizona,2020-04-23,forecast,0.9,0.4,1.5,0.6,1,0.59
+Arizona,2020-04-24,forecast,0.9,0.4,1.5,0.5,0.9,0.6
+Arizona,2020-04-25,forecast,1,0.2,1.4,0.7,1.1,0.54
+Arizona,2020-04-26,forecast,0.8,0.3,1.4,0.7,1.1,0.67
+Arizona,2020-04-27,forecast,1,0.1,1.5,0.7,1.2,0.57
+Arizona,2020-04-28,forecast,0.9,0.3,1.5,0.7,1.2,0.61
+Arizona,2020-04-29,forecast,0.7,0,1.3,0.5,1.1,0.7
+Arkansas,2020-03-07,nowcast,3.1,1.4,5.5,1.5,3.2,0.01
+Arkansas,2020-03-08,nowcast,2.9,1.1,4.4,2.3,3.6,0
+Arkansas,2020-03-09,nowcast,2.7,1.2,4.2,1.6,3,0.02
+Arkansas,2020-03-10,nowcast,2.3,1,3.8,1.6,2.7,0.01
+Arkansas,2020-03-11,nowcast,2.3,1.5,3.9,1.6,2.4,0
+Arkansas,2020-03-12,nowcast,2.2,1.5,3.5,1.8,2.4,0
+Arkansas,2020-03-13,nowcast,2,1.4,3.1,1.6,2.1,0
+Arkansas,2020-03-14,nowcast,2,1.3,2.7,1.6,2.1,0
+Arkansas,2020-03-15,nowcast,1.8,1.3,2.3,1.5,1.9,0
+Arkansas,2020-03-16,nowcast,1.7,1.2,2,1.4,1.8,0
+Arkansas,2020-03-17,nowcast,1.5,1,2,1.4,1.7,0.02
+Arkansas,2020-03-18,nowcast,1.4,0.9,1.9,1.2,1.6,0.11
+Arkansas,2020-03-19,nowcast,1.3,1,1.7,1.1,1.4,0.08
+Arkansas,2020-03-20,nowcast,1.3,1.1,1.6,1.1,1.3,0
+Arkansas,2020-03-21,nowcast,1.3,1,1.5,1.2,1.4,0.09
+Arkansas,2020-03-22,nowcast,1.2,1,1.5,1.1,1.3,0.09
+Arkansas,2020-03-23,nowcast,1.2,0.9,1.4,1,1.2,0.14
+Arkansas,2020-03-24,nowcast,1.2,0.9,1.6,1,1.3,0.18
+Arkansas,2020-03-25,nowcast,1.2,1,1.5,1.1,1.3,0.02
+Arkansas,2020-03-26,nowcast,1.3,1,1.6,1.1,1.4,0.05
+Arkansas,2020-03-27,nowcast,1.2,1,1.5,1.1,1.3,0.04
+Arkansas,2020-03-28,nowcast,1.2,1,1.5,1.1,1.2,0.06
+Arkansas,2020-03-29,nowcast,1.2,1,1.4,1.1,1.3,0.05
+Arkansas,2020-03-30,nowcast,1.2,1,1.4,1.1,1.3,0.01
+Arkansas,2020-03-31,nowcast,1.2,1,1.4,1.1,1.3,0.02
+Arkansas,2020-04-01,nowcast,1.3,1.1,1.4,1.1,1.3,0
+Arkansas,2020-04-02,nowcast,1.2,1,1.4,1.2,1.3,0.06
+Arkansas,2020-04-03,nowcast,1.1,0.9,1.4,1.1,1.3,0.21
+Arkansas,2020-04-04,nowcast,1.1,0.9,1.3,1,1.1,0.14
+Arkansas,2020-04-05,nowcast,1.1,0.9,1.3,1,1.2,0.12
+Arkansas,2020-04-06,nowcast,1.1,0.9,1.4,1,1.2,0.14
+Arkansas,2020-04-07,nowcast,1.1,0.9,1.4,1,1.2,0.13
+Arkansas,2020-04-08,nowcast,1.2,1,1.4,1.1,1.3,0.08
+Arkansas,2020-04-09,nowcast,1.1,0.9,1.4,1,1.2,0.1
+Arkansas,2020-04-10,nowcast,1.2,1,1.5,1.1,1.2,0.03
+Arkansas,2020-04-11,nowcast,1.3,1,1.6,1,1.3,0.04
+Arkansas,2020-04-12,nowcast,1.4,1.1,1.7,1.2,1.5,0
+Arkansas,2020-04-13,nowcast,1.5,1.1,1.9,1.3,1.6,0.01
+Arkansas,2020-04-14,nowcast,1.6,1.3,1.9,1.3,1.7,0
+Arkansas,2020-04-15,nowcast,1.6,1.4,2,1.5,1.7,0
+Arkansas,2020-04-16,forecast,1.6,1.3,2.1,1.4,1.8,0.02
+Arkansas,2020-04-17,forecast,1.6,1.1,2.3,1.3,1.7,0.04
+Arkansas,2020-04-18,forecast,1.6,0.8,2.2,1.4,1.8,0.05
+Arkansas,2020-04-19,forecast,1.6,0.7,2.7,1.2,1.8,0.11
+Arkansas,2020-04-20,forecast,1.6,0.7,2.8,1.3,2.1,0.11
+Arkansas,2020-04-21,forecast,1.6,0.6,3,1.4,1.9,0.13
+Arkansas,2020-04-22,forecast,1.6,0.4,2.5,1.1,1.9,0.19
+Arkansas,2020-04-23,forecast,1.6,0.4,2.6,1.2,2,0.17
+Arkansas,2020-04-24,forecast,1.6,0.3,2.8,1.2,2,0.12
+Arkansas,2020-04-25,forecast,1.7,0.8,3,1.3,2.2,0.09
+Arkansas,2020-04-26,forecast,1.7,0,3.2,1.3,2.3,0.17
+Arkansas,2020-04-27,forecast,1.6,0,3,1,1.9,0.2
+Arkansas,2020-04-28,forecast,1.4,0,3,0.7,1.9,0.27
+Arkansas,2020-04-29,forecast,1.5,0,2.8,1.2,2.3,0.28
+California,2020-02-21,nowcast,2.3,1,3.5,1.8,2.7,0
+California,2020-02-22,nowcast,1.9,0.8,2.6,1.6,2.4,0.03
+California,2020-02-23,nowcast,2.2,0.6,2.9,1.7,2.7,0.07
+California,2020-02-24,nowcast,2.1,1.1,2.9,1.8,2.5,0.02
+California,2020-02-25,nowcast,2.1,1.1,2.9,1.7,2.3,0
+California,2020-02-26,nowcast,2.2,1.1,3.3,1.8,2.4,0
+California,2020-02-27,nowcast,2.2,1.3,2.8,1.8,2.4,0
+California,2020-02-28,nowcast,2.2,1.6,2.9,2,2.5,0
+California,2020-02-29,nowcast,2.3,1.9,2.7,2.1,2.4,0
+California,2020-03-01,nowcast,2.2,1.7,2.7,2,2.4,0
+California,2020-03-02,nowcast,2.1,1.5,2.6,1.8,2.2,0
+California,2020-03-03,nowcast,2.2,1.5,2.6,2,2.4,0
+California,2020-03-04,nowcast,2.1,1.7,2.6,1.9,2.2,0
+California,2020-03-05,nowcast,2.1,1.7,2.5,2,2.3,0
+California,2020-03-06,nowcast,2,1.7,2.4,1.9,2.1,0
+California,2020-03-07,nowcast,2,1.7,2.4,1.9,2.1,0
+California,2020-03-08,nowcast,2,1.6,2.4,1.8,2.1,0
+California,2020-03-09,nowcast,1.9,1.7,2.5,1.8,2,0
+California,2020-03-10,nowcast,2,1.7,2.3,1.8,2.1,0
+California,2020-03-11,nowcast,2,1.7,2.2,1.9,2.1,0
+California,2020-03-12,nowcast,1.9,1.7,2,1.8,1.9,0
+California,2020-03-13,nowcast,1.8,1.7,2,1.7,1.9,0
+California,2020-03-14,nowcast,1.8,1.7,2,1.8,1.9,0
+California,2020-03-15,nowcast,1.8,1.6,2,1.7,1.8,0
+California,2020-03-16,nowcast,1.8,1.6,2,1.6,1.8,0
+California,2020-03-17,nowcast,1.7,1.5,1.9,1.6,1.8,0
+California,2020-03-18,nowcast,1.6,1.5,1.9,1.5,1.7,0
+California,2020-03-19,nowcast,1.6,1.5,1.9,1.5,1.6,0
+California,2020-03-20,nowcast,1.6,1.3,1.8,1.5,1.7,0
+California,2020-03-21,nowcast,1.5,1.3,1.7,1.5,1.6,0
+California,2020-03-22,nowcast,1.4,1.3,1.7,1.3,1.4,0
+California,2020-03-23,nowcast,1.4,1.2,1.5,1.3,1.4,0
+California,2020-03-24,nowcast,1.3,1.2,1.4,1.3,1.3,0
+California,2020-03-25,nowcast,1.3,1.2,1.4,1.2,1.3,0
+California,2020-03-26,nowcast,1.3,1.1,1.3,1.2,1.3,0
+California,2020-03-27,nowcast,1.2,1.1,1.3,1.1,1.2,0
+California,2020-03-28,nowcast,1.2,1.1,1.3,1.1,1.2,0
+California,2020-03-29,nowcast,1.1,1,1.2,1,1.1,0
+California,2020-03-30,nowcast,1,1,1.1,1,1,0.16
+California,2020-03-31,nowcast,1,1,1.1,1,1,0.22
+California,2020-04-01,nowcast,1,1,1,1,1,0.43
+California,2020-04-02,nowcast,1,0.9,1,1,1,0.55
+California,2020-04-03,nowcast,1,1,1.1,1,1,0.45
+California,2020-04-04,nowcast,1,0.9,1.1,0.9,1,0.53
+California,2020-04-05,nowcast,1,0.9,1.1,1,1,0.58
+California,2020-04-06,nowcast,1,0.9,1.1,1,1,0.42
+California,2020-04-07,nowcast,1,1,1.1,1,1.1,0.2
+California,2020-04-08,nowcast,1.1,1,1.2,1.1,1.1,0
+California,2020-04-09,nowcast,1.1,1.1,1.2,1.1,1.2,0
+California,2020-04-10,nowcast,1.1,1.1,1.2,1.1,1.2,0
+California,2020-04-11,nowcast,1.1,1.1,1.2,1.1,1.2,0
+California,2020-04-12,nowcast,1.2,1.1,1.2,1.1,1.2,0
+California,2020-04-13,nowcast,1.2,1.1,1.3,1.2,1.2,0
+California,2020-04-14,nowcast,1.2,1.2,1.3,1.2,1.2,0
+California,2020-04-15,nowcast,1.3,1.2,1.3,1.3,1.3,0
+California,2020-04-16,forecast,1.2,0.9,1.6,1.2,1.4,0.08
+California,2020-04-17,forecast,1.2,1,1.7,1.1,1.3,0.09
+California,2020-04-18,forecast,1.3,0.9,1.9,1.1,1.4,0.11
+California,2020-04-19,forecast,1.3,0.8,1.7,1.1,1.5,0.19
+California,2020-04-20,forecast,1.3,0.8,1.8,0.9,1.3,0.21
+California,2020-04-21,forecast,1.2,0.5,2,1,1.4,0.21
+California,2020-04-22,forecast,1.3,0.5,2.3,1,1.5,0.25
+California,2020-04-23,forecast,1.3,0.5,2.6,0.9,1.5,0.27
+California,2020-04-24,forecast,1.2,0.2,2.2,1,1.5,0.26
+California,2020-04-25,forecast,1.2,0.4,2.2,1.1,1.6,0.27
+California,2020-04-26,forecast,1.1,0,2,0.8,1.4,0.43
+California,2020-04-27,forecast,1.2,0,2.6,0.6,1.4,0.41
+California,2020-04-28,forecast,1.1,0,2.3,0.8,1.7,0.43
+California,2020-04-29,forecast,1.4,0,2.9,0.9,2,0.32
+Colorado,2020-03-01,nowcast,2.7,1.5,4.2,2.1,2.9,0
+Colorado,2020-03-02,nowcast,2.8,1.6,4.1,2,3.2,0
+Colorado,2020-03-03,nowcast,2.5,1.7,3.8,1.8,2.6,0
+Colorado,2020-03-04,nowcast,2.5,1.7,3.2,2.1,2.7,0
+Colorado,2020-03-05,nowcast,2.4,1.4,3.3,2.3,2.8,0
+Colorado,2020-03-06,nowcast,2.2,1.6,3.1,1.9,2.3,0
+Colorado,2020-03-07,nowcast,2.1,1.6,2.8,1.8,2.3,0
+Colorado,2020-03-08,nowcast,2.1,1.6,2.7,1.8,2.3,0
+Colorado,2020-03-09,nowcast,2.1,1.6,2.6,1.8,2.3,0
+Colorado,2020-03-10,nowcast,2,1.5,2.4,2,2.3,0
+Colorado,2020-03-11,nowcast,1.9,1.5,2.4,1.7,2,0
+Colorado,2020-03-12,nowcast,1.9,1.7,2.3,1.8,2.1,0
+Colorado,2020-03-13,nowcast,1.9,1.7,2.2,1.8,2,0
+Colorado,2020-03-14,nowcast,1.9,1.6,2.2,1.8,2,0
+Colorado,2020-03-15,nowcast,1.9,1.6,2.1,1.7,1.9,0
+Colorado,2020-03-16,nowcast,1.8,1.6,2.1,1.6,1.8,0
+Colorado,2020-03-17,nowcast,1.7,1.5,1.9,1.7,1.8,0
+Colorado,2020-03-18,nowcast,1.7,1.5,1.9,1.6,1.8,0
+Colorado,2020-03-19,nowcast,1.6,1.4,1.8,1.5,1.7,0
+Colorado,2020-03-20,nowcast,1.5,1.4,1.8,1.3,1.5,0
+Colorado,2020-03-21,nowcast,1.5,1.2,1.6,1.3,1.5,0
+Colorado,2020-03-22,nowcast,1.3,1.2,1.5,1.3,1.5,0
+Colorado,2020-03-23,nowcast,1.2,1.1,1.4,1.2,1.3,0
+Colorado,2020-03-24,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Colorado,2020-03-25,nowcast,1.2,1,1.2,1.1,1.2,0.01
+Colorado,2020-03-26,nowcast,1.1,1,1.2,1.1,1.2,0.02
+Colorado,2020-03-27,nowcast,1.1,1,1.2,1.1,1.2,0.05
+Colorado,2020-03-28,nowcast,1.1,1,1.2,1.1,1.1,0.04
+Colorado,2020-03-29,nowcast,1,1,1.1,1,1.1,0.24
+Colorado,2020-03-30,nowcast,1,0.9,1.1,1,1,0.49
+Colorado,2020-03-31,nowcast,1,0.9,1.1,0.9,1,0.63
+Colorado,2020-04-01,nowcast,1,0.9,1.1,0.9,1,0.67
+Colorado,2020-04-02,nowcast,1,0.9,1.1,0.9,1,0.55
+Colorado,2020-04-03,nowcast,1,1,1.2,1,1.1,0.18
+Colorado,2020-04-04,nowcast,1.1,1,1.2,1.1,1.1,0.06
+Colorado,2020-04-05,nowcast,1,1,1.1,1,1.1,0.2
+Colorado,2020-04-06,nowcast,1,1,1.1,1,1,0.33
+Colorado,2020-04-07,nowcast,1,1,1.1,1,1.1,0.22
+Colorado,2020-04-08,nowcast,1,0.9,1.1,1,1,0.26
+Colorado,2020-04-09,nowcast,1,0.9,1.1,1,1,0.42
+Colorado,2020-04-10,nowcast,1,0.9,1.1,1,1.1,0.31
+Colorado,2020-04-11,nowcast,1.1,1,1.2,1.1,1.1,0.04
+Colorado,2020-04-12,nowcast,1.1,1,1.2,1.1,1.2,0.05
+Colorado,2020-04-13,nowcast,1.1,1,1.3,1.1,1.2,0.06
+Colorado,2020-04-14,nowcast,1.2,1,1.4,1.1,1.2,0
+Colorado,2020-04-15,nowcast,1.2,1.1,1.4,1.1,1.3,0
+Colorado,2020-04-16,forecast,1.2,1,1.5,1.1,1.3,0.05
+Colorado,2020-04-17,forecast,1.2,0.9,1.5,1.1,1.4,0.17
+Colorado,2020-04-18,forecast,1.2,0.9,1.6,1.1,1.4,0.11
+Colorado,2020-04-19,forecast,1.2,0.8,1.6,1,1.3,0.21
+Colorado,2020-04-20,forecast,1.2,0.8,1.7,1,1.3,0.23
+Colorado,2020-04-21,forecast,1.3,0.8,1.8,1.1,1.6,0.22
+Colorado,2020-04-22,forecast,1.2,0.7,1.7,1,1.4,0.2
+Colorado,2020-04-23,forecast,1,0.4,1.7,0.8,1.2,0.45
+Colorado,2020-04-24,forecast,1.1,0.5,1.9,0.9,1.3,0.34
+Colorado,2020-04-25,forecast,1.2,0.3,1.8,0.9,1.4,0.31
+Colorado,2020-04-26,forecast,1.1,0.2,2,0.9,1.4,0.39
+Colorado,2020-04-27,forecast,1.1,0,1.9,0.6,1.3,0.4
+Colorado,2020-04-28,forecast,1.3,0,1.9,0.7,1.4,0.33
+Colorado,2020-04-29,forecast,1.2,0,1.9,0.9,1.5,0.32
+Connecticut,2020-03-08,nowcast,2.8,2,3.5,2.5,3.2,0
+Connecticut,2020-03-09,nowcast,2.5,1.9,3.1,2,2.7,0
+Connecticut,2020-03-10,nowcast,2.5,1.9,3.4,2,2.5,0
+Connecticut,2020-03-11,nowcast,2.6,2,3.5,2.3,2.9,0
+Connecticut,2020-03-12,nowcast,2.6,2.2,3,2.4,2.7,0
+Connecticut,2020-03-13,nowcast,2.4,2,2.8,2.2,2.5,0
+Connecticut,2020-03-14,nowcast,2.3,2,2.6,2.1,2.3,0
+Connecticut,2020-03-15,nowcast,2.2,1.9,2.5,2.1,2.3,0
+Connecticut,2020-03-16,nowcast,2.2,1.8,2.5,2.1,2.3,0
+Connecticut,2020-03-17,nowcast,2.1,1.8,2.4,2.1,2.3,0
+Connecticut,2020-03-18,nowcast,2,1.8,2.3,1.9,2.1,0
+Connecticut,2020-03-19,nowcast,1.9,1.7,2.2,1.8,2,0
+Connecticut,2020-03-20,nowcast,1.8,1.7,2.2,1.7,1.8,0
+Connecticut,2020-03-21,nowcast,1.8,1.6,2,1.7,1.9,0
+Connecticut,2020-03-22,nowcast,1.7,1.6,2,1.6,1.7,0
+Connecticut,2020-03-23,nowcast,1.7,1.4,1.9,1.6,1.8,0
+Connecticut,2020-03-24,nowcast,1.6,1.4,1.8,1.5,1.7,0
+Connecticut,2020-03-25,nowcast,1.5,1.4,1.7,1.4,1.6,0
+Connecticut,2020-03-26,nowcast,1.5,1.3,1.6,1.4,1.5,0
+Connecticut,2020-03-27,nowcast,1.4,1.3,1.5,1.3,1.4,0
+Connecticut,2020-03-28,nowcast,1.3,1.2,1.4,1.3,1.4,0
+Connecticut,2020-03-29,nowcast,1.4,1.3,1.4,1.3,1.4,0
+Connecticut,2020-03-30,nowcast,1.3,1.2,1.5,1.3,1.4,0
+Connecticut,2020-03-31,nowcast,1.3,1.2,1.5,1.2,1.3,0
+Connecticut,2020-04-01,nowcast,1.3,1.2,1.4,1.3,1.4,0
+Connecticut,2020-04-02,nowcast,1.2,1.1,1.3,1.2,1.3,0
+Connecticut,2020-04-03,nowcast,1.1,1.1,1.2,1.1,1.2,0
+Connecticut,2020-04-04,nowcast,1.1,1,1.2,1.1,1.1,0
+Connecticut,2020-04-05,nowcast,1,1,1.1,1,1.1,0.2
+Connecticut,2020-04-06,nowcast,1,1,1.1,1,1.1,0.18
+Connecticut,2020-04-07,nowcast,1.1,1,1.1,1.1,1.1,0.08
+Connecticut,2020-04-08,nowcast,1.1,1,1.1,1,1.1,0.05
+Connecticut,2020-04-09,nowcast,1.1,1,1.1,1,1.1,0.08
+Connecticut,2020-04-10,nowcast,1.1,1,1.1,1,1.1,0.02
+Connecticut,2020-04-11,nowcast,1.1,1,1.1,1.1,1.1,0.01
+Connecticut,2020-04-12,nowcast,1.1,1,1.2,1.1,1.1,0.02
+Connecticut,2020-04-13,nowcast,1.1,1.1,1.2,1.1,1.1,0
+Connecticut,2020-04-14,nowcast,1.1,1.1,1.2,1.1,1.2,0
+Connecticut,2020-04-15,nowcast,1.1,1.1,1.2,1.1,1.2,0
+Connecticut,2020-04-16,forecast,1.1,1,1.3,1,1.2,0.04
+Connecticut,2020-04-17,forecast,1.1,0.9,1.4,1,1.2,0.15
+Connecticut,2020-04-18,forecast,1.1,0.9,1.3,1,1.2,0.12
+Connecticut,2020-04-19,forecast,1.1,0.9,1.3,1,1.2,0.25
+Connecticut,2020-04-20,forecast,1.1,0.8,1.3,1,1.1,0.3
+Connecticut,2020-04-21,forecast,1.1,0.9,1.5,0.9,1.1,0.28
+Connecticut,2020-04-22,forecast,1.1,0.7,1.4,1,1.2,0.37
+Connecticut,2020-04-23,forecast,1.1,0.7,1.5,1.1,1.3,0.29
+Connecticut,2020-04-24,forecast,1.1,0.8,1.4,0.8,1.1,0.42
+Connecticut,2020-04-25,forecast,1,0.6,1.4,0.9,1.2,0.43
+Connecticut,2020-04-26,forecast,1,0.7,1.5,0.8,1.1,0.42
+Connecticut,2020-04-27,forecast,1,0.6,1.6,0.7,1.1,0.55
+Connecticut,2020-04-28,forecast,1,0.5,1.6,0.8,1.2,0.52
+Connecticut,2020-04-29,forecast,1,0.5,1.4,0.8,1.2,0.52
+Delaware,2020-03-12,nowcast,2.1,1.2,3.1,1.7,2.4,0.01
+Delaware,2020-03-13,nowcast,2.1,1.4,3,1.7,2.3,0
+Delaware,2020-03-14,nowcast,2,1.4,3,1.6,2.2,0
+Delaware,2020-03-15,nowcast,2,1.3,2.9,1.5,2.1,0
+Delaware,2020-03-16,nowcast,1.9,1.5,2.6,1.6,2.1,0
+Delaware,2020-03-17,nowcast,1.9,1.2,2.5,1.7,2.3,0
+Delaware,2020-03-18,nowcast,1.7,1.1,2.4,1.4,1.9,0.02
+Delaware,2020-03-19,nowcast,1.7,1.2,2.2,1.6,2.1,0
+Delaware,2020-03-20,nowcast,1.7,1.3,2.1,1.7,2,0
+Delaware,2020-03-21,nowcast,1.9,1.6,2.2,1.8,2.1,0
+Delaware,2020-03-22,nowcast,1.9,1.6,2.3,1.8,2.1,0
+Delaware,2020-03-23,nowcast,1.7,1.4,2,1.5,1.8,0
+Delaware,2020-03-24,nowcast,1.6,1.4,2,1.5,1.8,0
+Delaware,2020-03-25,nowcast,1.6,1.3,1.9,1.5,1.8,0
+Delaware,2020-03-26,nowcast,1.6,1.3,1.8,1.5,1.7,0
+Delaware,2020-03-27,nowcast,1.6,1.4,1.9,1.6,1.7,0
+Delaware,2020-03-28,nowcast,1.6,1.4,1.9,1.5,1.6,0
+Delaware,2020-03-29,nowcast,1.6,1.3,1.9,1.5,1.7,0
+Delaware,2020-03-30,nowcast,1.6,1.3,1.9,1.5,1.8,0
+Delaware,2020-03-31,nowcast,1.5,1.2,1.8,1.4,1.6,0
+Delaware,2020-04-01,nowcast,1.4,1.1,1.7,1.1,1.4,0.01
+Delaware,2020-04-02,nowcast,1.3,1.1,1.7,1.2,1.4,0.03
+Delaware,2020-04-03,nowcast,1.2,1,1.5,1.1,1.2,0
+Delaware,2020-04-04,nowcast,1.2,0.9,1.4,1.1,1.2,0.07
+Delaware,2020-04-05,nowcast,1.1,1,1.4,1,1.2,0.05
+Delaware,2020-04-06,nowcast,1.1,1,1.4,1,1.2,0.05
+Delaware,2020-04-07,nowcast,1.1,0.9,1.3,1,1.1,0.21
+Delaware,2020-04-08,nowcast,1,0.9,1.2,1,1.1,0.28
+Delaware,2020-04-09,nowcast,1,0.9,1.2,1,1.1,0.32
+Delaware,2020-04-10,nowcast,1.1,0.9,1.2,1.1,1.2,0.22
+Delaware,2020-04-11,nowcast,1.1,1,1.3,1.1,1.2,0.02
+Delaware,2020-04-12,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Delaware,2020-04-13,nowcast,1.1,1,1.2,1.1,1.2,0.05
+Delaware,2020-04-14,nowcast,1.1,1,1.2,1.1,1.2,0.14
+Delaware,2020-04-15,nowcast,1.1,1,1.3,1.1,1.2,0.05
+Delaware,2020-04-16,forecast,1.1,0.9,1.4,1,1.2,0.15
+Delaware,2020-04-17,forecast,1.1,0.7,1.5,1,1.2,0.25
+Delaware,2020-04-18,forecast,1.1,0.7,1.6,0.9,1.2,0.29
+Delaware,2020-04-19,forecast,1.2,0.5,1.6,0.9,1.3,0.29
+Delaware,2020-04-20,forecast,1.1,0.6,1.6,0.9,1.3,0.31
+Delaware,2020-04-21,forecast,1.1,0.8,2.1,0.9,1.3,0.37
+Delaware,2020-04-22,forecast,1.1,0.6,1.7,0.8,1.2,0.37
+Delaware,2020-04-23,forecast,1,0.4,1.8,0.7,1.2,0.47
+Delaware,2020-04-24,forecast,1.1,0.3,1.7,0.8,1.2,0.36
+Delaware,2020-04-25,forecast,1.1,0.5,1.9,0.7,1.2,0.43
+Delaware,2020-04-26,forecast,1.1,0.2,2,0.8,1.3,0.41
+Delaware,2020-04-27,forecast,1.1,0.3,1.8,0.9,1.3,0.34
+Delaware,2020-04-28,forecast,1,0,1.8,0.7,1.2,0.51
+Delaware,2020-04-29,forecast,1,0.3,1.9,0.7,1.4,0.48
+District of Columbia,2020-03-06,nowcast,2.7,1.4,4.6,2,2.8,0
+District of Columbia,2020-03-07,nowcast,2.8,1.2,4.7,1.8,3.1,0.01
+District of Columbia,2020-03-08,nowcast,2.4,1.3,3.5,1.7,2.7,0.02
+District of Columbia,2020-03-09,nowcast,2.4,1.1,3.7,1.8,2.7,0.01
+District of Columbia,2020-03-10,nowcast,2.5,1.5,3.9,2.1,2.9,0
+District of Columbia,2020-03-11,nowcast,2.3,1.6,3.3,1.9,2.4,0
+District of Columbia,2020-03-12,nowcast,2.2,1.3,3,1.8,2.4,0
+District of Columbia,2020-03-13,nowcast,2.1,1.6,3,1.6,2.1,0
+District of Columbia,2020-03-14,nowcast,2.1,1.7,2.9,1.9,2.3,0
+District of Columbia,2020-03-15,nowcast,2,1.7,2.7,1.7,2.1,0
+District of Columbia,2020-03-16,nowcast,1.8,1.3,2.3,1.7,2,0
+District of Columbia,2020-03-17,nowcast,1.8,1.2,2.3,1.6,2,0
+District of Columbia,2020-03-18,nowcast,1.8,1.3,2.3,1.5,2,0
+District of Columbia,2020-03-19,nowcast,1.8,1.3,2.2,1.7,1.9,0
+District of Columbia,2020-03-20,nowcast,1.9,1.4,2.4,1.6,2,0
+District of Columbia,2020-03-21,nowcast,1.7,1.2,2,1.6,1.9,0
+District of Columbia,2020-03-22,nowcast,1.6,1.5,1.9,1.5,1.7,0
+District of Columbia,2020-03-23,nowcast,1.7,1.4,1.9,1.5,1.8,0
+District of Columbia,2020-03-24,nowcast,1.6,1.4,1.8,1.5,1.7,0
+District of Columbia,2020-03-25,nowcast,1.5,1.3,1.9,1.4,1.6,0
+District of Columbia,2020-03-26,nowcast,1.5,1.3,1.8,1.4,1.7,0
+District of Columbia,2020-03-27,nowcast,1.4,1.2,1.7,1.2,1.4,0
+District of Columbia,2020-03-28,nowcast,1.4,1.1,1.7,1.3,1.5,0
+District of Columbia,2020-03-29,nowcast,1.3,1.1,1.7,1.2,1.4,0
+District of Columbia,2020-03-30,nowcast,1.3,1.1,1.5,1.3,1.4,0
+District of Columbia,2020-03-31,nowcast,1.3,1.1,1.4,1.2,1.3,0
+District of Columbia,2020-04-01,nowcast,1.2,1.1,1.4,1.1,1.2,0.02
+District of Columbia,2020-04-02,nowcast,1.2,1,1.4,1.1,1.3,0.06
+District of Columbia,2020-04-03,nowcast,1.1,0.9,1.3,1,1.1,0.11
+District of Columbia,2020-04-04,nowcast,1,0.8,1.2,0.9,1.1,0.43
+District of Columbia,2020-04-05,nowcast,1,0.8,1.1,0.9,1.1,0.57
+District of Columbia,2020-04-06,nowcast,1,0.9,1.2,0.9,1,0.5
+District of Columbia,2020-04-07,nowcast,1,0.9,1.2,0.9,1,0.49
+District of Columbia,2020-04-08,nowcast,1,0.9,1.2,1,1.1,0.39
+District of Columbia,2020-04-09,nowcast,1.1,1,1.3,1,1.1,0.12
+District of Columbia,2020-04-10,nowcast,1.2,1,1.3,1.1,1.2,0.04
+District of Columbia,2020-04-11,nowcast,1.2,1,1.4,1.1,1.3,0.01
+District of Columbia,2020-04-12,nowcast,1.2,1,1.3,1.1,1.2,0.02
+District of Columbia,2020-04-13,nowcast,1.1,0.9,1.2,1,1.1,0.15
+District of Columbia,2020-04-14,nowcast,1,0.9,1.2,1,1.1,0.36
+District of Columbia,2020-04-15,nowcast,1,0.8,1.2,1,1.1,0.37
+District of Columbia,2020-04-16,forecast,1,0.7,1.3,0.7,1,0.54
+District of Columbia,2020-04-17,forecast,1,0.7,1.4,0.8,1.1,0.52
+District of Columbia,2020-04-18,forecast,1,0.6,1.4,0.9,1.2,0.46
+District of Columbia,2020-04-19,forecast,1,0.4,1.5,0.8,1.2,0.53
+District of Columbia,2020-04-20,forecast,1,0.5,1.6,0.9,1.3,0.47
+District of Columbia,2020-04-21,forecast,1,0.3,1.5,0.7,1.2,0.54
+District of Columbia,2020-04-22,forecast,0.9,0.2,1.7,0.7,1.2,0.58
+District of Columbia,2020-04-23,forecast,0.9,0.3,2,0.3,1,0.59
+District of Columbia,2020-04-24,forecast,0.9,0.1,1.6,0.7,1.2,0.6
+District of Columbia,2020-04-25,forecast,1,0.2,1.6,0.4,1,0.6
+District of Columbia,2020-04-26,forecast,1,0.2,1.9,0.6,1.2,0.53
+District of Columbia,2020-04-27,forecast,1,0,1.6,0.7,1.3,0.52
+District of Columbia,2020-04-28,forecast,1,0.2,1.9,0.6,1.2,0.51
+District of Columbia,2020-04-29,forecast,1,0,1.8,0.7,1.4,0.53
+Florida,2020-03-02,nowcast,3,2.2,4.1,2.7,3.4,0
+Florida,2020-03-03,nowcast,3,2.2,4,2.9,3.5,0
+Florida,2020-03-04,nowcast,2.8,2,3.7,2.5,3.1,0
+Florida,2020-03-05,nowcast,2.9,2.1,3.9,2.4,3.1,0
+Florida,2020-03-06,nowcast,2.8,2.1,3.6,2.5,3,0
+Florida,2020-03-07,nowcast,2.7,2.1,3.6,2.3,3,0
+Florida,2020-03-08,nowcast,2.6,1.9,3.5,2.3,2.8,0
+Florida,2020-03-09,nowcast,2.6,2,3.4,2.3,2.8,0
+Florida,2020-03-10,nowcast,2.5,2,3.3,2.3,2.6,0
+Florida,2020-03-11,nowcast,2.3,2,3.1,2.2,2.5,0
+Florida,2020-03-12,nowcast,2.3,1.9,2.9,2.1,2.4,0
+Florida,2020-03-13,nowcast,2.2,1.8,2.9,1.8,2.3,0
+Florida,2020-03-14,nowcast,2.1,1.8,2.8,1.8,2.2,0
+Florida,2020-03-15,nowcast,2,1.7,2.7,1.8,2,0
+Florida,2020-03-16,nowcast,2,1.6,2.6,1.8,2.1,0
+Florida,2020-03-17,nowcast,2,1.6,2.5,1.9,2,0
+Florida,2020-03-18,nowcast,1.9,1.6,2.2,1.8,2,0
+Florida,2020-03-19,nowcast,1.8,1.5,2.1,1.6,1.9,0
+Florida,2020-03-20,nowcast,1.7,1.4,2.2,1.5,1.7,0
+Florida,2020-03-21,nowcast,1.6,1.4,2.2,1.4,1.6,0
+Florida,2020-03-22,nowcast,1.5,1.3,2,1.4,1.5,0
+Florida,2020-03-23,nowcast,1.4,1.3,1.9,1.3,1.5,0
+Florida,2020-03-24,nowcast,1.4,1.3,1.7,1.3,1.4,0
+Florida,2020-03-25,nowcast,1.3,1.2,1.6,1.2,1.3,0
+Florida,2020-03-26,nowcast,1.2,1.1,1.5,1.1,1.3,0
+Florida,2020-03-27,nowcast,1.2,1.1,1.4,1.1,1.2,0
+Florida,2020-03-28,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Florida,2020-03-29,nowcast,1.1,1,1.2,1,1.1,0.01
+Florida,2020-03-30,nowcast,1,0.9,1.1,1,1,0.33
+Florida,2020-03-31,nowcast,1,0.9,1.1,0.9,1,0.63
+Florida,2020-04-01,nowcast,1,0.9,1,1,1,0.76
+Florida,2020-04-02,nowcast,1,0.9,1,1,1,0.81
+Florida,2020-04-03,nowcast,1,0.9,1,0.9,1,0.87
+Florida,2020-04-04,nowcast,0.9,0.9,1,0.9,1,0.98
+Florida,2020-04-05,nowcast,0.9,0.9,1,0.9,0.9,1
+Florida,2020-04-06,nowcast,0.9,0.9,1,0.9,0.9,1
+Florida,2020-04-07,nowcast,0.9,0.9,1,0.9,0.9,1
+Florida,2020-04-08,nowcast,0.9,0.9,1,0.9,0.9,1
+Florida,2020-04-09,nowcast,0.9,0.9,1,0.9,0.9,1
+Florida,2020-04-10,nowcast,0.9,0.9,1,0.9,1,0.97
+Florida,2020-04-11,nowcast,1,0.9,1,0.9,1,0.77
+Florida,2020-04-12,nowcast,1,0.9,1.1,0.9,1,0.83
+Florida,2020-04-13,nowcast,0.9,0.9,1,0.9,1,0.98
+Florida,2020-04-14,nowcast,0.9,0.8,1,0.9,0.9,0.9
+Florida,2020-04-15,nowcast,1,0.9,1,0.9,1,0.79
+Florida,2020-04-16,forecast,0.9,0.8,1.1,0.8,1,0.73
+Florida,2020-04-17,forecast,0.9,0.8,1.2,0.9,1,0.69
+Florida,2020-04-18,forecast,0.9,0.7,1.1,0.8,1,0.66
+Florida,2020-04-19,forecast,0.9,0.7,1.2,0.8,1,0.65
+Florida,2020-04-20,forecast,1,0.6,1.3,0.8,1.1,0.55
+Florida,2020-04-21,forecast,0.9,0.6,1.3,0.8,1.1,0.59
+Florida,2020-04-22,forecast,0.9,0.6,1.3,0.7,1,0.65
+Florida,2020-04-23,forecast,0.9,0.5,1.3,0.7,1,0.66
+Florida,2020-04-24,forecast,0.9,0.5,1.3,0.8,1.1,0.65
+Florida,2020-04-25,forecast,0.9,0.5,1.4,0.8,1.2,0.62
+Florida,2020-04-26,forecast,0.9,0.4,1.3,0.7,1.1,0.66
+Florida,2020-04-27,forecast,0.9,0.4,1.4,0.8,1.2,0.59
+Florida,2020-04-28,forecast,0.9,0.4,1.4,0.7,1.1,0.65
+Florida,2020-04-29,forecast,0.8,0.3,1.5,0.7,1.2,0.62
+Georgia,2020-03-04,nowcast,2.7,1.8,3.6,2.1,2.9,0
+Georgia,2020-03-05,nowcast,2.4,1.5,3.2,1.9,2.6,0
+Georgia,2020-03-06,nowcast,2.5,1.9,3.2,2,2.6,0
+Georgia,2020-03-07,nowcast,2.7,1.8,3.3,2.3,3,0
+Georgia,2020-03-08,nowcast,2.5,2,3.2,2.2,2.6,0
+Georgia,2020-03-09,nowcast,2.4,2,3.2,2,2.4,0
+Georgia,2020-03-10,nowcast,2.4,1.9,3,1.9,2.4,0
+Georgia,2020-03-11,nowcast,2.5,1.8,3.1,2.3,2.7,0
+Georgia,2020-03-12,nowcast,2.3,1.8,2.8,2.3,2.8,0
+Georgia,2020-03-13,nowcast,2.4,1.8,2.9,2.3,2.9,0
+Georgia,2020-03-14,nowcast,2.2,1.7,2.6,2,2.5,0
+Georgia,2020-03-15,nowcast,2.1,1.7,2.4,2.1,2.4,0
+Georgia,2020-03-16,nowcast,1.9,1.6,2.3,1.6,2,0
+Georgia,2020-03-17,nowcast,1.8,1.6,2.1,1.6,1.8,0
+Georgia,2020-03-18,nowcast,1.8,1.6,2.2,1.6,1.8,0
+Georgia,2020-03-19,nowcast,1.8,1.6,2.2,1.6,1.8,0
+Georgia,2020-03-20,nowcast,1.7,1.5,2,1.5,1.7,0
+Georgia,2020-03-21,nowcast,1.6,1.4,1.9,1.5,1.7,0
+Georgia,2020-03-22,nowcast,1.6,1.4,1.8,1.5,1.7,0
+Georgia,2020-03-23,nowcast,1.5,1.3,1.8,1.3,1.5,0
+Georgia,2020-03-24,nowcast,1.4,1.3,1.8,1.3,1.4,0
+Georgia,2020-03-25,nowcast,1.4,1.3,1.8,1.3,1.5,0
+Georgia,2020-03-26,nowcast,1.4,1.2,1.7,1.2,1.4,0
+Georgia,2020-03-27,nowcast,1.3,1.2,1.5,1.2,1.3,0
+Georgia,2020-03-28,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Georgia,2020-03-29,nowcast,1.2,1.1,1.2,1.1,1.2,0
+Georgia,2020-03-30,nowcast,1.1,1,1.2,1.1,1.2,0
+Georgia,2020-03-31,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Georgia,2020-04-01,nowcast,1.2,1.1,1.4,1.1,1.2,0
+Georgia,2020-04-02,nowcast,1.2,1,1.4,1,1.2,0.01
+Georgia,2020-04-03,nowcast,1,1,1.2,1,1,0.29
+Georgia,2020-04-04,nowcast,0.9,0.9,1,0.9,1,0.87
+Georgia,2020-04-05,nowcast,0.9,0.8,1,0.8,0.9,0.99
+Georgia,2020-04-06,nowcast,0.9,0.7,1,0.9,1,0.94
+Georgia,2020-04-07,nowcast,1,0.8,1.1,1,1,0.86
+Georgia,2020-04-08,nowcast,1.1,1,1.1,1,1.1,0.11
+Georgia,2020-04-09,nowcast,1.1,1,1.2,1,1.1,0.02
+Georgia,2020-04-10,nowcast,1.1,1,1.2,1.1,1.1,0.1
+Georgia,2020-04-11,nowcast,1,1,1.2,1,1.1,0.19
+Georgia,2020-04-12,nowcast,1,0.9,1.1,1,1,0.47
+Georgia,2020-04-13,nowcast,1,0.9,1,1,1,0.59
+Georgia,2020-04-14,nowcast,1,0.9,1.1,1,1,0.47
+Georgia,2020-04-15,nowcast,1.1,1,1.1,1.1,1.1,0.16
+Georgia,2020-04-16,forecast,1,0.9,1.3,1,1.1,0.31
+Georgia,2020-04-17,forecast,1,0.8,1.3,1,1.1,0.37
+Georgia,2020-04-18,forecast,1,0.6,1.3,1,1.2,0.43
+Georgia,2020-04-19,forecast,1,0.6,1.4,0.8,1.1,0.5
+Georgia,2020-04-20,forecast,1,0.7,1.4,0.8,1.1,0.52
+Georgia,2020-04-21,forecast,1,0.5,1.5,0.9,1.2,0.44
+Georgia,2020-04-22,forecast,1,0.6,1.4,0.8,1.1,0.55
+Georgia,2020-04-23,forecast,1,0.6,1.5,0.9,1.3,0.48
+Georgia,2020-04-24,forecast,1,0.4,1.5,0.8,1.2,0.47
+Georgia,2020-04-25,forecast,0.9,0.3,1.6,0.8,1.2,0.56
+Georgia,2020-04-26,forecast,1,0.4,1.8,0.7,1.2,0.52
+Georgia,2020-04-27,forecast,1,0.2,1.5,0.9,1.4,0.46
+Georgia,2020-04-28,forecast,0.8,0,1.4,0.7,1.1,0.67
+Georgia,2020-04-29,forecast,1,0,1.8,0.6,1.2,0.52
+Guam,2020-03-13,nowcast,2.2,0.8,3.5,1.3,2.3,0.02
+Guam,2020-03-14,nowcast,2.5,0.8,4.7,1.7,3.1,0.04
+Guam,2020-03-15,nowcast,2.5,1.1,4.5,1.9,3,0
+Guam,2020-03-16,nowcast,2.2,1.3,4.4,1.9,2.7,0
+Guam,2020-03-17,nowcast,1.8,0.9,2.9,1.5,2.1,0.02
+Guam,2020-03-18,nowcast,1.6,1.2,2.5,1.3,1.8,0.02
+Guam,2020-03-19,nowcast,1.7,1,2.6,1.4,1.8,0.01
+Guam,2020-03-20,nowcast,1.7,1.1,2.4,1.5,1.9,0.01
+Guam,2020-03-21,nowcast,1.7,1.2,2.4,1.4,1.8,0
+Guam,2020-03-22,nowcast,1.8,1.2,2.6,1.3,1.8,0
+Guam,2020-03-23,nowcast,1.9,1.2,2.4,1.5,2,0
+Guam,2020-03-24,nowcast,1.8,1.3,2.3,1.7,2.2,0
+Guam,2020-03-25,nowcast,1.8,1.3,3.1,1.3,1.9,0.02
+Guam,2020-03-26,nowcast,2,1.2,2.9,1.7,2.3,0.01
+Guam,2020-03-27,nowcast,1.7,1.2,2.2,1.6,1.9,0
+Guam,2020-03-28,nowcast,1.6,1.1,2,1.3,1.7,0
+Guam,2020-03-29,nowcast,1.5,1.2,2.3,1.4,1.7,0.02
+Guam,2020-03-30,nowcast,1.6,1.1,2.1,1.3,1.7,0.01
+Guam,2020-03-31,nowcast,1.4,1.1,1.8,1.3,1.5,0.01
+Guam,2020-04-01,nowcast,1.4,1,1.8,1.2,1.5,0.05
+Guam,2020-04-02,nowcast,1.3,0.9,1.9,1,1.3,0.06
+Guam,2020-04-03,nowcast,1.2,0.8,2,1,1.3,0.14
+Guam,2020-04-04,nowcast,1,0.8,1.6,0.8,1.1,0.45
+Guam,2020-04-05,nowcast,0.8,0.5,1.1,0.6,0.8,0.81
+Guam,2020-04-06,nowcast,0.7,0.5,0.9,0.6,0.7,0.99
+Guam,2020-04-07,nowcast,0.6,0.4,0.8,0.5,0.7,1
+Guam,2020-04-08,nowcast,0.5,0.3,0.7,0.4,0.7,1
+Guam,2020-04-09,nowcast,0.5,0.3,0.9,0.3,0.5,0.99
+Guam,2020-04-10,nowcast,0.6,0.4,1,0.5,0.7,0.94
+Guam,2020-04-11,nowcast,0.7,0.5,1.1,0.5,0.8,0.81
+Guam,2020-04-12,nowcast,0.8,0.5,1.3,0.5,0.8,0.66
+Guam,2020-04-13,nowcast,1,0.5,1.5,0.8,1.2,0.48
+Guam,2020-04-14,nowcast,1.2,0.6,1.7,1.1,1.5,0.24
+Guam,2020-04-15,nowcast,1.5,1,2.3,1.2,1.7,0.03
+Guam,2020-04-16,forecast,1.6,1,2.4,1.1,1.7,0.05
+Guam,2020-04-17,forecast,1.5,0.7,2.8,1.1,1.8,0.15
+Guam,2020-04-18,forecast,1.6,0.7,3.3,0.9,1.8,0.16
+Guam,2020-04-19,forecast,1.9,0.5,3.2,1.2,2.3,0.2
+Guam,2020-04-20,forecast,1.6,0.5,3.5,0.8,1.8,0.17
+Guam,2020-04-21,forecast,1.8,0,2.8,1.1,2.1,0.18
+Guam,2020-04-22,forecast,1.6,0,3.9,0,1.6,0.32
+Guam,2020-04-23,forecast,1.5,0,3.2,0,1.6,0.31
+Guam,2020-04-24,forecast,1.6,0,3.5,0,1.6,0.28
+Guam,2020-04-25,forecast,1.8,0,4.7,0,1.8,0.27
+Guam,2020-04-26,forecast,1.7,0,4.3,0,1.7,0.34
+Guam,2020-04-27,forecast,1.3,0,4.2,0,1.3,0.37
+Guam,2020-04-28,forecast,1.4,0,4.9,0,1.4,0.34
+Guam,2020-04-29,forecast,1.6,0,4.5,0,1.6,0.33
+Idaho,2020-03-14,nowcast,2.3,1.3,3.6,1.7,2.6,0
+Idaho,2020-03-15,nowcast,2.2,1.2,3,1.8,2.3,0
+Idaho,2020-03-16,nowcast,2,1.6,2.8,1.8,2.1,0
+Idaho,2020-03-17,nowcast,2.1,1.6,3.5,1.9,2.2,0
+Idaho,2020-03-18,nowcast,2,1.4,2.9,1.8,2.1,0
+Idaho,2020-03-19,nowcast,2,1.3,2.8,1.8,2.3,0
+Idaho,2020-03-20,nowcast,1.9,1.2,2.8,1.7,2.1,0
+Idaho,2020-03-21,nowcast,1.8,1.3,3,1.5,1.9,0
+Idaho,2020-03-22,nowcast,1.6,1.2,2.4,1.5,1.7,0
+Idaho,2020-03-23,nowcast,1.5,1.1,2,1.4,1.6,0
+Idaho,2020-03-24,nowcast,1.4,1,2,1.1,1.4,0.01
+Idaho,2020-03-25,nowcast,1.4,0.9,2.3,1,1.4,0.09
+Idaho,2020-03-26,nowcast,1.2,0.8,2,1,1.4,0.27
+Idaho,2020-03-27,nowcast,1.1,0.7,1.7,0.8,1.1,0.36
+Idaho,2020-03-28,nowcast,0.9,0.6,1.3,0.7,0.9,0.65
+Idaho,2020-03-29,nowcast,0.7,0.5,0.9,0.6,0.8,1
+Idaho,2020-03-30,nowcast,0.6,0.5,0.7,0.5,0.6,1
+Idaho,2020-03-31,nowcast,0.6,0.4,0.7,0.6,0.7,1
+Idaho,2020-04-01,nowcast,0.6,0.5,0.7,0.6,0.7,1
+Idaho,2020-04-02,nowcast,0.6,0.5,0.8,0.6,0.7,1
+Idaho,2020-04-03,nowcast,0.6,0.4,0.8,0.6,0.7,1
+Idaho,2020-04-04,nowcast,0.7,0.5,0.8,0.6,0.7,0.98
+Idaho,2020-04-05,nowcast,0.6,0.4,0.8,0.6,0.7,0.99
+Idaho,2020-04-06,nowcast,0.6,0.4,0.8,0.5,0.6,0.98
+Idaho,2020-04-07,nowcast,0.6,0.4,0.9,0.4,0.6,0.97
+Idaho,2020-04-08,nowcast,0.7,0.5,1,0.6,0.8,0.94
+Idaho,2020-04-09,nowcast,0.9,0.5,1.2,0.8,1,0.77
+Idaho,2020-04-10,nowcast,0.9,0.6,1.4,0.7,1,0.61
+Idaho,2020-04-11,nowcast,1,0.7,1.3,0.8,1.1,0.52
+Idaho,2020-04-12,nowcast,1,0.7,1.2,1,1.2,0.47
+Idaho,2020-04-13,nowcast,0.8,0.6,1.1,0.8,0.9,0.82
+Idaho,2020-04-14,nowcast,0.9,0.6,1.2,0.8,1,0.64
+Idaho,2020-04-15,nowcast,1.1,0.7,1.4,1,1.3,0.33
+Idaho,2020-04-16,forecast,1,0.8,1.7,0.9,1.2,0.46
+Idaho,2020-04-17,forecast,1.1,0.6,1.6,0.7,1.1,0.48
+Idaho,2020-04-18,forecast,1,0.5,1.6,0.8,1.2,0.45
+Idaho,2020-04-19,forecast,1,0.3,1.6,0.5,1,0.57
+Idaho,2020-04-20,forecast,1,0.3,1.7,0.7,1.2,0.5
+Idaho,2020-04-21,forecast,0.9,0,1.7,0.6,1.2,0.56
+Idaho,2020-04-22,forecast,0.9,0,1.7,0.6,1.3,0.58
+Idaho,2020-04-23,forecast,1,0,1.8,0.3,1.1,0.55
+Idaho,2020-04-24,forecast,1,0,1.9,0.6,1.4,0.5
+Idaho,2020-04-25,forecast,1,0,2,0.5,1.5,0.51
+Idaho,2020-04-26,forecast,1,0,1.9,0.5,1.4,0.52
+Idaho,2020-04-27,forecast,1,0,1.9,0.4,1.4,0.51
+Idaho,2020-04-28,forecast,1,0,2,0,1,0.5
+Idaho,2020-04-29,forecast,0.8,0,2.5,0,0.8,0.59
+Illinois,2020-03-05,nowcast,2.5,2,3.1,2.2,2.6,0
+Illinois,2020-03-06,nowcast,2.4,1.8,3.4,2.1,2.6,0
+Illinois,2020-03-07,nowcast,2.6,2,3.4,2,2.6,0
+Illinois,2020-03-08,nowcast,2.6,2.1,3.4,2.1,2.7,0
+Illinois,2020-03-09,nowcast,2.5,1.9,3.4,2,2.7,0
+Illinois,2020-03-10,nowcast,2.5,1.8,3,1.9,2.6,0
+Illinois,2020-03-11,nowcast,2.3,1.9,3,1.8,2.3,0
+Illinois,2020-03-12,nowcast,2.2,1.8,2.9,1.8,2.3,0
+Illinois,2020-03-13,nowcast,2.2,1.7,2.5,1.9,2.3,0
+Illinois,2020-03-14,nowcast,2,1.6,2.4,1.8,2.1,0
+Illinois,2020-03-15,nowcast,1.9,1.6,2.4,1.7,2,0
+Illinois,2020-03-16,nowcast,1.9,1.5,2.3,1.7,2,0
+Illinois,2020-03-17,nowcast,1.9,1.5,2.2,1.7,2,0
+Illinois,2020-03-18,nowcast,1.8,1.6,2.1,1.6,1.9,0
+Illinois,2020-03-19,nowcast,1.8,1.5,2.1,1.5,1.8,0
+Illinois,2020-03-20,nowcast,1.7,1.4,2,1.6,1.8,0
+Illinois,2020-03-21,nowcast,1.6,1.4,1.9,1.4,1.6,0
+Illinois,2020-03-22,nowcast,1.6,1.3,1.8,1.6,1.8,0
+Illinois,2020-03-23,nowcast,1.5,1.3,1.7,1.4,1.5,0
+Illinois,2020-03-24,nowcast,1.4,1.3,1.6,1.3,1.5,0
+Illinois,2020-03-25,nowcast,1.4,1.2,1.5,1.3,1.4,0
+Illinois,2020-03-26,nowcast,1.4,1.2,1.5,1.3,1.4,0
+Illinois,2020-03-27,nowcast,1.3,1.2,1.4,1.2,1.4,0
+Illinois,2020-03-28,nowcast,1.3,1.2,1.5,1.2,1.3,0
+Illinois,2020-03-29,nowcast,1.3,1.2,1.4,1.2,1.3,0
+Illinois,2020-03-30,nowcast,1.2,1.1,1.3,1.2,1.3,0
+Illinois,2020-03-31,nowcast,1.2,1.1,1.3,1.2,1.2,0
+Illinois,2020-04-01,nowcast,1.2,1.1,1.2,1.1,1.2,0
+Illinois,2020-04-02,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Illinois,2020-04-03,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Illinois,2020-04-04,nowcast,1.1,1,1.2,1.1,1.2,0
+Illinois,2020-04-05,nowcast,1.1,1,1.1,1.1,1.1,0.06
+Illinois,2020-04-06,nowcast,1.1,1,1.1,1,1.1,0.05
+Illinois,2020-04-07,nowcast,1,1,1.1,1,1.1,0.09
+Illinois,2020-04-08,nowcast,1,1,1.1,1,1.1,0.05
+Illinois,2020-04-09,nowcast,1.1,1,1.1,1,1.1,0.02
+Illinois,2020-04-10,nowcast,1.1,1,1.1,1.1,1.1,0
+Illinois,2020-04-11,nowcast,1.1,1,1.1,1.1,1.1,0
+Illinois,2020-04-12,nowcast,1.1,1.1,1.2,1.1,1.1,0
+Illinois,2020-04-13,nowcast,1.1,1.1,1.2,1.1,1.1,0
+Illinois,2020-04-14,nowcast,1.1,1.1,1.2,1.1,1.1,0
+Illinois,2020-04-15,nowcast,1.2,1.1,1.2,1.1,1.2,0
+Illinois,2020-04-16,forecast,1.2,1,1.3,1.1,1.2,0.02
+Illinois,2020-04-17,forecast,1.2,1,1.3,1.1,1.2,0.04
+Illinois,2020-04-18,forecast,1.2,0.9,1.4,1.1,1.3,0.09
+Illinois,2020-04-19,forecast,1.2,0.9,1.4,1.1,1.2,0.13
+Illinois,2020-04-20,forecast,1.2,0.9,1.5,1.1,1.3,0.14
+Illinois,2020-04-21,forecast,1.2,0.9,1.5,1,1.3,0.22
+Illinois,2020-04-22,forecast,1.2,0.8,1.5,1,1.2,0.16
+Illinois,2020-04-23,forecast,1.2,0.8,1.6,1,1.3,0.14
+Illinois,2020-04-24,forecast,1.2,0.8,1.7,1.1,1.3,0.24
+Illinois,2020-04-25,forecast,1.2,0.8,1.7,1,1.3,0.2
+Illinois,2020-04-26,forecast,1.2,0.7,1.7,0.9,1.2,0.24
+Illinois,2020-04-27,forecast,1.1,0.5,1.6,0.8,1.2,0.34
+Illinois,2020-04-28,forecast,1.1,0.7,1.7,0.9,1.3,0.32
+Illinois,2020-04-29,forecast,1.1,0.6,1.8,0.8,1.2,0.39
+Indiana,2020-03-06,nowcast,2.8,1.8,3.7,2.3,3.2,0.01
+Indiana,2020-03-07,nowcast,2.9,2.2,4.1,2.3,3.1,0
+Indiana,2020-03-08,nowcast,2.6,1.8,4,2.1,3,0
+Indiana,2020-03-09,nowcast,2.7,2,3.8,2.3,2.9,0
+Indiana,2020-03-10,nowcast,2.7,2.1,3.8,2.2,2.8,0
+Indiana,2020-03-11,nowcast,2.6,1.9,3.8,1.9,2.6,0
+Indiana,2020-03-12,nowcast,2.5,1.9,3.5,1.9,2.5,0
+Indiana,2020-03-13,nowcast,2.6,1.9,3.1,2.3,2.9,0
+Indiana,2020-03-14,nowcast,2.6,1.8,3.1,2.4,2.9,0
+Indiana,2020-03-15,nowcast,2.5,1.8,3,2.4,3,0
+Indiana,2020-03-16,nowcast,2.4,1.8,2.9,1.8,2.4,0
+Indiana,2020-03-17,nowcast,2.2,1.7,2.8,1.7,2.2,0
+Indiana,2020-03-18,nowcast,2.1,1.6,2.8,1.9,2.3,0
+Indiana,2020-03-19,nowcast,2.1,1.4,2.6,1.9,2.2,0
+Indiana,2020-03-20,nowcast,1.9,1.5,2.5,1.7,2,0
+Indiana,2020-03-21,nowcast,1.8,1.4,2.4,1.6,1.9,0
+Indiana,2020-03-22,nowcast,1.6,1.3,2.1,1.4,1.7,0
+Indiana,2020-03-23,nowcast,1.5,1.3,1.9,1.3,1.5,0
+Indiana,2020-03-24,nowcast,1.5,1.3,1.7,1.3,1.5,0
+Indiana,2020-03-25,nowcast,1.4,1.3,1.6,1.3,1.5,0
+Indiana,2020-03-26,nowcast,1.4,1.2,1.5,1.3,1.4,0
+Indiana,2020-03-27,nowcast,1.3,1.2,1.5,1.3,1.4,0
+Indiana,2020-03-28,nowcast,1.3,1.1,1.4,1.2,1.3,0
+Indiana,2020-03-29,nowcast,1.2,1.1,1.3,1.2,1.3,0
+Indiana,2020-03-30,nowcast,1.2,1,1.3,1.2,1.3,0.01
+Indiana,2020-03-31,nowcast,1.1,1,1.3,1,1.1,0.05
+Indiana,2020-04-01,nowcast,1.1,1,1.2,1,1.1,0.05
+Indiana,2020-04-02,nowcast,1,1,1.1,1,1.1,0.24
+Indiana,2020-04-03,nowcast,1,0.9,1.1,0.9,1,0.51
+Indiana,2020-04-04,nowcast,1,0.9,1.1,1,1,0.5
+Indiana,2020-04-05,nowcast,1,0.9,1.1,1,1,0.55
+Indiana,2020-04-06,nowcast,1,0.9,1,1,1,0.61
+Indiana,2020-04-07,nowcast,1,0.9,1,0.9,1,0.82
+Indiana,2020-04-08,nowcast,1,0.9,1.1,1,1,0.6
+Indiana,2020-04-09,nowcast,1,0.9,1.1,1,1.1,0.34
+Indiana,2020-04-10,nowcast,1.1,1,1.2,1,1.1,0.04
+Indiana,2020-04-11,nowcast,1.1,1,1.2,1.1,1.2,0.06
+Indiana,2020-04-12,nowcast,1.1,1,1.2,1,1.1,0.12
+Indiana,2020-04-13,nowcast,1,1,1.2,1,1,0.33
+Indiana,2020-04-14,nowcast,1,0.9,1.1,1,1.1,0.43
+Indiana,2020-04-15,nowcast,1,0.9,1.1,1,1.1,0.33
+Indiana,2020-04-16,forecast,1,0.8,1.2,1,1.1,0.56
+Indiana,2020-04-17,forecast,1,0.7,1.2,0.9,1.1,0.54
+Indiana,2020-04-18,forecast,1,0.7,1.2,0.9,1.1,0.57
+Indiana,2020-04-19,forecast,1,0.7,1.3,0.8,1.1,0.54
+Indiana,2020-04-20,forecast,1,0.5,1.3,0.9,1.3,0.52
+Indiana,2020-04-21,forecast,0.9,0.5,1.4,0.7,1,0.59
+Indiana,2020-04-22,forecast,0.9,0.4,1.4,0.7,1.1,0.62
+Indiana,2020-04-23,forecast,1,0.5,1.4,0.8,1.2,0.56
+Indiana,2020-04-24,forecast,1,0.4,1.6,0.7,1.1,0.57
+Indiana,2020-04-25,forecast,0.9,0.2,1.5,0.8,1.3,0.59
+Indiana,2020-04-26,forecast,0.9,0.4,1.3,0.7,1.1,0.67
+Indiana,2020-04-27,forecast,0.9,0.4,1.5,0.5,1,0.68
+Indiana,2020-04-28,forecast,0.8,0,1.3,0.6,1,0.68
+Indiana,2020-04-29,forecast,0.9,0,1.3,0.7,1.1,0.64
+Iowa,2020-03-04,nowcast,2.8,1,4.6,2,3.3,0.01
+Iowa,2020-03-05,nowcast,2.7,1.5,3.9,2.2,3.3,0
+Iowa,2020-03-06,nowcast,2.4,1.7,3.6,1.7,2.6,0.01
+Iowa,2020-03-07,nowcast,2.2,1.3,2.9,1.6,2.3,0
+Iowa,2020-03-08,nowcast,2.1,1.3,3.3,1.5,2.3,0
+Iowa,2020-03-09,nowcast,2.1,1.2,3.2,1.6,2.5,0
+Iowa,2020-03-10,nowcast,2,1.2,2.8,1.6,2.1,0
+Iowa,2020-03-11,nowcast,2.2,1.6,3,1.7,2.3,0
+Iowa,2020-03-12,nowcast,2.2,1.7,2.7,1.9,2.4,0
+Iowa,2020-03-13,nowcast,2.2,1.5,2.9,2.1,2.7,0
+Iowa,2020-03-14,nowcast,2.3,1.7,3.1,1.9,2.4,0
+Iowa,2020-03-15,nowcast,2.2,1.7,2.9,1.9,2.4,0
+Iowa,2020-03-16,nowcast,2.1,1.8,2.5,2,2.3,0
+Iowa,2020-03-17,nowcast,2,1.7,2.4,1.8,2,0
+Iowa,2020-03-18,nowcast,2,1.7,2.4,1.9,2.1,0
+Iowa,2020-03-19,nowcast,2,1.7,2.4,1.8,2.1,0
+Iowa,2020-03-20,nowcast,1.9,1.6,2.2,1.8,2.1,0
+Iowa,2020-03-21,nowcast,1.8,1.6,2.2,1.7,1.9,0
+Iowa,2020-03-22,nowcast,1.7,1.5,2,1.6,1.8,0
+Iowa,2020-03-23,nowcast,1.6,1.4,1.9,1.6,1.8,0
+Iowa,2020-03-24,nowcast,1.5,1.3,1.8,1.4,1.6,0
+Iowa,2020-03-25,nowcast,1.5,1.3,1.7,1.4,1.5,0
+Iowa,2020-03-26,nowcast,1.4,1.2,1.6,1.3,1.5,0
+Iowa,2020-03-27,nowcast,1.4,1.2,1.6,1.3,1.5,0
+Iowa,2020-03-28,nowcast,1.4,1.3,1.6,1.3,1.5,0
+Iowa,2020-03-29,nowcast,1.4,1.2,1.6,1.3,1.4,0
+Iowa,2020-03-30,nowcast,1.4,1.2,1.5,1.3,1.4,0
+Iowa,2020-03-31,nowcast,1.3,1.2,1.6,1.3,1.4,0
+Iowa,2020-04-01,nowcast,1.4,1.2,1.5,1.3,1.4,0
+Iowa,2020-04-02,nowcast,1.3,1.2,1.5,1.2,1.4,0
+Iowa,2020-04-03,nowcast,1.3,1.2,1.5,1.3,1.4,0
+Iowa,2020-04-04,nowcast,1.3,1.2,1.5,1.3,1.4,0
+Iowa,2020-04-05,nowcast,1.3,1.2,1.5,1.3,1.4,0
+Iowa,2020-04-06,nowcast,1.4,1.2,1.5,1.3,1.4,0
+Iowa,2020-04-07,nowcast,1.4,1.2,1.6,1.2,1.4,0
+Iowa,2020-04-08,nowcast,1.4,1.2,1.5,1.2,1.4,0
+Iowa,2020-04-09,nowcast,1.4,1.2,1.6,1.3,1.4,0
+Iowa,2020-04-10,nowcast,1.4,1.2,1.5,1.3,1.4,0
+Iowa,2020-04-11,nowcast,1.4,1.3,1.6,1.3,1.4,0
+Iowa,2020-04-12,nowcast,1.4,1.3,1.6,1.4,1.5,0
+Iowa,2020-04-13,nowcast,1.4,1.3,1.6,1.4,1.5,0
+Iowa,2020-04-14,nowcast,1.4,1.3,1.7,1.4,1.4,0
+Iowa,2020-04-15,nowcast,1.4,1,1.5,1.3,1.5,0
+Iowa,2020-04-16,forecast,1.4,0.9,1.7,1.3,1.5,0.07
+Iowa,2020-04-17,forecast,1.3,1,1.7,1.3,1.5,0.07
+Iowa,2020-04-18,forecast,1.3,0.9,1.6,1.2,1.4,0.1
+Iowa,2020-04-19,forecast,1.3,0.9,1.8,1.1,1.5,0.12
+Iowa,2020-04-20,forecast,1.4,0.9,2,1.1,1.5,0.12
+Iowa,2020-04-21,forecast,1.3,0.7,2.1,1,1.5,0.2
+Iowa,2020-04-22,forecast,1.4,0.9,2.1,1.1,1.6,0.17
+Iowa,2020-04-23,forecast,1.3,0.5,2,0.9,1.5,0.3
+Iowa,2020-04-24,forecast,1.4,0.6,2.1,1,1.6,0.2
+Iowa,2020-04-25,forecast,1.3,0.5,2.1,1,1.7,0.25
+Iowa,2020-04-26,forecast,1.4,0.6,2.2,1.2,1.8,0.22
+Iowa,2020-04-27,forecast,1.2,0.5,2.3,1,1.7,0.23
+Iowa,2020-04-28,forecast,1.2,0,2,1,1.7,0.31
+Iowa,2020-04-29,forecast,1.3,0.3,2.3,0.8,1.7,0.34
+Kansas,2020-03-12,nowcast,2.3,1.2,3,1.9,2.5,0
+Kansas,2020-03-13,nowcast,2.3,1.5,2.8,1.9,2.5,0
+Kansas,2020-03-14,nowcast,2.1,1.5,3.1,1.5,2.2,0
+Kansas,2020-03-15,nowcast,2,1.3,2.5,1.9,2.4,0
+Kansas,2020-03-16,nowcast,1.9,1.4,2.2,1.7,1.9,0
+Kansas,2020-03-17,nowcast,1.7,1.3,2.3,1.5,1.8,0
+Kansas,2020-03-18,nowcast,1.7,1.3,2.3,1.6,1.9,0.01
+Kansas,2020-03-19,nowcast,1.8,1.5,2.2,1.6,1.9,0
+Kansas,2020-03-20,nowcast,1.8,1.2,2.4,1.4,1.9,0
+Kansas,2020-03-21,nowcast,1.6,1.2,2.2,1.4,1.8,0
+Kansas,2020-03-22,nowcast,1.5,1.2,2,1.3,1.6,0
+Kansas,2020-03-23,nowcast,1.4,1.1,1.7,1.3,1.6,0
+Kansas,2020-03-24,nowcast,1.3,1,1.6,1.3,1.4,0.06
+Kansas,2020-03-25,nowcast,1.3,1,1.5,1.2,1.4,0.06
+Kansas,2020-03-26,nowcast,1.3,1,1.5,1.2,1.4,0.01
+Kansas,2020-03-27,nowcast,1.3,1.1,1.6,1.2,1.4,0.05
+Kansas,2020-03-28,nowcast,1.3,1.1,1.5,1.2,1.4,0.05
+Kansas,2020-03-29,nowcast,1.2,1,1.5,1.1,1.3,0.06
+Kansas,2020-03-30,nowcast,1.2,1,1.4,1.1,1.3,0.03
+Kansas,2020-03-31,nowcast,1.2,1,1.3,1.1,1.2,0.05
+Kansas,2020-04-01,nowcast,1.2,1,1.4,1.1,1.2,0.08
+Kansas,2020-04-02,nowcast,1.2,1,1.4,1.1,1.3,0.07
+Kansas,2020-04-03,nowcast,1.1,0.9,1.3,1.1,1.2,0.13
+Kansas,2020-04-04,nowcast,1.1,0.9,1.3,0.9,1.1,0.36
+Kansas,2020-04-05,nowcast,1.1,0.9,1.3,1,1.1,0.23
+Kansas,2020-04-06,nowcast,1.1,0.9,1.4,1,1.2,0.23
+Kansas,2020-04-07,nowcast,1.1,0.8,1.3,1,1.1,0.29
+Kansas,2020-04-08,nowcast,1.1,0.9,1.6,1,1.2,0.26
+Kansas,2020-04-09,nowcast,1.2,0.9,1.5,1.1,1.3,0.15
+Kansas,2020-04-10,nowcast,1.3,1,1.6,1.1,1.3,0.04
+Kansas,2020-04-11,nowcast,1.3,1.2,1.6,1.2,1.4,0
+Kansas,2020-04-12,nowcast,1.4,1.1,1.7,1.2,1.4,0
+Kansas,2020-04-13,nowcast,1.4,1.2,1.7,1.3,1.5,0
+Kansas,2020-04-14,nowcast,1.4,1.2,1.5,1.3,1.4,0
+Kansas,2020-04-15,nowcast,1.4,1.3,1.7,1.4,1.5,0
+Kansas,2020-04-16,forecast,1.4,1,1.7,1.3,1.5,0.02
+Kansas,2020-04-17,forecast,1.5,1,1.9,1.3,1.6,0.04
+Kansas,2020-04-18,forecast,1.4,0.9,1.7,1.2,1.5,0.05
+Kansas,2020-04-19,forecast,1.5,0.9,1.9,1.3,1.6,0.07
+Kansas,2020-04-20,forecast,1.4,0.6,2,1.2,1.6,0.14
+Kansas,2020-04-21,forecast,1.4,0.7,2,1.2,1.6,0.16
+Kansas,2020-04-22,forecast,1.4,0.9,2.3,1.3,1.8,0.14
+Kansas,2020-04-23,forecast,1.3,0.4,1.9,1,1.5,0.18
+Kansas,2020-04-24,forecast,1.3,0.7,2.3,1,1.6,0.15
+Kansas,2020-04-25,forecast,1.4,0.6,2.2,1,1.6,0.17
+Kansas,2020-04-26,forecast,1.4,0.6,2.2,1.1,1.6,0.17
+Kansas,2020-04-27,forecast,1.3,0.3,2.2,0.9,1.6,0.29
+Kansas,2020-04-28,forecast,1.4,0.5,2.3,1.2,1.9,0.23
+Kansas,2020-04-29,forecast,1.3,0.5,2.5,1,1.7,0.29
+Kentucky,2020-03-09,nowcast,2.1,1.3,2.8,1.8,2.3,0
+Kentucky,2020-03-10,nowcast,2.2,1.4,3.3,2,2.7,0
+Kentucky,2020-03-11,nowcast,2.2,1.6,3.1,1.9,2.4,0
+Kentucky,2020-03-12,nowcast,2.1,1.7,2.9,1.7,2.2,0
+Kentucky,2020-03-13,nowcast,2,1.6,2.5,1.8,2.2,0
+Kentucky,2020-03-14,nowcast,1.9,1.5,2.7,1.5,2,0
+Kentucky,2020-03-15,nowcast,1.9,1.5,2.6,1.7,2,0
+Kentucky,2020-03-16,nowcast,1.9,1.5,2.6,1.7,2.1,0
+Kentucky,2020-03-17,nowcast,1.8,1.3,2.4,1.7,2,0
+Kentucky,2020-03-18,nowcast,1.8,1.3,2.3,1.6,1.9,0
+Kentucky,2020-03-19,nowcast,1.7,1.4,2.3,1.5,1.8,0
+Kentucky,2020-03-20,nowcast,1.7,1.4,2.2,1.5,1.7,0
+Kentucky,2020-03-21,nowcast,1.7,1.3,2.1,1.4,1.7,0
+Kentucky,2020-03-22,nowcast,1.5,1.2,1.9,1.4,1.6,0
+Kentucky,2020-03-23,nowcast,1.5,1.1,1.9,1.3,1.5,0
+Kentucky,2020-03-24,nowcast,1.4,1.1,1.7,1.2,1.4,0.01
+Kentucky,2020-03-25,nowcast,1.3,1.1,1.6,1.2,1.4,0
+Kentucky,2020-03-26,nowcast,1.4,1.2,1.6,1.3,1.4,0
+Kentucky,2020-03-27,nowcast,1.3,1.1,1.6,1.2,1.3,0
+Kentucky,2020-03-28,nowcast,1.3,1.1,1.4,1.2,1.3,0.01
+Kentucky,2020-03-29,nowcast,1.2,1.1,1.4,1.2,1.3,0.01
+Kentucky,2020-03-30,nowcast,1.3,1.1,1.4,1.2,1.3,0.01
+Kentucky,2020-03-31,nowcast,1.3,1.1,1.4,1.2,1.3,0
+Kentucky,2020-04-01,nowcast,1.3,1.1,1.5,1.2,1.4,0
+Kentucky,2020-04-02,nowcast,1.3,1.1,1.5,1.2,1.3,0
+Kentucky,2020-04-03,nowcast,1.2,1,1.5,1.2,1.3,0.05
+Kentucky,2020-04-04,nowcast,1.1,0.9,1.4,1.1,1.2,0.11
+Kentucky,2020-04-05,nowcast,1.1,0.9,1.3,1,1.1,0.23
+Kentucky,2020-04-06,nowcast,1.1,0.9,1.2,1,1.1,0.31
+Kentucky,2020-04-07,nowcast,1,0.9,1.2,1,1.1,0.32
+Kentucky,2020-04-08,nowcast,1,0.9,1.2,1,1.1,0.35
+Kentucky,2020-04-09,nowcast,1.1,0.9,1.2,1,1.1,0.17
+Kentucky,2020-04-10,nowcast,1.1,1,1.3,1,1.1,0.16
+Kentucky,2020-04-11,nowcast,1.1,1,1.3,1,1.2,0.13
+Kentucky,2020-04-12,nowcast,1.1,1,1.4,1.1,1.2,0.02
+Kentucky,2020-04-13,nowcast,1.2,1,1.3,1.1,1.2,0.01
+Kentucky,2020-04-14,nowcast,1.2,1,1.3,1.1,1.2,0.14
+Kentucky,2020-04-15,nowcast,1.1,0.9,1.3,1.1,1.2,0.15
+Kentucky,2020-04-16,forecast,1.1,0.9,1.4,1,1.2,0.23
+Kentucky,2020-04-17,forecast,1.1,0.8,1.5,1,1.2,0.3
+Kentucky,2020-04-18,forecast,1.1,0.8,1.4,0.9,1.2,0.33
+Kentucky,2020-04-19,forecast,1.1,0.7,1.5,1,1.3,0.31
+Kentucky,2020-04-20,forecast,1.1,0.5,1.4,0.9,1.2,0.34
+Kentucky,2020-04-21,forecast,1.1,0.4,1.5,0.9,1.3,0.36
+Kentucky,2020-04-22,forecast,1,0.5,1.6,0.9,1.2,0.43
+Kentucky,2020-04-23,forecast,1.1,0.6,1.7,0.7,1.2,0.39
+Kentucky,2020-04-24,forecast,1,0.6,1.6,0.9,1.2,0.44
+Kentucky,2020-04-25,forecast,1.1,0.5,1.8,0.8,1.2,0.41
+Kentucky,2020-04-26,forecast,1,0,1.4,0.9,1.3,0.5
+Kentucky,2020-04-27,forecast,1.1,0.4,1.8,0.6,1.1,0.42
+Kentucky,2020-04-28,forecast,1,0.3,1.9,0.8,1.4,0.5
+Kentucky,2020-04-29,forecast,1.1,0.5,1.9,0.8,1.3,0.39
+Louisiana,2020-03-05,nowcast,2.8,2,3.4,2.6,3.1,0
+Louisiana,2020-03-06,nowcast,2.9,1.9,3.8,2.7,3.3,0
+Louisiana,2020-03-07,nowcast,2.8,1.9,3.8,2.5,2.9,0
+Louisiana,2020-03-08,nowcast,2.6,1.9,4.1,2.4,2.7,0
+Louisiana,2020-03-09,nowcast,2.5,1.9,3.6,2.2,2.6,0
+Louisiana,2020-03-10,nowcast,2.3,1.9,3,2,2.4,0
+Louisiana,2020-03-11,nowcast,2.3,1.7,3,2,2.4,0
+Louisiana,2020-03-12,nowcast,2.2,1.8,2.8,2,2.3,0
+Louisiana,2020-03-13,nowcast,2.2,1.8,2.8,1.9,2.2,0
+Louisiana,2020-03-14,nowcast,2.1,1.7,2.7,1.9,2.2,0
+Louisiana,2020-03-15,nowcast,2.1,1.7,2.8,1.8,2.1,0
+Louisiana,2020-03-16,nowcast,1.9,1.6,2.5,1.8,2,0
+Louisiana,2020-03-17,nowcast,1.9,1.6,2.2,1.8,1.9,0
+Louisiana,2020-03-18,nowcast,1.9,1.7,2.3,1.8,1.9,0
+Louisiana,2020-03-19,nowcast,1.8,1.6,2.2,1.6,1.8,0
+Louisiana,2020-03-20,nowcast,1.7,1.5,2.2,1.6,1.7,0
+Louisiana,2020-03-21,nowcast,1.6,1.5,2.2,1.6,1.7,0
+Louisiana,2020-03-22,nowcast,1.6,1.5,2,1.5,1.6,0
+Louisiana,2020-03-23,nowcast,1.6,1.4,1.9,1.5,1.6,0
+Louisiana,2020-03-24,nowcast,1.6,1.4,1.9,1.5,1.6,0
+Louisiana,2020-03-25,nowcast,1.6,1.4,2.1,1.4,1.6,0
+Louisiana,2020-03-26,nowcast,1.5,1.2,2.1,1.3,1.5,0
+Louisiana,2020-03-27,nowcast,1.3,1.1,2,1.1,1.4,0
+Louisiana,2020-03-28,nowcast,1.2,1,1.7,1,1.2,0.01
+Louisiana,2020-03-29,nowcast,1,0.9,1.4,0.9,1,0.45
+Louisiana,2020-03-30,nowcast,0.9,0.8,1.1,0.8,0.9,0.86
+Louisiana,2020-03-31,nowcast,0.8,0.7,0.9,0.7,0.8,1
+Louisiana,2020-04-01,nowcast,0.8,0.7,0.8,0.7,0.8,1
+Louisiana,2020-04-02,nowcast,0.7,0.7,0.8,0.7,0.8,1
+Louisiana,2020-04-03,nowcast,0.7,0.6,0.7,0.7,0.7,1
+Louisiana,2020-04-04,nowcast,0.7,0.6,0.7,0.6,0.7,1
+Louisiana,2020-04-05,nowcast,0.7,0.6,0.7,0.6,0.7,1
+Louisiana,2020-04-06,nowcast,0.6,0.5,0.7,0.6,0.7,1
+Louisiana,2020-04-07,nowcast,0.6,0.5,0.7,0.6,0.7,1
+Louisiana,2020-04-08,nowcast,0.7,0.5,0.7,0.6,0.7,1
+Louisiana,2020-04-09,nowcast,0.7,0.6,0.8,0.7,0.8,1
+Louisiana,2020-04-10,nowcast,0.8,0.7,0.9,0.7,0.8,1
+Louisiana,2020-04-11,nowcast,0.8,0.7,0.9,0.8,0.9,1
+Louisiana,2020-04-12,nowcast,0.8,0.7,0.9,0.8,0.9,0.99
+Louisiana,2020-04-13,nowcast,0.8,0.8,1,0.8,0.9,1
+Louisiana,2020-04-14,nowcast,0.9,0.8,0.9,0.8,0.9,1
+Louisiana,2020-04-15,nowcast,0.9,0.7,0.9,0.8,0.9,1
+Louisiana,2020-04-16,forecast,0.8,0.6,1,0.7,0.9,0.95
+Louisiana,2020-04-17,forecast,0.9,0.5,1,0.8,1,0.87
+Louisiana,2020-04-18,forecast,0.8,0.5,1.1,0.7,1,0.89
+Louisiana,2020-04-19,forecast,0.8,0.4,1.1,0.6,0.9,0.79
+Louisiana,2020-04-20,forecast,0.9,0.4,1.3,0.8,1.1,0.67
+Louisiana,2020-04-21,forecast,0.8,0.2,1.2,0.6,1,0.73
+Louisiana,2020-04-22,forecast,0.7,0.2,1.2,0.6,1,0.78
+Louisiana,2020-04-23,forecast,0.7,0,1.2,0.4,0.9,0.78
+Louisiana,2020-04-24,forecast,0.7,0.3,1.5,0.5,0.9,0.77
+Louisiana,2020-04-25,forecast,0.7,0,1.2,0.3,1,0.74
+Louisiana,2020-04-26,forecast,0.8,0,1.3,0.4,1,0.71
+Louisiana,2020-04-27,forecast,0.7,0,1.3,0.6,1.2,0.71
+Louisiana,2020-04-28,forecast,0.8,0,1.3,0.7,1.2,0.64
+Louisiana,2020-04-29,forecast,0.6,0,1.5,0.2,0.8,0.77
+Maine,2020-03-10,nowcast,2.2,1.2,4.4,1.6,2.6,0.01
+Maine,2020-03-11,nowcast,2,0.9,2.9,1.4,2.2,0.02
+Maine,2020-03-12,nowcast,1.8,1.2,2.6,1.4,1.9,0.02
+Maine,2020-03-13,nowcast,1.6,1.1,2.4,1.3,1.7,0.02
+Maine,2020-03-14,nowcast,1.6,1,2.4,1.2,1.7,0.08
+Maine,2020-03-15,nowcast,1.5,0.9,2.3,1.2,1.6,0.04
+Maine,2020-03-16,nowcast,1.5,1.2,2.1,1.4,1.8,0.01
+Maine,2020-03-17,nowcast,1.4,1,2.1,1.1,1.5,0.03
+Maine,2020-03-18,nowcast,1.4,0.8,1.9,1.2,1.6,0.08
+Maine,2020-03-19,nowcast,1.4,1.1,1.7,1.1,1.4,0
+Maine,2020-03-20,nowcast,1.5,1.2,2,1.3,1.6,0
+Maine,2020-03-21,nowcast,1.5,1.1,2,1.3,1.6,0.02
+Maine,2020-03-22,nowcast,1.4,1.1,1.9,1.2,1.5,0.04
+Maine,2020-03-23,nowcast,1.4,0.9,1.8,1.3,1.7,0.09
+Maine,2020-03-24,nowcast,1.3,1,1.9,1.1,1.5,0.12
+Maine,2020-03-25,nowcast,1.2,1,1.5,1.1,1.3,0.11
+Maine,2020-03-26,nowcast,1.1,0.9,1.4,1,1.2,0.18
+Maine,2020-03-27,nowcast,1.1,0.8,1.4,0.9,1.2,0.31
+Maine,2020-03-28,nowcast,1,0.8,1.3,0.9,1.1,0.42
+Maine,2020-03-29,nowcast,0.9,0.7,1.1,0.9,1,0.72
+Maine,2020-03-30,nowcast,0.9,0.6,1.1,0.9,1,0.8
+Maine,2020-03-31,nowcast,0.9,0.6,1,0.8,1,0.88
+Maine,2020-04-01,nowcast,0.8,0.6,1.1,0.7,0.9,0.79
+Maine,2020-04-02,nowcast,0.9,0.6,1.1,0.8,1,0.7
+Maine,2020-04-03,nowcast,1,0.8,1.2,0.9,1.1,0.5
+Maine,2020-04-04,nowcast,1.1,0.8,1.4,0.9,1.1,0.38
+Maine,2020-04-05,nowcast,1.1,0.9,1.4,1,1.2,0.22
+Maine,2020-04-06,nowcast,1.1,0.8,1.4,1.1,1.3,0.25
+Maine,2020-04-07,nowcast,1.1,0.8,1.5,0.9,1.2,0.28
+Maine,2020-04-08,nowcast,1.1,0.7,1.5,0.9,1.2,0.34
+Maine,2020-04-09,nowcast,1,0.7,1.4,0.8,1.1,0.52
+Maine,2020-04-10,nowcast,0.9,0.6,1.2,0.8,0.9,0.81
+Maine,2020-04-11,nowcast,0.7,0.5,1,0.5,0.7,0.91
+Maine,2020-04-12,nowcast,0.7,0.5,1,0.7,0.8,0.95
+Maine,2020-04-13,nowcast,0.7,0.4,1.3,0.5,0.8,0.84
+Maine,2020-04-14,nowcast,0.7,0.4,1.8,0.6,0.8,0.9
+Maine,2020-04-15,nowcast,0.8,0.5,1.3,0.7,0.9,0.79
+Maine,2020-04-16,forecast,0.8,0.5,1.4,0.7,1,0.79
+Maine,2020-04-17,forecast,0.9,0.2,1.4,0.7,1.1,0.65
+Maine,2020-04-18,forecast,0.8,0.1,1.4,0.7,1.1,0.75
+Maine,2020-04-19,forecast,0.8,0,1.6,0.6,1.1,0.68
+Maine,2020-04-20,forecast,0.9,0.1,1.7,0.5,1,0.69
+Maine,2020-04-21,forecast,0.8,0,1.5,0.5,1,0.71
+Maine,2020-04-22,forecast,0.8,0,1.6,0.4,1,0.65
+Maine,2020-04-23,forecast,0.9,0,2,0.4,1,0.69
+Maine,2020-04-24,forecast,0.7,0,1.7,0.4,1,0.74
+Maine,2020-04-25,forecast,0.7,0,2.2,0,0.7,0.66
+Maine,2020-04-26,forecast,0.8,0,2.1,0.4,1.1,0.66
+Maine,2020-04-27,forecast,0.8,0,2,0,0.9,0.63
+Maine,2020-04-28,forecast,0.8,0,1.8,0,0.8,0.66
+Maine,2020-04-29,forecast,0.7,0,1.7,0,0.7,0.67
+Maryland,2020-03-08,nowcast,2.3,1.2,3.1,2.1,2.7,0
+Maryland,2020-03-09,nowcast,2.3,1.5,3,2.2,2.9,0
+Maryland,2020-03-10,nowcast,2.5,1.8,3.5,2.3,2.8,0
+Maryland,2020-03-11,nowcast,2.6,1.8,3.2,2.1,2.7,0
+Maryland,2020-03-12,nowcast,2.4,1.9,3.2,2,2.5,0
+Maryland,2020-03-13,nowcast,2.4,2,3,2,2.5,0
+Maryland,2020-03-14,nowcast,2.2,1.6,2.6,2,2.4,0
+Maryland,2020-03-15,nowcast,2.1,1.6,2.4,2,2.3,0
+Maryland,2020-03-16,nowcast,2.1,1.7,2.6,1.9,2.2,0
+Maryland,2020-03-17,nowcast,2.1,1.8,2.5,1.9,2.1,0
+Maryland,2020-03-18,nowcast,2.1,1.7,2.4,2,2.2,0
+Maryland,2020-03-19,nowcast,2,1.7,2.3,1.9,2.3,0
+Maryland,2020-03-20,nowcast,2,1.5,2.4,1.6,2,0
+Maryland,2020-03-21,nowcast,1.9,1.5,2.3,1.6,2.1,0
+Maryland,2020-03-22,nowcast,1.9,1.4,2.2,1.8,2.1,0
+Maryland,2020-03-23,nowcast,1.8,1.5,2,1.8,1.9,0
+Maryland,2020-03-24,nowcast,1.7,1.4,1.9,1.6,1.8,0
+Maryland,2020-03-25,nowcast,1.6,1.4,1.8,1.5,1.6,0
+Maryland,2020-03-26,nowcast,1.5,1.3,1.8,1.4,1.6,0
+Maryland,2020-03-27,nowcast,1.5,1.4,1.8,1.4,1.5,0
+Maryland,2020-03-28,nowcast,1.5,1.4,1.8,1.4,1.5,0
+Maryland,2020-03-29,nowcast,1.5,1.3,1.7,1.4,1.6,0
+Maryland,2020-03-30,nowcast,1.5,1.3,1.6,1.5,1.6,0
+Maryland,2020-03-31,nowcast,1.4,1.3,1.6,1.4,1.6,0
+Maryland,2020-04-01,nowcast,1.4,1.1,1.5,1.4,1.5,0
+Maryland,2020-04-02,nowcast,1.4,1.1,1.5,1.3,1.5,0
+Maryland,2020-04-03,nowcast,1.3,1.1,1.5,1.2,1.4,0
+Maryland,2020-04-04,nowcast,1.2,1,1.4,1.2,1.3,0.03
+Maryland,2020-04-05,nowcast,1.1,1,1.2,1.1,1.2,0.11
+Maryland,2020-04-06,nowcast,1,1,1.1,1,1.1,0.19
+Maryland,2020-04-07,nowcast,1,0.9,1.1,1,1,0.45
+Maryland,2020-04-08,nowcast,1,0.9,1.1,1,1,0.43
+Maryland,2020-04-09,nowcast,1,0.9,1.1,1,1,0.35
+Maryland,2020-04-10,nowcast,1,1,1.1,1,1.1,0.12
+Maryland,2020-04-11,nowcast,1.1,1,1.2,1,1.1,0.03
+Maryland,2020-04-12,nowcast,1.1,1,1.2,1,1.1,0.01
+Maryland,2020-04-13,nowcast,1.1,1,1.1,1,1.1,0.21
+Maryland,2020-04-14,nowcast,1,0.9,1.1,1,1.1,0.22
+Maryland,2020-04-15,nowcast,1,1,1.1,1,1.1,0.25
+Maryland,2020-04-16,forecast,1,0.9,1.2,0.9,1.1,0.41
+Maryland,2020-04-17,forecast,1,0.8,1.2,0.9,1.1,0.48
+Maryland,2020-04-18,forecast,1,0.8,1.3,0.9,1.1,0.45
+Maryland,2020-04-19,forecast,1,0.7,1.3,0.9,1.1,0.48
+Maryland,2020-04-20,forecast,1,0.6,1.3,0.8,1.1,0.52
+Maryland,2020-04-21,forecast,1,0.5,1.4,0.8,1.1,0.53
+Maryland,2020-04-22,forecast,1,0.6,1.4,0.9,1.1,0.51
+Maryland,2020-04-23,forecast,1,0.5,1.3,0.8,1.1,0.52
+Maryland,2020-04-24,forecast,1,0.4,1.5,0.9,1.3,0.47
+Maryland,2020-04-25,forecast,1,0.5,1.5,0.7,1.1,0.57
+Maryland,2020-04-26,forecast,0.9,0.5,1.5,0.7,1.1,0.56
+Maryland,2020-04-27,forecast,1,0.5,1.7,0.8,1.1,0.47
+Maryland,2020-04-28,forecast,0.9,0.5,1.5,0.8,1.2,0.58
+Maryland,2020-04-29,forecast,0.9,0.2,1.5,0.7,1.1,0.67
+Massachusetts,2020-03-01,nowcast,2.9,2,3.9,2.6,3.1,0
+Massachusetts,2020-03-02,nowcast,2.7,2,3.3,2.6,3,0
+Massachusetts,2020-03-03,nowcast,2.6,1.9,3.5,2.2,2.8,0
+Massachusetts,2020-03-04,nowcast,2.6,2.1,3.5,2.4,2.9,0
+Massachusetts,2020-03-05,nowcast,2.4,1.7,3.2,2.1,2.6,0
+Massachusetts,2020-03-06,nowcast,2.4,1.6,3,2,2.6,0
+Massachusetts,2020-03-07,nowcast,2.2,1.7,3.1,2,2.5,0
+Massachusetts,2020-03-08,nowcast,2.4,1.9,3.3,2.1,2.6,0
+Massachusetts,2020-03-09,nowcast,2.5,1.9,3,2.2,2.7,0
+Massachusetts,2020-03-10,nowcast,2.4,1.9,3,2.2,2.7,0
+Massachusetts,2020-03-11,nowcast,2.4,1.9,2.9,2.2,2.6,0
+Massachusetts,2020-03-12,nowcast,2.5,1.9,2.8,2.3,2.6,0
+Massachusetts,2020-03-13,nowcast,2.4,2,2.7,2.3,2.6,0
+Massachusetts,2020-03-14,nowcast,2.4,1.9,2.9,2.1,2.4,0
+Massachusetts,2020-03-15,nowcast,2.3,1.9,2.8,2,2.4,0
+Massachusetts,2020-03-16,nowcast,2.2,1.9,2.8,2.1,2.4,0
+Massachusetts,2020-03-17,nowcast,2.3,1.8,2.7,2,2.4,0
+Massachusetts,2020-03-18,nowcast,2.2,1.7,2.6,2.2,2.6,0
+Massachusetts,2020-03-19,nowcast,2.1,1.6,2.5,2,2.5,0
+Massachusetts,2020-03-20,nowcast,1.9,1.5,2.3,1.9,2.3,0
+Massachusetts,2020-03-21,nowcast,1.8,1.4,2.2,1.5,1.9,0
+Massachusetts,2020-03-22,nowcast,1.6,1.4,2,1.5,1.7,0
+Massachusetts,2020-03-23,nowcast,1.5,1.3,1.8,1.4,1.6,0
+Massachusetts,2020-03-24,nowcast,1.4,1.3,1.7,1.4,1.5,0
+Massachusetts,2020-03-25,nowcast,1.4,1.3,1.6,1.3,1.4,0
+Massachusetts,2020-03-26,nowcast,1.4,1.3,1.6,1.3,1.4,0
+Massachusetts,2020-03-27,nowcast,1.4,1.3,1.5,1.3,1.4,0
+Massachusetts,2020-03-28,nowcast,1.3,1.3,1.4,1.3,1.3,0
+Massachusetts,2020-03-29,nowcast,1.3,1.2,1.4,1.2,1.3,0
+Massachusetts,2020-03-30,nowcast,1.3,1.2,1.3,1.2,1.3,0
+Massachusetts,2020-03-31,nowcast,1.3,1.2,1.3,1.2,1.3,0
+Massachusetts,2020-04-01,nowcast,1.3,1.2,1.3,1.3,1.3,0
+Massachusetts,2020-04-02,nowcast,1.3,1.2,1.4,1.3,1.3,0
+Massachusetts,2020-04-03,nowcast,1.3,1.1,1.4,1.2,1.3,0
+Massachusetts,2020-04-04,nowcast,1.2,1.1,1.3,1.2,1.3,0
+Massachusetts,2020-04-05,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Massachusetts,2020-04-06,nowcast,1.1,1,1.2,1.1,1.1,0
+Massachusetts,2020-04-07,nowcast,1.1,1,1.2,1,1.1,0
+Massachusetts,2020-04-08,nowcast,1,1,1.1,1,1.1,0.23
+Massachusetts,2020-04-09,nowcast,1.1,1,1.1,1,1.1,0.21
+Massachusetts,2020-04-10,nowcast,1.1,1,1.1,1.1,1.1,0.01
+Massachusetts,2020-04-11,nowcast,1.1,1,1.2,1.1,1.1,0
+Massachusetts,2020-04-12,nowcast,1.1,1.1,1.2,1.1,1.2,0
+Massachusetts,2020-04-13,nowcast,1.1,1.1,1.2,1.1,1.2,0
+Massachusetts,2020-04-14,nowcast,1.1,1,1.2,1.1,1.2,0
+Massachusetts,2020-04-15,nowcast,1.2,1.1,1.3,1.2,1.3,0
+Massachusetts,2020-04-16,forecast,1.2,1,1.4,1.1,1.3,0.04
+Massachusetts,2020-04-17,forecast,1.2,1,1.5,1.1,1.3,0.06
+Massachusetts,2020-04-18,forecast,1.2,1,1.5,1.1,1.3,0.07
+Massachusetts,2020-04-19,forecast,1.2,0.8,1.5,1.1,1.4,0.16
+Massachusetts,2020-04-20,forecast,1.2,0.9,1.5,1,1.2,0.24
+Massachusetts,2020-04-21,forecast,1.2,0.8,1.6,1.1,1.3,0.23
+Massachusetts,2020-04-22,forecast,1.1,0.7,1.6,1,1.3,0.23
+Massachusetts,2020-04-23,forecast,1.2,0.8,1.7,1,1.4,0.2
+Massachusetts,2020-04-24,forecast,1.2,0.7,1.6,0.9,1.3,0.31
+Massachusetts,2020-04-25,forecast,1.2,0.6,1.6,1.1,1.5,0.3
+Massachusetts,2020-04-26,forecast,1.1,0.6,1.8,0.8,1.3,0.4
+Massachusetts,2020-04-27,forecast,1.2,0.7,1.9,0.9,1.3,0.28
+Massachusetts,2020-04-28,forecast,1.1,0.5,1.9,0.8,1.3,0.41
+Massachusetts,2020-04-29,forecast,1.1,0.4,1.8,0.7,1.3,0.39
+Michigan,2020-03-07,nowcast,3.3,2.4,4.3,2.8,3.5,0
+Michigan,2020-03-08,nowcast,2.9,1.9,3.9,2.2,3,0
+Michigan,2020-03-09,nowcast,2.9,1.9,3.6,2.6,3.3,0
+Michigan,2020-03-10,nowcast,2.7,2.2,3.7,2.2,2.7,0
+Michigan,2020-03-11,nowcast,2.5,1.9,3.2,2.3,2.7,0
+Michigan,2020-03-12,nowcast,2.6,1.9,3.1,2.2,2.7,0
+Michigan,2020-03-13,nowcast,2.6,1.8,3.2,2.3,3,0
+Michigan,2020-03-14,nowcast,2.4,1.9,3.2,2,2.4,0
+Michigan,2020-03-15,nowcast,2.2,1.8,3,2,2.4,0
+Michigan,2020-03-16,nowcast,2,1.7,2.6,1.9,2.1,0
+Michigan,2020-03-17,nowcast,1.9,1.5,2.5,1.8,1.9,0
+Michigan,2020-03-18,nowcast,1.9,1.5,2.2,1.8,1.9,0
+Michigan,2020-03-19,nowcast,1.8,1.5,2.1,1.7,1.9,0
+Michigan,2020-03-20,nowcast,1.7,1.5,2,1.5,1.8,0
+Michigan,2020-03-21,nowcast,1.6,1.4,1.9,1.5,1.8,0
+Michigan,2020-03-22,nowcast,1.6,1.3,1.9,1.5,1.8,0
+Michigan,2020-03-23,nowcast,1.6,1.3,1.8,1.4,1.6,0
+Michigan,2020-03-24,nowcast,1.5,1.2,1.7,1.4,1.5,0
+Michigan,2020-03-25,nowcast,1.3,1.2,1.7,1.2,1.4,0
+Michigan,2020-03-26,nowcast,1.3,1.2,1.6,1.2,1.4,0
+Michigan,2020-03-27,nowcast,1.2,1.1,1.5,1.1,1.3,0
+Michigan,2020-03-28,nowcast,1.2,1,1.4,1.1,1.2,0
+Michigan,2020-03-29,nowcast,1.1,1,1.2,1,1.1,0.12
+Michigan,2020-03-30,nowcast,1,0.9,1.1,1,1,0.44
+Michigan,2020-03-31,nowcast,1,0.9,1,0.9,1,0.82
+Michigan,2020-04-01,nowcast,0.9,0.9,1,0.9,0.9,0.99
+Michigan,2020-04-02,nowcast,0.9,0.8,0.9,0.9,0.9,1
+Michigan,2020-04-03,nowcast,0.8,0.8,0.9,0.8,0.9,1
+Michigan,2020-04-04,nowcast,0.8,0.8,0.9,0.8,0.9,1
+Michigan,2020-04-05,nowcast,0.8,0.8,0.9,0.8,0.8,1
+Michigan,2020-04-06,nowcast,0.8,0.8,0.9,0.8,0.9,1
+Michigan,2020-04-07,nowcast,0.8,0.8,0.9,0.8,0.8,1
+Michigan,2020-04-08,nowcast,0.9,0.8,0.9,0.9,0.9,1
+Michigan,2020-04-09,nowcast,0.9,0.9,1,0.9,0.9,0.99
+Michigan,2020-04-10,nowcast,0.9,0.9,1,0.9,0.9,1
+Michigan,2020-04-11,nowcast,0.9,0.9,1,0.9,0.9,1
+Michigan,2020-04-12,nowcast,0.9,0.8,1,0.9,0.9,0.97
+Michigan,2020-04-13,nowcast,0.9,0.8,1,0.9,1,0.83
+Michigan,2020-04-14,nowcast,1,0.9,1.1,1,1.1,0.54
+Michigan,2020-04-15,nowcast,1.1,0.9,1.2,1.1,1.2,0.23
+Michigan,2020-04-16,forecast,1.1,0.9,1.2,1,1.2,0.22
+Michigan,2020-04-17,forecast,1.2,0.9,1.4,1.1,1.2,0.15
+Michigan,2020-04-18,forecast,1.2,0.9,1.6,1.1,1.3,0.21
+Michigan,2020-04-19,forecast,1.2,0.8,1.6,1,1.3,0.18
+Michigan,2020-04-20,forecast,1.1,0.8,1.6,0.9,1.2,0.28
+Michigan,2020-04-21,forecast,1.3,0.7,1.8,1.1,1.5,0.18
+Michigan,2020-04-22,forecast,1.2,0.5,1.9,1.1,1.6,0.25
+Michigan,2020-04-23,forecast,1.2,0.3,2,1,1.5,0.27
+Michigan,2020-04-24,forecast,1.2,0.2,2,1,1.6,0.31
+Michigan,2020-04-25,forecast,1.1,0,1.9,0.7,1.3,0.38
+Michigan,2020-04-26,forecast,1.3,0.4,3.1,0.9,1.7,0.27
+Michigan,2020-04-27,forecast,1.2,0,2,0.9,1.5,0.33
+Michigan,2020-04-28,forecast,1.2,0,2.4,0.8,1.5,0.34
+Michigan,2020-04-29,forecast,1.2,0,2.6,0.9,1.5,0.33
+Minnesota,2020-03-08,nowcast,2.3,1.3,3.6,1.5,2.6,0
+Minnesota,2020-03-09,nowcast,2.3,1.2,3.6,1.9,2.6,0
+Minnesota,2020-03-10,nowcast,2.2,1.1,3.2,1.9,2.7,0
+Minnesota,2020-03-11,nowcast,1.9,1.4,2.5,1.6,2,0
+Minnesota,2020-03-12,nowcast,1.8,1.4,2.8,1.6,2.1,0
+Minnesota,2020-03-13,nowcast,1.7,1.2,2.6,1.5,1.8,0
+Minnesota,2020-03-14,nowcast,1.7,1.3,2.6,1.4,1.9,0
+Minnesota,2020-03-15,nowcast,1.7,1.2,2.1,1.6,1.9,0
+Minnesota,2020-03-16,nowcast,1.8,1.4,2.3,1.6,1.9,0
+Minnesota,2020-03-17,nowcast,1.6,1.3,2.3,1.5,1.7,0
+Minnesota,2020-03-18,nowcast,1.6,1.3,1.9,1.4,1.7,0
+Minnesota,2020-03-19,nowcast,1.5,1.2,1.8,1.3,1.6,0
+Minnesota,2020-03-20,nowcast,1.4,1,1.7,1.3,1.6,0
+Minnesota,2020-03-21,nowcast,1.3,1.1,1.7,1.1,1.3,0.01
+Minnesota,2020-03-22,nowcast,1.3,1,1.6,1.1,1.3,0.01
+Minnesota,2020-03-23,nowcast,1.3,1,1.5,1.2,1.3,0
+Minnesota,2020-03-24,nowcast,1.3,1.1,1.5,1.2,1.4,0
+Minnesota,2020-03-25,nowcast,1.3,1.1,1.5,1.2,1.4,0.07
+Minnesota,2020-03-26,nowcast,1.2,1,1.5,1.1,1.3,0.05
+Minnesota,2020-03-27,nowcast,1.2,1,1.4,1.1,1.3,0.06
+Minnesota,2020-03-28,nowcast,1.2,1,1.4,1.1,1.3,0.04
+Minnesota,2020-03-29,nowcast,1.2,1,1.4,1.1,1.2,0.05
+Minnesota,2020-03-30,nowcast,1.2,1.1,1.5,1.1,1.3,0.02
+Minnesota,2020-03-31,nowcast,1.3,1.1,1.5,1.2,1.3,0
+Minnesota,2020-04-01,nowcast,1.3,1.1,1.5,1.2,1.3,0
+Minnesota,2020-04-02,nowcast,1.3,1.1,1.5,1.2,1.4,0
+Minnesota,2020-04-03,nowcast,1.3,1.1,1.5,1.2,1.4,0.03
+Minnesota,2020-04-04,nowcast,1.3,1,1.5,1.2,1.3,0.02
+Minnesota,2020-04-05,nowcast,1.3,1,1.4,1.2,1.3,0.03
+Minnesota,2020-04-06,nowcast,1.2,1.1,1.4,1.2,1.3,0.01
+Minnesota,2020-04-07,nowcast,1.2,1,1.4,1.1,1.2,0.03
+Minnesota,2020-04-08,nowcast,1.1,0.9,1.3,1.1,1.2,0.09
+Minnesota,2020-04-09,nowcast,1.1,1,1.3,1.1,1.2,0.01
+Minnesota,2020-04-10,nowcast,1.2,1,1.4,1.1,1.3,0.02
+Minnesota,2020-04-11,nowcast,1.2,1.1,1.4,1.2,1.3,0.02
+Minnesota,2020-04-12,nowcast,1.3,1.1,1.5,1.2,1.4,0
+Minnesota,2020-04-13,nowcast,1.3,1,1.5,1.2,1.3,0
+Minnesota,2020-04-14,nowcast,1.2,1,1.4,1.2,1.3,0.01
+Minnesota,2020-04-15,nowcast,1.2,1.1,1.4,1.1,1.2,0
+Minnesota,2020-04-16,forecast,1.2,1,1.5,1.1,1.3,0.07
+Minnesota,2020-04-17,forecast,1.2,1,1.6,1.1,1.3,0.1
+Minnesota,2020-04-18,forecast,1.2,1,1.7,1.1,1.3,0.16
+Minnesota,2020-04-19,forecast,1.3,0.8,1.8,1,1.3,0.19
+Minnesota,2020-04-20,forecast,1.2,0.7,1.7,1.1,1.4,0.18
+Minnesota,2020-04-21,forecast,1.1,0.8,1.6,1,1.3,0.27
+Minnesota,2020-04-22,forecast,1.2,0.7,2,0.9,1.4,0.27
+Minnesota,2020-04-23,forecast,1.2,0.6,1.8,0.9,1.3,0.31
+Minnesota,2020-04-24,forecast,1.2,0.8,2,1,1.4,0.2
+Minnesota,2020-04-25,forecast,1.2,0.4,1.9,0.9,1.4,0.36
+Minnesota,2020-04-26,forecast,1.2,0.5,1.8,1,1.3,0.24
+Minnesota,2020-04-27,forecast,1.2,0.6,1.8,1,1.5,0.27
+Minnesota,2020-04-28,forecast,1.2,0.6,2,1,1.4,0.31
+Minnesota,2020-04-29,forecast,1.1,0.4,1.9,1,1.5,0.28
+Mississippi,2020-03-08,nowcast,2.7,2,4.5,2,2.7,0
+Mississippi,2020-03-09,nowcast,2.7,1.6,4.2,2.2,3,0
+Mississippi,2020-03-10,nowcast,2.7,2,4.4,2.2,2.9,0
+Mississippi,2020-03-11,nowcast,2.6,2.1,4,2.1,2.7,0
+Mississippi,2020-03-12,nowcast,2.4,1.8,3.5,1.9,2.6,0
+Mississippi,2020-03-13,nowcast,2.4,1.9,3.3,2,2.4,0
+Mississippi,2020-03-14,nowcast,2.2,1.8,3.2,1.8,2.3,0
+Mississippi,2020-03-15,nowcast,2.1,1.6,2.9,1.8,2.3,0
+Mississippi,2020-03-16,nowcast,1.9,1.5,2.6,1.7,2,0
+Mississippi,2020-03-17,nowcast,1.7,1.4,2.2,1.5,1.8,0
+Mississippi,2020-03-18,nowcast,1.6,1.3,1.9,1.5,1.8,0
+Mississippi,2020-03-19,nowcast,1.5,1.3,1.7,1.4,1.5,0
+Mississippi,2020-03-20,nowcast,1.5,1.3,1.8,1.4,1.5,0
+Mississippi,2020-03-21,nowcast,1.5,1.3,1.7,1.4,1.5,0
+Mississippi,2020-03-22,nowcast,1.4,1.1,1.7,1.3,1.5,0
+Mississippi,2020-03-23,nowcast,1.3,1.1,1.6,1.2,1.4,0
+Mississippi,2020-03-24,nowcast,1.3,1.1,1.5,1.2,1.3,0
+Mississippi,2020-03-25,nowcast,1.3,1.1,1.5,1.2,1.3,0
+Mississippi,2020-03-26,nowcast,1.3,1.1,1.6,1.2,1.4,0
+Mississippi,2020-03-27,nowcast,1.3,1.2,1.6,1.2,1.4,0
+Mississippi,2020-03-28,nowcast,1.3,1.2,1.5,1.2,1.4,0
+Mississippi,2020-03-29,nowcast,1.3,1.2,1.5,1.3,1.4,0
+Mississippi,2020-03-30,nowcast,1.2,1.1,1.4,1.2,1.3,0
+Mississippi,2020-03-31,nowcast,1.2,1.1,1.3,1.2,1.3,0.01
+Mississippi,2020-04-01,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Mississippi,2020-04-02,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Mississippi,2020-04-03,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Mississippi,2020-04-04,nowcast,1.2,1.1,1.4,1.1,1.2,0
+Mississippi,2020-04-05,nowcast,1.2,1.1,1.4,1.1,1.2,0.02
+Mississippi,2020-04-06,nowcast,1.1,1,1.3,1.1,1.2,0.01
+Mississippi,2020-04-07,nowcast,1.1,1,1.3,1.1,1.2,0
+Mississippi,2020-04-08,nowcast,1.1,1,1.3,1.1,1.2,0.03
+Mississippi,2020-04-09,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Mississippi,2020-04-10,nowcast,1.1,1,1.2,1.1,1.2,0.01
+Mississippi,2020-04-11,nowcast,1.1,1,1.2,1.1,1.2,0.12
+Mississippi,2020-04-12,nowcast,1.1,1,1.2,1.1,1.2,0.01
+Mississippi,2020-04-13,nowcast,1.1,1,1.2,1.1,1.2,0.03
+Mississippi,2020-04-14,nowcast,1.1,1,1.2,1.1,1.2,0.01
+Mississippi,2020-04-15,nowcast,1,1,1.1,1,1.1,0.19
+Mississippi,2020-04-16,forecast,1,0.9,1.2,1,1.1,0.34
+Mississippi,2020-04-17,forecast,1,0.7,1.2,1,1.1,0.37
+Mississippi,2020-04-18,forecast,1,0.7,1.4,0.9,1.1,0.48
+Mississippi,2020-04-19,forecast,1,0.7,1.4,0.9,1.1,0.47
+Mississippi,2020-04-20,forecast,1,0.7,1.4,0.8,1,0.56
+Mississippi,2020-04-21,forecast,1,0.5,1.4,0.9,1.2,0.45
+Mississippi,2020-04-22,forecast,1,0.7,1.4,0.8,1.2,0.45
+Mississippi,2020-04-23,forecast,1,0.5,1.3,0.8,1.1,0.6
+Mississippi,2020-04-24,forecast,1,0.6,1.5,0.8,1.1,0.52
+Mississippi,2020-04-25,forecast,1,0.4,1.4,0.9,1.3,0.5
+Mississippi,2020-04-26,forecast,0.9,0.3,1.5,0.7,1.1,0.65
+Mississippi,2020-04-27,forecast,0.9,0.4,1.4,0.7,1.1,0.61
+Mississippi,2020-04-28,forecast,1,0.3,1.5,0.8,1.2,0.55
+Mississippi,2020-04-29,forecast,0.9,0.2,1.5,0.6,1.1,0.58
+Missouri,2020-03-12,nowcast,2.6,1.9,3.2,2.4,2.8,0
+Missouri,2020-03-13,nowcast,2.4,1.9,3.2,2.2,2.7,0
+Missouri,2020-03-14,nowcast,2.3,1.8,3,2,2.4,0
+Missouri,2020-03-15,nowcast,2.2,1.5,2.7,1.9,2.4,0
+Missouri,2020-03-16,nowcast,2,1.5,2.3,1.9,2.2,0
+Missouri,2020-03-17,nowcast,1.9,1.6,2.3,1.7,2,0
+Missouri,2020-03-18,nowcast,1.8,1.5,2.3,1.6,1.9,0
+Missouri,2020-03-19,nowcast,1.8,1.5,2.3,1.5,1.8,0
+Missouri,2020-03-20,nowcast,1.7,1.4,2.1,1.5,1.7,0
+Missouri,2020-03-21,nowcast,1.6,1.3,2,1.5,1.7,0
+Missouri,2020-03-22,nowcast,1.5,1.3,1.8,1.3,1.6,0
+Missouri,2020-03-23,nowcast,1.4,1.2,1.7,1.3,1.5,0
+Missouri,2020-03-24,nowcast,1.3,1.2,1.6,1.3,1.4,0
+Missouri,2020-03-25,nowcast,1.4,1.2,1.5,1.2,1.4,0
+Missouri,2020-03-26,nowcast,1.3,1.1,1.6,1.1,1.3,0
+Missouri,2020-03-27,nowcast,1.2,1,1.5,1.1,1.2,0
+Missouri,2020-03-28,nowcast,1.2,1,1.4,1.1,1.2,0.13
+Missouri,2020-03-29,nowcast,1.1,1,1.2,1.1,1.1,0.1
+Missouri,2020-03-30,nowcast,1.1,1,1.2,1,1.1,0.16
+Missouri,2020-03-31,nowcast,1,0.9,1.1,1,1.1,0.2
+Missouri,2020-04-01,nowcast,1.1,1,1.2,1,1.1,0.13
+Missouri,2020-04-02,nowcast,1,0.9,1.2,1,1.1,0.35
+Missouri,2020-04-03,nowcast,1,0.8,1.1,0.9,1,0.66
+Missouri,2020-04-04,nowcast,0.9,0.8,1,0.9,1,0.89
+Missouri,2020-04-05,nowcast,0.9,0.8,1,0.8,0.9,0.93
+Missouri,2020-04-06,nowcast,0.9,0.8,1,0.9,1,0.96
+Missouri,2020-04-07,nowcast,0.9,0.8,1,0.8,0.9,0.92
+Missouri,2020-04-08,nowcast,0.9,0.8,1,0.9,1,0.85
+Missouri,2020-04-09,nowcast,1,0.9,1,0.9,1,0.82
+Missouri,2020-04-10,nowcast,0.9,0.8,1,0.9,1,0.86
+Missouri,2020-04-11,nowcast,0.9,0.8,1,0.8,0.9,0.88
+Missouri,2020-04-12,nowcast,0.9,0.8,1,0.8,0.9,0.87
+Missouri,2020-04-13,nowcast,0.9,0.8,1.1,0.8,0.9,0.75
+Missouri,2020-04-14,nowcast,0.9,0.7,1.1,0.8,0.9,0.74
+Missouri,2020-04-15,nowcast,1,0.8,1.1,0.9,1,0.63
+Missouri,2020-04-16,forecast,0.9,0.7,1.1,0.8,1,0.72
+Missouri,2020-04-17,forecast,0.9,0.7,1.3,0.7,1,0.61
+Missouri,2020-04-18,forecast,0.9,0.6,1.2,0.9,1.1,0.65
+Missouri,2020-04-19,forecast,0.9,0.5,1.3,0.7,1,0.68
+Missouri,2020-04-20,forecast,0.9,0.6,1.3,0.8,1.1,0.67
+Missouri,2020-04-21,forecast,0.9,0.6,1.3,0.7,1,0.69
+Missouri,2020-04-22,forecast,0.9,0.5,1.5,0.7,1.1,0.7
+Missouri,2020-04-23,forecast,0.9,0.4,1.5,0.7,1.1,0.61
+Missouri,2020-04-24,forecast,0.8,0.3,1.5,0.6,1,0.76
+Missouri,2020-04-25,forecast,0.8,0.4,1.4,0.6,0.9,0.72
+Missouri,2020-04-26,forecast,0.9,0.3,1.4,0.7,1.1,0.67
+Missouri,2020-04-27,forecast,0.8,0.1,1.3,0.5,0.9,0.79
+Missouri,2020-04-28,forecast,0.9,0,1.4,0.5,1,0.65
+Missouri,2020-04-29,forecast,0.8,0,1.4,0.5,1.1,0.69
+Nebraska,2020-03-06,nowcast,2.2,0.7,4.1,1.6,2.5,0.06
+Nebraska,2020-03-07,nowcast,1.9,1.2,3.1,1.3,2,0
+Nebraska,2020-03-08,nowcast,1.7,0.4,2.8,1.3,2.1,0.15
+Nebraska,2020-03-09,nowcast,1.8,0.6,2.8,1.4,2.1,0.11
+Nebraska,2020-03-10,nowcast,1.9,1,2.8,1.6,2.3,0.03
+Nebraska,2020-03-11,nowcast,2,0.7,2.8,1.6,2.5,0.09
+Nebraska,2020-03-12,nowcast,1.8,0.8,2.5,1.4,2,0.06
+Nebraska,2020-03-13,nowcast,1.7,1.1,2.7,1.3,1.8,0.04
+Nebraska,2020-03-14,nowcast,1.6,0.7,2.6,1.1,1.7,0.09
+Nebraska,2020-03-15,nowcast,1.5,0.8,2.6,1.3,1.7,0.06
+Nebraska,2020-03-16,nowcast,1.6,0.9,2.3,1.1,1.8,0.07
+Nebraska,2020-03-17,nowcast,1.8,1,2.6,1.3,2,0.02
+Nebraska,2020-03-18,nowcast,1.7,1.2,2.9,1.3,1.9,0.04
+Nebraska,2020-03-19,nowcast,1.9,1.2,2.8,1.5,2.1,0.02
+Nebraska,2020-03-20,nowcast,1.7,1.3,2.4,1.5,1.9,0.03
+Nebraska,2020-03-21,nowcast,1.8,1.3,2.6,1.4,1.9,0
+Nebraska,2020-03-22,nowcast,1.9,1.3,2.8,1.6,2,0
+Nebraska,2020-03-23,nowcast,1.9,1.3,2.6,1.7,2.1,0
+Nebraska,2020-03-24,nowcast,1.8,1.4,2.6,1.4,1.8,0
+Nebraska,2020-03-25,nowcast,1.8,1.4,2.3,1.6,2,0
+Nebraska,2020-03-26,nowcast,1.7,1.1,2.1,1.5,1.9,0
+Nebraska,2020-03-27,nowcast,1.6,1.3,2.1,1.4,1.7,0.01
+Nebraska,2020-03-28,nowcast,1.4,1.1,1.8,1.3,1.6,0.01
+Nebraska,2020-03-29,nowcast,1.4,1.1,1.8,1.3,1.5,0.04
+Nebraska,2020-03-30,nowcast,1.4,1.2,1.6,1.3,1.5,0
+Nebraska,2020-03-31,nowcast,1.4,1.2,1.7,1.3,1.5,0
+Nebraska,2020-04-01,nowcast,1.4,1.1,1.7,1.2,1.4,0
+Nebraska,2020-04-02,nowcast,1.4,1.2,1.7,1.4,1.6,0
+Nebraska,2020-04-03,nowcast,1.4,1.2,1.8,1.2,1.5,0
+Nebraska,2020-04-04,nowcast,1.4,1.1,1.6,1.4,1.6,0
+Nebraska,2020-04-05,nowcast,1.4,1.2,1.5,1.3,1.4,0
+Nebraska,2020-04-06,nowcast,1.3,1,1.5,1.2,1.4,0
+Nebraska,2020-04-07,nowcast,1.3,1.1,1.6,1.2,1.4,0.02
+Nebraska,2020-04-08,nowcast,1.4,1.2,1.7,1.2,1.4,0
+Nebraska,2020-04-09,nowcast,1.4,1.1,1.6,1.2,1.4,0
+Nebraska,2020-04-10,nowcast,1.5,1.3,1.7,1.4,1.5,0
+Nebraska,2020-04-11,nowcast,1.4,1.3,1.6,1.4,1.6,0
+Nebraska,2020-04-12,nowcast,1.4,1.2,1.6,1.3,1.5,0
+Nebraska,2020-04-13,nowcast,1.4,1.2,1.7,1.4,1.6,0
+Nebraska,2020-04-14,nowcast,1.5,1.2,1.7,1.4,1.6,0
+Nebraska,2020-04-15,nowcast,1.5,1.2,1.7,1.5,1.7,0
+Nebraska,2020-04-16,forecast,1.5,1.2,1.9,1.5,1.8,0.03
+Nebraska,2020-04-17,forecast,1.6,1,2.3,1.2,1.7,0.07
+Nebraska,2020-04-18,forecast,1.6,1.1,2.1,1.4,1.8,0.06
+Nebraska,2020-04-19,forecast,1.5,0.7,2.1,1.4,1.9,0.2
+Nebraska,2020-04-20,forecast,1.6,0.5,2.6,1.2,2,0.2
+Nebraska,2020-04-21,forecast,1.5,0.4,2.5,1.2,1.8,0.18
+Nebraska,2020-04-22,forecast,1.4,0.4,2.6,1.1,1.7,0.13
+Nebraska,2020-04-23,forecast,1.4,0.5,2.8,1.2,1.9,0.2
+Nebraska,2020-04-24,forecast,1.5,0.3,2.7,1.2,2,0.22
+Nebraska,2020-04-25,forecast,1.4,0.3,2.7,0.9,1.7,0.24
+Nebraska,2020-04-26,forecast,1.5,0,2.5,1.3,2.3,0.24
+Nebraska,2020-04-27,forecast,1.5,0.2,3,1,1.9,0.22
+Nebraska,2020-04-28,forecast,1.2,0,2.6,0.7,1.9,0.36
+Nebraska,2020-04-29,forecast,1.4,0,2.8,0.9,1.8,0.24
+Nevada,2020-03-08,nowcast,2.4,1.7,4.7,1.9,2.5,0
+Nevada,2020-03-09,nowcast,2.5,1.6,3.6,2.1,2.9,0
+Nevada,2020-03-10,nowcast,2.3,1.4,3.3,1.6,2.4,0
+Nevada,2020-03-11,nowcast,2.1,1.2,3.5,1.8,2.4,0
+Nevada,2020-03-12,nowcast,2,1.4,3.2,1.5,2.1,0
+Nevada,2020-03-13,nowcast,2,1.5,2.8,1.6,2.2,0
+Nevada,2020-03-14,nowcast,2,1.3,2.7,1.5,2.1,0
+Nevada,2020-03-15,nowcast,1.9,1.4,2.6,1.7,2.1,0
+Nevada,2020-03-16,nowcast,1.8,1.4,2.2,1.6,1.9,0
+Nevada,2020-03-17,nowcast,1.7,1.4,2.2,1.5,1.7,0
+Nevada,2020-03-18,nowcast,1.7,1.2,2.3,1.5,1.9,0
+Nevada,2020-03-19,nowcast,1.7,1.3,2.2,1.3,1.7,0
+Nevada,2020-03-20,nowcast,1.7,1.2,2.1,1.6,1.9,0
+Nevada,2020-03-21,nowcast,1.6,1.1,2,1.3,1.7,0
+Nevada,2020-03-22,nowcast,1.5,1.2,1.8,1.2,1.5,0
+Nevada,2020-03-23,nowcast,1.3,1.1,1.6,1.2,1.5,0.01
+Nevada,2020-03-24,nowcast,1.3,1,1.5,1.2,1.5,0.07
+Nevada,2020-03-25,nowcast,1.2,1,1.3,1.1,1.2,0.08
+Nevada,2020-03-26,nowcast,1.1,1,1.3,1.1,1.2,0.08
+Nevada,2020-03-27,nowcast,1.1,1,1.3,1,1.2,0.07
+Nevada,2020-03-28,nowcast,1.1,1,1.3,1,1.1,0.12
+Nevada,2020-03-29,nowcast,1.1,0.9,1.2,1,1.1,0.22
+Nevada,2020-03-30,nowcast,1.1,1,1.2,1,1.1,0.22
+Nevada,2020-03-31,nowcast,1,0.9,1.1,0.9,1,0.44
+Nevada,2020-04-01,nowcast,1,0.9,1.1,0.9,1,0.53
+Nevada,2020-04-02,nowcast,1,0.9,1.1,1,1.1,0.43
+Nevada,2020-04-03,nowcast,1,0.8,1.1,1,1.1,0.48
+Nevada,2020-04-04,nowcast,1,0.8,1.1,0.9,1,0.43
+Nevada,2020-04-05,nowcast,1,0.9,1.1,1,1,0.63
+Nevada,2020-04-06,nowcast,0.9,0.8,1.1,0.8,1,0.83
+Nevada,2020-04-07,nowcast,0.9,0.8,1,0.9,1,0.86
+Nevada,2020-04-08,nowcast,0.9,0.8,1,0.9,1,0.84
+Nevada,2020-04-09,nowcast,0.9,0.8,1.1,0.9,1,0.8
+Nevada,2020-04-10,nowcast,0.9,0.8,1.1,0.8,0.9,0.71
+Nevada,2020-04-11,nowcast,0.9,0.8,1.1,0.9,1,0.67
+Nevada,2020-04-12,nowcast,1,0.9,1.2,0.9,1,0.48
+Nevada,2020-04-13,nowcast,1,0.9,1.2,1,1.1,0.44
+Nevada,2020-04-14,nowcast,1,0.9,1.2,0.9,1,0.58
+Nevada,2020-04-15,nowcast,1,0.9,1.2,0.9,1.1,0.42
+Nevada,2020-04-16,forecast,1,0.8,1.2,0.9,1.1,0.45
+Nevada,2020-04-17,forecast,1,0.7,1.5,0.9,1.1,0.54
+Nevada,2020-04-18,forecast,1,0.6,1.3,0.9,1.2,0.54
+Nevada,2020-04-19,forecast,1,0.6,1.4,0.7,1.1,0.53
+Nevada,2020-04-20,forecast,1,0.7,1.5,0.9,1.3,0.51
+Nevada,2020-04-21,forecast,0.9,0.4,1.5,0.8,1.1,0.58
+Nevada,2020-04-22,forecast,1,0.5,1.5,0.7,1.1,0.54
+Nevada,2020-04-23,forecast,0.9,0.3,1.5,0.8,1.2,0.58
+Nevada,2020-04-24,forecast,1,0.3,1.4,0.8,1.2,0.55
+Nevada,2020-04-25,forecast,0.9,0.2,1.5,0.7,1.1,0.58
+Nevada,2020-04-26,forecast,0.9,0.3,1.7,0.6,1.2,0.58
+Nevada,2020-04-27,forecast,0.8,0.2,1.4,0.7,1.1,0.63
+Nevada,2020-04-28,forecast,0.9,0,1.6,0.7,1.3,0.59
+Nevada,2020-04-29,forecast,0.9,0,1.4,0.8,1.2,0.69
+New Hampshire,2020-03-10,nowcast,2.2,1.4,3.4,1.7,2.5,0
+New Hampshire,2020-03-11,nowcast,2.2,1.5,3.3,1.6,2.2,0
+New Hampshire,2020-03-12,nowcast,1.9,1.3,3,1.5,2.1,0
+New Hampshire,2020-03-13,nowcast,1.7,1,2.4,1.2,1.8,0
+New Hampshire,2020-03-14,nowcast,1.7,1.2,2.5,1.3,1.9,0.04
+New Hampshire,2020-03-15,nowcast,1.6,1,2.1,1.3,1.8,0.04
+New Hampshire,2020-03-16,nowcast,1.7,1.2,2.2,1.4,1.8,0
+New Hampshire,2020-03-17,nowcast,1.7,1.2,2.4,1.5,1.8,0
+New Hampshire,2020-03-18,nowcast,1.7,1.3,2.7,1.6,1.9,0
+New Hampshire,2020-03-19,nowcast,1.7,1.3,2.3,1.4,1.7,0
+New Hampshire,2020-03-20,nowcast,1.7,1.2,2,1.6,1.8,0
+New Hampshire,2020-03-21,nowcast,1.6,1.2,2,1.6,1.9,0
+New Hampshire,2020-03-22,nowcast,1.6,1.1,2.3,1.3,1.8,0.04
+New Hampshire,2020-03-23,nowcast,1.6,1.1,2.1,1.5,1.9,0.03
+New Hampshire,2020-03-24,nowcast,1.5,1.2,1.9,1.2,1.5,0
+New Hampshire,2020-03-25,nowcast,1.4,1.2,1.8,1.2,1.4,0
+New Hampshire,2020-03-26,nowcast,1.3,1,1.6,1.2,1.5,0.05
+New Hampshire,2020-03-27,nowcast,1.2,0.9,1.5,1.1,1.4,0.17
+New Hampshire,2020-03-28,nowcast,1.2,0.9,1.4,1.1,1.3,0.16
+New Hampshire,2020-03-29,nowcast,1.1,0.8,1.3,1.1,1.3,0.28
+New Hampshire,2020-03-30,nowcast,1,0.9,1.2,0.9,1,0.46
+New Hampshire,2020-03-31,nowcast,1,0.8,1.1,0.9,1.1,0.54
+New Hampshire,2020-04-01,nowcast,1,0.8,1.1,0.9,1.1,0.57
+New Hampshire,2020-04-02,nowcast,1,0.8,1.3,0.9,1,0.63
+New Hampshire,2020-04-03,nowcast,1,0.8,1.2,0.9,1,0.54
+New Hampshire,2020-04-04,nowcast,1,0.9,1.3,0.9,1.1,0.38
+New Hampshire,2020-04-05,nowcast,1,0.8,1.3,1,1.2,0.33
+New Hampshire,2020-04-06,nowcast,1.1,0.9,1.4,0.9,1.1,0.24
+New Hampshire,2020-04-07,nowcast,1.2,1,1.4,1.1,1.2,0.01
+New Hampshire,2020-04-08,nowcast,1.1,1,1.3,1,1.2,0.09
+New Hampshire,2020-04-09,nowcast,1.1,0.9,1.3,1,1.2,0.16
+New Hampshire,2020-04-10,nowcast,1.1,1,1.3,1.1,1.2,0.11
+New Hampshire,2020-04-11,nowcast,1.2,1,1.4,1.1,1.2,0.08
+New Hampshire,2020-04-12,nowcast,1.1,0.9,1.3,1,1.2,0.18
+New Hampshire,2020-04-13,nowcast,1.1,0.8,1.3,1.1,1.2,0.27
+New Hampshire,2020-04-14,nowcast,1.1,0.9,1.3,1,1.2,0.14
+New Hampshire,2020-04-15,nowcast,1.1,0.9,1.4,1,1.2,0.23
+New Hampshire,2020-04-16,forecast,1.1,0.7,1.5,1.1,1.3,0.22
+New Hampshire,2020-04-17,forecast,1.1,0.8,1.8,1,1.3,0.2
+New Hampshire,2020-04-18,forecast,1.1,0.7,1.7,0.8,1.2,0.35
+New Hampshire,2020-04-19,forecast,1.2,0.5,1.8,0.9,1.4,0.32
+New Hampshire,2020-04-20,forecast,1.1,0.5,1.6,0.9,1.3,0.42
+New Hampshire,2020-04-21,forecast,1.1,0.3,1.7,0.8,1.3,0.43
+New Hampshire,2020-04-22,forecast,1.1,0.5,2,0.7,1.3,0.43
+New Hampshire,2020-04-23,forecast,1,0.2,1.8,0.7,1.3,0.48
+New Hampshire,2020-04-24,forecast,1,0,1.9,0.6,1.2,0.49
+New Hampshire,2020-04-25,forecast,1,0.2,1.9,0.8,1.4,0.49
+New Hampshire,2020-04-26,forecast,1.1,0.1,1.7,0.9,1.5,0.44
+New Hampshire,2020-04-27,forecast,1.1,0.3,1.9,0.8,1.4,0.41
+New Hampshire,2020-04-28,forecast,1,0,1.8,0.8,1.6,0.47
+New Hampshire,2020-04-29,forecast,1.1,0,1.9,0.9,1.6,0.44
+New Jersey,2020-03-04,nowcast,3.5,2.7,4.8,2.9,3.6,0
+New Jersey,2020-03-05,nowcast,3.2,2.6,4.8,2.8,3.3,0
+New Jersey,2020-03-06,nowcast,3.1,2.1,4.5,2.6,3.4,0
+New Jersey,2020-03-07,nowcast,2.9,2.1,4,2.3,3,0
+New Jersey,2020-03-08,nowcast,2.8,2.4,3.6,2.5,2.9,0
+New Jersey,2020-03-09,nowcast,2.9,2.6,3.7,2.6,3,0
+New Jersey,2020-03-10,nowcast,2.9,2.3,3.6,2.5,3,0
+New Jersey,2020-03-11,nowcast,2.8,2.2,3.7,2.6,3.2,0
+New Jersey,2020-03-12,nowcast,2.8,2.1,3.3,2.8,3.3,0
+New Jersey,2020-03-13,nowcast,2.6,2.1,3.2,2.2,2.7,0
+New Jersey,2020-03-14,nowcast,2.5,2.1,3,2.2,2.6,0
+New Jersey,2020-03-15,nowcast,2.3,2,2.9,2,2.5,0
+New Jersey,2020-03-16,nowcast,2.2,1.8,2.7,2,2.3,0
+New Jersey,2020-03-17,nowcast,2.2,1.8,2.6,1.8,2.2,0
+New Jersey,2020-03-18,nowcast,2.1,1.7,2.6,1.8,2.2,0
+New Jersey,2020-03-19,nowcast,2,1.6,2.4,1.7,2.1,0
+New Jersey,2020-03-20,nowcast,1.9,1.6,2.3,1.6,1.9,0
+New Jersey,2020-03-21,nowcast,1.8,1.5,2.2,1.5,1.8,0
+New Jersey,2020-03-22,nowcast,1.7,1.4,2,1.5,1.8,0
+New Jersey,2020-03-23,nowcast,1.6,1.3,1.8,1.4,1.6,0
+New Jersey,2020-03-24,nowcast,1.5,1.2,1.7,1.4,1.5,0
+New Jersey,2020-03-25,nowcast,1.4,1.2,1.7,1.3,1.5,0
+New Jersey,2020-03-26,nowcast,1.3,1.1,1.5,1.2,1.4,0
+New Jersey,2020-03-27,nowcast,1.3,1.1,1.5,1.2,1.3,0
+New Jersey,2020-03-28,nowcast,1.2,1.1,1.4,1.2,1.3,0
+New Jersey,2020-03-29,nowcast,1.2,1,1.3,1.1,1.2,0.01
+New Jersey,2020-03-30,nowcast,1.1,1,1.2,1.1,1.1,0
+New Jersey,2020-03-31,nowcast,1,1,1.1,1,1,0.06
+New Jersey,2020-04-01,nowcast,1,1,1.1,1,1,0.56
+New Jersey,2020-04-02,nowcast,1,0.9,1.1,1,1,0.68
+New Jersey,2020-04-03,nowcast,1,0.9,1.1,1,1,0.69
+New Jersey,2020-04-04,nowcast,1,1,1.1,1,1,0.66
+New Jersey,2020-04-05,nowcast,1,1,1.1,1,1,0.34
+New Jersey,2020-04-06,nowcast,1,1,1,1,1,0.52
+New Jersey,2020-04-07,nowcast,1,1,1,1,1,0.58
+New Jersey,2020-04-08,nowcast,1,1,1,1,1,0.53
+New Jersey,2020-04-09,nowcast,1,1,1,1,1,0.5
+New Jersey,2020-04-10,nowcast,1,1,1,1,1,0.43
+New Jersey,2020-04-11,nowcast,1,1,1,1,1,0.22
+New Jersey,2020-04-12,nowcast,1,1,1.1,1,1,0.42
+New Jersey,2020-04-13,nowcast,1,1,1,1,1,0.48
+New Jersey,2020-04-14,nowcast,1,1,1.1,1,1,0.21
+New Jersey,2020-04-15,nowcast,1,1,1,1,1,0.34
+New Jersey,2020-04-16,forecast,1,0.9,1.1,1,1,0.52
+New Jersey,2020-04-17,forecast,1,0.8,1.1,0.9,1,0.52
+New Jersey,2020-04-18,forecast,1,0.8,1.2,0.9,1,0.53
+New Jersey,2020-04-19,forecast,1,0.8,1.2,0.9,1,0.57
+New Jersey,2020-04-20,forecast,1,0.7,1.2,0.9,1.1,0.64
+New Jersey,2020-04-21,forecast,1,0.7,1.3,0.9,1.1,0.56
+New Jersey,2020-04-22,forecast,0.9,0.6,1.3,0.9,1.2,0.6
+New Jersey,2020-04-23,forecast,1,0.6,1.4,0.8,1.1,0.57
+New Jersey,2020-04-24,forecast,0.9,0.6,1.3,0.7,1,0.66
+New Jersey,2020-04-25,forecast,0.9,0.4,1.2,0.8,1.1,0.64
+New Jersey,2020-04-26,forecast,1,0.5,1.4,0.8,1.1,0.53
+New Jersey,2020-04-27,forecast,1,0.4,1.5,0.8,1.2,0.52
+New Jersey,2020-04-28,forecast,0.9,0.4,1.6,0.6,1,0.63
+New Jersey,2020-04-29,forecast,0.8,0.3,1.4,0.6,1,0.68
+New Mexico,2020-03-13,nowcast,2,1.5,2.7,1.6,2.1,0
+New Mexico,2020-03-14,nowcast,2.1,1.6,2.7,1.9,2.3,0
+New Mexico,2020-03-15,nowcast,1.9,1.4,2.5,1.8,2.2,0.01
+New Mexico,2020-03-16,nowcast,2,1.5,2.5,1.8,2.2,0
+New Mexico,2020-03-17,nowcast,1.8,1.4,2.3,1.6,1.9,0
+New Mexico,2020-03-18,nowcast,1.7,1.4,2.4,1.5,2,0
+New Mexico,2020-03-19,nowcast,1.7,1.3,2,1.5,1.9,0
+New Mexico,2020-03-20,nowcast,1.7,1.2,2,1.6,1.9,0
+New Mexico,2020-03-21,nowcast,1.7,1.3,2.2,1.5,1.8,0
+New Mexico,2020-03-22,nowcast,1.6,1.4,2.1,1.4,1.6,0
+New Mexico,2020-03-23,nowcast,1.6,1.2,2,1.3,1.6,0
+New Mexico,2020-03-24,nowcast,1.5,1.3,1.7,1.4,1.6,0
+New Mexico,2020-03-25,nowcast,1.5,1.2,1.7,1.4,1.6,0
+New Mexico,2020-03-26,nowcast,1.5,1.2,1.8,1.2,1.5,0
+New Mexico,2020-03-27,nowcast,1.5,1,1.8,1.4,1.7,0
+New Mexico,2020-03-28,nowcast,1.5,1.1,1.9,1.3,1.6,0.01
+New Mexico,2020-03-29,nowcast,1.5,1.2,1.8,1.3,1.5,0
+New Mexico,2020-03-30,nowcast,1.3,1,1.6,1.2,1.4,0.01
+New Mexico,2020-03-31,nowcast,1.3,1.1,1.6,1.2,1.4,0
+New Mexico,2020-04-01,nowcast,1.3,1.1,1.5,1.2,1.4,0
+New Mexico,2020-04-02,nowcast,1.2,1,1.4,1.1,1.3,0.06
+New Mexico,2020-04-03,nowcast,1.2,1,1.4,1,1.2,0.12
+New Mexico,2020-04-04,nowcast,1.1,1,1.4,1,1.2,0.1
+New Mexico,2020-04-05,nowcast,1.1,1,1.4,1,1.2,0.13
+New Mexico,2020-04-06,nowcast,1.1,0.9,1.2,1,1.1,0.18
+New Mexico,2020-04-07,nowcast,1,0.8,1.2,0.9,1.1,0.56
+New Mexico,2020-04-08,nowcast,1,0.8,1.2,1,1.1,0.42
+New Mexico,2020-04-09,nowcast,1,0.9,1.2,1,1.1,0.32
+New Mexico,2020-04-10,nowcast,1.1,0.9,1.4,1.1,1.2,0.1
+New Mexico,2020-04-11,nowcast,1.2,1,1.5,1.1,1.2,0.06
+New Mexico,2020-04-12,nowcast,1.2,1,1.4,1.1,1.3,0.04
+New Mexico,2020-04-13,nowcast,1.2,1.1,1.4,1.1,1.2,0.03
+New Mexico,2020-04-14,nowcast,1.2,1.1,1.5,1.1,1.2,0.02
+New Mexico,2020-04-15,nowcast,1.2,1.1,1.5,1.1,1.3,0.03
+New Mexico,2020-04-16,forecast,1.2,0.9,1.6,1.1,1.3,0.16
+New Mexico,2020-04-17,forecast,1.3,0.9,1.6,1,1.3,0.12
+New Mexico,2020-04-18,forecast,1.2,0.8,1.6,1,1.4,0.14
+New Mexico,2020-04-19,forecast,1.2,0.7,1.7,1,1.4,0.19
+New Mexico,2020-04-20,forecast,1.2,0.7,1.8,1.1,1.5,0.32
+New Mexico,2020-04-21,forecast,1.2,0.6,1.7,1,1.4,0.28
+New Mexico,2020-04-22,forecast,1.2,0.4,1.8,1,1.4,0.29
+New Mexico,2020-04-23,forecast,1.2,0.5,1.9,0.9,1.5,0.32
+New Mexico,2020-04-24,forecast,1.2,0.6,1.9,1.1,1.5,0.25
+New Mexico,2020-04-25,forecast,1.1,0.6,2,0.9,1.3,0.29
+New Mexico,2020-04-26,forecast,1.2,0.3,1.8,1,1.5,0.29
+New Mexico,2020-04-27,forecast,1.2,0.4,2,1,1.5,0.35
+New Mexico,2020-04-28,forecast,1.1,0,1.8,0.9,1.4,0.37
+New Mexico,2020-04-29,forecast,1.2,0.3,2,0.9,1.5,0.36
+New York,2020-02-28,nowcast,3.4,2.9,4.9,3.1,3.6,0
+New York,2020-02-29,nowcast,3.2,2.6,4.2,2.9,3.4,0
+New York,2020-03-01,nowcast,3.1,2.6,3.7,2.6,3.2,0
+New York,2020-03-02,nowcast,2.9,2.5,3.6,2.5,3,0
+New York,2020-03-03,nowcast,2.7,2.4,3.8,2.4,2.7,0
+New York,2020-03-04,nowcast,2.7,2.3,3.7,2.3,2.7,0
+New York,2020-03-05,nowcast,2.6,2.2,3.6,2.2,2.6,0
+New York,2020-03-06,nowcast,2.7,2.3,3.4,2.2,2.7,0
+New York,2020-03-07,nowcast,2.8,2.2,3.3,2.2,2.9,0
+New York,2020-03-08,nowcast,2.7,2.1,3.3,2.4,3,0
+New York,2020-03-09,nowcast,2.6,2,3.3,2.1,2.8,0
+New York,2020-03-10,nowcast,2.5,2,3.1,2,2.5,0
+New York,2020-03-11,nowcast,2.4,2,3.1,2,2.5,0
+New York,2020-03-12,nowcast,2.3,1.9,3.1,1.9,2.4,0
+New York,2020-03-13,nowcast,2.2,1.8,3.1,1.8,2.3,0
+New York,2020-03-14,nowcast,2.1,1.7,2.9,1.7,2.1,0
+New York,2020-03-15,nowcast,1.9,1.6,2.7,1.6,2,0
+New York,2020-03-16,nowcast,1.8,1.5,2.4,1.5,1.8,0
+New York,2020-03-17,nowcast,1.6,1.4,2.1,1.4,1.7,0
+New York,2020-03-18,nowcast,1.5,1.4,1.9,1.4,1.5,0
+New York,2020-03-19,nowcast,1.4,1.3,1.7,1.3,1.4,0
+New York,2020-03-20,nowcast,1.3,1.2,1.6,1.3,1.3,0
+New York,2020-03-21,nowcast,1.3,1.2,1.5,1.2,1.3,0
+New York,2020-03-22,nowcast,1.2,1.2,1.4,1.2,1.2,0
+New York,2020-03-23,nowcast,1.2,1.2,1.4,1.2,1.2,0
+New York,2020-03-24,nowcast,1.2,1.1,1.3,1.1,1.2,0
+New York,2020-03-25,nowcast,1.2,1.1,1.3,1.1,1.2,0
+New York,2020-03-26,nowcast,1.2,1.1,1.3,1.1,1.2,0
+New York,2020-03-27,nowcast,1.1,1.1,1.2,1.1,1.1,0
+New York,2020-03-28,nowcast,1.1,1.1,1.2,1.1,1.1,0
+New York,2020-03-29,nowcast,1.1,1,1.2,1,1.1,0
+New York,2020-03-30,nowcast,1,1,1.1,1,1,0.02
+New York,2020-03-31,nowcast,1,1,1.1,1,1,0.53
+New York,2020-04-01,nowcast,1,1,1,1,1,0.68
+New York,2020-04-02,nowcast,1,1,1,1,1,0.7
+New York,2020-04-03,nowcast,1,0.9,1,1,1,0.8
+New York,2020-04-04,nowcast,1,0.9,1,0.9,1,0.82
+New York,2020-04-05,nowcast,0.9,0.9,1,0.9,0.9,1
+New York,2020-04-06,nowcast,0.9,0.9,0.9,0.9,0.9,1
+New York,2020-04-07,nowcast,0.9,0.9,0.9,0.9,0.9,1
+New York,2020-04-08,nowcast,0.9,0.8,0.9,0.9,0.9,1
+New York,2020-04-09,nowcast,0.9,0.9,0.9,0.9,0.9,1
+New York,2020-04-10,nowcast,0.9,0.9,0.9,0.8,0.9,1
+New York,2020-04-11,nowcast,0.9,0.8,0.9,0.9,0.9,1
+New York,2020-04-12,nowcast,0.8,0.8,0.8,0.8,0.8,1
+New York,2020-04-13,nowcast,0.8,0.7,0.8,0.8,0.8,1
+New York,2020-04-14,nowcast,0.8,0.7,0.9,0.8,0.8,1
+New York,2020-04-15,nowcast,0.8,0.7,0.9,0.8,0.9,1
+New York,2020-04-16,forecast,0.9,0.7,1,0.9,1,0.98
+New York,2020-04-17,forecast,0.9,0.7,1,0.8,1,0.95
+New York,2020-04-18,forecast,0.9,0.6,1,0.9,1,0.91
+New York,2020-04-19,forecast,0.9,0.6,1.1,0.8,1,0.83
+New York,2020-04-20,forecast,0.9,0.6,1.2,0.7,0.9,0.8
+New York,2020-04-21,forecast,0.9,0.5,1.1,0.7,0.9,0.76
+New York,2020-04-22,forecast,0.9,0.6,1.1,0.8,1,0.75
+New York,2020-04-23,forecast,0.8,0.5,1.2,0.7,0.9,0.79
+New York,2020-04-24,forecast,0.9,0.4,1.3,0.7,1,0.76
+New York,2020-04-25,forecast,0.9,0.5,1.3,0.8,1.1,0.76
+New York,2020-04-26,forecast,0.8,0.4,1.3,0.7,1,0.72
+New York,2020-04-27,forecast,0.9,0.4,1.3,0.8,1.2,0.61
+New York,2020-04-28,forecast,0.9,0.4,1.4,0.7,1,0.64
+New York,2020-04-29,forecast,0.8,0.3,1.4,0.6,1,0.78
+North Carolina,2020-03-04,nowcast,2.8,1.9,4.2,2.4,3.2,0
+North Carolina,2020-03-05,nowcast,2.5,1.4,3.3,2,2.7,0
+North Carolina,2020-03-06,nowcast,2.3,1.2,3.5,1.8,2.8,0
+North Carolina,2020-03-07,nowcast,2.5,1.9,3.2,2.1,2.6,0
+North Carolina,2020-03-08,nowcast,2.4,1.9,3.3,1.9,2.6,0
+North Carolina,2020-03-09,nowcast,2.4,1.8,3.1,2,2.5,0
+North Carolina,2020-03-10,nowcast,2.3,1.7,2.8,2.2,2.6,0
+North Carolina,2020-03-11,nowcast,2.3,1.7,3,2,2.5,0
+North Carolina,2020-03-12,nowcast,2.2,1.4,2.9,2,2.4,0
+North Carolina,2020-03-13,nowcast,2.1,1.7,2.8,1.9,2.2,0
+North Carolina,2020-03-14,nowcast,2.1,1.6,2.5,1.8,2.1,0
+North Carolina,2020-03-15,nowcast,1.9,1.6,2.5,1.7,2,0
+North Carolina,2020-03-16,nowcast,1.8,1.5,2.2,1.6,1.9,0
+North Carolina,2020-03-17,nowcast,1.8,1.4,2.3,1.6,1.9,0
+North Carolina,2020-03-18,nowcast,1.6,1.5,2,1.5,1.7,0
+North Carolina,2020-03-19,nowcast,1.6,1.3,1.9,1.5,1.7,0
+North Carolina,2020-03-20,nowcast,1.6,1.3,1.9,1.5,1.7,0
+North Carolina,2020-03-21,nowcast,1.5,1.3,1.8,1.4,1.6,0
+North Carolina,2020-03-22,nowcast,1.4,1.2,1.8,1.2,1.4,0
+North Carolina,2020-03-23,nowcast,1.3,1.2,1.6,1.3,1.4,0
+North Carolina,2020-03-24,nowcast,1.3,1.1,1.5,1.3,1.4,0
+North Carolina,2020-03-25,nowcast,1.3,1.1,1.5,1.2,1.3,0
+North Carolina,2020-03-26,nowcast,1.3,1.1,1.4,1.2,1.3,0.01
+North Carolina,2020-03-27,nowcast,1.3,1.1,1.4,1.2,1.3,0.03
+North Carolina,2020-03-28,nowcast,1.3,1.2,1.4,1.2,1.3,0
+North Carolina,2020-03-29,nowcast,1.2,1.2,1.4,1.2,1.3,0
+North Carolina,2020-03-30,nowcast,1.2,1.1,1.3,1.1,1.2,0.01
+North Carolina,2020-03-31,nowcast,1.2,1,1.3,1.1,1.2,0.04
+North Carolina,2020-04-01,nowcast,1.1,1,1.3,1,1.1,0.05
+North Carolina,2020-04-02,nowcast,1.1,1,1.2,1,1.1,0.18
+North Carolina,2020-04-03,nowcast,1.1,0.9,1.2,1,1.1,0.19
+North Carolina,2020-04-04,nowcast,1.1,0.9,1.2,1,1.1,0.18
+North Carolina,2020-04-05,nowcast,1.1,1,1.3,1,1.1,0.11
+North Carolina,2020-04-06,nowcast,1,1,1.2,1,1.1,0.12
+North Carolina,2020-04-07,nowcast,1,0.9,1.1,0.9,1,0.61
+North Carolina,2020-04-08,nowcast,1,0.9,1.1,1,1,0.53
+North Carolina,2020-04-09,nowcast,1,0.9,1.1,1,1.1,0.35
+North Carolina,2020-04-10,nowcast,1.1,0.9,1.1,1,1.1,0.14
+North Carolina,2020-04-11,nowcast,1.1,1,1.2,1,1.1,0.03
+North Carolina,2020-04-12,nowcast,1.1,1,1.2,1.1,1.2,0.01
+North Carolina,2020-04-13,nowcast,1.1,1,1.2,1.1,1.1,0.11
+North Carolina,2020-04-14,nowcast,1.1,1,1.2,1,1.1,0.21
+North Carolina,2020-04-15,nowcast,1,0.9,1.1,1,1.1,0.29
+North Carolina,2020-04-16,forecast,1,0.9,1.3,0.9,1.1,0.36
+North Carolina,2020-04-17,forecast,1,0.7,1.4,0.9,1.1,0.44
+North Carolina,2020-04-18,forecast,1.1,0.7,1.4,0.9,1.2,0.41
+North Carolina,2020-04-19,forecast,1,0.6,1.3,1,1.2,0.43
+North Carolina,2020-04-20,forecast,1,0.4,1.4,0.9,1.3,0.5
+North Carolina,2020-04-21,forecast,1,0.6,1.5,0.9,1.2,0.44
+North Carolina,2020-04-22,forecast,1,0.5,1.5,1,1.4,0.42
+North Carolina,2020-04-23,forecast,1.1,0.5,1.7,0.9,1.4,0.39
+North Carolina,2020-04-24,forecast,1,0.2,1.4,0.9,1.4,0.52
+North Carolina,2020-04-25,forecast,0.9,0.3,1.6,0.7,1.1,0.56
+North Carolina,2020-04-26,forecast,1.1,0.5,1.7,0.9,1.3,0.46
+North Carolina,2020-04-27,forecast,1.1,0.4,1.7,0.8,1.3,0.45
+North Carolina,2020-04-28,forecast,1,0.3,1.7,0.7,1.2,0.52
+North Carolina,2020-04-29,forecast,1,0.3,2,0.7,1.4,0.49
+North Dakota,2020-03-14,nowcast,1.8,1,3,1,1.9,0.03
+North Dakota,2020-03-15,nowcast,1.6,0.8,2.6,0.9,1.7,0.13
+North Dakota,2020-03-16,nowcast,1.6,0.7,2.4,1,1.7,0.15
+North Dakota,2020-03-17,nowcast,1.7,0.8,2.3,1.4,2,0.11
+North Dakota,2020-03-18,nowcast,1.6,0.6,2.3,1.2,1.8,0.14
+North Dakota,2020-03-19,nowcast,1.6,1,2.5,1.3,1.8,0.06
+North Dakota,2020-03-20,nowcast,1.7,1.3,2.6,1.3,1.8,0
+North Dakota,2020-03-21,nowcast,1.8,1.3,2.4,1.5,1.9,0
+North Dakota,2020-03-22,nowcast,1.6,1.1,2.1,1.5,2,0.05
+North Dakota,2020-03-23,nowcast,1.3,0.9,1.8,1,1.5,0.12
+North Dakota,2020-03-24,nowcast,1.3,0.9,1.9,1,1.4,0.1
+North Dakota,2020-03-25,nowcast,1.3,0.9,1.8,1.1,1.5,0.13
+North Dakota,2020-03-26,nowcast,1.2,0.8,1.5,1.1,1.4,0.2
+North Dakota,2020-03-27,nowcast,1.1,0.7,1.6,1,1.3,0.37
+North Dakota,2020-03-28,nowcast,1.1,0.6,1.6,1,1.3,0.38
+North Dakota,2020-03-29,nowcast,1.2,0.8,1.6,1,1.3,0.21
+North Dakota,2020-03-30,nowcast,1.3,0.6,1.7,1.2,1.5,0.17
+North Dakota,2020-03-31,nowcast,1.2,0.9,1.7,1,1.3,0.26
+North Dakota,2020-04-01,nowcast,1.2,1,1.6,1.1,1.3,0.06
+North Dakota,2020-04-02,nowcast,1.2,0.9,1.7,1.1,1.4,0.13
+North Dakota,2020-04-03,nowcast,1.2,0.9,1.8,1,1.3,0.24
+North Dakota,2020-04-04,nowcast,1.1,0.8,1.6,1,1.2,0.24
+North Dakota,2020-04-05,nowcast,1.3,0.9,1.7,1.1,1.4,0.09
+North Dakota,2020-04-06,nowcast,1.3,0.9,1.7,1.1,1.4,0.08
+North Dakota,2020-04-07,nowcast,1.4,1.1,1.9,1.2,1.5,0.04
+North Dakota,2020-04-08,nowcast,1.5,1.1,1.9,1.3,1.7,0.06
+North Dakota,2020-04-09,nowcast,1.6,1.3,2,1.4,1.7,0
+North Dakota,2020-04-10,nowcast,1.5,1.2,1.9,1.3,1.6,0
+North Dakota,2020-04-11,nowcast,1.5,1.1,2,1.3,1.7,0.02
+North Dakota,2020-04-12,nowcast,1.3,1,2,1.1,1.4,0.03
+North Dakota,2020-04-13,nowcast,1.2,0.8,1.8,0.9,1.3,0.2
+North Dakota,2020-04-14,nowcast,1,0.7,1.6,0.8,1.2,0.5
+North Dakota,2020-04-15,nowcast,0.9,0.5,1.3,0.7,1,0.76
+North Dakota,2020-04-16,forecast,0.9,0.3,1.3,0.9,1.3,0.6
+North Dakota,2020-04-17,forecast,0.9,0.3,1.7,0.6,1.1,0.59
+North Dakota,2020-04-18,forecast,0.9,0.3,1.7,0.8,1.3,0.59
+North Dakota,2020-04-19,forecast,0.9,0,1.4,0.6,1.2,0.64
+North Dakota,2020-04-20,forecast,0.8,0,1.6,0.7,1.4,0.6
+North Dakota,2020-04-21,forecast,0.8,0,1.6,0.6,1.3,0.65
+North Dakota,2020-04-22,forecast,0.8,0,1.5,0,0.8,0.64
+North Dakota,2020-04-23,forecast,0.8,0,1.6,0.4,1.1,0.62
+North Dakota,2020-04-24,forecast,0.8,0,1.9,0,0.8,0.56
+North Dakota,2020-04-25,forecast,0.8,0,1.8,0,0.9,0.58
+North Dakota,2020-04-26,forecast,0.7,0,1.6,0,0.8,0.7
+North Dakota,2020-04-27,forecast,0.7,0,1.5,0,0.7,0.65
+North Dakota,2020-04-28,forecast,0.7,0,1.9,0,0.7,0.6
+North Dakota,2020-04-29,forecast,0.8,0,2,0,0.8,0.65
+Ohio,2020-03-08,nowcast,2.8,1.4,6,1.8,2.8,0
+Ohio,2020-03-09,nowcast,2.8,1.8,5.1,1.8,2.8,0
+Ohio,2020-03-10,nowcast,2.5,1.8,4.4,2.2,2.7,0
+Ohio,2020-03-11,nowcast,2.4,1.7,3.8,2.1,2.6,0
+Ohio,2020-03-12,nowcast,2.6,1.7,3.7,2,2.7,0
+Ohio,2020-03-13,nowcast,2.4,1.9,3.4,2,2.5,0
+Ohio,2020-03-14,nowcast,2.3,1.7,3.2,1.8,2.3,0
+Ohio,2020-03-15,nowcast,2.1,1.6,3,1.6,2.1,0
+Ohio,2020-03-16,nowcast,2.1,1.7,3.1,1.8,2.2,0
+Ohio,2020-03-17,nowcast,2,1.6,2.8,1.8,2.2,0
+Ohio,2020-03-18,nowcast,1.9,1.6,2.4,1.7,2,0
+Ohio,2020-03-19,nowcast,1.8,1.5,2.2,1.8,2.1,0
+Ohio,2020-03-20,nowcast,1.7,1.4,2.2,1.5,1.8,0
+Ohio,2020-03-21,nowcast,1.6,1.3,2.3,1.4,1.7,0
+Ohio,2020-03-22,nowcast,1.6,1.3,2.3,1.4,1.7,0
+Ohio,2020-03-23,nowcast,1.6,1.2,2,1.3,1.6,0
+Ohio,2020-03-24,nowcast,1.5,1.3,1.9,1.3,1.6,0
+Ohio,2020-03-25,nowcast,1.4,1.2,1.8,1.4,1.5,0
+Ohio,2020-03-26,nowcast,1.4,1.1,1.7,1.3,1.5,0
+Ohio,2020-03-27,nowcast,1.4,1.1,1.6,1.3,1.4,0
+Ohio,2020-03-28,nowcast,1.3,1.1,1.5,1.2,1.4,0
+Ohio,2020-03-29,nowcast,1.2,1.1,1.4,1.1,1.3,0.01
+Ohio,2020-03-30,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Ohio,2020-03-31,nowcast,1.1,1,1.3,1.1,1.2,0.03
+Ohio,2020-04-01,nowcast,1.2,1,1.3,1.1,1.2,0.01
+Ohio,2020-04-02,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Ohio,2020-04-03,nowcast,1.2,1,1.3,1.2,1.3,0
+Ohio,2020-04-04,nowcast,1.2,1.1,1.3,1.2,1.3,0
+Ohio,2020-04-05,nowcast,1.2,1.2,1.3,1.2,1.3,0
+Ohio,2020-04-06,nowcast,1.3,1.2,1.4,1.3,1.4,0
+Ohio,2020-04-07,nowcast,1.3,1.2,1.4,1.3,1.3,0
+Ohio,2020-04-08,nowcast,1.3,1.2,1.5,1.3,1.4,0
+Ohio,2020-04-09,nowcast,1.4,1.3,1.7,1.4,1.5,0
+Ohio,2020-04-10,nowcast,1.5,1.3,1.7,1.4,1.7,0
+Ohio,2020-04-11,nowcast,1.4,1.3,1.7,1.3,1.4,0
+Ohio,2020-04-12,nowcast,1.4,1.2,1.7,1.2,1.4,0
+Ohio,2020-04-13,nowcast,1.3,1.1,1.8,1.2,1.4,0
+Ohio,2020-04-14,nowcast,1.2,1,1.7,1,1.2,0.08
+Ohio,2020-04-15,nowcast,1,0.8,1.4,0.8,1,0.59
+Ohio,2020-04-16,forecast,0.9,0.7,1.3,0.7,0.9,0.68
+Ohio,2020-04-17,forecast,0.9,0.6,1.3,0.7,1,0.75
+Ohio,2020-04-18,forecast,0.8,0.4,1.2,0.6,0.9,0.78
+Ohio,2020-04-19,forecast,0.8,0.4,1.4,0.6,1,0.73
+Ohio,2020-04-20,forecast,0.8,0.3,1.2,0.7,0.9,0.84
+Ohio,2020-04-21,forecast,0.7,0.1,1.3,0.4,0.9,0.74
+Ohio,2020-04-22,forecast,0.7,0.2,1.3,0.5,0.9,0.76
+Ohio,2020-04-23,forecast,0.7,0,1.2,0.6,1.1,0.77
+Ohio,2020-04-24,forecast,0.6,0,1.4,0.3,0.9,0.78
+Ohio,2020-04-25,forecast,0.7,0,1.5,0,0.7,0.72
+Ohio,2020-04-26,forecast,0.6,0,1.3,0.4,0.9,0.79
+Ohio,2020-04-27,forecast,0.6,0,1.3,0,0.6,0.8
+Ohio,2020-04-28,forecast,0.5,0,1.2,0,0.6,0.81
+Ohio,2020-04-29,forecast,0.5,0,1.3,0,0.5,0.8
+Oklahoma,2020-03-12,nowcast,2.3,1.6,3.7,2,2.7,0
+Oklahoma,2020-03-13,nowcast,2.3,1.6,3.1,1.9,2.5,0
+Oklahoma,2020-03-14,nowcast,2.4,1.7,3.1,2,2.6,0
+Oklahoma,2020-03-15,nowcast,2.3,1.7,2.9,1.8,2.4,0
+Oklahoma,2020-03-16,nowcast,2.2,1.7,2.9,1.9,2.2,0
+Oklahoma,2020-03-17,nowcast,2.1,1.8,2.5,1.8,2.1,0
+Oklahoma,2020-03-18,nowcast,2.1,1.5,2.6,1.9,2.2,0
+Oklahoma,2020-03-19,nowcast,2,1.1,3.1,1.7,2.2,0
+Oklahoma,2020-03-20,nowcast,1.9,1.3,2.5,1.8,2.1,0
+Oklahoma,2020-03-21,nowcast,1.8,1.2,2.4,1.7,2.1,0
+Oklahoma,2020-03-22,nowcast,1.7,1.3,2.1,1.5,1.8,0
+Oklahoma,2020-03-23,nowcast,1.5,1.2,1.8,1.4,1.6,0
+Oklahoma,2020-03-24,nowcast,1.5,1.2,1.7,1.4,1.6,0
+Oklahoma,2020-03-25,nowcast,1.5,1.2,1.9,1.3,1.6,0
+Oklahoma,2020-03-26,nowcast,1.4,1.1,1.9,1.2,1.5,0
+Oklahoma,2020-03-27,nowcast,1.4,1.1,1.7,1.3,1.6,0
+Oklahoma,2020-03-28,nowcast,1.3,1,1.5,1.2,1.4,0.02
+Oklahoma,2020-03-29,nowcast,1.2,1,1.5,1,1.2,0.11
+Oklahoma,2020-03-30,nowcast,1.1,0.8,1.3,1,1.2,0.23
+Oklahoma,2020-03-31,nowcast,1,0.8,1.3,0.9,1,0.53
+Oklahoma,2020-04-01,nowcast,0.9,0.8,1.1,0.9,1,0.67
+Oklahoma,2020-04-02,nowcast,1,0.8,1.1,0.9,1,0.48
+Oklahoma,2020-04-03,nowcast,1,0.8,1.2,0.9,1,0.56
+Oklahoma,2020-04-04,nowcast,1,0.8,1.2,0.9,1,0.61
+Oklahoma,2020-04-05,nowcast,0.9,0.8,1.1,0.9,1,0.8
+Oklahoma,2020-04-06,nowcast,0.9,0.8,1,0.8,0.9,0.91
+Oklahoma,2020-04-07,nowcast,0.9,0.8,1.1,0.9,1,0.81
+Oklahoma,2020-04-08,nowcast,0.9,0.8,1.1,0.9,0.9,0.87
+Oklahoma,2020-04-09,nowcast,0.9,0.8,1.1,0.9,1,0.83
+Oklahoma,2020-04-10,nowcast,0.9,0.8,1.1,0.9,1,0.84
+Oklahoma,2020-04-11,nowcast,0.9,0.8,1,0.9,1,0.75
+Oklahoma,2020-04-12,nowcast,1,0.8,1.1,0.9,1,0.62
+Oklahoma,2020-04-13,nowcast,1,0.8,1.2,0.9,1,0.65
+Oklahoma,2020-04-14,nowcast,1,0.8,1.1,0.9,1,0.69
+Oklahoma,2020-04-15,nowcast,1.1,0.9,1.2,1,1.1,0.27
+Oklahoma,2020-04-16,forecast,1,0.9,1.3,1,1.1,0.34
+Oklahoma,2020-04-17,forecast,1,0.7,1.4,0.9,1.2,0.44
+Oklahoma,2020-04-18,forecast,1,0.7,1.4,1,1.2,0.42
+Oklahoma,2020-04-19,forecast,1.1,0.5,1.5,0.8,1.2,0.45
+Oklahoma,2020-04-20,forecast,1,0.6,1.5,0.8,1.2,0.51
+Oklahoma,2020-04-21,forecast,1,0.5,1.5,0.8,1.1,0.52
+Oklahoma,2020-04-22,forecast,1.1,0.5,1.7,0.8,1.2,0.42
+Oklahoma,2020-04-23,forecast,1,0.3,1.6,0.9,1.3,0.47
+Oklahoma,2020-04-24,forecast,1,0.2,1.7,0.9,1.4,0.44
+Oklahoma,2020-04-25,forecast,1.1,0.5,1.8,0.8,1.2,0.46
+Oklahoma,2020-04-26,forecast,1,0,1.5,0.9,1.4,0.46
+Oklahoma,2020-04-27,forecast,1,0.4,1.9,0.7,1.2,0.52
+Oklahoma,2020-04-28,forecast,1,0.3,1.7,1,1.5,0.45
+Oklahoma,2020-04-29,forecast,1,0.2,1.7,0.8,1.4,0.5
+Oregon,2020-03-03,nowcast,2.2,1.4,3.3,1.5,2.3,0
+Oregon,2020-03-04,nowcast,1.9,1.4,2.8,1.6,2.3,0.04
+Oregon,2020-03-05,nowcast,1.9,1,2.9,1.6,2.4,0.01
+Oregon,2020-03-06,nowcast,2,0.9,3.1,1.7,2.4,0.05
+Oregon,2020-03-07,nowcast,2,1.2,3.3,1.5,2.3,0.02
+Oregon,2020-03-08,nowcast,1.9,1.2,2.8,1.7,2.2,0
+Oregon,2020-03-09,nowcast,1.9,1,2.4,1.7,2.2,0.03
+Oregon,2020-03-10,nowcast,2,1.4,2.4,1.9,2.3,0
+Oregon,2020-03-11,nowcast,1.9,1.4,2.5,1.7,2,0.01
+Oregon,2020-03-12,nowcast,2,1.6,2.4,1.8,2.1,0
+Oregon,2020-03-13,nowcast,1.9,1.5,2.5,1.8,2.1,0
+Oregon,2020-03-14,nowcast,1.9,1.5,2.4,1.7,2.1,0
+Oregon,2020-03-15,nowcast,1.9,1.5,2.5,1.7,2.1,0
+Oregon,2020-03-16,nowcast,1.8,1.3,2.2,1.6,2,0
+Oregon,2020-03-17,nowcast,1.8,1.4,2.2,1.7,2,0
+Oregon,2020-03-18,nowcast,1.7,1.4,2,1.5,1.8,0
+Oregon,2020-03-19,nowcast,1.6,1.2,2,1.4,1.6,0.01
+Oregon,2020-03-20,nowcast,1.6,1.3,1.9,1.5,1.8,0
+Oregon,2020-03-21,nowcast,1.5,1.3,1.9,1.4,1.6,0
+Oregon,2020-03-22,nowcast,1.5,1.2,1.7,1.4,1.6,0
+Oregon,2020-03-23,nowcast,1.3,1.1,1.7,1.3,1.5,0.04
+Oregon,2020-03-24,nowcast,1.3,0.9,1.6,1.2,1.4,0.08
+Oregon,2020-03-25,nowcast,1.2,0.9,1.5,1.2,1.4,0.09
+Oregon,2020-03-26,nowcast,1.2,1,1.3,1.1,1.2,0.12
+Oregon,2020-03-27,nowcast,1.1,0.9,1.2,1,1.2,0.24
+Oregon,2020-03-28,nowcast,1.1,0.9,1.2,1,1.1,0.26
+Oregon,2020-03-29,nowcast,1,0.9,1.2,1,1.1,0.4
+Oregon,2020-03-30,nowcast,1,0.9,1.2,0.9,1.1,0.39
+Oregon,2020-03-31,nowcast,1,0.8,1.1,1,1.1,0.57
+Oregon,2020-04-01,nowcast,1,0.8,1.1,0.9,1,0.71
+Oregon,2020-04-02,nowcast,0.9,0.8,1,0.9,1,0.79
+Oregon,2020-04-03,nowcast,0.9,0.8,1.2,0.9,1,0.72
+Oregon,2020-04-04,nowcast,0.9,0.8,1.1,0.9,1,0.68
+Oregon,2020-04-05,nowcast,0.9,0.8,1,0.8,1,0.84
+Oregon,2020-04-06,nowcast,0.9,0.8,1.1,0.9,1,0.81
+Oregon,2020-04-07,nowcast,0.9,0.6,1.1,0.8,1,0.86
+Oregon,2020-04-08,nowcast,0.9,0.6,1.1,0.9,1,0.8
+Oregon,2020-04-09,nowcast,0.9,0.7,1.1,0.8,1,0.85
+Oregon,2020-04-10,nowcast,0.9,0.8,1.1,0.8,1,0.84
+Oregon,2020-04-11,nowcast,0.9,0.8,1.1,0.9,1,0.72
+Oregon,2020-04-12,nowcast,1,0.8,1.2,0.9,1,0.53
+Oregon,2020-04-13,nowcast,1,0.8,1.3,0.8,1,0.54
+Oregon,2020-04-14,nowcast,1,0.8,1.1,0.9,1,0.65
+Oregon,2020-04-15,nowcast,1,0.8,1.2,1,1.1,0.49
+Oregon,2020-04-16,forecast,1,0.7,1.4,0.8,1.1,0.52
+Oregon,2020-04-17,forecast,1,0.7,1.4,0.9,1.1,0.48
+Oregon,2020-04-18,forecast,0.9,0.4,1.3,0.8,1,0.63
+Oregon,2020-04-19,forecast,0.9,0.4,1.4,0.8,1.1,0.57
+Oregon,2020-04-20,forecast,1.1,0.5,1.9,0.9,1.3,0.42
+Oregon,2020-04-21,forecast,1,0.3,1.7,0.9,1.2,0.47
+Oregon,2020-04-22,forecast,1,0.4,1.7,0.8,1.3,0.54
+Oregon,2020-04-23,forecast,0.9,0,1.4,0.8,1.2,0.57
+Oregon,2020-04-24,forecast,0.9,0.2,1.6,0.6,1.1,0.58
+Oregon,2020-04-25,forecast,0.9,0,1.4,0.8,1.2,0.59
+Oregon,2020-04-26,forecast,0.9,0,1.5,0.7,1.2,0.59
+Oregon,2020-04-27,forecast,0.9,0,1.6,0.6,1.2,0.62
+Oregon,2020-04-28,forecast,0.8,0,1.5,0.5,1.1,0.64
+Oregon,2020-04-29,forecast,0.9,0,1.9,0.6,1.1,0.59
+Pennsylvania,2020-03-07,nowcast,2.9,2.1,4.1,2.4,3,0
+Pennsylvania,2020-03-08,nowcast,2.8,2.1,3.7,2.2,2.8,0
+Pennsylvania,2020-03-09,nowcast,2.6,2,3.4,2.3,2.8,0
+Pennsylvania,2020-03-10,nowcast,2.5,1.9,3.1,2.3,2.8,0
+Pennsylvania,2020-03-11,nowcast,2.4,2,3.1,2.2,2.6,0
+Pennsylvania,2020-03-12,nowcast,2.4,2,3.1,2.2,2.5,0
+Pennsylvania,2020-03-13,nowcast,2.4,2,2.9,2.1,2.5,0
+Pennsylvania,2020-03-14,nowcast,2.4,1.9,2.7,2.3,2.6,0
+Pennsylvania,2020-03-15,nowcast,2.2,1.8,2.6,1.9,2.3,0
+Pennsylvania,2020-03-16,nowcast,2.1,1.7,2.7,1.7,2.1,0
+Pennsylvania,2020-03-17,nowcast,2.1,1.7,2.7,1.8,2.1,0
+Pennsylvania,2020-03-18,nowcast,2,1.7,2.5,1.8,2,0
+Pennsylvania,2020-03-19,nowcast,2,1.7,2.4,1.7,2,0
+Pennsylvania,2020-03-20,nowcast,1.9,1.6,2.3,1.6,1.9,0
+Pennsylvania,2020-03-21,nowcast,1.8,1.4,2.2,1.6,1.9,0
+Pennsylvania,2020-03-22,nowcast,1.7,1.5,2,1.5,1.7,0
+Pennsylvania,2020-03-23,nowcast,1.7,1.5,1.8,1.5,1.7,0
+Pennsylvania,2020-03-24,nowcast,1.6,1.4,1.8,1.4,1.6,0
+Pennsylvania,2020-03-25,nowcast,1.5,1.4,1.8,1.4,1.5,0
+Pennsylvania,2020-03-26,nowcast,1.5,1.3,1.7,1.3,1.5,0
+Pennsylvania,2020-03-27,nowcast,1.5,1.3,1.7,1.4,1.6,0
+Pennsylvania,2020-03-28,nowcast,1.4,1.2,1.6,1.3,1.5,0
+Pennsylvania,2020-03-29,nowcast,1.4,1.2,1.5,1.3,1.5,0
+Pennsylvania,2020-03-30,nowcast,1.3,1.1,1.4,1.1,1.3,0
+Pennsylvania,2020-03-31,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Pennsylvania,2020-04-01,nowcast,1.1,1,1.2,1.1,1.2,0
+Pennsylvania,2020-04-02,nowcast,1.1,1,1.2,1.1,1.2,0.04
+Pennsylvania,2020-04-03,nowcast,1,1,1.1,1,1.1,0.2
+Pennsylvania,2020-04-04,nowcast,1,0.9,1.1,1,1,0.52
+Pennsylvania,2020-04-05,nowcast,1,0.9,1,0.9,1,0.85
+Pennsylvania,2020-04-06,nowcast,0.9,0.9,1,0.9,0.9,0.98
+Pennsylvania,2020-04-07,nowcast,0.9,0.9,1,0.9,1,1
+Pennsylvania,2020-04-08,nowcast,0.9,0.9,1,0.9,0.9,0.95
+Pennsylvania,2020-04-09,nowcast,1,0.9,1,0.9,1,0.92
+Pennsylvania,2020-04-10,nowcast,1,1,1,1,1,0.58
+Pennsylvania,2020-04-11,nowcast,1,1,1.1,1,1,0.2
+Pennsylvania,2020-04-12,nowcast,1,1,1.1,1,1.1,0.28
+Pennsylvania,2020-04-13,nowcast,1,0.9,1,1,1,0.54
+Pennsylvania,2020-04-14,nowcast,1,0.9,1.1,0.9,1,0.83
+Pennsylvania,2020-04-15,nowcast,1,0.9,1.1,1,1.1,0.43
+Pennsylvania,2020-04-16,forecast,1,0.8,1.1,1,1.1,0.42
+Pennsylvania,2020-04-17,forecast,1,0.9,1.2,1,1.1,0.41
+Pennsylvania,2020-04-18,forecast,1,0.8,1.2,0.9,1.1,0.51
+Pennsylvania,2020-04-19,forecast,1,0.7,1.2,0.9,1.1,0.54
+Pennsylvania,2020-04-20,forecast,1,0.6,1.3,1,1.2,0.43
+Pennsylvania,2020-04-21,forecast,1,0.5,1.3,0.8,1,0.54
+Pennsylvania,2020-04-22,forecast,1,0.5,1.4,0.9,1.1,0.53
+Pennsylvania,2020-04-23,forecast,1,0.4,1.4,0.8,1.1,0.55
+Pennsylvania,2020-04-24,forecast,0.9,0.4,1.7,0.8,1.2,0.55
+Pennsylvania,2020-04-25,forecast,0.9,0.2,1.5,0.8,1.1,0.59
+Pennsylvania,2020-04-26,forecast,1,0.5,1.5,0.7,1.1,0.56
+Pennsylvania,2020-04-27,forecast,1,0.4,1.9,0.7,1.1,0.52
+Pennsylvania,2020-04-28,forecast,1,0,1.4,0.7,1.1,0.52
+Pennsylvania,2020-04-29,forecast,0.9,0.2,1.6,0.7,1.1,0.67
+Puerto Rico,2020-03-15,nowcast,2.4,1.4,3.5,1.8,2.7,0
+Puerto Rico,2020-03-16,nowcast,2.1,1.3,3.4,1.7,2.5,0
+Puerto Rico,2020-03-17,nowcast,2.2,1.4,3.5,1.6,2.4,0.01
+Puerto Rico,2020-03-18,nowcast,2.1,1.2,3.1,1.6,2.2,0
+Puerto Rico,2020-03-19,nowcast,1.9,1.3,2.5,1.6,2.1,0.01
+Puerto Rico,2020-03-20,nowcast,1.7,1.2,2.4,1.4,1.9,0.01
+Puerto Rico,2020-03-21,nowcast,1.7,1.1,2.4,1.4,1.8,0
+Puerto Rico,2020-03-22,nowcast,1.8,1.4,2.4,1.6,2.1,0
+Puerto Rico,2020-03-23,nowcast,1.8,1.2,2.4,1.6,2,0
+Puerto Rico,2020-03-24,nowcast,1.6,1.3,2,1.4,1.7,0
+Puerto Rico,2020-03-25,nowcast,1.4,1.1,1.9,1.2,1.5,0.01
+Puerto Rico,2020-03-26,nowcast,1.3,0.9,1.7,1.1,1.4,0.08
+Puerto Rico,2020-03-27,nowcast,1.2,0.9,1.5,1.1,1.4,0.11
+Puerto Rico,2020-03-28,nowcast,1.2,0.9,1.5,1,1.2,0.17
+Puerto Rico,2020-03-29,nowcast,1.2,0.8,1.4,1.1,1.4,0.22
+Puerto Rico,2020-03-30,nowcast,1.2,0.9,1.5,1.1,1.3,0.17
+Puerto Rico,2020-03-31,nowcast,1.1,0.9,1.4,1,1.2,0.28
+Puerto Rico,2020-04-01,nowcast,1.1,0.9,1.3,1,1.2,0.29
+Puerto Rico,2020-04-02,nowcast,1,0.8,1.2,0.9,1.1,0.37
+Puerto Rico,2020-04-03,nowcast,1,0.9,1.2,0.9,1.1,0.4
+Puerto Rico,2020-04-04,nowcast,1.1,0.9,1.3,0.9,1.1,0.36
+Puerto Rico,2020-04-05,nowcast,1.1,0.9,1.3,0.9,1.1,0.23
+Puerto Rico,2020-04-06,nowcast,1.1,0.8,1.3,1,1.1,0.3
+Puerto Rico,2020-04-07,nowcast,1,0.8,1.2,0.9,1.1,0.45
+Puerto Rico,2020-04-08,nowcast,0.9,0.7,1.2,0.7,0.9,0.67
+Puerto Rico,2020-04-09,nowcast,1,0.7,1.2,0.8,1,0.57
+Puerto Rico,2020-04-10,nowcast,1,0.8,1.3,0.9,1,0.48
+Puerto Rico,2020-04-11,nowcast,1.1,0.9,1.4,1,1.2,0.13
+Puerto Rico,2020-04-12,nowcast,1.2,1,1.4,1.2,1.3,0.01
+Puerto Rico,2020-04-13,nowcast,1.3,1,1.7,1.1,1.4,0
+Puerto Rico,2020-04-14,nowcast,1.3,1.1,1.6,1.2,1.5,0.01
+Puerto Rico,2020-04-15,nowcast,1.4,1,1.8,1.3,1.6,0.1
+Puerto Rico,2020-04-16,forecast,1.3,0.8,1.8,1.1,1.5,0.16
+Puerto Rico,2020-04-17,forecast,1.3,0.6,1.9,1,1.5,0.19
+Puerto Rico,2020-04-18,forecast,1.4,0.8,2.1,1.2,1.6,0.13
+Puerto Rico,2020-04-19,forecast,1.4,0.3,2,1.2,1.7,0.23
+Puerto Rico,2020-04-20,forecast,1.3,0.4,2,1.1,1.8,0.28
+Puerto Rico,2020-04-21,forecast,1.4,0.6,2.3,1.2,1.9,0.23
+Puerto Rico,2020-04-22,forecast,1.4,0.4,2.2,1.3,2,0.25
+Puerto Rico,2020-04-23,forecast,1.3,0.4,2,0.9,1.5,0.32
+Puerto Rico,2020-04-24,forecast,1.4,0.5,2.8,1,1.8,0.24
+Puerto Rico,2020-04-25,forecast,1.2,0.2,2.3,1,1.8,0.32
+Puerto Rico,2020-04-26,forecast,1.2,0,2.2,0.7,1.6,0.39
+Puerto Rico,2020-04-27,forecast,1.2,0,2.5,0.6,1.6,0.42
+Puerto Rico,2020-04-28,forecast,1.4,0,2.5,0.8,1.8,0.31
+Puerto Rico,2020-04-29,forecast,1.3,0,2.5,0.8,1.8,0.36
+Rhode Island,2020-03-08,nowcast,2.2,0.9,3,1.9,2.6,0.04
+Rhode Island,2020-03-09,nowcast,1.9,0.8,2.8,1.5,2.3,0.04
+Rhode Island,2020-03-10,nowcast,1.9,0.9,3,1.4,2.1,0.03
+Rhode Island,2020-03-11,nowcast,2,1.3,2.8,1.5,2.1,0
+Rhode Island,2020-03-12,nowcast,2.2,1.5,2.9,2,2.5,0
+Rhode Island,2020-03-13,nowcast,2,1.3,3.5,1.5,2.2,0
+Rhode Island,2020-03-14,nowcast,2.1,1.4,3.1,1.8,2.3,0
+Rhode Island,2020-03-15,nowcast,2.2,1.5,2.8,1.8,2.3,0
+Rhode Island,2020-03-16,nowcast,2.2,1.4,2.8,1.8,2.4,0
+Rhode Island,2020-03-17,nowcast,2.1,1.3,2.7,2.1,2.7,0
+Rhode Island,2020-03-18,nowcast,2,1.6,2.6,1.7,2.1,0
+Rhode Island,2020-03-19,nowcast,2,1.6,2.4,1.7,2.1,0
+Rhode Island,2020-03-20,nowcast,1.9,1.5,2.3,1.8,2.1,0
+Rhode Island,2020-03-21,nowcast,1.9,1.5,2.3,1.7,2,0
+Rhode Island,2020-03-22,nowcast,1.9,1.6,2.3,1.7,2,0
+Rhode Island,2020-03-23,nowcast,1.9,1.6,2.3,1.8,2,0
+Rhode Island,2020-03-24,nowcast,1.8,1.5,2.3,1.7,1.9,0
+Rhode Island,2020-03-25,nowcast,1.8,1.4,2.1,1.6,1.9,0
+Rhode Island,2020-03-26,nowcast,1.7,1.4,2,1.6,1.8,0
+Rhode Island,2020-03-27,nowcast,1.7,1.5,1.9,1.5,1.7,0
+Rhode Island,2020-03-28,nowcast,1.6,1.3,1.9,1.6,1.8,0
+Rhode Island,2020-03-29,nowcast,1.6,1.4,1.8,1.5,1.7,0
+Rhode Island,2020-03-30,nowcast,1.6,1.3,1.8,1.4,1.6,0
+Rhode Island,2020-03-31,nowcast,1.6,1.4,1.9,1.5,1.7,0
+Rhode Island,2020-04-01,nowcast,1.6,1.3,1.8,1.3,1.6,0
+Rhode Island,2020-04-02,nowcast,1.5,1.3,1.8,1.5,1.7,0
+Rhode Island,2020-04-03,nowcast,1.5,1.2,1.8,1.3,1.6,0
+Rhode Island,2020-04-04,nowcast,1.4,1.2,1.7,1.2,1.5,0
+Rhode Island,2020-04-05,nowcast,1.3,1.1,1.6,1.2,1.4,0
+Rhode Island,2020-04-06,nowcast,1.3,1.1,1.4,1.2,1.4,0
+Rhode Island,2020-04-07,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Rhode Island,2020-04-08,nowcast,1.1,1,1.2,1.1,1.2,0.01
+Rhode Island,2020-04-09,nowcast,1.1,1,1.2,1.1,1.1,0.06
+Rhode Island,2020-04-10,nowcast,1.1,1,1.2,1,1.1,0.25
+Rhode Island,2020-04-11,nowcast,1.1,1,1.2,1,1.1,0.06
+Rhode Island,2020-04-12,nowcast,1.1,1,1.2,1,1.1,0.03
+Rhode Island,2020-04-13,nowcast,1.1,1,1.2,1.1,1.2,0.03
+Rhode Island,2020-04-14,nowcast,1.1,1,1.2,1.1,1.2,0.04
+Rhode Island,2020-04-15,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Rhode Island,2020-04-16,forecast,1.1,0.9,1.4,1,1.2,0.12
+Rhode Island,2020-04-17,forecast,1.2,0.8,1.5,1.1,1.3,0.18
+Rhode Island,2020-04-18,forecast,1.1,0.9,1.6,0.9,1.2,0.27
+Rhode Island,2020-04-19,forecast,1.1,0.5,1.8,0.8,1.2,0.32
+Rhode Island,2020-04-20,forecast,1.2,0.7,1.6,1,1.4,0.34
+Rhode Island,2020-04-21,forecast,1.1,0.6,1.7,0.9,1.4,0.38
+Rhode Island,2020-04-22,forecast,1.1,0.6,2,0.7,1.2,0.35
+Rhode Island,2020-04-23,forecast,1,0.4,1.7,0.7,1.2,0.43
+Rhode Island,2020-04-24,forecast,1.1,0.4,2,0.8,1.4,0.41
+Rhode Island,2020-04-25,forecast,1.2,0.5,1.9,0.9,1.4,0.34
+Rhode Island,2020-04-26,forecast,1.1,0.3,2,0.9,1.4,0.46
+Rhode Island,2020-04-27,forecast,1.1,0,1.8,1,1.7,0.4
+Rhode Island,2020-04-28,forecast,1.1,0,2,0.7,1.2,0.45
+Rhode Island,2020-04-29,forecast,1,0.2,2.2,0.5,1.3,0.47
+South Carolina,2020-03-09,nowcast,2.3,1.5,3,2.1,2.7,0
+South Carolina,2020-03-10,nowcast,2.2,1.6,3.1,1.9,2.4,0
+South Carolina,2020-03-11,nowcast,2.1,1.6,2.7,1.8,2.3,0
+South Carolina,2020-03-12,nowcast,2.1,1.6,2.8,1.9,2.3,0
+South Carolina,2020-03-13,nowcast,2.2,1.8,3.1,1.8,2.3,0
+South Carolina,2020-03-14,nowcast,2.2,1.7,2.9,1.7,2.3,0
+South Carolina,2020-03-15,nowcast,1.9,1.5,2.9,1.6,2.1,0
+South Carolina,2020-03-16,nowcast,1.8,1.4,2.4,1.6,2,0
+South Carolina,2020-03-17,nowcast,1.8,1.5,2.1,1.7,1.9,0
+South Carolina,2020-03-18,nowcast,1.6,1.3,1.9,1.5,1.7,0
+South Carolina,2020-03-19,nowcast,1.5,1.2,1.8,1.5,1.8,0
+South Carolina,2020-03-20,nowcast,1.6,1.3,1.8,1.5,1.8,0
+South Carolina,2020-03-21,nowcast,1.6,1.4,1.8,1.4,1.6,0
+South Carolina,2020-03-22,nowcast,1.6,1.4,1.8,1.6,1.7,0
+South Carolina,2020-03-23,nowcast,1.5,1.3,1.8,1.5,1.6,0
+South Carolina,2020-03-24,nowcast,1.5,1.2,1.8,1.3,1.5,0
+South Carolina,2020-03-25,nowcast,1.4,1.1,1.7,1.2,1.4,0
+South Carolina,2020-03-26,nowcast,1.3,1.1,1.6,1.2,1.4,0
+South Carolina,2020-03-27,nowcast,1.2,1.1,1.5,1.1,1.2,0
+South Carolina,2020-03-28,nowcast,1.1,1,1.3,1,1.2,0.08
+South Carolina,2020-03-29,nowcast,1,0.9,1.2,0.9,1.1,0.33
+South Carolina,2020-03-30,nowcast,1,0.9,1.1,0.9,1,0.68
+South Carolina,2020-03-31,nowcast,0.9,0.9,1,0.9,1,0.77
+South Carolina,2020-04-01,nowcast,1,0.9,1.1,0.9,1,0.66
+South Carolina,2020-04-02,nowcast,1,0.9,1.1,1,1,0.63
+South Carolina,2020-04-03,nowcast,1,0.8,1.1,0.9,1,0.69
+South Carolina,2020-04-04,nowcast,1,0.9,1.1,0.9,1,0.6
+South Carolina,2020-04-05,nowcast,1,0.8,1.1,0.9,1,0.74
+South Carolina,2020-04-06,nowcast,0.9,0.7,1,0.8,0.9,0.91
+South Carolina,2020-04-07,nowcast,0.9,0.7,1,0.8,0.9,0.93
+South Carolina,2020-04-08,nowcast,0.9,0.8,1,0.9,1,0.95
+South Carolina,2020-04-09,nowcast,1,0.8,1.1,0.9,1,0.77
+South Carolina,2020-04-10,nowcast,1,0.9,1.1,0.9,1,0.38
+South Carolina,2020-04-11,nowcast,1,0.9,1.2,0.9,1.1,0.45
+South Carolina,2020-04-12,nowcast,1,0.8,1.1,0.9,1,0.61
+South Carolina,2020-04-13,nowcast,0.9,0.8,1,0.9,1,0.89
+South Carolina,2020-04-14,nowcast,0.9,0.7,1.1,0.8,1,0.74
+South Carolina,2020-04-15,nowcast,0.9,0.8,1.1,0.9,1,0.81
+South Carolina,2020-04-16,forecast,0.9,0.7,1.2,0.8,1,0.71
+South Carolina,2020-04-17,forecast,0.9,0.6,1.3,0.8,1,0.65
+South Carolina,2020-04-18,forecast,0.9,0.6,1.3,0.8,1,0.74
+South Carolina,2020-04-19,forecast,0.9,0.5,1.3,0.7,1,0.71
+South Carolina,2020-04-20,forecast,0.9,0.5,1.4,0.8,1.1,0.7
+South Carolina,2020-04-21,forecast,0.9,0.5,1.4,0.8,1.1,0.66
+South Carolina,2020-04-22,forecast,0.9,0.5,1.4,0.7,1.1,0.68
+South Carolina,2020-04-23,forecast,0.8,0.2,1.2,0.5,0.9,0.72
+South Carolina,2020-04-24,forecast,0.8,0.4,1.4,0.6,1,0.74
+South Carolina,2020-04-25,forecast,0.8,0.3,1.5,0.7,1.1,0.67
+South Carolina,2020-04-26,forecast,0.8,0.3,1.4,0.6,1,0.68
+South Carolina,2020-04-27,forecast,0.8,0.2,1.4,0.6,1.1,0.7
+South Carolina,2020-04-28,forecast,0.8,0,1.3,0.7,1.1,0.67
+South Carolina,2020-04-29,forecast,0.8,0,1.3,0.6,1.1,0.66
+South Dakota,2020-03-17,nowcast,2,1.2,3.3,1.7,2.3,0
+South Dakota,2020-03-18,nowcast,2.2,1.1,3,1.9,2.3,0.03
+South Dakota,2020-03-19,nowcast,2.1,1.5,3.1,1.7,2.3,0.01
+South Dakota,2020-03-20,nowcast,2.1,1.5,2.7,1.8,2.4,0
+South Dakota,2020-03-21,nowcast,1.8,1.2,2.4,1.6,2,0
+South Dakota,2020-03-22,nowcast,1.8,1.4,2.7,1.6,2.1,0
+South Dakota,2020-03-23,nowcast,1.9,1.2,2.7,1.5,2,0
+South Dakota,2020-03-24,nowcast,1.9,1.1,2.7,1.5,2.1,0.01
+South Dakota,2020-03-25,nowcast,1.8,1.3,2.6,1.5,2,0
+South Dakota,2020-03-26,nowcast,1.7,1.2,2.4,1.4,1.8,0
+South Dakota,2020-03-27,nowcast,1.7,1.3,2.2,1.3,1.7,0
+South Dakota,2020-03-28,nowcast,1.6,1.2,2,1.5,1.7,0
+South Dakota,2020-03-29,nowcast,1.6,1.1,2.3,1.4,1.8,0
+South Dakota,2020-03-30,nowcast,1.6,1.3,2.2,1.5,1.8,0
+South Dakota,2020-03-31,nowcast,1.7,1.4,2,1.4,1.7,0
+South Dakota,2020-04-01,nowcast,1.7,1.3,1.9,1.6,1.8,0
+South Dakota,2020-04-02,nowcast,1.7,1.3,2,1.6,1.9,0
+South Dakota,2020-04-03,nowcast,1.5,1.3,2,1.3,1.5,0
+South Dakota,2020-04-04,nowcast,1.6,1.2,2,1.2,1.7,0
+South Dakota,2020-04-05,nowcast,1.6,0.9,2,1.3,1.7,0.05
+South Dakota,2020-04-06,nowcast,1.4,1.1,1.7,1.2,1.5,0.01
+South Dakota,2020-04-07,nowcast,1.3,1.1,1.6,1.2,1.4,0
+South Dakota,2020-04-08,nowcast,1.2,1,1.6,1.1,1.3,0.1
+South Dakota,2020-04-09,nowcast,1.1,0.8,1.4,1,1.2,0.17
+South Dakota,2020-04-10,nowcast,1.1,0.9,1.3,1,1.1,0.31
+South Dakota,2020-04-11,nowcast,0.9,0.8,1.1,0.9,1,0.7
+South Dakota,2020-04-12,nowcast,0.8,0.7,1.1,0.8,0.9,0.92
+South Dakota,2020-04-13,nowcast,0.9,0.7,1,0.8,0.9,0.92
+South Dakota,2020-04-14,nowcast,0.8,0.7,1,0.8,0.9,0.91
+South Dakota,2020-04-15,nowcast,0.8,0.6,1,0.7,0.9,0.92
+South Dakota,2020-04-16,forecast,0.8,0.5,1.2,0.7,0.9,0.8
+South Dakota,2020-04-17,forecast,0.7,0.3,1.2,0.5,0.8,0.83
+South Dakota,2020-04-18,forecast,0.7,0.3,1.2,0.5,0.9,0.79
+South Dakota,2020-04-19,forecast,0.7,0.1,1.2,0.4,0.8,0.8
+South Dakota,2020-04-20,forecast,0.7,0,1.3,0.3,0.8,0.78
+South Dakota,2020-04-21,forecast,0.7,0.1,1.3,0.5,0.9,0.82
+South Dakota,2020-04-22,forecast,0.6,0,1.1,0.3,0.8,0.85
+South Dakota,2020-04-23,forecast,0.6,0,1.3,0,0.6,0.77
+South Dakota,2020-04-24,forecast,0.5,0,1.3,0,0.5,0.83
+South Dakota,2020-04-25,forecast,0.4,0,1.1,0,0.4,0.88
+South Dakota,2020-04-26,forecast,0.6,0,1.3,0,0.6,0.83
+South Dakota,2020-04-27,forecast,0.5,0,1.3,0,0.5,0.77
+South Dakota,2020-04-28,forecast,0.4,0,1.4,0,0.4,0.77
+South Dakota,2020-04-29,forecast,0.3,0,1.3,0,0.3,0.84
+Tennessee,2020-03-07,nowcast,2.5,1.8,4.1,1.8,2.5,0
+Tennessee,2020-03-08,nowcast,2.2,1.6,3.4,1.6,2.2,0
+Tennessee,2020-03-09,nowcast,2.2,1.6,2.8,1.9,2.5,0
+Tennessee,2020-03-10,nowcast,2.3,1.6,2.8,2,2.5,0
+Tennessee,2020-03-11,nowcast,2.2,1.7,2.9,1.8,2.4,0
+Tennessee,2020-03-12,nowcast,2.3,1.9,3,2,2.5,0
+Tennessee,2020-03-13,nowcast,2.3,1.7,2.7,1.8,2.4,0
+Tennessee,2020-03-14,nowcast,2.1,1.5,2.8,1.5,2.1,0
+Tennessee,2020-03-15,nowcast,2,1.4,2.5,1.6,2.3,0
+Tennessee,2020-03-16,nowcast,1.8,1.4,2.2,1.6,2,0
+Tennessee,2020-03-17,nowcast,1.7,1.4,2.1,1.4,1.7,0
+Tennessee,2020-03-18,nowcast,1.6,1.4,2,1.6,1.8,0
+Tennessee,2020-03-19,nowcast,1.5,1.4,1.7,1.5,1.6,0
+Tennessee,2020-03-20,nowcast,1.5,1.3,1.6,1.4,1.6,0
+Tennessee,2020-03-21,nowcast,1.4,1.2,1.6,1.4,1.5,0
+Tennessee,2020-03-22,nowcast,1.4,1.2,1.6,1.4,1.5,0
+Tennessee,2020-03-23,nowcast,1.4,1.1,1.5,1.3,1.5,0
+Tennessee,2020-03-24,nowcast,1.4,1.1,1.5,1.3,1.5,0
+Tennessee,2020-03-25,nowcast,1.3,1.1,1.5,1.2,1.3,0
+Tennessee,2020-03-26,nowcast,1.2,1,1.5,1,1.2,0.05
+Tennessee,2020-03-27,nowcast,1.1,0.9,1.4,1,1.1,0.17
+Tennessee,2020-03-28,nowcast,1,0.9,1.1,0.9,1,0.63
+Tennessee,2020-03-29,nowcast,0.9,0.8,1,0.8,0.9,0.94
+Tennessee,2020-03-30,nowcast,0.9,0.8,1,0.9,1,0.93
+Tennessee,2020-03-31,nowcast,0.9,0.8,1.1,0.9,1,0.76
+Tennessee,2020-04-01,nowcast,1,0.8,1.1,1,1.1,0.62
+Tennessee,2020-04-02,nowcast,1,0.9,1.1,1,1,0.51
+Tennessee,2020-04-03,nowcast,1,0.9,1.2,1,1.1,0.28
+Tennessee,2020-04-04,nowcast,1,0.9,1.2,1,1.1,0.2
+Tennessee,2020-04-05,nowcast,1,0.9,1.1,1,1.1,0.32
+Tennessee,2020-04-06,nowcast,1,0.9,1.1,0.9,1,0.42
+Tennessee,2020-04-07,nowcast,1,0.9,1.2,1,1.1,0.37
+Tennessee,2020-04-08,nowcast,1,0.9,1.1,1,1,0.37
+Tennessee,2020-04-09,nowcast,1,0.9,1.1,1,1.1,0.27
+Tennessee,2020-04-10,nowcast,1.1,1,1.2,1.1,1.1,0.04
+Tennessee,2020-04-11,nowcast,1.1,1,1.2,1.1,1.2,0.04
+Tennessee,2020-04-12,nowcast,1.1,1,1.3,1.1,1.2,0.01
+Tennessee,2020-04-13,nowcast,1.2,1,1.3,1.1,1.2,0.11
+Tennessee,2020-04-14,nowcast,1.2,1,1.3,1.2,1.3,0.01
+Tennessee,2020-04-15,nowcast,1.3,1.2,1.4,1.2,1.3,0
+Tennessee,2020-04-16,forecast,1.3,1,1.5,1.2,1.3,0.01
+Tennessee,2020-04-17,forecast,1.3,1,1.5,1.2,1.5,0.09
+Tennessee,2020-04-18,forecast,1.2,0.9,1.7,1.2,1.4,0.11
+Tennessee,2020-04-19,forecast,1.2,1,1.7,1.1,1.3,0.09
+Tennessee,2020-04-20,forecast,1.3,0.9,1.6,1.2,1.4,0.11
+Tennessee,2020-04-21,forecast,1.3,0.7,1.8,0.9,1.4,0.24
+Tennessee,2020-04-22,forecast,1.2,0.8,1.8,1.1,1.5,0.22
+Tennessee,2020-04-23,forecast,1.2,0.6,1.8,1.1,1.5,0.23
+Tennessee,2020-04-24,forecast,1.3,0.6,1.8,0.9,1.4,0.25
+Tennessee,2020-04-25,forecast,1.2,0.6,1.7,0.8,1.3,0.28
+Tennessee,2020-04-26,forecast,1.2,0.5,2.1,0.9,1.5,0.32
+Tennessee,2020-04-27,forecast,1.3,0.4,1.9,1,1.6,0.36
+Tennessee,2020-04-28,forecast,1.3,0.5,1.8,1.2,1.6,0.29
+Tennessee,2020-04-29,forecast,1.2,0.4,1.9,0.8,1.4,0.38
+Texas,2020-02-19,nowcast,1.5,0.1,3.4,0.5,1.7,0.36
+Texas,2020-02-20,nowcast,1.6,0.1,3.2,0.7,2.1,0.29
+Texas,2020-02-21,nowcast,1.4,0.1,3.6,0.3,1.5,0.35
+Texas,2020-02-22,nowcast,1.5,0.1,4.2,0.7,1.8,0.26
+Texas,2020-02-23,nowcast,1.7,0.8,3.9,1,2,0.12
+Texas,2020-02-24,nowcast,1.6,0.3,3.6,0.6,1.8,0.26
+Texas,2020-02-25,nowcast,2.2,0.1,4.2,1.4,2.9,0.13
+Texas,2020-02-26,nowcast,2.8,0.7,4.5,1.9,3.3,0.07
+Texas,2020-02-27,nowcast,3.3,2,5.7,2.9,3.8,0
+Texas,2020-02-28,nowcast,3.7,1.5,5.3,3.4,4.7,0
+Texas,2020-02-29,nowcast,2.7,1.2,4.5,2.2,3.3,0
+Texas,2020-03-01,nowcast,2.8,1.3,4.6,2.1,3.1,0.02
+Texas,2020-03-02,nowcast,2.7,1.6,4,2,3,0
+Texas,2020-03-03,nowcast,2.7,2,3.8,2.5,3.3,0
+Texas,2020-03-04,nowcast,2.5,1.9,3.4,2,2.6,0
+Texas,2020-03-05,nowcast,2.5,1.6,3.4,1.9,2.5,0
+Texas,2020-03-06,nowcast,2.6,2,3.3,2.2,2.7,0
+Texas,2020-03-07,nowcast,2.5,1.8,3.1,2.5,3.1,0
+Texas,2020-03-08,nowcast,2.5,1.9,3.2,2.3,2.8,0
+Texas,2020-03-09,nowcast,2.6,1.9,3.4,2.2,2.7,0
+Texas,2020-03-10,nowcast,2.3,1.8,3.4,1.9,2.4,0
+Texas,2020-03-11,nowcast,2.3,1.8,3.3,1.8,2.4,0
+Texas,2020-03-12,nowcast,2.3,1.8,3.3,1.8,2.3,0
+Texas,2020-03-13,nowcast,2.3,1.8,3.3,1.9,2.4,0
+Texas,2020-03-14,nowcast,2.2,1.8,3,1.8,2.2,0
+Texas,2020-03-15,nowcast,2,1.7,2.6,1.8,2.1,0
+Texas,2020-03-16,nowcast,1.9,1.5,2.5,1.6,1.9,0
+Texas,2020-03-17,nowcast,1.8,1.5,2.4,1.5,1.8,0
+Texas,2020-03-18,nowcast,1.7,1.5,2.3,1.6,1.8,0
+Texas,2020-03-19,nowcast,1.8,1.5,2.3,1.6,1.8,0
+Texas,2020-03-20,nowcast,1.8,1.5,2.3,1.5,1.8,0
+Texas,2020-03-21,nowcast,1.7,1.4,2.2,1.6,1.8,0
+Texas,2020-03-22,nowcast,1.6,1.3,2,1.4,1.6,0
+Texas,2020-03-23,nowcast,1.5,1.3,1.9,1.4,1.5,0
+Texas,2020-03-24,nowcast,1.5,1.3,1.8,1.4,1.5,0
+Texas,2020-03-25,nowcast,1.4,1.3,1.7,1.3,1.4,0
+Texas,2020-03-26,nowcast,1.4,1.3,1.7,1.2,1.4,0
+Texas,2020-03-27,nowcast,1.4,1.2,1.7,1.2,1.4,0
+Texas,2020-03-28,nowcast,1.3,1.2,1.7,1.2,1.3,0
+Texas,2020-03-29,nowcast,1.3,1.1,1.6,1.2,1.3,0
+Texas,2020-03-30,nowcast,1.2,1.1,1.5,1.1,1.3,0
+Texas,2020-03-31,nowcast,1.2,1.1,1.4,1.1,1.2,0
+Texas,2020-04-01,nowcast,1.2,1.1,1.4,1.1,1.2,0
+Texas,2020-04-02,nowcast,1.2,1,1.3,1.1,1.2,0
+Texas,2020-04-03,nowcast,1.1,1,1.2,1,1.1,0.09
+Texas,2020-04-04,nowcast,1.1,0.9,1.2,1,1.1,0.33
+Texas,2020-04-05,nowcast,1,0.9,1.1,1,1,0.63
+Texas,2020-04-06,nowcast,0.9,0.9,1,0.9,0.9,0.96
+Texas,2020-04-07,nowcast,0.9,0.8,1,0.9,0.9,1
+Texas,2020-04-08,nowcast,0.9,0.9,1,0.9,1,0.98
+Texas,2020-04-09,nowcast,1,0.9,1,1,1,0.62
+Texas,2020-04-10,nowcast,1,1,1.1,1,1,0.42
+Texas,2020-04-11,nowcast,1,0.9,1.1,1,1,0.42
+Texas,2020-04-12,nowcast,1,1,1.1,1,1,0.44
+Texas,2020-04-13,nowcast,1,0.9,1,0.9,1,0.77
+Texas,2020-04-14,nowcast,0.9,0.8,1,0.9,1,0.81
+Texas,2020-04-15,nowcast,1,0.9,1.1,0.9,1,0.58
+Texas,2020-04-16,forecast,1,0.6,1.4,0.9,1.1,0.51
+Texas,2020-04-17,forecast,1,0.5,1.5,0.7,1.1,0.5
+Texas,2020-04-18,forecast,1,0.4,1.5,0.7,1.1,0.49
+Texas,2020-04-19,forecast,0.9,0,1.4,0.7,1.2,0.6
+Texas,2020-04-20,forecast,0.9,0,1.5,0.6,1.1,0.58
+Texas,2020-04-21,forecast,0.8,0,1.7,0.5,1.1,0.62
+Texas,2020-04-22,forecast,0.9,0,1.9,0.5,1.1,0.6
+Texas,2020-04-23,forecast,0.9,0,1.8,0.3,1.2,0.58
+Texas,2020-04-24,forecast,0.9,0,2,0,0.9,0.55
+Texas,2020-04-25,forecast,0.9,0,1.9,0.7,1.5,0.55
+Texas,2020-04-26,forecast,0.8,0,1.8,0,0.8,0.57
+Texas,2020-04-27,forecast,0.8,0,2.3,0,0.8,0.57
+Texas,2020-04-28,forecast,1,0,2.4,0,1.1,0.48
+Texas,2020-04-29,forecast,0.7,0,2.3,0,0.7,0.66
+Utah,2020-03-09,nowcast,2.4,1.5,4.1,1.9,2.7,0
+Utah,2020-03-10,nowcast,2.2,1.4,3.4,1.8,2.4,0
+Utah,2020-03-11,nowcast,2.1,1.6,3.1,1.7,2.2,0
+Utah,2020-03-12,nowcast,1.9,1.5,2.6,1.7,2.1,0
+Utah,2020-03-13,nowcast,1.9,1.5,2.3,1.8,2.1,0
+Utah,2020-03-14,nowcast,1.9,1.5,2.4,1.7,2.1,0
+Utah,2020-03-15,nowcast,1.9,1.5,2.6,1.5,2,0
+Utah,2020-03-16,nowcast,1.9,1.4,2.5,1.6,2,0
+Utah,2020-03-17,nowcast,1.8,1.4,2.3,1.4,1.9,0
+Utah,2020-03-18,nowcast,1.7,1.3,2.1,1.7,2.1,0
+Utah,2020-03-19,nowcast,1.6,1.3,2,1.3,1.6,0
+Utah,2020-03-20,nowcast,1.5,1.2,1.8,1.3,1.5,0
+Utah,2020-03-21,nowcast,1.5,1.3,1.7,1.3,1.5,0
+Utah,2020-03-22,nowcast,1.4,1.2,1.8,1.3,1.5,0
+Utah,2020-03-23,nowcast,1.5,1.3,1.7,1.4,1.5,0
+Utah,2020-03-24,nowcast,1.4,1.2,1.6,1.3,1.4,0
+Utah,2020-03-25,nowcast,1.3,1.1,1.5,1.2,1.4,0
+Utah,2020-03-26,nowcast,1.2,1,1.5,1.1,1.3,0.02
+Utah,2020-03-27,nowcast,1.2,1,1.4,1.1,1.2,0.01
+Utah,2020-03-28,nowcast,1.2,1,1.3,1.1,1.3,0.02
+Utah,2020-03-29,nowcast,1.2,1,1.3,1.1,1.2,0.13
+Utah,2020-03-30,nowcast,1.1,0.9,1.3,1,1.2,0.33
+Utah,2020-03-31,nowcast,1,0.8,1.1,0.9,1,0.66
+Utah,2020-04-01,nowcast,0.9,0.8,1,0.8,0.9,0.89
+Utah,2020-04-02,nowcast,0.9,0.7,1,0.9,1,0.84
+Utah,2020-04-03,nowcast,0.9,0.8,1,0.9,1,0.87
+Utah,2020-04-04,nowcast,0.9,0.8,1.1,0.9,1,0.86
+Utah,2020-04-05,nowcast,1,0.8,1.1,0.9,1.1,0.63
+Utah,2020-04-06,nowcast,1,0.9,1.1,1,1.1,0.4
+Utah,2020-04-07,nowcast,1.1,0.9,1.2,1,1.1,0.26
+Utah,2020-04-08,nowcast,1,0.9,1.3,1,1.1,0.34
+Utah,2020-04-09,nowcast,1.1,0.9,1.3,1.1,1.2,0.21
+Utah,2020-04-10,nowcast,1.2,1,1.3,1.1,1.2,0.01
+Utah,2020-04-11,nowcast,1.2,1,1.4,1.1,1.2,0.04
+Utah,2020-04-12,nowcast,1.2,1.1,1.4,1.1,1.2,0
+Utah,2020-04-13,nowcast,1.2,1,1.3,1.1,1.2,0.02
+Utah,2020-04-14,nowcast,1.1,1,1.2,1,1.1,0.11
+Utah,2020-04-15,nowcast,1.1,0.9,1.2,1.1,1.2,0.17
+Utah,2020-04-16,forecast,1.1,0.8,1.3,1,1.2,0.28
+Utah,2020-04-17,forecast,1.1,0.8,1.4,0.9,1.1,0.4
+Utah,2020-04-18,forecast,1.1,0.7,1.4,0.9,1.2,0.38
+Utah,2020-04-19,forecast,1.1,0.6,1.4,1,1.3,0.39
+Utah,2020-04-20,forecast,1,0.6,1.6,0.8,1.2,0.47
+Utah,2020-04-21,forecast,1,0.6,1.6,0.8,1.2,0.48
+Utah,2020-04-22,forecast,1,0.6,1.5,0.6,1,0.52
+Utah,2020-04-23,forecast,1,0.5,1.6,0.9,1.3,0.46
+Utah,2020-04-24,forecast,0.9,0.2,1.5,0.7,1.1,0.58
+Utah,2020-04-25,forecast,1,0.5,1.7,0.7,1.2,0.51
+Utah,2020-04-26,forecast,0.9,0.4,1.6,0.6,1.2,0.54
+Utah,2020-04-27,forecast,1,0.1,1.6,0.7,1.3,0.5
+Utah,2020-04-28,forecast,1,0.4,1.7,0.6,1.1,0.53
+Utah,2020-04-29,forecast,1,0.2,1.6,0.6,1.2,0.5
+Vermont,2020-03-13,nowcast,2,1,3.3,1.5,2.4,0
+Vermont,2020-03-14,nowcast,2,1.1,3.4,1.4,2.2,0.01
+Vermont,2020-03-15,nowcast,2.1,1.2,3,1.5,2.2,0
+Vermont,2020-03-16,nowcast,2.1,1.2,3.2,1.5,2.2,0
+Vermont,2020-03-17,nowcast,2,1.3,2.8,1.7,2.1,0
+Vermont,2020-03-18,nowcast,1.8,1.3,2.3,1.7,2.1,0.01
+Vermont,2020-03-19,nowcast,1.6,1.1,2.1,1.4,1.8,0.01
+Vermont,2020-03-20,nowcast,1.6,1,2.1,1.4,1.9,0.04
+Vermont,2020-03-21,nowcast,1.5,0.9,1.8,1.4,1.7,0.08
+Vermont,2020-03-22,nowcast,1.3,0.9,1.7,1.1,1.4,0.1
+Vermont,2020-03-23,nowcast,1.2,0.8,1.5,1,1.3,0.09
+Vermont,2020-03-24,nowcast,1.2,0.9,1.4,1.1,1.3,0.16
+Vermont,2020-03-25,nowcast,1.3,1,1.6,1.1,1.3,0.07
+Vermont,2020-03-26,nowcast,1.2,0.8,1.6,1.1,1.4,0.14
+Vermont,2020-03-27,nowcast,1.1,0.9,1.4,1,1.2,0.23
+Vermont,2020-03-28,nowcast,1.2,0.8,1.4,1,1.2,0.24
+Vermont,2020-03-29,nowcast,1.2,0.8,1.6,0.9,1.2,0.3
+Vermont,2020-03-30,nowcast,1.1,0.8,1.6,1,1.3,0.33
+Vermont,2020-03-31,nowcast,1,0.7,1.3,1,1.3,0.55
+Vermont,2020-04-01,nowcast,0.9,0.6,1.1,0.8,1.1,0.81
+Vermont,2020-04-02,nowcast,0.8,0.5,1,0.7,0.9,0.93
+Vermont,2020-04-03,nowcast,0.8,0.6,1,0.7,0.9,0.98
+Vermont,2020-04-04,nowcast,0.7,0.6,0.9,0.7,0.9,0.98
+Vermont,2020-04-05,nowcast,0.7,0.5,0.9,0.6,0.7,0.99
+Vermont,2020-04-06,nowcast,0.6,0.3,0.9,0.5,0.7,0.93
+Vermont,2020-04-07,nowcast,0.5,0.3,0.8,0.4,0.6,0.97
+Vermont,2020-04-08,nowcast,0.5,0.3,0.6,0.5,0.6,1
+Vermont,2020-04-09,nowcast,0.4,0.2,0.7,0.4,0.5,1
+Vermont,2020-04-10,nowcast,0.4,0.2,0.8,0.3,0.5,0.98
+Vermont,2020-04-11,nowcast,0.6,0.3,1,0.4,0.6,0.88
+Vermont,2020-04-12,nowcast,0.7,0.3,1.5,0.5,0.8,0.78
+Vermont,2020-04-13,nowcast,0.6,0.2,1.1,0.3,0.7,0.8
+Vermont,2020-04-14,nowcast,0.6,0.3,1,0.3,0.7,0.95
+Vermont,2020-04-15,nowcast,0.6,0.1,1.9,0.2,0.6,0.79
+Vermont,2020-04-16,forecast,0.5,0,1.8,0.2,0.8,0.78
+Vermont,2020-04-17,forecast,0.6,0,1.8,0.3,0.8,0.76
+Vermont,2020-04-18,forecast,0.6,0,1.6,0,0.6,0.72
+Vermont,2020-04-19,forecast,0.4,0,1.7,0,0.4,0.81
+Vermont,2020-04-20,forecast,0.6,0,1.7,0,0.6,0.71
+Vermont,2020-04-21,forecast,0.5,0,1.7,0,0.5,0.75
+Vermont,2020-04-22,forecast,0.4,0,1.5,0,0.4,0.74
+Vermont,2020-04-23,forecast,0.5,0,1.9,0,0.5,0.74
+Vermont,2020-04-24,forecast,0.5,0,1.9,0,0.5,0.7
+Vermont,2020-04-25,forecast,0.4,0,1.8,0,0.4,0.71
+Vermont,2020-04-26,forecast,0.3,0,2.2,0,0.3,0.72
+Vermont,2020-04-27,forecast,0.3,0,2.4,0,0.4,0.81
+Vermont,2020-04-28,forecast,0.3,0,1.8,0,0.3,0.83
+Vermont,2020-04-29,forecast,0.5,0,1.7,0,0.5,0.74
+Virginia,2020-03-07,nowcast,2.3,1.4,3.3,2,2.5,0
+Virginia,2020-03-08,nowcast,2.1,1.6,2.8,1.7,2.2,0
+Virginia,2020-03-09,nowcast,2,1.4,2.6,1.7,2.2,0
+Virginia,2020-03-10,nowcast,2,1.6,2.8,1.7,2.2,0
+Virginia,2020-03-11,nowcast,2.2,1.6,2.9,1.8,2.4,0
+Virginia,2020-03-12,nowcast,2.3,1.5,2.9,2,2.7,0
+Virginia,2020-03-13,nowcast,2.1,1.7,2.9,1.9,2.2,0
+Virginia,2020-03-14,nowcast,2.1,1.7,2.8,1.9,2.2,0
+Virginia,2020-03-15,nowcast,2,1.7,2.5,1.9,2.2,0
+Virginia,2020-03-16,nowcast,2,1.6,2.8,1.7,2,0
+Virginia,2020-03-17,nowcast,2,1.5,2.7,1.6,2,0
+Virginia,2020-03-18,nowcast,2,1.5,2.4,1.8,2.2,0
+Virginia,2020-03-19,nowcast,1.9,1.5,2.4,1.6,1.9,0
+Virginia,2020-03-20,nowcast,1.9,1.5,2.2,1.8,2.1,0
+Virginia,2020-03-21,nowcast,1.7,1.4,2.1,1.5,1.9,0
+Virginia,2020-03-22,nowcast,1.6,1.4,1.9,1.5,1.8,0
+Virginia,2020-03-23,nowcast,1.6,1.4,1.9,1.5,1.7,0
+Virginia,2020-03-24,nowcast,1.6,1.4,1.9,1.6,1.9,0
+Virginia,2020-03-25,nowcast,1.6,1.4,1.8,1.6,1.8,0
+Virginia,2020-03-26,nowcast,1.6,1.2,1.8,1.6,1.8,0
+Virginia,2020-03-27,nowcast,1.5,1.2,1.8,1.5,1.8,0
+Virginia,2020-03-28,nowcast,1.4,1.2,1.7,1.2,1.4,0
+Virginia,2020-03-29,nowcast,1.4,1.2,1.6,1.3,1.5,0
+Virginia,2020-03-30,nowcast,1.3,1.2,1.4,1.3,1.4,0
+Virginia,2020-03-31,nowcast,1.3,1.1,1.4,1.3,1.3,0
+Virginia,2020-04-01,nowcast,1.2,1.1,1.4,1.2,1.3,0
+Virginia,2020-04-02,nowcast,1.3,1.1,1.4,1.2,1.3,0.01
+Virginia,2020-04-03,nowcast,1.2,1.1,1.4,1.2,1.3,0
+Virginia,2020-04-04,nowcast,1.2,1.1,1.3,1.2,1.3,0
+Virginia,2020-04-05,nowcast,1.2,1.1,1.3,1.1,1.2,0.01
+Virginia,2020-04-06,nowcast,1.1,1,1.3,1.1,1.2,0
+Virginia,2020-04-07,nowcast,1.1,1,1.3,1.1,1.1,0.01
+Virginia,2020-04-08,nowcast,1.1,1,1.3,1.1,1.2,0
+Virginia,2020-04-09,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Virginia,2020-04-10,nowcast,1.2,1.1,1.2,1.1,1.2,0
+Virginia,2020-04-11,nowcast,1.2,1.1,1.3,1.1,1.2,0.01
+Virginia,2020-04-12,nowcast,1.2,1.1,1.3,1.2,1.3,0
+Virginia,2020-04-13,nowcast,1.2,1,1.3,1.1,1.2,0
+Virginia,2020-04-14,nowcast,1.2,1,1.3,1.1,1.2,0.01
+Virginia,2020-04-15,nowcast,1.2,1.1,1.3,1.1,1.2,0
+Virginia,2020-04-16,forecast,1.2,0.9,1.3,1.1,1.2,0.1
+Virginia,2020-04-17,forecast,1.1,0.9,1.4,1.1,1.3,0.15
+Virginia,2020-04-18,forecast,1.1,0.9,1.5,1.1,1.3,0.26
+Virginia,2020-04-19,forecast,1.1,0.8,1.5,0.9,1.1,0.36
+Virginia,2020-04-20,forecast,1.2,0.8,1.5,1,1.3,0.25
+Virginia,2020-04-21,forecast,1.1,0.7,1.4,0.9,1.2,0.33
+Virginia,2020-04-22,forecast,1.1,0.4,1.5,1,1.3,0.3
+Virginia,2020-04-23,forecast,1.1,0.6,1.6,0.9,1.3,0.31
+Virginia,2020-04-24,forecast,1.1,0.5,1.5,1,1.3,0.34
+Virginia,2020-04-25,forecast,1.1,0.5,1.5,0.9,1.3,0.4
+Virginia,2020-04-26,forecast,1.1,0.6,1.7,0.9,1.4,0.34
+Virginia,2020-04-27,forecast,1.1,0.4,1.8,0.8,1.3,0.36
+Virginia,2020-04-28,forecast,1.1,0.6,1.8,0.8,1.3,0.39
+Virginia,2020-04-29,forecast,1.1,0.5,2.1,0.8,1.3,0.41
+Washington,2020-02-25,nowcast,2.5,1.9,3.3,2,2.6,0
+Washington,2020-02-26,nowcast,2.4,1.7,3,2,2.5,0
+Washington,2020-02-27,nowcast,2.3,1.8,2.8,2.1,2.5,0
+Washington,2020-02-28,nowcast,2.2,1.8,3,1.9,2.3,0
+Washington,2020-02-29,nowcast,2,1.7,2.7,1.9,2.2,0
+Washington,2020-03-01,nowcast,2.1,1.6,2.8,1.9,2.2,0
+Washington,2020-03-02,nowcast,2.1,1.8,2.9,1.9,2.2,0
+Washington,2020-03-03,nowcast,2.2,1.8,2.6,2,2.3,0
+Washington,2020-03-04,nowcast,2,1.7,2.5,1.8,2.1,0
+Washington,2020-03-05,nowcast,1.9,1.6,2.3,1.8,2,0
+Washington,2020-03-06,nowcast,1.8,1.6,2.1,1.6,1.8,0
+Washington,2020-03-07,nowcast,1.7,1.5,2,1.7,1.8,0
+Washington,2020-03-08,nowcast,1.6,1.3,1.8,1.6,1.8,0
+Washington,2020-03-09,nowcast,1.6,1.3,1.9,1.5,1.7,0
+Washington,2020-03-10,nowcast,1.6,1.4,1.8,1.6,1.7,0
+Washington,2020-03-11,nowcast,1.7,1.4,1.8,1.6,1.7,0
+Washington,2020-03-12,nowcast,1.6,1.5,1.9,1.5,1.7,0
+Washington,2020-03-13,nowcast,1.6,1.4,1.8,1.5,1.6,0
+Washington,2020-03-14,nowcast,1.6,1.4,1.9,1.5,1.7,0
+Washington,2020-03-15,nowcast,1.6,1.4,1.8,1.5,1.6,0
+Washington,2020-03-16,nowcast,1.5,1.4,1.7,1.5,1.6,0
+Washington,2020-03-17,nowcast,1.5,1.4,1.6,1.4,1.5,0
+Washington,2020-03-18,nowcast,1.5,1.3,1.7,1.5,1.6,0
+Washington,2020-03-19,nowcast,1.5,1.2,1.6,1.4,1.6,0
+Washington,2020-03-20,nowcast,1.4,1.2,1.5,1.3,1.5,0
+Washington,2020-03-21,nowcast,1.3,1.1,1.6,1.3,1.5,0
+Washington,2020-03-22,nowcast,1.2,1.1,1.5,1.2,1.3,0
+Washington,2020-03-23,nowcast,1.1,1.1,1.3,1.1,1.2,0
+Washington,2020-03-24,nowcast,1,0.9,1.1,1,1.1,0.29
+Washington,2020-03-25,nowcast,1,0.9,1,0.9,1,0.78
+Washington,2020-03-26,nowcast,1,0.9,1.1,0.9,1,0.58
+Washington,2020-03-27,nowcast,1,1,1.2,1,1.1,0.21
+Washington,2020-03-28,nowcast,1.1,0.9,1.2,1.1,1.2,0.3
+Washington,2020-03-29,nowcast,0.9,0.8,1.1,0.9,1,0.67
+Washington,2020-03-30,nowcast,0.9,0.8,1,0.8,0.9,0.99
+Washington,2020-03-31,nowcast,0.8,0.8,0.9,0.8,0.9,1
+Washington,2020-04-01,nowcast,0.8,0.7,0.9,0.8,0.8,1
+Washington,2020-04-02,nowcast,0.8,0.7,0.8,0.8,0.8,1
+Washington,2020-04-03,nowcast,0.8,0.7,0.8,0.7,0.8,1
+Washington,2020-04-04,nowcast,0.8,0.7,0.8,0.7,0.8,1
+Washington,2020-04-05,nowcast,0.7,0.6,0.8,0.7,0.7,1
+Washington,2020-04-06,nowcast,0.7,0.6,0.8,0.6,0.7,1
+Washington,2020-04-07,nowcast,0.7,0.6,0.8,0.6,0.7,1
+Washington,2020-04-08,nowcast,0.7,0.6,0.9,0.7,0.7,0.98
+Washington,2020-04-09,nowcast,0.8,0.7,1,0.7,0.8,0.89
+Washington,2020-04-10,nowcast,0.9,0.8,1.1,0.9,1,0.79
+Washington,2020-04-11,nowcast,1,0.9,1.2,1,1.1,0.29
+Washington,2020-04-12,nowcast,1,0.9,1.1,1,1.1,0.34
+Washington,2020-04-13,nowcast,1,0.9,1.1,1,1,0.51
+Washington,2020-04-14,nowcast,1,0.9,1.2,0.9,1,0.58
+Washington,2020-04-15,nowcast,1,0.9,1.1,1,1.1,0.49
+Washington,2020-04-16,forecast,1,0.8,1.2,0.9,1,0.57
+Washington,2020-04-17,forecast,1,0.8,1.3,0.9,1.1,0.54
+Washington,2020-04-18,forecast,1,0.7,1.3,0.9,1.1,0.54
+Washington,2020-04-19,forecast,0.9,0.6,1.3,0.8,1,0.59
+Washington,2020-04-20,forecast,0.9,0.5,1.4,0.7,1.1,0.56
+Washington,2020-04-21,forecast,1,0.6,1.4,0.8,1.1,0.53
+Washington,2020-04-22,forecast,0.9,0.5,1.4,0.8,1.1,0.62
+Washington,2020-04-23,forecast,0.9,0.4,1.5,0.7,1.1,0.59
+Washington,2020-04-24,forecast,0.9,0.4,1.5,0.7,1.1,0.58
+Washington,2020-04-25,forecast,0.9,0.3,1.4,0.8,1.2,0.6
+Washington,2020-04-26,forecast,1,0.3,1.4,0.8,1.3,0.56
+Washington,2020-04-27,forecast,0.9,0.4,1.7,0.5,1,0.64
+Washington,2020-04-28,forecast,0.9,0.2,1.3,0.6,1,0.64
+Washington,2020-04-29,forecast,0.9,0.3,1.4,0.6,1.1,0.63
+West Virginia,2020-03-19,nowcast,1.9,1,3.2,1.5,2.1,0
+West Virginia,2020-03-20,nowcast,1.8,1.2,2.9,1.4,2,0.01
+West Virginia,2020-03-21,nowcast,1.6,1,2.2,1.2,1.8,0.03
+West Virginia,2020-03-22,nowcast,1.4,1.1,2.1,1.1,1.5,0.06
+West Virginia,2020-03-23,nowcast,1.5,1.1,2.1,1.2,1.6,0.03
+West Virginia,2020-03-24,nowcast,1.4,1,1.8,1.2,1.5,0.02
+West Virginia,2020-03-25,nowcast,1.5,1,1.9,1.4,1.7,0.08
+West Virginia,2020-03-26,nowcast,1.4,1,1.8,1.2,1.5,0.05
+West Virginia,2020-03-27,nowcast,1.4,1.1,1.6,1.3,1.5,0
+West Virginia,2020-03-28,nowcast,1.3,1,1.7,1.1,1.4,0.03
+West Virginia,2020-03-29,nowcast,1.3,1,1.8,1.1,1.4,0.04
+West Virginia,2020-03-30,nowcast,1.4,1,1.7,1.2,1.5,0.05
+West Virginia,2020-03-31,nowcast,1.2,1,1.6,1,1.2,0.05
+West Virginia,2020-04-01,nowcast,1.2,0.9,1.6,1,1.3,0.18
+West Virginia,2020-04-02,nowcast,1.1,0.7,1.4,1,1.2,0.33
+West Virginia,2020-04-03,nowcast,1,0.8,1.2,1,1.2,0.42
+West Virginia,2020-04-04,nowcast,1,0.8,1.2,0.9,1,0.59
+West Virginia,2020-04-05,nowcast,0.9,0.7,1.1,0.8,1,0.78
+West Virginia,2020-04-06,nowcast,0.9,0.7,1.1,0.7,0.9,0.78
+West Virginia,2020-04-07,nowcast,0.9,0.8,1.2,0.8,1,0.78
+West Virginia,2020-04-08,nowcast,0.9,0.7,1.1,0.8,1,0.67
+West Virginia,2020-04-09,nowcast,1,0.8,1.3,0.9,1.1,0.47
+West Virginia,2020-04-10,nowcast,1,0.8,1.3,0.9,1.1,0.53
+West Virginia,2020-04-11,nowcast,1,0.7,1.2,1,1.2,0.44
+West Virginia,2020-04-12,nowcast,1,0.7,1.3,0.9,1.1,0.45
+West Virginia,2020-04-13,nowcast,0.9,0.7,1.3,0.7,1,0.65
+West Virginia,2020-04-14,nowcast,0.9,0.7,1.2,0.8,1,0.68
+West Virginia,2020-04-15,nowcast,0.8,0.5,1.1,0.6,0.9,0.85
+West Virginia,2020-04-16,forecast,0.8,0.2,1.1,0.7,1,0.83
+West Virginia,2020-04-17,forecast,0.8,0.4,1.2,0.5,0.8,0.71
+West Virginia,2020-04-18,forecast,0.7,0.2,1.3,0.5,1,0.8
+West Virginia,2020-04-19,forecast,0.8,0.3,1.3,0.6,1,0.69
+West Virginia,2020-04-20,forecast,0.8,0,1.3,0.4,0.9,0.77
+West Virginia,2020-04-21,forecast,0.7,0,1.2,0.5,1.1,0.74
+West Virginia,2020-04-22,forecast,0.7,0,1.4,0.5,1,0.74
+West Virginia,2020-04-23,forecast,0.7,0,1.2,0.6,1.1,0.71
+West Virginia,2020-04-24,forecast,0.7,0,1.3,0.3,0.9,0.76
+West Virginia,2020-04-25,forecast,0.7,0,1.3,0.5,1.1,0.7
+West Virginia,2020-04-26,forecast,0.7,0,1.3,0.5,1.2,0.68
+West Virginia,2020-04-27,forecast,0.7,0,1.3,0,0.7,0.67
+West Virginia,2020-04-28,forecast,0.6,0,1.3,0.4,0.9,0.79
+West Virginia,2020-04-29,forecast,0.6,0,1.7,0,0.7,0.63
+Wisconsin,2020-03-08,nowcast,2.4,1.5,3.3,1.8,2.4,0
+Wisconsin,2020-03-09,nowcast,2.4,1.6,3.3,2.1,2.7,0
+Wisconsin,2020-03-10,nowcast,2.4,1.7,3.2,2.1,2.7,0
+Wisconsin,2020-03-11,nowcast,2.2,1.6,2.9,1.8,2.3,0
+Wisconsin,2020-03-12,nowcast,2,1.5,2.7,1.6,2,0
+Wisconsin,2020-03-13,nowcast,1.9,1.4,2.7,1.5,1.9,0
+Wisconsin,2020-03-14,nowcast,1.9,1.4,2.5,1.6,2,0
+Wisconsin,2020-03-15,nowcast,1.7,1.4,2.6,1.4,1.7,0
+Wisconsin,2020-03-16,nowcast,1.6,1.2,2,1.4,1.7,0
+Wisconsin,2020-03-17,nowcast,1.6,1.4,2,1.4,1.7,0
+Wisconsin,2020-03-18,nowcast,1.5,1.3,1.8,1.4,1.6,0
+Wisconsin,2020-03-19,nowcast,1.5,1.1,1.9,1.4,1.5,0
+Wisconsin,2020-03-20,nowcast,1.4,1.1,1.8,1.3,1.5,0
+Wisconsin,2020-03-21,nowcast,1.4,1.1,1.7,1.3,1.6,0
+Wisconsin,2020-03-22,nowcast,1.3,1,1.5,1.1,1.3,0.01
+Wisconsin,2020-03-23,nowcast,1.2,1.1,1.4,1.1,1.3,0
+Wisconsin,2020-03-24,nowcast,1.2,1,1.3,1.1,1.3,0.08
+Wisconsin,2020-03-25,nowcast,1.2,1,1.4,1.1,1.2,0.04
+Wisconsin,2020-03-26,nowcast,1.2,1.1,1.5,1.1,1.2,0
+Wisconsin,2020-03-27,nowcast,1.2,1.1,1.4,1.1,1.2,0
+Wisconsin,2020-03-28,nowcast,1.2,1.1,1.4,1.1,1.2,0
+Wisconsin,2020-03-29,nowcast,1.1,0.9,1.3,1,1.1,0.09
+Wisconsin,2020-03-30,nowcast,1,0.9,1.2,1,1.1,0.25
+Wisconsin,2020-03-31,nowcast,1,0.8,1.1,0.9,1,0.65
+Wisconsin,2020-04-01,nowcast,0.9,0.8,1.1,0.9,1,0.78
+Wisconsin,2020-04-02,nowcast,0.9,0.8,1.1,0.8,1,0.62
+Wisconsin,2020-04-03,nowcast,0.9,0.8,1,0.9,1,0.79
+Wisconsin,2020-04-04,nowcast,0.9,0.8,1.1,0.9,1,0.71
+Wisconsin,2020-04-05,nowcast,0.9,0.9,1,0.9,1,0.86
+Wisconsin,2020-04-06,nowcast,1,0.8,1.1,0.9,1,0.63
+Wisconsin,2020-04-07,nowcast,1,0.9,1.2,0.9,1,0.5
+Wisconsin,2020-04-08,nowcast,1,0.9,1.2,0.9,1.1,0.46
+Wisconsin,2020-04-09,nowcast,1.1,0.9,1.2,1,1.1,0.29
+Wisconsin,2020-04-10,nowcast,1.1,1,1.3,1.1,1.2,0.12
+Wisconsin,2020-04-11,nowcast,1.1,1,1.3,1.1,1.2,0.05
+Wisconsin,2020-04-12,nowcast,1.1,1,1.3,1,1.1,0
+Wisconsin,2020-04-13,nowcast,1.1,1,1.3,1.1,1.2,0.07
+Wisconsin,2020-04-14,nowcast,1.1,0.9,1.3,1.1,1.2,0.13
+Wisconsin,2020-04-15,nowcast,1.2,1,1.3,1.1,1.2,0.02
+Wisconsin,2020-04-16,forecast,1.2,1,1.4,1.1,1.2,0.12
+Wisconsin,2020-04-17,forecast,1.2,0.9,1.4,1.1,1.3,0.2
+Wisconsin,2020-04-18,forecast,1.1,0.8,1.5,1,1.3,0.2
+Wisconsin,2020-04-19,forecast,1.1,0.8,1.5,0.9,1.2,0.25
+Wisconsin,2020-04-20,forecast,1.1,0.6,1.5,1,1.3,0.28
+Wisconsin,2020-04-21,forecast,1.1,0.8,1.6,0.9,1.2,0.29
+Wisconsin,2020-04-22,forecast,1.1,0.7,1.6,0.9,1.3,0.34
+Wisconsin,2020-04-23,forecast,1.1,0.4,1.5,0.8,1.3,0.35
+Wisconsin,2020-04-24,forecast,1.1,0.7,1.8,0.9,1.3,0.31
+Wisconsin,2020-04-25,forecast,1.1,0.6,1.6,1,1.4,0.4
+Wisconsin,2020-04-26,forecast,1.1,0.7,1.8,0.9,1.3,0.36
+Wisconsin,2020-04-27,forecast,1.2,0.5,1.7,0.9,1.4,0.34
+Wisconsin,2020-04-28,forecast,1.1,0.3,1.7,0.6,1.2,0.39
+Wisconsin,2020-04-29,forecast,1.1,0.5,1.8,0.9,1.4,0.4

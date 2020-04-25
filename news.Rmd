@@ -13,6 +13,14 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## 2020-04-25 
+
+* Added short term forecasting results.
+* Fixed Germany regional map.
+* Update plots.
+* Fixed doubling time confidence intervals.
+* Update palette.
+
 ## 2020-04-18
 
 * Updated the UK data source.
