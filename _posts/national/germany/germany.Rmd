@@ -49,8 +49,7 @@ latest_date <- readRDS("../../../_nowcasts/covid-regional/germany/regional-summa
 
 summary_table <- summary_table %>%
   dplyr::left_join(region_codes %>%
-                     dplyr::mutate(region = region %>%
-                                     stringr::str_replace("-", " ")),
+                     dplyr::mutate(region = region),
                    by = c("Region" = "region"))
 ```
 
