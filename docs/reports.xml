@@ -17,6 +17,14 @@
       <media:content url="https://epiforecasts.io/covid/posts/global/distill-preview.png" medium="image" type="image/png" width="9600" height="4800"/>
     </item>
     <item>
+      <title>Estimates for Algeria</title>
+      <link>https://epiforecasts.io/covid/posts/national/algeria</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Algeria. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/algeria</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/algeria/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
       <title>Estimates for Argentina</title>
       <link>https://epiforecasts.io/covid/posts/national/argentina</link>
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Argentina. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
@@ -257,6 +265,14 @@
       <media:content url="https://epiforecasts.io/covid/posts/national/kazakhstan/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
+      <title>Estimates for Kuwait</title>
+      <link>https://epiforecasts.io/covid/posts/national/kuwait</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kuwait. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/kuwait</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/kuwait/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
       <title>Estimates for Lithuania</title>
       <link>https://epiforecasts.io/covid/posts/national/lithuania</link>
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Lithuania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
@@ -273,6 +289,262 @@
       <media:content url="https://epiforecasts.io/covid/posts/national/luxembourg/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
+      <title>Estimates for Malaysia</title>
+      <link>https://epiforecasts.io/covid/posts/national/malaysia</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Malaysia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/malaysia</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/malaysia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Mexico</title>
+      <link>https://epiforecasts.io/covid/posts/national/mexico</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Mexico. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/mexico</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/mexico/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Moldova</title>
+      <link>https://epiforecasts.io/covid/posts/national/moldova</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Moldova. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/moldova</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/moldova/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Morocco</title>
+      <link>https://epiforecasts.io/covid/posts/national/morocco</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Morocco. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/morocco</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/morocco/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Netherlands</title>
+      <link>https://epiforecasts.io/covid/posts/national/netherlands</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Netherlands. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/netherlands</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/netherlands/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Norway</title>
+      <link>https://epiforecasts.io/covid/posts/national/norway</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Norway. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/norway</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/norway/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Pakistan</title>
+      <link>https://epiforecasts.io/covid/posts/national/pakistan</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Pakistan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/pakistan</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/pakistan/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Panama</title>
+      <link>https://epiforecasts.io/covid/posts/national/panama</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Panama. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/panama</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/panama/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Peru</title>
+      <link>https://epiforecasts.io/covid/posts/national/peru</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Peru. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/peru</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/peru/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Philippines</title>
+      <link>https://epiforecasts.io/covid/posts/national/philippines</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Philippines. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/philippines</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/philippines/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Poland</title>
+      <link>https://epiforecasts.io/covid/posts/national/poland</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Poland. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/poland</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/poland/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Portugal</title>
+      <link>https://epiforecasts.io/covid/posts/national/portugal</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Portugal. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/portugal</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/portugal/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Puerto Rico</title>
+      <link>https://epiforecasts.io/covid/posts/national/puerto-rico</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Puerto Rico. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/puerto-rico</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/puerto-rico/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Qatar</title>
+      <link>https://epiforecasts.io/covid/posts/national/qatar</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Qatar. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/qatar</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/qatar/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Romania</title>
+      <link>https://epiforecasts.io/covid/posts/national/romania</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Romania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/romania</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/romania/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Russia</title>
+      <link>https://epiforecasts.io/covid/posts/national/russia</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Russia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/russia</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/russia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Saudi Arabia</title>
+      <link>https://epiforecasts.io/covid/posts/national/saudi-arabia</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Saudi Arabia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/saudi-arabia</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/saudi-arabia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Senegal</title>
+      <link>https://epiforecasts.io/covid/posts/national/senegal</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Senegal. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/senegal</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/senegal/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Serbia</title>
+      <link>https://epiforecasts.io/covid/posts/national/serbia</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Serbia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/serbia</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/serbia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Singapore</title>
+      <link>https://epiforecasts.io/covid/posts/national/singapore</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Singapore. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/singapore</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/singapore/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Slovakia</title>
+      <link>https://epiforecasts.io/covid/posts/national/slovakia</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Slovakia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/slovakia</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/slovakia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Somalia</title>
+      <link>https://epiforecasts.io/covid/posts/national/somalia</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Somalia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/somalia</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/somalia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for South Africa</title>
+      <link>https://epiforecasts.io/covid/posts/national/south-africa</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in South Africa. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/south-africa</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/south-africa/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for South Korea</title>
+      <link>https://epiforecasts.io/covid/posts/national/south-korea</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in South Korea. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/south-korea</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/south-korea/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Spain</title>
+      <link>https://epiforecasts.io/covid/posts/national/spain</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Spain. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/spain</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/spain/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Sweden</title>
+      <link>https://epiforecasts.io/covid/posts/national/sweden</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Sweden. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/sweden</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/sweden/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Switzerland</title>
+      <link>https://epiforecasts.io/covid/posts/national/switzerland</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Switzerland. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/switzerland</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/switzerland/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Thailand</title>
+      <link>https://epiforecasts.io/covid/posts/national/thailand</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Thailand. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/thailand</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/thailand/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Tunisia</title>
+      <link>https://epiforecasts.io/covid/posts/national/tunisia</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Tunisia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/tunisia</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/tunisia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Turkey</title>
+      <link>https://epiforecasts.io/covid/posts/national/turkey</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Turkey. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/turkey</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/turkey/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Ukraine</title>
+      <link>https://epiforecasts.io/covid/posts/national/ukraine</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ukraine. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/ukraine</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/ukraine/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for United Arab Emirates</title>
+      <link>https://epiforecasts.io/covid/posts/national/united-arab-emirates</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in United Arab Emirates. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/united-arab-emirates</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/united-arab-emirates/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
       <title>National and Subnational estimates for the United Kingdom</title>
       <link>https://epiforecasts.io/covid/posts/national/united-kingdom</link>
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United Kingdom. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
@@ -281,12 +553,28 @@
       <media:content url="https://epiforecasts.io/covid/posts/national/united-kingdom/distill-preview.png" medium="image" type="image/png" width="9600" height="6400"/>
     </item>
     <item>
+      <title>Estimates for United Republic of Tanzania</title>
+      <link>https://epiforecasts.io/covid/posts/national/united-republic-of-tanzania</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in United Republic of Tanzania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/united-republic-of-tanzania</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/united-republic-of-tanzania/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
       <title>National and Subnational estimates for the United States of America</title>
       <link>https://epiforecasts.io/covid/posts/national/united-states</link>
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United States of America. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
       <guid>https://epiforecasts.io/covid/posts/national/united-states</guid>
       <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/united-states/distill-preview.png" medium="image" type="image/png" width="9600" height="4800"/>
+    </item>
+    <item>
+      <title>Estimates for Uzbekistan</title>
+      <link>https://epiforecasts.io/covid/posts/national/uzbekistan</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Uzbekistan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</description>
+      <guid>https://epiforecasts.io/covid/posts/national/uzbekistan</guid>
+      <pubDate>Sat, 25 Apr 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/uzbekistan/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
   </channel>
 </rss>
