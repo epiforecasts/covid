@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### National data
 
-We used daily counts of confirmed cases reported by the European Centre for Disease Control for all analyses conducted at the national level[@ecdc_data; @NCoVUtils]. To estimate the delay from case onset date until confirmation date we used all cases from a publicly available linelist for which onset and confirmation dates are available[@kraemer2020epidemiological; @NCoVUtils]. Countries are only included in the reported estimates if at least 60 cases have been reported in a single day.
+We used daily counts of confirmed cases reported by the European Centre for Disease Control for all analyses conducted at the national level[@ecdc_data; @NCoVUtils]. To estimate the delay from case onset date until notification date we used all cases from a publicly available linelist for which onset and notification dates are available[@kraemer2020epidemiological; @NCoVUtils]. Countries are only included in the reported estimates if at least 60 cases have been reported in a single day.
 
 ### Subnational data sources
 
@@ -25,9 +25,9 @@ For sub-national analyses, the source of the data is reported on each page, the 
 
 ## Adjusting for reporting delays
 
-To estimate the reporting delay, we fit exponential and gamma distributions to the number of days between symptom onset and case confirmation, accounting for left and right censoring occurring in the data as each date is rounded to the nearest day. We fit each model in the statistical modelling program stan[@rstan] and compared to goodness-of-fit of each distribution to the data by comparing the approximate leave-one-out cross-validation information criterion (LOOIC)[@Vehtari2016].
+To estimate the reporting delay, we fit exponential and gamma distributions to the number of days between symptom onset and case notification, accounting for left and right censoring occurring in the data as each date is rounded to the nearest day. We fit each model in the statistical modelling program stan[@rstan] and compared to goodness-of-fit of each distribution to the data by comparing the approximate leave-one-out cross-validation information criterion (LOOIC)[@Vehtari2016].
 
-The distribution that gives the lowest LOOIC was selected as the most appropriate and 1000 samples of the fitted distribution parameters were then drawn (rate for the exponential distribution, and shape and scale for the gamma distribution). For a given country, we used sample $i$ from the posterior distribution of delay distribution parameters, $\Theta_i$, to draw a sample of delays, $d_i$, to transform each observed confirmation date, $c_i$, into a sample onset date, $o_i$, as follows:
+The distribution that gives the lowest LOOIC was selected as the most appropriate and 1000 samples of the fitted distribution parameters were then drawn (rate for the exponential distribution, and shape and scale for the gamma distribution). For a given country, we used sample $i$ from the posterior distribution of delay distribution parameters, $\Theta_i$, to draw a sample of delays, $d_i$, to transform each observed notification date, $c_i$, into a sample onset date, $o_i$, as follows:
 
 $o_i = c_i - d_i$,
 
@@ -35,9 +35,9 @@ where $d_i \sim exp(\Theta_i)$ or $gamma(\Theta_i)$
 
 This resulted in 1000 date of onset samples for each confirmed case.
 
-## Adjusting for right-censoring of confirmation dates
+## Adjusting for right-censoring of notification dates
 
-When moving from confirmation dates to onset dates it is important to consider that the total number of confirmed cases lags behind the number of cases that have onset, since there is a delay between onset occurring and the case being counted upon confirmation. To account for this right censoring, we used binomial upscaling to increase the estimated numbers of case onsets close to the present. After transforming the observed confirmation dates to onset dates and tallying case onset numbers by day, we then drew a sample of the number of case onsets that occurred but have not yet been confirmed.
+When moving from notification dates to onset dates it is important to consider that the total number of confirmed cases lags behind the number of cases that have onset, since there is a delay between onset occurring and the case being counted upon notification. To account for this right censoring, we used binomial upscaling to increase the estimated numbers of case onsets close to the present. After transforming the observed notification dates to onset dates and tallying case onset numbers by day, we then drew a sample of the number of case onsets that occurred but have not yet been confirmed.
 
 If $t$ is the present date, then the number of onsets on day $t-k$, $o_{t-k}$ is used to draw the number of unconfirmed onsets on day $t-k$, $o^{*}_{t-k}$ from a negative binomial distribution as follows:
 
@@ -51,7 +51,7 @@ We used the *EpiEstim* R package[@EpiEstim; @R] to fit a model that estimated th
 
 We incorporated uncertainty in the serial interval distribution by providing *EpiEstim* with 1000 samples from the serial interval mean of 4.7 days (95% CrI: 3.7, 6.0) and the standard deviation of 2.9 days (95% CrI: 1.9, 4.9) from previous analysis[@Nishiura2020.02.03.20019497]. We evaluated window lengths from 1 to 7 days, running *EpiEstim* separately for each window choice. We therefore fitted the *EpiEstim* model 1000 times overall for each window, each time using a different combination of sampled onset dates and serial interval distribution. The optimal window was selected by first estimating the one day ahead number of cases implied by each time-varying reproduction number estimate[@NOUVELLET201829] and then scoring this nowcast against the observed number of cases using the RPS score[@gneiting_strictly_2007; @jordan_evaluating_2019]. For each sample the window with the lowest median RPS score was selected.
 
-The estimates of the time-varying reproduction number at each time point were combined over all 1000 samples, using the optimal window for each sample, to give a credible interval that incorporates uncertainty from the delay from case onset to confirmation and the length of the serial interval.
+The estimates of the time-varying reproduction number at each time point were combined over all 1000 samples, using the optimal window for each sample, to give a credible interval that incorporates uncertainty from the delay from case onset to notification and the length of the serial interval.
 
 ## Estimated change in daily cases
 
@@ -62,6 +62,14 @@ We estimated the rate of spread ($r$) using linear regression with time as the o
 
 The results presented here are sensitive to changes in COVID-19 testing practices and the level of effort put into detecting COVID-19 cases. If a country expands their testing capacity and begins to report a higher proportion of cases then the model will fit a higher reproduction number value to account for this becasue it only understands new cases in terms of the infectiousness of previously reported cases and not as a result of better testing. On the other hand, if a country reduces their testing effort (for example, hitting their test capacity or running out of tests) then the model will estimate a drop in the reproduction number that may not be a true reduction. What is important for these results to be unbiased by testing is consistency in the level of testing effort rather than the actual level of testing effort. This means that whilst a change in testing effort will initially introduce bias, this will be reduced over time as long as the testing effort remains consistent from this point on.
 
+## Forecasting the time-varying reproduction number and case counts by date of infection
+
+We forecast the time-varying effective reproduction number over a 14 day time horizon using the best performing inverse variance weighted ensemble of time series models [@fable] as assessed by iteratively fitting to a subsample of the estimated effective reproduction number estimates for each region [@episoon]. Perfomance was assessed using CPRS scores, interval scores, PIT calibration, bias and sharpness with an ensemble being preferred that minimised the CRPS score whilst being calibrated, unbiased and as sharp as possible over the full time horizon [@scoringrules; @scoringutils; @Funk2019cc]. The reproduction number forecast was then transformed into a case forecast using the renewal equation and a Poisson distribution of cases [@cori2013; @wallinga2004]. These forecasts are indicative only and should not be considered with a weight equal to the real-time estimates. Changes in contact rates, mobility, and public health interventions are not accounted for which may lead to significant inaccuracy.
+
+## Reporting
+
+We report the median and 90% highest density intervals for all measures. The analysis was conducted independently for all regions and is updated regularly as new data becomes available. Confidence in our estimates is shown using the proportion of data that were derived using binomial upscaling, confidence decreases as estimates get closer to now since there is more uncertainty in the upscaled number of cases. All results are available in the source repository in a comma-separated values file.
+
 ## Code and data availability
 
-We report the median and 90% highest density intervals for all measures. The analysis was conducted independently for all regions and is updated regularly as new data becomes available. Confidence in our estimates is shown using the proportion of data that were derived using binomial upscaling, confidence decreases as estimates get closer to now since there is more uncertainty in the upscaled number of cases. Code and results from this analysis can be found [here](https://epiforecasts.io/EpiNow) and [here](https://github.com/epiforecasts/covid).
+Code and results from this analysis can be found [here](https://github.com/epiforecasts/covid) and [@epinow; @episoon]. 

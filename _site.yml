@@ -61,5 +61,4 @@ collections:
     share: [twitter, linkedin, facebook]
 output: distill::distill_article
 exclude: ["Dockerfile", "DESCRIPTION", "README.md",
-         ".Rbuildignore", "LICENSE", "LICENSE.md",
-         "bin", "utils", "_nowcasts"]
+         ".Rbuildignore", "LICENSE", "bin", "utils", "_nowcasts"]
