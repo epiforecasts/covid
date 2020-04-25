@@ -28,11 +28,13 @@ git submodule update --init --recursive
 
 #### Update
 
-Update all nowcasts and deploy the website with the following:
+Update all nowcasts and the website with the following:
 
 ```bash
 bash bin/update_website.sh
 ```
+
+See the `bin` folder for other updating scripts.
 
 ## Docker
 
