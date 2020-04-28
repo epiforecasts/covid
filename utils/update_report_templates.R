@@ -37,8 +37,6 @@ countries <- countries %>%
   ) %>%
   dplyr::select(country, file_name, region = region_un) 
 
-
-
 # Manual country fix ------------------------------------------------------
 
 countries <- countries %>% 
