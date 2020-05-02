@@ -7,7 +7,7 @@ require(purrr)
 posts <- c("_posts/global" , list.dirs("_posts/national", recursive = FALSE))
 
 
-future::plan("multiprocess")
+future::plan("multisession")
 
 safe_render <- purrr::safely(rmarkdown::render)
 

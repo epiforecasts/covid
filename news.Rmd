@@ -13,6 +13,11 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## 2020-05-02
+
+* Switched to approximate sampling of the delay distribution.
+* Forecasts are now only shown for countries/regions that have reported at least 200 cases in the last 7 days. 
+
 ## 2020-04-25 
 
 * Added short term forecasting results.
