@@ -33,7 +33,7 @@ $o_i = c_i - d_i$,
 
 where $d_i \sim exp(\Theta_i)$ or $gamma(\Theta_i)$
 
-This resulted in 1000 date of onset samples for each confirmed case.
+This resulted in 1000 date of onset samples for each confirmed case. For countries/regions with high case loads (more than 1000 reported cases) the sampling step is approximated using the probability density function of the reporting delay. 
 
 ## Adjusting for right-censoring of notification dates
 
