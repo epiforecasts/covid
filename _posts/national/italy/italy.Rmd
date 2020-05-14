@@ -29,6 +29,9 @@ knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
 ```{r load-packages, include = FALSE}
 library(EpiNow)
 library(dplyr)
+library(magrittr)
+library(rnaturalearth)
+library(sf)
 library(rmarkdown)
 library(here)
 ```
@@ -46,10 +49,23 @@ latest_date <- readRDS("../../../_nowcasts/covid-regional/italy/regional-summary
 ```
 
 ```{r map, fig.width = 6, fig.height = 6, layout="l-body-outset", out.width = "80%"}
-summary_table %>%
+summary_table <- summary_table %>%
   dplyr::rename(region = Region) %>%
-  dplyr::left_join(region_codes, by = "region") %>%
-  EpiNow::country_map(country = "Italy", variable = "Expected change in daily cases")
+  dplyr::left_join(region_codes, by = "region")
+
+map <-  rnaturalearth::ne_states("Italy", returnclass = "sf") %>%
+  dplyr::mutate(region_code = provnum_ne) %>% 
+  dplyr::left_join(summary_table, by = "region_code") %>%
+  ggplot2::ggplot(ggplot2::aes(fill = `Expected change in daily cases`)) +
+  ggplot2::geom_sf(alpha = 0.8, size = 0.2)
+
+map %>%
+  EpiNow::theme_map(
+    continuous = FALSE,
+    variable_label = "Expected change in daily cases",
+    fill_labels = ggplot2::waiver(),
+    breaks = levels(summary_table$`Expected change in daily cases`)
+  )
 ```
 
 <br>

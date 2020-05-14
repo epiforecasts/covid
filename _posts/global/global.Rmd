@@ -22,6 +22,7 @@ knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
 ```{r load-packages, include = FALSE}
 library(EpiNow)
 library(dplyr)
+library(magrittr)
 library(rmarkdown)
 library(here)
 ```
@@ -39,7 +40,7 @@ latest_date <- readRDS("../../_nowcasts/covid-global/national-summary/latest_dat
 
 ```{r map, fig.height = 6, layout="l-body-outset", out.width = "100%"}
 global <- summary_table %>%
-  dplyr::rename(country = `Country/Region`) %>%
+  dplyr::rename(country = `Country`) %>%
   dplyr::filter(!country %in% c("Hubei", "Hong Kong", "China excluding Hubei")) %>%
   EpiNow::global_map(variable = "Expected change in daily cases")
 
