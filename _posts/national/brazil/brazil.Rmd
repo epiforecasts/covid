@@ -47,7 +47,6 @@ library(sf)
 summary_table <- readRDS("../../../_nowcasts/covid-regional/brazil/regional-summary/summary_table.rds")
 region_codes <- readRDS("../../../_nowcasts/covid-regional/brazil/data/region_codes.rds")
 latest_date <- readRDS("../../../_nowcasts/covid-regional/brazil/regional-summary/latest_date.rds")
-
 summary_table <- summary_table %>%
   dplyr::left_join(region_codes %>%
                      dplyr::mutate(region = region),
@@ -57,17 +56,12 @@ summary_table <- summary_table %>%
 ```{r map, fig.height = 6, layout="l-body-outset", out.width = "70%"}
 regions <- rnaturalearth::ne_states("Brazil", returnclass = "sf") %>%
    dplyr::mutate(region_code = stringr::str_remove_all(iso_3166_2, "BR-"))
-
-
 regions_with_data <- regions %>%
    dplyr::left_join(summary_table,
                   by = c("region_code" = "region_code"))
-
 map <- ggplot2::ggplot(regions_with_data) +
   ggplot2::geom_sf(ggplot2::aes(fill = `Expected change in daily cases`),
                    alpha = 0.8, size = 0.2, col = "white")
-
-
 EpiNow::theme_map(
   map,
   continuous = FALSE,

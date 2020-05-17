@@ -33,6 +33,10 @@ navbar:
     - text: "Subnational"
       menu:
        - text: "Countries with subnational estimates"
+       - text: "Brazil"
+         href: posts/national/brazil/index.html
+       - text: "India"
+         href: posts/national/india/index.html
        - text: "Italy"
          href: posts/national/italy/index.html
        - text: "Germany"
