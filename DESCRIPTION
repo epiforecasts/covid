@@ -24,7 +24,9 @@ Description: To identify changes in the reproduction number, rate of spread,
              for potential biases due to delays in case reporting.
 Imports:
     EpiNow,
+    EpiSoon,
     NCoVUtils,
+    data.table,
     dplyr,
     tidyr,
     readr,
@@ -34,7 +36,6 @@ Imports:
     furrr, 
     future, 
     future.apply,
-    data.table,
     here,
     rnaturalearth,
     rnaturalearthdata,
@@ -44,12 +45,10 @@ Imports:
     distill,
     knitr,
     kableExtra,
-    fable,
-    fabletools,
-    feasts,
-    urca
+    forecastHybrid
 Remotes: 
     epiforecasts/EpiNow,
+    epiforecasts/EpiSoon,
     epiforecasts/NCoVUtils,
     ropensci/rnaturalearthhires
 License: MIT + file LICENSE

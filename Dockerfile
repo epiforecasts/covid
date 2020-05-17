@@ -9,11 +9,5 @@ RUN apt-get update -y && \
     libmagick++-dev \
     && apt-get clean
 
-## Copy files to working directory of server
-ADD . /home/rstudio/covid
-
-## Set working directory to be this folder
-WORKDIR /home/rstudio/covid
-
 ## Install missing packages
 RUN Rscript -e "devtools::install_dev_deps()"
