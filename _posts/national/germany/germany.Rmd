@@ -45,13 +45,7 @@ library(sf)
 
 ```{r}
 summary_table <- readRDS("../../../_nowcasts/covid-regional/germany/regional-summary/summary_table.rds")
-# region_codes <- readRDS("../../../_nowcasts/covid-regional/germany/data/region_codes.rds")
 latest_date <- readRDS("../../../_nowcasts/covid-regional/germany/regional-summary/latest_date.rds")
-
-# summary_table <- summary_table %>%
-#   dplyr::left_join(region_codes %>%
-#                      dplyr::mutate(region = region),
-#                    by = c("Region" = "region"))
 ```
 
 ```{r map, fig.height = 6, layout="l-body-outset", out.width = "70%"}
@@ -60,7 +54,7 @@ regions <- rnaturalearth::ne_states("Germany", returnclass = "sf")
 
 regions_with_data <- regions %>%
    dplyr::left_join(summary_table,
-                  by = c("name" = "region"))
+                  by = c("name" = "Region"))
 
 map <- ggplot2::ggplot(regions_with_data) +
   ggplot2::geom_sf(ggplot2::aes(fill = `Expected change in daily cases`),
