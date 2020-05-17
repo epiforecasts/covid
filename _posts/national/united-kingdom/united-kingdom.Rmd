@@ -92,7 +92,7 @@ report_forecast <- TRUE
 
 ### Data availability
 
-* Case counts by date, stratified by region, were downloaded from a public curated dataset [@doughty_visualisation_2020; @NCoVUtils].
+* Case counts by date, stratified by region, were downloaded from a public curated dataset [@noauthor_coronavirus_2020; @white_coronavirus_2020; @NCoVUtils].
 * Case onset dates were estimated using confirmed case counts by date of report and a distribution of reporting delays fitted to an international line-list [@kraemer2020epidemiological; @NCoVUtils].
 
 ### Limitations
