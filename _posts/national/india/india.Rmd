@@ -47,7 +47,6 @@ library(sf)
 summary_table <- readRDS("../../../_nowcasts/covid-regional/india/regional-summary/summary_table.rds")
 region_codes <- readRDS("../../../_nowcasts/covid-regional/india/data/region_codes.rds")
 latest_date <- readRDS("../../../_nowcasts/covid-regional/india/regional-summary/latest_date.rds")
-
 summary_table <- summary_table %>%
   dplyr::left_join(region_codes %>%
                      dplyr::mutate(region = region),
@@ -62,20 +61,16 @@ ladakh <- raster::getData('GADM', country='IND', level=2) %>%
                 region = "Ladakh") %>%
   dplyr::group_by(region) %>%
   dplyr::summarise()
-
 regions <- raster::getData('GADM', country='IND', level=1) %>%
   sf::st_as_sf() %>%
   dplyr::select(region = NAME_1) %>%
   rbind(ladakh)
-
 regions_with_data <- regions %>%
   dplyr::left_join(summary_table,
-                   by = c("region" = "region"))
-
+                   by = c("region" = "Region"))
 map <- ggplot2::ggplot(regions_with_data) +
   ggplot2::geom_sf(ggplot2::aes(fill = `Expected change in daily cases`),
                    alpha = 0.8, size = 0.2, col = "white")
-
 EpiNow::theme_map(
   map,
   continuous = FALSE,
