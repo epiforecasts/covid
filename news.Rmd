@@ -13,6 +13,17 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## 2020-05-17
+
+* Added regional estimates for Brazil and India
+* Approximate sampling is now adaptive. Sampling is exact when cases are below 10,000 in a region and after this point it is approximate.
+* Incubation period is now explicitly sampled from with right-truncation dealt with in the same way as for imputed onsets. 
+* Time window for the effective reproduction window is now optimised at every time point.
+* Changed to using a generation time estimate rather than a serial interval estimate (deals with the enforced positivity of the serial interval). 
+* Switched to using the `forecastHybrid` package for generating forecasts as the `fable` package was shown to have a memory leak when used at scale. 
+* Moved to using a quasipoisson model for estimating the rate of growth and the doubling time.
+* Corrected the sources for the UK and German regional data sources.
+    
 ## 2020-05-02
 
 * Switched to approximate sampling of the delay distribution.
