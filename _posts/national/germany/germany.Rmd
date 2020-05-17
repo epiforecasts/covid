@@ -45,13 +45,13 @@ library(sf)
 
 ```{r}
 summary_table <- readRDS("../../../_nowcasts/covid-regional/germany/regional-summary/summary_table.rds")
-region_codes <- readRDS("../../../_nowcasts/covid-regional/germany/data/region_codes.rds")
+# region_codes <- readRDS("../../../_nowcasts/covid-regional/germany/data/region_codes.rds")
 latest_date <- readRDS("../../../_nowcasts/covid-regional/germany/regional-summary/latest_date.rds")
 
-summary_table <- summary_table %>%
-  dplyr::left_join(region_codes %>%
-                     dplyr::mutate(region = region),
-                   by = c("Region" = "region"))
+# summary_table <- summary_table %>%
+#   dplyr::left_join(region_codes %>%
+#                      dplyr::mutate(region = region),
+#                    by = c("Region" = "region"))
 ```
 
 ```{r map, fig.height = 6, layout="l-body-outset", out.width = "70%"}
@@ -60,7 +60,7 @@ regions <- rnaturalearth::ne_states("Germany", returnclass = "sf")
 
 regions_with_data <- regions %>%
    dplyr::left_join(summary_table,
-                  by = c("iso_3166_2" = "region_code"))
+                  by = c("name" = "region"))
 
 map <- ggplot2::ggplot(regions_with_data) +
   ggplot2::geom_sf(ggplot2::aes(fill = `Expected change in daily cases`),
@@ -102,7 +102,7 @@ report_forecast <- TRUE
 
 ### Data availability
 
-* Case counts by date, stratified by region were downloaded from a publically available source [@NCoVUtils; @gehrcke_covid-19_2020].
+* Case counts by date, stratified by region were downloaded from a publically available source [@NCoVUtils; @noauthor_tabelle_2020].
 * Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to a publically available line-list of cases reported internationally [@kraemer2020epidemiological; @NCoVUtils].
 
 ### Limitations
