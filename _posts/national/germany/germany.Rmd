@@ -102,8 +102,8 @@ report_forecast <- TRUE
 
 ### Data availability
 
-* Case counts by date, stratified by region were downloaded from a publically available source [@NCoVUtils; @noauthor_tabelle_2020].
-* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to a publically available line-list of cases reported internationally [@kraemer2020epidemiological; @NCoVUtils].
+* Case counts by date, stratified by region were downloaded from a publicly available source [@NCoVUtils; @noauthor_tabelle_2020].
+* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to a publicly available line-list of cases reported internationally [@kraemer2020epidemiological; @NCoVUtils].
 
 ### Limitations
 
