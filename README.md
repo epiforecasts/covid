@@ -31,6 +31,7 @@ git submodule update --init --recursive
 Update all nowcasts and the website with the following:
 
 ```bash
+bash bin/update_nowcasts.sh
 bash bin/update_website.sh
 ```
 
