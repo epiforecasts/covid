@@ -1,82 +1,17 @@
 ---
 title: "Methods"
 description: |
-  Data sources, accounting for report delays and statistical methods.
+  Summary, introduction, data sources, accounting for delays, statistical methods,
+  summary of results and limitations.
 bibliography:: library.bib
 output:
   distill::distill_article:
     self_contained: true
-    toc: true
-    toc_depth: 2
+    toc: false
 ---
 
   ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-## Data
 
-### National data
-
-We used daily counts of confirmed cases reported by the European Centre for Disease Control for all analyses conducted at the national level[@ecdc_data; @NCoVUtils]. To estimate the delay from case onset date until notification date we used all cases from a publicly available linelist for which onset and notification dates are available[@kraemer2020epidemiological; @NCoVUtils]. Countries are only included in the reported estimates if at least 60 cases have been reported in a single day.
-
-### Subnational data sources
-
-For sub-national analyses, the source of the data is reported on each page, the data are fetched from government departments or from individuals who maintain a data source if no official data are available. Regions within countries are only reported if at least 40 cases have been reported in a single day.
-
-## Adjusting for reporting delays
-
-To estimate the reporting delay with appropriate uncertainty, we fit exponential and gamma distributions to 100 subsampled bootstraps (each with 250 samples drawn with replacement) of the delay between symptom onset and case notification, accounting for left and right censoring occurring in the data as each date is rounded to the nearest day. We fit each model in the statistical modelling program stan[@rstan] and compared to goodness-of-fit of each distribution to the data by comparing the approximate leave-one-out cross-validation information criterion (LOOIC)[@Vehtari2016].
-
-The distribution that gives the lowest LOOIC was selected as the most appropriate and 10 samples of the fitted distribution parameters were then drawn per bootstrap (giving 1000 in total). For a given country, we used sample $i$ from the posterior distribution of delay distribution parameters, $\Theta_i$, to draw a sample of delays, $d_i$, to transform each observed notification date, $c_i$, into a sample onset date, $o_i$, as follows:
-
-$o_i = c_i - d_i$,
-
-where $d_i \sim exp(\Theta_i)$ or $gamma(\Theta_i)$
-
-This resulted in 1000 date of onset samples for each confirmed case. For countries/regions with high case loads (more than 10.000 reported cases) the sampling step is approximated using the probability density function of the reporting delay. 
-
-## Adjusting for right-censoring of notification dates
-
-When moving from notification dates to onset dates it is important to consider that the total number of confirmed cases lags behind the number of cases that have onset, since there is a delay between onset occurring and the case being counted upon notification. To account for this right censoring, we used binomial upscaling to increase the estimated numbers of case onsets close to the present. After transforming the observed notification dates to onset dates and tallying case onset numbers by day, we then drew a sample of the number of case onsets that occurred but have not yet been confirmed.
-
-If $t$ is the present date, then the number of onsets on day $t-k$, $o_{t-k}$ is used to draw the number of unconfirmed onsets on day $t-k$, $o^{*}_{t-k}$ from a negative binomial distribution as follows:
-
-$o^{*}_{t-k} \sim negbin(size = o_{t-k} + 1, prob = f(t-k, \Theta_i))$
-
-where $f(t-k, \Theta_i))$ is the cumulative distribution function for the given delay distribution, it gives the proportion of onset cases from $t-k$ days ago that are expected to have been confirmed over the k days from that time until the present. The final numbers of case onsets that were used to estimate the time varying reproduction numbers for day $t$ are given by $o_t + o^{*}_{t}$. As our approach could not fully reconstruct unreported cases without bias we truncated our results and did not use estimates from the last 3 days.
-
-
-## Adjusting for the delay between onset and infection
-
-We repeated the steps outlined above for adjusting for the delay from report to symptom onset for the delay between symptom onset and infection replacing the bootstrapped report delay distribution with an incubation period distribution with a mean of 5 days [@incubationperiod]. Uncertainty from this distribution was proprogated through the model by first sampling the distributions parameters assuming they were both normally distributed.
-
-## Estimating the time-varying reproduction number
-and assuming an uncertain generation time with a mean of 3.6 days (sd: 0.7 days) and a standard deviation of 3 days (sd: 0.8 days). The generation time estimate was derived using the data and method of [@generationinterval] modified to use the incubation period from [@incubationperiod]. The optimal time-varying window for the estimates was selected by comparing estimated cases against observed cases at each time point.
-
-
-We used the *EpiEstim* R package[@EpiEstim; @R; @cori2013; @wallinga2004] to fit a model that estimated the time-varying reproduction number from the daily number of infections and an uncertain generation time with a mean of 3.6 days (sd: 0.7 days) and a standard deviation of 3 days (sd: 0.8 days). The generation time estimate was derived using the data and method of [@generationinterval] modified to use the incubation period from [@incubationperiod]. We used a gamma prior for the reproduction number with mean 2.6 and standard deviation 2. This is based on early estimates of R0 from the initial stages of the outbreak in Wuhan[@Imai:webreport3; @Abbott:2020hj] with long tails to allow for differences in the reproduction number between countries. Where data was available, we also used *EpiEstim* to adjust for imported cases[@THOMPSON2019100356].
-
-We incorporated uncertainty in the generation time distribution by providing *EpiEstim* with 1000 samples each derived using a different sample of the log mean and log standard deviation of the assumed log normal distribution. We evaluated window lengths from 1 to 7 days, running *EpiEstim* separately for each window choice. The optimal time-varying window was selected by first estimating the one day ahead number of cases implied by each time-varying reproduction number estimate[@NOUVELLET201829] and then scoring this nowcast against the observed number of cases using the RPS score [@gneiting_strictly_2007; @jordan_evaluating_2019]. For each sample the window with the lowest median RPS score was selected at each time point.
-
-The estimates of the time-varying reproduction number at each time point were combined over all 1000 samples, using the optimal window for each, to give a credible interval that incorporates uncertainty from the delay from case onset to notification, the incubation period and the generation time.
-
-## Estimated change in daily cases
-
-We defined the estimated change in daily cases to correspond to the proportion of reproduction number estimates for the current day that are below 1 (the value at which an outbreak is in decline). It was assumed that if less than 5% of samples were subcritical then an increase in cases was definite, if less than 20% of samples were subcritical then an increase in cases was likely, if more than 80% of samples were subcritical then a decrease in cases was likely and if more than 95% of samples were subcritical then a decrease in cases was definite. For countries/regions with between 20% and 80% of samples being subcritical we could not make a statement about the likely change in cases (defined as unsure).
-We estimated the rate of spread ($r$) using a quasipoisson regression model [@Park2019]. The adjusted $R^2$ value of the regression fit was then used to assess the goodness-of-fit. In order to account for potential changes in the rate of spread over the course of the outbreak we used a 7-day sliding window to produce time-varying estimates of the rate of spread and the corresponding adjusted $R^2$. The doubling time was then estimated by calculating $\text{ln}(2) \frac{1}{r}$ for each estimate of the rate of spread.
-
-## The effect of changes in testing procedure
-
-The results presented here are sensitive to changes in COVID-19 testing practices and the level of effort put into detecting COVID-19 cases. If a country expands their testing capacity and begins to report a higher proportion of cases then the model will fit a higher reproduction number value to account for this becasue it only understands new cases in terms of the infectiousness of previously reported cases and not as a result of better testing. On the other hand, if a country reduces their testing effort (for example, hitting their test capacity or running out of tests) then the model will estimate a drop in the reproduction number that may not be a true reduction. What is important for these results to be unbiased by testing is consistency in the level of testing effort rather than the actual level of testing effort. This means that whilst a change in testing effort will initially introduce bias, this will be reduced over time as long as the testing effort remains consistent from this point on.
-
-## Forecasting the time-varying reproduction number and case counts by date of infection
-
-We forecast the time-varying effective reproduction number over a 14 day time horizon using the best performing ensemble of time series models [@forecastHybrid] as assessed by iteratively fitting to a subsample of the estimated effective reproduction number estimates for each region [@episoon]. Perfomance was assessed using CPRS scores, interval scores, PIT calibration, bias and sharpness with an ensemble being preferred that minimised the CRPS score whilst being calibrated, unbiased and as sharp as possible over the full time horizon [@scoringrules; @scoringutils; @Funk2019cc]. The reproduction number forecast was then transformed into a case forecast using the renewal equation and a Poisson distribution of cases [@cori2013; @wallinga2004]. These forecasts are indicative only and should not be considered with a weight equal to the real-time estimates. Changes in contact rates, mobility, and public health interventions are not accounted for which may lead to significant inaccuracy.
-
-## Reporting
-
-We report the median and 90% highest density intervals for all measures. The analysis was conducted independently for all regions and is updated regularly as new data becomes available. Confidence in our estimates is shown using the proportion of data that were derived using binomial upscaling, confidence decreases as estimates get closer to now since there is more uncertainty in the upscaled number of cases. All results are available in the source repository in a comma-separated values file.
-
-## Code and data availability
-
-Code and results from this analysis can be found [here](https://github.com/epiforecasts/covid) and [@epinow; @episoon]. 
+```{r, child = "_paper/paper-skeleton.Rmd"}
