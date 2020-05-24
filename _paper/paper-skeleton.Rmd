@@ -96,7 +96,7 @@ We report the median and 90% highest density credible intervals for all measures
 Daily updated estimates of the time-varying reproduction number, epidemic doubling time, and rate of spread at the national level are given for more than 90 countries on our website. New countries are being added as data become available. An example plot created on the 23rd of May 2020, showing the numbers of cases by date of infection for Austria and the inferred time-varying reproduction number, is shown in Figure 1.
 
 ```{r, out.width = "90%"}
-knitr::include_graphics(here::here("_paper/figures/figure_1.png"))
+knitr::include_graphics("figures/figure_1.png")
 ```
 
 *Figure 1: Confirmed cases by date of report (bars; top) and their estimated date of infection (ribbon; top) and time-varying reproduction number (bottom) in Austria. The light and dark blue ribbons show the 90% and 50% credible interval, respectively. The estimates were generated on the 23rd May 2020. Due to the delay between being infectious and becoming a confirmed case, the estimates lag behind the present. Confidence in the estimated values is indicated by translucency with increased translucency corresponding to increased uncertainty deriving from right-truncation of reported cases in the estimate. The forecast (red) is coloured differently from the nowcast (blue) to indicate the drop in reliability when trying to forecast future cases.*
@@ -105,7 +105,7 @@ Sub-national breakdowns can highlight differences in how the outbreak is progres
 
 
 ```{r, out.width = "90%"}
-knitr::include_graphics(here::here("_paper/figures/figure_2.png"))
+knitr::include_graphics("figures/figure_2.png")
 ```
 
 *Figure 2: Estimates of numbers of cases that will be newly infected on the date the estimate was made and that will end up being reported (top panel), and the time-varying reproduction number (bottom panel) across different regions of the United Kingdom. Estimates were produced on 23rd of May 2020. Regions with fewer than 40 confirmed cases reported on a single day are not included in the analysis.*
@@ -113,7 +113,7 @@ knitr::include_graphics(here::here("_paper/figures/figure_2.png"))
 We present the nowcasting results on a map to effectively visualise regional differences in transmission (Figure 3). This helps identify areas where intervention policies are more effective at reducing transmission than others, which can inform decision-making going forwards. 
 
 ```{r, out.width = "90%"}
-knitr::include_graphics(here::here("_paper/figures/figure_3.png"))
+knitr::include_graphics("figures/figure_3.png")
 ```
 
 *Figure 3: A map of the estimates of the expected change in daily cases at the state level for the United States of America. Estimates were produced on 23rd of May 2020. Regions with fewer than 40 confirmed cases reported on a single day are not included in the analysis (light grey).*
