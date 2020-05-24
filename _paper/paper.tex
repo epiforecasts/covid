@@ -225,10 +225,10 @@ with 250 samples drawn with replacement) of the delay between symptom
 onset and case notification, accounting for left and right censoring
 occurring in the data as each date is rounded to the nearest day and
 truncated to the maximum observed delay. We fit each model in the
-statistical modelling program stan{[}15{]} and compared to
+statistical modelling program stan {[}15{]} and compared to
 goodness-of-fit of each distribution to the data by comparing the
-approximate leave-one-out cross-validation information criterion
-(LOOIC){[}16{]}.
+approximate leave-one-out cross-validation information criterion (LOOIC)
+{[}16{]}.
 
 The distribution that gave the lowest LOOIC was selected as the most
 appropriate and 10 samples of the fitted distribution parameters were
@@ -296,7 +296,7 @@ distributed.
 \subsection{Estimating the time-varying reproduction
 number}\label{estimating-the-time-varying-reproduction-number}}
 
-We used the \emph{EpiEstim} R package{[}6,10,18,19{]} to fit a model
+We used the \emph{EpiEstim} R package {[}6,10,18,19{]} to fit a model
 that estimated the time-varying reproduction number from the daily
 number of infections and an uncertain generation time with a mean of 3.6
 days (sd: 0.7 days) and a standard deviation of 3 days (sd: 0.8 days).
@@ -310,9 +310,9 @@ to the case reproduction number - see Fraser (2007) {[}8{]} for a full
 discussion). We used a gamma prior for the reproduction number with mean
 2.6 and standard deviation 2. This is based on early estimates for the
 basic reproduction number (\(R_0\)) from the initial stages of the
-outbreak in Wuhan{[}21,22{]} with long tails to allow for differences in
-the reproduction number between countries. Our approach can also be used
-to account for imported cases where data is available {[}7{]}.
+outbreak in Wuhan {[}21,22{]} with long tails to allow for differences
+in the reproduction number between countries. Our approach can also be
+used to account for imported cases where data is available {[}7{]}.
 
 We incorporated uncertainty in the generation time distribution by
 providing \emph{EpiEstim} with 1000 samples each derived using a
@@ -466,9 +466,10 @@ except Northern Ireland where the estimate was classified as unsure.
 \emph{Figure 2: Estimates of numbers of cases that will be newly
 infected on the date the estimate was made and that will end up being
 reported (top panel), and the time-varying reproduction number (bottom
-panel) across different regions of the United Kingdom. Estimates were
-produced on 23rd of May 2020. Regions with fewer than 40 confirmed cases
-reported on a single day are not included in the analysis.}
+panel) across different nations/regions of the United Kingdom. Estimates
+were produced on 23rd of May 2020. Nations/regions with fewer than 40
+confirmed cases reported on a single day are not included in the
+analysis.}
 
 We present the nowcasting results on a map to effectively visualise
 regional differences in transmission (Figure 3). This helps identify
@@ -489,7 +490,10 @@ to produce estimates of the time-varying reproduction number at the
 state level in Australia, an example of how researchers and policymakers
 can apply the methods to their own data {[}32{]}. This has an added
 benefit of researchers being able to use generation time and delay
-distributions derived from local data and not our global estimates.
+distributions derived from local data and not our global estimates. The
+authors also use this tooling with confidential hospital admissions data
+to generate estimates of the time-varying reproduction number for
+policymakers in the United Kingdom.
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
@@ -506,7 +510,10 @@ to track the progression of the COVID-19 outbreak and evaluate the
 effectiveness of intervention measures. As new data become available, we
 will include sub-national estimates for additional countries, and
 provide additional support for public health agencies or researchers
-interested in applying our methods to their data.
+interested in applying our methods to their data. We routinely utilise
+our own tooling to provide estimates of the reproduction number in the
+United Kingdom for policymakers using confidential hospital admissions
+data.
 
 There are several advantages associated with our approach. Firstly,
 reported case counts are the only data required, which allows our
