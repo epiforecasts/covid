@@ -18,3 +18,8 @@ cd ../..
 cd _nowcasts/covid-regional
 bash update_nowcasts.sh
 cd ../..
+
+## Update regional breakdowns 2
+cd _nowcasts/covid-regional-2
+bash update_nowcasts.sh
+cd ../..

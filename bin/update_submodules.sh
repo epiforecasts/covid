@@ -15,3 +15,10 @@ cd ../covid-regional
 git add --all
 git commit -m "Updated nowcasts"
 git push origin HEAD:master
+
+cd ../covid-regional-2
+
+## Update master with then new results
+git add --all
+git commit -m "Updated nowcasts"
+git push origin HEAD:master
