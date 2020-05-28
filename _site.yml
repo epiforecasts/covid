@@ -33,14 +33,20 @@ navbar:
     - text: "Subnational"
       menu:
        - text: "Countries with subnational estimates"
+       - text: "Afghanistan"
+         href: posts/national/afghanistan/index.html
        - text: "Brazil"
          href: posts/national/brazil/index.html
+       - text: "Colombia"
+         href: posts/national/colombia/index.html
        - text: "India"
          href: posts/national/india/index.html
        - text: "Italy"
          href: posts/national/italy/index.html
        - text: "Germany"
          href: posts/national/germany/index.html
+       - text: "Russia"
+         href: posts/national/russia/index.html
        - text: "United Kingdom"
          href: posts/national/united-kingdom/index.html
        - text: "United States of America"
