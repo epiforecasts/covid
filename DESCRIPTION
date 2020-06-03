@@ -46,11 +46,9 @@ Imports:
     knitr,
     kableExtra,
     forecastHybrid
-Remotes: 
-    epiforecasts/EpiNow,
-    epiforecasts/EpiSoon,
-    epiforecasts/NCoVUtils,
-    ropensci/rnaturalearthhires
+Additional_repositories: 
+  https://epiforecasts.io/drat/,
+  http://packages.ropensci.org/
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
