@@ -9,5 +9,8 @@ RUN apt-get update -y && \
     libmagick++-dev \
     && apt-get clean
 
+## Copy files to working directory of server
+ADD DESCRIPTION /home/rstudio/
+
 ## Install missing packages
 RUN Rscript -e "devtools::install_dev_deps()"
