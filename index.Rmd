@@ -19,6 +19,7 @@ To identify changes in the reproduction number, rate of spread, and doubling tim
 * Time-varying estimates of the doubling time were made with a 7-day sliding window by iteratively fitting an exponential regression model.
 * We forecast the time-varying effective reproduction number over a 14 day time horizon using the best performing ensemble of time series models [@forecastHybrid] as assessed by iteratively fitting to a subsample of the estimated effective reproduction number estimates for each region [@episoon]. Perfomance was assessed using CPRS scores, interval scores, PIT calibration, bias and sharpness with an ensemble being preferred that minimised the CRPS score whilst being calibrated, unbiased and as sharp as possible over the full time horizon [@scoringrules; @scoringutils; @Funk2019cc]. 
 * The reproduction number forecast was then transformed into a case forecast using the renewal equation and a Poisson distribution of cases [@cori2013; @wallinga2004]. 
+* Our methods are outlined in this [preprint](https://wellcomeopenresearch.org/articles/5-112/v1).
 
 ## Limitations
 
@@ -30,3 +31,4 @@ To identify changes in the reproduction number, rate of spread, and doubling tim
 * Countries are only included in the reported estimates if at least 60 confirmed cases have been reported in a single day. Regions within countries are only reported if at least 40 confirmed cases have been reported in a single day.
 * Our forecasts are indicative only and should not be considered with a weight equal to our real-time estimates. Changes in contact rates, mobility, and public health interventions are not accounted for which may lead to significant inaccuracy. 
 * Forecasts are only shown for countries/regions that have reported at least 200 cases in the last 7 days.
+* Our sampling approach to backcalculation may lead to oversmoothing of true infections. This is an area of [active research](https://github.com/epiforecasts/backcalc) (and one where we welcome collaboration from other researchers).

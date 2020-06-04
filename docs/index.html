@@ -1377,6 +1377,7 @@ Details
 <li>Time-varying estimates of the doubling time were made with a 7-day sliding window by iteratively fitting an exponential regression model.</li>
 <li>We forecast the time-varying effective reproduction number over a 14 day time horizon using the best performing ensemble of time series models <span class="citation" data-cites="forecastHybrid">(Shaub and Ellis <a href="#ref-forecastHybrid">2020</a>)</span> as assessed by iteratively fitting to a subsample of the estimated effective reproduction number estimates for each region <span class="citation" data-cites="episoon">(Abbott, Hellewell, Bosse, et al. <a href="#ref-episoon">2020</a>)</span>. Perfomance was assessed using CPRS scores, interval scores, PIT calibration, bias and sharpness with an ensemble being preferred that minimised the CRPS score whilst being calibrated, unbiased and as sharp as possible over the full time horizon <span class="citation" data-cites="scoringrules scoringutils Funk2019cc">(Jordan, Kruger, and Lerch <a href="#ref-scoringrules">2019</a>; Bosse <a href="#ref-scoringutils">2020</a>; Funk et al. <a href="#ref-Funk2019cc">2019</a>)</span>.</li>
 <li>The reproduction number forecast was then transformed into a case forecast using the renewal equation and a Poisson distribution of cases <span class="citation" data-cites="cori2013 wallinga2004">(Cori et al. <a href="#ref-cori2013">2013</a>; Wallinga and Teunis <a href="#ref-wallinga2004">2004</a>)</span>.</li>
+<li>Our methods are outlined in this <a href="https://wellcomeopenresearch.org/articles/5-112/v1">preprint</a>.</li>
 </ul>
 <h2 id="limitations">Limitations</h2>
 <ul>
@@ -1388,6 +1389,7 @@ Details
 <li>Countries are only included in the reported estimates if at least 60 confirmed cases have been reported in a single day. Regions within countries are only reported if at least 40 confirmed cases have been reported in a single day.</li>
 <li>Our forecasts are indicative only and should not be considered with a weight equal to our real-time estimates. Changes in contact rates, mobility, and public health interventions are not accounted for which may lead to significant inaccuracy.</li>
 <li>Forecasts are only shown for countries/regions that have reported at least 200 cases in the last 7 days.</li>
+<li>Our sampling approach to backcalculation may lead to oversmoothing of true infections. This is an area of <a href="https://github.com/epiforecasts/backcalc">active research</a> (and one where we welcome collaboration from other researchers).</li>
 </ul>
 <div id="refs" class="references">
 <div id="ref-episoon">
