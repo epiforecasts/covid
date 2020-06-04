@@ -26,6 +26,7 @@ Imports:
     EpiNow,
     EpiSoon,
     NCoVUtils,
+    distill,
     data.table,
     dplyr,
     tidyr,
