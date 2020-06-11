@@ -25,7 +25,7 @@ Description: To identify changes in the reproduction number, rate of spread,
 Imports:
     EpiNow,
     EpiSoon,
-    NCoVUtils,
+    covidregionaldata,
     distill,
     data.table,
     dplyr,
