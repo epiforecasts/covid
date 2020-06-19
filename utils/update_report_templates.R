@@ -10,8 +10,6 @@ require(rnaturalearth)
 
 # Countries from nowcast folders ------------------------------------------
 
-
-
 countries <- tibble::tibble(country = list.dirs("_nowcasts/covid-global/national", recursive = FALSE) %>%
                               stringr::str_remove("_nowcasts/covid-global/national/")) %>%
   dplyr::mutate(file_name = country %>%
@@ -27,9 +25,15 @@ countries <- tibble::tibble(country = list.dirs("_nowcasts/covid-global/national
 world <- rnaturalearth::ne_countries(scale='medium',
                                      returnclass = 'sf')
 
+world <- world %>% 
+  dplyr::mutate(iso_a3 = ifelse(is.na(iso_a3), 
+                                iso_a3_eh, iso_a3)) %>% 
+  dplyr::mutate(iso_a3 = ifelse(is.na(iso_a3), 
+                                sov_a3, iso_a3))
+  
+
 
 # Link countries with regions ---------------------------------------------
-
 
 countries <- countries %>%
   dplyr::left_join(world,
