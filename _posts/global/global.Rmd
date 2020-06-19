@@ -8,6 +8,8 @@ output:
     self_contained: true
     toc: true
     toc_depth: 2
+categories:
+  - "Global summary"
 ---
 
 ```{r setup, include = FALSE}
