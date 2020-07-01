@@ -7,15 +7,25 @@
     <description>Temporal variation in transmission during the COVID-19 outbreak
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Sun, 28 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2020 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Global summary</title>
       <link>https://epiforecasts.io/covid/posts/global</link>
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Global summary</category>
       <guid>https://epiforecasts.io/covid/posts/global</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/global/distill-preview.png" medium="image" type="image/png" width="9600" height="4800"/>
+    </item>
+    <item>
+      <title>National and Subnational estimates for Afghanistan</title>
+      <link>https://epiforecasts.io/covid/posts/national/afghanistan</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Afghanistan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
+      <category>Subnational estimates</category>
+      <category>Asia</category>
+      <guid>https://epiforecasts.io/covid/posts/national/afghanistan</guid>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/afghanistan/distill-preview.png" medium="image" type="image/png" width="9600" height="6400"/>
     </item>
     <item>
       <title>Estimates for Albania</title>
@@ -23,7 +33,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Albania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/albania</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/albania/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -32,7 +42,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Algeria. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/algeria</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/algeria/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -41,7 +51,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Andorra. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/andorra</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/andorra/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -50,7 +60,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Argentina. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/argentina</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/argentina/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -59,7 +69,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Armenia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/armenia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/armenia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -68,7 +78,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Australia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Oceania</category>
       <guid>https://epiforecasts.io/covid/posts/national/australia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/australia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -77,7 +87,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Austria. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/austria</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/austria/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -86,7 +96,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Azerbaijan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/azerbaijan</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/azerbaijan/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -95,7 +105,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bahrain. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/bahrain</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/bahrain/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -104,7 +114,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bangladesh. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/bangladesh</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/bangladesh/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -113,7 +123,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Belarus. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/belarus</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/belarus/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -122,7 +132,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Belgium. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/belgium</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/belgium/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -131,7 +141,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Benin. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/benin</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/benin/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -140,7 +150,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bolivia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/bolivia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/bolivia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -149,7 +159,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bosnia and Herzegovina. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/bosnia-and-herzegovina</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/bosnia-and-herzegovina/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -159,7 +169,7 @@
       <category>Subnational estimates</category>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/brazil</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/brazil/distill-preview.png" medium="image" type="image/png" width="9600" height="4800"/>
     </item>
     <item>
@@ -168,7 +178,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bulgaria. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/bulgaria</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/bulgaria/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -177,7 +187,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Cameroon. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/cameroon</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/cameroon/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -186,8 +196,17 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Canada. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/canada</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/canada/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Cape Verde</title>
+      <link>https://epiforecasts.io/covid/posts/national/cape-verde</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Cape Verde. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
+      <category>Africa</category>
+      <guid>https://epiforecasts.io/covid/posts/national/cape-verde</guid>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/cape-verde/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
       <title>Estimates for Central African Republic</title>
@@ -195,7 +214,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Central African Republic. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/central-african-republic</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/central-african-republic/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -204,7 +223,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Chad. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/chad</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/chad/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -213,7 +232,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Chile. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/chile</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/chile/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -222,8 +241,18 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in China. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/china</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/china/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>National and Subnational estimates for Colombia</title>
+      <link>https://epiforecasts.io/covid/posts/national/colombia</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Colombia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
+      <category>Subnational estimates</category>
+      <category>Americas</category>
+      <guid>https://epiforecasts.io/covid/posts/national/colombia</guid>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/colombia/distill-preview.png" medium="image" type="image/png" width="9600" height="6400"/>
     </item>
     <item>
       <title>Estimates for Congo</title>
@@ -231,7 +260,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Congo. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/congo</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/congo/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -240,7 +269,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Costa Rica. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/costa-rica</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/costa-rica/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -249,7 +278,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Cote dIvoire. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/cote-divoire</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/cote-divoire/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -258,7 +287,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Croatia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/croatia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/croatia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -267,7 +296,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Cuba. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/cuba</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/cuba/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -276,7 +305,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Czechia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/czechia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/czechia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -285,7 +314,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Democratic Republic of the Congo. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/democratic-republic-of-the-congo</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/democratic-republic-of-the-congo/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -294,7 +323,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Denmark. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/denmark</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/denmark/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -303,7 +332,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Djibouti. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/djibouti</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/djibouti/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -312,7 +341,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Dominican Republic. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/dominican-republic</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/dominican-republic/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -321,7 +350,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ecuador. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/ecuador</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/ecuador/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -330,7 +359,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Egypt. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/egypt</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/egypt/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -339,7 +368,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in El Salvador. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/el-salvador</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/el-salvador/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -348,7 +377,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Equatorial Guinea. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/equatorial-guinea</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/equatorial-guinea/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -357,7 +386,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Estonia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/estonia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/estonia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -366,7 +395,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ethiopia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/ethiopia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/ethiopia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -375,7 +404,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Finland. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/finland</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/finland/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -384,7 +413,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in France. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/france</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/france/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -393,7 +422,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Gabon. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/gabon</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/gabon/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -403,7 +432,7 @@
       <category>Subnational estimates</category>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/germany</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/germany/distill-preview.png" medium="image" type="image/png" width="9600" height="4800"/>
     </item>
     <item>
@@ -412,7 +441,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ghana. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/ghana</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/ghana/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -421,7 +450,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Greece. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/greece</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/greece/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -430,7 +459,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Guatemala. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/guatemala</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/guatemala/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -439,7 +468,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Guinea Bissau. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/guinea-bissau</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/guinea-bissau/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -448,7 +477,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Guinea. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/guinea</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/guinea/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -457,7 +486,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Haiti. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/haiti</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/haiti/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -466,7 +495,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Honduras. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/honduras</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/honduras/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -475,7 +504,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Hungary. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/hungary</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/hungary/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -484,7 +513,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Iceland. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/iceland</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/iceland/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -494,7 +523,7 @@
       <category>Subnational estimates</category>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/india</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/india/distill-preview.png" medium="image" type="image/png" width="9600" height="4800"/>
     </item>
     <item>
@@ -503,7 +532,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Indonesia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/indonesia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/indonesia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -512,7 +541,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Iran. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/iran</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/iran/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -521,7 +550,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Iraq. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/iraq</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/iraq/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -530,7 +559,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ireland. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/ireland</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/ireland/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -539,7 +568,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Israel. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/israel</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/israel/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -549,7 +578,7 @@
       <category>Subnational estimates</category>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/italy</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/italy/distill-preview.png" medium="image" type="image/png" width="4800" height="4800"/>
     </item>
     <item>
@@ -558,7 +587,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Japan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/japan</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/japan/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -567,7 +596,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kazakhstan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/kazakhstan</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/kazakhstan/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -576,7 +605,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kenya. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/kenya</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/kenya/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -585,7 +614,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kosovo. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/kosovo</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/kosovo/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -594,7 +623,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kuwait. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/kuwait</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/kuwait/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -603,7 +632,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kyrgyzstan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/kyrgyzstan</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/kyrgyzstan/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -612,7 +641,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Latvia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/latvia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/latvia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -621,7 +650,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Lebanon. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/lebanon</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/lebanon/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -630,7 +659,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Libya. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/libya</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/libya/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -639,7 +668,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Lithuania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/lithuania</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/lithuania/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -648,7 +677,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Luxembourg. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/luxembourg</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/luxembourg/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -657,7 +686,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Madagascar. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/madagascar</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/madagascar/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -666,7 +695,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Malawi. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/malawi</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/malawi/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -675,7 +704,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Malaysia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/malaysia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/malaysia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -684,7 +713,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Maldives. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/maldives</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/maldives/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -693,7 +722,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Mali. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/mali</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/mali/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -702,7 +731,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Mauritania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/mauritania</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/mauritania/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -711,7 +740,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Mexico. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/mexico</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/mexico/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -720,7 +749,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Moldova. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/moldova</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/moldova/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -729,7 +758,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Mongolia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/mongolia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/mongolia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -738,7 +767,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Morocco. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/morocco</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/morocco/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -747,7 +776,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Nepal. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/nepal</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/nepal/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -756,7 +785,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Netherlands. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/netherlands</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/netherlands/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -765,7 +794,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in New Zealand. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Oceania</category>
       <guid>https://epiforecasts.io/covid/posts/national/new-zealand</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/new-zealand/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -774,7 +803,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Niger. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/niger</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/niger/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -783,7 +812,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Nigeria. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/nigeria</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/nigeria/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -792,7 +821,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in North Macedonia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/north-macedonia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/north-macedonia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -801,7 +830,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Norway. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/norway</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/norway/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -810,7 +839,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Oman. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/oman</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/oman/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -819,7 +848,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Pakistan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/pakistan</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/pakistan/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -828,7 +857,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Palestine. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/palestine</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/palestine/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -837,7 +866,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Panama. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/panama</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/panama/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -846,7 +875,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Paraguay. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/paraguay</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/paraguay/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -855,7 +884,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Peru. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/peru</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/peru/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -864,7 +893,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Philippines. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/philippines</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/philippines/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -873,7 +902,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Poland. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/poland</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/poland/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -882,7 +911,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Portugal. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/portugal</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/portugal/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -891,7 +920,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Puerto Rico. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/puerto-rico</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/puerto-rico/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -900,7 +929,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Qatar. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/qatar</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/qatar/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -909,8 +938,27 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Romania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/romania</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/romania/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>National and Subnational estimates for Russia</title>
+      <link>https://epiforecasts.io/covid/posts/national/russia</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Russia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
+      <category>Subnational estimates</category>
+      <category>Europe</category>
+      <guid>https://epiforecasts.io/covid/posts/national/russia</guid>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/russia/distill-preview.png" medium="image" type="image/png" width="9600" height="6400"/>
+    </item>
+    <item>
+      <title>Estimates for Rwanda</title>
+      <link>https://epiforecasts.io/covid/posts/national/rwanda</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Rwanda. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
+      <category>Africa</category>
+      <guid>https://epiforecasts.io/covid/posts/national/rwanda</guid>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/rwanda/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
       <title>Estimates for Saudi Arabia</title>
@@ -918,7 +966,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Saudi Arabia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/saudi-arabia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/saudi-arabia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -927,7 +975,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Senegal. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/senegal</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/senegal/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -936,7 +984,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Serbia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/serbia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/serbia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -945,7 +993,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Sierra Leone. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/sierra-leone</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/sierra-leone/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -954,7 +1002,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Singapore. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/singapore</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/singapore/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -963,7 +1011,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Slovakia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/slovakia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/slovakia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -972,7 +1020,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Somalia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/somalia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/somalia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -981,7 +1029,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in South Africa. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/south-africa</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/south-africa/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -990,7 +1038,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in South Korea. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/south-korea</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/south-korea/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -999,7 +1047,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in South Sudan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/south-sudan</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/south-sudan/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -1008,7 +1056,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Spain. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/spain</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/spain/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -1017,7 +1065,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Sri Lanka. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/sri-lanka</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/sri-lanka/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -1026,8 +1074,17 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Sudan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/sudan</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/sudan/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Suriname</title>
+      <link>https://epiforecasts.io/covid/posts/national/suriname</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Suriname. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
+      <category>Americas</category>
+      <guid>https://epiforecasts.io/covid/posts/national/suriname</guid>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/suriname/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
       <title>Estimates for Sweden</title>
@@ -1035,7 +1092,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Sweden. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/sweden</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/sweden/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -1044,7 +1101,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Switzerland. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/switzerland</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/switzerland/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -1053,7 +1110,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Tajikistan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/tajikistan</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/tajikistan/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -1062,7 +1119,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Thailand. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/thailand</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/thailand/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -1071,7 +1128,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Tunisia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/tunisia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/tunisia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -1080,7 +1137,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Turkey. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/turkey</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/turkey/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -1089,7 +1146,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Uganda. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/uganda</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/uganda/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -1098,7 +1155,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ukraine. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/ukraine</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/ukraine/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -1107,7 +1164,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in United Arab Emirates. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/united-arab-emirates</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/united-arab-emirates/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -1117,7 +1174,7 @@
       <category>Subnational estimates</category>
       <category>Europe</category>
       <guid>https://epiforecasts.io/covid/posts/national/united-kingdom</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/united-kingdom/distill-preview.png" medium="image" type="image/png" width="9600" height="6400"/>
     </item>
     <item>
@@ -1126,7 +1183,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in United Republic of Tanzania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/united-republic-of-tanzania</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/united-republic-of-tanzania/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -1136,7 +1193,7 @@
       <category>Subnational estimates</category>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/united-states</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/united-states/distill-preview.png" medium="image" type="image/png" width="9600" height="4800"/>
     </item>
     <item>
@@ -1145,7 +1202,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Uzbekistan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/uzbekistan</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/uzbekistan/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -1154,8 +1211,17 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Venezuela. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Americas</category>
       <guid>https://epiforecasts.io/covid/posts/national/venezuela</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/venezuela/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
+    </item>
+    <item>
+      <title>Estimates for Western Sahara</title>
+      <link>https://epiforecasts.io/covid/posts/national/western-sahara</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Western Sahara. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
+      <category>Africa</category>
+      <guid>https://epiforecasts.io/covid/posts/national/western-sahara</guid>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/western-sahara/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
       <title>Estimates for Yemen</title>
@@ -1163,7 +1229,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Yemen. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Asia</category>
       <guid>https://epiforecasts.io/covid/posts/national/yemen</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/yemen/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -1172,7 +1238,7 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Zambia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/zambia</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/zambia/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
     </item>
     <item>
@@ -1181,38 +1247,8 @@
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Zimbabwe. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
       <category>Africa</category>
       <guid>https://epiforecasts.io/covid/posts/national/zimbabwe</guid>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/zimbabwe/distill-preview.png" medium="image" type="image/png" width="3840" height="2560"/>
-    </item>
-    <item>
-      <title>National and Subnational estimates for Afghanistan</title>
-      <link>https://epiforecasts.io/covid/posts/national/afghanistan</link>
-      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Afghanistan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
-      <category>Subnational estimates</category>
-      <category>Asia</category>
-      <guid>https://epiforecasts.io/covid/posts/national/afghanistan</guid>
-      <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
-      <media:content url="https://epiforecasts.io/covid/posts/national/afghanistan/distill-preview.png" medium="image" type="image/png" width="9600" height="6400"/>
-    </item>
-    <item>
-      <title>National and Subnational estimates for Colombia</title>
-      <link>https://epiforecasts.io/covid/posts/national/colombia</link>
-      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Colombia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
-      <category>Subnational estimates</category>
-      <category>Americas</category>
-      <guid>https://epiforecasts.io/covid/posts/national/colombia</guid>
-      <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
-      <media:content url="https://epiforecasts.io/covid/posts/national/colombia/distill-preview.png" medium="image" type="image/png" width="9600" height="6400"/>
-    </item>
-    <item>
-      <title>National and Subnational estimates for Russia</title>
-      <link>https://epiforecasts.io/covid/posts/national/russia</link>
-      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Russia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
-      <category>Subnational estimates</category>
-      <category>Europe</category>
-      <guid>https://epiforecasts.io/covid/posts/national/russia</guid>
-      <pubDate>Mon, 22 Jun 2020 00:00:00 +0000</pubDate>
-      <media:content url="https://epiforecasts.io/covid/posts/national/russia/distill-preview.png" medium="image" type="image/png" width="9600" height="6400"/>
     </item>
   </channel>
 </rss>
