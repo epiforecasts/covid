@@ -25,14 +25,6 @@ countries <- tibble::tibble(country = list.dirs("_nowcasts/covid-global/national
 world <- rnaturalearth::ne_countries(scale='medium',
                                      returnclass = 'sf')
 
-world <- world %>% 
-  dplyr::mutate(iso_a3 = ifelse(is.na(iso_a3), 
-                                iso_a3_eh, iso_a3)) %>% 
-  dplyr::mutate(iso_a3 = ifelse(is.na(iso_a3), 
-                                sov_a3, iso_a3))
-  
-
-
 # Link countries with regions ---------------------------------------------
 
 countries <- countries %>%
@@ -47,7 +39,6 @@ countries <- countries %>%
   dplyr::mutate(region = region %>% 
                   ifelse(country %in% "Kosovo", "Europe", .)) %>% 
   unique()
-
 
 
 # Remove countries with regional breakdowns -------------------------------
