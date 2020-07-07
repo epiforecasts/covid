@@ -12,5 +12,8 @@ RUN apt-get update -y && \
 ## Copy files to working directory of server
 ADD DESCRIPTION /home/rstudio/
 
+## set work location ready for running the rscript from within the home directory (where the DESCRIPTION file resides)
+WORKDIR /home/rstudio
+
 ## Install missing packages
 RUN Rscript -e "devtools::install_dev_deps()"
