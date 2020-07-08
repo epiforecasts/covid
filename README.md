@@ -47,8 +47,7 @@ To build the docker image run (from the `covid` directory):
 docker build . -t covid
 ```
 
-Note that this command fails on a vm with only 4gb of ram. Minimum spec has not yet been established but is higher than this!
-For a faster build copy Dockerfile and DESCRIPTION to an empty directory and run the above command there.
+Note that the build command fails on a vm with only 4gb of ram. Minimum spec has not yet been established but is higher than this!
 
 To run the docker image run:
 
