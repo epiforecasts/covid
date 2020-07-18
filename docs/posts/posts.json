@@ -1,30 +1,17 @@
 [
   {
-    "path": "posts/global/",
-    "title": "Global summary",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Global summary"
-    ],
-    "preview": "posts/global/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:19+00:00",
-    "preview_width": 9600,
-    "preview_height": 4800
-  },
-  {
     "path": "posts/national/afghanistan/",
     "title": "National and Subnational estimates for Afghanistan",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Afghanistan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
     "author": [],
-    "date": "2020-07-07",
+    "date": "2020-07-18",
     "categories": [
       "Subnational estimates",
       "Asia"
     ],
     "preview": "posts/national/afghanistan/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:49+00:00",
+    "last_modified": "2020-07-18T08:53:35+00:00",
+    "input_file": "afghanistan.utf8.md",
     "preview_width": 9600,
     "preview_height": 6400
   },
@@ -33,14 +20,1402 @@
     "title": "Estimates for Albania",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Albania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
     "author": [],
-    "date": "2020-07-07",
+    "date": "2020-07-18",
     "categories": [
       "Europe"
     ],
     "preview": "posts/national/albania/distill-preview.png",
-    "last_modified": "2020-07-07T23:04:01+00:00",
+    "last_modified": "2020-07-18T08:52:53+00:00",
+    "input_file": "albania.utf8.md",
     "preview_width": 3840,
     "preview_height": 2560
+  },
+  {
+    "path": "posts/national/andorra/",
+    "title": "Estimates for Andorra",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Andorra. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/andorra/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:53+00:00",
+    "input_file": "andorra.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/australia/",
+    "title": "Estimates for Australia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Australia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Oceania"
+    ],
+    "preview": "posts/national/australia/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:54+00:00",
+    "input_file": "australia.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/azerbaijan/",
+    "title": "Estimates for Azerbaijan",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Azerbaijan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/azerbaijan/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:54+00:00",
+    "input_file": "azerbaijan.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/bangladesh/",
+    "title": "Estimates for Bangladesh",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bangladesh. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/bangladesh/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:54+00:00",
+    "input_file": "bangladesh.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/botswana/",
+    "title": "Estimates for Botswana",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Botswana. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/botswana/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:55+00:00",
+    "input_file": "botswana.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/bolivia/",
+    "title": "Estimates for Bolivia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bolivia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Americas"
+    ],
+    "preview": "posts/national/bolivia/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:54+00:00",
+    "input_file": "bolivia.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/belgium/",
+    "title": "Estimates for Belgium",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Belgium. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/belgium/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:55+00:00",
+    "input_file": "belgium.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/canada/",
+    "title": "Estimates for Canada",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Canada. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Americas"
+    ],
+    "preview": "posts/national/canada/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:55+00:00",
+    "input_file": "canada.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/bulgaria/",
+    "title": "Estimates for Bulgaria",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bulgaria. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/bulgaria/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:55+00:00",
+    "input_file": "bulgaria.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/chile/",
+    "title": "Estimates for Chile",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Chile. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Americas"
+    ],
+    "preview": "posts/national/chile/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:56+00:00",
+    "input_file": "chile.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/costa-rica/",
+    "title": "Estimates for Costa Rica",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Costa Rica. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Americas"
+    ],
+    "preview": "posts/national/costa-rica/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:56+00:00",
+    "input_file": "costa-rica.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/croatia/",
+    "title": "Estimates for Croatia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Croatia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/croatia/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:56+00:00",
+    "input_file": "croatia.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/czechia/",
+    "title": "Estimates for Czechia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Czechia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/czechia/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:56+00:00",
+    "input_file": "czechia.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/central-african-republic/",
+    "title": "Estimates for Central African Republic",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Central African Republic. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/central-african-republic/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:56+00:00",
+    "input_file": "central-african-republic.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/dominican-republic/",
+    "title": "Estimates for Dominican Republic",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Dominican Republic. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Americas"
+    ],
+    "preview": "posts/national/dominican-republic/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:57+00:00",
+    "input_file": "dominican-republic.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/gabon/",
+    "title": "Estimates for Gabon",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Gabon. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/gabon/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:57+00:00",
+    "input_file": "gabon.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/egypt/",
+    "title": "Estimates for Egypt",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Egypt. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/egypt/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:57+00:00",
+    "input_file": "egypt.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/guinea-bissau/",
+    "title": "Estimates for Guinea Bissau",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Guinea Bissau. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/guinea-bissau/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:58+00:00",
+    "input_file": "guinea-bissau.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/ghana/",
+    "title": "Estimates for Ghana",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ghana. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/ghana/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:58+00:00",
+    "input_file": "ghana.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/eswatini/",
+    "title": "Estimates for Eswatini",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Eswatini. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/eswatini/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:58+00:00",
+    "input_file": "eswatini.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/angola/",
+    "title": "Estimates for Angola",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Angola. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/angola/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:59+00:00",
+    "input_file": "angola.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/armenia/",
+    "title": "Estimates for Armenia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Armenia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/armenia/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:59+00:00",
+    "input_file": "armenia.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/austria/",
+    "title": "Estimates for Austria",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Austria. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/austria/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:59+00:00",
+    "input_file": "austria.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/indonesia/",
+    "title": "Estimates for Indonesia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Indonesia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/indonesia/distill-preview.png",
+    "last_modified": "2020-07-18T08:52:59+00:00",
+    "input_file": "indonesia.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/bosnia-and-herzegovina/",
+    "title": "Estimates for Bosnia and Herzegovina",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bosnia and Herzegovina. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/bosnia-and-herzegovina/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:00+00:00",
+    "input_file": "bosnia-and-herzegovina.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/benin/",
+    "title": "Estimates for Benin",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Benin. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/benin/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:00+00:00",
+    "input_file": "benin.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/japan/",
+    "title": "Estimates for Japan",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Japan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/japan/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:00+00:00",
+    "input_file": "japan.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/libya/",
+    "title": "Estimates for Libya",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Libya. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/libya/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:01+00:00",
+    "input_file": "libya.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/israel/",
+    "title": "Estimates for Israel",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Israel. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/israel/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:00+00:00",
+    "input_file": "israel.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/cameroon/",
+    "title": "Estimates for Cameroon",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Cameroon. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/cameroon/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:01+00:00",
+    "input_file": "cameroon.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/kuwait/",
+    "title": "Estimates for Kuwait",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kuwait. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/kuwait/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:01+00:00",
+    "input_file": "kuwait.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/luxembourg/",
+    "title": "Estimates for Luxembourg",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Luxembourg. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/luxembourg/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:01+00:00",
+    "input_file": "luxembourg.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/latvia/",
+    "title": "Estimates for Latvia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Latvia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/latvia/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:01+00:00",
+    "input_file": "latvia.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/cuba/",
+    "title": "Estimates for Cuba",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Cuba. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Americas"
+    ],
+    "preview": "posts/national/cuba/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:02+00:00",
+    "input_file": "cuba.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/ecuador/",
+    "title": "Estimates for Ecuador",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ecuador. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Americas"
+    ],
+    "preview": "posts/national/ecuador/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:03+00:00",
+    "input_file": "ecuador.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/malawi/",
+    "title": "Estimates for Malawi",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Malawi. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/malawi/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:03+00:00",
+    "input_file": "malawi.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/moldova/",
+    "title": "Estimates for Moldova",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Moldova. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/moldova/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:03+00:00",
+    "input_file": "moldova.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/mauritania/",
+    "title": "Estimates for Mauritania",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Mauritania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/mauritania/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:03+00:00",
+    "input_file": "mauritania.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/nepal/",
+    "title": "Estimates for Nepal",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Nepal. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/nepal/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:03+00:00",
+    "input_file": "nepal.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/france/",
+    "title": "Estimates for France",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in France. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "NA"
+    ],
+    "preview": "posts/national/france/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:04+00:00",
+    "input_file": "france.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/namibia/",
+    "title": "Estimates for Namibia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Namibia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/namibia/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:04+00:00",
+    "input_file": "namibia.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/new-zealand/",
+    "title": "Estimates for New Zealand",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in New Zealand. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Oceania"
+    ],
+    "preview": "posts/national/new-zealand/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:04+00:00",
+    "input_file": "new-zealand.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/peru/",
+    "title": "Estimates for Peru",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Peru. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Americas"
+    ],
+    "preview": "posts/national/peru/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:05+00:00",
+    "input_file": "peru.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/haiti/",
+    "title": "Estimates for Haiti",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Haiti. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Americas"
+    ],
+    "preview": "posts/national/haiti/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:04+00:00",
+    "input_file": "haiti.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/greece/",
+    "title": "Estimates for Greece",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Greece. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/greece/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:05+00:00",
+    "input_file": "greece.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/ethiopia/",
+    "title": "Estimates for Ethiopia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ethiopia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/ethiopia/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:05+00:00",
+    "input_file": "ethiopia.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/nigeria/",
+    "title": "Estimates for Nigeria",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Nigeria. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/nigeria/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:05+00:00",
+    "input_file": "nigeria.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/guinea/",
+    "title": "Estimates for Guinea",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Guinea. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/guinea/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:06+00:00",
+    "input_file": "guinea.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/rwanda/",
+    "title": "Estimates for Rwanda",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Rwanda. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/rwanda/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:06+00:00",
+    "input_file": "rwanda.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/puerto-rico/",
+    "title": "Estimates for Puerto Rico",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Puerto Rico. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Americas"
+    ],
+    "preview": "posts/national/puerto-rico/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:05+00:00",
+    "input_file": "puerto-rico.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/kosovo/",
+    "title": "Estimates for Kosovo",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kosovo. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/kosovo/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:06+00:00",
+    "input_file": "kosovo.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/sierra-leone/",
+    "title": "Estimates for Sierra Leone",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Sierra Leone. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/sierra-leone/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:07+00:00",
+    "input_file": "sierra-leone.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/kyrgyzstan/",
+    "title": "Estimates for Kyrgyzstan",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kyrgyzstan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/kyrgyzstan/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:07+00:00",
+    "input_file": "kyrgyzstan.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/singapore/",
+    "title": "Estimates for Singapore",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Singapore. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/singapore/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:07+00:00",
+    "input_file": "singapore.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/south-korea/",
+    "title": "Estimates for South Korea",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in South Korea. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/south-korea/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:08+00:00",
+    "input_file": "south-korea.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/lithuania/",
+    "title": "Estimates for Lithuania",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Lithuania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/lithuania/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:08+00:00",
+    "input_file": "lithuania.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/mali/",
+    "title": "Estimates for Mali",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Mali. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/mali/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:09+00:00",
+    "input_file": "mali.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/spain/",
+    "title": "Estimates for Spain",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Spain. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/spain/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:08+00:00",
+    "input_file": "spain.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/united-republic-of-tanzania/",
+    "title": "Estimates for United Republic of Tanzania",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in United Republic of Tanzania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/united-republic-of-tanzania/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:09+00:00",
+    "input_file": "united-republic-of-tanzania.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/western-sahara/",
+    "title": "Estimates for Western Sahara",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Western Sahara. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/western-sahara/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:09+00:00",
+    "input_file": "western-sahara.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/sweden/",
+    "title": "Estimates for Sweden",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Sweden. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/sweden/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:08+00:00",
+    "input_file": "sweden.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/malaysia/",
+    "title": "Estimates for Malaysia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Malaysia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/malaysia/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:09+00:00",
+    "input_file": "malaysia.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/zambia/",
+    "title": "Estimates for Zambia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Zambia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/zambia/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:09+00:00",
+    "input_file": "zambia.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/paraguay/",
+    "title": "Estimates for Paraguay",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Paraguay. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Americas"
+    ],
+    "preview": "posts/national/paraguay/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:10+00:00",
+    "input_file": "paraguay.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/uzbekistan/",
+    "title": "Estimates for Uzbekistan",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Uzbekistan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/uzbekistan/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:10+00:00",
+    "input_file": "uzbekistan.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/mongolia/",
+    "title": "Estimates for Mongolia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Mongolia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/mongolia/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:10+00:00",
+    "input_file": "mongolia.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/united-arab-emirates/",
+    "title": "Estimates for United Arab Emirates",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in United Arab Emirates. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/united-arab-emirates/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:10+00:00",
+    "input_file": "united-arab-emirates.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/tunisia/",
+    "title": "Estimates for Tunisia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Tunisia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/tunisia/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:10+00:00",
+    "input_file": "tunisia.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/serbia/",
+    "title": "Estimates for Serbia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Serbia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/serbia/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:11+00:00",
+    "input_file": "serbia.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/oman/",
+    "title": "Estimates for Oman",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Oman. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/oman/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:11+00:00",
+    "input_file": "oman.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/palestine/",
+    "title": "Estimates for Palestine",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Palestine. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/palestine/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:12+00:00",
+    "input_file": "palestine.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/saudi-arabia/",
+    "title": "Estimates for Saudi Arabia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Saudi Arabia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/saudi-arabia/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:12+00:00",
+    "input_file": "saudi-arabia.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/slovakia/",
+    "title": "Estimates for Slovakia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Slovakia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/slovakia/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:12+00:00",
+    "input_file": "slovakia.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/thailand/",
+    "title": "Estimates for Thailand",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Thailand. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/thailand/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:12+00:00",
+    "input_file": "thailand.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/qatar/",
+    "title": "Estimates for Qatar",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Qatar. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/qatar/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:12+00:00",
+    "input_file": "qatar.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/suriname/",
+    "title": "Estimates for Suriname",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Suriname. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Americas"
+    ],
+    "preview": "posts/national/suriname/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:13+00:00",
+    "input_file": "suriname.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/yemen/",
+    "title": "Estimates for Yemen",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Yemen. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/yemen/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:13+00:00",
+    "input_file": "yemen.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/south-sudan/",
+    "title": "Estimates for South Sudan",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in South Sudan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/south-sudan/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:13+00:00",
+    "input_file": "south-sudan.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/switzerland/",
+    "title": "Estimates for Switzerland",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Switzerland. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Europe"
+    ],
+    "preview": "posts/national/switzerland/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:14+00:00",
+    "input_file": "switzerland.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/sri-lanka/",
+    "title": "Estimates for Sri Lanka",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Sri Lanka. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/sri-lanka/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:14+00:00",
+    "input_file": "sri-lanka.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/venezuela/",
+    "title": "Estimates for Venezuela",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Venezuela. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Americas"
+    ],
+    "preview": "posts/national/venezuela/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:14+00:00",
+    "input_file": "venezuela.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/zimbabwe/",
+    "title": "Estimates for Zimbabwe",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Zimbabwe. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/zimbabwe/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:15+00:00",
+    "input_file": "zimbabwe.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/turkey/",
+    "title": "Estimates for Turkey",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Turkey. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Asia"
+    ],
+    "preview": "posts/national/turkey/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:15+00:00",
+    "input_file": "turkey.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/national/colombia/",
+    "title": "National and Subnational estimates for Colombia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Colombia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Subnational estimates",
+      "Americas"
+    ],
+    "preview": "posts/national/colombia/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:08+00:00",
+    "input_file": "colombia.utf8.md",
+    "preview_width": 9600,
+    "preview_height": 6400
+  },
+  {
+    "path": "posts/national/brazil/",
+    "title": "National and Subnational estimates for Brazil",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Brazil These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Subnational estimates",
+      "Americas"
+    ],
+    "preview": "posts/national/brazil/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:11+00:00",
+    "input_file": "brazil.utf8.md",
+    "preview_width": 9600,
+    "preview_height": 4800
+  },
+  {
+    "path": "posts/national/italy/",
+    "title": "National and Subnational estimates for Italy",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Italy. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Subnational estimates",
+      "Europe"
+    ],
+    "preview": "posts/national/italy/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:14+00:00",
+    "input_file": "italy.utf8.md",
+    "preview_width": 4800,
+    "preview_height": 4800
+  },
+  {
+    "path": "posts/national/germany/",
+    "title": "National and Subnational estimates for Germany",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Germany. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Subnational estimates",
+      "Europe"
+    ],
+    "preview": "posts/national/germany/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:13+00:00",
+    "input_file": "germany.utf8.md",
+    "preview_width": 9600,
+    "preview_height": 4800
+  },
+  {
+    "path": "posts/national/congo/",
+    "title": "Estimates for Congo",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Congo. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Africa"
+    ],
+    "preview": "posts/national/congo/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:20+00:00",
+    "input_file": "congo.utf8.md",
+    "preview_width": 3840,
+    "preview_height": 2560
+  },
+  {
+    "path": "posts/global/",
+    "title": "Global summary",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Global summary"
+    ],
+    "preview": "posts/global/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:12+00:00",
+    "input_file": "global.utf8.md",
+    "preview_width": 9600,
+    "preview_height": 4800
+  },
+  {
+    "path": "posts/national/united-kingdom/",
+    "title": "National and Subnational estimates for the United Kingdom",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United Kingdom. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Subnational estimates",
+      "Europe"
+    ],
+    "preview": "posts/national/united-kingdom/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:21+00:00",
+    "input_file": "united-kingdom.utf8.md",
+    "preview_width": 9600,
+    "preview_height": 6400
+  },
+  {
+    "path": "posts/national/russia/",
+    "title": "National and Subnational estimates for Russia",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Russia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Subnational estimates",
+      "Europe"
+    ],
+    "preview": "posts/national/russia/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:22+00:00",
+    "input_file": "russia.utf8.md",
+    "preview_width": 9600,
+    "preview_height": 6400
+  },
+  {
+    "path": "posts/national/united-states/",
+    "title": "National and Subnational estimates for the United States of America",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United States of America. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-07-18",
+    "categories": [
+      "Subnational estimates",
+      "Americas"
+    ],
+    "preview": "posts/national/united-states/distill-preview.png",
+    "last_modified": "2020-07-18T08:53:23+00:00",
+    "input_file": "united-states.utf8.md",
+    "preview_width": 9600,
+    "preview_height": 4800
   },
   {
     "path": "posts/national/algeria/",
@@ -53,20 +1428,6 @@
     ],
     "preview": "posts/national/algeria/distill-preview.png",
     "last_modified": "2020-07-07T23:02:58+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/andorra/",
-    "title": "Estimates for Andorra",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Andorra. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/andorra/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:02+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -85,62 +1446,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/armenia/",
-    "title": "Estimates for Armenia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Armenia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/armenia/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:03+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/australia/",
-    "title": "Estimates for Australia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Australia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Oceania"
-    ],
-    "preview": "posts/national/australia/distill-preview.png",
-    "last_modified": "2020-07-07T23:02:59+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/austria/",
-    "title": "Estimates for Austria",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Austria. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/austria/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:03+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/azerbaijan/",
-    "title": "Estimates for Azerbaijan",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Azerbaijan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/azerbaijan/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:00+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/bahrain/",
     "title": "Estimates for Bahrain",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bahrain. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -151,20 +1456,6 @@
     ],
     "preview": "posts/national/bahrain/distill-preview.png",
     "last_modified": "2020-07-07T23:03:04+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/bangladesh/",
-    "title": "Estimates for Bangladesh",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bangladesh. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/bangladesh/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:00+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -183,119 +1474,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/belgium/",
-    "title": "Estimates for Belgium",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Belgium. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/belgium/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:00+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/benin/",
-    "title": "Estimates for Benin",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Benin. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/benin/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:04+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/bolivia/",
-    "title": "Estimates for Bolivia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bolivia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Americas"
-    ],
-    "preview": "posts/national/bolivia/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:01+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/bosnia-and-herzegovina/",
-    "title": "Estimates for Bosnia and Herzegovina",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bosnia and Herzegovina. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/bosnia-and-herzegovina/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:05+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/brazil/",
-    "title": "National and Subnational estimates for Brazil",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Brazil These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Subnational estimates",
-      "Americas"
-    ],
-    "preview": "posts/national/brazil/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:22+00:00",
-    "preview_width": 9600,
-    "preview_height": 4800
-  },
-  {
-    "path": "posts/national/bulgaria/",
-    "title": "Estimates for Bulgaria",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Bulgaria. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/bulgaria/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:00+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/cameroon/",
-    "title": "Estimates for Cameroon",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Cameroon. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/cameroon/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:04+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/canada/",
-    "title": "Estimates for Canada",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Canada. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Americas"
-    ],
-    "preview": "posts/national/canada/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:01+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/cape-verde/",
     "title": "Estimates for Cape Verde",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Cape Verde. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -306,20 +1484,6 @@
     ],
     "preview": "posts/national/cape-verde/distill-preview.png",
     "last_modified": "2020-07-07T23:03:05+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/central-african-republic/",
-    "title": "Estimates for Central African Republic",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Central African Republic. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/central-african-republic/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:01+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -338,20 +1502,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/chile/",
-    "title": "Estimates for Chile",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Chile. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Americas"
-    ],
-    "preview": "posts/national/chile/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:02+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/china/",
     "title": "Estimates for China",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in China. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -366,49 +1516,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/colombia/",
-    "title": "National and Subnational estimates for Colombia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Colombia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Subnational estimates",
-      "Americas"
-    ],
-    "preview": "posts/national/colombia/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:14+00:00",
-    "preview_width": 9600,
-    "preview_height": 6400
-  },
-  {
-    "path": "posts/national/congo/",
-    "title": "Estimates for Congo",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Congo. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/congo/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:31+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/costa-rica/",
-    "title": "Estimates for Costa Rica",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Costa Rica. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Americas"
-    ],
-    "preview": "posts/national/costa-rica/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:03+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/cote-divoire/",
     "title": "Estimates for Cote dIvoire",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Cote dIvoire. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -419,48 +1526,6 @@
     ],
     "preview": "posts/national/cote-divoire/distill-preview.png",
     "last_modified": "2020-07-07T23:04:12+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/croatia/",
-    "title": "Estimates for Croatia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Croatia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/croatia/distill-preview.png",
-    "last_modified": "2020-07-07T23:04:14+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/cuba/",
-    "title": "Estimates for Cuba",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Cuba. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Americas"
-    ],
-    "preview": "posts/national/cuba/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:03+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/czechia/",
-    "title": "Estimates for Czechia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Czechia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/czechia/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:09+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -507,48 +1572,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/dominican-republic/",
-    "title": "Estimates for Dominican Republic",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Dominican Republic. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Americas"
-    ],
-    "preview": "posts/national/dominican-republic/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:08+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/ecuador/",
-    "title": "Estimates for Ecuador",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ecuador. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Americas"
-    ],
-    "preview": "posts/national/ecuador/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:04+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/egypt/",
-    "title": "Estimates for Egypt",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Egypt. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/egypt/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:09+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/el-salvador/",
     "title": "Estimates for El Salvador",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in El Salvador. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -591,20 +1614,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/ethiopia/",
-    "title": "Estimates for Ethiopia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ethiopia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/ethiopia/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:08+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/finland/",
     "title": "Estimates for Finland",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Finland. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -619,77 +1628,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/france/",
-    "title": "Estimates for France",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in France. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/france/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:05+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/gabon/",
-    "title": "Estimates for Gabon",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Gabon. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/gabon/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:09+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/germany/",
-    "title": "National and Subnational estimates for Germany",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Germany. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Subnational estimates",
-      "Europe"
-    ],
-    "preview": "posts/national/germany/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:17+00:00",
-    "preview_width": 9600,
-    "preview_height": 4800
-  },
-  {
-    "path": "posts/national/ghana/",
-    "title": "Estimates for Ghana",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Ghana. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/ghana/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:31+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/greece/",
-    "title": "Estimates for Greece",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Greece. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/greece/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:05+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/guatemala/",
     "title": "Estimates for Guatemala",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Guatemala. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -700,48 +1638,6 @@
     ],
     "preview": "posts/national/guatemala/distill-preview.png",
     "last_modified": "2020-07-07T23:03:09+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/guinea-bissau/",
-    "title": "Estimates for Guinea Bissau",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Guinea Bissau. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/guinea-bissau/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:10+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/guinea/",
-    "title": "Estimates for Guinea",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Guinea. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/guinea/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:05+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/haiti/",
-    "title": "Estimates for Haiti",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Haiti. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Americas"
-    ],
-    "preview": "posts/national/haiti/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:07+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -803,20 +1699,6 @@
     "preview_height": 4800
   },
   {
-    "path": "posts/national/indonesia/",
-    "title": "Estimates for Indonesia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Indonesia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/indonesia/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:07+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/iran/",
     "title": "Estimates for Iran",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Iran. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -859,49 +1741,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/israel/",
-    "title": "Estimates for Israel",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Israel. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/israel/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:07+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/italy/",
-    "title": "National and Subnational estimates for Italy",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Italy. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Subnational estimates",
-      "Europe"
-    ],
-    "preview": "posts/national/italy/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:20+00:00",
-    "preview_width": 4800,
-    "preview_height": 4800
-  },
-  {
-    "path": "posts/national/japan/",
-    "title": "Estimates for Japan",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Japan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/japan/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:08+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/kazakhstan/",
     "title": "Estimates for Kazakhstan",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kazakhstan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -930,62 +1769,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/kosovo/",
-    "title": "Estimates for Kosovo",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kosovo. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/kosovo/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:14+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/kuwait/",
-    "title": "Estimates for Kuwait",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kuwait. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/kuwait/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:09+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/kyrgyzstan/",
-    "title": "Estimates for Kyrgyzstan",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Kyrgyzstan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/kyrgyzstan/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:13+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/latvia/",
-    "title": "Estimates for Latvia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Latvia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/latvia/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:18+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/lebanon/",
     "title": "Estimates for Lebanon",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Lebanon. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -996,48 +1779,6 @@
     ],
     "preview": "posts/national/lebanon/distill-preview.png",
     "last_modified": "2020-07-07T23:03:09+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/libya/",
-    "title": "Estimates for Libya",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Libya. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/libya/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:14+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/lithuania/",
-    "title": "Estimates for Lithuania",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Lithuania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/lithuania/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:10+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/luxembourg/",
-    "title": "Estimates for Luxembourg",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Luxembourg. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/luxembourg/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:16+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1056,34 +1797,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/malawi/",
-    "title": "Estimates for Malawi",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Malawi. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/malawi/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:15+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/malaysia/",
-    "title": "Estimates for Malaysia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Malaysia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/malaysia/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:11+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/maldives/",
     "title": "Estimates for Maldives",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Maldives. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -1098,34 +1811,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/mali/",
-    "title": "Estimates for Mali",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Mali. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/mali/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:11+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/mauritania/",
-    "title": "Estimates for Mauritania",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Mauritania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/mauritania/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:15+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/mexico/",
     "title": "Estimates for Mexico",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Mexico. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -1135,34 +1820,6 @@
       "Americas"
     ],
     "preview": "posts/national/mexico/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:11+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/moldova/",
-    "title": "Estimates for Moldova",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Moldova. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/moldova/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:15+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/mongolia/",
-    "title": "Estimates for Mongolia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Mongolia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/mongolia/distill-preview.png",
     "last_modified": "2020-07-07T23:03:11+00:00",
     "preview_width": 3840,
     "preview_height": 2560
@@ -1196,34 +1853,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/namibia/",
-    "title": "Estimates for Namibia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Namibia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/namibia/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:13+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/nepal/",
-    "title": "Estimates for Nepal",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Nepal. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/nepal/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:17+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/netherlands/",
     "title": "Estimates for Netherlands",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Netherlands. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -1238,20 +1867,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/new-zealand/",
-    "title": "Estimates for New Zealand",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in New Zealand. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Oceania"
-    ],
-    "preview": "posts/national/new-zealand/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:17+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/niger/",
     "title": "Estimates for Niger",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Niger. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -1262,20 +1877,6 @@
     ],
     "preview": "posts/national/niger/distill-preview.png",
     "last_modified": "2020-07-07T23:03:14+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/nigeria/",
-    "title": "Estimates for Nigeria",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Nigeria. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/nigeria/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:19+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1308,20 +1909,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/oman/",
-    "title": "Estimates for Oman",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Oman. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/oman/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:15+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/pakistan/",
     "title": "Estimates for Pakistan",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Pakistan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -1336,20 +1923,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/palestine/",
-    "title": "Estimates for Palestine",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Palestine. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/palestine/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:14+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/panama/",
     "title": "Estimates for Panama",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Panama. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -1360,34 +1933,6 @@
     ],
     "preview": "posts/national/panama/distill-preview.png",
     "last_modified": "2020-07-07T23:03:19+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/paraguay/",
-    "title": "Estimates for Paraguay",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Paraguay. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Americas"
-    ],
-    "preview": "posts/national/paraguay/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:23+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/peru/",
-    "title": "Estimates for Peru",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Peru. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Americas"
-    ],
-    "preview": "posts/national/peru/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:16+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1434,34 +1979,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/puerto-rico/",
-    "title": "Estimates for Puerto Rico",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Puerto Rico. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Americas"
-    ],
-    "preview": "posts/national/puerto-rico/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:15+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/qatar/",
-    "title": "Estimates for Qatar",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Qatar. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/qatar/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:21+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/romania/",
     "title": "Estimates for Romania",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Romania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -1476,49 +1993,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/russia/",
-    "title": "National and Subnational estimates for Russia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Russia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Subnational estimates",
-      "Europe"
-    ],
-    "preview": "posts/national/russia/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:38+00:00",
-    "preview_width": 9600,
-    "preview_height": 6400
-  },
-  {
-    "path": "posts/national/rwanda/",
-    "title": "Estimates for Rwanda",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Rwanda. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/rwanda/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:17+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/saudi-arabia/",
-    "title": "Estimates for Saudi Arabia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Saudi Arabia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/saudi-arabia/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:22+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/senegal/",
     "title": "Estimates for Senegal",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Senegal. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -1529,62 +2003,6 @@
     ],
     "preview": "posts/national/senegal/distill-preview.png",
     "last_modified": "2020-07-07T23:03:18+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/serbia/",
-    "title": "Estimates for Serbia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Serbia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/serbia/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:23+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/sierra-leone/",
-    "title": "Estimates for Sierra Leone",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Sierra Leone. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/sierra-leone/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:31+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/singapore/",
-    "title": "Estimates for Singapore",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Singapore. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/singapore/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:17+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/slovakia/",
-    "title": "Estimates for Slovakia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Slovakia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/slovakia/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:22+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1617,62 +2035,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/south-korea/",
-    "title": "Estimates for South Korea",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in South Korea. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/south-korea/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:19+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/south-sudan/",
-    "title": "Estimates for South Sudan",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in South Sudan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/south-sudan/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:25+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/spain/",
-    "title": "Estimates for Spain",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Spain. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/spain/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:18+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/sri-lanka/",
-    "title": "Estimates for Sri Lanka",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Sri Lanka. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/sri-lanka/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:23+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/sudan/",
     "title": "Estimates for Sudan",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Sudan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -1687,48 +2049,6 @@
     "preview_height": 2560
   },
   {
-    "path": "posts/national/suriname/",
-    "title": "Estimates for Suriname",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Suriname. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Americas"
-    ],
-    "preview": "posts/national/suriname/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:24+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/sweden/",
-    "title": "Estimates for Sweden",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Sweden. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/sweden/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:19+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/switzerland/",
-    "title": "Estimates for Switzerland",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Switzerland. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Europe"
-    ],
-    "preview": "posts/national/switzerland/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:24+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
     "path": "posts/national/tajikistan/",
     "title": "Estimates for Tajikistan",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Tajikistan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -1739,48 +2059,6 @@
     ],
     "preview": "posts/national/tajikistan/distill-preview.png",
     "last_modified": "2020-07-07T23:03:31+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/thailand/",
-    "title": "Estimates for Thailand",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Thailand. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/thailand/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:19+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/tunisia/",
-    "title": "Estimates for Tunisia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Tunisia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/tunisia/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:24+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/turkey/",
-    "title": "Estimates for Turkey",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Turkey. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/turkey/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:20+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   },
@@ -1809,148 +2087,6 @@
     ],
     "preview": "posts/national/ukraine/distill-preview.png",
     "last_modified": "2020-07-07T23:03:20+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/united-arab-emirates/",
-    "title": "Estimates for United Arab Emirates",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in United Arab Emirates. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/united-arab-emirates/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:24+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/united-kingdom/",
-    "title": "National and Subnational estimates for the United Kingdom",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United Kingdom. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Subnational estimates",
-      "Europe"
-    ],
-    "preview": "posts/national/united-kingdom/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:30+00:00",
-    "preview_width": 9600,
-    "preview_height": 6400
-  },
-  {
-    "path": "posts/national/united-republic-of-tanzania/",
-    "title": "Estimates for United Republic of Tanzania",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in United Republic of Tanzania. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/united-republic-of-tanzania/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:40+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/united-states/",
-    "title": "National and Subnational estimates for the United States of America",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United States of America. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Subnational estimates",
-      "Americas"
-    ],
-    "preview": "posts/national/united-states/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:35+00:00",
-    "preview_width": 9600,
-    "preview_height": 4800
-  },
-  {
-    "path": "posts/national/uzbekistan/",
-    "title": "Estimates for Uzbekistan",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Uzbekistan. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/uzbekistan/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:48+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/venezuela/",
-    "title": "Estimates for Venezuela",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Venezuela. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Americas"
-    ],
-    "preview": "posts/national/venezuela/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:21+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/western-sahara/",
-    "title": "Estimates for Western Sahara",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Western Sahara. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/western-sahara/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:25+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/yemen/",
-    "title": "Estimates for Yemen",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Yemen. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Asia"
-    ],
-    "preview": "posts/national/yemen/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:21+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/zambia/",
-    "title": "Estimates for Zambia",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Zambia. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/zambia/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:25+00:00",
-    "preview_width": 3840,
-    "preview_height": 2560
-  },
-  {
-    "path": "posts/national/zimbabwe/",
-    "title": "Estimates for Zimbabwe",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Zimbabwe. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-07",
-    "categories": [
-      "Africa"
-    ],
-    "preview": "posts/national/zimbabwe/distill-preview.png",
-    "last_modified": "2020-07-07T23:03:30+00:00",
     "preview_width": 3840,
     "preview_height": 2560
   }
