@@ -19,6 +19,9 @@ countries <- tibble::tibble(country = list.dirs("_nowcasts/covid-global/national
                                                         origin = "country.name",
                                                         destination = "iso3c"))
 
+countries %<>% 
+  dplyr::mutate(country_code = dplyr::if_else(country == "Kosovo", "XK", country_code))
+
 # Get shape file ----------------------------------------------------------
 
 ## Country level
