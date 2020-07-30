@@ -736,6 +736,16 @@
   }
   
   
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+  
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+  
+  
   /* Improve display for browsers without grid (IE/Edge <= 15) */
   
   .downlevel {
@@ -1292,7 +1302,7 @@
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
 <a class="logo" href="https://cmmid.github.io">
-<img src="images/logo.png"/>
+<img src="images/logo.png" alt="Logo"/>
 </a>
 <a href="index.html" class="title">Covid-19</a>
 </div>
@@ -1346,10 +1356,10 @@ Details
 </div>
 </div>
 <a href="https://github.com/epiforecasts/covid">
-<i class="fab fa-github"></i>
+<i class="fab fa-github" aria-hidden="true"></i>
 </a>
 <a href="reports.xml">
-<i class="fa fa-rss"></i>
+<i class="fa fa-rss" aria-hidden="true"></i>
 </a>
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
@@ -1370,13 +1380,13 @@ Details
 <p>To identify changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak at the national and subnational level whilst accounting for potential biases due to delays in case reporting.</p>
 <h2 id="summary">Summary</h2>
 <ul>
-<li>We used daily counts of confirmed cases reported by the European Centre for Disease Control for all analyses conducted at the national level <span class="citation" data-cites="ecdc_data NCoVUtils">(Disease Prevention and Control <a href="#ref-ecdc_data">2020</a>; Abbott, Hellewell, Munday, et al. <a href="#ref-NCoVUtils">2020</a><a href="#ref-NCoVUtils">a</a>)</span>.</li>
-<li>Case onset dates were estimated by transforming case confirmation dates using an onset-to-confirmation delay distribution that was derived using all cases from a publicly available linelist for which onset and confirmation dates were available <span class="citation" data-cites="kraemer2020epidemiological NCoVUtils">(Xu et al., <a href="#ref-kraemer2020epidemiological">n.d.</a>; Abbott, Hellewell, Munday, et al. <a href="#ref-NCoVUtils">2020</a><a href="#ref-NCoVUtils">a</a>)</span>. Case infection dates were then estimated using the same process based on a incubation period with a mean of 5 days <span class="citation" data-cites="incubationperiod">(Lauer et al. <a href="#ref-incubationperiod">2020</a>)</span>.</li>
+<li>We used daily counts of confirmed cases reported by the European Centre for Disease Control for all analyses conducted at the national level <span class="citation" data-cites="ecdc_data NCoVUtils">(Disease Prevention and Control <a href="#ref-ecdc_data" role="doc-biblioref">2020</a>; Abbott, Hellewell, Munday, et al. <a href="#ref-NCoVUtils" role="doc-biblioref">2020</a><a href="#ref-NCoVUtils" role="doc-biblioref">a</a>)</span>.</li>
+<li>Case onset dates were estimated by transforming case confirmation dates using an onset-to-confirmation delay distribution that was derived using all cases from a publicly available linelist for which onset and confirmation dates were available <span class="citation" data-cites="kraemer2020epidemiological NCoVUtils">(Xu et al., <a href="#ref-kraemer2020epidemiological" role="doc-biblioref">n.d.</a>; Abbott, Hellewell, Munday, et al. <a href="#ref-NCoVUtils" role="doc-biblioref">2020</a><a href="#ref-NCoVUtils" role="doc-biblioref">a</a>)</span>. Case infection dates were then estimated using the same process based on a incubation period with a mean of 5 days <span class="citation" data-cites="incubationperiod">(Lauer et al. <a href="#ref-incubationperiod" role="doc-biblioref">2020</a>)</span>.</li>
 <li>The right-censoring of cases that have had symptom onset but are yet to be confirmed was adjusted for by upscaling the numbers of case onsets close to the present date. This assumes that cases that have already onset are drawn from a binomial distribution with the probability of onset having occurred by a certain point given by the onset-to-confirmation distribution. The same approach was used to adjusted for the right-truncation of cases that have been infected but have not yet developed symptoms.</li>
-<li>Time-varying effective reproduction estimates were made using <em>EpiEstim</em> <span class="citation" data-cites="EpiEstim THOMPSON2019100356 epinow">(Cori <a href="#ref-EpiEstim">2019</a>; Thompson et al. <a href="#ref-THOMPSON2019100356">2019</a>; Abbott, Hellewell, Munday, et al. <a href="#ref-epinow">2020</a><a href="#ref-epinow">b</a>)</span> and assuming an uncertain generation time with a mean of 3.6 days (sd: 0.7 days) and a standard deviation of 3 days (sd: 0.8 days). The generation time estimate was derived using the data and method of <span class="citation" data-cites="generationinterval">(Ganyani et al. <a href="#ref-generationinterval">2020</a>)</span> modified to use the incubation period from <span class="citation" data-cites="incubationperiod">(Lauer et al. <a href="#ref-incubationperiod">2020</a>)</span>. The optimal time-varying window for the estimates was selected by comparing estimated cases against observed cases at each time point.</li>
+<li>Time-varying effective reproduction estimates were made using <em>EpiEstim</em> <span class="citation" data-cites="EpiEstim THOMPSON2019100356 epinow">(Cori <a href="#ref-EpiEstim" role="doc-biblioref">2019</a>; Thompson et al. <a href="#ref-THOMPSON2019100356" role="doc-biblioref">2019</a>; Abbott, Hellewell, Munday, et al. <a href="#ref-epinow" role="doc-biblioref">2020</a><a href="#ref-epinow" role="doc-biblioref">b</a>)</span> and assuming an uncertain generation time with a mean of 3.6 days (sd: 0.7 days) and a standard deviation of 3 days (sd: 0.8 days). The generation time estimate was derived using the data and method of <span class="citation" data-cites="generationinterval">(Ganyani et al. <a href="#ref-generationinterval" role="doc-biblioref">2020</a>)</span> modified to use the incubation period from <span class="citation" data-cites="incubationperiod">(Lauer et al. <a href="#ref-incubationperiod" role="doc-biblioref">2020</a>)</span>. The optimal time-varying window for the estimates was selected by comparing estimated cases against observed cases at each time point.</li>
 <li>Time-varying estimates of the doubling time were made with a 7-day sliding window by iteratively fitting an exponential regression model.</li>
-<li>We forecast the time-varying effective reproduction number over a 14 day time horizon using the best performing ensemble of time series models <span class="citation" data-cites="forecastHybrid">(Shaub and Ellis <a href="#ref-forecastHybrid">2020</a>)</span> as assessed by iteratively fitting to a subsample of the estimated effective reproduction number estimates for each region <span class="citation" data-cites="episoon">(Abbott, Hellewell, Bosse, et al. <a href="#ref-episoon">2020</a>)</span>. Perfomance was assessed using CPRS scores, interval scores, PIT calibration, bias and sharpness with an ensemble being preferred that minimised the CRPS score whilst being calibrated, unbiased and as sharp as possible over the full time horizon <span class="citation" data-cites="scoringrules scoringutils Funk2019cc">(Jordan, Kruger, and Lerch <a href="#ref-scoringrules">2019</a>; Bosse <a href="#ref-scoringutils">2020</a>; Funk et al. <a href="#ref-Funk2019cc">2019</a>)</span>.</li>
-<li>The reproduction number forecast was then transformed into a case forecast using the renewal equation and a Poisson distribution of cases <span class="citation" data-cites="cori2013 wallinga2004">(Cori et al. <a href="#ref-cori2013">2013</a>; Wallinga and Teunis <a href="#ref-wallinga2004">2004</a>)</span>.</li>
+<li>We forecast the time-varying effective reproduction number over a 14 day time horizon using the best performing ensemble of time series models <span class="citation" data-cites="forecastHybrid">(Shaub and Ellis <a href="#ref-forecastHybrid" role="doc-biblioref">2020</a>)</span> as assessed by iteratively fitting to a subsample of the estimated effective reproduction number estimates for each region <span class="citation" data-cites="episoon">(Abbott, Hellewell, Bosse, et al. <a href="#ref-episoon" role="doc-biblioref">2020</a>)</span>. Perfomance was assessed using CPRS scores, interval scores, PIT calibration, bias and sharpness with an ensemble being preferred that minimised the CRPS score whilst being calibrated, unbiased and as sharp as possible over the full time horizon <span class="citation" data-cites="scoringrules scoringutils Funk2019cc">(Jordan, Kruger, and Lerch <a href="#ref-scoringrules" role="doc-biblioref">2019</a>; Bosse <a href="#ref-scoringutils" role="doc-biblioref">2020</a>; Funk et al. <a href="#ref-Funk2019cc" role="doc-biblioref">2019</a>)</span>.</li>
+<li>The reproduction number forecast was then transformed into a case forecast using the renewal equation and a Poisson distribution of cases <span class="citation" data-cites="cori2013 wallinga2004">(Cori et al. <a href="#ref-cori2013" role="doc-biblioref">2013</a>; Wallinga and Teunis <a href="#ref-wallinga2004" role="doc-biblioref">2004</a>)</span>.</li>
 <li>Our methods are outlined in this <a href="https://wellcomeopenresearch.org/articles/5-112/v1">preprint</a>.</li>
 </ul>
 <h2 id="limitations">Limitations</h2>
@@ -1391,7 +1401,7 @@ Details
 <li>Forecasts are only shown for countries/regions that have reported at least 200 cases in the last 7 days.</li>
 <li>Our sampling approach to backcalculation may lead to oversmoothing of true infections. This is an area of <a href="https://github.com/epiforecasts/backcalc">active research</a> (and one where we welcome collaboration from other researchers).</li>
 </ul>
-<div id="refs" class="references">
+<div id="refs" class="references" role="doc-bibliography">
 <div id="ref-episoon">
 <p>Abbott, Sam, Joel Hellewell, Nikos Bosse, Katharine Sherratt, James Munday, Robin Thompson, and Sebastian Funk. 2020. <em>EpiSoon: Forecast Cases Using Reproduction Numbers</em>. <a href="https://epiforecasts.io/EpiSoon">https://epiforecasts.io/EpiSoon</a>.</p>
 </div>
@@ -1429,7 +1439,7 @@ Details
 <p>Shaub, David, and Peter Ellis. 2020. <em>ForecastHybrid: Convenient Functions for Ensemble Time Series Forecasts</em>.</p>
 </div>
 <div id="ref-THOMPSON2019100356">
-<p>Thompson, R.N., J.E. Stockwin, R.D. van Gaalen, J.A. Polonsky, Z.N. Kamvar, P.A. Demarsh, E. Dahlqwis, et al. 2019. “Improved Inference of Time-Varying Reproduction Numbers During Infectious Disease Outbreaks.” <em>Epidemics</em> 29: 100356. <a href="https://doi.org/https://doi.org/10.1016/j.epidem.2019.100356">https://doi.org/https://doi.org/10.1016/j.epidem.2019.100356</a>.</p>
+<p>Thompson, R. N., J. E. Stockwin, R. D. van Gaalen, J. A. Polonsky, Z. N. Kamvar, P. A. Demarsh, E. Dahlqwis, et al. 2019. “Improved Inference of Time-Varying Reproduction Numbers During Infectious Disease Outbreaks.” <em>Epidemics</em> 29: 100356. <a href="https://doi.org/https://doi.org/10.1016/j.epidem.2019.100356">https://doi.org/https://doi.org/10.1016/j.epidem.2019.100356</a>.</p>
 </div>
 <div id="ref-wallinga2004">
 <p>Wallinga, Jacco, and Peter Teunis. 2004. “Different Epidemic Curves for Severe Acute Respiratory Syndrome Reveal Similar Impacts of Control Measures.” <em>American Journal of Epidemiology</em> 160 (6): 509–16. <a href="https://doi.org/10.1093/aje/kwh255">https://doi.org/10.1093/aje/kwh255</a>.</p>
