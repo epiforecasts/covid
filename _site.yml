@@ -71,4 +71,4 @@ collections:
     share: [twitter, linkedin, facebook]
 output: distill::distill_article
 exclude: ["Dockerfile", "DESCRIPTION", "README.md",
-         ".Rbuildignore", "LICENSE", "bin", "utils", "_nowcasts", ".github"]
+         ".Rbuildignore", "LICENSE", "bin", "utils", "covid-rt-estimates", ".github"]
