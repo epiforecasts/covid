@@ -10,6 +10,10 @@ csl: resources/bmj.csl
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+```{r , child = "title-skeleton.Rmd"}
+
+```
+
 ```{r , child = "paper-skeleton.Rmd"}
 
 ```

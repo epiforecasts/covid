@@ -10,12 +10,6 @@ Authors@R: c(
            email = "joel.hellewell@lshtm.ac.uk", 
            role = c("aut"),
            comment = c(ORCID = "0000-0003-2683-0849")),
-    person("James", "Munday", 
-           email = "james.munday@lshtm.ac.uk", 
-           role = c("aut")), 
-    person("Robin", "Thompson", 
-           email = "robin.thompson@lshtm.ac.uk", 
-           role = c("aut")), 
     person("Sebastian", "Funk", 
             email = "sebastian.funk@lshtm.ac.uk", 
             role = c("aut")))
@@ -23,9 +17,8 @@ Description: To identify changes in the reproduction number, rate of spread,
              and doubling time during the course of outbreaks whilst accounting 
              for potential biases due to delays in case reporting.
 Imports:
-    EpiNow,
-    EpiSoon,
-    NCoVUtils,
+    EpiNow2,
+    covidregionaldata,
     distill,
     data.table,
     dplyr,
@@ -34,7 +27,6 @@ Imports:
     stringr,
     purrr,
     magrittr,
-    furrr, 
     future, 
     future.apply,
     here,
@@ -43,15 +35,14 @@ Imports:
     rnaturalearthhires,
     countrycode,
     sf,
-    distill,
     knitr,
-    kableExtra,
-    forecastHybrid
+    kableExtra
 Additional_repositories: 
   https://epiforecasts.io/drat/,
   http://packages.ropensci.org/
 Remotes:
-  epiforecasts/NCoVUtils
+  epiforecasts/covidregionaldata,
+  epiforecasts/EpiNow2
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

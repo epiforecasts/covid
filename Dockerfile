@@ -1,4 +1,4 @@
-FROM  rocker/geospatial:latest
+FROM  docker.pkg.github.com/epiforecasts/epinow2/epinow2:latest
 
 
 RUN apt-get update -y && \

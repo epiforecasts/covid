@@ -46,7 +46,7 @@ Name |
 **Carl A B Pearson** |
 **Amy Gimma** |
 **Timothy W Russell** |
-[**CMMID nCov working group**](https://cmmid.github.io/groups/ncov-group) |
+[**CMMID Covid working group**](https://cmmid.github.io/groups/ncov-group) |
 **Stefan Flasche** |
 **Adam J Kucharski** |
 **Rosalind Eggo** |
