@@ -22,42 +22,47 @@ knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
 
 
 ```{r load-packages, include = FALSE}
-library(EpiNow)
+library(EpiNow2)
 library(dplyr)
 library(magrittr)
 library(rmarkdown)
 library(here)
 ```
 
-*Using data available up to the:* `r Sys.Date()`
+
+```{r}
+summary_table <- data.table::fread(here::here("covid-rt-estimates", "national", "cases",
+                                    "summary", "summary_table.csv"))
+latest_date <- readRDS(here::here("covid-rt-estimates", "national", "cases",
+                                    "summary", "latest_date.rds"))
+```
+
+*Using data available up to the:* `r latest_date`
 
 *Note that it takes time for infection to cause symptoms, to get tested for SARS-CoV-2 infection, for a positive test to return and ultimately to enter the case data presented here. In other words, today’s case data are only informative of new infections about two weeks ago. This is reflected in the plots below, which are by date of infection.*
 
 ### Expected daily confirmed cases by country
 
-```{r}
-summary_table <- readRDS("../../_nowcasts/covid-global/national-summary/summary_table.rds")
-latest_date <- readRDS("../../_nowcasts/covid-global/national-summary/latest_date.rds")
-```
 
 ```{r map, fig.height = 6, layout="l-body-outset", out.width = "100%"}
 global <- summary_table %>%
-  dplyr::rename(country = `Country`) %>%
+  dplyr::rename(country = Region) %>%
   dplyr::filter(!country %in% c("Hubei", "Hong Kong", "China excluding Hubei")) %>%
-  EpiNow::global_map(variable = "Expected change in daily cases")
+  EpiNow2::global_map(variable = "Expected change in daily cases")
 
 global
 ```
 
 <br>
-`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Countries with fewer than 60 confirmed cases reported on a single day are not included in the analysis (light grey) as there is not enough data to reliably estimate the reproduction number.*")`
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details).*")`
 
 ```{r}
 standalone <- TRUE
 region_path <- NULL
-summary_path <- "_nowcasts/covid-global/national-summary"
+summary_path <- "covid-rt-estimates/national/cases/summary"
 report_forecast <- TRUE
+interactive <- TRUE
 ```
 
-```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow")}
+```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
 ```
