@@ -1,5 +1,7 @@
 #!/bin/bash
 
+## Get latest estimates
+git submodule update --init --recursive
 
 ## Update national reports
 Rscript utils/update_report_templates.R
