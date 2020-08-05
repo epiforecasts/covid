@@ -1,19 +1,4 @@
 
-**Authors:** Sam Abbott \*, Joel Hellewell \*, Robin N Thompson, Katharine Sherratt, Hamish P Gibbs, Nikos I Bosse, James D Munday, Sophie Meakin, Emma L Doughty, June Young Chun, Yung-Wai Desmond Chan, Flavio Finger, Paul Campbell, Akira Endo, Carl A B Pearson, Amy Gimma, Tim Russell, CMMID COVID modelling group, Stefan Flasche, Adam J Kucharski, Rosalind M Eggo, Sebastian Funk
-
-\* contributed equally
-
-# Abstract
-
-**Background:** Interventions are now in place worldwide to reduce transmission of the novel coronavirus. Assessing temporal variations in transmission in different countries is essential for evaluating the effectiveness of public health interventions and the impact of changes in policy.
-
-**Methods:**  We use case notification data to generate daily estimates of the time-dependent reproduction number in different regions and countries. Our modelling framework, based on open source tooling, accounts for reporting delays, so that temporal variations in reproduction number estimates can be compared directly with the times at which interventions are implemented. 
-
-**Results:**  We provide three example uses of our framework. First, we demonstrate how the toolset displays temporal changes in the reproduction number. Second, we show how the framework can be used to reconstruct case counts by date of infection from case counts by date of notification, as well as to estimate the reproduction number. Third, we show how maps can be generated to clearly show if case numbers are likely to decrease or increase in different regions. Results are shown for regions and countries worldwide on our website (https://epiforecasts.io/covid/) and are updated daily. Our tooling is provided as an open-source R package to allow replication by others. 
-
-**Conclusions:**  This decision-support tool can be used to assess changes in virus transmission in different regions and countries worldwide. This allows policymakers to assess the effectiveness of current interventions, and will be useful for inferring whether or not transmission will increase when interventions are lifted. As well as providing daily updates on our website, we also provide adaptable computing code so that our approach can be used directly by researchers and policymakers on confidential datasets. We hope that our tool will be used to support decisions in countries worldwide throughout the ongoing COVID-19 pandemic.
-
-**Keywords**: Covid-19, SARS-CoV-2, surveillance, forecasting, time-varying reproduction number
 
 # Introduction
 
