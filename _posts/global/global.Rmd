@@ -62,6 +62,7 @@ region_path <- NULL
 summary_path <- "covid-rt-estimates/national/cases/summary"
 report_forecast <- TRUE
 interactive <- TRUE
+all_regions <- FALSE
 ```
 
 ```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}

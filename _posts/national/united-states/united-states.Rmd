@@ -81,9 +81,10 @@ region <- "United States of America"
 region_path <- "_nowcasts/covid-global/national"
 show_title <- FALSE
 report_forecast <- TRUE
+interactive <- TRUE
 ```
 
-```{r,  child = system.file("templates/_region-report.Rmd", package = "EpiNow")}
+```{r,  child = system.file("templates/_region-report.Rmd", package = "EpiNow2")}
 ```
 
 
@@ -91,13 +92,12 @@ report_forecast <- TRUE
 
 ### Data availability
 
-* Case counts by date, stratified by region, were downloaded from a publically available source  curated by Johns Hopkins University [@jhu_2019_2020; @NCoVUtils].
-* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to a publically available line-list of international cases [@kraemer2020epidemiological; @NCoVUtils].
+* Case counts by date, stratified by region, were downloaded from a publicly available source  curated by Johns Hopkins University [@jhu_2019_2020; @covidregionaldata].
+* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to a publically available line-list of international cases [@kraemer2020epidemiological; @covidregionaldata].
 
 ### Limitations
 
 * Line-list data to inform a State specific estimates of the reporting delay were not available.
-* Regions are only included if at least 40 confirmed cases have been reported on a single day.
 
 
 ```{r}
@@ -106,5 +106,5 @@ region_path <- NULL
 summary_path <- "_nowcasts/covid-regional/united-states/regional-summary"
 ```
 
-```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow")}
+```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
 ```
