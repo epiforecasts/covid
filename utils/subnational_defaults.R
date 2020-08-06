@@ -17,8 +17,8 @@ library(rnaturalearth)
 library(sf)
 library(rmarkdown)
 library(here)
-
-
+library(stringr)
+library(ggplot2)
 
 # Load summary data -------------------------------------------------------
 
@@ -36,13 +36,10 @@ summary_tables <- 0
 summary_figures <- 1
 title_depth <- 3
 index <- 1
-region <- "United Kingdom"
 region_path <- "covid-rt-estimates/national/cases/national"
 show_title <- FALSE
 report_forecast <- TRUE
 interactive <- TRUE
-
-
 
 # Region summary control parameters ---------------------------------------
 
