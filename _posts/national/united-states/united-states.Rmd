@@ -14,50 +14,33 @@ categories:
 ---
 
 
+```{r load-defaults, include = FALSE}
+region <- "United States"
+folder <- "united-states"
+source(here::here("utils/subnational_defaults.R"))
+```
 
-
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
-                      message = FALSE,
-                      warning = FALSE,
-                      fig.height = 12,
-                      fig.width = 12,
-                      dpi = 400)
+```{r load-custom-data}
+region_codes <- readRDS(here::here("_posts", "national", "united-states", "region_codes.rds"))
+source(here::here("_posts", "national", "united-states", "map_us.R"))
 ```
 
 
-```{r load-packages, include = FALSE}
-library(EpiNow)
-library(dplyr)
-library(rmarkdown)
-library(magrittr)
-library(here)
-library(stringr)
-library(ggplot2)
-library(sf)
-```
-
-*Using data available up to the:* `r Sys.Date()`
+*Using data available up to the:* `r latest_date`
 
 *Note that it takes time for infection to cause symptoms, to get tested for SARS-CoV-2 infection, for a positive test to return and ultimately to enter the case data presented here. In other words, today’s case data are only informative of new infections about two weeks ago. This is reflected in the plots below, which are by date of infection.*
 
 ## Expected daily confirmed cases by region
 
 ```{r}
-summary_table <- readRDS("../../../_nowcasts/covid-regional/united-states/regional-summary/summary_table.rds")
-region_codes <- readRDS("../../../_nowcasts/covid-regional/united-states/data/region_codes.rds")
-latest_date <- readRDS("../../../_nowcasts/covid-regional/united-states/regional-summary/latest_date.rds")
-source("../../../_nowcasts/covid-regional/united-states/utils/map_us.R")
-
-
 summary_table <- summary_table %>%
-  dplyr::left_join(region_codes, by = c("State" = "region"))
+  dplyr::left_join(region_codes, by = c("Region" = "region"))
 ```
 
 ```{r map, fig.height = 6, layout="l-body-outset", out.width = "70%"}
 map_us(summary_table,
               custom_theme = function(.) {
-    EpiNow::theme_map(
+    EpiNow2::theme_map(
     .,
     continuous = FALSE,
     variable_label = "Expected change in daily cases",
@@ -67,22 +50,9 @@ map_us(summary_table,
 ```
 
 <br>
-`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") in the United States of America, stratified by state, can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Regions with fewer than 40 confirmed cases reported on a single day are not included in the analysis (light grey).*")`
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") in the United States of America, stratified by state, can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details).*")`
 
 ## National summary
-
-```{r}
-## Control parameters for region-report
-summary_tables <- 0
-summary_figures <- 1
-title_depth <- 3
-index <- 1
-region <- "United States of America"
-region_path <- "_nowcasts/covid-global/national"
-show_title <- FALSE
-report_forecast <- TRUE
-interactive <- TRUE
-```
 
 ```{r,  child = system.file("templates/_region-report.Rmd", package = "EpiNow2")}
 ```
@@ -99,11 +69,9 @@ interactive <- TRUE
 
 * Line-list data to inform a State specific estimates of the reporting delay were not available.
 
-
 ```{r}
-standalone <- FALSE
 region_path <- NULL
-summary_path <- "_nowcasts/covid-regional/united-states/regional-summary"
+summary_path <- file.path("covid-rt-estimates/subnational", folder, "cases/summary")
 ```
 
 ```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
