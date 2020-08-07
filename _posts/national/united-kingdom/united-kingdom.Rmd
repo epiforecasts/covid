@@ -26,8 +26,7 @@ uk_shp <- readRDS(here::here("_posts", "national", "united-kingdom", "uk_shp.rds
 
 *Using data available up to the:* `r latest_date`
 
-*These estimates are available for download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/subnational/united-kingdom/cases/summary).*
-
+*Subnational estimates are available to download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/subnational/united-kingdom/cases/summary) and national estimates are available to download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/cases/summary).*
 
 ## Expected daily confirmed cases by region
 
