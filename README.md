@@ -3,9 +3,7 @@
 
 [![DOI](https://zenodo.org/badge/249007415.svg)](https://zenodo.org/badge/latestdoi/249007415)
 
-*Warning: This analysis is a work in progress. Breaking changes may occur and the authors cannot guarantee support.*
-
-
+For the underlying estimates see [here](https://github.com/epiforecasts/covid-rt-estimates). See [here](https://github.com/epiforecasts/EpiNow2) for documentation on the methodology used.
 ## Usage
 
 ### Clone the website
@@ -28,10 +26,9 @@ git submodule update --init --recursive
 
 #### Update
 
-Update all nowcasts and the website with the following:
+Update the website with the following:
 
 ```bash
-bash bin/update_nowcasts.sh
 bash bin/update_website.sh
 ```
 
@@ -46,8 +43,6 @@ To build the docker image run (from the `covid` directory):
 ```bash
 docker build . -t covid
 ```
-
-Note that the build command fails on a vm with only 4gb of ram. Minimum spec has not yet been established but is higher than this!
 
 To run the docker image run:
 
