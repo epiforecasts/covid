@@ -28,6 +28,16 @@
       <media:content url="https://epiforecasts.io/covid/posts/national/united-states/distill-preview.png" medium="image" type="image/png" width="7200" height="3600"/>
     </item>
     <item>
+      <title>National and Subnational estimates for Italy</title>
+      <link>https://epiforecasts.io/covid/posts/national/italy</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United States of America. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
+      <category>Subnational estimates</category>
+      <category>Europe</category>
+      <guid>https://epiforecasts.io/covid/posts/national/italy</guid>
+      <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/italy/distill-preview.png" medium="image" type="image/png" width="3600" height="3600"/>
+    </item>
+    <item>
       <title>National and Subnational estimates for the United Kingdom</title>
       <link>https://epiforecasts.io/covid/posts/national/united-kingdom</link>
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United Kingdom. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
@@ -56,16 +66,6 @@
       <guid>https://epiforecasts.io/covid/posts/national/brazil</guid>
       <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/brazil/distill-preview.png" medium="image" type="image/png" width="9600" height="4800"/>
-    </item>
-    <item>
-      <title>National and Subnational estimates for Italy</title>
-      <link>https://epiforecasts.io/covid/posts/national/italy</link>
-      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Italy. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).</description>
-      <category>Subnational estimates</category>
-      <category>Europe</category>
-      <guid>https://epiforecasts.io/covid/posts/national/italy</guid>
-      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
-      <media:content url="https://epiforecasts.io/covid/posts/national/italy/distill-preview.png" medium="image" type="image/png" width="4800" height="4800"/>
     </item>
     <item>
       <title>National and Subnational estimates for Russia</title>
