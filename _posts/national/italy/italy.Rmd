@@ -1,7 +1,7 @@
 ---
 title: "National and Subnational estimates for Italy"
 description: |
-  Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Italy. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).
+  Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United States of America. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).
 bibliography: library.bib
 output:
   distill::distill_article:
@@ -14,39 +14,22 @@ categories:
 ---
 
 
+```{r load-defaults, include = FALSE}
+region <- "Italy"
+folder <- "italy"
+source(here::here("utils/subnational_defaults.R"))
+```
 
-
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
-                      message = FALSE,
-                      warning = FALSE,
-                      fig.height = 12,
-                      fig.width = 12,
-                      dpi = 400)
+```{r load-custom-data}
+region_codes <- readRDS(here::here("_posts", "national", "italy", "region_codes.rds"))
 ```
 
 
-```{r load-packages, include = FALSE}
-library(EpiNow)
-library(dplyr)
-library(magrittr)
-library(rnaturalearth)
-library(sf)
-library(rmarkdown)
-library(here)
-```
+*Using data available up to the:* `r latest_date`
 
-*Using data available up to the:* `r Sys.Date()`
+*Subnational estimates are available to download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/subnational/italy/cases/summary) and national estimates are available to download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/cases/summary).*
 
-*Note that it takes time for infection to cause symptoms, to get tested for SARS-CoV-2 infection, for a positive test to return and ultimately to enter the case data presented here. In other words, today’s case data are only informative of new infections about two weeks ago. This is reflected in the plots below, which are by date of infection.*
-
-## Expected daily cases by region
-
-```{r}
-summary_table <- readRDS ("../../../_nowcasts/covid-regional/italy/regional-summary/summary_table.rds")
-region_codes <- readRDS("../../../_nowcasts/covid-regional/italy/data/region_codes.rds")
-latest_date <- readRDS("../../../_nowcasts/covid-regional/italy/regional-summary/latest_date.rds")
-```
+## Expected daily confirmed cases by region
 
 ```{r map, fig.width = 6, fig.height = 6, layout="l-body-outset", out.width = "80%"}
 summary_table <- summary_table %>%
@@ -60,7 +43,7 @@ map <-  rnaturalearth::ne_states("Italy", returnclass = "sf") %>%
   ggplot2::geom_sf(alpha = 0.8, size = 0.2)
 
 map %>%
-  EpiNow::theme_map(
+  EpiNow2::theme_map(
     continuous = FALSE,
     variable_label = "Expected change in daily cases",
     fill_labels = ggplot2::waiver(),
@@ -69,24 +52,11 @@ map %>%
 ```
 
 <br>
-`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated cases with a date of infection on the ", latest_date , ") in Italy, stratified by region, can be summarised by whether cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Regions with fewer than 40 cases reported on a single day are not included in the analysis (light grey).*")`
-
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated cases with a date of infection on the ", latest_date , ") in Italy, stratified by region, can be summarised by whether cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details).*")`
 
 ## National summary
 
-```{r}
-## Control parameters for region-report
-summary_tables <- 0
-summary_figures <- 1
-title_depth <- 3
-index <- 1
-region <- "Italy"
-region_path <- "_nowcasts/covid-global/national"
-show_title <- FALSE
-report_forecast <- TRUE
-```
-
-```{r,  child = system.file("templates/_region-report.Rmd", package = "EpiNow")}
+```{r,  child = system.file("templates/_region-report.Rmd", package = "EpiNow2")}
 ```
 
 
@@ -94,19 +64,17 @@ report_forecast <- TRUE
 
 ### Data availability
 
-* Case counts by date, stratified by region, were constructed from daily datasets made publically available by the Dipartimento della Protezione Civile [@italydata; @NCoVUtils].
-* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to an international line-list [@kraemer2020epidemiological; @NCoVUtils].
+* Case counts by date, stratified by region, were constructed from daily data-sets made publicly available by the Dipartimento della Protezione Civile [@italydata; @covidregionaldata].
+* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to an international line-list [@kraemer2020epidemiological; @covidregionaldata].
 
 ### Limitations
 
 * Line-list data to inform a Italy specific estimate of the reporting delay was not available. This means that we could also not account for any regional differences.
-* Regions are only included if at least 40 confirmed cases have been reported on a single day.
 
 ```{r}
-standalone <- FALSE
 region_path <- NULL
-summary_path <- "_nowcasts/covid-regional/italy/regional-summary"
+summary_path <- file.path("covid-rt-estimates/subnational", folder, "cases/summary")
 ```
 
-```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow")}
+```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
 ```
