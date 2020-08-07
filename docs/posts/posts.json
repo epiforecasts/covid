@@ -63,6 +63,22 @@
     "preview_height": 3600
   },
   {
+    "path": "posts/national/germany/",
+    "title": "National and Subnational estimates for Germany",
+    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Germany. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
+    "author": [],
+    "date": "2020-08-07",
+    "categories": [
+      "Subnational estimates",
+      "Europe"
+    ],
+    "preview": "posts/national/germany/distill-preview.png",
+    "last_modified": "2020-08-07T12:43:35+00:00",
+    "input_file": "germany-new.utf8.md",
+    "preview_width": 7200,
+    "preview_height": 3600
+  },
+  {
     "path": "posts/national/united-kingdom/",
     "title": "National and Subnational estimates for the United Kingdom",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United Kingdom. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
@@ -76,22 +92,6 @@
     "last_modified": "2020-08-06T16:39:35+00:00",
     "input_file": "united-kingdom.utf8.md",
     "preview_width": 7200,
-    "preview_height": 4800
-  },
-  {
-    "path": "posts/national/germany/",
-    "title": "National and Subnational estimates for Germany",
-    "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in Germany. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
-    "author": [],
-    "date": "2020-07-30",
-    "categories": [
-      "Subnational estimates",
-      "Europe"
-    ],
-    "preview": "posts/national/germany/distill-preview.png",
-    "last_modified": "2020-07-30T19:05:44+00:00",
-    "input_file": "germany.utf8.md",
-    "preview_width": 9600,
     "preview_height": 4800
   },
   {
