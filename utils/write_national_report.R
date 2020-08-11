@@ -43,10 +43,10 @@ knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
                       warning = FALSE,
                       fig.height = 12,
                       fig.width = 12,
-                      dpi = 400)
+                      dpi = 300)
 #'
 #+ load-packages, include = FALSE
-library(EpiNow)
+library(EpiNow2)
 library(dplyr)
 library(magrittr)
 library(rmarkdown)

@@ -38,10 +38,6 @@
   
   <!--/radix_placeholder_meta_tags-->
   
-  <meta name="citation_reference" content="citation_title=EpiSoon: Forecast cases using reproduction numbers;citation_publication_date=2020;citation_author=Sam Abbott;citation_author=Joel Hellewell;citation_author=Nikos Bosse;citation_author=Katharine Sherratt;citation_author=James Munday;citation_author=Robin Thompson;citation_author=Sebastian Funk"/>
-  <meta name="citation_reference" content="citation_title=The incubation period of coronavirus disease 2019 (covid-19) from publicly reported confirmed cases: Estimation and application;citation_publication_date=2020;citation_volume=172;citation_author=Stephen A Lauer;citation_author=Kyra H Grantz;citation_author=Qifang Bi;citation_author=Forrest K Jones;citation_author=Qulu Zheng;citation_author=Hannah R Meredith;citation_author=Andrew S Azman;citation_author=Nicholas G Reich;citation_author=Justin Lessler"/>
-  <meta name="citation_reference" content="citation_title=Estimating the generation interval for coronavirus disease (covid-19) based on symptom onset data, march 2020;citation_publication_date=2020;citation_volume=25;citation_author=Tapiwa Ganyani;citation_author=Cecile Kremer;citation_author=Dongxuan Chen;citation_author=Andrea Torneri;citation_author=Christel Faes;citation_author=Jacco Wallinga;citation_author=Niel Hens"/>
-  <meta name="citation_reference" content="citation_title=ForecastHybrid: Convenient functions for ensemble time series forecasts;citation_publication_date=2020;citation_author=David Shaub;citation_author=Peter Ellis"/>
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
@@ -1333,6 +1329,7 @@ Subnational
 <span class="nav-dropdown-header">Countries with subnational estimates</span>
 <a href="posts/national/afghanistan/index.html">Afghanistan</a>
 <a href="posts/national/brazil/index.html">Brazil</a>
+<a href="posts/national/canada/index.html">Canada</a>
 <a href="posts/national/colombia/index.html">Colombia</a>
 <a href="posts/national/india/index.html">India</a>
 <a href="posts/national/italy/index.html">Italy</a>
@@ -1376,78 +1373,15 @@ Details
 
 
 <div class="d-article">
-<h2 id="aim">Aim</h2>
-<p>To identify changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak at the national and subnational level whilst accounting for potential biases due to delays in case reporting.</p>
-<h2 id="summary">Summary</h2>
-<ul>
-<li>We used daily counts of confirmed cases reported by the European Centre for Disease Control for all analyses conducted at the national level <span class="citation" data-cites="ecdc_data NCoVUtils">(Disease Prevention and Control <a href="#ref-ecdc_data" role="doc-biblioref">2020</a>; Abbott, Hellewell, Munday, et al. <a href="#ref-NCoVUtils" role="doc-biblioref">2020</a><a href="#ref-NCoVUtils" role="doc-biblioref">a</a>)</span>.</li>
-<li>Case onset dates were estimated by transforming case confirmation dates using an onset-to-confirmation delay distribution that was derived using all cases from a publicly available linelist for which onset and confirmation dates were available <span class="citation" data-cites="kraemer2020epidemiological NCoVUtils">(Xu et al., <a href="#ref-kraemer2020epidemiological" role="doc-biblioref">n.d.</a>; Abbott, Hellewell, Munday, et al. <a href="#ref-NCoVUtils" role="doc-biblioref">2020</a><a href="#ref-NCoVUtils" role="doc-biblioref">a</a>)</span>. Case infection dates were then estimated using the same process based on a incubation period with a mean of 5 days <span class="citation" data-cites="incubationperiod">(Lauer et al. <a href="#ref-incubationperiod" role="doc-biblioref">2020</a>)</span>.</li>
-<li>The right-censoring of cases that have had symptom onset but are yet to be confirmed was adjusted for by upscaling the numbers of case onsets close to the present date. This assumes that cases that have already onset are drawn from a binomial distribution with the probability of onset having occurred by a certain point given by the onset-to-confirmation distribution. The same approach was used to adjusted for the right-truncation of cases that have been infected but have not yet developed symptoms.</li>
-<li>Time-varying effective reproduction estimates were made using <em>EpiEstim</em> <span class="citation" data-cites="EpiEstim THOMPSON2019100356 epinow">(Cori <a href="#ref-EpiEstim" role="doc-biblioref">2019</a>; Thompson et al. <a href="#ref-THOMPSON2019100356" role="doc-biblioref">2019</a>; Abbott, Hellewell, Munday, et al. <a href="#ref-epinow" role="doc-biblioref">2020</a><a href="#ref-epinow" role="doc-biblioref">b</a>)</span> and assuming an uncertain generation time with a mean of 3.6 days (sd: 0.7 days) and a standard deviation of 3 days (sd: 0.8 days). The generation time estimate was derived using the data and method of <span class="citation" data-cites="generationinterval">(Ganyani et al. <a href="#ref-generationinterval" role="doc-biblioref">2020</a>)</span> modified to use the incubation period from <span class="citation" data-cites="incubationperiod">(Lauer et al. <a href="#ref-incubationperiod" role="doc-biblioref">2020</a>)</span>. The optimal time-varying window for the estimates was selected by comparing estimated cases against observed cases at each time point.</li>
-<li>Time-varying estimates of the doubling time were made with a 7-day sliding window by iteratively fitting an exponential regression model.</li>
-<li>We forecast the time-varying effective reproduction number over a 14 day time horizon using the best performing ensemble of time series models <span class="citation" data-cites="forecastHybrid">(Shaub and Ellis <a href="#ref-forecastHybrid" role="doc-biblioref">2020</a>)</span> as assessed by iteratively fitting to a subsample of the estimated effective reproduction number estimates for each region <span class="citation" data-cites="episoon">(Abbott, Hellewell, Bosse, et al. <a href="#ref-episoon" role="doc-biblioref">2020</a>)</span>. Perfomance was assessed using CPRS scores, interval scores, PIT calibration, bias and sharpness with an ensemble being preferred that minimised the CRPS score whilst being calibrated, unbiased and as sharp as possible over the full time horizon <span class="citation" data-cites="scoringrules scoringutils Funk2019cc">(Jordan, Kruger, and Lerch <a href="#ref-scoringrules" role="doc-biblioref">2019</a>; Bosse <a href="#ref-scoringutils" role="doc-biblioref">2020</a>; Funk et al. <a href="#ref-Funk2019cc" role="doc-biblioref">2019</a>)</span>.</li>
-<li>The reproduction number forecast was then transformed into a case forecast using the renewal equation and a Poisson distribution of cases <span class="citation" data-cites="cori2013 wallinga2004">(Cori et al. <a href="#ref-cori2013" role="doc-biblioref">2013</a>; Wallinga and Teunis <a href="#ref-wallinga2004" role="doc-biblioref">2004</a>)</span>.</li>
-<li>Our methods are outlined in this <a href="https://wellcomeopenresearch.org/articles/5-112/v1">preprint</a>.</li>
-</ul>
-<h2 id="limitations">Limitations</h2>
-<ul>
-<li>Diagnostic capabilities and testing protocols may vary in different parts of each country/region, adding uncertainty to the reported numbers. The true number of infections reflected in a given number of confirmed cases will vary substantially geographically.</li>
-<li>Estimated onset dates are derived using available data for the delay from symptom onset to confirmation, in many regions this data is only available during the beginning the outbreak. This early outbreak data may not be representative of the underlying delay distribution, which may also change over the course of the outbreak. Estimated infection dates are derived using an estimate of the incubation period based on international cases.</li>
-<li>The estimate of confirmed cases that have onset but are not yet confirmed, used to scale up recent confirmed case numbers, is uncertain and relies on the observed delays to confirmation remaining constant over the course of the outbreak.</li>
-<li>These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).</li>
-<li>An international reporting delay was assumed. The report delay is likely to vary across and within countries so this assumption is likely to introduce bias.</li>
-<li>Countries are only included in the reported estimates if at least 60 confirmed cases have been reported in a single day. Regions within countries are only reported if at least 40 confirmed cases have been reported in a single day.</li>
-<li>Our forecasts are indicative only and should not be considered with a weight equal to our real-time estimates. Changes in contact rates, mobility, and public health interventions are not accounted for which may lead to significant inaccuracy.</li>
-<li>Forecasts are only shown for countries/regions that have reported at least 200 cases in the last 7 days.</li>
-<li>Our sampling approach to backcalculation may lead to oversmoothing of true infections. This is an area of <a href="https://github.com/epiforecasts/backcalc">active research</a> (and one where we welcome collaboration from other researchers).</li>
-</ul>
-<div id="refs" class="references" role="doc-bibliography">
-<div id="ref-episoon">
-<p>Abbott, Sam, Joel Hellewell, Nikos Bosse, Katharine Sherratt, James Munday, Robin Thompson, and Sebastian Funk. 2020. <em>EpiSoon: Forecast Cases Using Reproduction Numbers</em>. <a href="https://epiforecasts.io/EpiSoon">https://epiforecasts.io/EpiSoon</a>.</p>
-</div>
-<div id="ref-NCoVUtils">
-<p>Abbott, Sam, Joel Hellewell, James D. Munday, and Sebastian Funk. 2020a. “NCoVUtils: Utility Functions for the 2019-Ncov Outbreak.” <em>-</em> - (-): –. <a href="https://doi.org/10.5281/zenodo.3635417">https://doi.org/10.5281/zenodo.3635417</a>.</p>
-</div>
-<div id="ref-epinow">
-<p>Abbott, Sam, Joel Hellewell, James Munday, Robin Thompson, and Sebastian Funk. 2020b. <em>EpiNow: Estimate Realtime Case Counts and Time-Varying Epidemiological Parameters</em>. <a href="https://github.com/epiforecasts/EpiNow">https://github.com/epiforecasts/EpiNow</a>.</p>
-</div>
-<div id="ref-scoringutils">
-<p>Bosse, Nikos. 2020. <em>Scoringutils: A Collection of Proper Scoring Rules and Metrics to Assess Predictions</em>. <a href="https://github.com/epiforecasts/scoringutils">https://github.com/epiforecasts/scoringutils</a>.</p>
-</div>
-<div id="ref-EpiEstim">
-<p>Cori, Anne. 2019. <em>EpiEstim: Estimate Time Varying Reproduction Numbers from Epidemic Curves</em>. <a href="https://CRAN.R-project.org/package=EpiEstim">https://CRAN.R-project.org/package=EpiEstim</a>.</p>
-</div>
-<div id="ref-cori2013">
-<p>Cori, Anne, Neil M. Ferguson, Christophe Fraser, and Simon Cauchemez. 2013. “A New Framework and Software to Estimate Time-Varying Reproduction Numbers During Epidemics.” <em>American Journal of Epidemiology</em> 178 (9): 1505–12. <a href="https://doi.org/10.1093/aje/kwt133">https://doi.org/10.1093/aje/kwt133</a>.</p>
-</div>
-<div id="ref-ecdc_data">
-<p>Disease Prevention, European Centre for, and Control. 2020. “Download Today’s Data on the Geographic Distribution of Covid-19 Cases Worldwide.” <a href="www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide">www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide</a>.</p>
-</div>
-<div id="ref-Funk2019cc">
-<p>Funk, Sebastian, Anton Camacho, Adam J Kucharski, Rachel Lowe, Rosalind M Eggo, and W John Edmunds. 2019. “Assessing the Performance of Real-Time Epidemic Forecasts: A Case Study of Ebola in the Western Area Region of Sierra Leone, 2014-15.” <em>PLoS Computational Biology</em> 15 (2): e1006785–17.</p>
-</div>
-<div id="ref-generationinterval">
-<p>Ganyani, Tapiwa, Cecile Kremer, Dongxuan Chen, Andrea Torneri, Christel Faes, Jacco Wallinga, and Niel Hens. 2020. “Estimating the Generation Interval for Coronavirus Disease (Covid-19) Based on Symptom Onset Data, March 2020.” <em>Eurosurveillance</em> 25 (17).</p>
-</div>
-<div id="ref-scoringrules">
-<p>Jordan, Alexander, Fabian Kruger, and Sebastian Lerch. 2019. “Evaluating Probabilistic Forecasts with scoringRules.” <em>Journal of Statistical Software</em> 90 (12): 1–37. <a href="https://doi.org/10.18637/jss.v090.i12">https://doi.org/10.18637/jss.v090.i12</a>.</p>
-</div>
-<div id="ref-incubationperiod">
-<p>Lauer, Stephen A, Kyra H Grantz, Qifang Bi, Forrest K Jones, Qulu Zheng, Hannah R Meredith, Andrew S Azman, Nicholas G Reich, and Justin Lessler. 2020. “The Incubation Period of Coronavirus Disease 2019 (Covid-19) from Publicly Reported Confirmed Cases: Estimation and Application.” <em>Annals of Internal Medicine</em> 172 (9): 577–82.</p>
-</div>
-<div id="ref-forecastHybrid">
-<p>Shaub, David, and Peter Ellis. 2020. <em>ForecastHybrid: Convenient Functions for Ensemble Time Series Forecasts</em>.</p>
-</div>
-<div id="ref-THOMPSON2019100356">
-<p>Thompson, R. N., J. E. Stockwin, R. D. van Gaalen, J. A. Polonsky, Z. N. Kamvar, P. A. Demarsh, E. Dahlqwis, et al. 2019. “Improved Inference of Time-Varying Reproduction Numbers During Infectious Disease Outbreaks.” <em>Epidemics</em> 29: 100356. <a href="https://doi.org/https://doi.org/10.1016/j.epidem.2019.100356">https://doi.org/https://doi.org/10.1016/j.epidem.2019.100356</a>.</p>
-</div>
-<div id="ref-wallinga2004">
-<p>Wallinga, Jacco, and Peter Teunis. 2004. “Different Epidemic Curves for Severe Acute Respiratory Syndrome Reveal Similar Impacts of Control Measures.” <em>American Journal of Epidemiology</em> 160 (6): 509–16. <a href="https://doi.org/10.1093/aje/kwh255">https://doi.org/10.1093/aje/kwh255</a>.</p>
-</div>
-<div id="ref-kraemer2020epidemiological">
-<p>Xu, Bo, Bernardo Gutierrez, Sarah Hill, Samuel Scarpino, Alyssa Loskill, Jessie Wu, Kara Sewalk, et al. n.d. “Epidemiological Data from the nCoV-2019 Outbreak: Early Descriptions from Publicly Available Data.” <a href="http://virological.org/t/epidemiological-data-from-the-ncov-2019-outbreak-early-descriptions-from-publicly-available-data/337">http://virological.org/t/epidemiological-data-from-the-ncov-2019-outbreak-early-descriptions-from-publicly-available-data/337</a>.</p>
-</div>
-</div>
+<p><strong>Authors:</strong> Sam Abbott *, Joel Hellewell *, Robin N Thompson, Katharine Sherratt, Hamish P Gibbs, Nikos I Bosse, James D Munday, Sophie Meakin, Emma L Doughty, June Young Chun, Yung-Wai Desmond Chan, Flavio Finger, Paul Campbell, Akira Endo, Carl A B Pearson, Amy Gimma, Tim Russell, CMMID COVID modelling group, Stefan Flasche, Adam J Kucharski, Rosalind M Eggo, Sebastian Funk</p>
+<p>* contributed equally</p>
+<h1 id="abstract">Abstract</h1>
+<p><strong>Background:</strong> Interventions are now in place worldwide to reduce transmission of the novel coronavirus. Assessing temporal variations in transmission in different countries is essential for evaluating the effectiveness of public health interventions and the impact of changes in policy.</p>
+<p><strong>Methods:</strong> We use case notification data to generate daily estimates of the time-dependent reproduction number in different regions and countries. Our modelling framework, based on open source tooling, accounts for reporting delays, so that temporal variations in reproduction number estimates can be compared directly with the times at which interventions are implemented.</p>
+<p><strong>Results:</strong> We provide three example uses of our framework. First, we demonstrate how the toolset displays temporal changes in the reproduction number. Second, we show how the framework can be used to reconstruct case counts by date of infection from case counts by date of notification, as well as to estimate the reproduction number. Third, we show how maps can be generated to clearly show if case numbers are likely to decrease or increase in different regions. Results are shown for regions and countries worldwide on our website (<a href="https://epiforecasts.io/covid/" class="uri">https://epiforecasts.io/covid/</a>) and are updated daily. Our tooling is provided as an open-source R package to allow replication by others.</p>
+<p><strong>Conclusions:</strong> This decision-support tool can be used to assess changes in virus transmission in different regions and countries worldwide. This allows policymakers to assess the effectiveness of current interventions, and will be useful for inferring whether or not transmission will increase when interventions are lifted. As well as providing daily updates on our website, we also provide adaptable computing code so that our approach can be used directly by researchers and policymakers on confidential datasets. We hope that our tool will be used to support decisions in countries worldwide throughout the ongoing COVID-19 pandemic.</p>
+<p><strong>Keywords</strong>: Covid-19, SARS-CoV-2, surveillance, forecasting, time-varying reproduction number</p>
+<p><strong>For more detail and the limitations of these estimates please see our <a href="https://epiforecasts.io/covid/methods.html">methods</a>, our <a href="https://wellcomeopenresearch.org/articles/5-112/v1">preprint</a> and the <a href="https://epiforecasts.io/EpiNow2/">documentation of our open-source backend</a>.</strong></p>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
@@ -1990,10 +1924,6 @@ pages = {1--22}
 </script>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
-<div class="distill-site-nav distill-site-footer">
-<p>© Copyright 2020 <a href="https://epiforecasts.io">EpiForecasts</a> and the <a href="https://cmmid.github.io">CMMID Covid working group</a></p>
-<p>Software licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
-</div>
 <!--/radix_placeholder_navigation_after_body-->
 
 </body>
