@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://epiforecasts.io/covid/</loc>
-    <lastmod>2020-08-05T14:31:20+00:00</lastmod>
+    <lastmod>2020-08-11T12:56:12+00:00</lastmod>
   </url>
   <url>
     <loc>https://epiforecasts.io/covid/methods.html</loc>
@@ -18,15 +18,191 @@
   </url>
   <url>
     <loc>https://epiforecasts.io/covid/news.html</loc>
-    <lastmod>2020-08-05T13:03:07+00:00</lastmod>
+    <lastmod>2020-08-11T12:53:37+00:00</lastmod>
   </url>
   <url>
     <loc>https://epiforecasts.io/covid/reports.html</loc>
     <lastmod>2020-08-05T13:03:07+00:00</lastmod>
   </url>
   <url>
+    <loc>https://epiforecasts.io/covid/posts/national/united-kingdom/</loc>
+    <lastmod>2020-08-11T12:12:11+00:00</lastmod>
+  </url>
+  <url>
     <loc>https://epiforecasts.io/covid/posts/global/</loc>
-    <lastmod>2020-08-07T10:06:28+00:00</lastmod>
+    <lastmod>2020-08-11T12:31:04+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/angola/</loc>
+    <lastmod>2020-08-11T12:31:02+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/algeria/</loc>
+    <lastmod>2020-08-11T12:30:57+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/armenia/</loc>
+    <lastmod>2020-08-11T12:30:57+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/austria/</loc>
+    <lastmod>2020-08-11T12:30:58+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/bahrain/</loc>
+    <lastmod>2020-08-11T12:30:58+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/belarus/</loc>
+    <lastmod>2020-08-11T12:30:58+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/belize/</loc>
+    <lastmod>2020-08-11T12:30:59+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/bhutan/</loc>
+    <lastmod>2020-08-11T12:30:59+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/botswana/</loc>
+    <lastmod>2020-08-11T12:30:59+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/bulgaria/</loc>
+    <lastmod>2020-08-11T12:30:59+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/andorra/</loc>
+    <lastmod>2020-08-11T12:30:59+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/cambodia/</loc>
+    <lastmod>2020-08-11T12:31:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/cape-verde/</loc>
+    <lastmod>2020-08-11T12:31:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/central-african-republic/</loc>
+    <lastmod>2020-08-11T12:31:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/azerbaijan/</loc>
+    <lastmod>2020-08-11T12:31:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/chile/</loc>
+    <lastmod>2020-08-11T12:31:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/bangladesh/</loc>
+    <lastmod>2020-08-11T12:31:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/belgium/</loc>
+    <lastmod>2020-08-11T12:31:01+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/comoros/</loc>
+    <lastmod>2020-08-11T12:31:01+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/benin/</loc>
+    <lastmod>2020-08-11T12:31:01+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/costa-rica/</loc>
+    <lastmod>2020-08-11T12:31:01+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/bolivia/</loc>
+    <lastmod>2020-08-11T12:31:01+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/croatia/</loc>
+    <lastmod>2020-08-11T12:31:01+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/cyprus/</loc>
+    <lastmod>2020-08-11T12:31:01+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/burkina-faso/</loc>
+    <lastmod>2020-08-11T12:31:02+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/djibouti/</loc>
+    <lastmod>2020-08-11T12:31:02+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/egypt/</loc>
+    <lastmod>2020-08-11T12:31:02+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/cameroon/</loc>
+    <lastmod>2020-08-11T12:31:02+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/caribbean-netherlands/</loc>
+    <lastmod>2020-08-11T12:31:02+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/equatorial-guinea/</loc>
+    <lastmod>2020-08-11T12:31:02+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/australia/</loc>
+    <lastmod>2020-08-11T12:31:02+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/china/</loc>
+    <lastmod>2020-08-11T12:31:03+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/barbados/</loc>
+    <lastmod>2020-08-11T12:31:03+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/eswatini/</loc>
+    <lastmod>2020-08-11T12:31:03+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/fiji/</loc>
+    <lastmod>2020-08-11T12:31:03+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/congo---brazzaville/</loc>
+    <lastmod>2020-08-11T12:31:03+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/france/</loc>
+    <lastmod>2020-08-11T12:31:03+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/georgia/</loc>
+    <lastmod>2020-08-11T12:31:04+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/gibraltar/</loc>
+    <lastmod>2020-08-11T12:31:04+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/guatemala/</loc>
+    <lastmod>2020-08-11T12:31:05+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/guinea-bissau/</loc>
+    <lastmod>2020-08-11T12:31:05+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/honduras/</loc>
+    <lastmod>2020-08-11T12:31:05+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://epiforecasts.io/covid/posts/national/iran/</loc>
+    <lastmod>2020-08-11T12:31:05+00:00</lastmod>
   </url>
   <url>
     <loc>https://epiforecasts.io/covid/posts/national/united-states/</loc>
@@ -50,11 +226,7 @@
   </url>
   <url>
     <loc>https://epiforecasts.io/covid/posts/national/canada/</loc>
-    <lastmod>2020-08-07T15:52:53+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://epiforecasts.io/covid/posts/national/united-kingdom/</loc>
-    <lastmod>2020-08-06T16:39:35+00:00</lastmod>
+    <lastmod>2020-08-07T16:19:58+00:00</lastmod>
   </url>
   <url>
     <loc>https://epiforecasts.io/covid/posts/national/russia/</loc>
