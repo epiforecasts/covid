@@ -37,6 +37,8 @@ navbar:
          href: posts/national/afghanistan/index.html
        - text: "Brazil"
          href: posts/national/brazil/index.html
+       - text: "Canada"
+         href: posts/national/canada/index.html
        - text: "Colombia"
          href: posts/national/colombia/index.html
        - text: "India"
