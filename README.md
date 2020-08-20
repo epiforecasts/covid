@@ -3,7 +3,7 @@
 
 [![DOI](https://zenodo.org/badge/249007415.svg)](https://zenodo.org/badge/latestdoi/249007415)
 
-**We are in the process of updating our methodology and unfortunately do not have sufficient capacity to run both our new and old estimates in parallel. Our new estimates can be found [here](https://github.com/epiforecasts/covid-rt-estimates) and are regularly updated (though it should be noted there are still some issues for edge cases that need to be resolved). Currently these estimates are for a snapshot of the last 3 months of data. If interested in seeing a complete timeseries of estimates please open an issue [here](https://github.com/epiforecasts/covid-rt-estimates/issues/15).**
+**We are in the process of updating our methodology and unfortunately do not have sufficient capacity to run both our new and old estimates in parallel. Our new estimates can be found [here](https://github.com/epiforecasts/covid-rt-estimates) and are regularly updated (though it should be noted there are still some issues for edge cases that need to be resolved). Currently these estimates are for a snapshot of the last 3 months of data. If interested in seeing a complete timeseries of estimates please highlight that [here](https://github.com/epiforecasts/covid-rt-estimates/issues/15).**
 
 ## Usage
 
