@@ -19,11 +19,15 @@ future::plan("multisession")
 safe_render <- purrr::safely(rmarkdown::render)
 
 ## Render posts in parallel
-rendered_output <- furrr::future_map(posts, 
+rendered_out <- furrr::future_map(posts, 
             function(post) {
               post_name <- stringr::str_split(post, "/")[[1]] %>% 
                 dplyr::last()
-              safe_render(file.path(post, paste0(post_name, ".Rmd")), quiet = FALSE)
+              tmp <- safe_render(file.path(post, paste0(post_name, ".Rmd")), quiet = FALSE)
+              if (!is.null(tmp[[2]])) {
+                warning(post_name, ": ", tmp[[2]])
+              }
+              
             }, .progress = TRUE)
 
 
