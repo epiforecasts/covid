@@ -17,7 +17,7 @@ categories:
 ```{r load-defaults, include = FALSE}
 region <- "Colombia"
 folder <- "colombia"
-source(here::here("utils/subnational_defaults.R"))
+source(here::here("utils/subnational_defaults.R"), local = TRUE)
 ```
 
 ```{r load-custom-data}
