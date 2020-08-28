@@ -10,7 +10,7 @@ output:
     toc_depth: 2
 categories:
   - "Subnational estimates"
-  - "Europe"
+  - "Asia"
 ---
 
 
