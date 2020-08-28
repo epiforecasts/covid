@@ -6,19 +6,13 @@ posts <- c(list.dirs("docs/posts", recursive = FALSE),
            list.dirs("docs/posts/national", recursive = FALSE))
 
 
-purrr::walk(posts, 
-            function(post) {
-              unlink(file.path(file.path(post, "nowcast")), recursive = TRUE)
-            })
-
-
 remove_folders <- list.dirs("_posts/national", recursive = FALSE) %>% 
   stringr::str_remove("_posts/national/")
 
 ## Countries with regional breakdowns
 regional_breakdowns <- c("italy", "united-kingdom", "united-states", "germany",
-                         "india", "brazil", "colombia", "afghanistan", 
-                         "russia")
+                         "india", "brazil", "colombia",
+                         "russia", "canada")
 
 ## Drop these countries
 remove_folders <- setdiff(remove_folders, regional_breakdowns)

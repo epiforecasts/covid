@@ -7,15 +7,29 @@ require(purrr)
 posts <- c("_posts/global" , list.dirs("_posts/national", recursive = FALSE))
 
 
+
+## Copy in bib file for references
+purrr::walk(posts, ~ file.copy("library.bib", file.path(.), overwrite = TRUE))
+
+
+## Set up processing
 future::plan("multisession")
 
+## Make rendering safe to errors
 safe_render <- purrr::safely(rmarkdown::render)
 
-rendered_output <- furrr::future_map(posts, 
+## Render posts in parallel
+rendered_out <- furrr::future_map(posts, 
             function(post) {
               post_name <- stringr::str_split(post, "/")[[1]] %>% 
                 dplyr::last()
-              file.copy("library.bib", file.path(post), overwrite = TRUE)
+              tmp <- safe_render(file.path(post, paste0(post_name, ".Rmd")), quiet = FALSE)
+              if (!is.null(tmp[[2]])) {
+                warning(post_name, ": ", tmp[[2]])
+              }
               
-              safe_render(file.path(post, paste0(post_name, ".Rmd")), quiet = FALSE)
             }, .progress = TRUE)
+
+
+
+file.copy("_posts/global/library.bib", ".", overwrite = FALSE)

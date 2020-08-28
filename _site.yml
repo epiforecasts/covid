@@ -33,10 +33,10 @@ navbar:
     - text: "Subnational"
       menu:
        - text: "Countries with subnational estimates"
-       - text: "Afghanistan"
-         href: posts/national/afghanistan/index.html
        - text: "Brazil"
          href: posts/national/brazil/index.html
+       - text: "Canada"
+         href: posts/national/canada/index.html
        - text: "Colombia"
          href: posts/national/colombia/index.html
        - text: "India"
@@ -55,8 +55,6 @@ navbar:
       menu:
        - text: "Methods"
          href: methods.html
-       - text: "Contributors"
-         href: contributors.html
        - text: "Funding"
          href: funding.html
        - text: "News"
@@ -71,4 +69,4 @@ collections:
     share: [twitter, linkedin, facebook]
 output: distill::distill_article
 exclude: ["Dockerfile", "DESCRIPTION", "README.md",
-         ".Rbuildignore", "LICENSE", "bin", "utils", "_nowcasts", ".github"]
+         ".Rbuildignore", "LICENSE", "bin", "utils", "covid-rt-estimates", ".github"]
