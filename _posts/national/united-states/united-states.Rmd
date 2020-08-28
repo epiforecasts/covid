@@ -1,61 +1,75 @@
 ---
-title: "Estimates for United States"
+title: "National and Subnational estimates for the United States of America"
 description: |
- Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in United States. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).
+  Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United States of America. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).
 bibliography: library.bib
 output:
- distill::distill_article:
-   self_contained: true
-   toc: true
-   toc_depth: 2
+  distill::distill_article:
+    self_contained: true
+    toc: true
+    toc_depth: 2
 categories:
- - 'Americas'
+  - "Subnational estimates"
+  - "Europe"
 ---
 
 
-*Using data available up to the:* `r Sys.Date()`
+```{r load-defaults, include = FALSE}
+region <- "United States"
+folder <- "united-states"
+source(here::here("utils/subnational_defaults.R"))
+```
 
-*Note that it takes time for infection to cause symptoms, to get tested for SARS-CoV-2 infection, for a positive test to return and ultimately to enter the case data presented here. In other words, today’s case data are only informative of new infections about two weeks ago. This is reflected in the plots below, which are by date of infection.*
+```{r load-custom-data}
+source(here::here("_posts/national/united-states/map_us.R"))
+region_codes <- readRDS(here::here("_posts", "national", "united-states", "region_codes.rds"))
+```
 
+*Using data available up to the:* `r latest_date`
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
-                      message = FALSE,
-                      warning = FALSE,
-                      fig.height = 12,
-                      fig.width = 12,
-                      dpi = 300)
+*Subnational estimates are available to download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/subnational/united-states/cases/summary) and national estimates are available to download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/cases/summary).*
+
+## Expected daily confirmed cases by region
+
+```{r map, fig.height = 8, layout="l-body-outset", out.width = "80%"}
+summary_table <- summary_table %>%
+  dplyr::left_join(region_codes, by = c("State" = "region"))
+
+map_us(summary_table,
+              custom_theme = function(.) {
+    EpiNow2::theme_map(
+    .,
+    continuous = FALSE,
+    variable_label = "Expected change in daily cases",
+    fill_labels = ggplot2::waiver(),
+    breaks = levels(summary_table$`Expected change in daily cases`)
+  )})
 ```
 
 
+<br>
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") in the United States of America, stratified by region, can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details).*")`
 
-```{r load-packages, include = FALSE}
-library(EpiNow2)
-library(dplyr)
-library(magrittr)
-library(rmarkdown)
-library(here)
 
-latest_date <- readRDS(here::here('covid-rt-estimates/national/cases/summary/latest_date.rds'))
+## National summary
+
+
+```{r,  child = system.file("templates/_region-report.Rmd", package = "EpiNow2")}
 ```
 
+## Regional Breakdown
 
+* Case counts by date, stratified by region, were downloaded from a publically available source  curated by Johns Hopkins University [@jhu_2019_2020; @covidregionaldata].
+* Case onset dates were estimated using case counts by date of report and a distribution of reporting delays fitted to a publically available line-list of international cases [@kraemer2020epidemiological; @covidregionaldata].
 
-```{r }
-## Control parameters for region-report
-summary_tables <- 0
-summary_figures <- 0
-title_depth <- 2
-index <- 1
-region <-'United States'
-region_path <- 'covid-rt-estimates/national/cases/national'
-show_title <- FALSE
-report_forecast <- TRUE
+### Limitations
+
+* Line-list data to inform a State specific estimates of the reporting delay were not available.
+
+```{r}
+region_path <- NULL
+summary_path <- file.path("covid-rt-estimates/subnational", folder, "cases/summary")
 ```
 
-
-
-
-```{r child = system.file('templates/_region-report.Rmd', package = 'EpiNow2')}
+```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
 ```
-
