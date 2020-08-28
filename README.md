@@ -1,9 +1,8 @@
 
 # Temporal variation in transmission during the COVID-19 outbreak
 
-[![DOI](https://zenodo.org/badge/249007415.svg)](https://zenodo.org/badge/latestdoi/249007415)
 
-**We are in the process of updating our methodology and unfortunately do not have sufficient capacity to run both our new and old estimates in parallel. Our new estimates can be found [here](https://github.com/epiforecasts/covid-rt-estimates) and are regularly updated (though it should be noted there are still some issues for edge cases that need to be resolved). Currently these estimates are for a snapshot of the last 3 months of data. If interested in seeing a complete timeseries of estimates please highlight that [here](https://github.com/epiforecasts/covid-rt-estimates/issues/15).**
+For the underlying estimates see [here](https://github.com/epiforecasts/covid-rt-estimates). See [here](https://github.com/epiforecasts/EpiNow2) for documentation on the methodology used. See [here](https://github.com/epiforecasts/covidregionaldata) for our data back-end.
 
 ## Usage
 
@@ -27,10 +26,9 @@ git submodule update --init --recursive
 
 #### Update
 
-Update all nowcasts and the website with the following:
+Update the website with the following:
 
 ```bash
-bash bin/update_nowcasts.sh
 bash bin/update_website.sh
 ```
 
@@ -45,8 +43,6 @@ To build the docker image run (from the `covid` directory):
 ```bash
 docker build . -t covid
 ```
-
-Note that the build command fails on a vm with only 4gb of ram. Minimum spec has not yet been established but is higher than this!
 
 To run the docker image run:
 

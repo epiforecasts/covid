@@ -5,30 +5,12 @@ bibliography: library.bib
 ---
 
 
-## Aim
+```{r}
+title <- FALSE
+```
 
-To identify changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak at the national and subnational level whilst accounting for potential biases due to delays in case reporting.
+```{r, child = "_paper/title-skeleton.Rmd"}
+```
 
 
-## Summary
-
-* We used daily counts of confirmed cases reported by the European Centre for Disease Control for all analyses conducted at the national level [@ecdc_data; @NCoVUtils].
-*	Case onset dates were estimated by transforming case confirmation dates using an onset-to-confirmation delay distribution that was derived using all cases from a publicly available linelist for which onset and confirmation dates were available [@kraemer2020epidemiological; @NCoVUtils]. Case infection dates were then estimated using the same process based on a incubation period with a mean of 5 days [@incubationperiod].
-* The right-censoring of cases that have had symptom onset but are yet to be confirmed was adjusted for by upscaling the numbers of case onsets close to the present date. This assumes that cases that have already onset are drawn from a binomial distribution with the probability of onset having occurred by a certain point given by the onset-to-confirmation distribution. The same approach was used to adjusted for the right-truncation of cases that have been infected but have not yet developed symptoms.
-* Time-varying effective reproduction estimates were made using *EpiEstim* [@EpiEstim; @THOMPSON2019100356; @epinow] and assuming an uncertain generation time with a mean of 3.6 days (sd: 0.7 days) and a standard deviation of 3 days (sd: 0.8 days). The generation time estimate was derived using the data and method of [@generationinterval] modified to use the incubation period from [@incubationperiod]. The optimal time-varying window for the estimates was selected by comparing estimated cases against observed cases at each time point.
-* Time-varying estimates of the doubling time were made with a 7-day sliding window by iteratively fitting an exponential regression model.
-* We forecast the time-varying effective reproduction number over a 14 day time horizon using the best performing ensemble of time series models [@forecastHybrid] as assessed by iteratively fitting to a subsample of the estimated effective reproduction number estimates for each region [@episoon]. Perfomance was assessed using CPRS scores, interval scores, PIT calibration, bias and sharpness with an ensemble being preferred that minimised the CRPS score whilst being calibrated, unbiased and as sharp as possible over the full time horizon [@scoringrules; @scoringutils; @Funk2019cc]. 
-* The reproduction number forecast was then transformed into a case forecast using the renewal equation and a Poisson distribution of cases [@cori2013; @wallinga2004]. 
-* Our methods are outlined in this [preprint](https://wellcomeopenresearch.org/articles/5-112/v1).
-
-## Limitations
-
-* Diagnostic capabilities and testing protocols may vary in different parts of each country/region, adding uncertainty to the reported numbers. The true number of infections reflected in a given number of confirmed cases will vary substantially geographically.
-* Estimated onset dates are derived using available data for the delay from symptom onset to confirmation, in many regions this data is only available during the beginning the outbreak. This early outbreak data may not be representative of the underlying delay distribution, which may also change over the course of the outbreak. Estimated infection dates are derived using an estimate of the incubation period based on international cases.
-* The estimate of confirmed cases that have onset but are not yet confirmed, used to scale up recent confirmed case numbers, is uncertain and relies on the observed delays to confirmation remaining constant over the course of the outbreak.
-* These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods for further explanation).
-* An international reporting delay was assumed. The report delay is likely to vary across and within countries so this assumption is likely to introduce bias.
-* Countries are only included in the reported estimates if at least 60 confirmed cases have been reported in a single day. Regions within countries are only reported if at least 40 confirmed cases have been reported in a single day.
-* Our forecasts are indicative only and should not be considered with a weight equal to our real-time estimates. Changes in contact rates, mobility, and public health interventions are not accounted for which may lead to significant inaccuracy. 
-* Forecasts are only shown for countries/regions that have reported at least 200 cases in the last 7 days.
-* Our sampling approach to backcalculation may lead to oversmoothing of true infections. This is an area of [active research](https://github.com/epiforecasts/backcalc) (and one where we welcome collaboration from other researchers).
+**For more detail and the limitations of these estimates please see our [methods](https://epiforecasts.io/covid/methods.html) *currently being updated*), our [preprint](https://wellcomeopenresearch.org/articles/5-112/v1) (*currently being updated*)[@rtwebsite], the [documentation of our transmission tracking R package](https://epiforecasts.io/EpiNow2/)[@epinow2] and the documentation of our [R data package](https://epiforecasts.io/covidregionaldata/) [@covidregionaldata].**

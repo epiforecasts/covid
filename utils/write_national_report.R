@@ -43,16 +43,16 @@ knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
                       warning = FALSE,
                       fig.height = 12,
                       fig.width = 12,
-                      dpi = 400)
+                      dpi = 300)
 #'
 #+ load-packages, include = FALSE
-library(EpiNow)
+library(EpiNow2)
 library(dplyr)
 library(magrittr)
 library(rmarkdown)
 library(here)
 
-latest_date <- readRDS(here::here('_nowcasts/covid-global/national-summary/latest_date.rds'))
+latest_date <- readRDS(here::here('covid-rt-estimates/national/cases/summary/latest_date.rds'))
 #'"
 
 x3 <- paste0("
@@ -64,12 +64,12 @@ summary_figures <- 0
 title_depth <- 2
 index <- 1
 region <-'",loc,"'
-region_path <- '_nowcasts/covid-global/national'
+region_path <- 'covid-rt-estimates/national/cases/national'
 show_title <- FALSE
 report_forecast <- TRUE
 #'
 #'
-#+  child = system.file('templates/_region-report.Rmd', package = 'EpiNow')")
+#+  child = system.file('templates/_region-report.Rmd', package = 'EpiNow2')")
 
 x <- paste(x,x2,x3)
 
