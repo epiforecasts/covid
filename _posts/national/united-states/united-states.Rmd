@@ -10,13 +10,14 @@ output:
     toc_depth: 2
 categories:
   - "Subnational estimates"
-  - "Europe"
+  - "Americas"
 ---
 
 
 ```{r load-defaults, include = FALSE}
 region <- "United States"
 folder <- "united-states"
+print(here::here("utils/subnational_defaults.R"))
 source(here::here("utils/subnational_defaults.R"))
 ```
 
@@ -34,7 +35,6 @@ region_codes <- readRDS(here::here("_posts", "national", "united-states", "regio
 ```{r map, fig.height = 8, layout="l-body-outset", out.width = "80%"}
 summary_table <- summary_table %>%
   dplyr::left_join(region_codes, by = c("State" = "region"))
-
 map_us(summary_table,
               custom_theme = function(.) {
     EpiNow2::theme_map(

@@ -33,8 +33,6 @@ navbar:
     - text: "Subnational"
       menu:
        - text: "Countries with subnational estimates"
-       - text: "Afghanistan"
-         href: posts/national/afghanistan/index.html
        - text: "Brazil"
          href: posts/national/brazil/index.html
        - text: "Canada"

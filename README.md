@@ -1,9 +1,8 @@
 
 # Temporal variation in transmission during the COVID-19 outbreak
 
-[![DOI](https://zenodo.org/badge/249007415.svg)](https://zenodo.org/badge/latestdoi/249007415)
+For the underlying estimates see [here](https://github.com/epiforecasts/covid-rt-estimates). See [here](https://github.com/epiforecasts/EpiNow2) for documentation on the methodology used. See [here](https://github.com/epiforecasts/covidregionaldata) for our data back-end.
 
-For the underlying estimates see [here](https://github.com/epiforecasts/covid-rt-estimates). See [here](https://github.com/epiforecasts/EpiNow2) for documentation on the methodology used.
 ## Usage
 
 ### Clone the website
