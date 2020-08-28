@@ -13,12 +13,12 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## 2020-08-12
+## 2020-08-28
 
 * Rebased estimates to use `EpiNow2`.
 * Switched data source to `covidregionaldata`.
 * Added subnational estimates for Canada.
-* Restricted estimates reported to the last 10 weeks of data.
+* Restricted estimates reported to the last 12 weeks of data.
 * Updated methods and landing page to link to the new approach.
 
 ## 2020-05-17

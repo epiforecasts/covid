@@ -7,7 +7,7 @@ git submodule update --init --recursive
 Rscript utils/update_report_templates.R
 
 ## Update the paper
-Rscript utils/update_paper.R
+#Rscript utils/update_paper.R
 
 ## Update all posts
 Rscript utils/update_posts.R
