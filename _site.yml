@@ -57,8 +57,6 @@ navbar:
       menu:
        - text: "Methods"
          href: methods.html
-       - text: "Contributors"
-         href: contributors.html
        - text: "Funding"
          href: funding.html
        - text: "News"
