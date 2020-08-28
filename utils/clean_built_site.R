@@ -6,12 +6,6 @@ posts <- c(list.dirs("docs/posts", recursive = FALSE),
            list.dirs("docs/posts/national", recursive = FALSE))
 
 
-purrr::walk(posts, 
-            function(post) {
-              unlink(file.path(file.path(post, "nowcast")), recursive = TRUE)
-            })
-
-
 remove_folders <- list.dirs("_posts/national", recursive = FALSE) %>% 
   stringr::str_remove("_posts/national/")
 
