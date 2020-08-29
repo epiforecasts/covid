@@ -4,10 +4,10 @@
 git add --all && git commit -m "Updated website" && git push
 
 ## Deploy the website to gh-pages
-cp -r docs ../docs
+cp -r docs/. ../docs
 git checkout --orphan gh-pages
 rm -f -r *
-cp -r ../docs/. .
+mv -r ../docs/. .
 git add --all
 git commit -m "deploy site"
 git push -f origin gh-pages:gh-pages
