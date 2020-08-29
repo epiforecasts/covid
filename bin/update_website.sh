@@ -2,6 +2,9 @@
 
 ## Get latest estimates
 git submodule update --init --recursive
+cd covid-rt-estimates
+git pull origin master
+cd ..
 
 ## Update national reports
 Rscript utils/update_report_templates.R
