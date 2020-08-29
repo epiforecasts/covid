@@ -1,0 +1,70 @@
+---
+title: "Global summary"
+description: |
+  Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).
+bibliography: library.bib
+output:
+  distill::distill_article:
+    self_contained: true
+    toc: true
+    toc_depth: 2
+categories:
+  - "Global summary"
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
+                      fig.width = 12, fig.height = 12,
+                      message = FALSE,
+                      warning = FALSE,
+                      dpi = 400)
+```
+
+
+```{r load-packages, include = FALSE}
+library(EpiNow2)
+library(dplyr)
+library(magrittr)
+library(rmarkdown)
+library(here)
+```
+
+
+```{r}
+summary_table <- data.table::fread(here::here("covid-rt-estimates", "national", "cases",
+                                    "summary", "summary_table.csv"))
+latest_date <- readRDS(here::here("covid-rt-estimates", "national", "cases",
+                                    "summary", "latest_date.rds"))
+```
+
+*Using data available up to the:* `r latest_date`
+
+*These estimates are available for download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/cases/summary). Comparable estimates based on reported deaths are available [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/deaths/summary).*
+
+
+### Expected daily confirmed cases by country
+
+
+```{r map, fig.height = 6, layout="l-body-outset", out.width = "100%"}
+global <- summary_table %>%
+  dplyr::rename(country = Country) %>%
+  dplyr::filter(!country %in% c("Hubei", "Hong Kong", "China excluding Hubei")) %>%
+  EpiNow2::global_map(variable = "Expected change in daily cases")
+
+global
+```
+
+<br>
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details).*")`
+
+```{r}
+standalone <- TRUE
+region_path <- NULL
+summary_path <- "covid-rt-estimates/national/cases/summary"
+report_forecast <- TRUE
+interactive <- TRUE
+all_regions <- FALSE
+```
+
+```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
+```

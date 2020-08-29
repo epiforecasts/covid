@@ -1,0 +1,67 @@
+---
+title: "News"
+description: |
+  Updates and changes
+output:
+  distill::distill_article:
+    self_contained: true
+    toc: true
+    toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## 2020-08-28
+
+* Rebased estimates to use `EpiNow2`.
+* Switched data source to `covidregionaldata`.
+* Added subnational estimates for Canada.
+* Restricted estimates reported to the last 12 weeks of data.
+* Updated methods and landing page to link to the new approach.
+
+## 2020-05-17
+
+* Added regional estimates for Brazil and India
+* Approximate sampling is now adaptive. Sampling is exact when cases are below 10,000 in a region and after this point it is approximate.
+* Incubation period is now explicitly sampled from with right-truncation dealt with in the same way as for imputed onsets. 
+* Time window for the effective reproduction window is now optimised at every time point.
+* Changed to using a generation time estimate rather than a serial interval estimate (deals with the enforced positivity of the serial interval). 
+* Switched to using the `forecastHybrid` package for generating forecasts as the `fable` package was shown to have a memory leak when used at scale. 
+* Moved to using a quasipoisson model for estimating the rate of growth and the doubling time.
+* Corrected the sources for the UK and German regional data sources.
+    
+## 2020-05-02
+
+* Switched to approximate sampling of the delay distribution.
+* Forecasts are now only shown for countries/regions that have reported at least 200 cases in the last 7 days. 
+
+## 2020-04-25 
+
+* Added short term forecasting results.
+* Fixed Germany regional map.
+* Update plots.
+* Fixed doubling time confidence intervals.
+* Update palette.
+
+## 2020-04-18
+
+* Updated the UK data source.
+* Fixed data extraction for German regions
+* Reduced the lower bound on the number of cases needed to be included in the global nowcast from 100 to 60. 
+* Squashed the NA category from appearing in the USA map.
+
+## 2020-04-09
+
+* Updated all estimates with latest data.
+* Corrected a mismatch between the data used for the USA on national and statewide level. 
+* Added additional text explaining why estimates are lagged.
+* Updated wording to highlight date of estiamtes.
+
+## 2020-03-31
+
+* New website to display results.
+* Regional breakdowns added for Germany, United Kingdom, and the United States of America.
+* National estimates added for all countries that have reported at least 100 cases in a day.
+* Update approach to optimise the window used when estimating the Reproduction number.
