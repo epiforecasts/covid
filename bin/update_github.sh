@@ -4,9 +4,6 @@
 git add --all && git commit -m "Updated website" && git push
 
 ## Deploy the website to gh-pages
-cp -r docs ../docs
-git checkout--orphan -b  gh-pages
-rm -f -r *
-cp -r ../docs/. .
+git subtree split --squash --prefix docs -b gh-pages
 git push -f origin gh-pages:gh-pages
 git branch -D gh-pages
