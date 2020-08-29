@@ -2,10 +2,6 @@ require(stringr)
 require(magrittr)
 require(purrr)
 
-posts <- c(list.dirs("docs/posts", recursive = FALSE), 
-           list.dirs("docs/posts/national", recursive = FALSE))
-
-
 remove_folders <- list.dirs("_posts/national", recursive = FALSE) %>% 
   stringr::str_remove("_posts/national/")
 
