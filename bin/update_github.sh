@@ -7,7 +7,8 @@ git add --all && git commit -m "Updated website" && git push
 cp -r docs/. ../docs
 git checkout --orphan gh-pages
 rm -f -r *
-mv -r ../docs/. .
+cp -r ../docs/. .
+rm -r ../docs
 git add --all
 git commit -m "deploy site"
 git push -f origin gh-pages:gh-pages
