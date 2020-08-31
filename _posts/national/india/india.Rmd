@@ -13,6 +13,10 @@ categories:
   - "Asia"
 ---
 
+```{r load-geodata, include = FALSE}
+geoData <- rnaturalearth::ne_states('India', returnclass = 'sf') 
+geoData <-  dplyr::rename(geoData, sovereignt = name_en)
+```
 
 ```{r load-defaults, include = FALSE}
 region <- "India"
@@ -32,38 +36,13 @@ region_codes <- readRDS(here::here("_posts", "national", "india", "region_codes.
 ## Expected daily confirmed cases by region
 
 
-```{r map, fig.height = 6, layout="l-body-outset", out.width = "70%"}
-summary_table <- summary_table %>%
-  dplyr::left_join(region_codes, by = c("Region" = "region"))
-
-ladakh <- raster::getData('GADM', country='IND', level=2) %>%
-  sf::st_as_sf() %>%
-  dplyr::filter(NAME_2 == "Leh (Ladakh)" | NAME_2 == "Kargil") %>%
-  dplyr::mutate(district = c("Leh", "Kargil"),
-                region = "Ladakh") %>%
-  dplyr::group_by(region) %>%
-  dplyr::summarise()
-regions <- raster::getData('GADM', country='IND', level=1) %>%
-  sf::st_as_sf() %>%
-  dplyr::select(region = NAME_1) %>%
-  rbind(ladakh)
-regions_with_data <- regions %>%
-  dplyr::left_join(summary_table,
-                   by = c("region" = "Region"))
-map <- ggplot2::ggplot(regions_with_data) +
-  ggplot2::geom_sf(ggplot2::aes(fill = `Expected change in daily cases`),
-                   alpha = 0.8, size = 0.2, col = "white")
-EpiNow2::theme_map(
-  map,
-  continuous = FALSE,
-  variable_label = "Expected change in daily cases",
-  fill_labels = ggplot2::waiver(),
-  breaks = levels(summary_table$`Expected change in daily cases`)
-  )
+```{r map, layout="l-body-outset", out.width = "100%", message = FALSE, warning = FALSE}
+widget
 ```
 
 <br>
-`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated cases with a date of infection on the ", latest_date , ") in India, stratified by region, can be summarised by whether cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Regions with fewer than 40 cases reported on a single day are not included in the analysis (light grey).*")`
+`r widget_caption`
+
 
 ## National summary
 
