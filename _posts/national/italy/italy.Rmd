@@ -14,45 +14,34 @@ categories:
 ---
 
 
+```{r load-custom-data}
+region_codes <- readRDS(here::here("_posts", "national", "italy", "region_codes.rds"))
+region_codes <- dplyr::rename(region_codes, sovereignt = region, provnum_ne = region_code)
+```
+
+```{r load-geodata, include = FALSE}
+geoData <- rnaturalearth::ne_states('Italy', returnclass = 'sf') 
+geoData <- dplyr::left_join(geoData, region_codes, by = "provnum_ne")
+```
+
 ```{r load-defaults, include = FALSE}
 region <- "Italy"
 folder <- "italy"
 source(here::here("utils/subnational_defaults.R"), local = TRUE)
 ```
 
-```{r load-custom-data}
-region_codes <- readRDS(here::here("_posts", "national", "italy", "region_codes.rds"))
-```
-
-
 *Using data available up to the:* `r latest_date`
 
 *Subnational estimates are available to download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/subnational/italy/cases/summary) and national estimates are available to download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/cases/summary).*
 
-## Expected daily confirmed cases by region
+## Interactive summary
 
-```{r map, fig.width = 6, fig.height = 6, layout="l-body-outset", out.width = "80%"}
-summary_table <- summary_table %>%
-  dplyr::rename(region = Region) %>%
-  dplyr::left_join(region_codes, by = "region")
-
-map <-  rnaturalearth::ne_states("Italy", returnclass = "sf") %>%
-  dplyr::mutate(region_code = provnum_ne) %>% 
-  dplyr::left_join(summary_table, by = "region_code") %>%
-  ggplot2::ggplot(ggplot2::aes(fill = `Expected change in daily cases`)) +
-  ggplot2::geom_sf(alpha = 0.8, size = 0.2)
-
-map %>%
-  EpiNow2::theme_map(
-    continuous = FALSE,
-    variable_label = "Expected change in daily cases",
-    fill_labels = ggplot2::waiver(),
-    breaks = levels(summary_table$`Expected change in daily cases`)
-  )
+```{r map, layout="l-body-outset", out.width = "100%", message = FALSE, warning = FALSE}
+widget
 ```
 
 <br>
-`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated cases with a date of infection on the ", latest_date , ") in Italy, stratified by region, can be summarised by whether cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details).*")`
+`r widget_caption`
 
 ## National summary
 
