@@ -14,16 +14,22 @@ categories:
 ---
 
 
+```{r load-custom-data}
+region_codes <- covidregionaldata::get_regional_data(country = "Canada") %>% 
+  dplyr::select(sovereignt = province, iso_3166_2) %>% 
+  unique()
+```
+
+```{r load-geodata, include = FALSE}
+geoData <- rnaturalearth::ne_states('Canada', returnclass = 'sf') 
+geoData <- dplyr::left_join(geoData, region_codes, by = "iso_3166_2")
+```
+
+
 ```{r load-defaults, include = FALSE}
 region <- "Canada"
 folder <- "canada"
 source(here::here("utils/subnational_defaults.R"), local = TRUE)
-```
-
-```{r load-custom-data}
-region_codes <- covidregionaldata::get_regional_data(country = "Canada") %>% 
-  dplyr::select(region = province, region_code = iso_3166_2) %>% 
-  unique()
 ```
 
 
@@ -31,35 +37,16 @@ region_codes <- covidregionaldata::get_regional_data(country = "Canada") %>%
 
 *Subnational estimates are available to download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/subnational/canada/cases/summary) and national estimates are available to download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/cases/summary).*
 
-## Expected daily confirmed cases by region
+## Interactive summary
 
 
-```{r map, fig.height = 8, layout="l-body-outset", out.width = "70%", warning = FALSE, message = FALSE}
-summary_table <- summary_table %>% 
-  dplyr::left_join(region_codes, by = c("Region" = "region"))
-
-regions <- rnaturalearth::ne_states("Canada", returnclass = "sf")
-
-regions_with_data <- regions %>%
-   dplyr::left_join(summary_table,
-                  by = c("iso_3166_2" = "region_code"))
-
-map <- regions_with_data %>%
-  ggplot2::ggplot(ggplot2::aes(fill = `Expected change in daily cases`)) +
-  ggplot2::geom_sf(alpha = 0.8, size = 0.2)
-
-EpiNow2::theme_map(
-  map,
-  continuous = FALSE,
-  variable_label = "Expected change in daily cases",
-  fill_labels = ggplot2::waiver(),
-  breaks = levels(summary_table$`Expected change in daily cases`)
-  )
-
+```{r map, layout="l-body-outset", out.width = "100%", message = FALSE, warning = FALSE}
+widget
 ```
 
 <br>
-`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") in Canada, stratified by region, can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details).*")`
+`r widget_caption`
+
 
 ## National summary
 
