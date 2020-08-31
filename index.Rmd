@@ -13,4 +13,4 @@ title <- FALSE
 ```
 
 
-**For more detail and the limitations of these estimates please see our [methods](https://epiforecasts.io/covid/methods.html) *currently being updated*), our [preprint](https://wellcomeopenresearch.org/articles/5-112/v1) (*currently being updated*)[@rtwebsite], the [documentation of our transmission tracking R package](https://epiforecasts.io/EpiNow2/)[@epinow2] and the documentation of our [R data package](https://epiforecasts.io/covidregionaldata/) [@covidregionaldata].**
+**For more detail and the limitations of these estimates please see our [methods](https://epiforecasts.io/covid/methods.html) *currently being updated*), our [preprint](https://wellcomeopenresearch.org/articles/5-112/v1) (*currently being updated*)[@rtwebsite], the [documentation of our transmission tracking R package](https://epiforecasts.io/EpiNow2/)[@epinow2] and the documentation of our [R data package](https://epiforecasts.io/covidregionaldata/) [@covidregionaldata]. Interactive visualisations are powered by `RtD3`[@rtd3].**

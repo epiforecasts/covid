@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
 
 library(EpiNow2)
 library(covidregionaldata)
+library(RtD3)
 library(dplyr)
 library(magrittr)
 library(rnaturalearth)
@@ -46,3 +47,32 @@ interactive <- TRUE
 
 standalone <- FALSE
 
+# Build widget ------------------------------------------------------------
+
+base_path <- "https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/subnational/"
+# Read in each summary folder
+rtData <- list("Cases" = RtD3::readInEpiNow2(path = paste0(base_path, folder, "/cases/summary"),
+                                             region_var = "region"))
+
+# Extract summary data from cases
+summaryData <- rtData$Cases$summary
+
+## Drop remaining summary data
+rtData <- lapply(rtData, function(.){.[-1]})
+
+
+widget <- RtD3::summaryWidget(
+  geoData = geoData,
+  summaryData = summaryData,
+  rtData = rtData
+)
+
+widget_caption <- paste0("*The results of the latest reproduction number estimates
+                         (based on estimated confirmed cases with a date of infection on 
+                         the ", latest_date , ") can be summarised by whether confirmed 
+                         cases are likely increasing or decreasing. This represents the 
+                         strength of the evidence that the reproduction number in each region 
+                         is greater than or less than 1, respectively (see the
+                         [methods](https://epiforecasts.io/covid/methods.html) for details).
+                         Click on a country (or search) to see subnational level estimates. 
+                         This interactive visualisation is powered by RtD3[@rtd3].*")
