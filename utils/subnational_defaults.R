@@ -49,7 +49,7 @@ standalone <- FALSE
 
 # Build widget ------------------------------------------------------------
 
-if (missing(region_var)) {
+if (!exists("region_var")) {
   region_var <- "region"
 }
 
