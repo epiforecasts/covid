@@ -15,6 +15,7 @@ categories:
 
 
 ```{r load-custom-data}
+library(magrittr)
 region_codes <- covidregionaldata::get_regional_data(country = "Canada") %>% 
   dplyr::select(sovereignt = province, iso_3166_2) %>% 
   unique()

@@ -15,6 +15,7 @@ categories:
 
 
 ```{r load-custom-data, include = FALSE}
+library(magrittr)
 region_codes <- covidregionaldata::get_regional_data(country = "Colombia") %>% 
   dplyr::select(sovereignt = departamento, iso_3166_2) %>% 
   unique()
