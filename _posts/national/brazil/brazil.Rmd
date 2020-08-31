@@ -23,7 +23,6 @@ region_codes <- dplyr::rename(region_codes, sovereignt = region)
 geoData <- rnaturalearth::ne_states('Brazil', returnclass = 'sf') 
 geoData <- dplyr::mutate(geoData, region_code = stringr::str_remove_all(iso_3166_2, "BR-"))
 geoData <- dplyr::left_join(geoData, region_codes, by = "region_code")
-
 ```
 
 ```{r load-defaults, include = FALSE}
