@@ -49,10 +49,14 @@ standalone <- FALSE
 
 # Build widget ------------------------------------------------------------
 
+if (missing(region_var)) {
+  region_var <- "region"
+}
+
 base_path <- "https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/subnational/"
 # Read in each summary folder
 rtData <- list("Cases" = RtD3::readInEpiNow2(path = paste0(base_path, folder, "/cases/summary"),
-                                             region_var = "region"))
+                                             region_var = region_var))
 
 # Extract summary data from cases
 summaryData <- rtData$Cases$summary
