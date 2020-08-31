@@ -19,6 +19,7 @@ Description: To identify changes in the reproduction number, rate of spread,
 Imports:
     EpiNow2,
     covidregionaldata,
+    RtD3,
     distill,
     data.table,
     dplyr,
@@ -42,7 +43,8 @@ Additional_repositories:
   http://packages.ropensci.org/
 Remotes:
   epiforecasts/covidregionaldata,
-  epiforecasts/EpiNow2
+  epiforecasts/EpiNow2,
+  seabbs/RtD3
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

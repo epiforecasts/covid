@@ -23,6 +23,7 @@ knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
 
 ```{r load-packages, include = FALSE}
 library(EpiNow2)
+library(RtD3)
 library(dplyr)
 library(magrittr)
 library(rmarkdown)
@@ -44,18 +45,47 @@ latest_date <- readRDS(here::here("covid-rt-estimates", "national", "cases",
 
 ### Expected daily confirmed cases by country
 
+```{r, include = FALSE}
+geoData <- rnaturalearth::ne_countries(scale = "medium", returnclass = 'sf')
 
-```{r map, fig.height = 6, layout="l-body-outset", out.width = "100%"}
-global <- summary_table %>%
-  dplyr::rename(country = Country) %>%
-  dplyr::filter(!country %in% c("Hubei", "Hong Kong", "China excluding Hubei")) %>%
-  EpiNow2::global_map(variable = "Expected change in daily cases")
+geoData <- geoData %>% 
+  dplyr::mutate(sovereignt = ifelse(sovereignt == 'United States of America',
+                                    'United States', sovereignt))
 
-global
+
+# Define the base URL/file path for the estimates
+base_url <- 'https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/national/'
+
+# Read in each summary folder
+rtData <- list("Cases" = RtD3::readInEpiNow2(path = paste0(base_url, "cases/summary"),
+                                             region_var = "country"),
+               "Deaths" = RtD3::readInEpiNow2(path = paste0(base_url, "deaths/summary"),
+                                              region_var = "country"))
+
+# Extract summary data from cases
+summaryData <- rtData$Cases$summary
+
+## Drop remaining summary data
+rtData <- lapply(rtData, function(.){.[-1]})
+
+subnational_ref <- RtD3::getSubregionalUrls(path = "https://epiforecasts.io/covid/posts/national/",
+                                            areas = c('Afghanistan', 'Brazil', 'Colombia', 'India', 
+                                                      'Italy', 'Germany', 'Russia', 'United Kingdom',
+                                                      'United States'))
+```
+
+
+```{r map, layout="l-body-outset", out.width = "100%", warning = FALSE, message = FALSE}
+RtD3::summaryWidget(
+  geoData = geoData,
+  summaryData = summaryData,
+  rtData = rtData,
+  subregional_ref = subnational_ref
+)
 ```
 
 <br>
-`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details).*")`
+`r paste0("*The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Click on a country (or search) to see national level estimates (and a link to subnational estimates if available). This interactive visualisation is powered by RtD3[@rtd3].*")`
 
 ```{r}
 standalone <- TRUE
