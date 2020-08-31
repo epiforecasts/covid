@@ -33,7 +33,7 @@ region_codes <- readRDS(here::here("_posts", "national", "india", "region_codes.
 
 *Subnational estimates are available to download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/subnational/india/cases/summary) and national estimates are available to download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/cases/summary).*
 
-## Expected daily confirmed cases by region
+## Interactive summary
 
 
 ```{r map, layout="l-body-outset", out.width = "100%", message = FALSE, warning = FALSE}
