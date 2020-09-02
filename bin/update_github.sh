@@ -9,7 +9,7 @@ git checkout --orphan gh-pages
 rm -f -r *
 cp -r ../docs/. .
 rm -r ../docs
-rm .gitnore
+rm .gitignore
 rm -r .github
 rm .Rbuildignore
 touch .gitignore
