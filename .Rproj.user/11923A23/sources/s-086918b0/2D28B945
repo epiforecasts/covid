@@ -1,0 +1,24 @@
+{
+    "id": "2D28B945",
+    "path": "~/covid/utils/subnational_defaults.R",
+    "project_path": "utils/subnational_defaults.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1599065851829.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "cursorPosition": "29,28",
+        "scrollLine": "15"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1599068136,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1599068136565,
+    "read_only": false,
+    "read_only_alternatives": []
+}
