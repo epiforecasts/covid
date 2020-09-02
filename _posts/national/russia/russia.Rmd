@@ -41,7 +41,7 @@ source(here::here("utils/subnational_defaults.R"))
 
 ## Interactive summary
 
-```{r map, layout="l-body-outset", out.width = "100%", message = FALSE, warning = FALSE}
+```{r map, layout="l-body-outset", out.width = "200%", message = FALSE, warning = FALSE}
 widget
 ```
 
