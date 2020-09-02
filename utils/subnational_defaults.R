@@ -22,6 +22,13 @@ library(here)
 library(stringr)
 library(ggplot2)
 
+
+# Options ----------------------------------------------------------------
+
+
+## Force data.table to use numerics for integer.
+options(datatable.integer64 = "numeric")
+
 # Load summary data -------------------------------------------------------
 
 summary_table <- data.table::fread(here::here("covid-rt-estimates", "subnational", 
@@ -77,5 +84,5 @@ widget_caption <- paste0("*The results of the latest reproduction number estimat
                          strength of the evidence that the reproduction number in each region 
                          is greater than or less than 1, respectively (see the
                          [methods](https://epiforecasts.io/covid/methods.html) for details).
-                         Click on a country (or search) to see subnational level estimates. 
+                         Click on a subnational area (or search) to see subnational level estimates. 
                          This interactive visualisation is powered by RtD3[@rtd3].*")

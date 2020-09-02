@@ -3,7 +3,7 @@ library(RtD3, quietly = TRUE)
 library(data.table, quietly = TRUE)
 
 get_national_RtD3_data <- function(rtData, country) {
-  
+
   # Define the base URL/file path for the estimates
   base_url <- 'https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/national/'
   
