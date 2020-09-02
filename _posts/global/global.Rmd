@@ -62,12 +62,6 @@ rtData <- list("Cases" = RtD3::readInEpiNow2(path = paste0(base_url, "cases/summ
                "Deaths" = RtD3::readInEpiNow2(path = paste0(base_url, "deaths/summary"),
                                               region_var = "country"))
 
-# Extract summary data from cases
-summaryData <- rtData$Cases$summary
-
-## Drop remaining summary data
-rtData <- lapply(rtData, function(.){.[-1]})
-
 subnational_ref <- RtD3::getSubregionalUrls(path = "https://epiforecasts.io/covid/posts/national/",
                                             areas = c('Afghanistan', 'Brazil', 'Colombia', 'India', 
                                                       'Italy', 'Germany', 'Russia', 'United Kingdom',
@@ -78,7 +72,6 @@ subnational_ref <- RtD3::getSubregionalUrls(path = "https://epiforecasts.io/covi
 ```{r map, layout="l-body-outset", out.width = "100%", warning = FALSE, message = FALSE}
 RtD3::summaryWidget(
   geoData = geoData,
-  summaryData = summaryData,
   rtData = rtData,
   subregional_ref = subnational_ref
 )
