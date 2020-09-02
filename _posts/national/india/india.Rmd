@@ -36,7 +36,7 @@ region_codes <- readRDS(here::here("_posts", "national", "india", "region_codes.
 ## Interactive summary
 
 
-```{r map, layout="l-body-outset", out.width = "100%", message = FALSE, warning = FALSE}
+```{r map, layout="l-body-outset", out.width = "200%", message = FALSE, warning = FALSE}
 widget
 ```
 
