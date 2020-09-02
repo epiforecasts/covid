@@ -39,12 +39,11 @@ Imports:
     knitr,
     kableExtra
 Additional_repositories: 
-  https://epiforecasts.io/drat/,
   http://packages.ropensci.org/
 Remotes:
   epiforecasts/covidregionaldata,
   epiforecasts/EpiNow2,
-  seabbs/RtD3
+  epiforecasts/RtD3
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
