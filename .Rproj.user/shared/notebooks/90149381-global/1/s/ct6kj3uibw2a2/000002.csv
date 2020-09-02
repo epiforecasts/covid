@@ -1,0 +1,4 @@
+"0","summary_table <- data.table::fread(here::here(""covid-rt-estimates"", ""national"", ""cases"","
+"0","                                    ""summary"", ""summary_table.csv""))"
+"0","latest_date <- readRDS(here::here(""covid-rt-estimates"", ""national"", ""cases"","
+"0","                                    ""summary"", ""latest_date.rds""))"
