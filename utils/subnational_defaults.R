@@ -58,17 +58,16 @@ base_path <- "https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/
 rtData <- list("Cases" = RtD3::readInEpiNow2(path = paste0(base_path, folder, "/cases/summary"),
                                              region_var = region_var))
 
-# Extract summary data from cases
-summaryData <- rtData$Cases$summary
 
-## Drop remaining summary data
-rtData <- lapply(rtData, function(.){.[-1]})
+# Add in national level data
+source(here::here("utils", "get_national_RtD3_data.R"))
 
+rtData <- get_national_RtD3_data(rtData, country = region)
 
 widget <- RtD3::summaryWidget(
   geoData = geoData,
-  summaryData = summaryData,
-  rtData = rtData
+  rtData = rtData,
+  activeArea = region
 )
 
 widget_caption <- paste0("*The results of the latest reproduction number estimates
