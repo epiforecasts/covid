@@ -9,8 +9,11 @@ git checkout --orphan gh-pages
 rm -f -r *
 cp -r ../docs/. .
 rm -r ../docs
+rm .gitnore
 rm -r .github
 rm .Rbuildignore
+touch .gitignore
+cat .gitignore .Rproj.user
 git add --all
 git commit -m "deploy site"
 git push -f origin gh-pages:gh-pages
