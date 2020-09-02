@@ -1,3 +1,0 @@
-"0","geoData <- rnaturalearth::ne_states('Brazil', returnclass = 'sf') "
-"0","geoData <- dplyr::mutate(geoData, region_code = stringr::str_remove_all(iso_3166_2, ""BR-""))"
-"0","geoData <- dplyr::left_join(geoData, region_codes, by = ""region_code"")"

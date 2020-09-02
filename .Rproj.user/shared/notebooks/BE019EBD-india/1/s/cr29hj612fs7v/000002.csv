@@ -1,2 +1,0 @@
-"0","geoData <- rnaturalearth::ne_states('India', returnclass = 'sf') "
-"0","geoData <-  dplyr::rename(geoData, sovereignt = name_en)"
