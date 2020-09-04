@@ -4,6 +4,7 @@ require(stringr)
 require(purrr)
 require(tibble)
 require(dplyr)
+require(tidyr)
 require(countrycode)
 require(rnaturalearth)
 require(covidregionaldata)
@@ -12,7 +13,13 @@ require(covidregionaldata)
 
 countries <- tibble::tibble(country = list.dirs(here::here("covid-rt-estimates/national/cases/national"), recursive = FALSE) %>%
                               stringr::str_remove(here::here("covid-rt-estimates/national/cases/national/")))
-  
+
+
+countries_with_death_estimates <-  tibble::tibble(country = list.dirs(here::here("covid-rt-estimates/national/deaths/national"), recursive = FALSE) %>%
+                                                    stringr::str_remove(here::here("covid-rt-estimates/national/deaths/national/")),
+                                                  deaths = TRUE)
+
+
 # Get countries regions ---------------------------------------------------
 
 countries_in_data <- covidregionaldata::get_national_data(source = "ecdc") %>% 
@@ -24,9 +31,11 @@ countries_in_data <- covidregionaldata::get_national_data(source = "ecdc") %>%
 
 countries <- countries %>% 
   dplyr::left_join(countries_in_data, by = "country") %>% 
+  dplyr::left_join(countries_with_death_estimates, by = "country") %>% 
   dplyr::mutate(file_name = country %>%
                   stringr::str_replace_all(" ", "-") %>%
-                  stringr::str_to_lower())
+                  stringr::str_to_lower()) %>% 
+  dplyr::mutate(deaths = tidyr::replace_na(deaths, FALSE))
 
 
 # Remove countries with regional breakdowns -------------------------------
