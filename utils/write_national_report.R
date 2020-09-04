@@ -76,8 +76,8 @@ report_forecast <- TRUE
 x4 <- paste0("
 #+
 #'
-#'
-index <- 2
+summary_tables <- 1
+summary_figures <- 1
 region_path <- 'covid-rt-estimates/national/deaths/national'
 #'
 #' ## Estimates based on reported deaths'
