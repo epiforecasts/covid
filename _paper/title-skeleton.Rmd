@@ -7,7 +7,7 @@
 
 **Background:** Assessing temporal variations in transmission in different countries is essential for monitoring the epidemic, evaluating the effectiveness of public health interventions and estimating the impact of changes in policy.
 
-**Methods:**  We use case notification data to generate daily estimates of the time-dependent reproduction number subnationally and nationally over a 12 week rolling window. Our modelling framework, based on open source tooling, accounts for uncertain reporting delays, so that the reproduction number is estimated based on underlying latent infections and not reported cases.
+**Methods:**  We use case and death notification data to generate daily estimates of the time-dependent reproduction number subnationally and nationally over a 12 week rolling window. Our modelling framework, based on open source tooling, accounts for uncertain reporting delays, so that the reproduction number is estimated based on underlying latent infections and not reported cases or deaths.
 
 `r ifelse(title, "**Results:**  We provide three example uses of our framework. First, we demonstrate how the toolset displays temporal changes in the reproduction number. Second, we show how the framework can be used to reconstruct case counts by date of infection from case counts by date of notification, as well as to estimate the reproduction number. Third, we show how maps can be generated to clearly show if case numbers are likely to decrease or increase in different regions. Results are shown subnatioanlly and nationally on our website (https://epiforecasts.io/covid/) and are updated regularly. Our tooling is provided as an open-source R package to allow replication by others.", "")`
 
