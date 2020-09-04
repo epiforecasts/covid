@@ -43,7 +43,7 @@ latest_date <- readRDS(here::here("covid-rt-estimates", "national", "cases",
 *These estimates are available for download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/cases/summary). Comparable estimates based on reported deaths are available [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/deaths/summary).*
 
 
-### Interactive summary
+## Interactive summary
 
 ```{r, include = FALSE}
 geoData <- rnaturalearth::ne_countries(scale = "medium", returnclass = 'sf')
@@ -93,13 +93,31 @@ RtD3::summaryWidget(
 <br>
 `r paste0("*The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Click on a country (or search) to see national level estimates (and a link to subnational estimates if available). This interactive visualisation is powered by RtD3[@rtd3].*")`
 
+## Summary of national estimates based on reported cases
+
 ```{r}
-standalone <- TRUE
+standalone <- FALSE
+tab_start <- 2
+fig_start <- 4
 region_path <- NULL
 summary_path <- "covid-rt-estimates/national/cases/summary"
 report_forecast <- TRUE
 interactive <- TRUE
 all_regions <- FALSE
+```
+
+```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
+```
+
+
+## Summary of national estimates based on reported deaths
+
+```{r}
+standalone <- FALSE
+tab_start <- 3
+fig_start <- 8
+summary_path <- "covid-rt-estimates/national/deaths/summary"
+case_def <- "death"
 ```
 
 ```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}

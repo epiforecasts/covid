@@ -14,7 +14,7 @@ loc <- country_details$country
 save_name <- country_details$file_name
 region <- country_details$region
 locstr <- paste0("Estimates for ", loc)
-
+deaths <- country_details$deaths
 
 x <- paste0("#' ---
 #' title: ", '"',locstr,'"',"
@@ -53,6 +53,8 @@ library(rmarkdown)
 library(here)
 
 latest_date <- readRDS(here::here('covid-rt-estimates/national/cases/summary/latest_date.rds'))
+
+#' ## Estimates based on reported cases
 #'"
 
 x3 <- paste0("
@@ -61,7 +63,7 @@ x3 <- paste0("
 ## Control parameters for region-report
 summary_tables <- 0
 summary_figures <- 0
-title_depth <- 2
+title_depth <- 3
 index <- 1
 region <-'",loc,"'
 region_path <- 'covid-rt-estimates/national/cases/national'
@@ -71,8 +73,22 @@ report_forecast <- TRUE
 #'
 #+  child = system.file('templates/_region-report.Rmd', package = 'EpiNow2')")
 
-x <- paste(x,x2,x3)
+x4 <- paste0("
+#+
+#'
+#'
+index <- 2
+region_path <- 'covid-rt-estimates/national/deaths/national'
+#'
+#' ## Estimates based on reported deaths'
+#'
+#+  child = system.file('templates/_region-report.Rmd', package = 'EpiNow2')")
 
+if (deaths) {
+  x <- paste(x, x2, x3, x4)
+}else{
+  x <- paste(x,x2,x3)
+}
 ## Remove old template and add new one
 unlink(paste0("_posts/national/",save_name), recursive = TRUE, force = TRUE)
 dir.create(paste0("_posts/national/",save_name), recursive = TRUE)
