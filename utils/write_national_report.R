@@ -78,6 +78,7 @@ x4 <- paste0("
 #'
 summary_tables <- 1
 summary_figures <- 1
+case_def <- 'death'
 region_path <- 'covid-rt-estimates/national/deaths/national'
 #'
 #' ## Estimates based on reported deaths
