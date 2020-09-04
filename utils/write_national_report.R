@@ -80,7 +80,7 @@ summary_tables <- 1
 summary_figures <- 1
 region_path <- 'covid-rt-estimates/national/deaths/national'
 #'
-#' ## Estimates based on reported deaths'
+#' ## Estimates based on reported deaths
 #'
 #+  child = system.file('templates/_region-report.Rmd', package = 'EpiNow2')")
 
