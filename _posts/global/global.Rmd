@@ -91,29 +91,56 @@ RtD3::summaryWidget(
 ```
 
 <br>
-`r paste0("*The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Click on a country (or search) to see national level estimates (and a link to subnational estimates if available). This interactive visualisation is powered by RtD3[@rtd3].*")`
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Click on a country (or search) to see national level estimates (and a link to subnational estimates if available). This interactive visualisation is powered by RtD3[@rtd3].*")`
 
-## Summary of national estimates based on reported cases
+## Global and regional summary
 
 ```{r}
 standalone <- FALSE
+tab_start <- 1
+fig_start <- 2
+region_path <- NULL
+summary_path <- "covid-rt-estimates/region/cases/summary"
+report_forecast <- TRUE
+interactive <- FALSE
+all_regions <- FALSE
+```
+
+### Estimates based on reported cases
+
+```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
+```
+
+### Estimates based on reported deaths
+
+```{r}
 tab_start <- 2
 fig_start <- 4
-region_path <- NULL
-summary_path <- "covid-rt-estimates/national/cases/summary"
-report_forecast <- TRUE
-interactive <- TRUE
-all_regions <- FALSE
+case_def <- "death"
+summary_path <- "covid-rt-estimates/region/cases/summary"
 ```
 
 ```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
 ```
 
+## National summary
 
-## Summary of national estimates based on reported deaths
+### Estimates based on reported cases
 
 ```{r}
-standalone <- FALSE
+tab_start <- 3
+fig_start <- 8
+case_def <- "case"
+summary_path <- "covid-rt-estimates/national/cases/summary"
+interactive <- TRUE
+```
+
+```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
+```
+
+### Estimates based on reported deaths
+
+```{r}
 tab_start <- 3
 fig_start <- 8
 summary_path <- "covid-rt-estimates/national/deaths/summary"
