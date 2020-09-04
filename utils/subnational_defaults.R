@@ -67,9 +67,9 @@ rtData <- list("Cases" = RtD3::readInEpiNow2(path = paste0(base_path, folder, "/
 
 
 # Add in national level data
-source(here::here("utils", "get_national_RtD3_data.R"))
+source(here::here("utils", "join_RtD3_data.R"))
 
-rtData <- get_national_RtD3_data(rtData, country = region)
+rtData$Cases <- join_RtD3_data(rtData$Cases, country = region)
 
 widget <- RtD3::summaryWidget(
   geoData = geoData,
