@@ -117,7 +117,7 @@ all_regions <- FALSE
 tab_start <- 2
 fig_start <- 4
 case_def <- "death"
-summary_path <- "covid-rt-estimates/region/cases/summary"
+summary_path <- "covid-rt-estimates/region/deaths/summary"
 ```
 
 ```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}

@@ -60,7 +60,7 @@ widget <- RtD3::summaryWidget(
   activeArea = region
 )
 
-widget_caption <- paste0("*The results of the latest reproduction number estimates
+widget_caption <- paste0("*Figure 1: The results of the latest reproduction number estimates
                          (based on estimated confirmed cases with a date of infection on 
                          the ", latest_date , ") can be summarised by whether confirmed 
                          cases are likely increasing or decreasing. This represents the 
