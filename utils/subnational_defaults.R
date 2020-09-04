@@ -37,23 +37,6 @@ summary_table <- data.table::fread(here::here("covid-rt-estimates", "subnational
 latest_date <- readRDS(here::here("covid-rt-estimates", "subnational", folder,
                                   "cases", "summary", "latest_date.rds"))
 
-
-
-# Region report control parameters ----------------------------------------
-
-summary_tables <- 0
-summary_figures <- 1
-title_depth <- 3
-index <- 1
-region_path <- "covid-rt-estimates/national/cases/national"
-show_title <- FALSE
-report_forecast <- TRUE
-interactive <- TRUE
-
-# Region summary control parameters ---------------------------------------
-
-standalone <- FALSE
-
 # Build widget ------------------------------------------------------------
 
 if (!exists("region_var")) {

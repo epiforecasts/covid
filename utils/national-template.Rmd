@@ -1,0 +1,31 @@
+## National summary - based on reported cases
+
+
+```{r, include = FALSE}
+summary_tables <- 0
+summary_figures <- 1
+title_depth <- 3
+index <- 1
+region_path <- "covid-rt-estimates/national/cases/national"
+show_title <- FALSE
+report_forecast <- TRUE
+interactive <- TRUE
+standalone <- FALSE
+```
+
+```{r,  child = system.file("templates/_region-report.Rmd", package = "EpiNow2")}
+```
+
+
+## National summary - based on reported deaths
+
+```{r, include = FALSE}
+index <- 1
+summary_tables <- 1
+summary_figures <- 1
+case_def <- "death"
+region_path <- "covid-rt-estimates/national/deaths/national"
+```
+
+```{r,  child = system.file("templates/_region-report.Rmd", package = "EpiNow2")}
+```

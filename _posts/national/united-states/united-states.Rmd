@@ -40,10 +40,7 @@ widget
 <br>
 `r widget_caption`
 
-## National summary
-
-
-```{r,  child = system.file("templates/_region-report.Rmd", package = "EpiNow2")}
+```{r,  child = here::here("utils", "national-template.Rmd")}
 ```
 
 ## Regional Breakdown
