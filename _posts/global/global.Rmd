@@ -62,6 +62,18 @@ rtData <- list("Cases" = RtD3::readInEpiNow2(path = paste0(base_url, "cases/summ
                "Deaths" = RtD3::readInEpiNow2(path = paste0(base_url, "deaths/summary"),
                                               region_var = "country"))
 
+
+# Join in regional estimates
+source(here::here("utils", "join_RtD3_data.R"))
+
+rtData$Cases <- join_RtD3_data(rtData$Cases, 
+                               base_url = 'https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/region/cases/summary',
+                               region_id = "region")
+
+rtData$Deaths <-join_RtD3_data(rtData$Deaths, 
+                               base_url = 'https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/region/deaths/summary',
+                               region_id = "region")
+
 subnational_ref <- RtD3::getSubregionalUrls(path = "https://epiforecasts.io/covid/posts/national/",
                                             areas = c('Afghanistan', 'Brazil', 'Colombia', 'India', 
                                                       'Italy', 'Germany', 'Russia', 'United Kingdom',
@@ -73,7 +85,8 @@ subnational_ref <- RtD3::getSubregionalUrls(path = "https://epiforecasts.io/covi
 RtD3::summaryWidget(
   geoData = geoData,
   rtData = rtData,
-  subregional_ref = subnational_ref
+  subregional_ref = subnational_ref,
+  activeArea = "Global"
 )
 ```
 

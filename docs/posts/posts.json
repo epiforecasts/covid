@@ -4,12 +4,12 @@
     "title": "Global summary",
     "description": "Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively (see Methods or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for further explanation).",
     "author": [],
-    "date": "2020-09-03",
+    "date": "2020-09-04",
     "categories": [
       "Global summary"
     ],
     "preview": "posts/global/distill-preview.png",
-    "last_modified": "2020-09-03T14:53:49+00:00",
+    "last_modified": "2020-09-04T12:44:14+00:00",
     "input_file": "global.utf8.md",
     "preview_width": 10800,
     "preview_height": 3600
