@@ -2,6 +2,9 @@ library(purrr, quietly = TRUE)
 library(RtD3, quietly = TRUE)
 library(data.table, quietly = TRUE)
 
+## Force data.table to use numerics for integer.
+options(datatable.integer64 = "numeric")
+
 join_RtD3_data <- function(rtData, country,
                            base_url = 'https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/national/cases/summary',
                            region_id = "country") {
@@ -20,8 +23,8 @@ join_RtD3_data <- function(rtData, country,
   # Join the subregional and national estimates together.
   rtData <- purrr::map2(rtData, rtData_national, 
                         ~ data.table::rbindlist(list(
-                          .x, 
-                          .y[region %in% country]),
+                          .x[, lapply(.SD, as.character)], 
+                          .y[region %in% country, lapply(.SD, as.character)]),
                         use.names = TRUE, fill = TRUE))
   
   return(rtData)

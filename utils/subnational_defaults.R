@@ -26,8 +26,7 @@ library(ggplot2)
 # Options ----------------------------------------------------------------
 
 
-## Force data.table to use numerics for integer.
-options(datatable.integer64 = "numeric")
+
 
 # Load summary data -------------------------------------------------------
 
