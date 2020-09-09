@@ -3,6 +3,7 @@ require(magrittr)
 require(future)
 require(furrr)
 require(purrr)
+require(data.table)
 
 posts <- c("_posts/global" , list.dirs("_posts/national", recursive = FALSE))
 
@@ -60,4 +61,5 @@ file.copy("_posts/global/library.bib", ".", overwrite = FALSE)
 
 
 ## Clean up an misplaced html files
-list.files()
+file.remove(list.files()[grep("*.html", list.files())])
+
