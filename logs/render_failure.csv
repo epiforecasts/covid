@@ -1,0 +1,3 @@
+page,error
+_posts/national/russia,"list(message = ""object 'folder' not found"", call = file.path(""/home/epinow2/covid"", ...))"
+_posts/national/united-kingdom,"list(message = ""object 'folder' not found"", call = file.path(""/home/epinow2/covid"", ...))"
