@@ -55,6 +55,7 @@ widget
 
 ```{r}
 region_path <- NULL
+folder <- "united-kingdom"
 summary_path <- file.path("covid-rt-estimates/subnational", folder, "cases/summary")
 ```
 
