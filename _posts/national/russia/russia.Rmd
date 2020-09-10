@@ -32,7 +32,7 @@ geoData <- dplyr::filter(geoData, !sovereignt %in% "Chukotka Autonomous Okrug")
 ```{r load-defaults, include = FALSE}
 region <- "Russia"
 folder <- "russia"
-source(here::here("utils/subnational_defaults.R"))
+source(here::here("utils/subnational_defaults.R"), local = TRUE)
 ```
 
 *Using data available up to the:* `r latest_date`
