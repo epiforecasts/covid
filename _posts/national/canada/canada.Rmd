@@ -65,6 +65,7 @@ widget
 * Line-list data to inform a Canadian specific estimate of the reporting delay was not available. This means that we could also not account for any regional differences.
 
 ```{r}
+case_def <- "case"
 region_path <- NULL
 summary_path <- file.path("covid-rt-estimates/subnational", folder, "cases/summary")
 ```
