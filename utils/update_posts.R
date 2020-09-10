@@ -56,10 +56,5 @@ data.table::fwrite(render_failure, here::here("logs", "render_failure.csv"))
 ## Print to terminal the failed renders
 print(render_failure)
 
-## Copy library into root to check for issues
-file.copy("_posts/global/library.bib", ".", overwrite = FALSE)
 
-
-## Clean up an misplaced html files
-file.remove(list.files()[grep("*.html", list.files())])
 
