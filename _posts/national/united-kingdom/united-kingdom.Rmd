@@ -21,7 +21,7 @@ geoData <- dplyr::mutate(geoData, sovereignt = geonunit)
 ```{r load-defaults, include = FALSE}
 region <- "United Kingdom"
 folder <- "united-kingdom"
-source(here::here("utils/subnational_defaults.R"))
+source(here::here("utils/subnational_defaults.R"), local = TRUE)
 ```
 
 *Using data available up to the:* `r latest_date`
