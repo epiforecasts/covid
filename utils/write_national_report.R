@@ -56,7 +56,7 @@ library(here)
 
 latest_date <- readRDS(here::here('covid-rt-estimates/national/cases/summary/latest_date.rds'))
 
-#' ## Estimates based on reported cases
+#' 
 #'"
 
 x3 <- paste0("
@@ -87,11 +87,8 @@ region_path <- 'covid-rt-estimates/national/deaths/national'
 #'
 #+  child = system.file('templates/_region-report.Rmd', package = 'EpiNow2')")
 
-if (deaths) {
-  x <- paste(x, x2, x3, x4)
-}else{
-  x <- paste(x,x2,x3)
-}
+x <- paste(x,x2,x3)
+
 ## Remove old template and add new one
 unlink(paste0("_posts/national/",save_name), recursive = TRUE, force = TRUE)
 dir.create(paste0("_posts/national/",save_name), recursive = TRUE)
