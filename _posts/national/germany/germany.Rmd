@@ -64,6 +64,7 @@ widget
 
 
 ```{r}
+case_def <- "case"
 region_path <- NULL
 summary_path <- file.path("covid-rt-estimates/subnational", folder, "cases/summary")
 ```
