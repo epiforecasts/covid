@@ -63,6 +63,7 @@ widget
 * Line-list data to inform a region specific estimate of the reporting delay were not available.
 
 ```{r}
+case_def <- "case"
 region_path <- NULL
 summary_path <- file.path("covid-rt-estimates/subnational", folder, "cases/summary")
 ```
