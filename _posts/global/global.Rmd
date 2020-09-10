@@ -111,7 +111,6 @@ all_regions <- FALSE
 
 ## National summary
 
-
 ```{r}
 tab_start <- 2
 fig_start <- 4
