@@ -105,45 +105,19 @@ interactive <- FALSE
 all_regions <- FALSE
 ```
 
-### Estimates based on reported cases
-
-```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
-```
-
-### Estimates based on reported deaths
-
-```{r}
-tab_start <- 2
-fig_start <- 4
-case_def <- "death"
-summary_path <- "covid-rt-estimates/region/deaths/summary"
-```
 
 ```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
 ```
 
 ## National summary
 
-### Estimates based on reported cases
 
 ```{r}
-tab_start <- 3
-fig_start <- 8
+tab_start <- 2
+fig_start <- 4
 case_def <- "case"
 summary_path <- "covid-rt-estimates/national/cases/summary"
 interactive <- TRUE
-```
-
-```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
-```
-
-### Estimates based on reported deaths
-
-```{r}
-tab_start <- 3
-fig_start <- 8
-summary_path <- "covid-rt-estimates/national/deaths/summary"
-case_def <- "death"
 ```
 
 ```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
