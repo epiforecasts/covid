@@ -15,6 +15,9 @@ Rscript utils/update_report_templates.R
 ## Update all posts
 Rscript utils/update_posts.R
 
+## Clean up after page update
+Rscript utils/clean_page_update.R
+
 ## Copy paper figures into root directory
 cp -r _paper/figures figures/
 
