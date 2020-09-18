@@ -14,18 +14,12 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-*Our methods are also outlined in this [preprint](https://wellcomeopenresearch.org/articles/5-112/v1).*
+*Our methods are also outlined in this [preprint](https://wellcomeopenresearch.org/articles/5-112/v1). If making use of our estimates or approach, please consider citing this article.*
 
-
-```{r}
-results <- TRUE
-```
 
 ```{r, child = "_paper/title-skeleton.Rmd"}
 ```
 
 
-**Our detailed methods section is currently being updated.**
-
-```{r, child = "_paper/paper-skeleton.Rmd", eval = FALSE}
+```{r, child = "_paper/paper-skeleton.Rmd", eval = TRUE}
 ```

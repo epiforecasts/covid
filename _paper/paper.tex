@@ -84,34 +84,23 @@ different countries is essential for monitoring the epidemic, evaluating
 the effectiveness of public health interventions and estimating the
 impact of changes in policy.
 
-\textbf{Methods:} We use case notification data to generate daily
-estimates of the time-dependent reproduction number subnationally and
-nationally. Our modelling framework, based on open source tooling,
-accounts for uncertain reporting delays, so that the reproduction number
-is estimated based on underlying latent infections and not reported
-cases.
-
-\textbf{Results:} We provide three example uses of our framework. First,
-we demonstrate how the toolset displays temporal changes in the
-reproduction number. Second, we show how the framework can be used to
-reconstruct case counts by date of infection from case counts by date of
-notification, as well as to estimate the reproduction number. Third, we
-show how maps can be generated to clearly show if case numbers are
-likely to decrease or increase in different regions. Results are shown
-subnatioanlly and nationally on our website
-(\url{https://epiforecasts.io/covid/}) and are updated regularly. Our
-tooling is provided as an open-source R package to allow replication by
-others.
+\textbf{Methods:} We use case and death notification data to generate
+daily estimates of the time-dependent reproduction number globally,
+regionally, nationally, and subnationally over a 12 week rolling window.
+Our modelling framework, based on open source tooling, accounts for
+uncertain reporting delays, so that the reproduction number is estimated
+based on underlying latent infections and not reported cases or deaths.
 
 \textbf{Conclusions:} This decision-support tool can be used to assess
-changes in virus transmission both subnationally and nationally. This
-allows public health officials and policymakers to track the progress of
-the outbreak in near realtime using a epidemioligcally valid measure. As
-well as providing regular updates on our website, we also provide an
-open source toolset so that our approach can be used directly by
-researchers and policymakers on confidential datasets. We hope that our
-tool will be used to support decisions in countries worldwide throughout
-the ongoing COVID-19 pandemic.
+changes in virus transmission both globally, regionally, nationally, and
+subnationally. This allows public health officials and policymakers to
+track the progress of the outbreak in near real-time using an
+epidemioligcally valid measure. As well as providing regular updates on
+our website, we also provide an open source tool-set so that our
+approach can be used directly by researchers and policymakers on
+confidential data-sets. We hope that our tool will be used to support
+decisions in countries worldwide throughout the ongoing COVID-19
+pandemic.
 
 \textbf{Keywords}: Covid-19, SARS-CoV-2, surveillance, forecasting,
 time-varying reproduction number
@@ -147,42 +136,26 @@ respectively. Monitoring changes in the time-varying reproduction can
 account for this delay and reveals variations in transmissibility that
 are not clear when using only reported cases.
 
-This paper outlines the website we have developed
-(\url{https://epiforecasts.io/covid/}) that presents estimates and
-forecasts of reported cases by date of infection and the respective
-time-varying reproduction numbers both nationally and subnationally.
-This website relies on methods implemented in the \texttt{EpiNow2} R
-package and data aggregated in the \texttt{covidregionaldata} R package,
-both developed by the authors {[}9,10{]}. Our approach is based on
-reported cases counts (though we provide estimates based on both
-reported cases and deaths) and data on the delay between infection and
-symptom onset and symptom onset and report. We use a bayesian latent
-variable approach to estimate infections from prior infections, an
-estimate of the generation time and the time-varying reproduction number
-{[}6,11{]}. Temporal variation in the reproduction number estimates
-controlled using a Gaussian process. Reported cases are then
-extrapolated by convolving by the uncertain incubation period and delay
-between symptom onset and case report (or death when estimating using
-deaths). Uncertainty in reporting is captured using a negative binomial
-reporting model that includes day of the week effects. By extending the
-covariance matrix of the gaussian process we derive a forecast of
-potential reproduction number trajectories and infections. We combine
-this approach with ensembles of timeseries models {[}12{]}. We then use
-open-source Rmarkdown templates and the distill framework to generate a
-webpage summarising these estimates {[}{\textbf{???}},{\textbf{??}}{]}
-and present them as downloadable csvs under an open-source license for
-use elsewhere. Our estimates overcome some of the limitations of more
-naive implementations that derive estimates for the reproduction number
-directly from numbers of reported cases without adjusting (or with only
-partial adjustment) for the delay from infection to symptom onset or
-from onset to notification. Our approach also incorporates multiple
-sources of uncertainty that if excluded can bias estimates. The code
-that creates and updates the website is open source, allowing
-policymakers and researchers to run analyses in private repositories
-using confidential data. The methods outlined in this paper and
-corresponding code base are under development, and new versions of this
-live article will be released alongside changes to the methods to create
-a record of the methodology used throughout the pandemic.
+This paper outlines the methods used to produce the website we have
+developed (\url{https://epiforecasts.io/covid/}) that presents real-time
+estimates and forecasts of reported cases by date of infection and the
+respective time-varying reproduction numbers globally, regionally,
+nationally and subnationally for Covid-19. This website relies on
+methods implemented in the \texttt{EpiNow2} R package and data
+aggregated in the \texttt{covidregionaldata} R package, both developed
+by the authors {[}9,10{]}. Our estimates overcome some of the
+limitations of naive implementations that derive estimates for the
+reproduction number directly from numbers of reported cases without
+adjusting (or with only partial adjustments) for the delay from
+infection to symptom onset or from onset to notification. Our approach
+also incorporates multiple sources of uncertainty that if excluded can
+bias estimates. The code that creates and updates the website is open
+source, and documented for use by others, allowing policymakers and
+researchers to run analyses using confidential data. The methods
+outlined in this paper and corresponding code base are under
+development, and new versions of this live article will be released
+alongside changes to the methods to create a record of the methodology
+used throughout the pandemic.
 
 \hypertarget{methods}{%
 \section{Methods}\label{methods}}
@@ -192,10 +165,10 @@ a record of the methodology used throughout the pandemic.
 
 We use daily counts of confirmed cases and deaths reported by the
 European Centre for Disease Control from the last 12 weeks for all
-analyses conducted at the national level {[}10,13{]}. To estimate the
+analyses conducted at the national level {[}10,11{]}. To estimate the
 delay from symptom onset to reporting (once confirmed with a positive
 laboratory test), we use all cases from a publicly available linelist
-for which onset and notification dates are available {[}10,14{]}. This
+for which onset and notification dates are available {[}10,12{]}. This
 linelist combines all known linelist data from over 100 countries and at
 the time of writing. Countries are only included in the reported
 estimates if within the last 12 weeks they have fewer than 14 days with
@@ -205,7 +178,7 @@ ascertainment.
 
 For sub-national analyses, the data is aggregated using the
 \texttt{covidregionaldata} R package developed by the authors.
-Individual data sources are reported on the respective page on our
+Individual data sources are reported on the respective pages of our
 website. The data are fetched from government departments or from
 individuals who maintain a data source if no official data are
 available. Similarly to national estimates, subnational areas are only
@@ -217,124 +190,95 @@ subnational entity under consideration. An automated timestamp is used
 to evaluate if data has been updated since the last time estimates were
 made in order to avoid repeatedly estimating based on the same data.
 
-\hypertarget{adjusting-for-reporting-delays}{%
-\subsection{Adjusting for reporting
-delays}\label{adjusting-for-reporting-delays}}
+\hypertarget{delays-between-case-onset-and-report}{%
+\subsection{Delays between case onset and
+report}\label{delays-between-case-onset-and-report}}
 
-To estimate the reporting delay with appropriate uncertainty, we fit
-exponential and gamma distributions to 100 subsampled bootstraps (each
-with 250 samples drawn with replacement) of the delay between symptom
-onset and case notification, accounting for left and right censoring
-occurring in the data as each date is rounded to the nearest day and
-truncated to the maximum observed delay. We fit each model in the
-statistical modelling program stan {[}15{]} and compared to
-goodness-of-fit of each distribution to the data by comparing the
-approximate leave-one-out cross-validation information criterion (LOOIC)
-{[}16{]}.
+To estimate the reporting delay (i.e the delay between onset and case
+report or death) with appropriate uncertainty, we fit a log-normal
+distribution, using use the statistical modelling program stan
+{[}9,13{]}, to 100 subsampled bootstraps (each with 250 samples drawn
+with replacement) of the available delay data. Accounting for left and
+right censoring occurring in the data as each date is rounded to the
+nearest day and truncated to the maximum observed delay. There was
+insufficient data available on the various reporting delays to estimate
+spatially- or temporally-varying delays whilst also accounting for the
+biases induced by the growth rate of reported cases, so they were
+considered to be static over the course of the epidemic.
 
-The distribution that gave the lowest LOOIC was selected as the most
-appropriate and 10 samples of the fitted distribution parameters were
-then drawn per bootstrap (giving 1000 in total). For a given country, we
-used sample \(i\) from the posterior distribution of delay distribution
-parameters, \(\Theta_i\), to draw a sample of delays, \(d_i\), to
-transform each observed notification date, \(c_i\), into a sample onset
-date, \(o_i\), as follows:
+This results in an onset to case report delay distribution with a mean
+of 2.6 days (standard deviation (SD): 1.2 days) and a standard deviation
+of 4.4 days (SD: 1.1 days) and an onset to death report delay
+distribution with a mean of 9.8 days (SD: 1.1 days) and a standard
+deviation of 2.1 days (SD: 1.1 days). For computational reasons the
+maximum allowed delay is set to be 30 days with truncation handled
+appropriately by \texttt{EpiNow2} {[}9{]}.
 
-\(o_i = c_i - d_i\),
+As data may also be right truncated due to unrecorded delays (i.e the
+delay between a case report and its appearance in an aggregated data
+set) we truncate all time-series to exclude the last 3 days of data,
+based on qualitative inspection of the stability of case counts in the
+data-sets used.
 
-where \(d_i \sim exp(\Theta_i)\) or \(gamma(\Theta_i)\)
+\hypertarget{estimating-the-time-varying-reproduction-number-and-nowcasting-reported-infections}{%
+\subsection{Estimating the time-varying reproduction number and
+nowcasting reported
+infections}\label{estimating-the-time-varying-reproduction-number-and-nowcasting-reported-infections}}
 
-This resulted in 1000 date of onset samples for each confirmed case. For
-countries/regions with high case loads (more than 10,000 reported cases)
-the sampling step is approximated using the probability density function
-of the reporting delay.
+We estimated the instantaneous reproduction number (\(R_t\)) using the
+\texttt{EpiNow2} R package (version 1.2.0) {[}9{]} on the last 12 weeks
+of available data, discarding estimates from the first 14 days globally,
+for United Nation regions, nationally, and subnationally for 10
+countries. The instantaneous reproduction number represents the number
+of secondary cases arising from an individual showing symptoms at a
+particular time, assuming that conditions remain identical after that
+time, and is therefore a measure of the instantaneous transmissibility
+(in contrast to the case reproduction number - see Fraser (2007) {[}8{]}
+for a full discussion). \texttt{EpiNow2} implements a Bayesian latent
+variable approach using the probabilistic programming language Stan
+{[}13{]}, which works as follows. The initial number of infections were
+estimated as a free parameter with a prior based on the initial number
+of cases, or deaths, respectively. For each subsequent time step,
+previous imputed infections were summed, weighted by an uncertain
+generation time probability mass function, and combined with an estimate
+of \(R_t\) to give the prevalence at time \(t\) {[}6,7,9{]}. We used a
+gamma prior for the reproduction number with mean 1 and standard
+deviation 1 reflecting our current belief that \(R_t\) is likely to be
+centered around 1 at this stage in the epidemic. This contrasts with our
+earlier approach which was to use a prior with a of mean 2.6 and
+standard deviation 2. This was based on early estimates for the basic
+reproduction number (\(R_0\)) from the initial stages of the outbreak in
+Wuhan {[}14,15{]} with long tails to allow for differences in the
+reproduction number between countries. The infection trajectories were
+then mapped to reported case counts by convolving over an uncertain
+incubation period and report delay distribution, and a negative binomial
+observation model combined with a multiplicative day of the week effect
+(with an independent effect for each day of the week) {[}16{]}. Temporal
+variation was controlled using an approximate Gaussian process {[}17{]}
+with a squared exponential kernel, with the length scale and magnitude
+estimated during the model fitting process. Each timeseries was fitted
+independently using Markov-chain Monte Carlo (MCMC). A minimum of 2
+chains were used with a warmup of 500 each and 2000 samples post warmup.
+Convergence was assessed using the R hat diagnostic {[}13{]}.
 
-\hypertarget{adjusting-for-right-truncation-of-notification-dates}{%
-\subsection{Adjusting for right-truncation of notification
-dates}\label{adjusting-for-right-truncation-of-notification-dates}}
+We used a gamma distributed generation time with mean 3.6 days (standard
+deviation (SD) 0.7), and SD of 3.1 days (SD 0.8) for all estimates.
+Sourced from {[}18{]} but refit using a log-normal incubation period
+with a mean of 5.2 days (SD 1.1) and SD of 1.52 days (SD 1.1) {[}19{]}
+rather than the incubation period used in the original study (code
+available here: \url{https://github.com/seabbs/COVID19}). This
+incubation period was also used to convolve from unobserved infections
+to unobserved onsets in the model. See {[}9{]} for further details on
+the approach.
 
-When moving from notification dates to onset dates it is important to
-consider that the total number of confirmed cases lags behind the number
-of cases that have onset, since there is a delay between onset occurring
-and the case being counted upon notification. To account for this right
-truncation, we used binomial upscaling to increase the estimated numbers
-of case onsets close to the present. After transforming the observed
-notification dates to onset dates and tallying case onset numbers by
-day, we then drew a sample of the number of case onsets that occurred
-but have not yet been confirmed.
+\hypertarget{estimating-the-daily-growth-rate-and-doubling-time}{%
+\subsection{Estimating the daily growth rate and doubling
+time}\label{estimating-the-daily-growth-rate-and-doubling-time}}
 
-If \(t\) is the last date on which cases were reported then the number
-of onsets on day \(t-j\), denoted as \(o_{t-j}\), is regarded as the
-result of a Bernoulli trial from the total true number of cases with
-symptom onsets on day \(t - j\). \(o_{t-j}\) is then distributed
-according to a negative binomial distribution as follows:
-
-\(o^{*}_{t-j} \sim NegBin(n = o_{t-k} + 1, p = F(t-j, \Theta_i))\)
-
-where \(F(t-j, \Theta_i))\) is the cumulative distribution function for
-the given delay distribution. It gives the proportion of onset cases
-from \(t-j\) days ago that are expected to have been confirmed over the
-\(j\) days from that time until the present. The final numbers of case
-onsets that were used to estimate the time varying reproduction numbers
-for day \(t\) are consequently given by \(o_t + o^{*}_{t}\). As our
-approach could not fully reconstruct unreported cases without bias we
-truncated our results and did not use estimates from the last 3 days. To
-prevent spurious estimates we truncated the allowed amount of upscaling
-to be less than 10 times the reported cases on any given day.
-
-\hypertarget{adjusting-for-the-delay-between-onset-and-infection}{%
-\subsection{Adjusting for the delay between onset and
-infection}\label{adjusting-for-the-delay-between-onset-and-infection}}
-
-We repeated the steps outlined above for adjusting for the delay from
-report to symptom onset to account for the delay between symptom onset
-and infection by replacing the bootstrapped report delay distribution
-with an incubation period distribution with a mean of 5 days {[}17{]}.
-Uncertainty from this distribution was proprogated through the model by
-sampling the distributions parameters assuming they were both normally
-distributed.
-
-\hypertarget{estimating-the-time-varying-reproduction-number}{%
-\subsection{Estimating the time-varying reproduction
-number}\label{estimating-the-time-varying-reproduction-number}}
-
-We used the \emph{EpiEstim} R package {[}6,11,18,19{]} to fit a model
-that estimated the time-varying reproduction number from the daily
-number of infections and an uncertain generation time with a mean of 3.6
-days (sd: 0.7 days) and a standard deviation of 3 days (sd: 0.8 days).
-The generation time estimate was derived using the data and method of
-{[}20{]} modified to use the incubation period from {[}17{]}. The
-instantaneous reproduction number represents the number of secondary
-cases arising from an individual showing symptoms at a particular time,
-assuming that conditions remain identical after that time, and is
-therefore a measure of the instantaneous transmissibility (in contrast
-to the case reproduction number - see Fraser (2007) {[}8{]} for a full
-discussion). We used a gamma prior for the reproduction number with mean
-2.6 and standard deviation 2. This is based on early estimates for the
-basic reproduction number (\(R_0\)) from the initial stages of the
-outbreak in Wuhan {[}21,22{]} with long tails to allow for differences
-in the reproduction number between countries. Our approach can also be
-used to account for imported cases where data is available {[}7{]}.
-
-We incorporated uncertainty in the generation time distribution by
-providing \emph{EpiEstim} with 1000 samples each derived using a
-different sample of the log mean and log standard deviation of the
-assumed log normal distribution. We evaluated the reproduction number by
-assuming that it is constant over a backwards looking sliding time
-window {[}6{]}. We evaluated window lengths from 1 to 7 days, running
-\emph{EpiEstim} separately for each window choice. The optimal
-time-varying window was selected by first estimating the one day ahead
-number of cases implied by each time-varying reproduction number
-estimate {[}23{]} and then scoring this nowcast against the observed
-number of cases using the ranked probability score (RPS) score
-{[}24,25{]}. For each sample the window with the lowest RPS score was
-selected at each time point.
-
-The estimates of the time-varying reproduction number at each time point
-were combined over 1000 samples, using the optimal window for each, to
-give a credible interval that incorporates uncertainty from the delay
-from case onset to notification, the incubation period and the
-generation time.
+We estimated the rate of spread (\(r\)) by converting our \(R_t\)
+estimates using an approximation derived in {[}20{]}. The doubling time
+was then estimated by calculating \(\text{ln}(2) \frac{1}{r}\) for each
+estimate of the rate of spread.
 
 \hypertarget{estimated-change-in-daily-cases}{%
 \subsection{Estimated change in daily
@@ -351,16 +295,6 @@ samples were subcritical then a decrease in cases was definite. For
 countries/regions with between 20\% and 80\% of samples being
 subcritical we could not make a statement about the likely change in
 cases (defined as unsure).
-
-As another metric of outbreak progression, we estimated the rate of
-spread (\(r\)) using a quasipoisson regression model {[}26{]}. The
-\(R^2\) value of the regression fit was then used to assess the
-goodness-of-fit. In order to account for potential changes in the rate
-of spread over the course of the outbreak we used a 7-day sliding window
-to produce time-varying estimates of the rate of spread and the
-corresponding \(R^2\). The doubling time was then estimated by
-calculating \(\text{ln}(2) \frac{1}{r}\) for each estimate of the rate
-of spread.
 
 \hypertarget{the-effect-of-changes-in-testing-procedure}{%
 \subsection{The effect of changes in testing
@@ -382,7 +316,7 @@ lower proportion of infections, then the model will attribute this to a
 drop in the reproduction number that may not be a true reduction. In
 order for our estimates to be unbiased not all cases have to be
 reported, but the level of testing effort (and therefore the proportion
-of detected cases) must be constant {[}27{]}. This means that, whilst a
+of detected cases) must be constant {[}21{]}. This means that, whilst a
 change in testing effort will initially introduce bias, this will be
 reduced over time as long as the testing effort remains consistent from
 this point onwards.
@@ -404,16 +338,10 @@ of
 infection}\label{forecasting-the-reproduction-number-and-case-counts-by-date-of-infection}}
 
 We forecast the time-varying effective reproduction number over a 14 day
-time horizon using the best performing ensemble of time series models
-{[}12{]} as assessed by iteratively fitting to a subsample of the
-estimated effective reproduction number estimates for each region
-{[}28{]}. Perfomance was assessed using CRPS scores, interval scores,
-PIT calibration, bias and sharpness with an ensemble being preferred
-that minimised the CRPS score whilst being calibrated, unbiased and as
-sharp as possible over the full time horizon {[}29--31{]}. The
-reproduction number forecast was then transformed into a case forecast
-using the renewal equation and a Poisson distribution of cases
-{[}6,19{]}. These forecasts are indicative only and should not be
+time horizon by assuming it remains the same as the last estimated
+\(R_t\). The reproduction number forecast is then transformed into a
+case forecast using the \texttt{EpiNow2} model outlined in the previous
+section {[}9{]}. These forecasts are indicative only and should not be
 considered with a weight equal to the real-time estimates. Changes in
 contact rates, mobility, and public health interventions are not
 accounted for which may lead to significant inaccuracy.
@@ -422,80 +350,31 @@ accounted for which may lead to significant inaccuracy.
 \subsection{Reporting}\label{reporting}}
 
 We report the median and 90\% highest density credible intervals for all
-measures with 50\% and 90\% high density regions shown in figures. The
-analysis was conducted independently for all regions and is updated
-regularly as new data becomes available. As our credible intervals do
-not capture the proportion of cases that have been upscaled (when
-correcting for right truncation), we represent this in figures using
-translucency. This is presented as our confidence in the estimates which
-we define as the proportion of symptom onsets that are expected to have
-been reported by the date of estimation. All results are available in
-the source repository in a comma-separated values file.
+measures with 20\%, 50\% and 90\% high density regions shown in figures.
+The analysis was conducted independently for all regions and is updated
+regularly as new data becomes available. To highlight the proportion of
+cases that have yet to be reported (due to correcting for right
+truncation), we show a cut-off in figures based on the mean of all
+delays. Values prior to this point are defined as estimates with values
+past this point being defined as estimates based on partial data. In
+reality, this is a continuum with estimates closer to now progressively
+being based on less data and therefore becoming increasing uncertain.
+All estimates are available as downloadable csvs under an open-source
+license for use elsewhere
+(\url{https://github.com/epiforecasts/covid-rt-estimates/}).
 
-\hypertarget{results}{%
-\section{Results}\label{results}}
+\hypertarget{website-summarised-estimates-and-interactivity}{%
+\subsection{Website, summarised estimates, and
+interactivity}\label{website-summarised-estimates-and-interactivity}}
 
-Daily updated estimates of the time-varying reproduction number,
-epidemic doubling time, and rate of spread at the national level are
-given for more than 90 countries on our website. New countries are being
-added as data become available. An example plot created on the 23rd of
-May 2020, showing the numbers of cases by date of infection for Austria
-and the inferred time-varying reproduction number, is shown in Figure 1.
-
-\includegraphics[width=0.9\linewidth]{figures/figure_1}
-
-\emph{Figure 1: Confirmed cases by date of report (bars; top) and their
-estimated date of infection (ribbon; top) and time-varying reproduction
-number (bottom) in Austria. The light and dark blue ribbons show the
-90\% and 50\% credible interval, respectively. The estimates were
-generated on the 23rd May 2020. Due to the delay between being
-infectious and becoming a confirmed case, the estimates lag behind the
-present. Confidence in the estimated values is indicated by translucency
-with increased translucency corresponding to increased uncertainty
-deriving from right-truncation of reported cases in the estimate. The
-forecast (red) is coloured differently from the nowcast (blue) to
-indicate the drop in reliability when trying to forecast future cases.}
-
-Sub-national breakdowns can highlight differences in how the outbreak is
-progressing within a country (Figure 2) and are currently provided for 6
-countries (Italy, Germany, United Kingdom, United States of America,
-Brazil, India). For example, on the 23rd of May 2020 we estimated that
-cases were likely decreasing in every country in the United Kingdom
-except Northern Ireland where the estimate was classified as unsure.
-
-\includegraphics[width=0.9\linewidth]{figures/figure_2}
-
-\emph{Figure 2: Estimates of numbers of cases that will be newly
-infected on the date the estimate was made and that will end up being
-reported (top panel), and the time-varying reproduction number (bottom
-panel) across different nations/regions of the United Kingdom. Estimates
-were produced on 23rd of May 2020. Nations/regions with fewer than 40
-confirmed cases reported on a single day are not included in the
-analysis.}
-
-We present the nowcasting results on a map to effectively visualise
-regional differences in transmission (Figure 3). This helps identify
-areas where intervention policies are more effective at reducing
-transmission than others, which can inform decision-making going
-forwards.
-
-\includegraphics[width=0.9\linewidth]{figures/figure_3}
-
-\emph{Figure 3: A map of the estimates of the expected change in daily
-cases at the state level for the United States of America. Estimates
-were produced on 23rd of May 2020. Regions with fewer than 40 confirmed
-cases reported on a single day are not included in the analysis (light
-grey).}
-
-The methodology and toolset described here has also been used separately
-to produce estimates of the time-varying reproduction number at the
-state level in Australia, an example of how researchers and policymakers
-can apply the methods to their own data {[}32{]}. This has an added
-benefit of researchers being able to use generation time and delay
-distributions derived from local data and not our global estimates. The
-authors also use this tooling with confidential hospital admissions data
-to generate estimates of the time-varying reproduction number for
-policymakers in the United Kingdom.
+We use open-source Rmarkdown templates and the distill framework to
+generate webpages summarising these estimates {[}22,23{]}. The
+\texttt{RtD3} package is used to provide interactive visualisations of
+all estimates {[}24{]}. Estimates by country are provided on a dedicated
+static page along with global, and regional, summaries. More detailed
+subnational estimates are available for over 10 countries in an flexible
+framework into which additional subnational estimates will be added as
+more data becomes available.
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
@@ -503,18 +382,13 @@ policymakers in the United Kingdom.
 We provide a centralised resource, which generates comparable daily
 estimates of the time-varying reproduction number and a daily nowcast of
 the number of cases newly infected derived using a standardised method.
-The estimates are free of any hypotheses about the impact of
-interventions, since they are derived only from reported case counts and
-an estimate of the generation time. We explicitly account for the delay
-between infection and case notification and include all sources of
-quantifiable uncertainty. This resource may be useful for policymakers
-to track the progression of the COVID-19 outbreak and evaluate the
-effectiveness of intervention measures. As new data become available, we
-will include sub-national estimates for additional countries, and
-provide additional support for public health agencies or researchers
-interested in applying our methods to their data. We routinely utilise
-our own tooling to provide estimates of the reproduction number in the
-United Kingdom for policymakers using confidential hospital admissions
+We account for the delay between infection and case notification and
+include all sources of quantifiable uncertainty. This resource may be
+useful for policymakers to track the progression of the COVID-19
+outbreak and evaluate the effectiveness of intervention measures. As new
+data become available, we will include sub-national estimates for
+additional countries, and provide additional support for public health
+agencies or researchers interested in applying our methods to their
 data.
 
 There are several advantages associated with our approach. Firstly,
@@ -525,21 +399,30 @@ compared without having to consider differences in the underlying
 methodology (even if differences in testing should still be accounted
 for as discussed below). Finally, we have constructed our approach using
 open source tools and all of our code, raw data, and results are
-available online. This means our approach can be applied by others to
-non-public data and be fully evaluated by end users.
+available online and developed with other users in mind. This means our
+approach can be applied by others to non-public data and be fully
+evaluated by end users.
 
-Our approach is also subject to several limitation. Firstly, the model
+Our approach is also subject to several limitations. Firstly, the model
 requires that the proportion of infections that are notified is
 constant. In other words, it requires consistency in the focus of the
 surveillance method, level of effort spent on testing, and case
 definition. Yet it is often the case that the level of under-reporting
-in a country changes over the course of an outbreak {[}27{]}. However,
+in a country changes over the course of an outbreak {[}21{]}. However,
 it should be noted that any changes in surveillance testing procedures
 will only bias the estimates temporarily if they begin to remain
 consistent again after they have changed. How long the bias remains in
 the reproduction number estimates will depend on the serial generation
-time and delay distributions, as well as the maximum window size used in
-the reproduction number estimation process.
+time and delay distributions, as well as the lengthscale of the gaussian
+process used in the reproduction number estimation process. The impact
+of testing and other reporting biases vary between measures of
+transmission (test positive cases, hospital admissions, test positive
+deaths). For this reason we include estimates based on reported deaths
+and provide tooling to allow estimates to be produced for alternative
+datasets. In theory, estimates from disparate sources should be
+comparable using our approach, however if they in fact represent
+different sub-populations then there may be variation between them that
+can potentially be usefully interpreted.
 
 In addition, the model is limited by how representative the delay that
 we use from infection to notification distribution is for a given
@@ -552,7 +435,7 @@ from onset to notification for a given country is shorter than our
 global delay, then we will overestimate onset case numbers, and vice
 versa for true delays longer than the distribution we used.
 Additionally, estimates of the reporting delay distribution are known to
-be biased early in an epidemic and may vary over time {[}33{]}. However,
+be biased early in an epidemic and may vary over time {[}25{]}. However,
 our use of a bootstrapped subsampling approach mitigates these issues by
 allowing multiple delay distributions based on the observed data to be
 considered at the cost of increasing uncertainty in our estimates.
@@ -563,37 +446,36 @@ status of cases. This means that cases counts may be biased upwards by
 attributing imported cases to local transmission. This bias is
 particularly problematic when case counts are low. Unfortunately, in the
 absence of data, this issue can only be explored via scenario analysis.
-However, if and when data on the importation of cases is available, our
-approach (via \emph{EpiEstim} {[}7{]}) supports adjusting for imported
-cases.
 
 As more data becomes available, future work should look to refine the
 distributions used for generation time, incubation period, and the
 report delay. There is also the potential to extend the present model to
-account for overdispersion in the number of secondary infections
-{[}34{]} and changes in the delay from onset to notification over the
-course of an outbreak. Finally, there is scope to explore how outbreak
+account for chainges in the delay from onset to notification over the
+course of an outbreak though additional data would need to be available
+for this to be possible. Finally, there is scope to explore how outbreak
 dynamics that differ among particular sub-populations, such as high-risk
-COVID-19 patients, can bias overall reproduction number estimates.
+COVID-19 patients, can bias overall reproduction number estimates. This
+may be achieved by comparing reproduction number estimates from
+disparate data sources such as test positive cases, hospital admissions,
+and test positive deaths.
 
 Our approach, providing real-time estimates of the reproduction number,
 serves as a valuable tool for decision makers looking to track the
 course of COVID-19 outbreaks. The nowcasts explicitly account for
 delays, using the same methodology across all countries and sub-national
-regions. These reproduction number estimates can be used during the
-initial stages of an outbreak to ascertain the likely outbreak
-trajectory if no interventions have been implemented. They can also
-provide real-time feedback on whether transmission is decreasing
-following a particular intervention, or whether it is increasing
-following the relaxing or lifting of current intervention measures. We
-hope that our website and the related toolkit will provide a valuable
-resource for devising strategies to contain COVID-19 outbreaks
-worldwide.
+regions. These reproduction number estimates may also be used to
+ascertain the likely outbreak trajectory if no policy interventions are
+made. They can also provide real-time feedback on whether transmission
+is decreasing following a particular intervention, or whether it is
+increasing following the relaxing or lifting of current intervention
+measures. We hope that our website and the related toolkit will provide
+a valuable resource for devising strategies to contain COVID-19
+outbreaks worldwide.
 
 \hypertarget{data-availability}{%
 \subsection{Data availability}\label{data-availability}}
 
-Latest data: \url{https://github.com/epiforecasts/covid}
+Latest data: \url{https://github.com/epiforecasts/covid-rt-estimates}
 
 Archived data at the time of publication:
 \url{https://doi.org/10.5281/zenodo.3841818}
@@ -611,14 +493,14 @@ License: \href{https://opensource.org/licenses/MIT}{MIT}
 \item
   Website (Front-end): \url{https://github.com/epiforecasts/covid}
 \item
-  \emph{EpiNow} R package (R estimation, data processing, visualisation
-  and reporting): \url{https://github.com/epiforecasts/EpiNow}
+  \emph{EpiNow2} R package (R estimation, data processing, visualisation
+  and reporting): \url{https://github.com/epiforecasts/EpiNow2}
 \item
-  \emph{EpiSoon} R package (forecasting and case prediction from R
-  trajectories): \url{https://github.com/epiforecasts/EpiSoon}
+  \emph{covidregionaldata} R package (data aggregation and processing):
+  \url{https://github.com/epiforecasts/covidregionaldata}
 \item
-  \emph{NCoVUtils} R package (data aggregation and processing):
-  \url{https://github.com/epiforecasts/NCoVUtils}
+  \emph{RtD3} R package (interative visualisation):
+  \url{https://github.com/epiforecasts/RtD3}
 \end{itemize}
 
 \hypertarget{archived-at-the-time-of-publication}{%
@@ -630,14 +512,13 @@ publication}\label{archived-at-the-time-of-publication}}
 \item
   Website: \url{https://doi.org/10.5281/zenodo.3841818}
 \item
-  \emph{EpiNow} R package {[}35{]}:
-  \url{https://doi.org/10.5281/zenodo.3833806}
+  \emph{EpiNow2} R package {[}9{]}:
+  \url{https://doi.org/10.5281/zenodo.3957489}
 \item
-  \emph{EpiSoon} R package {[}28{]}:
-  \url{https://doi.org/10.5281/zenodo.3833807}
+  \emph{covidregionaldata} R package {[}10{]}:
+  \url{https://doi.org/10.5281/zenodo.3957539}
 \item
-  \emph{NCoVUtils} R package {[}36{]}:
-  \url{https://doi.org/10.5281/zenodo.3833808}
+  \emph{RtD3} {[}24{]}: \url{https://doi.org/10.5281/zenodo.4011841}
 \end{itemize}
 
 License: \href{https://opensource.org/licenses/MIT}{MIT}
@@ -747,141 +628,82 @@ doi:\href{https://doi.org/10.5281/zenodo.3957489}{10.5281/zenodo.3957489}
 Subnational data for the covid-19 outbreak. \emph{-} 2020;\textbf{-}:--.
 doi:\href{https://doi.org/10.5281/zenodo.3957539}{10.5281/zenodo.3957539}
 
-\leavevmode\hypertarget{ref-EpiEstim}{}%
-11 Cori A. \emph{EpiEstim: Estimate time varying reproduction numbers
-from epidemic curves}. 2019.
-\url{https://CRAN.R-project.org/package=EpiEstim}
-
-\leavevmode\hypertarget{ref-forecastHybrid}{}%
-12 Shaub D, Ellis P. \emph{ForecastHybrid: Convenient functions for
-ensemble time series forecasts}. 2020.
-
 \leavevmode\hypertarget{ref-ecdc_data}{}%
-13 Disease Prevention EC for, Control. Download today's data on the
+11 Disease Prevention EC for, Control. Download today's data on the
 geographic distribution of covid-19 cases worldwide. 2020.
 \url{www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide}
 
 \leavevmode\hypertarget{ref-kraemer2020epidemiological}{}%
-14 Xu B, Gutierrez B, Hill S \emph{et al.} Epidemiological data from the
+12 Xu B, Gutierrez B, Hill S \emph{et al.} Epidemiological data from the
 nCoV-2019 outbreak: Early descriptions from publicly available data.
 \url{http://virological.org/t/epidemiological-data-from-the-ncov-2019-outbreak-early-descriptions-from-publicly-available-data/337}
 
 \leavevmode\hypertarget{ref-rstan}{}%
-15 Stan Development Team. RStan: The r interface to stan.
+13 Stan Development Team. RStan: The r interface to stan.
 2020.\url{http://mc-stan.org/}
 
-\leavevmode\hypertarget{ref-Vehtari2016}{}%
-16 Vehtari A, Gelman A, Gabry J. Practical bayesian model evaluation
-using leave-one-out cross-validation and waic. \emph{Stat Comput}
-2016;1--20.
-doi:\href{https://doi.org/10.1007/s11222-016-9696-4}{10.1007/s11222-016-9696-4}
-
-\leavevmode\hypertarget{ref-incubationperiod}{}%
-17 Lauer SA, Grantz KH, Bi Q \emph{et al.} The incubation period of
-coronavirus disease 2019 (covid-19) from publicly reported confirmed
-cases: Estimation and application. \emph{Annals of Internal Medicine}
-2020;\textbf{172}:577--82.
-
-\leavevmode\hypertarget{ref-R}{}%
-18 R Core Team. \emph{R: A language and environment for statistical
-computing}. Vienna, Austria:: R Foundation for Statistical Computing
-2019. \url{https://www.R-project.org/}
-
-\leavevmode\hypertarget{ref-wallinga2004}{}%
-19 Wallinga J, Teunis P. Different epidemic curves for severe acute
-respiratory syndrome reveal similar impacts of control measures.
-\emph{American Journal of Epidemiology} 2004;\textbf{160}:509--16.
-doi:\href{https://doi.org/10.1093/aje/kwh255}{10.1093/aje/kwh255}
-
-\leavevmode\hypertarget{ref-generationinterval}{}%
-20 Ganyani T, Kremer C, Chen D \emph{et al.} Estimating the generation
-interval for coronavirus disease (covid-19) based on symptom onset data,
-march 2020. \emph{Eurosurveillance} 2020;\textbf{25}.
-
 \leavevmode\hypertarget{ref-Imai:webreport3}{}%
-21 Imai N, Cori A, Dorigatti I \emph{et al.} Report 3: Transmissibility
+14 Imai N, Cori A, Dorigatti I \emph{et al.} Report 3: Transmissibility
 of 2019-nCoV.
 \url{https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-2019-nCoV-transmissibility.pdf}
 
 \leavevmode\hypertarget{ref-Abbott:2020hj}{}%
-22 Abbott S, Hellewell J, Munday J \emph{et al.} The transmissibility of
+15 Abbott S, Hellewell J, Munday J \emph{et al.} The transmissibility of
 novel coronavirus in the early stages of the 2019-20 outbreak in wuhan:
 Exploring initial point-source exposure sizes and durations using
 scenario analysis. \emph{Wellcome open research} 2020;\textbf{5}:17.
 
-\leavevmode\hypertarget{ref-NOUVELLET201829}{}%
-23 Nouvellet P, Cori A, Garske T \emph{et al.} A simple approach to
-measure transmissibility and forecast incidence. \emph{Epidemics}
-2018;\textbf{22}:29--35.
-doi:\href{https://doi.org/https://doi.org/10.1016/j.epidem.2017.02.012}{https://doi.org/10.1016/j.epidem.2017.02.012}
+\leavevmode\hypertarget{ref-10.12688ux2fwellcomeopenres.15842.1}{}%
+16 Endo A, Abbott S, Kucharski AJ \emph{et al.} Estimating the
+overdispersion in covid-19 transmission using outbreak size outside
+china {[}version 1; peer review: 1 approved{]}. \emph{Wellcome open
+research} 2020;\textbf{5}.
 
-\leavevmode\hypertarget{ref-gneiting_strictly_2007}{}%
-24 Gneiting T, Raftery AE. Strictly proper scoring rules, prediction,
-and estimation. \emph{Journal of the American Statistical Association}
-2007;\textbf{102}:359--78.
-doi:\href{https://doi.org/10.1198/016214506000001437}{10.1198/016214506000001437}
+\leavevmode\hypertarget{ref-approxGP}{}%
+17 Riutort-Mayol G, Bürkner P-C, Andersen MR \emph{et al.} Practical
+hilbert space approximate bayesian gaussian processes for probabilistic
+programming. 2020.\url{http://arxiv.org/abs/2004.11408}
 
-\leavevmode\hypertarget{ref-jordan_evaluating_2019}{}%
-25 Jordan A, Krüger F, Lerch S. Evaluating probabilistic forecasts with
-scoringRules. \emph{Journal of Statistical Software} 2019;\textbf{90}.
-doi:\href{https://doi.org/10.18637/jss.v090.i12}{10.18637/jss.v090.i12}
+\leavevmode\hypertarget{ref-generationinterval}{}%
+18 Ganyani T, Kremer C, Chen D \emph{et al.} Estimating the generation
+interval for coronavirus disease (covid-19) based on symptom onset data,
+march 2020. \emph{Eurosurveillance} 2020;\textbf{25}.
+
+\leavevmode\hypertarget{ref-incubationperiod}{}%
+19 Lauer SA, Grantz KH, Bi Q \emph{et al.} The incubation period of
+coronavirus disease 2019 (covid-19) from publicly reported confirmed
+cases: Estimation and application. \emph{Annals of Internal Medicine}
+2020;\textbf{172}:577--82.
 
 \leavevmode\hypertarget{ref-Park2019}{}%
-26 Park SW, Champredon D, Weitz JS \emph{et al.} A practical
+20 Park SW, Champredon D, Weitz JS \emph{et al.} A practical
 generation-interval-based approach to inferring the strength of
 epidemics from their speed. \emph{Epidemics} 2019;\textbf{27}:12--8.
 doi:\href{https://doi.org/https://doi.org/10.1016/j.epidem.2018.12.002}{https://doi.org/10.1016/j.epidem.2018.12.002}
 
 \leavevmode\hypertarget{ref-Russell:BFVkJ6lQ}{}%
-27 Russell TW. Using a delay-adjusted case fatality ratio to estimate
+21 Russell TW. Using a delay-adjusted case fatality ratio to estimate
 under-reporting.
 \url{https://cmmid.github.io/topics/covid19/severity/global_cfr_estimates.html}
 
-\leavevmode\hypertarget{ref-episoon}{}%
-28 Abbott S, Hellewell J, Bosse N \emph{et al.} \emph{EpiSoon: Forecast
-cases using reproduction numbers}. 2020.
-\url{https://epiforecasts.io/EpiSoon}
+\leavevmode\hypertarget{ref-rmarkdown}{}%
+22 Xie Y, Allaire JJ, Grolemund G. \emph{R markdown: The definitive
+guide}. Boca Raton, Florida:: Chapman; Hall/CRC 2018.
+\url{https://bookdown.org/yihui/rmarkdown}
 
-\leavevmode\hypertarget{ref-scoringrules}{}%
-29 Jordan A, Kruger F, Lerch S. Evaluating probabilistic forecasts with
-scoringRules. \emph{Journal of Statistical Software}
-2019;\textbf{90}:1--37.
-doi:\href{https://doi.org/10.18637/jss.v090.i12}{10.18637/jss.v090.i12}
+\leavevmode\hypertarget{ref-distill}{}%
+23 Allaire J, Iannone R, Xie Y. \emph{Distill: R markdown format for
+scientific and technical writing}. 2020.
+\url{https://github.com/rstudio/distill}
 
-\leavevmode\hypertarget{ref-scoringutils}{}%
-30 Bosse N. \emph{Scoringutils: A collection of proper scoring rules and
-metrics to assess predictions}. 2020.
-\url{https://github.com/epiforecasts/scoringutils}
-
-\leavevmode\hypertarget{ref-Funk2019cc}{}%
-31 Funk S, Camacho A, Kucharski AJ \emph{et al.} Assessing the
-performance of real-time epidemic forecasts: A case study of ebola in
-the western area region of sierra leone, 2014-15. \emph{PLoS
-computational biology} 2019;\textbf{15}:e1006785--17.
-
-\leavevmode\hypertarget{ref-Price:2020dh}{}%
-32 Price DJ, Shearer FM, Meehan MT \emph{et al.} Early analysis of the
-australian covid-19 epidemic. 2020;1--22.
+\leavevmode\hypertarget{ref-rtd3}{}%
+24 Gibbs H, Abbott S, Funk S. RtD3: Rt visualization in d3.
+\emph{Zenodo} 2020;\textbf{-}:--.
+doi:\href{https://doi.org/10.5281/zenodo.4011841}{10.5281/zenodo.4011841}
 
 \leavevmode\hypertarget{ref-Britton:2019gf}{}%
-33 Britton T, Scalia Tomba G. Estimation in emerging epidemics: Biases
+25 Britton T, Scalia Tomba G. Estimation in emerging epidemics: Biases
 and remedies. \emph{Journal of the Royal Society, Interface}
 2019;\textbf{16}.
-
-\leavevmode\hypertarget{ref-10.12688ux2fwellcomeopenres.15842.1}{}%
-34 Endo A, Abbott S, Kucharski AJ \emph{et al.} Estimating the
-overdispersion in covid-19 transmission using outbreak size outside
-china {[}version 1; peer review: 1 approved{]}. \emph{Wellcome open
-research} 2020;\textbf{5}.
-
-\leavevmode\hypertarget{ref-epinow}{}%
-35 Abbott S, Hellewell J, Munday J \emph{et al.} \emph{EpiNow: Estimate
-realtime case counts and time-varying epidemiological parameters}. 2020.
-\url{https://github.com/epiforecasts/EpiNow}
-
-\leavevmode\hypertarget{ref-NCoVUtils}{}%
-36 Abbott S, Hellewell J, Munday JD \emph{et al.} NCoVUtils: Utility
-functions for the 2019-ncov outbreak. \emph{-} 2020;\textbf{-}:--.
-doi:\href{https://doi.org/10.5281/zenodo.3635417}{10.5281/zenodo.3635417}
 
 \end{document}
