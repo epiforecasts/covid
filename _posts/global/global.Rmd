@@ -73,7 +73,7 @@ subnational_ref <- RtD3::getSubregionalUrls(path = "https://epiforecasts.io/covi
 ```
 
 
-```{r map, layout="l-body-outset", out.width = "100%", warning = FALSE, message = FALSE}
+```{r map, layout="l-body-outset", out.width = "140%", warning = FALSE, message = FALSE}
 RtD3::summaryWidget(
   geoData = geoData,
   rtData = rtData,
