@@ -42,21 +42,20 @@ if (!exists("region_var")) {
   region_var <- "region"
 }
 
-base_path <- "https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/subnational/"
+base_path <- "https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/"
 # Read in each summary folder
-rtData <- list("Cases" = RtD3::readInEpiNow2(path = paste0(base_path, folder, "/cases/summary"),
-                                             region_var = region_var))
-
-
-# Add in national level data
-source(here::here("utils", "join_RtD3_data.R"))
-
-rtData$Cases <- join_RtD3_data(rtData$Cases, country = region)
-
+rtData <- list("Cases" = RtD3::joinRtData(
+          RtD3::readInEpiNow2(path = paste0(base_path, "subnational/", folder, "/cases/summary"),
+                                             region_var = region_var),
+          RtD3::readInEpiNow2(path = paste0(base_path, "national/cases/summary"),
+                              region_var = "country", regions = region)),
+               "Deaths" = RtD3::readInEpiNow2(path = paste0(base_path, "national/deaths/summary"),
+                                              region_var = "country", regions = region))
 widget <- RtD3::summaryWidget(
   geoData = geoData,
   rtData = rtData,
-  activeArea = region
+  activeArea = region,
+  downloadUrl = paste0(base_path, "subnational/", folder)
 )
 
 widget_caption <- paste0("*Figure 1: The results of the latest reproduction number estimates
