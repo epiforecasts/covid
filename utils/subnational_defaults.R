@@ -55,7 +55,7 @@ widget <- RtD3::summaryWidget(
   geoData = geoData,
   rtData = rtData,
   activeArea = region,
-  downloadUrl = paste0(base_path, "subnational/", folder)
+  downloadUrl = paste0("https://github.com/epiforecasts/covid-rt-estimates/master/subnational/", folder)
 )
 
 widget_caption <- paste0("*Figure 1: The results of the latest reproduction number estimates
