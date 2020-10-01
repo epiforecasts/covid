@@ -1,6 +1,5 @@
 
 # Knitr options -----------------------------------------------------------
-
 knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
                       message = FALSE,
                       warning = FALSE,
@@ -9,7 +8,6 @@ knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
                       dpi = 300)
 
 # Load packages -----------------------------------------------------------
-
 library(EpiNow2)
 library(covidregionaldata)
 library(RtD3)
@@ -22,14 +20,7 @@ library(here)
 library(stringr)
 library(ggplot2)
 
-
-# Options ----------------------------------------------------------------
-
-
-
-
 # Load summary data -------------------------------------------------------
-
 summary_table <- data.table::fread(here::here("covid-rt-estimates", "subnational", 
                                               folder, "cases", 
                                               "summary", "summary_table.csv"))
@@ -37,7 +28,6 @@ latest_date <- readRDS(here::here("covid-rt-estimates", "subnational", folder,
                                   "cases", "summary", "latest_date.rds"))
 
 # Build widget ------------------------------------------------------------
-
 if (!exists("region_var")) {
   region_var <- "region"
 }
