@@ -79,7 +79,7 @@ RtD3::summaryWidget(
   rtData = rtData,
   subregional_ref = subnational_ref,
   activeArea = "Global",
-  downloadUrl = "github.com/epiforecasts/covid-rt-estimates/master/national"
+  downloadUrl = "https://github.com/epiforecasts/covid-rt-estimates/master/national"
 )
 ```
 
