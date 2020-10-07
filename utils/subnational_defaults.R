@@ -32,15 +32,28 @@ if (!exists("region_var")) {
   region_var <- "region"
 }
 
+  # Read in each summary folder
 base_path <- "https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/"
-# Read in each summary folder
-rtData <- list("Cases" = RtD3::joinRtData(
-          RtD3::readInEpiNow2(path = paste0(base_path, "subnational/", folder, "/cases/summary"),
-                                             region_var = region_var),
+
+read_in_rt <- function(data = "cases") { 
+  RtD3::readInEpiNow2(path = paste0(base_path, "subnational/", folder, "/", data, "/summary"),
+                                               region_var = region_var)
+  }
+
+if (folder %in% "united-kingdom") {
+  rtData <- list("Cases" = read_in_rt(),
+                 "Admissions" = read_in_rt("admissions"),
+                 "Deaths" = read_in_rt("deaths"))
+
+}{
+  rtData <- list("Cases" = RtD3::joinRtData(
+          read_in_rt(),
           RtD3::readInEpiNow2(path = paste0(base_path, "national/cases/summary"),
                               region_var = "country", regions = region)),
                "Deaths" = RtD3::readInEpiNow2(path = paste0(base_path, "national/deaths/summary"),
                                               region_var = "country", regions = region))
+}
+
 widget <- RtD3::summaryWidget(
   geoData = geoData,
   rtData = rtData,
