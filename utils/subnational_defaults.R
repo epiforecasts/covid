@@ -45,7 +45,7 @@ if (folder %in% "united-kingdom") {
                  "Admissions" = read_in_rt("admissions"),
                  "Deaths" = read_in_rt("deaths"))
 
-}{
+}else {
   rtData <- list("Cases" = RtD3::joinRtData(
           read_in_rt(),
           RtD3::readInEpiNow2(path = paste0(base_path, "national/cases/summary"),
