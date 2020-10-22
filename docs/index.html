@@ -1382,8 +1382,8 @@ Details
 <p>* contributed equally</p>
 <h1 id="abstract">Abstract</h1>
 <p><strong>Background:</strong> Assessing temporal variations in transmission in different countries is essential for monitoring the epidemic, evaluating the effectiveness of public health interventions and estimating the impact of changes in policy.</p>
-<p><strong>Methods:</strong> We use case and death notification data to generate daily estimates of the time-dependent reproduction number globally, regionally, nationally, and subnationally over a 12 week rolling window. Our modelling framework, based on open source tooling, accounts for uncertain reporting delays, so that the reproduction number is estimated based on underlying latent infections and not reported cases or deaths.</p>
-<p><strong>Conclusions:</strong> This decision-support tool can be used to assess changes in virus transmission both globally, regionally, nationally, and subnationally. This allows public health officials and policymakers to track the progress of the outbreak in near real-time using an epidemioligcally valid measure. As well as providing regular updates on our website, we also provide an open source tool-set so that our approach can be used directly by researchers and policymakers on confidential data-sets. We hope that our tool will be used to support decisions in countries worldwide throughout the ongoing COVID-19 pandemic.</p>
+<p><strong>Methods:</strong> We use case and death notification data to generate daily estimates of the time-dependent reproduction number globally, regionally, nationally, and subnationally over a 12 week rolling window. Our modelling framework, based on open source tooling, accounts for uncertain reporting delays, so that the reproduction number is estimated based on underlying latent infections.</p>
+<p><strong>Conclusions:</strong> This decision-support tool can be used to assess changes in virus transmission both globally, regionally, nationally, and subnationally. This allows public health officials and policymakers to track the progress of the outbreak in near real-time using an epidemiologically valid measure. As well as providing regular updates on our website, we also provide an open source tool-set so that our approach can be used directly by researchers and policymakers on confidential data-sets. We hope that our tool will be used to support decisions in countries worldwide throughout the ongoing COVID-19 pandemic.</p>
 <p><strong>Keywords</strong>: Covid-19, SARS-CoV-2, surveillance, forecasting, time-varying reproduction number</p>
 <p><strong>For more detail and the limitations of these estimates please see our <a href="https://epiforecasts.io/covid/methods.html">methods</a>), our <a href="https://wellcomeopenresearch.org/articles/5-112/v1">preprint</a> (<em>currently being updated</em>)<span class="citation" data-cites="rtwebsite">(S Abbott et al. <a href="#ref-rtwebsite" role="doc-biblioref">2020</a>)</span>, the <a href="https://epiforecasts.io/EpiNow2/">documentation of our transmission tracking R package</a><span class="citation" data-cites="epinow2">(Sam Abbott, Hellewell, et al. <a href="#ref-epinow2" role="doc-biblioref">2020</a>)</span> and the documentation of our <a href="https://epiforecasts.io/covidregionaldata/">R data package</a> <span class="citation" data-cites="covidregionaldata">(Sam Abbott, Sherratt, et al. <a href="#ref-covidregionaldata" role="doc-biblioref">2020</a>)</span>. Interactive visualisations are powered by <a href="https://epiforecasts.io/RtD3/"><code>RtD3</code></a><span class="citation" data-cites="rtd3">(Gibbs, Abbott, and Funk <a href="#ref-rtd3" role="doc-biblioref">2020</a>)</span>. Stored versions of our estimates can be found <a href="https://github.com/epiforecasts/covid-rt-estimates">here</a> along with the code used to produce them.</strong></p>
 <div id="refs" class="references" role="doc-bibliography">
@@ -2007,6 +2007,25 @@ pages = {1--22}
     note = {ISBN 9781138359338},
     url = {https://bookdown.org/yihui/rmarkdown},
   }
+  
+ @data{dataverse,
+    author = {Abbott, Sam and Hickson, Joe and Allen, Jamie and Funk, Sebastian},
+    publisher = {Harvard Dataverse},
+    title = {National and subnational estimates of the time-varying reproduction number of SARS-CoV-2},
+    year = {2020},
+    url = {https://dataverse.harvard.edu/dataverse/covid-rt}
+}
+
+@article {rt-comparison,
+    author = {Sherratt, Katharine and Abbott, Sam and Meakin, Sophie R and Hellewell, Joel and Munday, James D and Bosse, Nikos and , and Jit, Mark and Funk, Sebastian},
+	  title = {Evaluating the use of the reproduction number as an epidemiological tool, using spatio-temporal trends of the Covid-19 outbreak in England},
+   	year = {2020},
+  	doi = {10.1101/2020.10.18.20214585},
+  	publisher = {Cold Spring Harbor Laboratory Press},
+  	URL = {https://www.medrxiv.org/content/early/2020/10/20/2020.10.18.20214585},
+	  eprint = {https://www.medrxiv.org/content/early/2020/10/20/2020.10.18.20214585.full.pdf},
+  	journal = {medRxiv}
+}
 </script>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
