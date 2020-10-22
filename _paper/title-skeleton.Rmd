@@ -7,7 +7,7 @@
 
 **Background:** Assessing temporal variations in transmission in different countries is essential for monitoring the epidemic, evaluating the effectiveness of public health interventions and estimating the impact of changes in policy.
 
-**Methods:**  We use case and death notification data to generate daily estimates of the time-dependent reproduction number globally, regionally, nationally, and subnationally over a 12 week rolling window. Our modelling framework, based on open source tooling, accounts for uncertain reporting delays, so that the reproduction number is estimated based on underlying latent infections.
+**Methods:**  We use case and death notification data to generate daily estimates of the time-varying reproduction number globally, regionally, nationally, and subnationally over a 12-week rolling window. Our modelling framework, based on open source tooling, accounts for uncertainty in reporting delays, so that the reproduction number is estimated based on underlying latent infections.
 
 **Conclusions:**  This decision-support tool can be used to assess changes in virus transmission both globally, regionally, nationally, and subnationally. This allows public health officials and policymakers to track the progress of the outbreak in near real-time using an epidemiologically valid measure. As well as providing regular updates on our website, we also provide an open source tool-set so that our approach can be used directly by researchers and policymakers on confidential data-sets. We hope that our tool will be used to support decisions in countries worldwide throughout the ongoing COVID-19 pandemic.
 
