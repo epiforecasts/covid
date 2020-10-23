@@ -34,8 +34,8 @@ We estimated the instantaneous reproduction number ($R_t$) using the `EpiNow2` R
 
 \begin{align}
   R_{t} &\sim R_{t-1} \times \mathrm{GP} \\
-  I_t &= R_t \sum\mathop{}_\tau w_\tau I_{t - \tau} \\
-  D_t &= \sum\mathop{}_\tau \xi_\tau I_{t-\tau} \\ 
+  I_t &= R_t \sum_\tau w_\tau I_{t - \tau} \\
+  D_t &= \sum_\tau \xi_\tau I_{t-\tau} \\ 
   C_t &\sim \mathrm{NB}(D_t \omega_{(t \mod 7)} , \phi)
 \end{align}
 
