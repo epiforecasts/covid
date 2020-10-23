@@ -5,7 +5,7 @@ output:
   html_document:
     df_print: paged
   pdf_document: default
-  word_document: default
+  bookdown:word_document2: default
 bibliography: resources/library.bib
 csl: resources/bmj.csl
 ---
