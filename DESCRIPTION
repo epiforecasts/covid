@@ -21,6 +21,7 @@ Imports:
     covidregionaldata,
     RtD3,
     distill,
+    bookdown,
     data.table,
     dplyr,
     tidyr,

@@ -206,12 +206,12 @@ biases induced by the growth rate of reported cases, so they were
 considered to be static over the 12 weeks of data considered each day.
 
 This results in an onset to case report delay distribution with a mean
-of 2.6 days (standard deviation (SD): 1.2 days) and a standard deviation
-of 4.4 days (SD: 1.1 days) and an onset to death report delay
-distribution with a mean of 9.8 days (SD: 1.1 days) and a standard
-deviation of 2.1 days (SD: 1.1 days). For computational reasons the
-maximum allowed delay is set to be 30 days. Dataset specific estimates
-are detailed on the respective country pages.
+of 6.5 days and a standard deviation of 17 days and an onset to death
+report delay distribution with a mean of 13.1 days and a standard
+deviation of 11.7 days. For computational reasons the maximum allowed
+delay is set to be 30 days. Dataset specific estimates are detailed on
+the respective country pages. Estimated delays are routinely updated as
+new data becomes available.
 
 As data may also be right truncated due to unrecorded delays (i.e the
 delay between a case report and its appearance in an aggregated data
@@ -253,20 +253,20 @@ stages of the outbreak in Wuhan {[}15,16{]} with long tails to allow for
 differences in the reproduction number between countries. The infection
 trajectories were then mapped to mean reported case counts (\(D_t\)) by
 convolving over an uncertain incubation period and report delay
-distribution (convolved into \(\xi\)). Reported cases counts (\(C_t\))
-were then sampled uby multiplying by a day of the week effect, using an
-independent effect for each day of the week (\(\omega_{(t \mod 7)}\)),
-and a negative binomial observation model with overdispersion \(\phi\)
-(using an exponential prior with mean 1) {[}17{]}. Temporal variation
-was controlled using an approximate Gaussian process {[}18{]} with a
-squared exponential kernel (\(GP\)).The model can be defined
-mathematically as follows,
+distribution (convolved into \(\xi\)). Observed reported case counts
+(\(C_t\)) were then assumed to be generated from a negative binomial
+observation model with overdispersion \(\phi\) (using an exponential
+prior with mean 1) and mean \(D_t\), multiplied by a day of the week
+effect with an independent parameter for each day of the week
+(\(\omega_{(t \mod 7)}\)). Temporal variation was controlled using an
+approximate Gaussian process {[}17{]} with a squared exponential kernel
+(\(GP\)). In mathematical notation,
 
 \begin{align}
-R_{t} &\sim R_{t-1} \times \mathrm{GP} \\
-I_t &= R_t \sum\mathop{}_\tau w_\tau I_{t - \tau} \\
-D_t &= \sum\mathop{}_\tau \xi_\tau I_{t-\tau} \\ 
-C_t &\sim \mathrm{NB}(D_t \omega_{(t \mod 7)} , \phi)
+  R_{t} &\sim R_{t-1} \times \mathrm{GP} \\
+  I_t &= R_t \sum_\tau w_\tau I_{t - \tau} \\
+  D_t &= \sum_\tau \xi_\tau I_{t-\tau} \\ 
+  C_t &\sim \mathrm{NB}(D_t \omega_{(t \mod 7)} , \phi)
 \end{align}
 
 The parameters of the Gaussian process kernnl were estimated during
@@ -278,9 +278,9 @@ independently using Markov-chain Monte Carlo (MCMC). A minimum of 4
 chains were used with a warmup of 500 each and 4000 samples post warmup.
 Convergence was assessed using the R hat diagnostic {[}14{]}.
 
-We used an estimate of the generation time sourced from {[}19{]} but
+We used an estimate of the generation time sourced from {[}18{]} but
 refit using a log-normal incubation period with a mean of 5.2 days (SD
-1.1) and SD of 1.52 days (SD 1.1) {[}20{]} rather than the incubation
+1.1) and SD of 1.52 days (SD 1.1) {[}19{]} rather than the incubation
 period used in the original study (code available here:
 \url{https://github.com/seabbs/COVID19}). This resulted in a distributed
 generation time with mean 3.6 days (standard deviation (SD) 0.7), and SD
@@ -293,7 +293,7 @@ onsets in the model. See {[}10{]} for further details on the approach.
 time}\label{estimating-the-daily-growth-rate-and-doubling-time}}
 
 We estimated the rate of spread (\(r\)) by converting our \(R_t\)
-estimates using an approximation derived in {[}21{]}. The doubling time
+estimates using an approximation derived in {[}20{]}. The doubling time
 was then estimated by calculating \(\text{ln}(2) \frac{1}{r}\) for each
 estimate of the rate of spread.
 
@@ -333,7 +333,7 @@ lower proportion of infections, then the model will attribute this to a
 drop in the reproduction number that may not be a true reduction. In
 order for our estimates to be unbiased not all cases have to be
 reported, but the level of testing effort (and therefore the proportion
-of detected cases) must be constant {[}22{]}. This means that, whilst a
+of detected cases) must be constant {[}21{]}. This means that, whilst a
 change in testing effort will initially introduce bias, this will be
 reduced over time as long as the testing effort remains consistent from
 this point onwards.
@@ -366,29 +366,29 @@ accounted for which may lead to significant inaccuracy.
 \hypertarget{reporting}{%
 \subsection{Reporting}\label{reporting}}
 
-We report the median and 90\% highest density credible intervals for all
-measures with 20\%, 50\% and 90\% high density regions shown in figures.
-The analysis was conducted independently for all regions and is updated
-daily as new data becomes available. To highlight the proportion of
-cases that have yet to be reported (due to correcting for right
-truncation), we show a cut-off in figures based on the mean of all
-delays. Values prior to this point are defined as estimates with values
-past this point being defined as estimates based on partial data. In
-reality, this is a continuum with estimates closer to now progressively
-being based on less data and therefore becoming increasing uncertain.
-All estimates are available as downloadable files in csv format under an
-open-source license for use elsewhere {[}9{]}. The scheduling framework
-used to update our estimates is also available under an open-source
-license (\url{https://github.com/epiforecasts/covid-rt-estimate}).
+We report the median and 90\% credible intervals for all measures with
+20\%, 50\% and 90\% credible intervals shown in figures. The analysis
+was conducted independently for all regions and is updated daily as new
+data becomes available. To highlight the proportion of cases that have
+yet to be reported (due to correcting for right truncation), we show a
+cut-off in figures based on the mean of all delays. Values prior to this
+point are defined as estimates with values past this point being defined
+as estimates based on partial data. In reality, this is a continuum with
+estimates closer to now progressively being based on less data and
+therefore becoming increasing uncertain. All estimates are available as
+downloadable files in csv format under an open-source license for use
+elsewhere {[}9{]}. The scheduling framework used to update our estimates
+is also available under an open-source license
+(\url{https://github.com/epiforecasts/covid-rt-estimate}).
 
 \hypertarget{website-summarised-estimates-and-interactivity}{%
 \subsection{Website, summarised estimates, and
 interactivity}\label{website-summarised-estimates-and-interactivity}}
 
 We use Rmarkdown templates and the distill framework to generate
-webpages summarising these estimates {[}23,24{]}. The \texttt{RtD3}
+webpages summarising these estimates {[}22,23{]}. The \texttt{RtD3}
 package is used to provide interactive visualisations of all estimates
-{[}25{]}. Estimates by country are provided on a dedicated static page
+{[}24{]}. Estimates by country are provided on a dedicated static page
 along with global, and regional, summaries. More detailed subnational
 estimates are available for over 10 countries in an flexible framework
 into which additional subnational estimates will be added as more data
@@ -413,7 +413,7 @@ There are several advantages associated with our approach. Firstly,
 reported counts are the only data required, which allows our approach to
 be used in a wide variety of contexts. It can be applied separately to
 counts of cases, hospital admissions, deaths or other metrics as long as
-appropriate delay distributions are used {[}26{]}. As our methodology is
+appropriate delay distributions are used {[}25{]}. As our methodology is
 applied across a range of geographies our estimates can be compared
 without having to consider differences in the underlying approach (even
 if differences in testing should still be accounted for as discussed
@@ -429,7 +429,7 @@ over the 12 weeks considered. In other words, it requires consistency in
 the focus of the surveillance method, level of effort spent on testing,
 and case definition. Yet it is often the case that the level of
 under-reporting in a country changes over the course of an outbreak
-{[}22{]}. However, it should be noted that any changes in surveillance
+{[}21{]}. However, it should be noted that any changes in surveillance
 testing procedures will only bias the estimates temporarily if they
 begin to remain consistent again after they have changed. How long the
 bias remains in the reproduction number estimates will depend on the
@@ -437,7 +437,7 @@ serial generation time and delay distributions, as well as the length
 scale of the Gaussian process used in the reproduction number estimation
 process. The impact of testing and other reporting biases vary between
 measures of transmission (test positive cases, hospital admissions, test
-positive deaths) {[}26{]}. For this reason we include estimates based on
+positive deaths) {[}25{]}. For this reason we include estimates based on
 reported deaths and provide tooling to allow estimates to be produced
 for alternative datasets. In theory, estimates from disparate sources
 should be comparable using our approach, however if they in fact
@@ -455,7 +455,7 @@ from onset to notification for a given country is shorter than our
 global delay, then we will overestimate onset case numbers, and vice
 versa for true delays longer than the distribution we used.
 Additionally, estimates of the reporting delay distribution are known to
-be biased early in an epidemic and may vary over time {[}27{]}. However,
+be biased early in an epidemic and may vary over time {[}26{]}. However,
 our use of a bootstrapped subsampling approach mitigates these issues by
 allowing multiple delay distributions based on the observed data to be
 considered at the cost of increasing uncertainty in our estimates.
@@ -544,7 +544,7 @@ publication}\label{archived-at-the-time-of-publication}}
   \emph{covidregionaldata} R package {[}11{]}:
   \url{https://doi.org/10.5281/zenodo.3957539}
 \item
-  \emph{RtD3} {[}25{]}: \url{https://doi.org/10.5281/zenodo.4011841}
+  \emph{RtD3} {[}24{]}: \url{https://doi.org/10.5281/zenodo.4011841}
 \end{itemize}
 
 License: \href{https://opensource.org/licenses/MIT}{MIT}
@@ -684,63 +684,57 @@ novel coronavirus in the early stages of the 2019-20 outbreak in wuhan:
 Exploring initial point-source exposure sizes and durations using
 scenario analysis. \emph{Wellcome open research} 2020;\textbf{5}:17.
 
-\leavevmode\hypertarget{ref-10.12688ux2fwellcomeopenres.15842.1}{}%
-17 Endo A, Abbott S, Kucharski AJ \emph{et al.} Estimating the
-overdispersion in covid-19 transmission using outbreak size outside
-china {[}version 1; peer review: 1 approved{]}. \emph{Wellcome open
-research} 2020;\textbf{5}.
-
 \leavevmode\hypertarget{ref-approxGP}{}%
-18 Riutort-Mayol G, Bürkner P-C, Andersen MR \emph{et al.} Practical
+17 Riutort-Mayol G, Bürkner P-C, Andersen MR \emph{et al.} Practical
 hilbert space approximate bayesian gaussian processes for probabilistic
 programming. 2020.\url{http://arxiv.org/abs/2004.11408}
 
 \leavevmode\hypertarget{ref-generationinterval}{}%
-19 Ganyani T, Kremer C, Chen D \emph{et al.} Estimating the generation
+18 Ganyani T, Kremer C, Chen D \emph{et al.} Estimating the generation
 interval for coronavirus disease (covid-19) based on symptom onset data,
 march 2020. \emph{Eurosurveillance} 2020;\textbf{25}.
 
 \leavevmode\hypertarget{ref-incubationperiod}{}%
-20 Lauer SA, Grantz KH, Bi Q \emph{et al.} The incubation period of
+19 Lauer SA, Grantz KH, Bi Q \emph{et al.} The incubation period of
 coronavirus disease 2019 (covid-19) from publicly reported confirmed
 cases: Estimation and application. \emph{Annals of Internal Medicine}
 2020;\textbf{172}:577--82.
 
 \leavevmode\hypertarget{ref-Park2019}{}%
-21 Park SW, Champredon D, Weitz JS \emph{et al.} A practical
+20 Park SW, Champredon D, Weitz JS \emph{et al.} A practical
 generation-interval-based approach to inferring the strength of
 epidemics from their speed. \emph{Epidemics} 2019;\textbf{27}:12--8.
 doi:\href{https://doi.org/https://doi.org/10.1016/j.epidem.2018.12.002}{https://doi.org/10.1016/j.epidem.2018.12.002}
 
 \leavevmode\hypertarget{ref-Russell:BFVkJ6lQ}{}%
-22 Russell TW. Using a delay-adjusted case fatality ratio to estimate
+21 Russell TW. Using a delay-adjusted case fatality ratio to estimate
 under-reporting.
 \url{https://cmmid.github.io/topics/covid19/severity/global_cfr_estimates.html}
 
 \leavevmode\hypertarget{ref-rmarkdown}{}%
-23 Xie Y, Allaire JJ, Grolemund G. \emph{R markdown: The definitive
+22 Xie Y, Allaire JJ, Grolemund G. \emph{R markdown: The definitive
 guide}. Boca Raton, Florida:: Chapman; Hall/CRC 2018.
 \url{https://bookdown.org/yihui/rmarkdown}
 
 \leavevmode\hypertarget{ref-distill}{}%
-24 Allaire J, Iannone R, Xie Y. \emph{Distill: R markdown format for
+23 Allaire J, Iannone R, Xie Y. \emph{Distill: R markdown format for
 scientific and technical writing}. 2020.
 \url{https://github.com/rstudio/distill}
 
 \leavevmode\hypertarget{ref-rtd3}{}%
-25 Gibbs H, Abbott S, Funk S. RtD3: Rt visualization in d3.
+24 Gibbs H, Abbott S, Funk S. RtD3: Rt visualization in d3.
 \emph{Zenodo} 2020;\textbf{-}:--.
 doi:\href{https://doi.org/10.5281/zenodo.4011841}{10.5281/zenodo.4011841}
 
 \leavevmode\hypertarget{ref-rt-comparison}{}%
-26 Sherratt K, Abbott S, Meakin SR \emph{et al.} Evaluating the use of
+25 Sherratt K, Abbott S, Meakin SR \emph{et al.} Evaluating the use of
 the reproduction number as an epidemiological tool, using
 spatio-temporal trends of the covid-19 outbreak in england.
 \emph{medRxiv} Published Online First: 2020.
 doi:\href{https://doi.org/10.1101/2020.10.18.20214585}{10.1101/2020.10.18.20214585}
 
 \leavevmode\hypertarget{ref-Britton:2019gf}{}%
-27 Britton T, Scalia Tomba G. Estimation in emerging epidemics: Biases
+26 Britton T, Scalia Tomba G. Estimation in emerging epidemics: Biases
 and remedies. \emph{Journal of the Royal Society, Interface}
 2019;\textbf{16}.
 
