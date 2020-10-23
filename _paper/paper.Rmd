@@ -2,8 +2,10 @@
 title: Estimating the time-varying reproduction number of SARS-CoV-2 using national
   and subnational case counts
 output:
-  word_document: default
+  html_document:
+    df_print: paged
   pdf_document: default
+  word_document: default
 bibliography: resources/library.bib
 csl: resources/bmj.csl
 ---
