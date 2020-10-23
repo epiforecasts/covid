@@ -40,7 +40,7 @@ latest_date <- readRDS(here::here("covid-rt-estimates", "national", "cases",
 
 *Using data available up to the:* `r latest_date`
 
-*These estimates are available for download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/cases/summary). Comparable estimates based on reported deaths are available [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/deaths/summary).*
+*Estimates (based on reported cases and deaths) are available for download [here](https://dataverse.harvard.edu/dataverse/covid-rt).*
 
 *See our see [Methods](https://epiforecasts.io/covid/methods) or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for an explanation of how these estimates are derived.*
 
@@ -79,7 +79,7 @@ RtD3::summaryWidget(
   rtData = rtData,
   subregional_ref = subnational_ref,
   activeArea = "Global",
-  downloadUrl = "https://github.com/epiforecasts/covid-rt-estimates/master/national"
+  downloadUrl = "https://dataverse.harvard.edu/dataverse/covid-rt"
 )
 ```
 

@@ -35,6 +35,8 @@ x <- paste0("#' ---
 #'
 #'*Note that it takes time for infection to cause symptoms, to get tested for SARS-CoV-2 infection, for a positive test to return and ultimately to enter the case data presented here. In other words, today’s case data are only informative of new infections about two weeks ago. This is reflected in the plots below, which are by date of infection.*
 #'
+#'*Estimates are available to download [here](https://dataverse.harvard.edu/dataverse/covid-rt).*
+#'
 #'*See our see [Methods](https://epiforecasts.io/covid/methods) or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for an explanation of how these estimates are derived.*
 #'")
 

@@ -1,6 +1,9 @@
 ---
-title: "Estimating the time-varying reproduction number of SARS-CoV-2 using national and subnational case counts"
-output: pdf_document
+title: Estimating the time-varying reproduction number of SARS-CoV-2 using national
+  and subnational case counts
+output:
+  word_document: default
+  pdf_document: default
 bibliography: resources/library.bib
 csl: resources/bmj.csl
 ---
