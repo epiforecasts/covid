@@ -29,7 +29,7 @@ source(here::here("utils/subnational_defaults.R"), local = TRUE)
 
 *Using data available up to the:* `r latest_date`
 
-*Subnational estimates are available to download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/subnational/united-states/cases/summary) and national estimates are available to download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/cases/summary).*
+*Subnational and national estimates are available to download [here](https://dataverse.harvard.edu/dataverse/covid-rt).*
 
 *See our see [Methods](https://epiforecasts.io/covid/methods) or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for an explanation of how these estimates are derived.*
 
