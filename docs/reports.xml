@@ -679,6 +679,15 @@
       <media:content url="https://epiforecasts.io/covid/posts/national/guatemala/distill-preview.png" medium="image" type="image/png" width="3840" height="3840"/>
     </item>
     <item>
+      <title>Estimates for Guernsey</title>
+      <link>https://epiforecasts.io/covid/posts/national/guernsey</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Guernsey. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively.</description>
+      <category>Europe</category>
+      <guid>https://epiforecasts.io/covid/posts/national/guernsey</guid>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/guernsey/distill-preview.png" medium="image" type="image/png" width="3840" height="3840"/>
+    </item>
+    <item>
       <title>Estimates for Guinea-Bissau</title>
       <link>https://epiforecasts.io/covid/posts/national/guinea-bissau</link>
       <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Guinea-Bissau. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively.</description>
@@ -786,6 +795,15 @@
       <guid>https://epiforecasts.io/covid/posts/national/ireland</guid>
       <pubDate>Fri, 20 Nov 2020 00:00:00 +0000</pubDate>
       <media:content url="https://epiforecasts.io/covid/posts/national/ireland/distill-preview.png" medium="image" type="image/png" width="3840" height="3840"/>
+    </item>
+    <item>
+      <title>Estimates for Isle of Man</title>
+      <link>https://epiforecasts.io/covid/posts/national/isle-of-man</link>
+      <description>Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in Isle of Man. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively.</description>
+      <category>Europe</category>
+      <guid>https://epiforecasts.io/covid/posts/national/isle-of-man</guid>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 +0000</pubDate>
+      <media:content url="https://epiforecasts.io/covid/posts/national/isle-of-man/distill-preview.png" medium="image" type="image/png" width="3840" height="3840"/>
     </item>
     <item>
       <title>Estimates for Israel</title>
