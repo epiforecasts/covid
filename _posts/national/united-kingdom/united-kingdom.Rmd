@@ -49,14 +49,13 @@ widget
 ```{r,  child = here::here("utils", "national-template.Rmd")}
 ```
 
-## Using Rt to explore transmission in vulnerable populations
+## Comparing estimates from cases, admissions, and deaths data
 
-### Comparing cases, admissions, and deaths data
 We calculate Rt as the average of how many new infections arise from one infected person. However, each data source for Covid-19 infections (test-positive cases, hospital admissions, or deaths) represents a slightly different type of "average" person who has been infected. For example, when most new infections are spread between young people who may be less vulnerable to severe disease, the Rt from all test-positive cases rises quicker than the Rt calculated from patients in hospital. This happened in the UK in August. This comparison can help us track in real-time how Covid-19 is spreading in the most vulnerable populations. 
 
 To explore in more depth how Rt from different data sources can be used to understand transmission dynamics across the population, and a more detailed methodology, see our pre-print [@rt-comparison].
 
-```{r rt-comparison-nations, fig.height = 8, fig.width = 10, out.width = "95%", echo=FALSE}
+```{r rt-comparison-nations, fig.height = 12, fig.width = 14, out.width = "95%", echo=FALSE}
 summary <- suppressMessages(readr::read_csv(here::here("covid-rt-estimates/subnational/united-kingdom/collated/rt/summary_latest.csv"))) %>%
   dplyr::mutate('Data source' = dplyr::recode_factor(source, 
                                                      "cases" = "Test-positives",
@@ -100,7 +99,7 @@ region_plot_rt[[1]] +
   
 ```
 
-```{r rt-comparison-regions, fig.height = 14, fig.width = 12, out.width = "95%", echo = FALSE}
+```{r rt-comparison-regions, fig.height = 18, fig.width = 14, out.width = "95%", echo = FALSE}
 region_plot_rt[[5]] +
   region_plot_rt[[6]] +
   region_plot_rt[[7]] +
