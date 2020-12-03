@@ -67,8 +67,11 @@ region_names <- factor(c("England", "Scotland", "Wales", "Northern Ireland",
                   "London", "South East", "South West"), ordered = TRUE)
 # Plot
 plot_rt_fn <- function(region_name){
-  summary %>%
-    dplyr::filter(region %in% region_name) %>%
+  
+  region_summary <-   summary %>%
+    dplyr::filter(region %in% region_name) 
+  
+  region_summary %>%
     ggplot2::ggplot(ggplot2::aes(x = date, col = `Data source`, fill = `Data source`)) +
     ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_50, ymax = upper_50),
                 alpha = 0.2, size = 0, colour = NA) +
@@ -77,6 +80,7 @@ plot_rt_fn <- function(region_name){
     ggplot2::geom_line(ggplot2::aes(y = median),
               alpha = 0.9, size = 1) +
     ggplot2::geom_hline(yintercept = 1, linetype = 2) +
+    ggplot2::coord_cartesian(ylim = c(NA, 1.5 * max(region_summary[["median"]]))) +
     ggplot2::scale_color_manual(values = colours) +
     ggplot2::scale_fill_manual(values = colours) +
     ggplot2::scale_x_date(date_breaks = "1 week", date_labels = "%b %d") +
@@ -93,11 +97,9 @@ region_plot_rt[[1]] +
   region_plot_rt[[2]] +
   region_plot_rt[[3]] +
   region_plot_rt[[4]] +
-  patchwork::plot_layout(ncol = 2, guides = "collect") +
-  patchwork::plot_annotation(title = "A. United Kindom") &
-  ggplot2::theme(legend.position = "bottom")
-  
+  patchwork::plot_layout(ncol = 2, guides = "collect") &ggplot2::theme(legend.position = "bottom")
 ```
+*Figure 3: Estimates of Rt (median, with 50% (darker shade) and 90% (lightest shade) credible interval), derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days for the devolved authorities of the United Kingdom.*
 
 ```{r rt-comparison-regions, fig.height = 18, fig.width = 14, out.width = "95%", echo = FALSE}
 region_plot_rt[[5]] +
@@ -107,14 +109,10 @@ region_plot_rt[[5]] +
   region_plot_rt[[9]] +
   region_plot_rt[[10]] +
   region_plot_rt[[11]] +
-  patchwork::plot_layout(ncol = 2, guides = "collect") +
-  patchwork::plot_annotation(title = "B. England NHS regions") &
-  ggplot2::theme(legend.position = "bottom")
-tab_start <- 2
-fig_start <- 3
+  patchwork::plot_layout(ncol = 2, guides = "collect") & ggplot2::theme(legend.position = "bottom")
 ```
 
-*Figure `r fig_start`: Estimates of Rt (median, with 50% (darker shade) and 90% (lightest shade) credible interval), derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days.*
+*Figure 4: Estimates of Rt (median, with 50% (darker shade) and 90% (lightest shade) credible interval), derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days in the NHS regions of England.*
 
 ```{r fig-caption-dates, echo = FALSE}
 collated_table <- summary %>%
@@ -135,7 +133,7 @@ latest_date_deaths <- collated_table %>%
   max()
 ```
 
-*Table `r tab_start`: Latest estimates of Rt, derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days. The median and 90% credible interval is shown. Latest dates vary for cases (`r latest_date_cases`), admissions (`r latest_date_admissions`), and deaths (`r latest_date_deaths`).*
+*Table 2: Latest estimates of Rt, derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days. The median and 90% credible interval is shown. Latest dates vary for cases (`r latest_date_cases`), admissions (`r latest_date_admissions`), and deaths (`r latest_date_deaths`).*
 
 ```{r, echo = FALSE}
 collated_table <- collated_table %>%
@@ -172,8 +170,8 @@ region_path <- NULL
 case_def <- "case"
 folder <- "united-kingdom"
 summary_path <- file.path("covid-rt-estimates/subnational", folder, "cases/summary")
-fig_start <- fig_start + 1
-tab_start <- tab_start + 1
+fig_start <- 5
+tab_start <- 3
 ```
 
 ```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
