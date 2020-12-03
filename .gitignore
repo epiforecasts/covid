@@ -7,3 +7,4 @@ do
 .DS_Store
 site_libs
 docs
+nohup.out
