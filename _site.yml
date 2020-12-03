@@ -13,6 +13,7 @@ navbar:
   logo:
     image: images/logo.png
     href: https://cmmid.github.io
+  search: true
   right:
     - text: "About"
       href: index.html
