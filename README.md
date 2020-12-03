@@ -16,10 +16,10 @@ git clone --recursive https://github.com/epiforecasts/covid.git
 
 ### Update external results
 
-Update all external results using the following git call.
+Update external results using the following git call.
 
 ```bash
-git submodule update --init --recursive
+git submodule update --init --depth 1
 ```
 
 ### Update the website
