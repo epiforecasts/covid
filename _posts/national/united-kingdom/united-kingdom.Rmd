@@ -5,7 +5,7 @@ description: |
 author:
   - name: Katharine Sherratt*, Sam Abbott*, Sophie R Meakin, Joel Hellewell, James D Munday, Nikos Bosse, CMMID Covid-19 working group, Mark Jit, Sebastian Funk
     affiliation: Centre for Mathematical Modelling of Infectious Diseases, London School of Hygiene & Tropical Medicine
-date: 2020
+date: "2020-10-20"
 journal: "medRxiv preprint"
 doi: "10.1101/2020.10.18.20214585"
 citation_url: https://www.medrxiv.org/content/10.1101/2020.10.18.20214585v1
