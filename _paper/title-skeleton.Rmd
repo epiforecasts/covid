@@ -9,6 +9,8 @@
 
 **Methods:**  We use case and death notification data to generate daily estimates of the time-varying reproduction number globally, regionally, nationally, and subnationally over a 12-week rolling window. Our modelling framework, based on open source tooling, accounts for uncertainty in reporting delays, so that the reproduction number is estimated based on underlying latent infections.
 
+**Results:** Estimates of the reproduction number, trajectories of infections, and forecasts are displayed on a dedicated website as both maps and time series, and made available to download in tabular form. 
+
 **Conclusions:**  This decision-support tool can be used to assess changes in virus transmission both globally, regionally, nationally, and subnationally. This allows public health officials and policymakers to track the progress of the outbreak in near real-time using an epidemiologically valid measure. As well as providing regular updates on our website, we also provide an open source tool-set so that our approach can be used directly by researchers and policymakers on confidential data-sets. We hope that our tool will be used to support decisions in countries worldwide throughout the ongoing COVID-19 pandemic.
 
 **Keywords**: Covid-19, SARS-CoV-2, surveillance, forecasting, time-varying reproduction number

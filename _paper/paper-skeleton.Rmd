@@ -70,6 +70,10 @@ We report the median and 90% credible intervals for all measures with 20%, 50% a
 
 We use Rmarkdown templates and the distill framework to generate webpages summarising these estimates [@rmarkdown; @distill]. The `RtD3` package is used to provide interactive visualisations of all estimates [@rtd3]. Estimates by country are provided on a dedicated static page along with global, and regional, summaries. More detailed subnational estimates are available for over 10 countries in an flexible framework into which additional subnational estimates will be added as more data becomes available.
 
+# Results
+
+Estimates of the reproduction number, trajectories of infections, and forecasts are displayed on a dedicated website as both maps and time series, and made available to download in tabular form. 
+
 # Discussion
 
 We provide a centralised resource which generates comparable daily estimates of the time-varying reproduction number and a daily nowcast of the number of cases newly infected derived using a standardised method. We account for the delay between infection and case notification and include all sources of quantifiable uncertainty. This resource may be useful for policymakers to track the progression of the COVID-19 outbreak and evaluate the effectiveness of intervention measures. As new data become available, we will include sub-national estimates for additional countries, and provide additional support for public health agencies or researchers interested in applying our methods to their data. 
