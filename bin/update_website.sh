@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## Get latest estimates
-git submodule update --init --recursive
+git submodule update --init --depth 1
 cd covid-rt-estimates
 git pull origin master
 cd ..

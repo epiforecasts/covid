@@ -35,15 +35,14 @@ region_codes <- readRDS(here::here("_posts", "national", "india", "region_codes.
 
 *See our see [Methods](https://epiforecasts.io/covid/methods) or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for an explanation of how these estimates are derived.*
 
-## Interactive summary
+<!--## Interactive summary -->
 
-
-```{r map, layout="l-body-outset", out.width = "200%", message = FALSE, warning = FALSE}
+```{r map, layout="l-body-outset", out.width = "200%", message = FALSE, warning = FALSE, eval = FALSE}
 widget
 ```
 
-<br>
-`r widget_caption`
+<!--<br>
+`r widget_caption` -->
 
 
 ```{r,  child = here::here("utils", "national-template.Rmd")}

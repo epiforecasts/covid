@@ -44,7 +44,7 @@ latest_date <- readRDS(here::here("covid-rt-estimates", "national", "cases",
 
 *See our see [Methods](https://epiforecasts.io/covid/methods) or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for an explanation of how these estimates are derived.*
 
-## Interactive summary
+<!-- ## Interactive summary -->
 
 ```{r, include = FALSE}
 geoData <- rnaturalearth::ne_countries(scale = "medium", returnclass = 'sf')
@@ -73,7 +73,7 @@ subnational_ref <- RtD3::getSubregionalUrls(path = "https://epiforecasts.io/covi
 ```
 
 
-```{r map, layout="l-body-outset", out.width = "140%", warning = FALSE, message = FALSE}
+```{r map, layout="l-body-outset", out.width = "140%", warning = FALSE, message = FALSE, eval = FALSE}
 RtD3::summaryWidget(
   geoData = geoData,
   rtData = rtData,
@@ -83,15 +83,15 @@ RtD3::summaryWidget(
 )
 ```
 
-<br>
-`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Click on a country (or search) to see national level estimates (and a link to subnational estimates if available). This interactive visualisation is powered by RtD3[@rtd3].*")`
+<!-- <br>
+`r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Click on a country (or search) to see national level estimates (and a link to subnational estimates if available). This interactive visualisation is powered by RtD3[@rtd3].*")` -->
 
 ## Global and regional summary
 
 ```{r}
 standalone <- FALSE
 tab_start <- 1
-fig_start <- 2
+fig_start <- 1
 region_path <- NULL
 summary_path <- "covid-rt-estimates/region/cases/summary"
 report_forecast <- TRUE
@@ -107,7 +107,7 @@ all_regions <- FALSE
 
 ```{r}
 tab_start <- 2
-fig_start <- 4
+fig_start <- 3
 case_def <- "case"
 summary_path <- "covid-rt-estimates/national/cases/summary"
 interactive <- TRUE
