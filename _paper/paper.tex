@@ -241,25 +241,29 @@ for a full discussion). \texttt{EpiNow2} implements a Bayesian latent
 variable approach using the probabilistic programming language Stan
 {[}14{]}, which works as follows. The initial number of infections were
 estimated as a free parameter with a prior based on the initial number
-of cases, or deaths, respectively. For each subsequent time step,
-previous imputed infections (\(I_{t-1}\)) were summed, weighted by an
-uncertain generation time probability mass function (\(w\)), and
-combined with an estimate of \(R_t\) to give the incidence at time \(t\)
-(\(I_t\)) {[}6,7,10{]}. We used a log normal prior for the reproduction
-number (\(R_0\)) with mean 1 and standard deviation 1 reflecting our
-current belief that \(R_t\) is likely to be centered around 1 in most of
-the world, with public health interventions and individual behaviour
-combining to prevent it from growing significantly larger for sustained
-periods. This contrasts with our earlier approach which was to use a
-gamma prior with a of mean 2.6 and standard deviation 2. This was based
-on early estimates for the basic reproduction number from the initial
-stages of the outbreak in Wuhan {[}15,16{]} with long tails to allow for
-differences in the reproduction number between countries. The infection
-trajectories were then mapped to mean reported case counts (\(D_t\)) by
-convolving over an uncertain incubation period and report delay
-distribution (convolved into \(\xi\)). Observed reported case counts
-(\(C_t\)) were then assumed to be generated from a negative binomial
-observation model with overdispersion \(\phi\) (using an exponential
+of cases, or deaths, respectively. The initial, unobserved, growth rate
+was estimate from the first 7 days of reported data. This was used as a
+prior (normal with standard deviation 0.2) to estimate latent infections
+prior to the first reported case using a log linear model. For each
+subsequent time step, previous imputed infections (\(I_{t-1}\)) were
+summed, weighted by an uncertain generation time probability mass
+function (\(w\)), and combined with an estimate of \(R_t\) to give the
+incidence at time \(t\) (\(I_t\)) {[}6,7,10{]}. We used a log normal
+prior for the reproduction number (\(R_0\)) with mean 1 and standard
+deviation 0.2 reflecting our current belief that \(R_t\) is likely to be
+centred around 1 in most of the world, with public health interventions
+and individual behaviour combining to prevent it from growing
+significantly larger for sustained periods. This contrasts with our
+earlier approach which was to use a gamma prior with a of mean 2.6 and
+standard deviation 2. This was based on early estimates for the basic
+reproduction number from the initial stages of the outbreak in Wuhan
+{[}15,16{]} with long tails to allow for differences in the reproduction
+number between countries. The infection trajectories were then mapped to
+mean reported case counts (\(D_t\)) by convolving over an uncertain
+incubation period and report delay distribution (convolved into
+\(\xi\)). Observed reported case counts (\(C_t\)) were then assumed to
+be generated from a negative binomial observation model with
+overdispersion \(\phi\) (using 1 over the square root of a half normal
 prior with mean 1) and mean \(D_t\), multiplied by a day of the week
 effect with an independent parameter for each day of the week
 (\(\omega_{(t \mod 7)}\)). Temporal variation was controlled using an
@@ -274,13 +278,13 @@ approximate Gaussian process {[}17{]} with a squared exponential kernel
 \end{align}
 
 The parameters of the Gaussian process kernnl were estimated during
-model fitting with the following priors. The length scale was given an
-inverse gamma prior with shape and scale values optimised to give a
-distribution with 98\% of the density between 2 days and 21 days. The
-prior on the magnitude was standard normal. Each timeseries was fit
-independently using Markov-chain Monte Carlo (MCMC). A minimum of 4
-chains were used with a warmup of 500 each and 4000 samples post warmup.
-Convergence was assessed using the R hat diagnostic {[}14{]}.
+model fitting with the following priors. The length scale was given a
+lognormal prior with a mean of 21 days and standard deviation of 7 days
+truncated to be greater than 3 days and less than the length of the
+data. The prior on the magnitude was standard normal. Each time series
+was fit independently using Markov-chain Monte Carlo (MCMC). A minimum
+of 4 chains were used with a warmup of 400 each and 4000 samples post
+warmup. Convergence was assessed using the R hat diagnostic {[}14{]}.
 
 We used an estimate of the generation time sourced from {[}18{]} but
 refit using a log-normal incubation period with a mean of 5.2 days (SD
