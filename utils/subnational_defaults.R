@@ -58,6 +58,7 @@ widget <- RtD3::summaryWidget(
   geoData = geoData,
   rtData = rtData,
   activeArea = region,
+  dryRun = TRUE,
   downloadUrl = paste0("https://github.com/epiforecasts/covid-rt-estimates/master/subnational/", folder)
 )
 

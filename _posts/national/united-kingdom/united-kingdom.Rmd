@@ -4,7 +4,7 @@ description: |
   Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United Kingdom. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively.
 author:
   - name: Katharine Sherratt*, Sam Abbott*, Sophie R Meakin, Joel Hellewell, James D Munday, Nikos Bosse, CMMID Covid-19 working group, Mark Jit, Sebastian Funk
-    affiliation: Centre for Mathematical Modelling of Infectious Diseases, London School of Hygiene & Tropical Medicine
+    affiliation: "Centre for Mathematical Modelling of Infectious Diseases, London School of Hygiene & Tropical Medicine"
 date: "2020-10-20"
 journal: "medRxiv preprint"
 doi: "10.1101/2020.10.18.20214585"
@@ -38,13 +38,13 @@ source(here::here("utils/subnational_defaults.R"), local = TRUE)
 
 *See our [Methods](https://epiforecasts.io/covid/methods) or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for an explanation of how these estimates are derived, and a [pre-print](https://www.medrxiv.org/content/10.1101/2020.10.18.20214585v1) for methods comparing Rt estimates by data source*
 
-## Interactive summary
+<!-- ## Interactive summary -->
 
-```{r map, layout="l-body-outset", out.width = "200%", message = FALSE, warning = FALSE}
+```{r map, layout="l-body-outset", out.width = "200%", message = FALSE, warning = FALSE, eval = FALSE}
 widget
 ```
 
-<br> `r widget_caption`
+<!-- <br> `r widget_caption` -->
 
 ```{r,  child = here::here("utils", "national-template.Rmd")}
 ```
@@ -99,7 +99,7 @@ region_plot_rt[[1]] +
   region_plot_rt[[4]] +
   patchwork::plot_layout(ncol = 2, guides = "collect") &ggplot2::theme(legend.position = "bottom")
 ```
-*Figure 3: Estimates of Rt (median, with 50% (darker shade) and 90% (lightest shade) credible interval), derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days for the devolved authorities of the United Kingdom.*
+*Figure 2: Estimates of Rt (median, with 50% (darker shade) and 90% (lightest shade) credible interval), derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days for the devolved authorities of the United Kingdom.*
 
 ```{r rt-comparison-regions, fig.height = 18, fig.width = 14, out.width = "95%", echo = FALSE}
 region_plot_rt[[5]] +
@@ -112,7 +112,7 @@ region_plot_rt[[5]] +
   patchwork::plot_layout(ncol = 2, guides = "collect") & ggplot2::theme(legend.position = "bottom")
 ```
 
-*Figure 4: Estimates of Rt (median, with 50% (darker shade) and 90% (lightest shade) credible interval), derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days in the NHS regions of England.*
+*Figure 3: Estimates of Rt (median, with 50% (darker shade) and 90% (lightest shade) credible interval), derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days in the NHS regions of England.*
 
 ```{r fig-caption-dates, echo = FALSE}
 collated_table <- summary %>%
@@ -170,7 +170,7 @@ region_path <- NULL
 case_def <- "case"
 folder <- "united-kingdom"
 summary_path <- file.path("covid-rt-estimates/subnational", folder, "cases/summary")
-fig_start <- 5
+fig_start <- 4
 tab_start <- 3
 ```
 
