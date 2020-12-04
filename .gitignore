@@ -6,5 +6,6 @@
 do
 .DS_Store
 site_libs
-docs
+docs/
 nohup.out
+*.html
