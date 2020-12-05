@@ -8,16 +8,13 @@ For the underlying estimates see [here](https://github.com/epiforecasts/covid-rt
 
 ### Clone the website
 
-This repository uses submodules to store results. To download these at the same time as cloning the main repository use the following:
-
 ```bash
 git clone --depth 1 https://github.com/epiforecasts/covid.git
-git submodule update --init --depth 1
 ```
 
 ### Update external results
 
-Update external results using the following git call.
+This repository uses submodules to store results. To download these use the following within the `covid` folder:
 
 ```bash
 git submodule update --init --depth 1
