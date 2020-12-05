@@ -11,7 +11,7 @@ For the underlying estimates see [here](https://github.com/epiforecasts/covid-rt
 This repository uses submodules to store results. To download these at the same time as cloning the main repository use the following:
 
 ```bash
-git clone --recursive https://github.com/epiforecasts/covid.git
+git clone --depth 1 --recursive https://github.com/epiforecasts/covid.git
 ```
 
 ### Update external results
