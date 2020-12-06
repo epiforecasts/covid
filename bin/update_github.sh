@@ -8,7 +8,6 @@ cp -r docs/. ../docs
 git checkout --orphan gh-pages
 rm -f -r *
 cp -r ../docs/. .
-rm -r ../docs
 rm .gitignore
 rm -r .github
 rm .Rbuildignore
@@ -18,4 +17,6 @@ git add --all
 git commit -m "deploy site"
 git push -f origin gh-pages:gh-pages
 git checkout master
+cp -r ../docs docs/.
+rm -r ../docs
 git branch -D gh-pages
