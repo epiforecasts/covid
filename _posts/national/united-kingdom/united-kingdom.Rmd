@@ -93,11 +93,9 @@ plot_fn <- function(region_name, rt = TRUE){
   if (rt) {
   p + 
     ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_20, ymax = upper_20),
-                alpha = 0.8, size = 0, colour = NA) +
-    ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_50, ymax = upper_50),
-                alpha = 0.6, size = 0, colour = NA) +
-    ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_90, ymax = upper_90),
                 alpha = 0.4, size = 0, colour = NA) +
+    ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_50, ymax = upper_50),
+                alpha = 0.2, size = 0, colour = NA) +
     ggplot2::geom_hline(yintercept = 1, linetype = 2) +
     ggplot2::labs(y = "R(t)", x = NULL) +
     ggplot2::scale_color_manual(values = colours) +
@@ -137,7 +135,7 @@ region_plot_rt <- purrr::map(region_names,
   ggplot2::theme(legend.position = "bottom")
 
 ```
-*Figure 2: Raw data counts with 7-day moving average; and estimates of Rt (median, with 50% (darker shade) and 90% (lightest shade) credible interval), derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days for the devolved authorities of the United Kingdom.*
+*Figure 2: Raw data counts with 7-day moving average; and estimates of Rt (median, with 20% (darker shade) and 50% (lightest shade) credible interval), derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days for the devolved authorities of the United Kingdom.*
 
 ```{r rt-comparison-regions, fig.height = 18, fig.width = 14, out.width = "95%", echo = FALSE}
 ((region_plot_data[[5]] / region_plot_rt[[5]]) | 
@@ -157,7 +155,7 @@ region_plot_rt <- purrr::map(region_names,
 
 ```
 
-*Figure 3: Raw data counts with 7-day moving average; and estimates of Rt (median, with 50% (darker shade) and 90% (lightest shade) credible interval), derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days in the NHS regions of England.*
+*Figure 3: Raw data counts with 7-day moving average; and estimates of Rt (median, with 20% (darker shade) and 50% (lightest shade) credible interval), derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days in the NHS regions of England.*
 
 ```{r fig-caption-dates, echo = FALSE}
 collated_table <- summary %>%
