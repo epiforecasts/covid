@@ -92,14 +92,11 @@ plot_fn <- function(region_name, rt = TRUE){
   
   if (rt) {
   p + 
+    ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_20, ymax = upper_20),
+                alpha = 0.2, size = 0, colour = NA) +  
     ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_50, ymax = upper_50),
-                alpha = 0.2, size = 0, colour = NA) +
-    ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_90, ymax = upper_90),
-                alpha = 0.1, colour = NA) +
-    ggplot2::geom_line(ggplot2::aes(y = median),
-              alpha = 0.9, size = 1) +
+                alpha = 0.1, size = 0, colour = NA) +
     ggplot2::geom_hline(yintercept = 1, linetype = 2) +
-    ggplot2::coord_cartesian(ylim = c(NA, 1.5 * max(region_summary[["median"]]))) +
     ggplot2::labs(y = "R(t)", x = NULL) +
     ggplot2::scale_color_manual(values = colours) +
     ggplot2::scale_fill_manual(values = colours) +
