@@ -97,7 +97,7 @@ plot_fn <- function(region_name, rt = TRUE){
     ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_50, ymax = upper_50),
                 alpha = 0.4, size = 0, colour = NA) +
     ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_90, ymax = upper_90),
-                alpha = 0.2, size = 0, colour = NA) +
+                alpha = 0.2, size = 0) +
     ggplot2::geom_hline(yintercept = 1, linetype = 2) +
     ggplot2::labs(y = "R(t)", x = NULL) +
     ggplot2::scale_color_manual(values = colours) +
