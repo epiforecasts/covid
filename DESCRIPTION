@@ -29,6 +29,7 @@ Imports:
     stringr,
     purrr,
     magrittr,
+    forecast,
     future, 
     future.apply,
     here,
