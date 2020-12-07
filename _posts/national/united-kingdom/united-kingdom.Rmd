@@ -69,7 +69,9 @@ data <- suppressMessages(covidregionaldata::get_regional_data("uk", nhsregions =
                 admissions = hosp_new_blend, 
                 cases = cases_new, deaths = deaths_new) %>%
   tidyr::pivot_longer(cols = c(admissions, cases, deaths), 
-                      names_to = "source", values_to = "count")
+                      names_to = "source", values_to = "count") %>%
+  dplyr::group_by(source, region) %>%
+  dplyr::mutate(count_ma = forecast::ma(count, 7))
 
 # Join
 summary <- dplyr::left_join(summary, data, by = c("region", "date", "source"))
@@ -110,7 +112,7 @@ plot_fn <- function(region_name, rt = TRUE){
     else {
   p +
     ggplot2::geom_point(ggplot2::aes(y = count)) +
-    ggplot2::geom_line(ggplot2::aes(y = forecast::ma(count, 7))) +
+    ggplot2::geom_line(ggplot2::aes(y = count_ma)) +
     ggplot2::labs(y = "Log count", x = NULL, title = region_name) +
     ggplot2::scale_color_manual(values = colours) +
     ggplot2::scale_fill_manual(values = colours) +
@@ -118,7 +120,7 @@ plot_fn <- function(region_name, rt = TRUE){
     cowplot::theme_cowplot() +
     ggplot2::theme(axis.text.x = ggplot2::element_blank()) +
     ggplot2::guides(colour = "none", fill = "none") +
-    scale_y_log10()
+    ggplot2::scale_y_log10()
   }
 }
 
