@@ -56,23 +56,40 @@ We calculate Rt as the average of how many new infections arise from one infecte
 To explore in more depth how Rt from different data sources can be used to understand transmission dynamics across the population, and a more detailed methodology, see our pre-print [@rt-comparison].
 
 ```{r rt-comparison-nations, fig.height = 12, fig.width = 14, out.width = "95%", echo=FALSE}
+# Rt
 summary <- suppressMessages(readr::read_csv(here::here("covid-rt-estimates/subnational/united-kingdom/collated/rt/summary_latest.csv"))) %>%
   dplyr::mutate('Data source' = dplyr::recode_factor(source, 
                                                      "cases" = "Test-positives",
                                                      "admissions" = "Hospital admissions",
                                                      "deaths" = "Deaths"))
+# Data
+data <- suppressMessages(covidregionaldata::get_regional_data("uk", nhsregions = TRUE)) %>%
+  dplyr::filter(date %in% summary$date) %>%
+  dplyr::select(date, region, 
+                admissions = hosp_new_blend, 
+                cases = cases_new, deaths = deaths_new) %>%
+  tidyr::pivot_longer(cols = c(admissions, cases, deaths), 
+                      names_to = "source", values_to = "count")
+
+# Join
+summary <- dplyr::left_join(summary, data, by = c("region", "date", "source"))
+
+# Plotting features
 colours <- c("Test-positives" = "#1b9e77","Hospital admissions" =  "#7570b3","Deaths" = "#d95f02")
 region_names <- factor(c("England", "Scotland", "Wales", "Northern Ireland",
                   "North East and Yorkshire", "North West", "Midlands", "East of England", 
                   "London", "South East", "South West"), ordered = TRUE)
-# Plot
-plot_rt_fn <- function(region_name){
+# Rt plot
+plot_fn <- function(region_name, rt = TRUE){
   
-  region_summary <-   summary %>%
+  region_summary <- summary %>%
     dplyr::filter(region %in% region_name) 
   
-  region_summary %>%
-    ggplot2::ggplot(ggplot2::aes(x = date, col = `Data source`, fill = `Data source`)) +
+  p <- region_summary %>%
+    ggplot2::ggplot(ggplot2::aes(x = date, col = `Data source`, fill = `Data source`)) 
+  
+  if (rt) {
+  p + 
     ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_50, ymax = upper_50),
                 alpha = 0.2, size = 0, colour = NA) +
     ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_90, ymax = upper_90),
@@ -81,38 +98,65 @@ plot_rt_fn <- function(region_name){
               alpha = 0.9, size = 1) +
     ggplot2::geom_hline(yintercept = 1, linetype = 2) +
     ggplot2::coord_cartesian(ylim = c(NA, 1.5 * max(region_summary[["median"]]))) +
+    ggplot2::labs(y = "R(t)", x = NULL) +
     ggplot2::scale_color_manual(values = colours) +
     ggplot2::scale_fill_manual(values = colours) +
-    ggplot2::scale_x_date(date_breaks = "1 week", date_labels = "%b %d") +
+    ggplot2::scale_x_date(date_breaks = "2 weeks", date_labels = "%b %d") +
     cowplot::theme_cowplot() +
-    ggplot2::labs(y = "R(t)", x = NULL, subtitle = region_name) +
-    ggplot2::theme(legend.position = "bottom",
-          axis.text.x = ggplot2::element_text(angle = 45, hjust = 1)) +
+    ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1)) +
     ggplot2::guides(colour = ggplot2::guide_legend(override.aes = list(alpha = 1)))
+  }
+  
+    else {
+  p +
+    ggplot2::geom_point(ggplot2::aes(y = count)) +
+    ggplot2::geom_line(ggplot2::aes(y = forecast::ma(count, 7))) +
+    ggplot2::labs(y = "Log count", x = NULL, title = region_name) +
+    ggplot2::scale_color_manual(values = colours) +
+    ggplot2::scale_fill_manual(values = colours) +
+    ggplot2::scale_x_date(date_breaks = "2 weeks", date_labels = "%b %d") +
+    cowplot::theme_cowplot() +
+    ggplot2::theme(axis.text.x = ggplot2::element_blank()) +
+    ggplot2::guides(colour = "none", fill = "none") +
+    scale_y_log10()
+  }
 }
+
+region_plot_data <- purrr::map(region_names,
+                             ~ plot_fn(region_name = .x, rt = FALSE))
 region_plot_rt <- purrr::map(region_names,
-                             ~ plot_rt_fn(region_name = .x))
+                             ~ plot_fn(region_name = .x, rt = TRUE))
+
 # # Plot selected regions:
-region_plot_rt[[1]] +
-  region_plot_rt[[2]] +
-  region_plot_rt[[3]] +
-  region_plot_rt[[4]] +
-  patchwork::plot_layout(ncol = 2, guides = "collect") &ggplot2::theme(legend.position = "bottom")
+((region_plot_data[[1]] / region_plot_rt[[1]]) | 
+  (region_plot_data[[2]] / region_plot_rt[[2]])) /
+  ((region_plot_data[[3]] / region_plot_rt[[3]]) | 
+  (region_plot_data[[4]] / region_plot_rt[[4]])) +
+  patchwork::plot_layout(guides = "collect") &
+  ggplot2::theme(legend.position = "bottom")
+
 ```
-*Figure 2: Estimates of Rt (median, with 50% (darker shade) and 90% (lightest shade) credible interval), derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days for the devolved authorities of the United Kingdom.*
+*Figure 2: Raw data counts with 7-day moving average; and estimates of Rt (median, with 50% (darker shade) and 90% (lightest shade) credible interval), derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days for the devolved authorities of the United Kingdom.*
 
 ```{r rt-comparison-regions, fig.height = 18, fig.width = 14, out.width = "95%", echo = FALSE}
-region_plot_rt[[5]] +
-  region_plot_rt[[6]] +
-  region_plot_rt[[7]] +
-  region_plot_rt[[8]] +
-  region_plot_rt[[9]] +
-  region_plot_rt[[10]] +
-  region_plot_rt[[11]] +
-  patchwork::plot_layout(ncol = 2, guides = "collect") & ggplot2::theme(legend.position = "bottom")
+((region_plot_data[[5]] / region_plot_rt[[5]]) | 
+  (region_plot_data[[6]] / region_plot_rt[[6]])) /
+  
+  ((region_plot_data[[7]] / region_plot_rt[[7]]) | 
+  (region_plot_data[[8]] / region_plot_rt[[8]])) /
+  
+  ((region_plot_data[[9]] / region_plot_rt[[9]]) | 
+  (region_plot_data[[10]] / region_plot_rt[[10]])) /
+  
+  ((region_plot_data[[11]] / region_plot_rt[[11]])  |
+  (patchwork::plot_spacer() / patchwork::plot_spacer())) +
+  
+  patchwork::plot_layout(guides = "collect") &
+  ggplot2::theme(legend.position = "bottom")
+
 ```
 
-*Figure 3: Estimates of Rt (median, with 50% (darker shade) and 90% (lightest shade) credible interval), derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days in the NHS regions of England.*
+*Figure 3: Raw data counts with 7-day moving average; and estimates of Rt (median, with 50% (darker shade) and 90% (lightest shade) credible interval), derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days in the NHS regions of England.*
 
 ```{r fig-caption-dates, echo = FALSE}
 collated_table <- summary %>%
