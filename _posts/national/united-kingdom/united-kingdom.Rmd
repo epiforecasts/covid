@@ -119,7 +119,7 @@ plot_fn <- function(region_name, rt = TRUE){
     cowplot::theme_cowplot() +
     ggplot2::theme(axis.text.x = ggplot2::element_blank()) +
     ggplot2::guides(colour = "none", fill = "none") +
-    ggplot2::scale_y_log10()
+    ggplot2::scale_y_log10(labels = scales::label_comma(accuracy = 1))
   }
 }
 
