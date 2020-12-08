@@ -97,12 +97,12 @@ plot_fn <- function(region_name, rt = TRUE){
     ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_50, ymax = upper_50),
                 alpha = 0.4, size = 0, colour = NA) +
     ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_90, ymax = upper_90),
-                alpha = 0.2, size = 0) +
+                alpha = 0.2, size = 0.05) +
     ggplot2::geom_hline(yintercept = 1, linetype = 2) +
     ggplot2::labs(y = "R(t)", x = NULL) +
     ggplot2::scale_color_manual(values = colours) +
     ggplot2::scale_fill_manual(values = colours) +
-    ggplot2::scale_x_date(date_breaks = "2 weeks", date_labels = "%b %d") +
+    ggplot2::scale_x_date(date_breaks = "1 week", date_labels = "%b %d") +
     cowplot::theme_cowplot() +
     ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1)) +
     ggplot2::guides(colour = ggplot2::guide_legend(override.aes = list(alpha = 1)))
@@ -115,7 +115,7 @@ plot_fn <- function(region_name, rt = TRUE){
     ggplot2::labs(y = "Log count", x = NULL, title = region_name) +
     ggplot2::scale_color_manual(values = colours) +
     ggplot2::scale_fill_manual(values = colours) +
-    ggplot2::scale_x_date(date_breaks = "2 weeks", date_labels = "%b %d") +
+    ggplot2::scale_x_date(date_breaks = "1 week", date_labels = "%b %d") +
     cowplot::theme_cowplot() +
     ggplot2::theme(axis.text.x = ggplot2::element_blank()) +
     ggplot2::guides(colour = "none", fill = "none") +
