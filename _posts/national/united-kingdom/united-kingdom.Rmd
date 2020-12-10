@@ -21,7 +21,7 @@ categories:
 ---
 
 ```{r load-geodata, include = FALSE}
-geoData <- rnaturalearth::ne_states('United Kingdom', returnclass = 'sf') 
+geoData <- rnaturalearth::ne_states('United Kingdom', returnclass = 'sf')
 geoData <- dplyr::mutate(geoData, sovereignt = geonunit)
 ```
 
@@ -51,24 +51,26 @@ widget
 
 ## Comparing estimates from cases, admissions, and deaths data
 
-We calculate Rt as the average of how many new infections arise from one infected person. However, each data source for Covid-19 infections (test-positive cases, hospital admissions, or deaths) represents a slightly different type of "average" person who has been infected. For example, when most new infections are spread between young people who may be less vulnerable to severe disease, the Rt from all test-positive cases rises quicker than the Rt calculated from patients in hospital. This happened in the UK in August. This comparison can help us track in real-time how Covid-19 is spreading in the most vulnerable populations. 
+We calculate Rt as the average of how many new infections arise from one infected person. However, each data source for Covid-19 infections (test-positive cases, hospital admissions, or deaths) represents a slightly different type of "average" person who has been infected. For example, when most new infections are spread between young people who may be less vulnerable to severe disease, the Rt from all test-positive cases rises quicker than the Rt calculated from patients in hospital. This happened in the UK in August. This comparison can help us track in real-time how Covid-19 is spreading in the most vulnerable populations.
 
 To explore in more depth how Rt from different data sources can be used to understand transmission dynamics across the population, and a more detailed methodology, see our pre-print [@rt-comparison].
+
+Note that the latest date shown for estimates is based on the most recent date that we believe to have a reliable count. In the UK, this lags behind the current date by several days. This is because of the delay in reporting an event. For example, a positive test can take up to five days to be reported in public data, meaning that data less than five days old will not include all positive tests for that day. This lag also varies by data source, where we account for a longer delay in reporting deaths compared to hospital admissions or positive tests.
 
 ```{r rt-comparison-nations, fig.height = 12, fig.width = 14, out.width = "95%", echo=FALSE}
 # Rt
 summary <- suppressMessages(readr::read_csv(here::here("covid-rt-estimates/subnational/united-kingdom/collated/rt/summary_latest.csv"))) %>%
-  dplyr::mutate('Data source' = dplyr::recode_factor(source, 
+  dplyr::mutate('Data source' = dplyr::recode_factor(source,
                                                      "cases" = "Test-positives",
                                                      "admissions" = "Hospital admissions",
                                                      "deaths" = "Deaths"))
 # Data
 data <- suppressMessages(covidregionaldata::get_regional_data("uk", nhsregions = TRUE)) %>%
   dplyr::filter(date %in% summary$date) %>%
-  dplyr::select(date, region, 
-                admissions = hosp_new_blend, 
+  dplyr::select(date, region,
+                admissions = hosp_new_blend,
                 cases = cases_new, deaths = deaths_new) %>%
-  tidyr::pivot_longer(cols = c(admissions, cases, deaths), 
+  tidyr::pivot_longer(cols = c(admissions, cases, deaths),
                       names_to = "source", values_to = "count") %>%
   dplyr::group_by(source, region) %>%
   dplyr::mutate(count_ma = forecast::ma(count, 7))
@@ -77,21 +79,22 @@ data <- suppressMessages(covidregionaldata::get_regional_data("uk", nhsregions =
 summary <- dplyr::left_join(summary, data, by = c("region", "date", "source"))
 
 # Plotting features
-colours <- c("Test-positives" = "#1b9e77","Hospital admissions" =  "#7570b3","Deaths" = "#d95f02")
+colours <- c("Test-positives" = "#4daf4a","Hospital admissions" =  "#2166ac","Deaths" = "#b2182b")
+
 region_names <- factor(c("England", "Scotland", "Wales", "Northern Ireland",
-                  "North East and Yorkshire", "North West", "Midlands", "East of England", 
+                  "North East and Yorkshire", "North West", "Midlands", "East of England",
                   "London", "South East", "South West"), ordered = TRUE)
 # Rt plot
 plot_fn <- function(region_name, rt = TRUE){
-  
+
   region_summary <- summary %>%
-    dplyr::filter(region %in% region_name) 
-  
+    dplyr::filter(region %in% region_name)
+
   p <- region_summary %>%
-    ggplot2::ggplot(ggplot2::aes(x = date, col = `Data source`, fill = `Data source`)) 
-  
+    ggplot2::ggplot(ggplot2::aes(x = date, col = `Data source`, fill = `Data source`))
+
   if (rt) {
-  p + 
+  p +
     ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_20, ymax = upper_20),
                 alpha = 0.6, size = 0, colour = NA) +
     ggplot2::geom_ribbon(ggplot2::aes(ymin = lower_50, ymax = upper_50),
@@ -107,7 +110,7 @@ plot_fn <- function(region_name, rt = TRUE){
     ggplot2::theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1)) +
     ggplot2::guides(colour = ggplot2::guide_legend(override.aes = list(alpha = 1)))
   }
-  
+
     else {
   p +
     ggplot2::geom_point(ggplot2::aes(y = count)) +
@@ -129,9 +132,9 @@ region_plot_rt <- purrr::map(region_names,
                              ~ plot_fn(region_name = .x, rt = TRUE))
 
 # # Plot selected regions:
-((region_plot_data[[1]] / region_plot_rt[[1]]) | 
+((region_plot_data[[1]] / region_plot_rt[[1]]) |
   (region_plot_data[[2]] / region_plot_rt[[2]])) /
-  ((region_plot_data[[3]] / region_plot_rt[[3]]) | 
+  ((region_plot_data[[3]] / region_plot_rt[[3]]) |
   (region_plot_data[[4]] / region_plot_rt[[4]])) +
   patchwork::plot_layout(guides = "collect") &
   ggplot2::theme(legend.position = "bottom")
@@ -140,18 +143,18 @@ region_plot_rt <- purrr::map(region_names,
 *Figure 2: Raw data counts with 7-day moving average; and estimates of Rt (lightest ribbon = 90% credible interval; darker ribbon = the 50% credible interval, darkest ribbon = 20% credible interval). Rt derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days for the devolved authorities of the United Kingdom.*
 
 ```{r rt-comparison-regions, fig.height = 18, fig.width = 14, out.width = "95%", echo = FALSE}
-((region_plot_data[[5]] / region_plot_rt[[5]]) | 
+((region_plot_data[[5]] / region_plot_rt[[5]]) |
   (region_plot_data[[6]] / region_plot_rt[[6]])) /
-  
-  ((region_plot_data[[7]] / region_plot_rt[[7]]) | 
+
+  ((region_plot_data[[7]] / region_plot_rt[[7]]) |
   (region_plot_data[[8]] / region_plot_rt[[8]])) /
-  
-  ((region_plot_data[[9]] / region_plot_rt[[9]]) | 
+
+  ((region_plot_data[[9]] / region_plot_rt[[9]]) |
   (region_plot_data[[10]] / region_plot_rt[[10]])) /
-  
+
   ((region_plot_data[[11]] / region_plot_rt[[11]])  |
   (patchwork::plot_spacer() / patchwork::plot_spacer())) +
-  
+
   patchwork::plot_layout(guides = "collect") &
   ggplot2::theme(legend.position = "bottom")
 
@@ -187,16 +190,16 @@ collated_table <- collated_table %>%
   tidyr::pivot_wider(names_from = "Data source", values_from = "combine") %>%
   dplyr::rename(Region = region)
 if (!interactive) {
-   collated_table %>% 
-   knitr::kable(booktabs = TRUE, longtable = TRUE) %>% 
+   collated_table %>%
+   knitr::kable(booktabs = TRUE, longtable = TRUE) %>%
    kableExtra::landscape()
-  
+
 } else {
-  collated_table %>% 
+  collated_table %>%
     DT::datatable(rownames = FALSE,
-                  extensions = c("Buttons"), 
+                  extensions = c("Buttons"),
                   options = list(dom = "Bfrtip", buttons = c("csv")))
-} 
+}
 ```
 
 ## Regional Breakdown
