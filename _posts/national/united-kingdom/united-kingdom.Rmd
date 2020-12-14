@@ -27,6 +27,7 @@ geoData <- dplyr::mutate(geoData, sovereignt = geonunit)
 
 ```{r load-defaults, include = FALSE}
 library(patchwork)
+library(RColorBrewer)
 region <- "United Kingdom"
 folder <- "united-kingdom"
 source(here::here("utils/subnational_defaults.R"), local = TRUE)
@@ -79,7 +80,8 @@ data <- suppressMessages(covidregionaldata::get_regional_data("uk", nhsregions =
 summary <- dplyr::left_join(summary, data, by = c("region", "date", "source"))
 
 # Plotting features
-colours <- c("Test-positives" = "#4daf4a","Hospital admissions" =  "#2166ac","Deaths" = "#b2182b")
+colours <- brewer.pal(name = "Dark2", n = 6)[c(1, 4, 6)]
+names(colours) <- c("Test-positives", "Hospital admissions", "Deaths")
 
 region_names <- factor(c("England", "Scotland", "Wales", "Northern Ireland",
                   "North East and Yorkshire", "North West", "Midlands", "East of England",
