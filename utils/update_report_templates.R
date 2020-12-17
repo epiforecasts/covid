@@ -10,7 +10,6 @@ require(rnaturalearth)
 require(covidregionaldata)
 
 # Countries from nowcast folders ------------------------------------------
-
 countries <- tibble::tibble(country = list.dirs(here::here("covid-rt-estimates/national/cases/national"), recursive = FALSE) %>%
                               stringr::str_remove(here::here("covid-rt-estimates/national/cases/national/")))
 
@@ -21,14 +20,11 @@ countries_with_death_estimates <-  tibble::tibble(country = list.dirs(here::here
 
 
 # Get countries regions ---------------------------------------------------
-
-countries_in_data <- covidregionaldata::get_national_data(source = "ecdc") %>% 
+countries_in_data <- covidregionaldata::get_national_data(source = "who") %>% 
   dplyr::select(country, region = un_region) %>% 
   unique()
 
-
 # Join and add file_name --------------------------------------------------
-
 countries <- countries %>% 
   dplyr::left_join(countries_in_data, by = "country") %>% 
   dplyr::left_join(countries_with_death_estimates, by = "country") %>% 
@@ -39,8 +35,6 @@ countries <- countries %>%
 
 
 # Remove countries with regional breakdowns -------------------------------
-
-
 ## Countries with regional breakdowns
 regional_breakdowns <- c("Italy", "United Kingdom", "United States", "Germany",
                          "Brazil", "India", "Colombia", "Afghanistan", 
@@ -55,7 +49,6 @@ countries <- countries %>%
 
 ## Load function to generate report template
 source("utils/write_national_report.R")
-
 safe_write_national_report <- purrr::safely(write_national_report)
 
 ## Walk through list and generate
