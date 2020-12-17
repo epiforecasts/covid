@@ -18,15 +18,16 @@ countries_with_death_estimates <-  tibble::tibble(country = list.dirs(here::here
                                                     stringr::str_remove(here::here("covid-rt-estimates/national/deaths/national/")),
                                                   deaths = TRUE)
 
-
 # Get countries regions ---------------------------------------------------
 countries_in_data <- covidregionaldata::get_national_data(source = "who") %>% 
   dplyr::select(country, region = un_region) %>% 
-  unique()
+  unique() %>% 
+  drop_na()
 
 # Join and add file_name --------------------------------------------------
 countries <- countries %>% 
-  dplyr::left_join(countries_in_data, by = "country") %>% 
+  dplyr::left_join(countries_in_data, by = "country") %>%
+  dplyr::mutate(region = ifelse(is.na(region), "Unknown", region)) %>% 
   dplyr::left_join(countries_with_death_estimates, by = "country") %>% 
   dplyr::mutate(file_name = country %>%
                   stringr::str_replace_all(" ", "-") %>%
@@ -45,7 +46,6 @@ countries <- countries %>%
   dplyr::filter(!country %in% regional_breakdowns) %>%
   dplyr::rowwise() %>%
   dplyr::group_split()
-
 
 ## Load function to generate report template
 source("utils/write_national_report.R")

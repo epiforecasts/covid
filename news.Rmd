@@ -13,6 +13,9 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+## 2020-12-17
+
+Due to the ECDC switching to weekly data we have update our global data source to be the WHO.
 
 ## 2020-09-18 
 
