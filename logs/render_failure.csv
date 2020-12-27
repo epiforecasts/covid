@@ -1,2 +1,2 @@
 page,error
-_posts/national/united-kingdom,"list(message = ""cannot open URL 'https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/12/COVID-19-daily-admissions-and-beds-20201225.xlsx'"", call = download.file(nhs_url, destfile = tmp, mode = ""wb""))"
+_posts/national/united-kingdom,"list(message = ""cannot open URL 'https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/12/COVID-19-daily-admissions-and-beds-20201226.xlsx'"", call = download.file(nhs_url, destfile = tmp, mode = ""wb""))"
