@@ -115,7 +115,7 @@ plot_rt <- function(region_name) {
       theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1)) +
       guides(colour = ggplot2::guide_legend(override.aes = list(alpha = 1)))
 }
-region_plot_data <- purrr::map(region_names, ~ plot_rt(region_name = .x))
+region_plot_rt <- purrr::map(region_names, ~ plot_rt(region_name = .x))
 
 plot_cases <- function(region_name) {
     ggplot(summary[region %in% region_name], aes(x = date, col = `Data source`, fill = `Data source`)) +
@@ -130,7 +130,7 @@ plot_cases <- function(region_name) {
     guides(colour = "none", fill = "none") +
     scale_y_log10(labels = scales::label_comma(accuracy = 1))
 }
-region_plot_rt <- purrr::map(region_names,  ~ plot_cases(region_name = .x))
+region_plot_data <- purrr::map(region_names,  ~ plot_cases(region_name = .x))
 
 # # Plot selected regions:
 ((region_plot_data[[1]] / region_plot_rt[[1]]) |
