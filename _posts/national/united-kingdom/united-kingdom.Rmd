@@ -1,7 +1,7 @@
 ---
 title: "National and Subnational estimates for the United Kingdom"
 description: |
-  Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting both nationally and subnationally in the United Kingdom. These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively.
+  Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in reporting both nationally and subnationally in the United Kingdom. Estimates using test positive cases are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively.
 author:
   - name: Katharine Sherratt*, Sam Abbott*, Sophie R Meakin, Joel Hellewell, James D Munday, Nikos Bosse, CMMID Covid-19 working group, Mark Jit, Sebastian Funk
     affiliation: "Centre for Mathematical Modelling of Infectious Diseases, London School of Hygiene & Tropical Medicine"
@@ -40,6 +40,8 @@ library(kableExtra)
 library(DT)
 library(tidyr)
 library(stringr)
+library(EpiNow2)
+library(rnaturalearth)
 region <- "United Kingdom"
 folder <- "united-kingdom"
 source(here::here("utils/subnational_defaults.R"), local = TRUE)
@@ -47,28 +49,29 @@ source(here::here("utils/subnational_defaults.R"), local = TRUE)
 
 *Using data available up to the:* `r latest_date`
 
-*Subnational and national estimates are available to download [here](https://dataverse.harvard.edu/dataverse/covid-rt).*
-
-*See our [Methods](https://epiforecasts.io/covid/methods) or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for an explanation of how these estimates are derived, and a [pre-print](https://www.medrxiv.org/content/10.1101/2020.10.18.20214585v1) for methods comparing Rt estimates by data source*
-
-<!-- ## Interactive summary -->
-
-```{r map, layout="l-body-outset", out.width = "200%", message = FALSE, warning = FALSE, eval = FALSE}
-widget
+```{r load-custom-data}
 ```
 
-<!-- <br> `r widget_caption` -->
+*Using data available up to the:* `r latest_date`
+
+*Subnational estimates are available to download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/subnational/united-kingdom/cases/summary) and national estimates are available to download [here](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/cases/summary).*
+
+## Summary
+
+We track transmission of Covid-19 in the United Kingdom using estimates of the time-varying reproduction number from a range of data sources (including test positive cases, hospital admissions, and death data) and spatial scales (national, regional (devolved authority and NHS region level in England), and local authority level). Where data is available these estimates are updated each day and published to a [publically available archive](https://dataverse.harvard.edu/dataverse/covid-rt) under an open source license. Estimates are also available from GitHub ([subnational estimates](https://github.com/epiforecasts/covid-rt-estimates/tree/master/subnational/united-kingdom/), [LTLA estimates](https://github.com/epiforecasts/covid-rt-estimates/blob/master/subnational/united-kingdom-local/cases/summary/rt.csv), [national estimates](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/cases/summary), and collated estimates](https://github.com/epiforecasts/covid-rt-estimates/blob/master/subnational/united-kingdom/collated/rt.csv)).
+
+See our [Methods](https://epiforecasts.io/covid/methods) or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for an explanation of how these estimates are derived, and our [pre-print](https://www.medrxiv.org/content/10.1101/2020.10.18.20214585v1) for methods comparing Rt estimates by data source
 
 ```{r,  child = here::here("utils", "national-template.Rmd")}
 ```
 
-## Comparing estimates from cases, admissions, and deaths data
+## Devolved authorities and NHS England regions
+
+### Comparing estimates from cases, admissions, and deaths data
 
 We calculate Rt as the average of how many new infections arise from one infected person. However, each data source for SARS-CoV-2 infections (test-positive cases, hospital admissions, or deaths) represents a slightly different type of "average" person who has been infected. For example, when most new infections are spread between young people who may be less vulnerable to severe disease, Rt calculated from all test-positive cases might be expected to be greater than an Rt calculated from patients in hospital who would, generally, represent older individuals more at risk of having severe outcomes from SARS-CoV-2 infection. 
 
-All the Rt estimates are referenced to the same date, the estimated date at which people who end up being reported as cases, admissions or deaths became infected. Therefore, if all the data streams represented the same patterns of spread the lines from the three colours would be expected to completely overlap. Where they do not, this tells us something about how Covid-19 is spreading in populations of different levels of vulnerability populations. To explore in more depth how Rt from different data sources can be used to understand transmission dynamics across the population, and a more detailed methodology, see our pre-print [@rt-comparison].
-
-The latest date shown for estimates is based on the most recent date that we believe to have a reliable count. In the UK, this lags behind the current date by several days. This is because of the delay in reporting a new infection. For example, a positive test can take up to five days to be reported in public data from the date on which it was taken, meaning that data less than five days old will not include all positive tests for that day. Moreover, a test would usually be done following onset of symptoms, and this usually happens several days after initial infection. The reporting also varies by data source, where we account for a longer delay in reporting deaths compared to hospital admissions or positive tests.
+All the Rt estimates are referenced to the same date, the estimated date at which people who end up being reported as cases, admissions or deaths became infected. Therefore, if all the data streams represented the same patterns of spread the lines from the three colours would be expected to completely overlap. Where they do not, this tells us about how Covid-19 is spreading in populations of different levels of vulnerability populations. To explore in more depth how Rt from different data sources can be used to understand transmission dynamics across the population, and a more detailed methodology, see our pre-print [@rt-comparison].
 
 ```{r rt-comparison-nations, fig.height = 12, fig.width = 14, out.width = "95%", echo=FALSE, message = FALSE, warning = FALSE}
 data_path <- here("covid-rt-estimates/subnational/united-kingdom")
@@ -200,26 +203,82 @@ if (!interactive) {
 }
 ```
 
-## Regional Breakdown
+### Estimates from test positive cases in detail
 
-Estimates are based on test positive cases by specimen date for NHS regions in England and by date of report in Wales, Scotland and Northern Ireland.
+Estimates are based on test positive cases by specimen date for NHS regions in England and by date of report in Wales, Scotland and Northern Ireland. In general, we expect estimates from test positive cases to be a leading indicator of Covid-19 transmission, when compared to hospital admissions and deaths. However, test positive cases are subject to bias due to changes in testing effort and the observed relationship between cases and hospital admissions and deaths may vary over time as the age distribution of detected cases varies. 
 
-### Data availability
+Data were downloaded from publically curated sources [@noauthor_coronavirus_2020; @white_coronavirus_2020; @covidregionaldata]. Case onset dates were estimated using confirmed case counts by date of report and a distribution of reporting delays fitted to an international line-list [@kraemer2020epidemiological; @covidregionaldata]. Line-list data to inform a United Kingdom specific estimate of the reporting delay was not available. This also means that we could also not account for any regional differences.
 
--   Case counts by date, stratified by region, were downloaded from a public curated dataset [@noauthor_coronavirus_2020; @white_coronavirus_2020; @covidregionaldata].
--   Case onset dates were estimated using confirmed case counts by date of report and a distribution of reporting delays fitted to an international line-list [@kraemer2020epidemiological; @covidregionaldata].
+### Expected daily confirmed cases by region
 
-### Limitations
+```{r map,fig.height = 8, layout="l-body-outset", out.width = "70%", warning = FALSE, message = FALSE}
+uk_shp <- readRDS(here("_posts", "national", "united-kingdom", "uk_shp.rds")) 
+map <- uk_shp %>%
+  rename(region = nuts118nm) %>% 
+  left_join(summary_table %>%
+  rename(region  = Region), by = "region") %>%
+  ggplot(ggplot2::aes(fill = `Expected change in daily cases`)) +
+  geom_sf(alpha = 0.8, size = 0.2)
+map %>%
+  theme_map(
+    continuous = FALSE,
+    variable_label = "Expected change in daily cases",
+    fill_labels = waiver(),
+    breaks = levels(summary_table$`Expected change in daily cases`)
+  )
+```
 
-- Line-list data to inform a United Kingdom specific estimate of the reporting delay was not available. This means that we could also not account for any regional differences.
+<br>
+*Figure 4: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection in the United Kingdom, stratified by devolved authority and NHS England region, can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details).*
 
 ```{r}
 region_path <- NULL
 case_def <- "case"
 folder <- "united-kingdom"
 summary_path <- file.path("covid-rt-estimates/subnational", folder, "cases/summary")
-fig_start <- 4
+fig_start <- 5
 tab_start <- 3
+```
+
+```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
+```
+
+## Lower tier local authority level (LTLA)
+
+Estimates are based on test positive cases by date of report. As for the estimates on higher level spatial scales these estimates are subject to bias due to changes in testing regimes and the relationship between test positive cases and future hospital admissions and deaths may change due to changes in the age distribution of cases. Data were downloaded from publicly curated sources [@noauthor_coronavirus_2020].
+
+### Expected daily confirmed cases by region
+
+```{r map-ltla,fig.height = 8, layout="l-body-outset", out.width = "70%", warning = FALSE, message = FALSE}
+ltla_summary <- fread(here::here("covid-rt-estimates", "subnational", 
+                                 "united-kingdom-local", "cases", 
+                                 "summary", "summary_table.csv"))
+uk_ltla_shp <- rnaturalearth::ne_states('United Kingdom', returnclass = 'sf') 
+map <- uk_ltla_shp %>%
+  mutate(region = name_en) %>% 
+  left_join(ltla_summary %>%
+  rename(region  = Region), by = "region") %>%
+  ggplot(ggplot2::aes(fill = `Expected change in daily cases`)) +
+  geom_sf(alpha = 0.8, size = 0.2)
+map %>%
+  theme_map(
+    continuous = FALSE,
+    variable_label = "Expected change in daily cases",
+    fill_labels = waiver(),
+    breaks = levels(ltla_summary$`Expected change in daily cases`)
+  )
+```
+
+*Figure1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection in the United Kingdom, stratified by lower tier local authority, can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details).*
+
+```{r}
+region_path <- NULL
+case_def <- "case"
+folder <- "united-kingdom-local"
+summary_path <- file.path("covid-rt-estimates/subnational", folder, "cases/summary")
+fig_start <- 12
+tab_start <- 4
+all_regions <- FALSE
 ```
 
 ```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
