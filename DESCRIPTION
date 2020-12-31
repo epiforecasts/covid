@@ -39,7 +39,13 @@ Imports:
     countrycode,
     sf,
     knitr,
-    kableExtra
+    kableExtra,
+    patchwork,
+    RColorBrewer,
+    ggplot2,
+    cowplot,
+    forecast,
+    DT
 Additional_repositories: 
   http://packages.ropensci.org/
 Remotes:
