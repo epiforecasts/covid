@@ -237,7 +237,7 @@ tab_start <- 3
 ```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
 ```
 
-## Lower tier local authority level (LTLA)
+## Upper-tier local authority level (UTLA)
 
 Estimates are based on test positive cases by date of report. As for the estimates on higher level spatial scales these estimates are subject to bias due to changes in testing regimes and the relationship between test positive cases and future hospital admissions and deaths may change due to changes in the age distribution of cases. Data were downloaded from publicly curated sources [@noauthor_coronavirus_2020].
 
@@ -265,14 +265,14 @@ map %>%
   )
 ```
 
-*Figure1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection in the United Kingdom, stratified by lower tier local authority, can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details).*
+*Figure 12: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection in the United Kingdom, stratified by upper-tier local authority, can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details).*
 
 ```{r}
 region_path <- NULL
 case_def <- "case"
 folder <- "united-kingdom-local"
 summary_path <- file.path("covid-rt-estimates/subnational", folder, "cases/summary")
-fig_start <- 12
+fig_start <- 13
 tab_start <- 4
 all_regions <- FALSE
 ```
