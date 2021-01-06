@@ -50,7 +50,7 @@ source(here::here("utils/subnational_defaults.R"), local = TRUE)
 
 *Updated on the `r latest_date`*
 
-We track transmission of Covid-19 in the United Kingdom using estimates of the time-varying reproduction number from a range of data sources (including test positive cases, hospital admissions, and death data) and spatial scales (national, regional (devolved authority and NHS region level in England), and local authority level). Where data is available these estimates are updated each day and published to a [publicly available archive](https://dataverse.harvard.edu/dataverse/covid-rt) under an open source license. Estimates are also available from GitHub ([subnational estimates](https://github.com/epiforecasts/covid-rt-estimates/tree/master/subnational/united-kingdom/), [LTLA estimates](https://github.com/epiforecasts/covid-rt-estimates/blob/master/subnational/united-kingdom-local/cases/summary/rt.csv), [national estimates](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/cases/summary), and [collated estimates](https://github.com/epiforecasts/covid-rt-estimates/blob/master/subnational/united-kingdom/collated/rt.csv)).
+We track transmission of Covid-19 in the United Kingdom using estimates of the time-varying reproduction number from a range of data sources (including test positive cases, hospital admissions, and death data) and spatial scales (national, regional (devolved authority and NHS region level in England), and local authority level). Where data is available these estimates are updated each day and published to a [publicly available archive](https://dataverse.harvard.edu/dataverse/covid-rt) under an open source license. Estimates are also available from GitHub ([subnational estimates](https://github.com/epiforecasts/covid-rt-estimates/tree/master/subnational/united-kingdom/), [UTLA estimates](https://github.com/epiforecasts/covid-rt-estimates/blob/master/subnational/united-kingdom-local/cases/summary/rt.csv), [national estimates](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/cases/summary), and [collated estimates](https://github.com/epiforecasts/covid-rt-estimates/blob/master/subnational/united-kingdom/collated/rt.csv)).
 
 See our [Methods](https://epiforecasts.io/covid/methods) or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for an explanation of how these estimates are derived, and our [pre-print](https://www.medrxiv.org/content/10.1101/2020.10.18.20214585v1) for methods comparing Rt estimates by data source. If interested in producing interactive visualisations of these estimates to be shown on this page please open an issue [here](https://github.com/epiforecasts/covid/issues).
 
@@ -208,7 +208,7 @@ Data were downloaded from publicly curated sources [@noauthor_coronavirus_2020; 
 ```{r map,fig.height = 8, layout="l-body-outset", out.width = "70%", warning = FALSE, message = FALSE}
 uk_shp <- readRDS(here("_posts", "national", "united-kingdom", "uk_shp.rds")) 
 map <- uk_shp %>%
-  rename(region = nuts118nm) %>% 
+  rename(region = GSS_NM) %>%
   left_join(summary_table %>%
   rename(region  = Region), by = "region") %>%
   ggplot(ggplot2::aes(fill = `Expected change in daily cases`)) +
@@ -245,14 +245,20 @@ In this section we include estimates from partial data (shown as orange in the f
 
 ### Expected daily confirmed cases by region
 
-```{r map-ltla,fig.height = 8, layout="l-body-outset", out.width = "70%", warning = FALSE, message = FALSE}
-ltla_summary <- fread(here::here("covid-rt-estimates", "subnational", 
+```{r map-utla,fig.height = 8, layout="l-body-outset", out.width = "70%", warning = FALSE, message = FALSE}
+utla_summary <- fread(here::here("covid-rt-estimates", "subnational",
                                  "united-kingdom-local", "cases", 
                                  "summary", "summary_table.csv"))
-uk_ltla_shp <- rnaturalearth::ne_states('United Kingdom', returnclass = 'sf') 
-map <- uk_ltla_shp %>%
-  mutate(region = name_en) %>% 
-  left_join(ltla_summary %>%
+uk_utla_shp <- readRDS(here("_posts", "national", "united-kingdom", "uk_utla_shp.rds"))
+map <- uk_utla_shp %>%
+  mutate(region = ctyua17nm,
+         region = if_else(region %in% c("Bournemouth", "Poole"),
+                          "Bournemouth, Christchurch and Poole", region),
+         region = if_else(region %in% c("Cornwall", "Isles of Scilly"),
+                          "Cornwall and Isles of Scilly", region),
+         region = if_else(region %in% c("Hackney", "City of London"),
+                          "Hackney and City of London", region)) %>%
+  left_join(utla_summary %>%
   rename(region  = Region), by = "region") %>%
   ggplot(ggplot2::aes(fill = `Expected change in daily cases`)) +
   geom_sf(alpha = 0.8, size = 0.2)
@@ -261,7 +267,7 @@ map %>%
     continuous = FALSE,
     variable_label = "Expected change in daily cases",
     fill_labels = waiver(),
-    breaks = levels(ltla_summary$`Expected change in daily cases`)
+    breaks = levels(utla_summary$`Expected change in daily cases`)
   )
 ```
 
