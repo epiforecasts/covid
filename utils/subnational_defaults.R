@@ -20,10 +20,24 @@ library(here)
 library(stringr)
 library(ggplot2)
 
+force_factor <- function(df) {
+  df[, `Expected change in daily cases` :=
+         factor(`Expected change in daily cases`,
+                levels = c(
+                  "Increasing", "Likely increasing", "Stable",
+                  "Likely decreasing", "Decreasing"
+                )
+                )]
+}
+
 # Load summary data -------------------------------------------------------
 summary_table <- data.table::fread(here::here("covid-rt-estimates", "subnational", 
                                               folder, "cases", 
                                               "summary", "summary_table.csv"))
+
+summary_table <- force_factor(summary_table)
+
+
 latest_date <- readRDS(here::here("covid-rt-estimates", "subnational", folder,
                                   "cases", "summary", "latest_date.rds"))
 
