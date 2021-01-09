@@ -20,11 +20,6 @@ categories:
   - "Europe"
 ---
 
-```{r load-geodata, include = FALSE}
-geoData <- rnaturalearth::ne_states('United Kingdom', returnclass = 'sf')
-geoData <- dplyr::mutate(geoData, sovereignt = geonunit)
-```
-
 ```{r load-defaults, include = FALSE}
 library(patchwork)
 library(RColorBrewer)
