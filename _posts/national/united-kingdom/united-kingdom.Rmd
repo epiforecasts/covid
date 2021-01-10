@@ -238,7 +238,7 @@ Estimates are based on test positive cases by date of report. As for the estimat
 
 In this section we include estimates from partial data (shown as orange in the figures). These estimates are less reliable than those shown in green which are more fully supported by observed data. They are calculated using a combination of previously observed behaviour and observed data (though as the lag between estimates and the latest data decreases the support from observed data decreases). Please see our [methods for details](https://epiforecasts.io/covid/methods).
 
-### Expected daily confirmed cases by region
+### Expected daily confirmed cases by Upper-tier Local Authority
 
 ```{r map-utla,fig.height = 8, layout="l-body-outset", out.width = "70%", warning = FALSE, message = FALSE}
 utla_summary <- fread(here::here("covid-rt-estimates", "subnational",
