@@ -244,6 +244,7 @@ In this section we include estimates from partial data (shown as orange in the f
 utla_summary <- fread(here::here("covid-rt-estimates", "subnational",
                                  "united-kingdom-local", "cases", 
                                  "summary", "summary_table.csv"))
+utla_summary <- force_factor(utla_summary)
 uk_utla_shp <- readRDS(here("_posts", "national", "united-kingdom", "uk_utla_shp.rds"))
 map <- uk_utla_shp %>%
   mutate(region = ctyua17nm,
