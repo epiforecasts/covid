@@ -21,6 +21,15 @@ library(stringr)
 library(ggplot2)
 library(data.table)
 
+force_factor <- function(df) {
+   df[, `Expected change in daily cases` :=
+          factor(`Expected change in daily cases`,
+                 levels = c(
+                   "Increasing", "Likely increasing", "Stable",
+                   "Likely decreasing", "Decreasing"
+                 )
+                 )]
+ }
 # Load summary data -------------------------------------------------------
 summary_table <- data.table::fread(here::here("covid-rt-estimates", "subnational", 
                                               folder, "cases", 
