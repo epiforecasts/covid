@@ -14,7 +14,7 @@ categories:
 ---
 
 
-```{r load-custom-data}
+```{r load-custom-data, include = FALSE}
 region_codes <- readRDS(here::here("_posts", "national", "italy", "region_codes.rds"))
 region_codes <- dplyr::rename(region_codes, sovereignt = region, provnum_ne = region_code)
 ```
