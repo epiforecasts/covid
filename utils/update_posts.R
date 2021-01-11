@@ -1,24 +1,20 @@
+require(data.table)
 require(stringr)
 require(magrittr)
 require(future)
 require(furrr)
 require(purrr)
-require(data.table)
 
 posts <- c("_posts/global" , list.dirs("_posts/national", recursive = FALSE))
 
-
-
 ## Copy in bib file for references
 purrr::walk(posts, ~ file.copy("library.bib", file.path(.), overwrite = TRUE))
-
 
 ## Set up processing
 future::plan("multisession")
 
 ## Make rendering safe to errors
 safe_render <- purrr::safely(rmarkdown::render)
-
 
 ## Render by path
 render_by_path <-  function(post) {
@@ -56,7 +52,5 @@ data.table::fwrite(render_failure, here::here("logs", "render_failure.csv"))
 
 
 ## Print to terminal the failed renders
-print(render_failure)
-
-
-
+print("The following pages failed to build:")
+print(render_failure[, .(page)])
