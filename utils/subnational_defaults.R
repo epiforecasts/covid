@@ -19,15 +19,13 @@ library(rmarkdown)
 library(here)
 library(stringr)
 library(ggplot2)
+library(data.table)
 
 force_factor <- function(df) {
-  df[, `Expected change in daily cases` :=
-         factor(`Expected change in daily cases`,
-                levels = c(
-                  "Increasing", "Likely increasing", "Stable",
-                  "Likely decreasing", "Decreasing"
-                )
-                )]
+  df <- df[, `Expected change in daily cases` := factor(`Expected change in daily cases`,
+                                                       levels = c("Increasing", "Likely increasing", "Stable", 
+                                                                  "Likely decreasing", "Decreasing"))]
+  return(df)
 }
 
 # Load summary data -------------------------------------------------------
