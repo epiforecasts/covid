@@ -15,14 +15,13 @@ purrr::walk(post_dirs,
             ~ file.copy("library.bib", file.path(.), overwrite = TRUE))
 
 ## get all posts
-posts <- list.files(post_dirs, pattern = "\\.Rmd$", full.names = TRUE)
+posts <- list.files(post_dirs, pattern = "\\.Rmd$", full.names = TRUE, recursive = TRUE)
 
 ## Set up processing
 future::plan("multisession")
 
 ## Make rendering safe to errors
 safe_render <- purrr::safely(rmarkdown::render)
-
 
 ## Render by path
 render_by_path <-  function(post) {
