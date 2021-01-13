@@ -57,7 +57,7 @@ See our [Methods](https://epiforecasts.io/covid/methods) or our [paper](https://
 ::: {.panelset}
 
 ::: {.panel}
-### Regional
+[Regional]{.panel-name}
 
 Expected daily confirmed cases by NHSE region and devolved nation
 
@@ -71,7 +71,7 @@ geoData <- readRDS(here("_posts", "national", "united-kingdom", "uk_shp.rds")) %
 
 :::
 ::: {.panel}
-## Local
+[Local]{.panel-name}
 
 Estimates are shown at the level of Upper Tier Local Authorities (UTLAs).
 
