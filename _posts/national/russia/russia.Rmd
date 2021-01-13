@@ -11,6 +11,7 @@ output:
 categories:
   - "Subnational estimates"
   - "Europe"
+  - "Russia"
 ---
 
 
@@ -24,7 +25,8 @@ region_codes <- covidregionaldata::get_regional_data(country = "Russia") %>%
 ```{r load-geodata, include = FALSE}
 geoData <- rnaturalearth::ne_states('Russia', returnclass = 'sf') 
 geoData <- dplyr::left_join(geoData, region_codes, by = "iso_3166_2")
-geoData <- dplyr::filter(geoData, !sovereignt %in% "Chukotka Autonomous Okrug")
+geoData <- dplyr::filter(geoData, !sovereignt %in% "Chukotka Autonomous Okrug") %>%
+  dplyr::rename(Region = sovereignt)
 ```
 
 
@@ -33,6 +35,7 @@ geoData <- dplyr::filter(geoData, !sovereignt %in% "Chukotka Autonomous Okrug")
 region <- "Russia"
 folder <- "russia"
 source(here::here("utils/subnational_defaults.R"), local = TRUE)
+source(here::here("utils/epi_leaflet.R"), local = TRUE)
 ```
 
 *Using data available up to the:* `r latest_date`
@@ -41,21 +44,9 @@ source(here::here("utils/subnational_defaults.R"), local = TRUE)
 
 *See our see [Methods](https://epiforecasts.io/covid/methods) or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for an explanation of how these estimates are derived.*
 
-<!--## Interactive summary -->
 
-
-```{r map, layout="l-body-outset", out.width = "200%", message = FALSE, warning = FALSE, eval = FALSE}
-widget
+```{r,  child = here::here("utils", "national-map.Rmd")}
 ```
-
-<!--<br>
-`r widget_caption` -->
-
-```{r,  child = here::here("utils", "national-template.Rmd")}
-```
-
-## Regional Breakdown
-
 
 ### Data availability
 
@@ -65,13 +56,3 @@ widget
 ### Limitations
 
 * Line-list data to inform an Russia specific estimate of the reporting delay was not available. This means that we could also not account for any regional differences.
-
-```{r}
-case_def <- "case"
-region_path <- NULL
-folder <- "russia"
-summary_path <- file.path("covid-rt-estimates/subnational", folder, "cases/summary")
-```
-
-```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
-```

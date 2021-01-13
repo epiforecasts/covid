@@ -45,14 +45,18 @@ Imports:
     ggplot2,
     cowplot,
     forecast,
-    DT
+    DT,
+    xaringanExtra,
+    leaflet, 
+    rgdal,
+    htmltools
 Additional_repositories: 
   http://packages.ropensci.org/
 Remotes:
   epiforecasts/covidregionaldata,
   epiforecasts/EpiNow2,
   epiforecasts/RtD3,
-  rstudio/distill
+  gadenbuie/xaringanExtra
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

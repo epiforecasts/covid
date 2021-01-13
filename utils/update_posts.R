@@ -1,14 +1,21 @@
-require(data.table)
 require(stringr)
 require(magrittr)
 require(future)
 require(furrr)
 require(purrr)
+require(data.table)
 
-posts <- c("_posts/global" , list.dirs("_posts/national", recursive = FALSE))
+## get directories
+post_dirs <-
+  c("_posts/global" , list.dirs("_posts/national", recursive = FALSE),
+    list.dirs("_posts/subnational", recursive = TRUE))
 
 ## Copy in bib file for references
-purrr::walk(posts, ~ file.copy("library.bib", file.path(.), overwrite = TRUE))
+purrr::walk(post_dirs,
+            ~ suppressWarnings(file.copy("library.bib", file.path(.), overwrite = TRUE)))
+
+## get all posts
+posts <- list.files(post_dirs, pattern = "\\.Rmd$", full.names = TRUE, recursive = TRUE)
 
 ## Set up processing
 future::plan("multisession")
@@ -18,15 +25,13 @@ safe_render <- purrr::safely(rmarkdown::render)
 
 ## Render by path
 render_by_path <-  function(post) {
-  post_name <- stringr::str_split(post, "/")[[1]] %>% 
-    dplyr::last()
-  tmp <- safe_render(file.path(post, paste0(post_name, ".Rmd")), quiet = FALSE)
+  post_name <- stringr::str_remove(basename(post), ".Rmd$")
+  tmp <- safe_render(file.path(post), quiet = FALSE)
   if (!is.null(tmp[[2]])) {
     warning(post_name, ": ", tmp[[2]])
   }
   return(tmp)
 }
-
 ## Render posts in parallel
 failed_to_render <- furrr::future_map(posts, render_by_path, 
                                       .options = furrr::furrr_options(seed = TRUE),
@@ -50,7 +55,8 @@ render_failure <- data.table::data.table(page = names(secondary_render_failure_c
 ## Save errors
 data.table::fwrite(render_failure, here::here("logs", "render_failure.csv"))
 
-
 ## Print to terminal the failed renders
-print("The following pages failed to build:")
-print(render_failure[, .(page)])
+print(render_failure)
+
+
+

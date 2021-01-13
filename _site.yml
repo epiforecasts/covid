@@ -34,6 +34,8 @@ navbar:
     - text: "Subnational"
       menu:
        - text: "Countries with subnational estimates"
+       - text: "Index"
+         href: reports.html#Subnational_estimates
        - text: "Belgium"
          href: posts/national/belgium/index.html
        - text: "Brazil"
@@ -70,6 +72,8 @@ collections:
   posts:
     feed_items_max: false
     share: [twitter, linkedin, facebook]
-output: distill::distill_article
+output:
+  distill::distill_article:
+    css: epiforecasts.css
 exclude: ["Dockerfile", "DESCRIPTION", "README.md", "REAMDE.html", "_README.md",
          ".Rbuildignore", "LICENSE", "bin", "utils", "covid-rt-estimates", ".github"]
