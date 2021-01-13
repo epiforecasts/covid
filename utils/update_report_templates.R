@@ -63,7 +63,7 @@ countries <- countries %>%
 regional_breakdowns <- readRDS(here::here("data", "subnational_estimates.rds"))
 
 countries <- countries %>%
-  dplyr::filter(!country %in% regional_breakdowns) %>%
+  dplyr::filter(!file_name %in% regional_breakdowns) %>%
   dplyr::rowwise() %>%
   dplyr::group_split()
 
