@@ -31,11 +31,11 @@ navbar:
          href: reports.html#Europe
        - text: 'Asia'
          href: reports.html#Asia
-       - text: 'Subnational Summaries'
-         href: reports.html#subnational-summary
     - text: "Subnational"
       menu:
        - text: "Countries with subnational estimates"
+       - text: "Index"
+         href: reports.html#Subnational_estimates
        - text: "Belgium"
          href: posts/national/belgium/index.html
        - text: "Brazil"

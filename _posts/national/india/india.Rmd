@@ -11,6 +11,7 @@ output:
 categories:
   - "Subnational estimates"
   - "Asia"
+  - "India"
 ---
 
 ```{r load-geodata, include = FALSE}

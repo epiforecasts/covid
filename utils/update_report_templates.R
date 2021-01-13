@@ -60,10 +60,7 @@ countries <- countries %>%
 
 # Remove countries with regional breakdowns -------------------------------
 ## Countries with regional breakdowns
-regional_breakdowns <- c("Italy", "United Kingdom", "United States", "Germany",
-                         "Brazil", "India", "Colombia", "Afghanistan", 
-                         "Russia", "Canada", "Belgium")
-
+regional_breakdowns <- readRDS(here::here("data", "subnational_estimates.rds"))
 
 countries <- countries %>%
   dplyr::filter(!country %in% regional_breakdowns) %>%

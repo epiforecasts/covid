@@ -48,7 +48,8 @@ Imports:
     DT,
     xaringanExtra,
     leaflet, 
-    rgdal
+    rgdal,
+    htmltools
 Additional_repositories: 
   http://packages.ropensci.org/
 Remotes:

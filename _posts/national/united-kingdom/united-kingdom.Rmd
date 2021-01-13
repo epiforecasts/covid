@@ -19,6 +19,7 @@ output:
 categories:
   - "Subnational estimates"
   - "Europe"
+  - "United Kingdom"
 ---
 
 ```{r load-defaults, include = FALSE}

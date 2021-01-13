@@ -23,9 +23,7 @@ write_report <- function(details = NULL, type = c("national", "subnational")) {
     deaths <- details$deaths
     summary_folder <- "national"
   } else if (type == "subnational") {
-    region <- details$country %>% 
-      str_replace_all(" ", "-") %>%
-      str_to_lower()
+    region <- details$country
     loc <- details$area
     country <- details$country
     locstr <- paste0("Estimates for ", loc, " (", country, ")")
