@@ -14,7 +14,8 @@ write_report <- function(details = NULL, type = c("national", "subnational")) {
   type <- match.arg(type, choices = c("national", "subnational"))
 
   region <- details$region
-  save_name <- paste0(details$file_name, ".R")
+  save_name <- details$file_name
+  r_name <- paste0(save_name, ".R")
   if (type == "national") {
     loc <- details$country
     locstr <- paste0("Estimates for ", loc)
@@ -104,17 +105,17 @@ region_path <- 'covid-rt-estimates/", summary_folder, "/deaths/national'
 x <- paste(x,x2,x3)
 
 ## Add new template
-  suppressWarnings(dir.create(file.path("_posts", summary_folder),
-                              recursive = TRUE))
+suppressWarnings(dir.create(file.path("_posts", summary_folder, save_name),
+                            recursive = TRUE))
 
 ## Write character string as an R file to the directory
-  write(x, file = file.path("_posts", summary_folder, save_name))
+write(x, file = file.path("_posts", summary_folder, save_name, r_name))
 
 ## Knit the file into a Rmd using the comments for structure
-  knitr::spin(file.path("_posts", summary_folder, save_name), knit = FALSE)
+knitr::spin(file.path("_posts", summary_folder, save_name, r_name), knit = FALSE)
 
 ## Clean up
-  file.remove(file.path("_posts", summary_folder, save_name))
+file.remove(file.path("_posts", summary_folder, save_name, r_name))
 
 return(invisible(NULL))
 }

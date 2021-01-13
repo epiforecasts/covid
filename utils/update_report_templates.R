@@ -47,7 +47,6 @@ subnational <-
   dplyr::left_join(countries_in_data, by = "country") %>%
   dplyr::mutate(region = ifelse(is.na(region), "Unknown", region))
 
-
 # Join and add file_name --------------------------------------------------
 countries <- countries %>% 
   dplyr::left_join(countries_in_data, by = "country") %>%
