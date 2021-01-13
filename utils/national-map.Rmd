@@ -1,0 +1,38 @@
+```{r, fig.height = 1.5, layout="l-body-outset", out.width = "100%", warning = FALSE, message = FALSE}
+if (!exists("subnational_unit")) subnational_unit <- "Region"
+if (!exists("fig_tab_no")) fig_tab_no <- 1
+summary_with_links <- summary_table %>%
+  mutate(link = paste0("https://epiforecasts.io/covid/_posts/subnational/",
+                       folder, "/",
+                       Region %>%
+                       stringr::str_replace_all(" ", "-") %>%
+                       stringr::str_to_lower()))
+geoData %>%
+    epi_leaflet(summary_with_links, label_style = "popup",
+              link_text = "Detailed estimates and plots",
+              geography_column = "Region")
+```
+
+`r paste0("*Figure", fig_tab_no, ": The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection in ", region, ", stratified by ", subnational_unit, ", can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details).*")`
+
+
+```{r, layout="l-body-outset", out.width = "90%"}
+
+if (!interactive) {
+  summary_table %>%
+    knitr::kable(booktabs = TRUE, longtable = TRUE) %>%
+    kableExtra::landscape()
+}else{
+  summary_with_links %>%
+    mutate(Region = paste0("<a href=\"", link, "\" target=\"blank\">",
+                           Region, "</a>")) %>%
+    select(-link) %>%
+    rename(!!enquo(subnational_unit) := Region) %>%
+    DT::datatable(rownames = FALSE,
+                  extensions = c("Buttons"),
+                  options = list(dom = "Bfrtip", buttons = c("csv")),
+                  escape = FALSE)
+}
+```
+`r paste0("*Table ", fig_tab_no, ": Latest estimates (as of the ", latest_date, ") of the number of confirmed cases by date of infection, the effective reproduction number, the rate of growth, and the doubling time (when negative this corresponds to the halving time) in each region. The median and 90% credible interval is shown.*")`
+<br>

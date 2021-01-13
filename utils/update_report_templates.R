@@ -24,6 +24,30 @@ countries_in_data <- covidregionaldata::get_national_data(source = "who") %>%
   unique() %>% 
   drop_na()
 
+# Get subnational entities
+subnational <-
+  tibble::tibble(
+            area = list.dirs(here::here("covid-rt-estimates/subnational"),
+                             recursive = TRUE) %>%
+              stringr::str_remove(here::here("covid-rt-estimates/subnational"))
+          ) %>%
+  filter(str_count(area, "\\/") == 4) %>%
+  mutate(area = sub("^\\/", "", area)) %>%
+  separate(area, c("country_filename", "data", "national", "area"),
+           sep = "\\/") %>%
+  mutate(deaths = (data == "deaths")) %>%
+  select(country_filename, deaths, area) %>%
+  dplyr::mutate(file_name = area %>%
+                  stringr::str_replace_all(" ", "-") %>%
+                  stringr::str_to_lower(),
+                country = stringr::str_to_title(
+                                    gsub("-", " ",
+                                         sub("-local$", "",
+                                             country_filename)))) %>%
+  dplyr::left_join(countries_in_data, by = "country") %>%
+  dplyr::mutate(region = ifelse(is.na(region), "Unknown", region))
+
+
 # Join and add file_name --------------------------------------------------
 countries <- countries %>% 
   dplyr::left_join(countries_in_data, by = "country") %>%
@@ -47,9 +71,16 @@ countries <- countries %>%
   dplyr::rowwise() %>%
   dplyr::group_split()
 
+subnational <- subnational %>%
+  dplyr::rowwise() %>%
+  dplyr::group_split()
+
 ## Load function to generate report template
-source("utils/write_national_report.R")
-safe_write_national_report <- purrr::safely(write_national_report)
+source(here::here("utils", "write_report.R"))
+safe_write_report <- purrr::safely(write_report)
 
 ## Walk through list and generate
-purrr::walk(countries, safe_write_national_report)
+purrr::walk(countries, safe_write_report)
+
+## Walk through list and generate
+purrr::walk(subnational, safe_write_report, type = "subnational")

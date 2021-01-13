@@ -16,8 +16,8 @@ Rscript utils/update_paper.R
 ## Manually force a UK page update
 Rscript -e 'rmarkdown::render("_posts/national/united-kingdom/united-kingdom.Rmd")'
 
-## Update all posts
-Rscript utils/update_posts.R
+## Update all Rscript
+posts utils/update_posts.R
 
 ## Clean up after page update
 Rscript utils/clean_page_update.R

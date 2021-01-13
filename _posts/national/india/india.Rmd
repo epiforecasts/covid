@@ -15,19 +15,16 @@ categories:
 
 ```{r load-geodata, include = FALSE}
 geoData <- rnaturalearth::ne_states('India', returnclass = 'sf') 
-geoData <-  dplyr::rename(geoData, sovereignt = name_en)
+geoData <-  dplyr::rename(geoData, Region = name_en)
 ```
 
 ```{r load-defaults, include = FALSE}
 region <- "India"
 folder <- "india"
 source(here::here("utils/subnational_defaults.R"), local = TRUE)
+source(here::here("utils/epi_leaflet.R"), local = TRUE)
+subnational_unit <- "State"
 ```
-
-```{r load-custom-data}
-region_codes <- readRDS(here::here("_posts", "national", "india", "region_codes.rds"))
-```
-
 
 *Using data available up to the:* `r latest_date`
 
@@ -35,21 +32,8 @@ region_codes <- readRDS(here::here("_posts", "national", "india", "region_codes.
 
 *See our see [Methods](https://epiforecasts.io/covid/methods) or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for an explanation of how these estimates are derived.*
 
-<!--## Interactive summary -->
-
-```{r map, layout="l-body-outset", out.width = "200%", message = FALSE, warning = FALSE, eval = FALSE}
-widget
+```{r,  child = here::here("utils", "national-map.Rmd")}
 ```
-
-<!--<br>
-`r widget_caption` -->
-
-
-```{r,  child = here::here("utils", "national-template.Rmd")}
-```
-
-
-## Regional Breakdown
 
 ### Data availability
 
@@ -59,12 +43,3 @@ widget
 ### Limitations
 
 * Line-list data to inform a region specific estimate of the reporting delay were not available.
-
-```{r}
-case_def <- "case"
-region_path <- NULL
-summary_path <- file.path("covid-rt-estimates/subnational", folder, "cases/summary")
-```
-
-```{r,  child = system.file("templates/_regional-summary.Rmd", package = "EpiNow2")}
-```

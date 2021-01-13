@@ -1,20 +1,32 @@
-#' Write an Rmd template for a national report
+#' Write an Rmd template for a (sub-)national report
 #'
-#' @param country_details A single line data.frame countaining a countries details
+#' @param details A single line data.frame countaining an area's or country's details
+#' @param type Whether it is a "national" or "subnational" report
 #'
-#' @return places an Rmd file in "_posts/national-summary/<loc>.Rmd"
+#' @return places an Rmd file in "_posts/national/<loc>.Rmd" or "_posts/subnational/<country>/<loc>.Rmd"
 #' @importFrom knitr spin
 #' @export
 #'
 #' @examples
 #'
-write_national_report <- function(country_details = NULL){
+write_report <- function(details = NULL, type = c("national", "subnational")) {
 
-loc <- country_details$country
-save_name <- country_details$file_name
-region <- country_details$region
-locstr <- paste0("Estimates for ", loc)
-deaths <- country_details$deaths
+  type <- match.arg(type, choices = c("national", "subnational"))
+
+  region <- details$region
+  save_name <- paste0(details$file_name, ".R")
+  if (type == "national") {
+    loc <- details$country
+    locstr <- paste0("Estimates for ", loc)
+    deaths <- details$deaths
+    summary_folder <- "national"
+  } else if (type == "subnational") {
+    loc <- details$area
+    country <- details$country
+    locstr <- paste0("Estimates for ", loc, " (", country, ")")
+    deaths <- details$deaths
+    summary_folder <- file.path("subnational", details$country_filename)
+  }
 
 x <- paste0("#' ---
 #' title: ", '"',locstr,'"',"
@@ -40,7 +52,7 @@ x <- paste0("#' ---
 #'*See our see [Methods](https://epiforecasts.io/covid/methods) or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for an explanation of how these estimates are derived.*
 #'")
 
-x2 <- "
+x2 <- paste0("
 #+ setup, include = FALSE
 knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
                       message = FALSE,
@@ -56,10 +68,10 @@ library(magrittr)
 library(rmarkdown)
 library(here)
 
-latest_date <- readRDS(here::here('covid-rt-estimates/national/cases/summary/latest_date.rds'))
+latest_date <- readRDS(here::here('covid-rt-estimates/", summary_folder, "/cases/summary/latest_date.rds'))
 
-#' 
-#'"
+#'
+#'")
 
 x3 <- paste0("
 
@@ -69,8 +81,8 @@ summary_tables <- 0
 summary_figures <- 0
 title_depth <- 3
 index <- 1
-region <-'",loc,"'
-region_path <- 'covid-rt-estimates/national/cases/national'
+region <- \"", loc, "\"
+region_path <- \"covid-rt-estimates/", summary_folder, "/cases/national\"
 show_title <- FALSE
 report_forecast <- TRUE
 #'
@@ -83,7 +95,7 @@ x4 <- paste0("
 summary_tables <- 1
 summary_figures <- 1
 case_def <- 'death'
-region_path <- 'covid-rt-estimates/national/deaths/national'
+region_path <- 'covid-rt-estimates/", summary_folder, "/deaths/national'
 #'
 #' ## Estimates based on reported deaths
 #'
@@ -91,18 +103,18 @@ region_path <- 'covid-rt-estimates/national/deaths/national'
 
 x <- paste(x,x2,x3)
 
-## Remove old template and add new one
-unlink(paste0("_posts/national/",save_name), recursive = TRUE, force = TRUE)
-dir.create(paste0("_posts/national/",save_name), recursive = TRUE)
+## Add new template
+  suppressWarnings(dir.create(file.path("_posts", summary_folder),
+                              recursive = TRUE))
 
 ## Write character string as an R file to the directory
-write(x, file = paste0("_posts/national/",save_name,"/", save_name, ".R"))
+  write(x, file = file.path("_posts", summary_folder, save_name))
 
 ## Knit the file into a Rmd using the comments for structure
-knitr::spin(paste0("_posts/national/",save_name,"/", save_name, ".R"), knit = FALSE)
+  knitr::spin(file.path("_posts", summary_folder, save_name), knit = FALSE)
 
 ## Clean up
-file.remove(paste0("_posts/national/",save_name,"/", save_name, ".R"))
+  file.remove(file.path("_posts", summary_folder, save_name))
 
 return(invisible(NULL))
 }

@@ -19,6 +19,9 @@ library(rmarkdown)
 library(here)
 library(stringr)
 library(ggplot2)
+library(DT)
+
+interactive <- TRUE
 
 force_factor <- function(df) {
   df[, `Expected change in daily cases` :=
@@ -88,3 +91,5 @@ if (exists("geoData")) {
                          This interactive visualisation is powered by RtD3[@rtd3].*")
   
 }
+
+subnational_unit <- "Region"

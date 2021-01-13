@@ -5,13 +5,17 @@ require(furrr)
 require(purrr)
 require(data.table)
 
-posts <- c("_posts/global" , list.dirs("_posts/national", recursive = FALSE))
-
-
+## get directories
+post_dirs <-
+  c("_posts/global" , list.dirs("_posts/national", recursive = FALSE),
+    list.dirs("_posts/subnational", recursive = FALSE))
 
 ## Copy in bib file for references
-purrr::walk(posts, ~ file.copy("library.bib", file.path(.), overwrite = TRUE))
+purrr::walk(post_dirs,
+            ~ file.copy("library.bib", file.path(.), overwrite = TRUE))
 
+## get all posts
+posts <- list.files(post_dirs, pattern = "\\.Rmd$", full.names = TRUE)
 
 ## Set up processing
 future::plan("multisession")
@@ -22,9 +26,8 @@ safe_render <- purrr::safely(rmarkdown::render)
 
 ## Render by path
 render_by_path <-  function(post) {
-  post_name <- stringr::str_split(post, "/")[[1]] %>% 
-    dplyr::last()
-  tmp <- safe_render(file.path(post, paste0(post_name, ".Rmd")), quiet = FALSE)
+  post_name <- stringr::str_remove(basename(post), ".Rmd$")
+  tmp <- safe_render(file.path(post), quiet = FALSE)
   if (!is.null(tmp[[2]])) {
     warning(post_name, ": ", tmp[[2]])
   }
