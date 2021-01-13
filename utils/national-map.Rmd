@@ -2,7 +2,7 @@
 if (!exists("subnational_unit")) subnational_unit <- "Region"
 if (!exists("fig_tab_no")) fig_tab_no <- 1
 summary_with_links <- summary_table %>%
-  mutate(link = paste0("https://epiforecasts.io/covid/_posts/subnational/",
+  mutate(link = paste0("https://epiforecasts.io/covid/posts/subnational/",
                        folder, "/",
                        Region %>%
                        stringr::str_replace_all(" ", "-") %>%
