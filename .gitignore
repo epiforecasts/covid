@@ -11,4 +11,4 @@ nohup.out
 *.html
 **/distill-preview.png
 _posts/subnational
-logs
+logs/
