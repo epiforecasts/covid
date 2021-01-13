@@ -13,11 +13,10 @@ geoData %>%
               geography_column = "Region")
 ```
 
-`r paste0("*Figure", fig_tab_no, ": The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection in ", region, ", stratified by ", subnational_unit, ", can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details).*")`
+`r paste0("*Figure ", fig_tab_no, ": The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection in ", region, ", stratified by ", subnational_unit, ", can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details).*")`
 
 
 ```{r, layout="l-body-outset", out.width = "90%"}
-
 if (!interactive) {
   summary_table %>%
     knitr::kable(booktabs = TRUE, longtable = TRUE) %>%

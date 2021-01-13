@@ -31,6 +31,8 @@ navbar:
          href: reports.html#Europe
        - text: 'Asia'
          href: reports.html#Asia
+       - text: 'Subnational Summaries'
+         href: reports.html#subnational-summary
     - text: "Subnational"
       menu:
        - text: "Countries with subnational estimates"

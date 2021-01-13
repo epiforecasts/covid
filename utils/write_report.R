@@ -3,8 +3,9 @@
 #' @param details A single line data.frame countaining an area's or country's details
 #' @param type Whether it is a "national" or "subnational" report
 #'
-#' @return places an Rmd file in "_posts/national/<loc>.Rmd" or "_posts/subnational/<country>/<loc>.Rmd"
+#' @return places an Rmd file in "_posts/national/<loc>/<loc>.Rmd" or "_posts/subnational/<country>/<loc>/<loc>.Rmd"
 #' @importFrom knitr spin
+#' @importFrom stringr str_replace_all str_to_lower
 #' @export
 #'
 #' @examples
@@ -13,15 +14,18 @@ write_report <- function(details = NULL, type = c("national", "subnational")) {
 
   type <- match.arg(type, choices = c("national", "subnational"))
 
-  region <- details$region
   save_name <- details$file_name
   r_name <- paste0(save_name, ".R")
   if (type == "national") {
+    region <- details$region
     loc <- details$country
     locstr <- paste0("Estimates for ", loc)
     deaths <- details$deaths
     summary_folder <- "national"
   } else if (type == "subnational") {
+    region <- details$country %>% 
+      str_replace_all(" ", "-") %>%
+      str_to_lower()
     loc <- details$area
     country <- details$country
     locstr <- paste0("Estimates for ", loc, " (", country, ")")
@@ -112,7 +116,7 @@ suppressWarnings(dir.create(file.path("_posts", summary_folder, save_name),
 write(x, file = file.path("_posts", summary_folder, save_name, r_name))
 
 ## Knit the file into a Rmd using the comments for structure
-knitr::spin(file.path("_posts", summary_folder, save_name, r_name), knit = FALSE)
+spin(file.path("_posts", summary_folder, save_name, r_name), knit = FALSE)
 
 ## Clean up
 file.remove(file.path("_posts", summary_folder, save_name, r_name))

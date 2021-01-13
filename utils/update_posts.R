@@ -8,11 +8,11 @@ require(data.table)
 ## get directories
 post_dirs <-
   c("_posts/global" , list.dirs("_posts/national", recursive = FALSE),
-    list.dirs("_posts/subnational", recursive = FALSE))
+    list.dirs("_posts/subnational", recursive = TRUE))
 
 ## Copy in bib file for references
 purrr::walk(post_dirs,
-            ~ file.copy("library.bib", file.path(.), overwrite = TRUE))
+            ~ suppressWarnings(file.copy("library.bib", file.path(.), overwrite = TRUE)))
 
 ## get all posts
 posts <- list.files(post_dirs, pattern = "\\.Rmd$", full.names = TRUE, recursive = TRUE)
@@ -32,7 +32,6 @@ render_by_path <-  function(post) {
   }
   return(tmp)
 }
-
 ## Render posts in parallel
 failed_to_render <- furrr::future_map(posts, render_by_path, 
                                       .options = furrr::furrr_options(seed = TRUE),
@@ -55,7 +54,6 @@ render_failure <- data.table::data.table(page = names(secondary_render_failure_c
                                          error = secondary_render_failure_cmp)
 ## Save errors
 data.table::fwrite(render_failure, here::here("logs", "render_failure.csv"))
-
 
 ## Print to terminal the failed renders
 print(render_failure)
