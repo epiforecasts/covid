@@ -23,23 +23,14 @@ library(DT)
 
 interactive <- TRUE
 
-force_factor <- function(df) {
-  df[, `Expected change in daily cases` :=
-         factor(`Expected change in daily cases`,
-                levels = c(
-                  "Increasing", "Likely increasing", "Stable",
-                  "Likely decreasing", "Decreasing"
-                )
-                )]
-}
-
 # Load summary data -------------------------------------------------------
 summary_table <- data.table::fread(here::here("covid-rt-estimates", "subnational", 
                                               folder, "cases", 
                                               "summary", "summary_table.csv"))
 
-summary_table <- force_factor(summary_table)
-
+summary_table$`Expected change in daily cases` <- 
+  factor(summary_table$`Expected change in daily cases`, 
+         levels = c("Increasing", "Likely increasing", "Stable", "Likely decreasing", "Decreasing"))
 
 latest_date <- readRDS(here::here("covid-rt-estimates", "subnational", folder,
                                   "cases", "summary", "latest_date.rds"))
@@ -51,45 +42,4 @@ if (!exists("region_var")) {
 
   # Read in each summary folder
 base_path <- "https://raw.githubusercontent.com/epiforecasts/covid-rt-estimates/master/"
-
-if (exists("geoData")) {
-  # read_in_rt <- function(data = "cases") { 
-  #   RtD3::readInEpiNow2(path = paste0(base_path, "subnational/", folder, "/", data, "/summary"),
-  #                       region_var = region_var)
-  # }
-  # 
-  # if (folder %in% "united-kingdom") {
-  #   rtData <- list("Cases" = read_in_rt(),
-  #                  "Admissions" = read_in_rt("admissions"),
-  #                  "Deaths" = read_in_rt("deaths"))
-  #   
-  # }else {
-  #   rtData <- list("Cases" = RtD3::joinRtData(
-  #     read_in_rt(),
-  #     RtD3::readInEpiNow2(path = paste0(base_path, "national/cases/summary"),
-  #                         region_var = "country", regions = region)),
-  #     "Deaths" = RtD3::readInEpiNow2(path = paste0(base_path, "national/deaths/summary"),
-  #                                    region_var = "country", regions = region))
-  # }
-  # 
-  # widget <- RtD3::summaryWidget(
-  #   geoData = geoData,
-  #   rtData = rtData,
-  #   activeArea = region,
-  #   dryRun = TRUE,
-  #   downloadUrl = paste0("https://github.com/epiforecasts/covid-rt-estimates/master/subnational/", folder)
-  # )
-  # 
-  # widget_caption <- paste0("*Figure 1: The results of the latest reproduction number estimates
-  #                        (based on estimated confirmed cases with a date of infection on 
-  #                        the ", latest_date , ") can be summarised by whether confirmed 
-  #                        cases are likely increasing or decreasing. This represents the 
-  #                        strength of the evidence that the reproduction number in each region 
-  #                        is greater than or less than 1, respectively (see the
-  #                        [methods](https://epiforecasts.io/covid/methods.html) for details).
-  #                        Click on a subnational area (or search) to see subnational level estimates. 
-  #                        This interactive visualisation is powered by RtD3[@rtd3].*")
-  # 
-}
-
 subnational_unit <- "Region"

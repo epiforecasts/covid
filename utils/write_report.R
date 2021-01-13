@@ -114,7 +114,7 @@ suppressWarnings(dir.create(file.path("_posts", summary_folder, save_name),
 write(x, file = file.path("_posts", summary_folder, save_name, r_name))
 
 ## Knit the file into a Rmd using the comments for structure
-spin(file.path("_posts", summary_folder, save_name, r_name), knit = FALSE)
+knitr::spin(file.path("_posts", summary_folder, save_name, r_name), knit = FALSE)
 
 ## Clean up
 file.remove(file.path("_posts", summary_folder, save_name, r_name))
