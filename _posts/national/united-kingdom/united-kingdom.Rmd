@@ -77,6 +77,7 @@ Estimates are shown at the level of Upper Tier Local Authorities (UTLAs).
 
 ```{r map-utla,fig.height = 1.5, layout="l-body-outset", out.width = "100%", warning = FALSE, message = FALSE}
 fig_tab_no <- 2
+folder <- "united-kingdom-local"
 summary_table <- fread(here::here("covid-rt-estimates", "subnational",
                                  "united-kingdom-local", "cases", 
                                  "summary", "summary_table.csv"))
