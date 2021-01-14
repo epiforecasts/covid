@@ -48,8 +48,21 @@ latest_date <- readRDS(here::here("covid-rt-estimates", "national", "cases",
 geoData <- rnaturalearth::ne_countries(scale = "medium", returnclass = 'sf')
 
 geoData <- geoData %>%
-  dplyr::mutate(Country = ifelse(sovereignt == 'United States of America',
-                                 'United States', sovereignt))
+  dplyr::mutate(Country = ifelse(sovereignt == "United States of America",
+                                 "United States", sovereignt),
+                Country = ifelse(Country == "Ivory Coast",
+                                 "Côte d’Ivoire", Country),
+                Country = ifelse(Country == "Democratic Republic of the Congo",
+                                 "Congo - Kinshasa", Country),
+                Country = ifelse(Country == "Republic of the Congo",
+                                 "Congo - Brazzaville", Country),
+                Country = ifelse(Country == "Bosnia and Herzegovina",
+                                 "Bosnia & Herzegovina", Country),
+                Country = ifelse(Country == "Macedonia",
+                                 "North Macedonia", Country),
+                Country = ifelse(Country == "Myanmar",
+                                 "Myanmar (Burma)", Country)
+                )
 geoData %>%
   mutate(link = paste0("https://epiforecasts.io/covid/posts/national/",
                        sub(" ", "-", tolower(Country)))) %>%

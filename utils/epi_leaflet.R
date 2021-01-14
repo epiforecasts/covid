@@ -3,6 +3,7 @@ library(rgdal)
 library(htmltools)
 library(data.table)
 library(sf)
+library(leaflet.extras)
 
 ##' Make a leaflet from EpiNow2 summary output
 ##'
@@ -86,5 +87,6 @@ epi_leaflet <- function(map, table, label_style = c("popup", "label"),
   do.call(addPolygons, c(list(tiled_map), polygon_options, label_options)) %>%
     addLegend(pal = pal, values = factor(names(values), levels = names(values)),
               opacity = 0.7, title = NULL,
-              position = "bottomright")
+              position = "bottomright") %>%
+    addFullscreenControl("bottomleft")
 }
