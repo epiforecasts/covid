@@ -15,7 +15,7 @@ categories:
 ---
 
 
-```{r load-custom-data}
+```{r load-custom-data, include = FALSE}
 library(magrittr)
 region_codes <- covidregionaldata::get_regional_data(country = "Canada") %>% 
   dplyr::select(sovereignt = province, iso_3166_2) %>% 
