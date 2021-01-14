@@ -54,7 +54,10 @@ geoData %>%
   mutate(link = paste0("https://epiforecasts.io/covid/posts/national/",
                        sub(" ", "-", tolower(Country)))) %>%
   epi_leaflet(summary_table, label_style = "popup",
-              link_text = "Details")
+              link_text = "Details") %>%
+  addEasyButton(easyButton(
+    icon="fa-globe", title="Zoom to global view",
+    onClick=JS("function(btn, map){ map.setZoom(1); }")))
 ```
 
 `r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Click on a country (or search) to see national level estimates (and a link to more detailed estimates.*")`

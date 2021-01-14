@@ -10,7 +10,7 @@ summary_with_links <- summary_table %>%
 geoData %>%
     epi_leaflet(summary_with_links, label_style = "popup",
               link_text = "Detailed estimates and plots",
-              geography_column = "Region")
+              geography_column = "Region", minZoom = 1)
 ```
 
 `r paste0("*Figure ", fig_tab_no, ": The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection in ", region, ", stratified by ", subnational_unit, ", can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details).*")`
