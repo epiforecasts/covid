@@ -1,7 +1,9 @@
 #!bin/bash
 
 ## Update the git repo with new results
-git add --all && git commit -m "Updated website" && git push
+git add --all && git commit -m "Updated website"
+git pull -X theirs
+git push
 
 ## Deploy the website to gh-pages
 cp -rf docs/. ../docs
