@@ -50,8 +50,6 @@ navbar:
          href: posts/national/italy/index.html
        - text: "Germany"
          href: posts/national/germany/index.html
-       - text: "Russia"
-         href: posts/national/russia/index.html
        - text: "United Kingdom"
          href: posts/national/united-kingdom/index.html
        - text: "United States of America"
