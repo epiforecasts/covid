@@ -30,10 +30,15 @@ library(here)
 source(here::here("utils/epi_leaflet.R"), local = TRUE)
 ```
 
-
 ```{r}
 summary_table <- data.table::fread(here::here("covid-rt-estimates", "national", "cases",
                                     "summary", "summary_table.csv"))
+summary_table[, data := "Test positive case notifications"]
+
+deaths_table <- data.table::fread(here::here("covid-rt-estimates", "national", "deaths",
+                                    "summary", "summary_table.csv"))
+deaths_table[, data := "Deaths attributed to Covid-19"]
+overall_table <- rbind(summary_table, deaths_table)
 latest_date <- readRDS(here::here("covid-rt-estimates", "national", "cases",
                                     "summary", "latest_date.rds"))
 ```
@@ -65,12 +70,8 @@ geoData <- geoData %>%
                 )
 geoData %>%
   mutate(link = paste0("https://epiforecasts.io/covid/posts/national/",
-                       sub(" ", "-", tolower(Country)))) %>%
-  epi_leaflet(summary_table, label_style = "popup",
-              link_text = "Details") %>%
-  addEasyButton(easyButton(
-    icon="fa-globe", title="Zoom to global view",
-    onClick=JS("function(btn, map){ map.setZoom(1); }")))
+                       sub(" ", "-", tolower(Country)))) %>% 
+  epi_leaflet(overall_table, label_style = "popup", link_text = "Details")
 ```
 
 `r paste0("*Figure 1: The results of the latest reproduction number estimates (based on estimated confirmed cases with a date of infection on the ", latest_date , ") can be summarised by whether confirmed cases are likely increasing or decreasing. This represents the strength of the evidence that the reproduction number in each region is greater than or less than 1, respectively (see the [methods](https://epiforecasts.io/covid/methods.html) for details). Click on a country (or search) to see national level estimates (and a link to more detailed estimates.*")`
