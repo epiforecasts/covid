@@ -1,0 +1,246 @@
+---
+title: "National and Subnational estimates for the United Kingdom"
+description: |
+  Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in reporting both nationally and subnationally in the United Kingdom. Estimates using test positive cases are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively.
+author:
+  - name: Katharine Sherratt*, Sam Abbott*, Sophie R Meakin, Joel Hellewell, James D Munday, Nikos Bosse, CMMID Covid-19 working group, Mark Jit, Sebastian Funk
+    affiliation: "Centre for Mathematical Modelling of Infectious Diseases, London School of Hygiene & Tropical Medicine"
+date: "2020-10-20"
+journal: "medRxiv preprint"
+doi: "10.1101/2020.10.18.20214585"
+citation_url: https://www.medrxiv.org/content/10.1101/2020.10.18.20214585v1
+bibliography: library.bib
+output:
+  distill::distill_article:
+    self_contained: true
+    toc: true
+    toc_float: true
+    toc_depth: 2
+categories:
+  - "Subnational estimates"
+  - "Europe"
+  - "United Kingdom"
+---
+
+```{r load-defaults, include = FALSE}
+library(patchwork)
+library(RColorBrewer)
+library(here)
+library(ggplot2)
+library(dplyr)
+library(cowplot)
+library(data.table)
+library(forecast)
+library(knitr)
+library(kableExtra)
+library(DT)
+library(tidyr)
+library(stringr)
+library(EpiNow2)
+library(xaringanExtra)
+region <- "United Kingdom"
+folder <- "united-kingdom"
+source(here::here("utils/epi_leaflet.R"), local = TRUE)
+source(here::here("utils/subnational_defaults.R"), local = TRUE)
+xaringanExtra::use_panelset()
+subnational_unit <- "NHSE Region / devolved nation"
+```
+
+*Updated on the `r latest_date`*
+
+We track transmission of Covid-19 in the United Kingdom using estimates of the time-varying reproduction number from a range of data sources (including test positive cases, hospital admissions, and death data) and spatial scales (national, regional (devolved authority and NHS region level in England), and local authority level). Where data is available these estimates are updated each day and published to a [publicly available archive](https://dataverse.harvard.edu/dataverse/covid-rt) under an open source license. Estimates are also available from GitHub ([subnational estimates](https://github.com/epiforecasts/covid-rt-estimates/tree/master/subnational/united-kingdom/), [UTLA estimates](https://github.com/epiforecasts/covid-rt-estimates/blob/master/subnational/united-kingdom-local/cases/summary/rt.csv), [national estimates](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/cases/summary), and [collated estimates](https://github.com/epiforecasts/covid-rt-estimates/blob/master/subnational/united-kingdom/collated/rt.csv)).
+
+See our [Methods](https://epiforecasts.io/covid/methods) or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for an explanation of how these estimates are derived, and our [pre-print](https://www.medrxiv.org/content/10.1101/2020.10.18.20214585v1) for methods comparing Rt estimates by data source. If interested in producing interactive visualisations of these estimates to be shown on this page please open an issue [here](https://github.com/epiforecasts/covid/issues).
+
+## Estimates from confirmed cases
+
+::: {.panelset}
+
+::: {.panel}
+[Regional]{.panel-name}
+
+Expected daily confirmed cases by NHSE region and devolved nation
+
+```{r load-geodata, include = FALSE}
+geoData <- readRDS(here("_posts", "national", "united-kingdom", "uk_shp.rds")) %>%
+  rename(Region = GSS_NM)
+```
+
+```{r,  child = here::here("utils", "national-map.Rmd")}
+```
+
+:::
+::: {.panel}
+[Local]{.panel-name}
+
+Estimates are shown at the level of Upper Tier Local Authorities (UTLAs).
+
+```{r map-utla,fig.height = 1.5, layout="l-body-outset", out.width = "100%", warning = FALSE, message = FALSE}
+fig_tab_no <- 2
+folder <- "united-kingdom-local"
+summary_table <- fread(here::here("covid-rt-estimates", "subnational",
+                                 "united-kingdom-local", "cases", 
+                                 "summary", "summary_table.csv"))
+geoData <-
+  readRDS(here("_posts", "national", "united-kingdom", "uk_utla_shp.rds")) %>%
+  rename(Region = ctyua17nm) %>%
+  mutate(Region = if_else(Region %in% c("Bournemouth", "Poole"),
+                          "Bournemouth, Christchurch and Poole", Region),
+         Region = if_else(Region %in% c("Cornwall", "Isles of Scilly"),
+                          "Cornwall and Isles of Scilly", Region),
+         Region = if_else(Region %in% c("Hackney", "City of London"),
+                          "Hackney and City of London", Region))
+```
+
+```{r,  child = here::here("utils", "national-map.Rmd")}
+```
+
+:::
+:::
+
+Estimates are based on test positive cases by specimen date for NHS regions in England and by date of report in Wales, Scotland and Northern Ireland. In general, we expect estimates from test positive cases to be a leading indicator of Covid-19 transmission, when compared to hospital admissions and deaths. However, test positive cases are subject to bias due to changes in testing effort and the observed relationship between cases and hospital admissions and deaths may vary over time as the age distribution of detected cases varies. For separate estimates based on hospital admissions on deaths, scroll further down.
+
+We include estimates from partial data (shown as orange in the figures). These estimates are less reliable than those shown in green which are more fully supported by observed data. They are calculated using a combination of previously observed behaviour and observed data (though as the lag between estimates and the latest data decreases the support from observed data decreases). Please see our [methods for details](https://epiforecasts.io/covid/methods).
+
+Data were downloaded from publicly curated sources [@noauthor_coronavirus_2020; @white_coronavirus_2020; @covidregionaldata]. Case onset dates were estimated using confirmed case counts by date of report and a distribution of reporting delays fitted to an international line-list [@kraemer2020epidemiological; @covidregionaldata]. Line-list data to inform a United Kingdom specific estimate of the reporting delay was not available. This also means that we could also not account for any regional differences.
+
+## Comparing estimates from cases, admissions, and deaths data
+
+We generally calculate Rt as the average of how many new infections arise from one infected person. However, different data sources for SARS-CoV-2 infections (test-positive cases, hospital admissions, or deaths) represent a slightly different type of "average" person who has been infected. For example, when most new infections are spread between young people who may be less vulnerable to severe disease, Rt calculated from all test-positive cases might be expected to be greater than an Rt calculated from patients in hospital who would, generally, represent older individuals more at risk of having severe outcomes from SARS-CoV-2 infection. 
+
+All the Rt estimates are referenced to the same date, the estimated date at which people who end up being reported as cases, admissions or deaths became infected. Therefore, if all the data streams represented the same patterns of spread the lines from the three colours would be expected to completely overlap. Where they do not, this tells us about how Covid-19 is spreading in populations of different levels of vulnerability populations. To explore in more depth how Rt from different data sources can be used to understand transmission dynamics across the population, and a more detailed methodology, see our pre-print [@rt-comparison].
+
+```{r rt-comparison-nations, fig.height = 12, fig.width = 14, out.width = "95%", echo=FALSE, message = FALSE, warning = FALSE}
+data_path <- here("covid-rt-estimates/subnational/united-kingdom")
+# Rt
+summary <- fread(file.path(data_path, "collated/rt/summary_latest.csv"))
+summary <- mutate(summary, 
+                  'Data source' = dplyr::recode_factor(source,
+                                                       "cases" = "Test-positives",
+                                                       "admissions" = "Hospital admissions",
+                                                       "deaths" = "Deaths"))
+# Data
+admissions <- fread(file.path(data_path, "admissions/summary/reported_cases.csv"))
+deaths <- fread(file.path(data_path, "deaths/summary/reported_cases.csv"))
+test_positive <- fread(file.path(data_path, "cases/summary/reported_cases.csv"))
+
+data <- rbindlist(list("admissions" = admissions, 
+                       "deaths" = deaths, 
+                       "cases" = test_positive), idcol = "source")
+setnames(data, "confirm", "count")
+data <- data[, count := as.numeric(count)]
+data <- data[, count_ma := ma(as.numeric(count), 7), by = .(source, region)]
+# Join
+summary <- merge(summary, data, by = c("region", "date", "source"), all.x = TRUE)
+
+# Plotting features
+colours <- brewer.pal(name = "Dark2", n = 6)[c(1, 4, 6)]
+names(colours) <- c("Test-positives", "Hospital admissions", "Deaths")
+
+region_names <- factor(c("England", "Scotland", "Wales", "Northern Ireland",
+                  "North East and Yorkshire", "North West", "Midlands", "East of England",
+                  "London", "South East", "South West"), ordered = TRUE)
+
+plot_rt <- function(region_name) {
+  ggplot(summary[region %in% region_name], aes(x = date, col = `Data source`, fill = `Data source`)) +
+      geom_ribbon(aes(ymin = lower_20, ymax = upper_20), alpha = 0.6, size = 0, colour = NA) +
+      geom_ribbon(ggplot2::aes(ymin = lower_50, ymax = upper_50), alpha = 0.4, size = 0, colour = NA) +
+      geom_ribbon(ggplot2::aes(ymin = lower_90, ymax = upper_90), alpha = 0.2, size = 0.05) +
+      geom_hline(yintercept = 1, linetype = 2) +
+      labs(y = "R(t)", x = NULL) +
+      scale_color_manual(values = colours) +
+      scale_fill_manual(values = colours) +
+      scale_x_date(date_breaks = "1 week", date_labels = "%b %d") +
+      theme_cowplot() +
+      theme(axis.text.x = ggplot2::element_text(angle = 90, hjust = 1)) +
+      guides(colour = ggplot2::guide_legend(override.aes = list(alpha = 1)))
+}
+region_plot_rt <- purrr::map(region_names, ~ plot_rt(region_name = .x))
+
+plot_cases <- function(region_name) {
+    ggplot(summary[region %in% region_name], aes(x = date, col = `Data source`, fill = `Data source`)) +
+    geom_point(ggplot2::aes(y = count)) +
+    geom_line(ggplot2::aes(y = count_ma)) +
+    labs(y = "Log count", x = NULL, title = region_name) +
+    scale_color_manual(values = colours) +
+    scale_fill_manual(values = colours) +
+    scale_x_date(date_breaks = "1 week", date_labels = "%b %d") +
+    theme_cowplot() +
+    theme(axis.text.x = ggplot2::element_blank()) +
+    guides(colour = "none", fill = "none") +
+    scale_y_log10(labels = scales::label_comma(accuracy = 1))
+}
+region_plot_data <- purrr::map(region_names,  ~ plot_cases(region_name = .x))
+
+# # Plot selected regions:
+((region_plot_data[[1]] / region_plot_rt[[1]]) |
+  (region_plot_data[[2]] / region_plot_rt[[2]])) /
+  ((region_plot_data[[3]] / region_plot_rt[[3]]) |
+  (region_plot_data[[4]] / region_plot_rt[[4]])) +
+  plot_layout(guides = "collect") &
+  theme(legend.position = "bottom")
+```
+*Figure 2: Raw data counts with 7-day moving average; and estimates of Rt (lightest ribbon = 90% credible interval; darker ribbon = the 50% credible interval, darkest ribbon = 20% credible interval). Rt derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days for the devolved authorities of the United Kingdom.*
+
+```{r rt-comparison-regions, fig.height = 18, fig.width = 14, out.width = "95%", echo = FALSE, message = FALSE, warning = FALSE}
+((region_plot_data[[5]] / region_plot_rt[[5]]) |
+  (region_plot_data[[6]] / region_plot_rt[[6]])) /
+
+  ((region_plot_data[[7]] / region_plot_rt[[7]]) |
+  (region_plot_data[[8]] / region_plot_rt[[8]])) /
+
+  ((region_plot_data[[9]] / region_plot_rt[[9]]) |
+  (region_plot_data[[10]] / region_plot_rt[[10]])) /
+
+  ((region_plot_data[[11]] / region_plot_rt[[11]])  |
+  (plot_spacer() / plot_spacer())) +
+
+plot_layout(guides = "collect") &
+  theme(legend.position = "bottom")
+```
+
+*Figure 3: Raw data counts with 7-day moving average; and estimates of Rt (lightest ribbon = 90% credible interval; darker ribbon = the 50% credible interval, darkest ribbon = 20% credible interval). Rt derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days in the NHS regions of England.*
+
+<br>
+
+```{r fig-caption-dates, echo = FALSE}
+collated_table <- summary %>%
+  dplyr::group_by(region, source) %>%
+  dplyr::filter(date == max(date)) %>%
+  dplyr::ungroup()  
+latest_date_cases <- collated_table %>%
+  dplyr::filter(source == "cases") %>%
+  dplyr::pull(date) %>%
+  max()
+latest_date_admissions <- collated_table %>%
+  dplyr::filter(source == "admissions") %>%
+  dplyr::pull(date) %>%
+  max()
+latest_date_deaths <- collated_table %>%
+  dplyr::filter(source == "deaths") %>%
+  dplyr::pull(date) %>%
+  max()
+```
+
+<br>
+
+```{r, echo = FALSE}
+collated_table <- collated_table %>%
+  mutate(combine = str_c(median, " (", lower_90, " -- ", upper_90, ")")) %>%
+  select("Data source", region, combine) %>%
+  pivot_wider(names_from = "Data source", values_from = "combine") %>%
+  rename(Region = region)
+if (!interactive) {
+  collated_table %>%
+    kable(booktabs = TRUE, longtable = TRUE) %>%
+    landscape()
+} else {
+  collated_table %>%
+    datatable(rownames = FALSE,
+              extensions = c("Buttons"),
+              options = list(dom = "Bfrtip", buttons = c("csv")))
+}
+```
+
+*Table 3: Latest estimates of Rt, derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days. The median and 90% credible interval is shown. Latest dates vary for cases (`r latest_date_cases`), admissions (`r latest_date_admissions`), and deaths (`r latest_date_deaths`).*
+
