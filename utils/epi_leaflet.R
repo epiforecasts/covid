@@ -3,6 +3,7 @@ library(rgdal)
 library(htmltools)
 library(data.table)
 library(sf)
+library(leaflet.extras)
 
 ##' Make a leaflet from EpiNow2 summary output
 ##'
@@ -16,10 +17,12 @@ library(sf)
 ##' column in the \code{table} argument
 ##' @param geography_column column in \code{table} that gives the links to show
 ##' in the popup/label.
+##' @param ... any parameters to pass to \code{leafletOptions}
 ##' @param tiles whether to add tiles to the map
 ##' @return a leaflet
 epi_leaflet <- function(map, table, label_style = c("popup", "label"),
-                        link_text = NULL, geography_column = "Country") {
+                        link_text = NULL, geography_column = "Country",
+                        ...) {
   values <- c(
     "Increasing" = "#e75f00",
     "Likely increasing" = "#fd9e49",
@@ -78,11 +81,12 @@ epi_leaflet <- function(map, table, label_style = c("popup", "label"),
 
   tiled_map <- map %>%
     st_transform(CRS("+proj=longlat +datum=WGS84")) %>%
-    leaflet() %>%
+    leaflet(options = leafletOptions(...)) %>%
     addTiles()
 
   do.call(addPolygons, c(list(tiled_map), polygon_options, label_options)) %>%
     addLegend(pal = pal, values = factor(names(values), levels = names(values)),
               opacity = 0.7, title = NULL,
-              position = "bottomright")
+              position = "bottomright") %>%
+    addFullscreenControl("bottomleft")
 }

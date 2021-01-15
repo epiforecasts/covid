@@ -48,6 +48,7 @@ Imports:
     DT,
     xaringanExtra,
     leaflet, 
+    leaflet.extras,
     rgdal,
     htmltools
 Additional_repositories: 
