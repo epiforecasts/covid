@@ -1,19 +1,4 @@
 page,error
-_posts/national/united-kingdom/united-kingdom.Rmd,"list(message = ""`:=` can only be used within a quasiquoted argument"", trace = list(calls = list(purrr::map(posts[purrr::map_lgl(failed_to_render[[2]], ~!is.null(.))], render_by_path), global::.f(.x[[i]], ...), purrr:::safe_render(file.path(post), quiet = FALSE), purrr:::capture_error(.f(...), otherwise, quiet), base::tryCatch(list(result = code, error = NULL), error = function(e) {
-    if (!quiet) 
-        message(""Error: "", e$message)
-    list(result = otherwise, error = e)
-}, interrupt = function(e) {
-    stop(""Terminated by user"", call. = FALSE)
-}), base:::tryCatchList(expr, classes, parentenv, handlers), base:::tryCatchOne(tryCatchList(expr, names[-nh], parentenv, handlers[-nh]), names[nh], parentenv, handlers[[nh]]), base:::doTryCatch(return(expr), name, parentenv, handler), base:::tryCatchList(expr, names[-nh], parentenv, handlers[-nh]), base:::tryCatchOne(expr, names, parentenv, handlers[[1]]), base:::doTryCatch(return(expr), name, parentenv, handler), rmarkdown:::.f(...), knitr::knit(knit_input, knit_output, envir = envir, quiet = quiet), 
-    knitr:::process_file(text, output), base::withCallingHandlers(if (tangle) process_tangle(group) else process_group(group), error = function(e) {
-        setwd(wd)
-        cat(res, sep = ""\n"", file = output %n% """")
-        message(""Quitting from lines "", paste(current_lines(i), collapse = ""-""), "" ("", knit_concord$get(""infile""), "") "")
-    }), knitr:::process_group(group), knitr:::process_group.block(group), knitr:::call_block(x), knitr:::block_exec(params), knitr:::in_dir(input_dir(), evaluate(code, envir = env, new_device = FALSE, keep_warning = !isFALSE(options$warning), keep_message = !isFALSE(options$message), stop_on_error = if (options$error && options$include) 0 else 2, output_handler = knit_handlers(options$render, options))), knitr:::evaluate(code, envir = env, new_device = FALSE, keep_warning = !isFALSE(options$warning), 
-        keep_message = !isFALSE(options$message), stop_on_error = if (options$error && options$include) 0 else 2, output_handler = knit_handlers(options$render, options)), evaluate::evaluate(...), evaluate:::evaluate_call(expr, parsed$src[[i]], envir = envir, enclos = enclos, debug = debug, last = i == length(out), use_try = stop_on_error != 2, keep_warning = keep_warning, keep_message = keep_message, output_handler = output_handler, include_timing = include_timing), evaluate:::timing_fn(handle(ev <- withCallingHandlers(withVisible(eval(expr, 
-        envir, enclos)), warning = wHandler, error = eHandler, message = mHandler))), base:::handle(ev <- withCallingHandlers(withVisible(eval(expr, envir, enclos)), warning = wHandler, error = eHandler, message = mHandler)), base::withCallingHandlers(withVisible(eval(expr, envir, enclos)), warning = wHandler, error = eHandler, message = mHandler), base::withVisible(eval(expr, envir, enclos)), base::eval(expr, envir, enclos), base::eval(expr, envir, enclos), data[, `:=`(count, as.numeric(count))], 
-    data.table:::`[.data.table`(data, , `:=`(count, as.numeric(count))), base::`[.data.frame`(x, i, j), `:=`(count, as.numeric(count))), parents = c(0, 1, 2, 3, 4, 5, 6, 7, 6, 9, 10, 3, 12, 13, 14, 14, 14, 17, 18, 19, 19, 21, 22, 23, 23, 23, 23, 23, 28, 3, 3, 31, 3), indices = 1:33), parent = NULL)"
 _posts/subnational/russia/omsk-oblast/omsk-oblast.Rmd,"list(message = ""cannot open the connection"", call = gzfile(file, ""rb""))"
 _posts/subnational/russia/omsk-oblast/omsk-oblast.Rmd,"list(message = ""cannot open the connection"", call = gzfile(file, ""rb""))"
 _posts/subnational/russia/omsk-oblast/omsk-oblast.Rmd,"list(message = ""cannot open the connection"", call = gzfile(file, ""rb""))"
