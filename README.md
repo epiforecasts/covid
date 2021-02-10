@@ -14,10 +14,10 @@ git clone --depth 1 https://github.com/epiforecasts/covid.git
 
 ### Update external results
 
-This repository uses submodules to store results. To download these use the following within the `covid` folder:
+This repository uses Azure blob storage to store results. To download these use the following within the `covid` folder:
 
 ```bash
-git submodule update --init --depth 1
+
 ```
 
 ### Update the website
