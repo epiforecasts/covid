@@ -1,11 +1,7 @@
 #!/bin/bash
 
 ## Get latest estimates
-git submodule update --init --depth 1
-cd covid-rt-estimates
-git fetch --all
-git reset --hard origin/master
-cd ..
+Rscript utils/update_estimates.R
 
 ## Update national reports
 Rscript utils/update_report_templates.R
