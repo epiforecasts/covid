@@ -10,12 +10,12 @@ require(rnaturalearth)
 require(covidregionaldata)
 
 # Countries from nowcast folders ------------------------------------------
-countries <- tibble::tibble(country = list.dirs(here::here("covid-rt-estimates/national/cases/national"), recursive = FALSE) %>%
-                              stringr::str_remove(here::here("covid-rt-estimates/national/cases/national/")))
+countries <- tibble::tibble(country = list.dirs(here::here("../covid-rt-estimates/national/cases/national"), recursive = FALSE) %>%
+                              stringr::str_remove(here::here("../covid-rt-estimates/national/cases/national/")))
 
 
-countries_with_death_estimates <-  tibble::tibble(country = list.dirs(here::here("covid-rt-estimates/national/deaths/national"), recursive = FALSE) %>%
-                                                    stringr::str_remove(here::here("covid-rt-estimates/national/deaths/national/")),
+countries_with_death_estimates <-  tibble::tibble(country = list.dirs(here::here("../covid-rt-estimates/national/deaths/national"), recursive = FALSE) %>%
+                                                    stringr::str_remove(here::here("../covid-rt-estimates/national/deaths/national/")),
                                                   deaths = TRUE)
 
 # Get countries regions ---------------------------------------------------
@@ -27,9 +27,9 @@ countries_in_data <- covidregionaldata::get_national_data(source = "who") %>%
 # Get subnational entities
 subnational <-
   tibble::tibble(
-            area = list.dirs(here::here("covid-rt-estimates/subnational"),
+            area = list.dirs(here::here("../covid-rt-estimates/subnational"),
                              recursive = TRUE) %>%
-              stringr::str_remove(here::here("covid-rt-estimates/subnational"))
+              stringr::str_remove(here::here("../covid-rt-estimates/subnational"))
           ) %>%
   filter(str_count(area, "\\/") == 4) %>%
   mutate(area = sub("^\\/", "", area)) %>%
