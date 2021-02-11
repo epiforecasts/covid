@@ -1,6 +1,5 @@
 require(rmarkdown)
 
-
 ## Copy master bib into resources folder
 file.copy("library.bib", "_paper/resources/", overwrite = TRUE)
 

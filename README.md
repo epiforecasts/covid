@@ -1,8 +1,7 @@
 
 # Temporal variation in transmission during the COVID-19 outbreak
 
-
-For the underlying estimates see [here](https://github.com/epiforecasts/covid-rt-estimates). See [here](https://github.com/epiforecasts/EpiNow2) for documentation on the methodology used. See [here](https://github.com/epiforecasts/covidregionaldata) for our data back-end. Interactive visualisations are powered by [`RtD3`](https://epiforecasts.io/RtD3/).
+For the underlying estimates see [here](https://github.com/epiforecasts/covid-rt-estimates). See [here](https://github.com/epiforecasts/EpiNow2) for documentation on the methodology used. See [here](https://github.com/epiforecasts/covidregionaldata) for our data back-end. 
 
 ## Usage
 
@@ -12,13 +11,16 @@ For the underlying estimates see [here](https://github.com/epiforecasts/covid-rt
 git clone --depth 1 https://github.com/epiforecasts/covid.git
 ```
 
-### Update external results
+### Update results
 
-This repository uses Azure blob storage to store results. To download these use the following within the `covid` folder:
+This repository uses Azure blob storage to store results. To download these first install [`azcopy`](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) (see here for a script to do this for [Linux](https://github.com/epiforecasts/covid-rt-estimates/blob/master/bin/install_azcopy.sh)) and then run the following.
+
 
 ```bash
-
+Rscript utils/update_estimates.R
 ```
+
+*Warning when run for the first time this will download several GB of data. See [`covid-rt-estimates`](https://github.com/epiforecasts/covidregionaldata) for further support accessing estimates.*
 
 ### Update the website
 
