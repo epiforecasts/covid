@@ -14,7 +14,7 @@ title <- FALSE
 
 
 
-**More information** For more detail and the limitations of these estimates please see our [methods](https://epiforecasts.io/covid/methods.html)), our [preprint](https://wellcomeopenresearch.org/articles/5-112/v1)[@rtwebsite], the [documentation of our transmission tracking R package](https://epiforecasts.io/EpiNow2/)[@epinow2] and the documentation of our [R data package](https://epiforecasts.io/covidregionaldata/) [@covidregionaldata]. Interactive visualisations are powered by [`RtD3`](https://epiforecasts.io/RtD3/)[@rtd3]. Stored versions of our estimates can be found [here](https://dataverse.harvard.edu/dataverse/covid-rt) and the code used to generate them can be found [here](https://github.com/epiforecasts/covid-rt-estimates).**
+**More information** For more detail and the limitations of these estimates please see our [methods](https://epiforecasts.io/covid/methods.html)), our [preprint](https://wellcomeopenresearch.org/articles/5-112/v1)[@rtwebsite], the [documentation of our transmission tracking R package](https://epiforecasts.io/EpiNow2/)[@epinow2] and the documentation of our [R data package](https://epiforecasts.io/covidregionaldata/) [@covidregionaldata]. Stored versions of our estimates and the code used to generate them can be found [here](https://github.com/epiforecasts/covid-rt-estimates).**
 
 
 **Note:** Our methodology remains an area of active research so please consider contacting us if interested in using, or evaluating, our approach. As an open-source project we also welcome code and methodology contributions, please see the linked code repositories for details on how to contribute.
