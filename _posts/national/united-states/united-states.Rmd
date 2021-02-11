@@ -16,6 +16,7 @@ categories:
 
 
 ```{r load-geodata, include = FALSE}
+library(magrittr)
 geoData <- rnaturalearth::ne_states('United States of America', returnclass = 'sf') 
 geoData <- dplyr::mutate(geoData, sovereignt = name_en)
 geoData <- dplyr::filter(geoData, !sovereignt %in% c("Alaska", "Hawaii")) %>%

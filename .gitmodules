@@ -1,4 +1,0 @@
-[submodule "covid-rt-estimates"]
-	path = covid-rt-estimates
-	url = https://github.com/epiforecasts/covid-rt-estimates
-	shallow = true

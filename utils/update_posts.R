@@ -53,6 +53,9 @@ names(secondary_render_failure_cmp) <- tmp[purrr::map_lgl(secondary_render_failu
 render_failure <- data.table::data.table(page = names(secondary_render_failure_cmp), 
                                          error = secondary_render_failure_cmp)
 ## Save errors
+if (!dir.exists(here::here("logs"))) {
+  dir.create(here::here("logs"))
+}
 data.table::fwrite(render_failure, here::here("logs", "render_failure.csv"))
 
 ## Print to terminal the failed renders

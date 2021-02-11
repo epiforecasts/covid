@@ -9,8 +9,8 @@ knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
 
 # Load packages -----------------------------------------------------------
 library(EpiNow2)
+library(data.table)
 library(covidregionaldata)
-library(RtD3)
 library(dplyr)
 library(magrittr)
 library(rnaturalearth)
