@@ -6,7 +6,7 @@ summary_tables <- 0
 summary_figures <- 0
 title_depth <- 3
 index <- 1
-region_path <- "../covid-rt-estimates/national/cases/national"
+region_path <- "covid-rt-estimates/national/cases/national"
 show_title <- FALSE
 report_forecast <- TRUE
 interactive <- TRUE
