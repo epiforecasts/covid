@@ -113,7 +113,7 @@ All the Rt estimates are referenced to the same date, the estimated date at whic
 ```{r rt-comparison-nations, fig.height = 12, fig.width = 14, out.width = "95%", echo=FALSE, message = FALSE, warning = FALSE}
 data_path <- here("covid-rt-estimates/subnational/united-kingdom")
 # Rt
-summary <- fread(file.path(data_path, "collated/rt/summary_latest.csv"))
+summary <- fread(file.path(data_path, "collated/rt.csv"))
 summary <- mutate(summary, 
                   'Data source' = dplyr::recode_factor(source,
                                                        "cases" = "Test-positives",
