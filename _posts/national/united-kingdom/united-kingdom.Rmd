@@ -90,6 +90,7 @@ geoData <-
                           "Cornwall and Isles of Scilly", Region),
          Region = if_else(Region %in% c("Hackney", "City of London"),
                           "Hackney and City of London", Region))
+subnational_unit <- "UTLA"
 ```
 
 ```{r,  child = here::here("utils", "national-map.Rmd")}
@@ -113,8 +114,14 @@ All the Rt estimates are referenced to the same date, the estimated date at whic
 ```{r rt-comparison-nations, fig.height = 12, fig.width = 14, out.width = "95%", echo=FALSE, message = FALSE, warning = FALSE}
 data_path <- here("covid-rt-estimates/subnational/united-kingdom")
 # Rt
-summary <- fread(file.path(data_path, "collated/rt.csv"))
-summary <- mutate(summary, 
+rt_admissions <- fread(file.path(data_path, "admissions/summary/rt.csv"))
+rt_deaths <- fread(file.path(data_path, "deaths/summary/rt.csv"))
+rt_test_positive <- fread(file.path(data_path, "cases/summary/rt.csv"))
+summary <- rbindlist(list("admissions" = rt_admissions,
+                          "deaths" = rt_deaths,
+                          "cases" = rt_test_positive), idcol = "source")
+summary <- summary[type == "estimate"]
+summary <- mutate(summary,
                   'Data source' = dplyr::recode_factor(source,
                                                        "cases" = "Test-positives",
                                                        "admissions" = "Hospital admissions",
