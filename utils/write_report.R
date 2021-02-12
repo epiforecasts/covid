@@ -66,6 +66,7 @@ knitr::opts_chunk$set(echo = FALSE, eval = TRUE,
 #'
 #+ load-packages, include = FALSE
 library(EpiNow2)
+library(data.table)
 library(dplyr)
 library(magrittr)
 library(rmarkdown)
