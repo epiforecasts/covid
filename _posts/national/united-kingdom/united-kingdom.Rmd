@@ -121,11 +121,7 @@ summary <- rbindlist(list("admissions" = rt_admissions,
                           "deaths" = rt_deaths,
                           "cases" = rt_test_positive), idcol = "source")
 summary <- summary[type == "estimate"]
-summary <- mutate(summary,
-                  'Data source' = dplyr::recode_factor(source,
-                                                       "cases" = "Test-positives",
-                                                       "admissions" = "Hospital admissions",
-                                                       "deaths" = "Deaths"))
+
 # Data
 admissions <- fread(file.path(data_path, "admissions/summary/reported_cases.csv"))
 deaths <- fread(file.path(data_path, "deaths/summary/reported_cases.csv"))
@@ -138,8 +134,13 @@ setnames(data, "confirm", "count")
 data <- data[, count := as.numeric(count)]
 data <- data[, count_ma := ma(as.numeric(count), 7), by = .(source, region)]
 # Join
-summary <- merge(summary, data, by = c("region", "date", "source"), all.x = TRUE)
+summary <- merge(summary, data, by = c("region", "date", "source"), all.x = TRUE, all.y = TRUE)
 
+summary <- mutate(summary,
+                  'Data source' = dplyr::recode_factor(source,
+                                                       "cases" = "Test-positives",
+                                                       "admissions" = "Hospital admissions",
+                                                       "deaths" = "Deaths"))
 # Plotting features
 colours <- brewer.pal(name = "Dark2", n = 6)[c(1, 4, 6)]
 names(colours) <- c("Test-positives", "Hospital admissions", "Deaths")
