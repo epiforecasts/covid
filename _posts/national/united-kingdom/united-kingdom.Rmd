@@ -46,7 +46,7 @@ xaringanExtra::use_panelset()
 subnational_unit <- "NHSE Region / devolved nation"
 ```
 
-*Updated on the `r latest_date`*
+*Using data available up to the `r latest_date`*
 
 We track transmission of Covid-19 in the United Kingdom using estimates of the time-varying reproduction number from a range of data sources (including test positive cases, hospital admissions, and death data) and spatial scales (national, regional (devolved authority and NHS region level in England), and local authority level). Where data is available these estimates are updated each day and published to a [publicly available archive](https://dataverse.harvard.edu/dataverse/covid-rt) under an open source license. Estimates are also available from GitHub ([subnational estimates](https://github.com/epiforecasts/covid-rt-estimates/tree/master/subnational/united-kingdom/), [UTLA estimates](https://github.com/epiforecasts/covid-rt-estimates/blob/master/subnational/united-kingdom-local/cases/summary/rt.csv), [national estimates](https://github.com/epiforecasts/covid-rt-estimates/tree/master/national/cases/summary), and [collated estimates](https://github.com/epiforecasts/covid-rt-estimates/blob/master/subnational/united-kingdom/collated/rt.csv)).
 
