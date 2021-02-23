@@ -213,6 +213,9 @@ plot_layout(guides = "collect") &
 
 ```{r fig-caption-dates, echo = FALSE}
 collated_table <- summary %>%
+  dplyr::filter(!is.na(median)) %>%
+  dplyr::group_by(source, region, date) %>%
+  dplyr::summarise_if(is.numeric, round, 2) %>%
   dplyr::group_by(region, source) %>%
   dplyr::filter(date == max(date)) %>%
   dplyr::ungroup()  
