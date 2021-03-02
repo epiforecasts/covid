@@ -1,7 +1,5 @@
 ---
 title: "Funding"
-description: |
-  Funders for this project
 ---
 
 ```{r setup, include=FALSE}
