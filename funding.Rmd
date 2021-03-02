@@ -9,7 +9,8 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-This project was funded by the **Wellcome Trust** via a Senior Research Fellowship to Sebastian Funk (210758/Z/18/Z)
+This project was mainly funded by the **Wellcome Trust** via a Senior Research Fellowship to Sebastian Funk (210758/Z/18/Z)
 
+Computing resources are being generously provided by **Microsoft** through the [AI for Health](https://www.microsoft.com/en-us/ai/ai-for-health) programme.
 
-This project was enabled through access to the **MRC eMedLab Medical Bioinformatics infrastructure**, supported by the **Medical Research Council** (MR/L016311/1)
+Previously, the project was enabled through access to the **MRC eMedLab Medical Bioinformatics infrastructure**, supported by the **Medical Research Council** (MR/L016311/1)
