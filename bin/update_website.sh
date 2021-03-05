@@ -1,10 +1,10 @@
 #!/bin/bash
 
 ## Get latest estimates
-Rscript utils/update_estimates.R
+## Rscript utils/update_estimates.R
 
 ## Symlink estimates into this repository
-ln -s ../covid-rt-estimates covid-rt-estimates
+## ln -s ../covid-rt-estimates covid-rt-estimates
 
 ## Update national reports
 Rscript utils/update_report_templates.R
@@ -29,7 +29,7 @@ mv README.md _README.md
 Rscript -e "rmarkdown::render_site()"
 mv _README.md README.md
 ## Clean up nowcast folders
-Rscript utils/clean_built_site.R
+## Rscript utils/clean_built_site.R
 
 ## Remove paper figures from root
 rm -r -f figures
