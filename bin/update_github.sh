@@ -19,3 +19,4 @@ git push -f origin gh-pages:gh-pages
 git checkout master
 cp -r ../docs/. docs
 git branch -D gh-pages
+rm -rf ../docs
