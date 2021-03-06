@@ -22,14 +22,14 @@ Rscript utils/update_posts.R
 Rscript utils/clean_page_update.R
 
 ## Copy paper figures into root directory
-cp -r _paper/figures figures/
+## cp -r _paper/figures figures/
 
 ## Update the website
 mv README.md _README.md
 Rscript -e "rmarkdown::render_site()"
 mv _README.md README.md
 ## Clean up nowcast folders
-## Rscript utils/clean_built_site.R
+Rscript utils/clean_built_site.R
 
 ## Remove paper figures from root
-rm -r -f figures
+## rm -r -f figures

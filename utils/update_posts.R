@@ -1,7 +1,5 @@
 require(stringr)
 require(magrittr)
-require(future)
-require(furrr)
 require(purrr)
 require(data.table)
 
@@ -17,9 +15,6 @@ purrr::walk(post_dirs,
 ## get all posts
 posts <- list.files(post_dirs, pattern = "\\.Rmd$", full.names = TRUE, recursive = TRUE)
 
-## Set up processing
-future::plan("multisession")
-
 ## Make rendering safe to errors
 safe_render <- purrr::safely(rmarkdown::render)
 
@@ -33,9 +28,7 @@ render_by_path <-  function(post) {
   return(tmp)
 }
 ## Render posts in parallel
-failed_to_render <- furrr::future_map(posts, render_by_path, 
-                                      .options = furrr::furrr_options(seed = TRUE),
-                                      .progress = TRUE)
+failed_to_render <- purrr::map(posts, render_by_path)
 failed_to_render <- purrr::transpose(failed_to_render)
 
 ## Try to render failed posts again (in serial)

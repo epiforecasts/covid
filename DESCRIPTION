@@ -51,7 +51,7 @@ Imports:
     rgdal,
     htmltools,
     AzureStor,
-    furrr
+    rgeos
 Additional_repositories: 
   http://packages.ropensci.org/
 Remotes:
