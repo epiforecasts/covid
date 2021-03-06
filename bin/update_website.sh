@@ -1,10 +1,10 @@
 #!/bin/bash
 
 ## Get latest estimates
-## Rscript utils/update_estimates.R
+Rscript utils/update_estimates.R
 
 ## Symlink estimates into this repository
-## ln -s ../covid-rt-estimates covid-rt-estimates
+ln -s ../covid-rt-estimates covid-rt-estimates
 
 ## Update national reports
 Rscript utils/update_report_templates.R
@@ -22,7 +22,7 @@ Rscript utils/update_posts.R
 Rscript utils/clean_page_update.R
 
 ## Copy paper figures into root directory
-## cp -r _paper/figures figures/
+cp -r _paper/figures figures/
 
 ## Update the website
 mv README.md _README.md
@@ -32,4 +32,4 @@ mv _README.md README.md
 Rscript utils/clean_built_site.R
 
 ## Remove paper figures from root
-## rm -r -f figures
+rm -r -f figures
