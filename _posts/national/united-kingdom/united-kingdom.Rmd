@@ -52,7 +52,25 @@ We track transmission of Covid-19 in the United Kingdom using estimates of the t
 
 See our [Methods](https://epiforecasts.io/covid/methods) or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for an explanation of how these estimates are derived, and our [pre-print](https://www.medrxiv.org/content/10.1101/2020.10.18.20214585v1) for methods comparing Rt estimates by data source. If interested in producing interactive visualisations of these estimates to be shown on this page please open an issue [here](https://github.com/epiforecasts/covid/issues).
 
-## Estimates from confirmed cases
+## National summary
+
+
+```{r, include = FALSE}
+summary_tables <- 0
+summary_figures <- 0
+title_depth <- 3
+index <- 1
+region_path <- "covid-rt-estimates/national/cases/national"
+show_title <- FALSE
+report_forecast <- TRUE
+interactive <- TRUE
+standalone <- FALSE
+```
+
+```{r,  child = system.file("templates/_region-report.Rmd", package = "EpiNow2")}
+```
+
+## Subnational breakdown
 
 ::: {.panelset}
 

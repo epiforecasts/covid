@@ -38,6 +38,25 @@ geoData <- rnaturalearth::ne_states('Belgium', returnclass = 'sf') %>%
 
 *See our see [Methods](https://epiforecasts.io/covid/methods) or our [paper](https://wellcomeopenresearch.org/articles/5-112/) for an explanation of how these estimates are derived.*
 
+## National summary
+
+```{r, include = FALSE}
+summary_tables <- 0
+summary_figures <- 0
+title_depth <- 3
+index <- 1
+region_path <- "covid-rt-estimates/national/cases/national"
+show_title <- FALSE
+report_forecast <- TRUE
+interactive <- TRUE
+standalone <- FALSE
+```
+
+```{r,  child = system.file("templates/_region-report.Rmd", package = "EpiNow2")}
+```
+
+## Subnational breakdown
+
 ```{r,  child = here::here("utils", "national-map.Rmd")}
 ```
 
