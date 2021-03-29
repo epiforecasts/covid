@@ -20,7 +20,7 @@ This repository uses Azure blob storage to store results. To download these firs
 Rscript utils/update_estimates.R
 ```
 
-*Warning when run for the first time this will download several GB of data. See [`covid-rt-estimates`](https://github.com/epiforecasts/covidregionaldata) for further support accessing estimates.*
+*Warning when run for the first time this will download several GB of data. See [`covid-rt-estimates`](https://github.com/epiforecasts/covid-rt-estimates) for further support accessing estimates.*
 
 ### Update the website
 
