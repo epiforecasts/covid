@@ -198,15 +198,8 @@ plot_cases <- function(region_name) {
 }
 region_plot_data <- purrr::map(region_names,  ~ plot_cases(region_name = .x))
 
-# # Plot selected regions:
-((region_plot_data[[1]] / region_plot_rt[[1]]) |
-  (region_plot_data[[2]] / region_plot_rt[[2]])) /
-  ((region_plot_data[[3]] / region_plot_rt[[3]]) |
-  (region_plot_data[[4]] / region_plot_rt[[4]])) +
-  plot_layout(guides = "collect") &
-  theme(legend.position = "bottom")
+
 ```
-*Figure 2: Raw data counts with 7-day moving average; and estimates of Rt (lightest ribbon = 90% credible interval; darker ribbon = the 50% credible interval, darkest ribbon = 20% credible interval). Rt derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days for the devolved authorities of the United Kingdom.*
 
 ```{r rt-comparison-regions, fig.height = 18, fig.width = 14, out.width = "95%", echo = FALSE, message = FALSE, warning = FALSE}
 ((region_plot_data[[5]] / region_plot_rt[[5]]) |
@@ -225,7 +218,7 @@ plot_layout(guides = "collect") &
   theme(legend.position = "bottom")
 ```
 
-*Figure 3: Raw data counts with 7-day moving average; and estimates of Rt (lightest ribbon = 90% credible interval; darker ribbon = the 50% credible interval, darkest ribbon = 20% credible interval). Rt derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days in the NHS regions of England.*
+*Figure 2: Raw data counts with 7-day moving average; and estimates of Rt (lightest ribbon = 90% credible interval; darker ribbon = the 50% credible interval, darkest ribbon = 20% credible interval). Rt derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days in the NHS regions of England.*
 
 <br>
 
@@ -236,7 +229,8 @@ collated_table <- summary %>%
   dplyr::summarise_if(is.numeric, round, 2) %>%
   dplyr::group_by(region, source) %>%
   dplyr::filter(date == max(date)) %>%
-  dplyr::ungroup()  
+  dplyr::ungroup() %>% 
+  dplyr::filter(!(region %in% c("Scotland", "Wales", "Northern Ireland")))
 latest_date_cases <- collated_table %>%
   dplyr::filter(source == "cases") %>%
   dplyr::pull(date) %>%
