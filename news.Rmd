@@ -13,7 +13,11 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## 2020-01-13
+## 2021-06-28
+
+Stop plotting forecasts. These can still be found in the summary files.
+
+## 2021-01-13
  
 Site design updated to include a page per geography and to reduce page load times. 
 
