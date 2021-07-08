@@ -3,7 +3,7 @@ title: "Methods"
 description: |
   Summary, introduction, data sources, accounting for delays, statistical methods,
   summary of results and limitations.
-bibliography:: library.bib
+bibliography: library.bib
 output:
   distill::distill_article:
     self_contained: true
