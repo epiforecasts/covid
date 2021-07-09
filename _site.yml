@@ -22,20 +22,20 @@ navbar:
     - text: 'National'
       menu:
        - text: 'Africa'
-         href: reports.html#Africa
+         href: reports.html#category:Africa
        - text: 'Americas'
-         href: reports.html#Americas
+         href: reports.html#category:Americas
        - text: 'Oceania'
-         href: reports.html#Oceania
+         href: reports.html#category:Oceania
        - text: 'Europe'
-         href: reports.html#Europe
+         href: reports.html#category:Europe
        - text: 'Asia'
-         href: reports.html#Asia
+         href: reports.html#category:Asia
     - text: "Subnational"
       menu:
        - text: "Countries with subnational estimates"
        - text: "Index"
-         href: reports.html#Subnational_estimates
+         href: reports.html#category:Subnational_estimates
        - text: "Belgium"
          href: posts/national/belgium/index.html
        - text: "Brazil"
