@@ -26,7 +26,7 @@ epi_leaflet <- function(map, table, label_style = c("popup", "label"),
   values <- c(
     "Increasing" = "#e75f00",
     "Likely increasing" = "#fd9e49",
-    "Stable" = "#d6d9dc",
+    "Stable" = "#9fa5ad",
     "Likely decreasing" = "#5fa2ce",
     "Decreasing" = "#1170aa"
   )
