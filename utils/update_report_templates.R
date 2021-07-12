@@ -54,7 +54,7 @@ countries <- countries %>%
   dplyr::mutate(region = ifelse(is.na(region), "Unknown", region)) %>% 
   dplyr::left_join(countries_with_death_estimates, by = "country") %>% 
   dplyr::mutate(file_name = country %>%
-                  stringr::str_replace_all(" ", "-") %>%
+                  stringr::str_replace_all("[() ]", "-") %>%
                   stringr::str_to_lower()) %>% 
   dplyr::mutate(deaths = tidyr::replace_na(deaths, FALSE))
 
