@@ -65,6 +65,7 @@ show_title <- FALSE
 report_forecast <- TRUE
 interactive <- TRUE
 standalone <- FALSE
+fig_tab_no <- 1
 ```
 
 ```{r,  child = system.file("templates/_region-report.Rmd", package = "EpiNow2")}
@@ -80,6 +81,7 @@ standalone <- FALSE
 Expected daily confirmed cases by NHSE region and devolved nation
 
 ```{r load-geodata, include = FALSE}
+fig_tab_no <- fig_tab_no + 1
 geoData <- readRDS(here("_posts", "national", "united-kingdom", "uk_shp.rds")) %>%
   rename(Region = GSS_NM)
 ```
@@ -94,7 +96,7 @@ geoData <- readRDS(here("_posts", "national", "united-kingdom", "uk_shp.rds")) %
 Estimates are shown at the level of Upper Tier Local Authorities (UTLAs).
 
 ```{r map-utla,fig.height = 1.5, layout="l-body-outset", out.width = "100%", warning = FALSE, message = FALSE}
-fig_tab_no <- 2
+fig_tab_no <- fig_tab_no + 1
 folder <- "united-kingdom-local"
 summary_table <- fread(here::here("covid-rt-estimates", "subnational",
                                  "united-kingdom-local", "cases", 
@@ -108,6 +110,7 @@ geoData <-
                           "Cornwall and Isles of Scilly", Region),
          Region = if_else(Region %in% c("Hackney", "City of London"),
                           "Hackney and City of London", Region))
+st_crs(geoData) <- 4326
 subnational_unit <- "UTLA"
 ```
 
@@ -130,6 +133,8 @@ We generally calculate Rt as the average of how many new infections arise from o
 All the Rt estimates are referenced to the same date, the estimated date at which people who end up being reported as cases, admissions or deaths became infected. Therefore, if all the data streams represented the same patterns of spread the lines from the three colours would be expected to completely overlap. Where they do not, this tells us about how Covid-19 is spreading in populations of different levels of vulnerability populations. To explore in more depth how Rt from different data sources can be used to understand transmission dynamics across the population, and a more detailed methodology, see our pre-print [@rt-comparison].
 
 ```{r rt-comparison-nations, fig.height = 12, fig.width = 14, out.width = "95%", echo=FALSE, message = FALSE, warning = FALSE}
+fig_no <- fig_tab_no + 1
+tab_no <- fig_tab_no + 1
 data_path <- here("covid-rt-estimates/subnational/united-kingdom")
 # Rt
 rt_admissions <- fread(file.path(data_path, "admissions/summary/rt.csv"))
@@ -206,9 +211,10 @@ region_plot_data <- purrr::map(region_names,  ~ plot_cases(region_name = .x))
   plot_layout(guides = "collect") &
   theme(legend.position = "bottom")
 ```
-*Figure 2: Raw data counts with 7-day moving average; and estimates of Rt (lightest ribbon = 90% credible interval; darker ribbon = the 50% credible interval, darkest ribbon = 20% credible interval). Rt derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days for the devolved authorities of the United Kingdom.*
+*Figure `r fig_no`: Raw data counts with 7-day moving average; and estimates of Rt (lightest ribbon = 90% credible interval; darker ribbon = the 50% credible interval, darkest ribbon = 20% credible interval). Rt derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days for the devolved authorities of the United Kingdom.*
 
 ```{r rt-comparison-regions, fig.height = 18, fig.width = 14, out.width = "95%", echo = FALSE, message = FALSE, warning = FALSE}
+fig_no <- fig_no + 1
 ((region_plot_data[[5]] / region_plot_rt[[5]]) |
   (region_plot_data[[6]] / region_plot_rt[[6]])) /
 
@@ -225,7 +231,7 @@ plot_layout(guides = "collect") &
   theme(legend.position = "bottom")
 ```
 
-*Figure 3: Raw data counts with 7-day moving average; and estimates of Rt (lightest ribbon = 90% credible interval; darker ribbon = the 50% credible interval, darkest ribbon = 20% credible interval). Rt derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days in the NHS regions of England.*
+*Figure `r fig_no`: Raw data counts with 7-day moving average; and estimates of Rt (lightest ribbon = 90% credible interval; darker ribbon = the 50% credible interval, darkest ribbon = 20% credible interval). Rt derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days in the NHS regions of England.*
 
 <br>
 
@@ -271,5 +277,5 @@ if (!interactive) {
 }
 ```
 
-*Table 3: Latest estimates of Rt, derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days. The median and 90% credible interval is shown. Latest dates vary for cases (`r latest_date_cases`), admissions (`r latest_date_admissions`), and deaths (`r latest_date_deaths`).*
+*Table `r tab_no`: Latest estimates of Rt, derived from data sources including all test-positive cases, hospital admissions, and deaths with a positive test in the previous 28 days. The median and 90% credible interval is shown. Latest dates vary for cases (`r latest_date_cases`), admissions (`r latest_date_admissions`), and deaths (`r latest_date_deaths`).*
 
