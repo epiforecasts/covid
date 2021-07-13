@@ -61,6 +61,10 @@ standalone <- FALSE
 
 ## Subnational breakdown
 
+```{r}
+fig_tab_no <- 2
+```
+
 ```{r,  child = here::here("utils", "national-map.Rmd")}
 ```
 
