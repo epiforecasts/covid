@@ -110,7 +110,6 @@ geoData <-
                           "Cornwall and Isles of Scilly", Region),
          Region = if_else(Region %in% c("Hackney", "City of London"),
                           "Hackney and City of London", Region))
-st_crs(geoData) <- 4326
 subnational_unit <- "UTLA"
 ```
 
