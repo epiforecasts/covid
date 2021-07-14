@@ -269,10 +269,24 @@ if (!interactive) {
     kable(booktabs = TRUE, longtable = TRUE) %>%
     landscape()
 } else {
+  numeric_cols <-
+    unname(which(apply(collated_table, 2,
+                function(x) all(grepl("^[0-9e.() -]+$", x)))))
+  sort_table <- apply(collated_table[, numeric_cols, with = FALSE], 2,
+                      function(x) as.numeric(sub(" \\(.*\\)$", "", x)))
+  sort_cols <- ncol(collated_table) + seq_len(ncol(sort_table))
+  columnDefs <- 
+    c(lapply(seq_along(sort_cols), function(x) {
+        list(orderData = sort_cols[x] - 1L,
+	     targets = numeric_cols[x] - 1L)
+      }),
+      list(list(visible = FALSE, targets = sort_cols - 1L)))
   collated_table %>%
+    cbind(sort_table) %>%
     datatable(rownames = FALSE,
               extensions = c("Buttons"),
-              options = list(dom = "Bfrtip", buttons = c("csv")))
+              options = list(dom = "Bfrtip", buttons = c("csv"),
+                             columnDefs = columnDefs))
 }
 ```
 

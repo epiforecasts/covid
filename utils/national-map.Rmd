@@ -24,15 +24,30 @@ if (!interactive) {
     knitr::kable(booktabs = TRUE, longtable = TRUE) %>%
     kableExtra::landscape()
 }else{
-  summary_with_links %>%
+  summary_table <- summary_with_links %>%
     mutate(Region = paste0("<a href=\"", link, "\" target=\"blank\">",
                            Region, "</a>")) %>%
     select(-link) %>%
-    rename(!!enquo(subnational_unit) := Region) %>%
+    rename(!!enquo(subnational_unit) := Region)
+  numeric_cols <-
+    unname(which(apply(summary_table, 2,
+                function(x) all(grepl("^[0-9e.() -]+$", x)))))
+  sort_table <- apply(summary_table[, numeric_cols, with = FALSE], 2,
+                      function(x) as.numeric(sub(" \\(.*\\)$", "", x)))
+  sort_cols <- ncol(summary_table) + seq_len(ncol(sort_table))
+  columnDefs <-
+    c(lapply(seq_along(sort_cols), function(x) {
+        list(orderData = sort_cols[x] - 1L,
+	     targets = numeric_cols[x] - 1L)
+      }),
+      list(list(visible = FALSE, targets = sort_cols - 1L)))
+  summary_table %>%
+    cbind(sort_table) %>%
     DT::datatable(rownames = FALSE,
                   extensions = c("Buttons"),
-                  options = list(dom = "Bfrtip", buttons = c("csv")),
-                  escape = FALSE)
+                  options = list(dom = "Bfrtip", buttons = c("csv"),
+                                 columnDefs = columnDefs),
+		  escape = FALSE)
 }
 ```
 `r paste0("*Table ", fig_tab_no, ": Latest estimates (as of the ", latest_date, ") of the number of confirmed cases by date of infection, the effective reproduction number, the rate of growth, and the doubling time (when negative this corresponds to the halving time) in each region. The median and 90% credible interval is shown.*")`
