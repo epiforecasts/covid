@@ -73,7 +73,38 @@ _posts/national/french-polynesia/french-polynesia.Rmd,"list(message = ""Extra co
 _posts/national/gabon/gabon.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/gambia/gambia.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/georgia/georgia.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
-_posts/national/germany/germany.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
+_posts/national/germany/germany.Rmd,"list(message = ""Column `Meldedatum` not found in `.data`"", trace = list(calls = list(purrr::map(posts[purrr::map_lgl(failed_to_render[[2]], ~!is.null(.))], render_by_path), global::.f(.x[[i]], ...), purrr:::safe_render(file.path(post), quiet = FALSE), purrr:::capture_error(.f(...), otherwise, quiet), base::tryCatch(list(result = code, error = NULL), error = function(e) {
+    if (!quiet) 
+        message(""Error: "", e$message)
+    list(result = otherwise, error = e)
+}, interrupt = function(e) {
+    stop(""Terminated by user"", call. = FALSE)
+}), base:::tryCatchList(expr, classes, parentenv, handlers), base:::tryCatchOne(tryCatchList(expr, names[-nh], parentenv, handlers[-nh]), names[nh], parentenv, handlers[[nh]]), base:::doTryCatch(return(expr), name, parentenv, handler), base:::tryCatchList(expr, names[-nh], parentenv, handlers[-nh]), base:::tryCatchOne(expr, names, parentenv, handlers[[1]]), base:::doTryCatch(return(expr), name, parentenv, handler), rmarkdown:::.f(...), knitr::knit(knit_input, knit_output, envir = envir, quiet = quiet), 
+    knitr:::process_file(text, output), base::withCallingHandlers(if (tangle) process_tangle(group) else process_group(group), error = function(e) {
+        setwd(wd)
+        cat(res, sep = ""\n"", file = output %n% """")
+        message(""Quitting from lines "", paste(current_lines(i), collapse = ""-""), "" ("", knit_concord$get(""infile""), "") "")
+    }), knitr:::process_group(group), knitr:::process_group.block(group), knitr:::call_block(x), knitr:::block_exec(params), knitr:::eng_r(options), knitr:::in_dir(input_dir(), evaluate(code, envir = env, new_device = FALSE, keep_warning = !isFALSE(options$warning), keep_message = !isFALSE(options$message), stop_on_error = if (is.numeric(options$error)) options$error else {
+        if (options$error && options$include) 
+            0
+        else 2
+    }, output_handler = knit_handlers(options$render, options))), knitr:::evaluate(code, envir = env, new_device = FALSE, keep_warning = !isFALSE(options$warning), keep_message = !isFALSE(options$message), stop_on_error = if (is.numeric(options$error)) options$error else {
+        if (options$error && options$include) 
+            0
+        else 2
+    }, output_handler = knit_handlers(options$render, options)), evaluate::evaluate(...), evaluate:::evaluate_call(expr, parsed$src[[i]], envir = envir, enclos = enclos, debug = debug, last = i == length(out), use_try = stop_on_error != 2, keep_warning = keep_warning, keep_message = keep_message, output_handler = output_handler, include_timing = include_timing), evaluate:::timing_fn(handle(ev <- withCallingHandlers(withVisible(eval(expr, envir, enclos)), warning = wHandler, error = eHandler, message = mHandler))), 
+    base:::handle(ev <- withCallingHandlers(withVisible(eval(expr, envir, enclos)), warning = wHandler, error = eHandler, message = mHandler)), base::withCallingHandlers(withVisible(eval(expr, envir, enclos)), warning = wHandler, error = eHandler, message = mHandler), base::withVisible(eval(expr, envir, enclos)), base::eval(expr, envir, enclos), base::eval(expr, envir, enclos), covidregionaldata::get_regional_data(country = ""Germany"") %>% dplyr::select(sovereignt = bundesland, iso_3166_2) %>% unique(), 
+    base::unique(.), dplyr::select(., sovereignt = bundesland, iso_3166_2), covidregionaldata::get_regional_data(country = ""Germany""), covidregionaldata::initialise_dataclass(class = country, level = level, regions = regions, totals = totals, localise = localise, verbose = verbose, steps = steps, get = TRUE, type = ""regional"", ...), regionClass$new(level = level, totals = totals, localise = localise, verbose = verbose, steps = steps, regions = regions, get = get, ...), covidregionaldata:::initialize(...), 
+    self$get(), self$clean(), self$clean_common(), self$data$raw[[""main""]] %>% select(date = .data$Meldedatum, level_1_region = .data$Bundesland, level_2_region = .data$Landkreis, cases_new = .data$AnzahlFall, deaths_new = .data$AnzahlTodesfall) %>% mutate(date = as_date(ymd_hms(.data$date))) %>% left_join(self$codes_lookup$`1`, by = c(level_1_region = ""region"")) %>% mutate(level_1_region_code = .data$code, ), dplyr::mutate(., level_1_region_code = .data$code, ), dplyr::left_join(., self$codes_lookup$`1`, 
+        by = c(level_1_region = ""region"")), dplyr::mutate(., date = as_date(ymd_hms(.data$date))), dplyr::select(., date = .data$Meldedatum, level_1_region = .data$Bundesland, level_2_region = .data$Landkreis, cases_new = .data$AnzahlFall, deaths_new = .data$AnzahlTodesfall), dplyr:::select.data.frame(., date = .data$Meldedatum, level_1_region = .data$Bundesland, level_2_region = .data$Landkreis, cases_new = .data$AnzahlFall, deaths_new = .data$AnzahlTodesfall), tidyselect::eval_select(expr(c(...)), 
+        .data), tidyselect:::eval_select_impl(data, names(data), as_quosure(expr, env), include = include, exclude = exclude, strict = strict, name_spec = name_spec, allow_rename = allow_rename), tidyselect:::with_subscript_errors(vars_select_eval(vars, expr, strict, data = x, name_spec = name_spec, uniquely_named = uniquely_named, allow_rename = allow_rename, type = type), type = type), base::tryCatch(instrument_base_errors(expr), vctrs_error_subscript = function(cnd) {
+        cnd$subscript_action <- subscript_action(type)
+        cnd$subscript_elt <- ""column""
+        cnd_signal(cnd)
+    }), base:::tryCatchList(expr, classes, parentenv, handlers), base:::tryCatchOne(expr, names, parentenv, handlers[[1]]), base:::doTryCatch(return(expr), name, parentenv, handler), tidyselect:::instrument_base_errors(expr), base::withCallingHandlers(expr, simpleError = function(cnd) {
+        abort(conditionMessage(cnd), parent = cnd)
+    }), tidyselect:::vars_select_eval(vars, expr, strict, data = x, name_spec = name_spec, uniquely_named = uniquely_named, allow_rename = allow_rename, type = type), tidyselect:::walk_data_tree(expr, data_mask, context_mask), tidyselect:::eval_c(expr, data_mask, context_mask), tidyselect:::reduce_sels(node, data_mask, context_mask, init = init), tidyselect:::walk_data_tree(new, data_mask, context_mask), base::eval(expr, data_mask), base::eval(expr, data_mask), .data$Meldedatum, rlang:::`$.rlang_data_pronoun`(.data, 
+        Meldedatum), rlang:::data_pronoun_get(x, nm), rlang:::abort_data_pronoun(x)), parents = c(0, 1, 2, 3, 4, 5, 6, 7, 6, 9, 10, 3, 12, 13, 14, 14, 14, 17, 18, 19, 20, 20, 22, 23, 24, 24, 24, 24, 24, 29, 3, 0, 0, 3, 34, 35, 36, 37, 38, 39, 40, 0, 0, 0, 0, 0, 46, 47, 48, 49, 50, 51, 52, 49, 54, 48, 56, 57, 58, 59, 60, 61, 62, 62, 64, 0), indices = 1:66), parent = NULL)"
 _posts/national/ghana/ghana.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/gibraltar/gibraltar.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/greece/greece.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
