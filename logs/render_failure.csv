@@ -201,7 +201,7 @@ _posts/national/united-states/united-states.Rmd,"list(message = ""Extra content 
 _posts/national/uruguay/uruguay.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/uzbekistan/uzbekistan.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/venezuela/venezuela.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
-_posts/national/vietnam/vietnam.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
+_posts/national/vietnam/vietnam.Rmd,"list(message = ""Timeout was reached: [covid19.ncsc.gov.vn] Resolving timed out after 10000 milliseconds"", call = open.connection(con, ""rb""))"
 _posts/national/yemen/yemen.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/zambia/zambia.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/zimbabwe/zimbabwe.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
