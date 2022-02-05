@@ -363,4 +363,4 @@ _posts/national/south-africa/south-africa.Rmd,"list(message = ""Problem with `su
 ""::"", "":::"", ""::"", "":::"", "":::"", ""::"", NA, ""::"", "":::"", ""::"", "":::"", "":::"", ""::"", ""::"", "":::"", ""::"", ""::"", ""local"", ""::"")), parent = NULL, call = h(simpleError(msg, call)))"
 _posts/national/united-kingdom/united-kingdom.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/united-states/united-states.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
-_posts/national/vietnam/vietnam.Rmd,"list(message = ""Timeout was reached: [covid19.ncsc.gov.vn] Connection timed out after 10001 milliseconds"", call = open.connection(con, ""rb""))"
+_posts/national/vietnam/vietnam.Rmd,"list(message = ""Timeout was reached: [covid19.ncsc.gov.vn] Connection timed out after 10000 milliseconds"", call = open.connection(con, ""rb""))"
