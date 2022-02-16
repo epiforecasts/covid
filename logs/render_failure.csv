@@ -73,7 +73,7 @@ _posts/national/french-polynesia/french-polynesia.Rmd,"list(message = ""Extra co
 _posts/national/gabon/gabon.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/gambia/gambia.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/georgia/georgia.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
-_posts/national/germany/germany.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
+_posts/national/germany/germany.Rmd,"list(message = ""HTTP error 404."", call = open.connection(20, ""rb""))"
 _posts/national/ghana/ghana.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/gibraltar/gibraltar.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/greece/greece.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
