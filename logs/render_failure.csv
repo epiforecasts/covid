@@ -208,6 +208,7 @@ _posts/national/united-kingdom/united-kingdom.Rmd,"list(message = ""Extra conten
 _posts/national/united-states/united-states.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/uruguay/uruguay.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/uzbekistan/uzbekistan.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
+_posts/national/vanuatu/vanuatu.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/venezuela/venezuela.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
 _posts/national/vietnam/vietnam.Rmd,"list(message = ""No data available for Vietnam see get_available_datasets(type = c(regional)) for supported datasets"", call = initialise_dataclass(class = country, level = level, regions = regions, totals = totals, localise = localise, verbose = verbose, steps = steps, get = TRUE, type = ""regional"", ...))"
 _posts/national/yemen/yemen.Rmd,"list(message = ""Extra content at the end of the document [5]"", call = read_xml.character(rss_path))"
