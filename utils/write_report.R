@@ -34,7 +34,7 @@ write_report <- function(details = NULL, type = c("national", "subnational")) {
 x <- paste0("#' ---
 #' title: ", '"',locstr,'"',"
 #' description: |
-#'  Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in case reporting in ", loc, ". These results are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively.
+#'  Estimates presented here are no longer updated as of 31 March 2022. For more information on the rationale behind this move and some reflections on 2 years of global nowcasting and forecasting, please read our related [blog post](https://epiforecasts.io/posts/2022-03-25-rt-reflections/).
 #'bibliography: library.bib
 #'output:
 #'  distill::distill_article:
