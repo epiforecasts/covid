@@ -1,7 +1,7 @@
 ---
 title: "National and Subnational estimates for the United Kingdom"
 description: |
-  Identifying changes in the reproduction number, rate of spread, and doubling time during the course of the COVID-19 outbreak whilst accounting for potential biases due to delays in reporting both nationally and subnationally in the United Kingdom. Estimates using test positive cases are impacted by changes in testing effort, increases and decreases in testing effort will increase and decrease reproduction number estimates respectively.
+  Estimates presented here are no longer updated as of 31 March 2022. For more information on the rationale behind this move and some reflections on 2 years of global nowcasting and forecasting, please read our related [blog post](https://epiforecasts.io/posts/2022-03-25-rt-reflections/).
 author:
   - name: Katharine Sherratt*, Sam Abbott*, Sophie R Meakin, Joel Hellewell, James D Munday, Nikos Bosse, CMMID Covid-19 working group, Mark Jit, Sebastian Funk
     affiliation: "Centre for Mathematical Modelling of Infectious Diseases, London School of Hygiene & Tropical Medicine"
