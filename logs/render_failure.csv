@@ -1,0 +1,13 @@
+page,error
+_posts/subnational/canada-full/manitoba/manitoba.Rmd,"list(message = ""cannot open the connection"", call = gzfile(file, ""rb""))"
+_posts/subnational/canada-full/new-brunswick/new-brunswick.Rmd,"list(message = ""cannot open the connection"", call = gzfile(file, ""rb""))"
+_posts/subnational/canada-full/newfoundland-and-labrador/newfoundland-and-labrador.Rmd,"list(message = ""cannot open the connection"", call = gzfile(file, ""rb""))"
+_posts/subnational/canada-full/ontario/ontario.Rmd,"list(message = ""cannot open the connection"", call = gzfile(file, ""rb""))"
+_posts/subnational/canada-full/quebec/quebec.Rmd,"list(message = ""cannot open the connection"", call = gzfile(file, ""rb""))"
+_posts/subnational/canada-full/saskatchewan/saskatchewan.Rmd,"list(message = ""cannot open the connection"", call = gzfile(file, ""rb""))"
+_posts/subnational/russia/moscow/moscow.Rmd,"list(message = ""cannot open the connection"", call = gzfile(file, ""rb""))"
+_posts/subnational/russia/nizhny-novgorod-oblast/nizhny-novgorod-oblast.Rmd,"list(message = ""cannot open the connection"", call = gzfile(file, ""rb""))"
+_posts/subnational/russia/omsk-oblast/omsk-oblast.Rmd,"list(message = ""cannot open the connection"", call = gzfile(file, ""rb""))"
+_posts/subnational/russia/saint-petersburg/saint-petersburg.Rmd,"list(message = ""cannot open the connection"", call = gzfile(file, ""rb""))"
+_posts/subnational/united-kingdom-local/cornwall/cornwall.Rmd,"list(message = ""cannot open the connection"", call = gzfile(file, ""rb""))"
+_posts/subnational/united-kingdom-local/hackney/hackney.Rmd,"list(message = ""cannot open the connection"", call = gzfile(file, ""rb""))"
