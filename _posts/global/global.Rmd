@@ -1,7 +1,7 @@
 ---
 title: "Global summary"
 description: |
-  Estimates presented here are no longer updated as of 31 March 2022. For more information on the rationale behind this move and some reflections on 2 years of global nowcasting and forecasting, please read our related [blog post](https://epiforecasts.io/posts/2022-03-25-rt-reflections/).
+  Estimates presented here are no longer updated as of 31 March 2022. For more information on the rationale behind this move and some reflections on 2 years of global nowcasting and forecasting, please read our related [blog post](https://epiforecasts.io/posts/2022-03-25-rt-reflections/). See [these instructions](https://github.com/epiforecasts/covid-rt-estimates#reconstructing-historical-estimates-and-forecasts) for reconstructing the full historical time series of reproduction number and other estimates and forecasts.
 bibliography: library.bib
 output:
   distill::distill_article:
